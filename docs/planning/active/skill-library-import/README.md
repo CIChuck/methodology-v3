@@ -13,3 +13,7 @@ Migration candidate 98f8bec retains its separate VERIFIED result.
 Evidence: docs/resources/evolution/skill-library-import/validation-summary.json
 
 Hosting authority: docs/resources/evolution/github-hosting.md
+
+Delivery: pushed to CIChuck/methodology-v3, integration/v3-skill-import.
+Operational candidate: 1516712bac00a4f45740d6cd76833d9677499e3f.
+Evidence: docs/resources/evolution/github-delivery.json. Formal review remains pending.

@@ -9,7 +9,7 @@ tasks:
   implementation_authority: granted
   packet: docs/planning/active/v3-baseline-migration/
   next_gate: Chuck acceptance of VERIFIED candidate 98f8bec4597cd3307fc26e5c28dc86592e01ca08; step 8 remains separate
-  delivery_state: local
+  delivery_state: pushed
   branch: integration/v3-migration
   depends_on: []
   validation:
@@ -38,12 +38,13 @@ tasks:
   condition: normal
   implementation_authority: granted
   packet: docs/planning/active/skill-library-import/
-  next_gate: Push the authorized checkpoint, then fresh independent review when dispatch is authorized
-  delivery_state: local
+  next_gate: Authorize fresh independent review of pushed skill-import candidate 1516712; human acceptance pending
+  delivery_state: pushed
   branch: integration/v3-skill-import
   depends_on: []
   validation:
   - docs/resources/evolution/skill-library-import/validation-summary.json
+  - docs/resources/evolution/github-delivery.json (GitHub delivery verified; not conformance approval)
   approved_by: Chuck Russell
   approved_at: '2026-10-28'
 events:
@@ -156,3 +157,18 @@ events:
   action: authorized GitHub checkpoint and push
   note: User requested a methodology-v3 remote and push; private repository created. Recorded by Codex. No acceptance or additional
     reviewer authorization inferred.
+- task: v3-baseline-migration
+  at: '2026-10-28T21:50:55+00:00'
+  actor: Codex
+  actor_role: agent
+  action: delivery local -> pushed
+  note: Verified migration history is pushed to the private repository; acceptance remains pending.
+  evidence: docs/resources/evolution/github-delivery.json
+- task: skill-library-import
+  at: '2026-10-28T21:50:55+00:00'
+  actor: Codex
+  actor_role: agent
+  action: delivery local -> pushed
+  note: Verified remote feature-branch hash matches skill-import checkpoint 1516712; independent review and acceptance remain
+    pending.
+  evidence: docs/resources/evolution/github-delivery.json
