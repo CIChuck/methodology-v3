@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "./scripts/test-methodology.sh",
+    "--suite",
+    "all"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "exit": 0,
+  "seconds": 153.81,
+  "log": "/tmp/v3-review-round4-7c14hen7/full-suite.log"
+}

@@ -1,0 +1,4 @@
+COMMAND: ['./scripts/methodology-guard.sh']
+INFO: docs/project is not initialized. Run: ./scripts/init-project.sh "Project Name"
+
+Methodology check passed: 0 warning(s).

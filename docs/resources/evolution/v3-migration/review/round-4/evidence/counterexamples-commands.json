@@ -1,0 +1,330 @@
+[
+  {
+    "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+    "argv": [
+      "bash",
+      "-e",
+      "-c",
+      "tmpdir=\"$(python3 scripts/create-dry-run.py)\"\ncd \"$tmpdir\"\n./scripts/init-project.sh \"Example Product\"\n\nprintf \"REVIEW_FIXTURE=%s\\n\" \"$PWD\"\n"
+    ],
+    "exit": 0,
+    "stdout": "Initialized docs/project for Example Product\nProject slug: example-product\nNext document: docs/project/vision/vision.md\nREVIEW_FIXTURE=/tmp/v3-review-round4-7c14hen7/methodology-dry-run.6bp2qi34\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/methodology-dry-run.6bp2qi34",
+    "argv": [
+      "./scripts/gendev-doctor.sh"
+    ],
+    "exit": 0,
+    "stdout": "GenDev doctor\nRepository: /private/tmp/v3-review-round4-7c14hen7/methodology-dry-run.6bp2qi34\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: isolated-local-exercise (tag none, commit 6ca2ad10f7eb)\nInstalled on: 2026-10-28T16:32:15.995343+00:00\nIntegrity: verified (167 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Example Product\nProject slug: example-product\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/methodology-dry-run.6bp2qi34",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "scripts/devboard.py",
+      "validate"
+    ],
+    "exit": 0,
+    "stdout": "Development board validation passed: 0 tasks\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/methodology-dry-run.6bp2qi34",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "scripts/devboard.py",
+      "next"
+    ],
+    "exit": 0,
+    "stdout": "NO_OPEN_TASK\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/methodology-dry-run.6bp2qi34",
+    "argv": [
+      "./scripts/check-methodology.sh"
+    ],
+    "exit": 1,
+    "stdout": "ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected=\"enforcement.attested.required_attester is a named human\" actual=\"missing or unknown\" message=\"Manifest attested enforcement is missing required_attester field.\"\n\nMethodology check failed: 1 error(s), 0 warning(s).\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+    "argv": [
+      "./scripts/install-methodology.sh",
+      "/tmp/v3-review-round4-7c14hen7/initialized-installed-source"
+    ],
+    "exit": 0,
+    "stdout": "Distribution report:\n  installed: docs/methodology/agents/roles/architecture-agent.md\n  installed: docs/methodology/agents/roles/as-built-closeout-agent.md\n  installed: docs/methodology/agents/roles/code-review-agent.md\n  installed: docs/methodology/agents/roles/deployment-readiness-agent.md\n  installed: docs/methodology/agents/roles/implementation-agent.md\n  installed: docs/methodology/agents/roles/phase-planning-agent.md\n  installed: docs/methodology/agents/roles/prd-agent.md\n  installed: docs/methodology/agents/roles/product-vision-agent.md\n  installed: docs/methodology/agents/roles/remediation-agent.md\n  installed: docs/methodology/agents/roles/security-governance-agent.md\n  installed: docs/methodology/agents/roles/test-uat-agent.md\n  installed: docs/methodology/agents/sample-agents.md\n  installed: docs/methodology/agents/subagents/code-check.md\n  installed: docs/methodology/architecture/ux/ux-template-architecture.md\n  installed: docs/methodology/constitution/gendev.md\n  installed: docs/methodology/design/documentation-structure-decision-record.md\n  installed: docs/methodology/design/gate-numbering-reconciliation-decision-record.md\n  installed: docs/methodology/design/naa-authority-boundary-decision-record.md\n  installed: docs/methodology/design/operational-coherence-decision-record.md\n  installed: docs/methodology/design/phase-loop-decision-record.md\n  installed: docs/methodology/design/sample-design.md\n  installed: docs/methodology/design/verification-first-decision-record.md\n  installed: docs/methodology/dev-skills/ai-construction-directive-builder.md\n  installed: docs/methodology/dev-skills/architecture-spec-author.md\n  installed: docs/methodology/dev-skills/code-conformance-reviewer.md\n  installed: docs/methodology/dev-skills/friday-dev-board/SKILL.md\n  installed: docs/methodology/dev-skills/governance-security-spec.md\n  installed: docs/methodology/dev-skills/independent-code-validator.md\n  installed: docs/methodology/dev-skills/migration-refactor-analyst.md\n  installed: docs/methodology/dev-skills/phase-build-planner.md\n  installed: docs/methodology/dev-skills/prd-author.md\n  installed: docs/methodology/dev-skills/remediation-closeout.md\n  installed: docs/methodology/dev-skills/subagent-directives-template.md\n  installed: docs/methodology/dev-skills/subagents-worktrees-template.md\n  installed: docs/methodology/dev-skills/tactical-implementation-planner.md\n  installed: docs/methodology/dev-skills/traceability-matrix.md\n  installed: docs/methodology/dev-skills/vision-framing.md\n  installed: docs/methodology/guides/agentic-development-workflow.md\n  installed: docs/methodology/guides/amendment-and-regression-protocol.md\n  installed: docs/methodology/guides/artifact-collaboration-protocol.md\n  installed: docs/methodology/guides/collaboration-modes.md\n  installed: docs/methodology/guides/distribution-ownership.md\n  installed: docs/methodology/guides/enforcement-contract.md\n  installed: docs/methodology/guides/gate-transition-protocol.md\n  installed: docs/methodology/guides/gates.md\n  installed: docs/methodology/guides/human-agent-collaboration-loop.md\n  installed: docs/methodology/guides/human-approval-protocol.md\n  installed: docs/methodology/guides/orchestration-validation.md\n  installed: docs/methodology/guides/phase-loop.md\n  installed: docs/methodology/guides/production-operations-protocol.md\n  installed: docs/methodology/guides/publishing.md\n  installed: docs/methodology/guides/start-and-next-step-protocol.md\n  installed: docs/methodology/guides/subagent-coordination-protocol.md\n  installed: docs/methodology/guides/t3-code-integration.md\n  installed: docs/methodology/integrations/t3/t3.json\n  installed: docs/methodology/schema/README.md\n  installed: docs/methodology/schema/candidate.json\n  installed: docs/methodology/schema/lifecycle.json\n  installed: docs/methodology/templates/0001-technology-stack-template.md\n  installed: docs/methodology/templates/adr-template.md\n  installed: docs/methodology/templates/aggregate-remediation-template.md\n  installed: docs/methodology/templates/architecture-template.md\n  installed: docs/methodology/templates/as-built-closeout-template.md\n  installed: docs/methodology/templates/build-instructions-templates.md\n  installed: docs/methodology/templates/code-review-report-template.md\n  installed: docs/methodology/templates/deployment-readiness-template.md\n  installed: docs/methodology/templates/deployment-record-template.md\n  installed: docs/methodology/templates/final-code-review-report-template.md\n  installed: docs/methodology/templates/final-test-uat-report-template.md\n  installed: docs/methodology/templates/gate-log-template.md\n  installed: docs/methodology/templates/governance-security-template.md\n  installed: docs/methodology/templates/implementation-summary-template.md\n  installed: docs/methodology/templates/phase-build-plan-template.md\n  installed: docs/methodology/templates/phase-build-prompt-template.md\n  installed: docs/methodology/templates/phase-construction-directive-template.md\n  installed: docs/methodology/templates/phase-implementation-evidence-template.md\n  installed: docs/methodology/templates/phase-learnings-template.md\n  installed: docs/methodology/templates/phase-plan-template.md\n  installed: docs/methodology/templates/phase-remediation-template.md\n  installed: docs/methodology/templates/prd-template.md\n  installed: docs/methodology/templates/product-ci-workflow.yml\n  installed: docs/methodology/templates/production-runbook-template.md\n  installed: docs/methodology/templates/project-as-built-closeout-template.md\n  installed: docs/methodology/templates/project-value-review-template.md\n  installed: docs/methodology/templates/tactical-implementation-template.md\n  installed: docs/methodology/templates/test-uat-plan-template.md\n  installed: docs/methodology/templates/traceability-matrix-template.md\n  installed: docs/methodology/templates/value-review-template.md\n  installed: docs/methodology/templates/vision-template.md\n  installed: docs/project-template/README.md\n  installed: docs/project-template/approvals/.gitkeep\n  installed: docs/project-template/architecture/.gitkeep\n  installed: docs/project-template/as-built/.gitkeep\n  installed: docs/project-template/build-plan/.gitkeep\n  installed: docs/project-template/build-plan/phase-plan.md\n  installed: docs/project-template/build-plan/phases/.gitkeep\n  installed: docs/project-template/decisions/.gitkeep\n  installed: docs/project-template/deployment/.gitkeep\n  installed: docs/project-template/design/.gitkeep\n  installed: docs/project-template/dry-run-policies/dev-board-integration.md\n  installed: docs/project-template/dry-run-policies/development-task-lifecycle.md\n  installed: docs/project-template/dry-run-policies/independent-validation-policy.md\n  installed: docs/project-template/dry-run-policies/legacy-policy-debt.md\n  installed: docs/project-template/dry-run-policies/repository-engineering-policy.md\n  installed: docs/project-template/planning/README.md\n  installed: docs/project-template/planning/active/.gitkeep\n  installed: docs/project-template/planning/backlog/.gitkeep\n  installed: docs/project-template/planning/blocked/.gitkeep\n  installed: docs/project-template/planning/board.yaml\n  installed: docs/project-template/planning/deferred/.gitkeep\n  installed: docs/project-template/planning/queued/.gitkeep\n  installed: docs/project-template/planning/review/.gitkeep\n  installed: docs/project-template/planning/task-template.md\n  installed: docs/project-template/prd/.gitkeep\n  installed: docs/project-template/project.yaml\n  installed: docs/project-template/review/.gitkeep\n  installed: docs/project-template/security-governance/.gitkeep\n  installed: docs/project-template/testing/.gitkeep\n  installed: docs/project-template/traceability/.gitkeep\n  installed: docs/project-template/vision/.gitkeep\n  installed: scripts/lib/distribution-manifest.txt\n  installed: scripts/lib/distribution.py\n  installed: scripts/lib/gate-log.awk\n  installed: scripts/lib/gendev-common.sh\n  installed: scripts/lib/gendev-distribution.sh\n  installed: scripts/lib/gendev-transition.sh\n  installed: scripts/lib/lifecycle-contract.sh\n  installed: scripts/lib/render_template.py\n  installed: tests/methodology/lib/runtime-write-fixtures.sh\n  installed: tests/methodology/lib/test-helpers.sh\n  installed: tests/methodology/test-checker.sh\n  installed: tests/methodology/test-distribution-tools.sh\n  installed: tests/methodology/test-documentation-coherence.sh\n  installed: tests/methodology/test-enforcement-tools.sh\n  installed: tests/methodology/test-examples.sh\n  installed: tests/methodology/test-installed-context.sh\n  installed: tests/methodology/test-lifecycle-coherence.sh\n  installed: tests/methodology/test-metrics.sh\n  installed: tests/methodology/test-migration.sh\n  installed: tests/methodology/test-reference-graph.sh\n  installed: tests/methodology/test-release-coherence.sh\n  installed: tests/methodology/test-runtime-tools.sh\n  installed: tests/methodology/test-shell-syntax.sh\n  installed: scripts/check-methodology.sh\n  installed: scripts/methodology-guard.sh\n  installed: scripts/install-hooks.sh\n  installed: scripts/init-project.sh\n  installed: scripts/init-phase.sh\n  installed: scripts/create-dry-run.py\n  installed: scripts/gendev-doctor.sh\n  installed: scripts/project-state.sh\n  installed: scripts/pin-provenance.sh\n  installed: scripts/new-artifact.sh\n  installed: scripts/install-methodology.sh\n  installed: scripts/backfill-methodology.sh\n  installed: scripts/methodology-metrics.sh\n  installed: scripts/test-checker.sh\n  installed: scripts/test-methodology.sh\n  installed: scripts/close-gate.sh\n  installed: scripts/record-phase-checkpoint.sh\n  installed: scripts/close-phase.sh\n  installed: scripts/record-deployment-approval.sh\n  installed: .github/workflows/methodology.yml\n  installed: AGENTS.md\n  installed: scripts/devboard.py\n  installed: scripts/friday-dev-board.py\n  installed: docs/planning/board.schema.json\n  installed: tests/devboard/test_devboard.py\n  installed: docs/policies/dev-board-integration.md\n  installed: docs/policies/development-task-lifecycle.md\n  installed: docs/policies/independent-validation-policy.md\n  installed: docs/policies/legacy-policy-debt.md\n  installed: docs/policies/repository-engineering-policy.md\n  installed: docs/planning/README.md\n  installed: docs/planning/active/.gitkeep\n  installed: docs/planning/backlog/.gitkeep\n  installed: docs/planning/blocked/.gitkeep\n  installed: docs/planning/board.yaml\n  installed: docs/planning/deferred/.gitkeep\n  installed: docs/planning/queued/.gitkeep\n  installed: docs/planning/review/.gitkeep\n  installed: docs/planning/task-template.md\n  installed: .agents/skills/ai-construction-directive-builder/SKILL.md\n  installed: .agents/skills/architecture-spec-author/SKILL.md\n  installed: .agents/skills/code-conformance-reviewer/SKILL.md\n  installed: .agents/skills/friday-dev-board/SKILL.md\n  installed: .agents/skills/governance-security-spec/SKILL.md\n  installed: .agents/skills/independent-code-validator/SKILL.md\n  installed: .agents/skills/migration-refactor-analyst/SKILL.md\n  installed: .agents/skills/phase-build-planner/SKILL.md\n  installed: .agents/skills/prd-author/SKILL.md\n  installed: .agents/skills/remediation-closeout/SKILL.md\n  installed: .agents/skills/subagent-directives-template/SKILL.md\n  installed: .agents/skills/subagents-worktrees-template/SKILL.md\n  installed: .agents/skills/tactical-implementation-planner/SKILL.md\n  installed: .agents/skills/traceability-matrix/SKILL.md\n  installed: .agents/skills/vision-framing/SKILL.md\n  installed: docs/archive/completed/.gitkeep\n  installed: requirements-devboard.txt\n\nInstall completed with preserved AGENTS.md; fully governed operation requires explicit AGENTS integration.\nNext: run scripts/init-project.sh \"Your Project Name\" in the target, then scripts/check-methodology.sh.\n",
+    "stderr": "Warning: /tmp/v3-review-round4-7c14hen7/initialized-installed-source has no .git directory. Continuing with explicit file operations.\n"
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/initialized-installed-source",
+    "argv": [
+      "./scripts/init-project.sh",
+      "Review \"QA\" O'Brien \\ [Project Name] [id] / A&B Caf\u00e9"
+    ],
+    "exit": 0,
+    "stdout": "Initialized docs/project for Review \"QA\" O'Brien \\ [Project Name] [id] / A&B Caf\u00e9\nProject slug: review-qa-o-brien-project-name-id-a-b-caf\nNext document: docs/project/vision/vision.md\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/initialized-installed-source",
+    "argv": [
+      "./scripts/init-phase.sh",
+      "2",
+      "Review \"QA\" O'Brien \\ [Project Name] [id] / A&B Caf\u00e9"
+    ],
+    "exit": 0,
+    "stdout": "CREATE: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source/docs/project/build-plan/phases/phase-2-build-plan.md\nCREATE: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source/docs/project/build-plan/phases/phase-2-tactical-implementation-plan.md\nCREATE: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source/docs/project/build-plan/phases/phase-2-construction-directive.md\nCREATE: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source/docs/project/build-plan/phases/phase-2-build-prompt.md\nCREATE: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source/docs/project/build-plan/phases/phase-2-implementation-evidence.md\nCREATE: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source/docs/project/build-plan/phases/phase-2-code-review.md\nCREATE: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source/docs/project/build-plan/phases/phase-2-remediation.md\nCREATE: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source/docs/project/build-plan/phases/phase-2-learnings.md\nCREATE: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source/docs/project/testing/phase-2-test-uat-plan.md\nCREATE: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source/docs/project/as-built/phase-2-as-built-closeout.md\nCREATE: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source/docs/project/as-built/phase-2-value-review.md\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/initialized-installed-source",
+    "argv": [
+      "bash",
+      "-e",
+      "-c",
+      "tmpdir=\"$(python3 scripts/create-dry-run.py)\"\ncd \"$tmpdir\"\n./scripts/init-project.sh \"Example Product\"\n\nprintf \"REVIEW_FIXTURE=%s\\n\" \"$PWD\"\n"
+    ],
+    "exit": 0,
+    "stdout": "Initialized docs/project for Example Product\nProject slug: example-product\nNext document: docs/project/vision/vision.md\nREVIEW_FIXTURE=/tmp/v3-review-round4-7c14hen7/methodology-dry-run.1thp84_n\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/methodology-dry-run.1thp84_n",
+    "argv": [
+      "./scripts/gendev-doctor.sh"
+    ],
+    "exit": 0,
+    "stdout": "GenDev doctor\nRepository: /private/tmp/v3-review-round4-7c14hen7/methodology-dry-run.1thp84_n\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: isolated-local-exercise (tag none, commit 6ca2ad10f7eb)\nInstalled on: 2026-10-28T16:32:18.339105+00:00\nIntegrity: verified (167 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Example Product\nProject slug: example-product\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/methodology-dry-run.1thp84_n",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "scripts/devboard.py",
+      "validate"
+    ],
+    "exit": 0,
+    "stdout": "Development board validation passed: 0 tasks\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/methodology-dry-run.1thp84_n",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "scripts/devboard.py",
+      "next"
+    ],
+    "exit": 0,
+    "stdout": "NO_OPEN_TASK\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/methodology-dry-run.1thp84_n",
+    "argv": [
+      "./scripts/check-methodology.sh"
+    ],
+    "exit": 1,
+    "stdout": "ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected=\"enforcement.attested.required_attester is a named human\" actual=\"missing or unknown\" message=\"Manifest attested enforcement is missing required_attester field.\"\n\nMethodology check failed: 1 error(s), 0 warning(s).\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/initialized-installed-source",
+    "argv": [
+      "./scripts/gendev-doctor.sh"
+    ],
+    "exit": 0,
+    "stdout": "GenDev doctor\nRepository: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: /Users/chuckrussell/Dev/gendev/methodology-v3 (tag none, commit 6ca2ad10f7eb)\nInstalled on: 2026-10-28T16:32:17.615804+00:00\nIntegrity: verified (167 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Review \\\"QA\\\" O'Brien \\\\ [Project Name] [id] / A&B Caf\u00e9\nProject slug: review-qa-o-brien-project-name-id-a-b-caf\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/initialized-installed-source",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "scripts/create-dry-run.py"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Cannot create dry run: external source symlink: .agents/skills/private/SKILL.md\n"
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/initialized-installed-source",
+    "argv": [
+      "./scripts/gendev-doctor.sh"
+    ],
+    "exit": 0,
+    "stdout": "GenDev doctor\nRepository: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: /Users/chuckrussell/Dev/gendev/methodology-v3 (tag none, commit 6ca2ad10f7eb)\nInstalled on: 2026-10-28T16:32:17.615804+00:00\nIntegrity: verified (167 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Review \\\"QA\\\" O'Brien \\\\ [Project Name] [id] / A&B Caf\u00e9\nProject slug: review-qa-o-brien-project-name-id-a-b-caf\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/initialized-installed-source",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "scripts/create-dry-run.py"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Cannot create dry run: Distribution source missing: AGENTS.md\n"
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/initialized-installed-source",
+    "argv": [
+      "./scripts/gendev-doctor.sh"
+    ],
+    "exit": 0,
+    "stdout": "GenDev doctor\nRepository: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: /Users/chuckrussell/Dev/gendev/methodology-v3 (tag none, commit 6ca2ad10f7eb)\nInstalled on: 2026-10-28T16:32:17.615804+00:00\nIntegrity: verified (167 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Review \\\"QA\\\" O'Brien \\\\ [Project Name] [id] / A&B Caf\u00e9\nProject slug: review-qa-o-brien-project-name-id-a-b-caf\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/initialized-installed-source",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "scripts/create-dry-run.py"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Cannot create dry run: Distribution source missing: .agents/skills\n"
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/initialized-installed-source",
+    "argv": [
+      "./scripts/gendev-doctor.sh"
+    ],
+    "exit": 0,
+    "stdout": "GenDev doctor\nRepository: /private/tmp/v3-review-round4-7c14hen7/initialized-installed-source\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: /Users/chuckrussell/Dev/gendev/methodology-v3 (tag none, commit 6ca2ad10f7eb)\nInstalled on: 2026-10-28T16:32:17.615804+00:00\nIntegrity: verified (167 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Review \\\"QA\\\" O'Brien \\\\ [Project Name] [id] / A&B Caf\u00e9\nProject slug: review-qa-o-brien-project-name-id-a-b-caf\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/initialized-installed-source",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "scripts/create-dry-run.py"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Cannot create dry run: Distribution source missing: docs/policies\n"
+  },
+  {
+    "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+    "argv": [
+      "./scripts/install-methodology.sh",
+      "--force",
+      "/tmp/v3-review-round4-7c14hen7/initialized-installed-source"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Warning: /tmp/v3-review-round4-7c14hen7/initialized-installed-source has no .git directory. Continuing with explicit file operations.\nblocked: noncanonical manifest/record path: ../outside\n"
+  },
+  {
+    "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+    "argv": [
+      "./scripts/install-methodology.sh",
+      "--force",
+      "/tmp/v3-review-round4-7c14hen7/initialized-installed-source"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Warning: /tmp/v3-review-round4-7c14hen7/initialized-installed-source has no .git directory. Continuing with explicit file operations.\nblocked: invalid permission ownership mode: scripts/check-methodology.sh\n"
+  },
+  {
+    "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+    "argv": [
+      "./scripts/install-methodology.sh",
+      "--force",
+      "/tmp/v3-review-round4-7c14hen7/initialized-installed-source"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Warning: /tmp/v3-review-round4-7c14hen7/initialized-installed-source has no .git directory. Continuing with explicit file operations.\nblocked: malformed local amendment file map\n"
+  },
+  {
+    "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "/tmp/v3-review-round4-7c14hen7/signal_probe.py",
+      "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "/tmp/v3-review-round4-7c14hen7/signal-2-first",
+      "2",
+      "first"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "blocked: \n"
+  },
+  {
+    "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "/tmp/v3-review-round4-7c14hen7/signal_probe.py",
+      "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "/tmp/v3-review-round4-7c14hen7/signal-2-last",
+      "2",
+      "last"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "blocked: \n"
+  },
+  {
+    "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "/tmp/v3-review-round4-7c14hen7/signal_probe.py",
+      "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "/tmp/v3-review-round4-7c14hen7/signal-15-first",
+      "15",
+      "first"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "blocked: installation interrupted by signal 15\n"
+  },
+  {
+    "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "/tmp/v3-review-round4-7c14hen7/signal_probe.py",
+      "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "/tmp/v3-review-round4-7c14hen7/signal-15-last",
+      "15",
+      "last"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "blocked: installation interrupted by signal 15\n"
+  },
+  {
+    "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "/tmp/v3-review-round4-7c14hen7/signal_probe.py",
+      "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "/tmp/v3-review-round4-7c14hen7/signal-1-first",
+      "1",
+      "first"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "blocked: installation interrupted by signal 1\n"
+  },
+  {
+    "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+    "argv": [
+      "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+      "/tmp/v3-review-round4-7c14hen7/signal_probe.py",
+      "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "/tmp/v3-review-round4-7c14hen7/signal-1-last",
+      "1",
+      "last"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "blocked: installation interrupted by signal 1\n"
+  }
+]

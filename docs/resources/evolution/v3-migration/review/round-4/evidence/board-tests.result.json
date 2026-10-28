@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "uv",
+    "run",
+    "--frozen",
+    "--group",
+    "devboard",
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/devboard",
+    "-v"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "exit": 0,
+  "seconds": 2.7,
+  "log": "/tmp/v3-review-round4-7c14hen7/board-tests.log"
+}

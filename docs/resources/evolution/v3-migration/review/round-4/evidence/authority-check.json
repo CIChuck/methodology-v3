@@ -1,0 +1,58 @@
+{
+  "AGENTS.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/methodology/constitution/gendev.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/policies/repository-engineering-policy.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/policies/development-task-lifecycle.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/policies/independent-validation-policy.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/policies/dev-board-integration.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/resources/evolution/v3-migration/README.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/resources/evolution/v3-migration/review-scope.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/methodology/dev-skills/independent-code-validator.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/methodology/guides/subagent-coordination-protocol.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/resources/evolution/v3-migration/review/round-1/checkpoint-exception-approval.json": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/resources/evolution/v3-migration/review/round-2/remediation-directive.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/resources/evolution/v3-migration/review/round-3/human-disposition.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  },
+  "docs/resources/evolution/v3-migration/review/round-3/remediation-directive.md": {
+    "pin_match": true,
+    "working_matches_pin": true
+  }
+}

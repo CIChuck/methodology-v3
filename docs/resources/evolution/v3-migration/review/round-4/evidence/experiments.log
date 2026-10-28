@@ -1,0 +1,2 @@
+COMMAND: ['uv', 'run', '--frozen', '--group', 'devboard', 'python', '-B', 'scripts/exercise-v3-toolkit.py', '/tmp/v3-review-round4-7c14hen7/experiments.json']
+PASS: 4 isolated scenarios; evidence: /tmp/v3-review-round4-7c14hen7/experiments.json

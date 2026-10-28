@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "git",
+    "fsck",
+    "--full",
+    "--no-reflogs"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "exit": 0,
+  "seconds": 0.08,
+  "log": "/tmp/v3-review-round4-7c14hen7/fsck.log"
+}

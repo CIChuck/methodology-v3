@@ -1,0 +1,17 @@
+COMMAND: ['uv', 'run', '--frozen', '--group', 'devboard', 'python', '-B', '/tmp/v3-review-round4-7c14hen7/counterexamples.py']
+PASS complete documented fresh setup: frozen methodology source /tmp/v3-review-round4-7c14hen7/methodology-dry-run.6bp2qi34
+PASS complete documented fresh setup: initialized installed product with local state /tmp/v3-review-round4-7c14hen7/methodology-dry-run.1thp84_n
+OBSERVATION excluded external discovery link: 1 Cannot create dry run: external source symlink: .agents/skills/private/SKILL.md
+OBSERVATION excluded project-owned surface absent: AGENTS.md 1 Cannot create dry run: Distribution source missing: AGENTS.md
+OBSERVATION excluded project-owned surface absent: .agents/skills 1 Cannot create dry run: Distribution source missing: .agents/skills
+OBSERVATION excluded project-owned surface absent: docs/policies 1 Cannot create dry run: Distribution source missing: docs/policies
+PASS no writes on traversal ownership blocked: noncanonical manifest/record path: ../outside
+PASS no writes on boolean mode blocked: invalid permission ownership mode: scripts/check-methodology.sh
+PASS no writes on malformed amendment blocked: malformed local amendment file map
+PASS exact rollback after signal 2 first
+PASS exact rollback after signal 2 last
+PASS exact rollback after signal 15 first
+PASS exact rollback after signal 15 last
+PASS exact rollback after signal 1 first
+PASS exact rollback after signal 1 last
+COUNTEREXAMPLES COMPLETE

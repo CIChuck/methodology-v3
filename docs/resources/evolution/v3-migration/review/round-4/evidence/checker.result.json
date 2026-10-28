@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "./scripts/check-methodology.sh"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "exit": 0,
+  "seconds": 0.02,
+  "log": "/tmp/v3-review-round4-7c14hen7/checker.log"
+}

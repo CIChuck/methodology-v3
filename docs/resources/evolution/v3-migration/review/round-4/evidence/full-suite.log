@@ -1,0 +1,619 @@
+COMMAND: ['./scripts/test-methodology.sh', '--suite', 'all']
+
+=== Running suite: shell-syntax ===
+Command shell: /bin/bash
+shell-syntax | SH-001 | expected=0 actual=0 | shell syntax discovery finds shipped shell files
+  [PASS] shell syntax discovery finds shipped shell files
+shell-syntax | SH-002 | expected=0 actual=0 | bash -n docs/resources/examples/current/c1-csv-cleanup/tests/run.sh
+  [PASS] bash -n docs/resources/examples/current/c1-csv-cleanup/tests/run.sh
+shell-syntax | SH-003 | expected=0 actual=0 | bash -n scripts/backfill-methodology.sh
+  [PASS] bash -n scripts/backfill-methodology.sh
+shell-syntax | SH-004 | expected=0 actual=0 | bash -n scripts/check-doc-coherence.sh
+  [PASS] bash -n scripts/check-doc-coherence.sh
+shell-syntax | SH-005 | expected=0 actual=0 | bash -n scripts/check-methodology.sh
+  [PASS] bash -n scripts/check-methodology.sh
+shell-syntax | SH-006 | expected=0 actual=0 | bash -n scripts/close-gate.sh
+  [PASS] bash -n scripts/close-gate.sh
+shell-syntax | SH-007 | expected=0 actual=0 | bash -n scripts/close-phase.sh
+  [PASS] bash -n scripts/close-phase.sh
+shell-syntax | SH-008 | expected=0 actual=0 | bash -n scripts/gendev-doctor.sh
+  [PASS] bash -n scripts/gendev-doctor.sh
+shell-syntax | SH-009 | expected=0 actual=0 | bash -n scripts/init-phase.sh
+  [PASS] bash -n scripts/init-phase.sh
+shell-syntax | SH-010 | expected=0 actual=0 | bash -n scripts/init-project.sh
+  [PASS] bash -n scripts/init-project.sh
+shell-syntax | SH-011 | expected=0 actual=0 | bash -n scripts/install-hooks.sh
+  [PASS] bash -n scripts/install-hooks.sh
+shell-syntax | SH-012 | expected=0 actual=0 | bash -n scripts/install-methodology.sh
+  [PASS] bash -n scripts/install-methodology.sh
+shell-syntax | SH-013 | expected=0 actual=0 | bash -n scripts/lib/gendev-common.sh
+  [PASS] bash -n scripts/lib/gendev-common.sh
+shell-syntax | SH-014 | expected=0 actual=0 | bash -n scripts/lib/gendev-distribution.sh
+  [PASS] bash -n scripts/lib/gendev-distribution.sh
+shell-syntax | SH-015 | expected=0 actual=0 | bash -n scripts/lib/gendev-transition.sh
+  [PASS] bash -n scripts/lib/gendev-transition.sh
+shell-syntax | SH-016 | expected=0 actual=0 | bash -n scripts/lib/lifecycle-contract.sh
+  [PASS] bash -n scripts/lib/lifecycle-contract.sh
+shell-syntax | SH-017 | expected=0 actual=0 | bash -n scripts/methodology-guard.sh
+  [PASS] bash -n scripts/methodology-guard.sh
+shell-syntax | SH-018 | expected=0 actual=0 | bash -n scripts/methodology-metrics.sh
+  [PASS] bash -n scripts/methodology-metrics.sh
+shell-syntax | SH-019 | expected=0 actual=0 | bash -n scripts/new-artifact.sh
+  [PASS] bash -n scripts/new-artifact.sh
+shell-syntax | SH-020 | expected=0 actual=0 | bash -n scripts/pin-provenance.sh
+  [PASS] bash -n scripts/pin-provenance.sh
+shell-syntax | SH-021 | expected=0 actual=0 | bash -n scripts/project-state.sh
+  [PASS] bash -n scripts/project-state.sh
+shell-syntax | SH-022 | expected=0 actual=0 | bash -n scripts/record-deployment-approval.sh
+  [PASS] bash -n scripts/record-deployment-approval.sh
+shell-syntax | SH-023 | expected=0 actual=0 | bash -n scripts/record-phase-checkpoint.sh
+  [PASS] bash -n scripts/record-phase-checkpoint.sh
+shell-syntax | SH-024 | expected=0 actual=0 | bash -n scripts/test-checker.sh
+  [PASS] bash -n scripts/test-checker.sh
+shell-syntax | SH-025 | expected=0 actual=0 | bash -n scripts/test-methodology.sh
+  [PASS] bash -n scripts/test-methodology.sh
+shell-syntax | SH-026 | expected=0 actual=0 | bash -n tests/methodology/lib/runtime-write-fixtures.sh
+  [PASS] bash -n tests/methodology/lib/runtime-write-fixtures.sh
+shell-syntax | SH-027 | expected=0 actual=0 | bash -n tests/methodology/lib/test-helpers.sh
+  [PASS] bash -n tests/methodology/lib/test-helpers.sh
+shell-syntax | SH-028 | expected=0 actual=0 | bash -n tests/methodology/test-checker.sh
+  [PASS] bash -n tests/methodology/test-checker.sh
+shell-syntax | SH-029 | expected=0 actual=0 | bash -n tests/methodology/test-distribution-tools.sh
+  [PASS] bash -n tests/methodology/test-distribution-tools.sh
+shell-syntax | SH-030 | expected=0 actual=0 | bash -n tests/methodology/test-documentation-coherence.sh
+  [PASS] bash -n tests/methodology/test-documentation-coherence.sh
+shell-syntax | SH-031 | expected=0 actual=0 | bash -n tests/methodology/test-enforcement-tools.sh
+  [PASS] bash -n tests/methodology/test-enforcement-tools.sh
+shell-syntax | SH-032 | expected=0 actual=0 | bash -n tests/methodology/test-examples.sh
+  [PASS] bash -n tests/methodology/test-examples.sh
+shell-syntax | SH-033 | expected=0 actual=0 | bash -n tests/methodology/test-installed-context.sh
+  [PASS] bash -n tests/methodology/test-installed-context.sh
+shell-syntax | SH-034 | expected=0 actual=0 | bash -n tests/methodology/test-lifecycle-coherence.sh
+  [PASS] bash -n tests/methodology/test-lifecycle-coherence.sh
+shell-syntax | SH-035 | expected=0 actual=0 | bash -n tests/methodology/test-metrics.sh
+  [PASS] bash -n tests/methodology/test-metrics.sh
+shell-syntax | SH-036 | expected=0 actual=0 | bash -n tests/methodology/test-migration.sh
+  [PASS] bash -n tests/methodology/test-migration.sh
+shell-syntax | SH-037 | expected=0 actual=0 | bash -n tests/methodology/test-reference-graph.sh
+  [PASS] bash -n tests/methodology/test-reference-graph.sh
+shell-syntax | SH-038 | expected=0 actual=0 | bash -n tests/methodology/test-release-coherence.sh
+  [PASS] bash -n tests/methodology/test-release-coherence.sh
+shell-syntax | SH-039 | expected=0 actual=0 | bash -n tests/methodology/test-runtime-tools.sh
+  [PASS] bash -n tests/methodology/test-runtime-tools.sh
+shell-syntax | SH-040 | expected=0 actual=0 | bash -n tests/methodology/test-shell-syntax.sh
+  [PASS] bash -n tests/methodology/test-shell-syntax.sh
+
+Suite shell-syntax: 40 passed, 0 failed, 40 total
+
+=== Running suite: checker ===
+Command shell: /bin/bash
+PASS: completed checklists ([x]) are not treated as placeholders
+PASS: markdown links, images, reference labels, escaped brackets, and rule markers are not placeholders
+PASS: a strict-mode transition event is recognized and the checker exits clean (RC=0)
+PASS: approved summary without durable transition event still fails
+PASS: negative control: a real [bracketed] placeholder is still caught
+PASS: negative control: a real TBD is still caught
+PASS: negative control: manifest project/approval gate mismatch is blocking
+PASS: negative control: missing attested required_attester is blocking
+PASS: negative control: invalid approved-state date is blocking
+PASS: negative control: incomplete explicit legacy migration mode is blocked
+PASS: complete explicit legacy migration mode can pass with schema-2 events
+PASS: negative control: 1.0 strict mode requires schema-2 events
+PASS: Accepted tactical task declarations and traceability references pass
+PASS: negative control: undeclared tactical dependency is caught
+PASS: negative control: traceability reference to undeclared tactical task is caught
+PASS: negative control: phase checkpoint order requires prior phase exit
+PASS: negative control: G6 is blocked until all declared phases exit
+PASS: completed phase exit evidence permits G6 state
+PASS: C1 observable acceptance criteria with unwanted behavior pass
+PASS: negative control: C1 PRD without observable acceptance criteria is blocked
+PASS: negative control: C2/C3 PRD without EARS criteria is blocked
+PASS: negative control: PRD without unwanted-behavior criteria is blocked
+PASS: negative control: G3 verification specification without human approval is blocked
+PASS: negative control: G3 verification specification without G2 trace is blocked
+PASS: negative control: G3 without design-verification interrogation is blocked
+PASS: negative control: gate-log evidence item missing reviewed_digest is blocked
+PASS: negative control: complete_report_unchanged evidence with changed blob/digest is blocked
+PASS: negative control: accepted_authority_unchanged without originating_event_id is blocked
+PASS: negative control: G8 without aggregate review/deployment artifacts is blocked
+PASS: negative control: G8 Accepted deployment readiness without deployment approval is blocked
+PASS: negative control: G9 without terminal closeout event and value disposition is blocked
+
+31 passed, 0 failed
+
+=== Running suite: lifecycle ===
+Command shell: /bin/bash
+PASS: clean release validates in human format (RC=0)
+PASS: human clean diagnostic is explicit
+PASS: clean release validates in JSON format (RC=0)
+PASS: JSON clean status is machine-readable
+PASS: candidate mode rejects released registry posture (RC=1)
+PASS: candidate/release identity boundary reports LC-VERSION-001
+PASS: generated lifecycle contract is byte-deterministic
+PASS: generated lifecycle contract may be sourced twice idempotently
+PASS: generated lifecycle contract rejects a conflicting prior load
+PASS: generated lifecycle contract rejects an incomplete matching preseed
+PASS: generated lifecycle contract rejects a conflicting public constant
+PASS: approval string accessor projects delegation event type
+PASS: approval boolean accessor projects C3 delegation prohibition
+PASS: approval field accessor projects delegation evidence
+PASS: combined-gate accessor projects C3 prohibition
+PASS: event-evidence accessor projects Git revision requirement
+PASS: event serialization projects evidence field shape
+PASS: event serialization projects evidence item contract
+PASS: event serialization projects evidence minimum cardinality
+PASS: event serialization projects event-id value contract
+PASS: event serialization projects common correction fields
+PASS: event serialization projects value record fields
+PASS: event serialization projects nested value profile
+PASS: event serialization projects nested field override
+PASS: event serialization projects nested item reference
+PASS: event serialization projects keyed value-result item contract
+PASS: event serialization projects nonempty keyed value-result list
+PASS: event serialization projects nested list minimum cardinality
+PASS: event serialization projects nested revision value contract
+PASS: event serialization projects conditional profile selector
+PASS: event serialization maps boolean selector value to profile
+PASS: event serialization projects migration reference fields
+PASS: event-history accessor projects enforcement state
+PASS: reference-depth accessor projects exception requirement
+PASS: manifest accessor projects terminal null-next invariant
+PASS: deployment accessor projects non-deployment fields
+PASS: transition accessor projects deploy-only owner confirmation
+PASS: transition accessor enumerates deploy-only conditional profile
+PASS: checkpoint accessor projects not-due value status
+PASS: artifact accessor projects provenance requirement
+PASS: role accessor projects named-human role kind
+PASS: role accessor projects named-human approval capability
+PASS: value-review accessor projects not-due evidence contract
+PASS: value-review accessor projects complete result item contract
+PASS: event-binding accessor projects criterion source
+PASS: reference accessor projects supporting identity contract
+PASS: reference accessor projects global acyclicity rule
+PASS: scaling accessor projects C3 unwanted-behavior requirement
+PASS: approval accessor rejects wrong arity (RC=2)
+PASS: manifest accessor rejects wrong arity (RC=2)
+PASS: event serialization accessor rejects wrong arity (RC=2)
+PASS: transition accessor rejects wrong arity (RC=2)
+PASS: checkpoint accessor rejects wrong arity (RC=2)
+PASS: artifact accessor rejects wrong arity (RC=2)
+PASS: generated POSIX ERE constants pass real Bash positive and negative matches
+PASS: generator accepts a structurally valid projection mutation
+PASS: deployment mutation reaches generated path accessor
+PASS: manifest mutation reaches generated invariant accessor
+PASS: value-review mutation reaches generated disposition accessor
+PASS: generated 3-argument transition artifact lookup returns the registry value
+PASS: generated transition artifact lookup returns RC=1 for an unknown key
+PASS: generated transition artifact lookup returns RC=2 for wrong arity
+PASS: generated G2 scaling lookup preserves the C1 criterion alternative
+PASS: generator returns RC=2 for a syntactically valid malformed registry
+PASS: generator --check returns RC=2 when output is a directory
+PASS: generator --check returns RC=1 when output is missing
+PASS: duplicate gate rejects the mutation (RC=1)
+PASS: duplicate gate rejects the mutation reports LC-UNIQUE-001
+PASS: invalid transition cycle rejects the mutation (RC=1)
+PASS: invalid transition cycle rejects the mutation reports LC-TRANSITION-001
+PASS: extra skip transition rejects the mutation (RC=1)
+PASS: extra skip transition rejects the mutation reports LC-TRANSITION-001
+PASS: duplicate transition edge rejects the mutation (RC=1)
+PASS: duplicate transition edge rejects the mutation reports LC-TRANSITION-001
+PASS: syntactically valid malformed top-level shape rejects the mutation (RC=1)
+PASS: syntactically valid malformed top-level shape rejects the mutation reports LC-SCHEMA-001
+PASS: missing current template rejects the mutation (RC=1)
+PASS: missing current template rejects the mutation reports LC-REFERENCE-001
+PASS: missing lifecycle owner rejects the mutation (RC=1)
+PASS: missing lifecycle owner rejects the mutation reports LC-ARTIFACT-001
+PASS: incomplete D-012 event evidence contract rejects the mutation (RC=1)
+PASS: incomplete D-012 event evidence contract rejects the mutation reports LC-EVENT-001
+PASS: weakened D-018 controls rejects the mutation (RC=1)
+PASS: weakened D-018 controls rejects the mutation reports LC-APPROVAL-001
+PASS: removed enforcement ownership rejects the mutation (RC=1)
+PASS: removed enforcement ownership rejects the mutation reports LC-DELIVERY-001
+PASS: missing current enforcement suite rejects the mutation (RC=1)
+PASS: missing current enforcement suite rejects the mutation reports LC-DELIVERY-001
+PASS: weakened event-binding predicate rejects the mutation (RC=1)
+PASS: weakened event-binding predicate rejects the mutation reports LC-EVENT-001
+PASS: weakened cross-decision invariants rejects the mutation (RC=1)
+PASS: weakened cross-decision invariants rejects the mutation reports LC-GATE-BINDING-001
+PASS: misrouted decision mechanical binding rejects the mutation (RC=1)
+PASS: misrouted decision mechanical binding rejects the mutation reports LC-DECISION-001
+PASS: wrong G6/G7 binding rejects the mutation (RC=1)
+PASS: wrong G6/G7 binding rejects the mutation reports LC-GATE-BINDING-001
+PASS: lost retained final phase position rejects the mutation (RC=1)
+PASS: lost retained final phase position rejects the mutation reports LC-GATE-BINDING-001
+PASS: invalid nullable checkpoint field rejects the mutation (RC=1)
+PASS: invalid nullable checkpoint field rejects the mutation reports LC-CHECKPOINT-001
+PASS: missing project field rejects the template (RC=1)
+PASS: missing project field reports LC-TEMPLATE-PROJECT-001
+PASS: bad fixed authority path rejects the mutation (RC=1)
+PASS: bad fixed authority path rejects the mutation reports LC-FIXED-PATH-001
+PASS: competing supporting directory rejects the mutation (RC=1)
+PASS: competing supporting directory rejects the mutation reports LC-SUPPORTING-DIR-001
+PASS: stale release version target rejects the mutation (RC=1)
+PASS: stale release version target rejects the mutation reports LC-VERSION-001
+PASS: unresolvable baseline observation revision rejects the mutation (RC=1)
+PASS: unresolvable baseline observation revision rejects the mutation reports LC-VERSION-001
+PASS: release identity mismatch rejects the mutation (RC=1)
+PASS: release identity mismatch rejects the mutation reports LC-VERSION-001
+PASS: invalid candidate status vocabulary rejects the mutation (RC=1)
+PASS: invalid candidate status vocabulary rejects the mutation reports LC-VERSION-001
+PASS: fabricated pre-ratification metadata rejects the mutation (RC=1)
+PASS: fabricated pre-ratification metadata rejects the mutation reports LC-DECISION-001
+PASS: unowned planned delivery marker rejects the mutation (RC=1)
+PASS: unowned planned delivery marker rejects the mutation reports LC-DELIVERY-001
+PASS: unbound phase-exit evidence rejects the mutation (RC=1)
+PASS: unbound phase-exit evidence rejects the mutation reports LC-PHASE-EXIT-001
+PASS: malformed task grammar rejects the mutation (RC=1)
+PASS: malformed task grammar rejects the mutation reports LC-TASK-GRAMMAR-001
+PASS: non-POSIX runtime pattern rejects the mutation (RC=1)
+PASS: non-POSIX runtime pattern rejects the mutation reports LC-TASK-GRAMMAR-001
+PASS: weakened value disposition status mapping rejects the mutation (RC=1)
+PASS: weakened value disposition status mapping rejects the mutation reports LC-PHASE-EXIT-001
+PASS: weakened phase-exit delegation rejects the mutation (RC=1)
+PASS: weakened phase-exit delegation rejects the mutation reports LC-APPROVAL-001
+PASS: weakened deploy-only operational owner binding rejects the mutation (RC=1)
+PASS: weakened deploy-only operational owner binding rejects the mutation reports LC-EVENT-001
+PASS: coordinated gate semantic drift rejects the mutation (RC=1)
+PASS: coordinated gate semantic drift rejects the mutation reports LC-GATE-BINDING-001
+PASS: deleted phase-exit evidence class rejects the mutation (RC=1)
+PASS: deleted phase-exit evidence class rejects the mutation reports LC-PHASE-EXIT-001
+PASS: deleted post-loop artifact contract rejects the mutation (RC=1)
+PASS: deleted post-loop artifact contract rejects the mutation reports LC-GATE-BINDING-001
+PASS: misrouted transition command rejects the mutation (RC=1)
+PASS: misrouted transition command rejects the mutation reports LC-TRANSITION-001
+PASS: artifact ownership drift rejects the mutation (RC=1)
+PASS: artifact ownership drift rejects the mutation reports LC-ARTIFACT-001
+PASS: coordinated canonical path drift rejects the mutation (RC=1)
+PASS: coordinated canonical path drift rejects the mutation reports LC-FIXED-PATH-001
+PASS: weakened D-017 class rejects the mutation (RC=1)
+PASS: weakened D-017 class rejects the mutation reports LC-GATE-BINDING-001
+PASS: weakened D-014 scaffold contract rejects the mutation (RC=1)
+PASS: weakened D-014 scaffold contract rejects the mutation reports LC-GATE-BINDING-001
+PASS: weakened structured terminal invariant rejects the mutation (RC=1)
+PASS: weakened structured terminal invariant rejects the mutation reports LC-GATE-BINDING-001
+PASS: coordinated baseline observation replacement rejects the mutation (RC=1)
+PASS: coordinated baseline observation replacement rejects the mutation reports LC-VERSION-001
+PASS: unendorsed vocabulary extension rejects the mutation (RC=1)
+PASS: unendorsed vocabulary extension rejects the mutation reports LC-GATE-BINDING-001
+PASS: missing serialized event field shape rejects the mutation (RC=1)
+PASS: missing serialized event field shape rejects the mutation reports LC-EVENT-001
+PASS: invalid serialized nested item contract rejects the mutation (RC=1)
+PASS: invalid serialized nested item contract rejects the mutation reports LC-EVENT-001
+PASS: serialized evidence source drift rejects the mutation (RC=1)
+PASS: serialized evidence source drift rejects the mutation reports LC-EVENT-001
+PASS: serialized value source drift rejects the mutation (RC=1)
+PASS: serialized value source drift rejects the mutation reports LC-EVENT-001
+PASS: serialized migration source drift rejects the mutation (RC=1)
+PASS: serialized migration source drift rejects the mutation reports LC-EVENT-001
+PASS: zero serialized list minimum rejects the mutation (RC=1)
+PASS: zero serialized list minimum rejects the mutation reports LC-EVENT-001
+PASS: serialized selector mapping drift rejects the mutation (RC=1)
+PASS: serialized selector mapping drift rejects the mutation reports LC-EVENT-001
+PASS: serialized scalar value-contract drift rejects the mutation (RC=1)
+PASS: serialized scalar value-contract drift rejects the mutation reports LC-EVENT-001
+PASS: non-object phase-exit approval policy is rejected in human format (RC=1)
+PASS: non-object phase-exit approval policy human diagnostic reports LC-SCHEMA-001
+PASS: non-object phase-exit approval policy human diagnostic is traceback-free
+PASS: non-object phase-exit approval policy is rejected in JSON format (RC=1)
+PASS: non-object phase-exit approval policy JSON diagnostic reports LC-SCHEMA-001
+PASS: non-object phase-exit approval policy JSON diagnostic is machine-readable and traceback-free
+PASS: non-object deployment approval policy is rejected in human format (RC=1)
+PASS: non-object deployment approval policy human diagnostic reports LC-SCHEMA-001
+PASS: non-object deployment approval policy human diagnostic is traceback-free
+PASS: non-object deployment approval policy is rejected in JSON format (RC=1)
+PASS: non-object deployment approval policy JSON diagnostic reports LC-SCHEMA-001
+PASS: non-object deployment approval policy JSON diagnostic is machine-readable and traceback-free
+PASS: non-object project-closeout approval policy is rejected in human format (RC=1)
+PASS: non-object project-closeout approval policy human diagnostic reports LC-SCHEMA-001
+PASS: non-object project-closeout approval policy human diagnostic is traceback-free
+PASS: non-object project-closeout approval policy is rejected in JSON format (RC=1)
+PASS: non-object project-closeout approval policy JSON diagnostic reports LC-SCHEMA-001
+PASS: non-object project-closeout approval policy JSON diagnostic is machine-readable and traceback-free
+PASS: non-object deployment value prerequisite is rejected in human format (RC=1)
+PASS: non-object deployment value prerequisite human diagnostic reports LC-SCHEMA-001
+PASS: non-object deployment value prerequisite human diagnostic is traceback-free
+PASS: non-object deployment value prerequisite is rejected in JSON format (RC=1)
+PASS: non-object deployment value prerequisite JSON diagnostic reports LC-SCHEMA-001
+PASS: non-object deployment value prerequisite JSON diagnostic is machine-readable and traceback-free
+PASS: non-object scaling coverage policy is rejected in human format (RC=1)
+PASS: non-object scaling coverage policy human diagnostic reports LC-SCHEMA-001
+PASS: non-object scaling coverage policy human diagnostic is traceback-free
+PASS: non-object scaling coverage policy is rejected in JSON format (RC=1)
+PASS: non-object scaling coverage policy JSON diagnostic reports LC-SCHEMA-001
+PASS: non-object scaling coverage policy JSON diagnostic is machine-readable and traceback-free
+PASS: generated contract mismatch is rejected (RC=1)
+PASS: generated contract mismatch reports LC-GENERATED-001
+PASS: comment-spoofed API name is rejected (RC=1)
+PASS: comment-spoofed API name reports LC-GENERATED-001
+PASS: malformed registry JSON is a parser failure (RC=2)
+PASS: duplicate JSON object key is a validator parser failure (RC=2)
+PASS: duplicate JSON object key is a validator parser failure validator diagnostic is stable and traceback-free
+PASS: duplicate JSON object key is a validator parser failure is rejected by the generator in caller scope (RC=2)
+PASS: JSON NaN constant is a validator parser failure (RC=2)
+PASS: JSON NaN constant is a validator parser failure validator diagnostic is stable and traceback-free
+PASS: JSON NaN constant is a validator parser failure is rejected by the generator in caller scope (RC=2)
+PASS: JSON Infinity constant is a validator parser failure (RC=2)
+PASS: JSON Infinity constant is a validator parser failure validator diagnostic is stable and traceback-free
+PASS: JSON Infinity constant is a validator parser failure is rejected by the generator in caller scope (RC=2)
+PASS: non-UTF-8 registry is a parser failure (RC=2)
+PASS: non-UTF-8 JSON parser failure is machine-readable
+PASS: missing registry is an invocation/configuration failure (RC=2)
+PASS: JSON configuration failure is machine-readable
+PASS: release fixture generated its matching shell contract
+PASS: fully resolved release fixture validates cleanly (RC=0)
+PASS: globally present deploy-only field outside its profile is rejected (RC=1)
+PASS: profile-scoped event projection reports LC-EVENT-001
+PASS: globally present correction fields outside their section are rejected (RC=1)
+PASS: correction-scoped event projection reports LC-EVENT-001
+PASS: wrong-hierarchy manifest field is rejected (RC=1)
+PASS: wrong-hierarchy manifest field reports LC-PROJECT-TEMPLATE-001
+PASS: duplicate project.current_gate mapping is rejected (RC=1)
+PASS: duplicate project.current_gate mapping reports LC-PROJECT-TEMPLATE-001
+PASS: duplicate phase.loop_status mapping is rejected (RC=1)
+PASS: duplicate phase.loop_status mapping reports LC-PROJECT-TEMPLATE-001
+PASS: tab-indented manifest mapping is rejected (RC=1)
+PASS: tab-indented manifest mapping reports LC-PROJECT-TEMPLATE-001
+PASS: manifest indentation level skip is rejected (RC=1)
+PASS: manifest indentation level skip reports LC-PROJECT-TEMPLATE-001
+PASS: missing mandatory synchronization target is rejected (RC=1)
+PASS: missing mandatory synchronization target reports LC-VERSION-001
+PASS: release synchronization drift is rejected (RC=1)
+PASS: release synchronization drift reports LC-VERSION-001
+
+236 passed, 0 failed
+
+=== Running suite: runtime-tools ===
+Command shell: /bin/bash
+runtime-tools | RT-001 | expected=0 actual=0 | init-project displays usage
+  [PASS] init-project displays usage
+runtime-tools | RT-002 | expected=2 actual=2 | init-project rejects missing project name
+  [PASS] init-project rejects missing project name
+runtime-tools | RT-003 | expected=1 actual=1 | init-project rejects duplicate init when docs/project exists
+  [PASS] init-project rejects duplicate init when docs/project exists
+runtime-tools | RT-004 | expected=0 actual=0 | close-gate shows usage
+  [PASS] close-gate shows usage
+runtime-tools | RT-005 | expected=2 actual=2 | close-gate requires supported document gate
+  [PASS] close-gate requires supported document gate
+runtime-tools | RT-006 | expected=0 actual=0 | methodology-guard shows usage
+  [PASS] methodology-guard shows usage
+runtime-tools | RT-007 | expected=2 actual=2 | methodology-guard --range requires base/head
+  [PASS] methodology-guard --range requires base/head
+runtime-tools | RT-008 | expected=1 actual=1 | close-gate fails without initialized project
+  [PASS] close-gate fails without initialized project
+runtime-tools | RT-009 | expected=0 actual=0 | record-phase-checkpoint shows usage
+  [PASS] record-phase-checkpoint shows usage
+runtime-tools | RT-010 | expected=0 actual=0 | close-phase shows usage
+  [PASS] close-phase shows usage
+runtime-tools | RT-011 | expected=0 actual=0 | record-deployment-approval shows usage
+  [PASS] record-deployment-approval shows usage
+runtime-tools | RT-012 | expected=0 actual=0 | record-phase-checkpoint dry-run does not mutate gate
+  [PASS] record-phase-checkpoint dry-run does not mutate gate
+runtime-tools | RT-013 | expected=0 actual=0 | close-phase dry-run validates G5 command surface
+  [PASS] close-phase dry-run validates G5 command surface
+runtime-tools | RT-014 | expected=0 actual=0 | record-deployment-approval dry-run validates G8 command surface
+  [PASS] record-deployment-approval dry-run validates G8 command surface
+runtime-tools | RT-015 | expected=0 actual=0 | record-phase-checkpoint write-mode updates phase state and log
+  [PASS] record-phase-checkpoint write-mode updates phase state and log
+runtime-tools | RT-016 | expected=0 actual=0 | close-phase write-mode records phase exit
+  [PASS] close-phase write-mode records phase exit
+runtime-tools | RT-017 | expected=0 actual=0 | record-deployment-approval write-mode accepts readiness without changing gate
+  [PASS] record-deployment-approval write-mode accepts readiness without changing gate
+runtime-tools | RT-018 | expected=0 actual=0 | close-gate write-mode records G1 to G2 transition
+  [PASS] close-gate write-mode records G1 to G2 transition
+runtime-tools | RT-019 | expected=1 actual=1 | close-gate write-mode rejects missing reviewed revision
+  [PASS] close-gate write-mode rejects missing reviewed revision
+runtime-tools | RT-020 | expected=1 actual=1 | close-gate write-mode rejects reviewed blob mismatch
+  [PASS] close-gate write-mode rejects reviewed blob mismatch
+runtime-tools | RT-021 | expected=1 actual=1 | close-gate write-mode rejects already accepted source artifact
+  [PASS] close-gate write-mode rejects already accepted source artifact
+runtime-tools | RT-022 | expected=1 actual=1 | close-gate write-mode rolls back when postcheck fails
+  [PASS] close-gate write-mode rolls back when postcheck fails
+runtime-tools | RT-023 | expected=0 actual=0 | close-gate write-mode records terminal G8 to G9 closeout
+  [PASS] close-gate write-mode records terminal G8 to G9 closeout
+
+Suite runtime-tools: 23 passed, 0 failed, 23 total
+
+=== Running suite: distribution-tools ===
+Command shell: /bin/bash
+distribution-tools | DI-001 | expected=0 actual=0 | install-methodology usage text
+  [PASS] install-methodology usage text
+distribution-tools | DI-002 | expected=1 actual=1 | install-methodology fails when target is missing
+  [PASS] install-methodology fails when target is missing
+distribution-tools | DI-003 | expected=0 actual=0 | install-methodology preserves existing AGENTS.md by default
+  [PASS] install-methodology preserves existing AGENTS.md by default
+distribution-tools | DI-004 | expected=0 actual=0 | install-methodology copies runtime transition tools from manifest
+  [PASS] install-methodology copies runtime transition tools from manifest
+distribution-tools | DI-007 | expected=0 actual=0 | install-methodology installs resources only with explicit flag
+  [PASS] install-methodology installs resources only with explicit flag
+distribution-tools | DI-008 | expected=1 actual=1 | install-methodology blocks collisions before writing
+  [PASS] install-methodology blocks collisions before writing
+distribution-tools | DI-009 | expected=0 actual=0 | install-methodology force upgrades owned paths and preserves AGENTS
+  [PASS] install-methodology force upgrades owned paths and preserves AGENTS
+distribution-tools | DI-010 | expected=0 actual=0 | install-methodology renders protected branch into workflow
+  [PASS] install-methodology renders protected branch into workflow
+distribution-tools | DI-011 | expected=0 actual=0 | install-methodology dry-run makes no writes
+  [PASS] install-methodology dry-run makes no writes
+distribution-tools | DI-012 | expected=1 actual=1 | install-methodology rolls back simulated copy failure
+  [PASS] install-methodology rolls back simulated copy failure
+distribution-tools | DI-005 | expected=1 actual=1 | backfill requires vision/prd/architecture docs
+  [PASS] backfill requires vision/prd/architecture docs
+distribution-tools | DI-006 | expected=0 actual=0 | backfill generates a conformance report
+  [PASS] backfill generates a conformance report
+
+Suite distribution-tools: 12 passed, 0 failed, 12 total
+
+=== Running suite: enforcement-tools ===
+Command shell: /bin/bash
+enforcement-tools | EN-001 | expected=0 actual=0 | check-methodology reports uninitialized state
+  [PASS] check-methodology reports uninitialized state
+enforcement-tools | EN-002 | expected=0 actual=0 | check-methodology detects placeholder placeholders from checker
+  [PASS] check-methodology detects placeholder placeholders from checker
+enforcement-tools | EN-003 | expected=0 actual=0 | methodology-guard accepts --help
+  [PASS] methodology-guard accepts --help
+enforcement-tools | EN-004 | expected=0 actual=0 | methodology-guard runs in staged mode
+  [PASS] methodology-guard runs in staged mode
+enforcement-tools | EN-004A | expected=0 actual=0 | methodology-guard --staged ignores unstaged worktree drift
+  [PASS] methodology-guard --staged ignores unstaged worktree drift
+enforcement-tools | EN-014 | expected=0 actual=0 | install-hooks installs wrapper in repository path with spaces
+  [PASS] install-hooks installs wrapper in repository path with spaces
+enforcement-tools | EN-015 | expected=0 actual=0 | install-hooks preserves existing hook and runs it once
+  [PASS] install-hooks preserves existing hook and runs it once
+enforcement-tools | EN-016 | expected=7 actual=7 | install-hooks propagates preserved hook failure
+  [PASS] install-hooks propagates preserved hook failure
+enforcement-tools | EN-017 | expected=6 actual=6 | install-hooks propagates GenDev guard failure
+  [PASS] install-hooks propagates GenDev guard failure
+enforcement-tools | EN-018 | expected=0 actual=0 | install-hooks reinstall is idempotent and uninstall restores original
+  [PASS] install-hooks reinstall is idempotent and uninstall restores original
+enforcement-tools | EN-019 | expected=0 actual=0 | install-hooks resolves custom core.hooksPath
+  [PASS] install-hooks resolves custom core.hooksPath
+enforcement-tools | EN-020 | expected=1 actual=1 | install-hooks fails closed when guard is missing
+  [PASS] install-hooks fails closed when guard is missing
+enforcement-tools | EN-005 | expected=0 actual=0 | methodology-guard --range passes when a new exact gate transition is appended
+  [PASS] methodology-guard --range passes when a new exact gate transition is appended
+enforcement-tools | EN-006 | expected=1 actual=1 | methodology-guard --range fails when gate movement lacks exact new transition
+  [PASS] methodology-guard --range fails when gate movement lacks exact new transition
+enforcement-tools | EN-007 | expected=1 actual=1 | methodology-guard --range fails when prior gate-log event records are edited
+  [PASS] methodology-guard --range fails when prior gate-log event records are edited
+enforcement-tools | EN-008 | expected=1 actual=1 | methodology-guard --range fails when prior gate-log event records are removed
+  [PASS] methodology-guard --range fails when prior gate-log event records are removed
+enforcement-tools | EN-009 | expected=0 actual=0 | methodology-guard --range accepts declared non-adjacent C1/C2 combined transition with required combined event fields
+  [PASS] methodology-guard --range accepts declared non-adjacent C1/C2 combined transition with required combined event fields
+enforcement-tools | EN-010 | expected=1 actual=1 | methodology-guard --range rejects non-adjacent transition lacking combined_gates declaration
+  [PASS] methodology-guard --range rejects non-adjacent transition lacking combined_gates declaration
+enforcement-tools | EN-013 | expected=0 actual=0 | methodology-guard --range ignores unstaged drift from the working tree
+  [PASS] methodology-guard --range ignores unstaged drift from the working tree
+enforcement-tools | EN-011 | expected=1 actual=1 | methodology-guard --range rejects combined movement declared for C3 projects
+  [PASS] methodology-guard --range rejects combined movement declared for C3 projects
+enforcement-tools | EN-012 | expected=1 actual=1 | methodology-guard --range rejects combined movement when combined transition event fields are missing
+  [PASS] methodology-guard --range rejects combined movement when combined transition event fields are missing
+enforcement-tools | ET-PIN-001 | expected=0 actual=0 | pin-provenance detects staleness and repins to checker-identical hash
+  [PASS] pin-provenance detects staleness and repins to checker-identical hash
+
+Suite enforcement-tools: 22 passed, 0 failed, 22 total
+
+=== Running suite: reference-graph ===
+Command shell: /bin/bash
+reference-graph | REF-001 | expected=0 actual=0 | release lifecycle validates the reference graph contract
+  [PASS] release lifecycle validates the reference graph contract
+reference-graph | REF-002 | expected=0 actual=0 | reference graph declares canonical and supporting target kinds
+  [PASS] reference graph declares canonical and supporting target kinds
+reference-graph | REF-003 | expected=0 actual=0 | retired supporting directory is not scaffolded
+  [PASS] retired supporting directory is not scaffolded
+
+Suite reference-graph: 3 passed, 0 failed, 3 total
+
+=== Running suite: documentation-coherence ===
+Command shell: /bin/bash
+documentation-coherence | DOC-001 | expected=0 actual=0 | methodology checker accepts active documentation
+  [PASS] methodology checker accepts active documentation
+documentation-coherence | DOC-002 | expected=1 actual=1 | active practitioner docs contain no raw refinement notes
+  [PASS] active practitioner docs contain no raw refinement notes
+documentation-coherence | DOC-003 | expected=1 actual=1 | active docs contain no retired phase roadmap references
+  [PASS] active docs contain no retired phase roadmap references
+documentation-coherence | DOC-004 | expected=1 actual=1 | active docs contain no canonical placeholder document paths
+  [PASS] active docs contain no canonical placeholder document paths
+documentation-coherence | DOC-005 | expected=0 actual=0 | current examples stay non-authoritative and strict
+  [PASS] current examples stay non-authoritative and strict
+documentation-coherence | DOC-006 | expected=0 actual=0 | active documentation passes release identity and preflight coherence
+  [PASS] active documentation passes release identity and preflight coherence
+documentation-coherence | DOC-007 | expected=3 actual=3 | doc-coherence checker fails loudly when ripgrep is missing
+  [PASS] doc-coherence checker fails loudly when ripgrep is missing
+
+Suite documentation-coherence: 7 passed, 0 failed, 7 total
+
+=== Running suite: metrics ===
+Command shell: /bin/bash
+metrics | ME-001 | expected=0 actual=0 | metrics reports uninitialized project
+  [PASS] metrics reports uninitialized project
+metrics | ME-002 | expected=0 actual=0 | metrics tolerates malformed timing data
+  [PASS] metrics tolerates malformed timing data
+metrics | ME-003 | expected=0 actual=0 | metrics reports gate transition metrics
+  [PASS] metrics reports gate transition metrics
+
+Suite metrics: 3 passed, 0 failed, 3 total
+
+=== Running suite: examples ===
+Command shell: /bin/bash
+examples | EX-001 | expected=0 actual=0 | current and legacy example directories exist
+  [PASS] current and legacy example directories exist
+examples | EX-002 | expected=0 actual=0 | C1 current example positive and negative CLI checks pass
+  [PASS] C1 current example positive and negative CLI checks pass
+examples | EX-003 | expected=0 actual=0 | current examples expose metadata and no phase-loop exemption language
+  [PASS] current examples expose metadata and no phase-loop exemption language
+examples | EX-004 | expected=0 actual=0 | legacy examples are explicitly non-authoritative
+  [PASS] legacy examples are explicitly non-authoritative
+examples | EX-005 | expected=0 actual=0 | C2 current example does not claim real implementation evidence
+  [PASS] C2 current example does not claim real implementation evidence
+examples | EX-006 | expected=0 actual=0 | C1 current example contains full current lifecycle evidence trail
+  [PASS] C1 current example contains full current lifecycle evidence trail
+examples | EX-007 | expected=0 actual=0 | C2 current example contains separate authority and planning stop
+  [PASS] C2 current example contains separate authority and planning stop
+
+Suite examples: 7 passed, 0 failed, 7 total
+
+=== Running suite: migration ===
+Command shell: /bin/bash
+migration | MI-001 | expected=1 actual=1 | backfill requires G1-G3 docs
+  [PASS] backfill requires G1-G3 docs
+migration | MI-002 | expected=0 actual=0 | backfill writes conformance report without replacing project authority
+  [PASS] backfill writes conformance report without replacing project authority
+migration | MI-003 | expected=1 actual=1 | backfill refuses existing docs/methodology without force
+  [PASS] backfill refuses existing docs/methodology without force
+migration | MI-004 | expected=0 actual=0 | backfill accepts explicit vision-only import
+  [PASS] backfill accepts explicit vision-only import
+migration | MI-005 | expected=1 actual=1 | backfill missing declared source aborts before mutation
+  [PASS] backfill missing declared source aborts before mutation
+migration | MI-006 | expected=1 actual=1 | backfill refuses to overwrite imported authority before install
+  [PASS] backfill refuses to overwrite imported authority before install
+
+Suite migration: 6 passed, 0 failed, 6 total
+
+=== Running suite: release-coherence ===
+Command shell: /bin/bash
+release-coherence | RC-001 | expected=0 actual=0 | lifecycle registry and active docs are coherent
+  [PASS] lifecycle registry and active docs are coherent
+release-coherence | RC-001A | expected=0 actual=0 | active documentation release identity is coherent
+  [PASS] active documentation release identity is coherent
+release-coherence | RC-002 | expected=1 actual=1 | active docs contain no raw refinement notes
+  [PASS] active docs contain no raw refinement notes
+release-coherence | RC-003 | expected=1 actual=1 | active docs contain no retired phase roadmap references
+  [PASS] active docs contain no retired phase roadmap references
+release-coherence | RC-004 | expected=1 actual=1 | active docs contain no canonical placeholder document paths
+  [PASS] active docs contain no canonical placeholder document paths
+release-coherence | RC-005 | expected=0 actual=0 | distribution manifest names required runtime assets
+  [PASS] distribution manifest names required runtime assets
+release-coherence | RC-006 | expected=0 actual=0 | current examples expose strict metadata and legacy boundary
+  [PASS] current examples expose strict metadata and legacy boundary
+release-coherence | RC-007 | expected=0 actual=0 | release index states a truthful publication state for 1.0.1
+  [PASS] release index states a truthful publication state for 1.0.1
+release-coherence | RC-008 | expected=0 actual=0 | historical 0.5 independent review records a non-pending result
+  [PASS] historical 0.5 independent review records a non-pending result
+release-coherence | RC-010 | expected=0 actual=0 | 1.0.1 independent review artifact records a non-pending result
+  [PASS] 1.0.1 independent review artifact records a non-pending result
+release-coherence | RC-009 | expected=0 actual=0 | closeout ledger records all findings and WP-11 tasks
+  [PASS] closeout ledger records all findings and WP-11 tasks
+
+Suite release-coherence: 11 passed, 0 failed, 11 total
+
+=== Running suite: installed-context ===
+Command shell: /bin/bash
+installed-context | IC-001 | expected=0 actual=0 | install writes the installation record with provenance and digests
+  [PASS] install writes the installation record with provenance and digests
+installed-context | IC-002 | expected=0 actual=0 | doctor reports installed context with verified integrity
+  [PASS] doctor reports installed context with verified integrity
+installed-context | IC-003 | expected=5 actual=5 | doctor exits 5 and names the file when an installed file is tampered
+  [PASS] doctor exits 5 and names the file when an installed file is tampered
+installed-context | IC-004 | expected=4 actual=4 | authority suites refuse installed context with exit 4
+  [PASS] authority suites refuse installed context with exit 4
+installed-context | IC-005 | expected=0 actual=0 | authority-only checkers are not shipped
+  [PASS] authority-only checkers are not shipped
+installed-context | IC-006 | expected=0 actual=0 | product workflow is rendered, not the authority workflow
+  [PASS] product workflow is rendered, not the authority workflow
+installed-context | IC-007 | expected=0 actual=0 | initialized project closes G1 and the product contract holds
+  [PASS] initialized project closes G1 and the product contract holds
+installed-context | IC-008 | expected=0 actual=0 | no suite residue remains in the product repository
+  [PASS] no suite residue remains in the product repository
+
+Suite installed-context: 8 passed, 0 failed, 8 total
+
+All selected suites completed successfully.

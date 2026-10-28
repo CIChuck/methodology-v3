@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "./scripts/gendev-doctor.sh"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "exit": 0,
+  "seconds": 0.06,
+  "log": "/tmp/v3-review-round4-7c14hen7/doctor.log"
+}

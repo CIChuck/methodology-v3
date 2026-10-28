@@ -1,0 +1,15 @@
+{
+  "outcome": "CHANGES_REQUESTED",
+  "candidate": "6ca2ad10f7eb0c71b9a316d458a20ad667c21c4b",
+  "report_sha256": "c74fd1802f3b6f119a1c058a502d5692d94f3c032781a6f78bc49173ecd795a8",
+  "finding": "VAL-005 residual",
+  "severity": "medium, mandatory",
+  "remediation_cycles_used": 3,
+  "further_remediation": "not authorized; human disposition required",
+  "task_state": "started",
+  "task_condition": "blocked",
+  "human_acceptance": "pending",
+  "step_8": "not performed",
+  "external_effects": "none; everything local",
+  "recorded_at": "2026-10-28T16:40:09.366279+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "uv",
+    "run",
+    "--frozen",
+    "--group",
+    "devboard",
+    "python",
+    "scripts/devboard.py",
+    "validate"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "exit": 0,
+  "seconds": 0.05,
+  "log": "/tmp/v3-review-round4-7c14hen7/board-validate.log"
+}

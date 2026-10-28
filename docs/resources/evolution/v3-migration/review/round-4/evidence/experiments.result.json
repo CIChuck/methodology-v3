@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "uv",
+    "run",
+    "--frozen",
+    "--group",
+    "devboard",
+    "python",
+    "-B",
+    "scripts/exercise-v3-toolkit.py",
+    "/tmp/v3-review-round4-7c14hen7/experiments.json"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "exit": 0,
+  "seconds": 3.02,
+  "log": "/tmp/v3-review-round4-7c14hen7/experiments.log"
+}

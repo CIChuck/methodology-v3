@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "python3",
+    "/tmp/v3-review-round4-7c14hen7/baseline_and_diff.py"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "exit": 0,
+  "seconds": 1.11,
+  "log": "/tmp/v3-review-round4-7c14hen7/baseline-and-diff.log"
+}

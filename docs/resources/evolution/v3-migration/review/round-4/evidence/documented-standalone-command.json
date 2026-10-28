@@ -1,0 +1,34 @@
+[
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/methodology-dry-run.1thp84_n",
+    "argv": [
+      "uv",
+      "run",
+      "--no-project",
+      "--with-requirements",
+      "requirements-devboard.txt",
+      "python",
+      "scripts/devboard.py",
+      "validate"
+    ],
+    "exit": 0,
+    "stdout": "Development board validation passed: 0 tasks\n",
+    "stderr": ""
+  },
+  {
+    "cwd": "/tmp/v3-review-round4-7c14hen7/methodology-dry-run.1thp84_n",
+    "argv": [
+      "uv",
+      "run",
+      "--no-project",
+      "--with-requirements",
+      "requirements-devboard.txt",
+      "python",
+      "scripts/devboard.py",
+      "next"
+    ],
+    "exit": 0,
+    "stdout": "NO_OPEN_TASK\n",
+    "stderr": ""
+  }
+]

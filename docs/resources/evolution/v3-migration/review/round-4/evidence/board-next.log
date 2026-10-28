@@ -1,0 +1,2 @@
+COMMAND: ['uv', 'run', '--frozen', '--group', 'devboard', 'python', 'scripts/devboard.py', 'next']
+IN_PROGRESS v3-baseline-migration: VAL-005 bounded remediation and one fresh full independent review; human acceptance pending

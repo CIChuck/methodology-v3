@@ -1,0 +1,5 @@
+COMMAND: ['./scripts/methodology-guard.sh', '--range', '54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a', '6ca2ad10f7eb0c71b9a316d458a20ad667c21c4b']
+Preparing worktree (detached HEAD 6ca2ad1)
+INFO: docs/project is not initialized. Run: ./scripts/init-project.sh "Project Name"
+
+Methodology check passed: 0 warning(s).

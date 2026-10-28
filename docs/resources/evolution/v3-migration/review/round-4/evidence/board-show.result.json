@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "uv",
+    "run",
+    "--frozen",
+    "--group",
+    "devboard",
+    "python",
+    "scripts/devboard.py",
+    "show",
+    "v3-baseline-migration"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "exit": 0,
+  "seconds": 0.06,
+  "log": "/tmp/v3-review-round4-7c14hen7/board-show.log"
+}

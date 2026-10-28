@@ -1,0 +1,23 @@
+COMMAND: ['uv', 'run', '--frozen', '--group', 'devboard', 'python', '-B', '-m', 'unittest', 'discover', '-s', 'tests/devboard', '-v']
+test_accepted_archive_history_passes_schema_and_runtime (test_devboard.DevelopmentBoardTests.test_accepted_archive_history_passes_schema_and_runtime) ... ok
+test_agent_cannot_accept_completed_work (test_devboard.DevelopmentBoardTests.test_agent_cannot_accept_completed_work) ... ok
+test_agent_cannot_approve (test_devboard.DevelopmentBoardTests.test_agent_cannot_approve) ... ok
+test_archive_and_planning_history_cannot_cross_states (test_devboard.DevelopmentBoardTests.test_archive_and_planning_history_cannot_cross_states) ... ok
+test_archive_history_tampering_is_rejected (test_devboard.DevelopmentBoardTests.test_archive_history_tampering_is_rejected) ... ok
+test_board_approval_preserves_gendev_state (test_devboard.DevelopmentBoardTests.test_board_approval_preserves_gendev_state) ... ok
+test_completed_planning_history_passes_schema_and_runtime (test_devboard.DevelopmentBoardTests.test_completed_planning_history_passes_schema_and_runtime) ... ok
+test_completion_requires_evidence (test_devboard.DevelopmentBoardTests.test_completion_requires_evidence) ... ok
+test_delivery_cannot_move_backward (test_devboard.DevelopmentBoardTests.test_delivery_cannot_move_backward) ... ok
+test_empty_board_and_compatibility_entrypoint (test_devboard.DevelopmentBoardTests.test_empty_board_and_compatibility_entrypoint) ... ok
+test_merge_record_requires_evidence (test_devboard.DevelopmentBoardTests.test_merge_record_requires_evidence) ... ok
+test_queued_work_cannot_skip_to_started (test_devboard.DevelopmentBoardTests.test_queued_work_cannot_skip_to_started) ... ok
+test_schema_disagreement_is_rejected (test_devboard.DevelopmentBoardTests.test_schema_disagreement_is_rejected) ... ok
+test_stale_dashboard_check_is_read_only (test_devboard.DevelopmentBoardTests.test_stale_dashboard_check_is_read_only) ... ok
+test_start_requires_a_branch (test_devboard.DevelopmentBoardTests.test_start_requires_a_branch) ... ok
+test_started_task_requires_accepted_dependencies (test_devboard.DevelopmentBoardTests.test_started_task_requires_accepted_dependencies) ... ok
+test_unknown_dependency_is_rejected (test_devboard.DevelopmentBoardTests.test_unknown_dependency_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 2.536s
+
+OK
