@@ -1,0 +1,238 @@
+PASS: clean release validates in human format (RC=0)
+PASS: human clean diagnostic is explicit
+PASS: clean release validates in JSON format (RC=0)
+PASS: JSON clean status is machine-readable
+PASS: candidate mode rejects released registry posture (RC=1)
+PASS: candidate/release identity boundary reports LC-VERSION-001
+PASS: generated lifecycle contract is byte-deterministic
+PASS: generated lifecycle contract may be sourced twice idempotently
+PASS: generated lifecycle contract rejects a conflicting prior load
+PASS: generated lifecycle contract rejects an incomplete matching preseed
+PASS: generated lifecycle contract rejects a conflicting public constant
+PASS: approval string accessor projects delegation event type
+PASS: approval boolean accessor projects C3 delegation prohibition
+PASS: approval field accessor projects delegation evidence
+PASS: combined-gate accessor projects C3 prohibition
+PASS: event-evidence accessor projects Git revision requirement
+PASS: event serialization projects evidence field shape
+PASS: event serialization projects evidence item contract
+PASS: event serialization projects evidence minimum cardinality
+PASS: event serialization projects event-id value contract
+PASS: event serialization projects common correction fields
+PASS: event serialization projects value record fields
+PASS: event serialization projects nested value profile
+PASS: event serialization projects nested field override
+PASS: event serialization projects nested item reference
+PASS: event serialization projects keyed value-result item contract
+PASS: event serialization projects nonempty keyed value-result list
+PASS: event serialization projects nested list minimum cardinality
+PASS: event serialization projects nested revision value contract
+PASS: event serialization projects conditional profile selector
+PASS: event serialization maps boolean selector value to profile
+PASS: event serialization projects migration reference fields
+PASS: event-history accessor projects enforcement state
+PASS: reference-depth accessor projects exception requirement
+PASS: manifest accessor projects terminal null-next invariant
+PASS: deployment accessor projects non-deployment fields
+PASS: transition accessor projects deploy-only owner confirmation
+PASS: transition accessor enumerates deploy-only conditional profile
+PASS: checkpoint accessor projects not-due value status
+PASS: artifact accessor projects provenance requirement
+PASS: role accessor projects named-human role kind
+PASS: role accessor projects named-human approval capability
+PASS: value-review accessor projects not-due evidence contract
+PASS: value-review accessor projects complete result item contract
+PASS: event-binding accessor projects criterion source
+PASS: reference accessor projects supporting identity contract
+PASS: reference accessor projects global acyclicity rule
+PASS: scaling accessor projects C3 unwanted-behavior requirement
+PASS: approval accessor rejects wrong arity (RC=2)
+PASS: manifest accessor rejects wrong arity (RC=2)
+PASS: event serialization accessor rejects wrong arity (RC=2)
+PASS: transition accessor rejects wrong arity (RC=2)
+PASS: checkpoint accessor rejects wrong arity (RC=2)
+PASS: artifact accessor rejects wrong arity (RC=2)
+PASS: generated POSIX ERE constants pass real Bash positive and negative matches
+PASS: generator accepts a structurally valid projection mutation
+PASS: deployment mutation reaches generated path accessor
+PASS: manifest mutation reaches generated invariant accessor
+PASS: value-review mutation reaches generated disposition accessor
+PASS: generated 3-argument transition artifact lookup returns the registry value
+PASS: generated transition artifact lookup returns RC=1 for an unknown key
+PASS: generated transition artifact lookup returns RC=2 for wrong arity
+PASS: generated G2 scaling lookup preserves the C1 criterion alternative
+PASS: generator returns RC=2 for a syntactically valid malformed registry
+PASS: generator --check returns RC=2 when output is a directory
+PASS: generator --check returns RC=1 when output is missing
+PASS: duplicate gate rejects the mutation (RC=1)
+PASS: duplicate gate rejects the mutation reports LC-UNIQUE-001
+PASS: invalid transition cycle rejects the mutation (RC=1)
+PASS: invalid transition cycle rejects the mutation reports LC-TRANSITION-001
+PASS: extra skip transition rejects the mutation (RC=1)
+PASS: extra skip transition rejects the mutation reports LC-TRANSITION-001
+PASS: duplicate transition edge rejects the mutation (RC=1)
+PASS: duplicate transition edge rejects the mutation reports LC-TRANSITION-001
+PASS: syntactically valid malformed top-level shape rejects the mutation (RC=1)
+PASS: syntactically valid malformed top-level shape rejects the mutation reports LC-SCHEMA-001
+PASS: missing current template rejects the mutation (RC=1)
+PASS: missing current template rejects the mutation reports LC-REFERENCE-001
+PASS: missing lifecycle owner rejects the mutation (RC=1)
+PASS: missing lifecycle owner rejects the mutation reports LC-ARTIFACT-001
+PASS: incomplete D-012 event evidence contract rejects the mutation (RC=1)
+PASS: incomplete D-012 event evidence contract rejects the mutation reports LC-EVENT-001
+PASS: weakened D-018 controls rejects the mutation (RC=1)
+PASS: weakened D-018 controls rejects the mutation reports LC-APPROVAL-001
+PASS: removed enforcement ownership rejects the mutation (RC=1)
+PASS: removed enforcement ownership rejects the mutation reports LC-DELIVERY-001
+PASS: missing current enforcement suite rejects the mutation (RC=1)
+PASS: missing current enforcement suite rejects the mutation reports LC-DELIVERY-001
+PASS: weakened event-binding predicate rejects the mutation (RC=1)
+PASS: weakened event-binding predicate rejects the mutation reports LC-EVENT-001
+PASS: weakened cross-decision invariants rejects the mutation (RC=1)
+PASS: weakened cross-decision invariants rejects the mutation reports LC-GATE-BINDING-001
+PASS: misrouted decision mechanical binding rejects the mutation (RC=1)
+PASS: misrouted decision mechanical binding rejects the mutation reports LC-DECISION-001
+PASS: wrong G6/G7 binding rejects the mutation (RC=1)
+PASS: wrong G6/G7 binding rejects the mutation reports LC-GATE-BINDING-001
+PASS: lost retained final phase position rejects the mutation (RC=1)
+PASS: lost retained final phase position rejects the mutation reports LC-GATE-BINDING-001
+PASS: invalid nullable checkpoint field rejects the mutation (RC=1)
+PASS: invalid nullable checkpoint field rejects the mutation reports LC-CHECKPOINT-001
+PASS: missing project field rejects the template (RC=1)
+PASS: missing project field reports LC-TEMPLATE-PROJECT-001
+PASS: bad fixed authority path rejects the mutation (RC=1)
+PASS: bad fixed authority path rejects the mutation reports LC-FIXED-PATH-001
+PASS: competing supporting directory rejects the mutation (RC=1)
+PASS: competing supporting directory rejects the mutation reports LC-SUPPORTING-DIR-001
+PASS: stale release version target rejects the mutation (RC=1)
+PASS: stale release version target rejects the mutation reports LC-VERSION-001
+PASS: unresolvable baseline observation revision rejects the mutation (RC=1)
+PASS: unresolvable baseline observation revision rejects the mutation reports LC-VERSION-001
+PASS: release identity mismatch rejects the mutation (RC=1)
+PASS: release identity mismatch rejects the mutation reports LC-VERSION-001
+PASS: invalid candidate status vocabulary rejects the mutation (RC=1)
+PASS: invalid candidate status vocabulary rejects the mutation reports LC-VERSION-001
+PASS: fabricated pre-ratification metadata rejects the mutation (RC=1)
+PASS: fabricated pre-ratification metadata rejects the mutation reports LC-DECISION-001
+PASS: unowned planned delivery marker rejects the mutation (RC=1)
+PASS: unowned planned delivery marker rejects the mutation reports LC-DELIVERY-001
+PASS: unbound phase-exit evidence rejects the mutation (RC=1)
+PASS: unbound phase-exit evidence rejects the mutation reports LC-PHASE-EXIT-001
+PASS: malformed task grammar rejects the mutation (RC=1)
+PASS: malformed task grammar rejects the mutation reports LC-TASK-GRAMMAR-001
+PASS: non-POSIX runtime pattern rejects the mutation (RC=1)
+PASS: non-POSIX runtime pattern rejects the mutation reports LC-TASK-GRAMMAR-001
+PASS: weakened value disposition status mapping rejects the mutation (RC=1)
+PASS: weakened value disposition status mapping rejects the mutation reports LC-PHASE-EXIT-001
+PASS: weakened phase-exit delegation rejects the mutation (RC=1)
+PASS: weakened phase-exit delegation rejects the mutation reports LC-APPROVAL-001
+PASS: weakened deploy-only operational owner binding rejects the mutation (RC=1)
+PASS: weakened deploy-only operational owner binding rejects the mutation reports LC-EVENT-001
+PASS: coordinated gate semantic drift rejects the mutation (RC=1)
+PASS: coordinated gate semantic drift rejects the mutation reports LC-GATE-BINDING-001
+PASS: deleted phase-exit evidence class rejects the mutation (RC=1)
+PASS: deleted phase-exit evidence class rejects the mutation reports LC-PHASE-EXIT-001
+PASS: deleted post-loop artifact contract rejects the mutation (RC=1)
+PASS: deleted post-loop artifact contract rejects the mutation reports LC-GATE-BINDING-001
+PASS: misrouted transition command rejects the mutation (RC=1)
+PASS: misrouted transition command rejects the mutation reports LC-TRANSITION-001
+PASS: artifact ownership drift rejects the mutation (RC=1)
+PASS: artifact ownership drift rejects the mutation reports LC-ARTIFACT-001
+PASS: coordinated canonical path drift rejects the mutation (RC=1)
+PASS: coordinated canonical path drift rejects the mutation reports LC-FIXED-PATH-001
+PASS: weakened D-017 class rejects the mutation (RC=1)
+PASS: weakened D-017 class rejects the mutation reports LC-GATE-BINDING-001
+PASS: weakened D-014 scaffold contract rejects the mutation (RC=1)
+PASS: weakened D-014 scaffold contract rejects the mutation reports LC-GATE-BINDING-001
+PASS: weakened structured terminal invariant rejects the mutation (RC=1)
+PASS: weakened structured terminal invariant rejects the mutation reports LC-GATE-BINDING-001
+PASS: coordinated baseline observation replacement rejects the mutation (RC=1)
+PASS: coordinated baseline observation replacement rejects the mutation reports LC-VERSION-001
+PASS: unendorsed vocabulary extension rejects the mutation (RC=1)
+PASS: unendorsed vocabulary extension rejects the mutation reports LC-GATE-BINDING-001
+PASS: missing serialized event field shape rejects the mutation (RC=1)
+PASS: missing serialized event field shape rejects the mutation reports LC-EVENT-001
+PASS: invalid serialized nested item contract rejects the mutation (RC=1)
+PASS: invalid serialized nested item contract rejects the mutation reports LC-EVENT-001
+PASS: serialized evidence source drift rejects the mutation (RC=1)
+PASS: serialized evidence source drift rejects the mutation reports LC-EVENT-001
+PASS: serialized value source drift rejects the mutation (RC=1)
+PASS: serialized value source drift rejects the mutation reports LC-EVENT-001
+PASS: serialized migration source drift rejects the mutation (RC=1)
+PASS: serialized migration source drift rejects the mutation reports LC-EVENT-001
+PASS: zero serialized list minimum rejects the mutation (RC=1)
+PASS: zero serialized list minimum rejects the mutation reports LC-EVENT-001
+PASS: serialized selector mapping drift rejects the mutation (RC=1)
+PASS: serialized selector mapping drift rejects the mutation reports LC-EVENT-001
+PASS: serialized scalar value-contract drift rejects the mutation (RC=1)
+PASS: serialized scalar value-contract drift rejects the mutation reports LC-EVENT-001
+PASS: non-object phase-exit approval policy is rejected in human format (RC=1)
+PASS: non-object phase-exit approval policy human diagnostic reports LC-SCHEMA-001
+PASS: non-object phase-exit approval policy human diagnostic is traceback-free
+PASS: non-object phase-exit approval policy is rejected in JSON format (RC=1)
+PASS: non-object phase-exit approval policy JSON diagnostic reports LC-SCHEMA-001
+PASS: non-object phase-exit approval policy JSON diagnostic is machine-readable and traceback-free
+PASS: non-object deployment approval policy is rejected in human format (RC=1)
+PASS: non-object deployment approval policy human diagnostic reports LC-SCHEMA-001
+PASS: non-object deployment approval policy human diagnostic is traceback-free
+PASS: non-object deployment approval policy is rejected in JSON format (RC=1)
+PASS: non-object deployment approval policy JSON diagnostic reports LC-SCHEMA-001
+PASS: non-object deployment approval policy JSON diagnostic is machine-readable and traceback-free
+PASS: non-object project-closeout approval policy is rejected in human format (RC=1)
+PASS: non-object project-closeout approval policy human diagnostic reports LC-SCHEMA-001
+PASS: non-object project-closeout approval policy human diagnostic is traceback-free
+PASS: non-object project-closeout approval policy is rejected in JSON format (RC=1)
+PASS: non-object project-closeout approval policy JSON diagnostic reports LC-SCHEMA-001
+PASS: non-object project-closeout approval policy JSON diagnostic is machine-readable and traceback-free
+PASS: non-object deployment value prerequisite is rejected in human format (RC=1)
+PASS: non-object deployment value prerequisite human diagnostic reports LC-SCHEMA-001
+PASS: non-object deployment value prerequisite human diagnostic is traceback-free
+PASS: non-object deployment value prerequisite is rejected in JSON format (RC=1)
+PASS: non-object deployment value prerequisite JSON diagnostic reports LC-SCHEMA-001
+PASS: non-object deployment value prerequisite JSON diagnostic is machine-readable and traceback-free
+PASS: non-object scaling coverage policy is rejected in human format (RC=1)
+PASS: non-object scaling coverage policy human diagnostic reports LC-SCHEMA-001
+PASS: non-object scaling coverage policy human diagnostic is traceback-free
+PASS: non-object scaling coverage policy is rejected in JSON format (RC=1)
+PASS: non-object scaling coverage policy JSON diagnostic reports LC-SCHEMA-001
+PASS: non-object scaling coverage policy JSON diagnostic is machine-readable and traceback-free
+PASS: generated contract mismatch is rejected (RC=1)
+PASS: generated contract mismatch reports LC-GENERATED-001
+PASS: comment-spoofed API name is rejected (RC=1)
+PASS: comment-spoofed API name reports LC-GENERATED-001
+PASS: malformed registry JSON is a parser failure (RC=2)
+PASS: duplicate JSON object key is a validator parser failure (RC=2)
+PASS: duplicate JSON object key is a validator parser failure validator diagnostic is stable and traceback-free
+PASS: duplicate JSON object key is a validator parser failure is rejected by the generator in caller scope (RC=2)
+PASS: JSON NaN constant is a validator parser failure (RC=2)
+PASS: JSON NaN constant is a validator parser failure validator diagnostic is stable and traceback-free
+PASS: JSON NaN constant is a validator parser failure is rejected by the generator in caller scope (RC=2)
+PASS: JSON Infinity constant is a validator parser failure (RC=2)
+PASS: JSON Infinity constant is a validator parser failure validator diagnostic is stable and traceback-free
+PASS: JSON Infinity constant is a validator parser failure is rejected by the generator in caller scope (RC=2)
+PASS: non-UTF-8 registry is a parser failure (RC=2)
+PASS: non-UTF-8 JSON parser failure is machine-readable
+PASS: missing registry is an invocation/configuration failure (RC=2)
+PASS: JSON configuration failure is machine-readable
+PASS: release fixture generated its matching shell contract
+PASS: fully resolved release fixture validates cleanly (RC=0)
+PASS: globally present deploy-only field outside its profile is rejected (RC=1)
+PASS: profile-scoped event projection reports LC-EVENT-001
+PASS: globally present correction fields outside their section are rejected (RC=1)
+PASS: correction-scoped event projection reports LC-EVENT-001
+PASS: wrong-hierarchy manifest field is rejected (RC=1)
+PASS: wrong-hierarchy manifest field reports LC-PROJECT-TEMPLATE-001
+PASS: duplicate project.current_gate mapping is rejected (RC=1)
+PASS: duplicate project.current_gate mapping reports LC-PROJECT-TEMPLATE-001
+PASS: duplicate phase.loop_status mapping is rejected (RC=1)
+PASS: duplicate phase.loop_status mapping reports LC-PROJECT-TEMPLATE-001
+PASS: tab-indented manifest mapping is rejected (RC=1)
+PASS: tab-indented manifest mapping reports LC-PROJECT-TEMPLATE-001
+PASS: manifest indentation level skip is rejected (RC=1)
+PASS: manifest indentation level skip reports LC-PROJECT-TEMPLATE-001
+PASS: missing mandatory synchronization target is rejected (RC=1)
+PASS: missing mandatory synchronization target reports LC-VERSION-001
+PASS: release synchronization drift is rejected (RC=1)
+PASS: release synchronization drift reports LC-VERSION-001
+
+236 passed, 0 failed

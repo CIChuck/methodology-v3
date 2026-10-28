@@ -1,0 +1,6 @@
+PASS all 14 original/import file digests, modes, inventory and source commit; 5 support files unchanged
+PASS /Users/chuckrussell/Dev/gendev/methodology-v3 : 24 metadata entries; 9 bundles, all Markdown links, 4 UI metadata; helper syntax/help
+PASS /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-follow-up-checks-loj_soj3/tmp/independent-install-jqhteh_s : 24 metadata entries; 9 bundles, all Markdown links, 4 UI metadata; helper syntax/help
+PASS /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-follow-up-checks-loj_soj3/tmp/methodology-dry-run.d0ucamd0 : 24 metadata entries; 9 bundles, all Markdown links, 4 UI metadata; helper syntax/help
+PASS disposable exercise empty board, no inherited project, fresh provenance
+PASS all independent offline assertions

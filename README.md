@@ -11,8 +11,8 @@ https://github.com/CIChuck/methodology-v3 and is still an unreleased distributio
 | --- | --- |
 | Inherited lifecycle | GenDev 1.0.2; gate numbering and release identity remain unchanged |
 | Migration baseline | Candidate 98f8bec independently VERIFIED; human acceptance pending |
-| Default GitHub main | Migration plus review/hosting records; 15 baseline skills |
-| Expanded skills | Nine more on integration/v3-skill-import; 24 total on that branch and this docs branch; local checks passed, independent review pending |
+| Default GitHub main | PR #1 merged at d41e0eb: 24 skills and synchronized Practitioner Guide |
+| Expanded skills | Council round 1 BLOCKED; scoped remediation local on fix/skills-council-follow-up; fresh review and acceptance pending |
 | Documentation | V3 Practitioner Guide and matching HTML content; describes status without granting acceptance |
 
 A GitHub push is delivery, not verification, acceptance or a methodology release.

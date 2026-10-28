@@ -1,0 +1,3 @@
+FATAL: init-project.sh failed in the test sandbox
+  ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+  ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.

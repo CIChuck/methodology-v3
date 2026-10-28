@@ -2,7 +2,7 @@ version: 1
 updated: '2026-10-28'
 tasks:
 - id: v3-baseline-migration
-  title: Integrate and validate methodology-v3 steps 1–6
+  title: "Integrate and validate methodology-v3 steps 1\u20136"
   priority: 1
   work_state: started
   condition: normal
@@ -38,13 +38,15 @@ tasks:
   condition: normal
   implementation_authority: granted
   packet: docs/planning/active/skill-library-import/
-  next_gate: Authorize fresh independent review of pushed skill-import candidate 1516712; human acceptance pending
-  delivery_state: pushed
-  branch: integration/v3-skill-import
+  next_gate: Fresh council round 2 on corrected local candidate; human acceptance pending
+  delivery_state: local
+  branch: fix/skills-council-follow-up
   depends_on: []
   validation:
   - docs/resources/evolution/skill-library-import/validation-summary.json
   - docs/resources/evolution/github-delivery.json (GitHub delivery verified; not conformance approval)
+  - docs/resources/evolution/skill-library-import/review/bounded-follow-up.md
+  - docs/resources/evolution/skill-library-import/review/remediation-results.json
   approved_by: Chuck Russell
   approved_at: '2026-10-28'
 - id: v3-documentation-refresh
@@ -54,8 +56,8 @@ tasks:
   condition: normal
   implementation_authority: granted
   packet: docs/planning/active/v3-documentation-refresh/
-  next_gate: Owner review of checked documentation and main integration decision; no new formal VERIFIED
-  delivery_state: pushed
+  next_gate: 'Main integration complete via PR #1; owner acceptance pending; no new formal VERIFIED'
+  delivery_state: merged
   branch: docs/v3-documentation
   depends_on: []
   validation:
@@ -81,7 +83,7 @@ events:
   at: '2026-10-28T02:57:01.790992+00:00'
   actor: Codex
   actor_role: agent
-  action: recorded local validation for steps 1–6
+  action: "recorded local validation for steps 1\u20136"
   note: All authorized implementation/checks recorded; task remains started. No independent VERIFIED, acceptance, publication
     or product gate decision.
 - task: v3-baseline-migration
@@ -225,3 +227,26 @@ events:
   note: Documentation branch 0fbce66 pushed and remote hash verified. Exact 23-file guide mirror checked; owner review and
     main integration remain pending. No site deployment.
   evidence: docs/resources/evolution/v3-documentation-refresh/delivery.json
+- task: skill-library-import
+  at: '2026-10-28T23:41:25.186414+00:00'
+  actor: Chuck Russell
+  actor_role: maintainer
+  action: authorized bounded council follow-up
+  note: 'Explicitly requested scoped remediation, tests, local candidate freeze and one fresh council round; recorded by Codex.
+    Prior import merged via PR #1; new remediation is local only.'
+  evidence: docs/resources/evolution/skill-library-import/review/bounded-follow-up.md
+- task: v3-documentation-refresh
+  at: '2026-10-28T23:44:38+00:00'
+  actor: Codex
+  actor_role: agent
+  action: delivery pushed -> merged
+  note: 'PR #1 merged the documentation into main at d41e0eb; delivery only, no formal verification or acceptance inferred.'
+  evidence: docs/resources/evolution/skill-library-import/review/merged-delivery.json
+- task: skill-library-import
+  at: '2026-10-28T23:47:34.052876+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded bounded remediation validation
+  note: 13 inherited suites, 17 board and 48 migration tests, four replay scenarios, skill/source and original preservation
+    checks passed. Remediation local only; fresh council and acceptance pending.
+  evidence: docs/resources/evolution/skill-library-import/review/remediation-results.json

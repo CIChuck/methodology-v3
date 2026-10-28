@@ -52,9 +52,12 @@ met or the PR merges, 1 when it needs you (a required check failed, conflicts,
 unresolved threads, PR closed), and 2 on bad input.
 
 - `ready` (default): required checks green, Greptile or Macroscope reviewed the
-  head, and no unresolved threads. Use this to babysit.
+  head, and no unresolved threads. This describes the unchanged helper
+  condition, not the repository's complete review requirements.
 - `green`: required checks only. Use it when the repo has no Greptile or
-  Macroscope.
+  Macroscope. Select the mode against the verified repository requirements;
+  check any additional required reviews separately. Neither mode supplies merge
+  authority or guarantees every required reviewer has approved.
 - `any-change`: exit on the first event.
 
 In Claude Code, run it with the Monitor tool (`timeout_ms: 3600000`), so each
@@ -105,7 +108,7 @@ narrows code.
 
 ## Base branch and merging
 
-Keep an eye on changes to `main` and rebase when needed. `pr-wait` reports when
+Keep an eye on changes to the PR's actual base branch and rebase when needed. `pr-wait` reports when
 new base commits touch this PR's files, and when the PR becomes BEHIND or DIRTY.
 `watch_pull_request` reports conflicts only, so check for BEHIND yourself
 before you call the PR ready.

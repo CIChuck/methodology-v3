@@ -1,6 +1,6 @@
 ---
 name: council
-description: Trigger this if the user says 'council'.
+description: Obtain a three-provider independent review when the user explicitly requests a council review or workflow.
 ---
 
 # Council
@@ -48,8 +48,9 @@ Rounds: 2
 ```
 
 If a delegate gives no score, write `no score`. Do not invent one.
-If the PR is open, edit the description. Do not post a comment for this.
-If there is no PR, put the same results in the final reply only.
+If the PR is open and editing its description is within the authorized scope,
+edit the description. Do not post a comment for this. Otherwise put the same
+results in the final reply only. A read-only review does not authorize PR edits.
 
 Remediate agreed findings only within the approved scope, then request fresh
 review contexts against the revised frozen candidate. Use one full council pass

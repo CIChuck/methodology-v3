@@ -2,18 +2,14 @@
 
 Task: skill-library-import
 Owner: Chuck Russell
-Branch: integration/v3-skill-import
+Branch: fix/skills-council-follow-up
 Authority: docs/resources/evolution/skill-library-import/README.md
-Scope: nine provided skills, GenDev reconciliation, complete discovery packaging,
-local validation and preservation. No workflow invocation or external effects.
-Authorization: user request and supplied local source folder, 2026-10-28.
-Status: started; import and local checks passed; checkpoint/upload authorized; formal review and acceptance pending.
-Migration candidate 98f8bec retains its separate VERIFIED result.
+Current directive: docs/resources/evolution/skill-library-import/review/bounded-follow-up.md
+Status: started; round 1 BLOCKED; bounded fixes and one fresh council round authorized.
+Import delivery: PR #1 merged at d41e0eb; new remediation remains local only.
+Human acceptance pending. Migration VERIFIED remains pinned separately to 98f8bec.
 
-Evidence: docs/resources/evolution/skill-library-import/validation-summary.json
-
+Review: docs/resources/evolution/skill-library-import/review/council-round-1/summary.md
+Historical validation: docs/resources/evolution/skill-library-import/validation-summary.json
 Hosting authority: docs/resources/evolution/github-hosting.md
-
-Delivery: pushed to CIChuck/methodology-v3, integration/v3-skill-import.
-Operational candidate: 1516712bac00a4f45740d6cd76833d9677499e3f.
-Evidence: docs/resources/evolution/github-delivery.json. Formal review remains pending.
+Original import checkpoint: 1516712bac00a4f45740d6cd76833d9677499e3f.

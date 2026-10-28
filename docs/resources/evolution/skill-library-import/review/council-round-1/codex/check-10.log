@@ -1,0 +1,17 @@
+$ tests/methodology/test-examples.sh
+examples | EX-001 | expected=0 actual=0 | current and legacy example directories exist
+  [PASS] current and legacy example directories exist
+examples | EX-002 | expected=0 actual=0 | C1 current example positive and negative CLI checks pass
+  [PASS] C1 current example positive and negative CLI checks pass
+examples | EX-003 | expected=0 actual=0 | current examples expose metadata and no phase-loop exemption language
+  [PASS] current examples expose metadata and no phase-loop exemption language
+examples | EX-004 | expected=0 actual=0 | legacy examples are explicitly non-authoritative
+  [PASS] legacy examples are explicitly non-authoritative
+examples | EX-005 | expected=0 actual=0 | C2 current example does not claim real implementation evidence
+  [PASS] C2 current example does not claim real implementation evidence
+examples | EX-006 | expected=0 actual=0 | C1 current example contains full current lifecycle evidence trail
+  [PASS] C1 current example contains full current lifecycle evidence trail
+examples | EX-007 | expected=0 actual=0 | C2 current example contains separate authority and planning stop
+  [PASS] C2 current example contains separate authority and planning stop
+
+Suite examples: 7 passed, 0 failed, 7 total

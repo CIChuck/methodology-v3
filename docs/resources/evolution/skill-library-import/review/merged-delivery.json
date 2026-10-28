@@ -1,0 +1,10 @@
+{
+  "kind": "merged integration delivery; not conformance or acceptance",
+  "url": "https://github.com/CIChuck/methodology-v3/pull/1",
+  "merged_at": "2026-10-28T22:51:28Z",
+  "merge_commit": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+  "remote_branch_deleted": "docs/v3-documentation",
+  "recorded_at": "2026-10-28T23:43:08.180104+00:00",
+  "evidence": "GitHub PR merged status and fetched main verified in preceding repo-status turn; git merge commit retained locally",
+  "remediation": "local only; not delivered"
+}

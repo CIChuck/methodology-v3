@@ -1,0 +1,9 @@
+$ tests/methodology/test-metrics.sh
+metrics | ME-001 | expected=0 actual=0 | metrics reports uninitialized project
+  [PASS] metrics reports uninitialized project
+metrics | ME-002 | expected=0 actual=0 | metrics tolerates malformed timing data
+  [PASS] metrics tolerates malformed timing data
+metrics | ME-003 | expected=0 actual=0 | metrics reports gate transition metrics
+  [PASS] metrics reports gate transition metrics
+
+Suite metrics: 3 passed, 0 failed, 3 total

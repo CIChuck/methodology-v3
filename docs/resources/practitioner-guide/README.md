@@ -34,8 +34,8 @@ conflicts. A fresh isolated dry run uses canonical seeds instead of live state.
 | Normative lifecycle and inherited release | GenDev 1.0.2; the version has not been renamed to 3.0 |
 | V3 distribution | Unreleased; GitHub hosting is not a new methodology release |
 | Migration implementation | Candidate `98f8bec` independently VERIFIED; human acceptance pending |
-| Default GitHub `main` | Migration baseline plus hosting/delivery records; 15 baseline skills |
-| Nine additional workflow skills | Present on `integration/v3-skill-import` and this documentation branch; local checks passed; independent review pending |
+| Default GitHub `main` | PR #1 merged at `d41e0eb`: 24 skills and the synchronized guide |
+| Nine additional workflow skills | Merged; council round 1 BLOCKED; bounded remediation local, fresh review and acceptance pending |
 | This documentation refresh | Describes the combined v3 approach; it does not accept or release either candidate |
 
 Use an exact approved revision when adopting the toolkit. A branch name or current

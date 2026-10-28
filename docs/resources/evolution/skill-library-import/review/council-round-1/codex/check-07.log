@@ -1,0 +1,27 @@
+$ tests/methodology/test-distribution-tools.sh
+distribution-tools | DI-001 | expected=0 actual=0 | install-methodology usage text
+  [PASS] install-methodology usage text
+distribution-tools | DI-002 | expected=1 actual=1 | install-methodology fails when target is missing
+  [PASS] install-methodology fails when target is missing
+distribution-tools | DI-003 | expected=0 actual=0 | install-methodology preserves existing AGENTS.md by default
+  [PASS] install-methodology preserves existing AGENTS.md by default
+distribution-tools | DI-004 | expected=0 actual=0 | install-methodology copies runtime transition tools from manifest
+  [PASS] install-methodology copies runtime transition tools from manifest
+distribution-tools | DI-007 | expected=0 actual=0 | install-methodology installs resources only with explicit flag
+  [PASS] install-methodology installs resources only with explicit flag
+distribution-tools | DI-008 | expected=1 actual=1 | install-methodology blocks collisions before writing
+  [PASS] install-methodology blocks collisions before writing
+distribution-tools | DI-009 | expected=0 actual=0 | install-methodology force upgrades owned paths and preserves AGENTS
+  [PASS] install-methodology force upgrades owned paths and preserves AGENTS
+distribution-tools | DI-010 | expected=0 actual=0 | install-methodology renders protected branch into workflow
+  [PASS] install-methodology renders protected branch into workflow
+distribution-tools | DI-011 | expected=0 actual=0 | install-methodology dry-run makes no writes
+  [PASS] install-methodology dry-run makes no writes
+distribution-tools | DI-012 | expected=1 actual=1 | install-methodology rolls back simulated copy failure
+  [PASS] install-methodology rolls back simulated copy failure
+distribution-tools | DI-005 | expected=1 actual=1 | backfill requires vision/prd/architecture docs
+  [PASS] backfill requires vision/prd/architecture docs
+distribution-tools | DI-006 | expected=0 actual=0 | backfill generates a conformance report
+  [PASS] backfill generates a conformance report
+
+Suite distribution-tools: 12 passed, 0 failed, 12 total

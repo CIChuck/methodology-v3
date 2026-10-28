@@ -1,0 +1,80 @@
+{
+  "candidate_start": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+  "acceptance": "pending",
+  "findings": [
+    {
+      "ids": [
+        "SKL-C-01"
+      ],
+      "change": "sol-loop severity, controller classification and stop/decline rules",
+      "status": "implemented; fresh review pending"
+    },
+    {
+      "ids": [
+        "COD-SK-001",
+        "SKL-B-02",
+        "OBS-OUT-001"
+      ],
+      "change": "same-tree cross-context T3 additions, immutable anchors and negative tests",
+      "status": "implemented; fresh review pending"
+    },
+    {
+      "ids": [
+        "SKL-B-01"
+      ],
+      "change": "fresh request requires real bundled rg PATH before doctor; no stubs",
+      "status": "controller binary verified; child preflight pending"
+    },
+    {
+      "ids": [
+        "SKL-L-01",
+        "SKL-L-02"
+      ],
+      "change": "explicit council request, scoped PR edits",
+      "status": "implemented; fresh review pending"
+    },
+    {
+      "ids": [
+        "SKL-L-03"
+      ],
+      "change": "actual base branch; unchanged fallback semantics and extra required reviews distinguished",
+      "status": "implemented; fresh review pending"
+    },
+    {
+      "ids": [
+        "SKL-L-04"
+      ],
+      "change": "full-send proof scope and formal validation/approvals in merge gate",
+      "status": "implemented; fresh review pending"
+    },
+    {
+      "ids": [
+        "SKL-L-05"
+      ],
+      "change": "only top-level flat or direct bundle entrypoint discovery; reference-preservation regression",
+      "status": "implemented; fresh review pending"
+    },
+    {
+      "ids": [
+        "SK-IMP-001"
+      ],
+      "change": "modernize subject/verb typo",
+      "status": "implemented; fresh review pending"
+    },
+    {
+      "ids": [
+        "COD-INFO-001",
+        "TRK-LAG-001"
+      ],
+      "change": "merged main/current tracking availability reconciled; raw receipts preserved",
+      "status": "recorded; human acceptance pending"
+    },
+    {
+      "ids": [
+        "SKL-I-01"
+      ],
+      "change": "friday bundle discovery remains working directory link; no shape change required",
+      "status": "informational; no behavior fix"
+    }
+  ]
+}

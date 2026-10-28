@@ -33,22 +33,29 @@ def compare_refs(base: Path, expected: str, current: str, *, allow_identical_t3_
     for name in sorted(set(after) - set(before)):
         match = T3_CHECKPOINT.fullmatch(name)
         anchors = []
+        same_context = []
         if allow_identical_t3_checkpoints and match:
             for old_name, old_oid in before.items():
                 old_match = T3_CHECKPOINT.fullmatch(old_name)
-                if old_match and old_match[1] == match[1]:
-                    anchors.append((int(old_match[2]), old_name, old_oid))
+                if old_match:
+                    anchor = (int(old_match[2]), old_name, old_oid)
+                    anchors.append(anchor)
+                    if old_match[1] == match[1]:
+                        same_context.append(anchor)
         if not anchors:
             errors.append(f"unapproved added ref: {name}")
             continue
-        ordinal, anchor_name, anchor_oid = max(anchors)
+        # A new T3 context still needs an immutable frozen-tree anchor. Never
+        # derive permission from another added ref. Existing contexts retain
+        # their monotonically increasing ordinal requirement.
+        ordinal, anchor_name, anchor_oid = max(same_context or anchors)
         try:
             oid = after[name]
             metadata = git("show", "--no-patch", "--format=%an%x00%ae%x00%s", oid).split("\0")
             tree = git("rev-parse", oid + "^{tree}")
             anchor_tree = git("rev-parse", anchor_oid + "^{tree}")
             if (
-                int(match[2]) <= ordinal
+                (bool(same_context) and int(match[2]) <= ordinal)
                 or git("cat-file", "-t", oid) != "commit"
                 or metadata != ["T3 Code", "t3code@users.noreply.github.com", "t3 checkpoint ref=" + name]
                 or tree != anchor_tree

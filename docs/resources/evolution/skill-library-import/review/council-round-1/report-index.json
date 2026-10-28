@@ -1,0 +1,35 @@
+{
+  "recorded_at": "2026-10-28T23:38:57.178953+00:00",
+  "candidate": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+  "controller_outcome": "BLOCKED",
+  "files": {
+    "request.md": {
+      "sha256": "bf0fa2f8c6cdd08e379d21067cb95b1353017cea76989d8593cc7d88f17ed5ea",
+      "bytes": 7286
+    },
+    "authority-manifest.json": {
+      "sha256": "336ddb4cf373fb258454daa558a996aaa8287babe5c351557a956dc1c0696701",
+      "bytes": 1979
+    },
+    "selected.diff": {
+      "sha256": "6818fab01b30764ed63cee1b214fd63b3fceed8f6a5062fcdcf450ccd4100b1c",
+      "bytes": 74504
+    },
+    "summary.md": {
+      "sha256": "d5f3d32a87c01402eeca214032cbcca8c45b66e57fd06fb655d435c6c1c6dfca",
+      "bytes": 5678
+    },
+    "codex/report.md": {
+      "sha256": "28df1acef7242c14235ddaac7868fbec8379fc63450254a9dfcf0a94d9f16134",
+      "bytes": 16017
+    },
+    "claude/report.md": {
+      "sha256": "d653059de32bf8eb946428e631e56acdea2b5fcc77f7eaea0afeb0980c6576fa",
+      "bytes": 15200
+    },
+    "gemini/report.md": {
+      "sha256": "b25320c01f2a81c976adc815ac5f6183ab6097f9f0090fb6091bf9fbd889cc68",
+      "bytes": 24273
+    }
+  }
+}

@@ -1,3 +1,19 @@
+# Current Skills Review Readiness
+
+Status: Council round 1 BLOCKED; authorized bounded remediation and one fresh round
+Task: skill-library-import
+Branch: fix/skills-council-follow-up
+Merged starting candidate: d41e0ebfdc587ecc6d8c3ab336afc530ce90654f
+Authority: review/bounded-follow-up.md
+Round-1 reports: review/council-round-1/ (outcomes retained, not overridden)
+
+The new request must pin the corrected candidate, all governing authority, exact
+diff and required checks. No new VERIFIED, acceptance, release or remote effects
+are inferred. The historical pre-review readiness packet follows for provenance;
+its old pending-authorization status is superseded by Chuck's explicit requests.
+
+---
+
 # Skill Import Review Readiness
 
 Status: Checkpoint/upload authorized; independent review authorization pending

@@ -1,0 +1,25 @@
+$ tests/methodology/test-release-coherence.sh
+release-coherence | RC-001 | expected=0 actual=0 | lifecycle registry and active docs are coherent
+  [PASS] lifecycle registry and active docs are coherent
+release-coherence | RC-001A | expected=0 actual=0 | active documentation release identity is coherent
+  [PASS] active documentation release identity is coherent
+release-coherence | RC-002 | expected=1 actual=1 | active docs contain no raw refinement notes
+  [PASS] active docs contain no raw refinement notes
+release-coherence | RC-003 | expected=1 actual=1 | active docs contain no retired phase roadmap references
+  [PASS] active docs contain no retired phase roadmap references
+release-coherence | RC-004 | expected=1 actual=1 | active docs contain no canonical placeholder document paths
+  [PASS] active docs contain no canonical placeholder document paths
+release-coherence | RC-005 | expected=0 actual=0 | distribution manifest names required runtime assets
+  [PASS] distribution manifest names required runtime assets
+release-coherence | RC-006 | expected=0 actual=0 | current examples expose strict metadata and legacy boundary
+  [PASS] current examples expose strict metadata and legacy boundary
+release-coherence | RC-007 | expected=0 actual=0 | release index states a truthful publication state for 1.0.1
+  [PASS] release index states a truthful publication state for 1.0.1
+release-coherence | RC-008 | expected=0 actual=0 | historical 0.5 independent review records a non-pending result
+  [PASS] historical 0.5 independent review records a non-pending result
+release-coherence | RC-010 | expected=0 actual=0 | 1.0.1 independent review artifact records a non-pending result
+  [PASS] 1.0.1 independent review artifact records a non-pending result
+release-coherence | RC-009 | expected=0 actual=0 | closeout ledger records all findings and WP-11 tasks
+  [PASS] closeout ledger records all findings and WP-11 tasks
+
+Suite release-coherence: 11 passed, 0 failed, 11 total

@@ -11,11 +11,11 @@ that the v3 repository or expanded skills are released.
 ## Choose A Source Revision
 
 The private source is https://github.com/CIChuck/methodology-v3. The reviewed
-migration is pinned to 98f8bec. GitHub main carries it with later evidence/hosting
-records; human acceptance remains pending. The nine workflow additions are on
-integration/v3-skill-import at operational candidate 1516712 with local checks and
-pending independent review. This documentation branch describes the combined
-library; it does not merge, accept or release it. Use a source revision appropriate
+migration is pinned to 98f8bec, with human acceptance pending. PR #1 merged the
+24-skill library and synchronized guide into main at d41e0eb. Council round 1
+is consolidated as BLOCKED; scoped remediation is local on
+fix/skills-council-follow-up with one fresh round authorized. The changed candidate
+is not yet formally verified or accepted. Use an exact source revision appropriate
 to the adopting owner's decision and retain its provenance.
 
 ## New Product

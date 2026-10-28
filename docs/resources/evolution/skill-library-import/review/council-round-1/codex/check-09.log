@@ -1,0 +1,47 @@
+$ tests/methodology/test-enforcement-tools.sh
+enforcement-tools | EN-001 | expected=0 actual=0 | check-methodology reports uninitialized state
+  [PASS] check-methodology reports uninitialized state
+enforcement-tools | EN-002 | expected=0 actual=0 | check-methodology detects placeholder placeholders from checker
+  [PASS] check-methodology detects placeholder placeholders from checker
+enforcement-tools | EN-003 | expected=0 actual=0 | methodology-guard accepts --help
+  [PASS] methodology-guard accepts --help
+enforcement-tools | EN-004 | expected=0 actual=0 | methodology-guard runs in staged mode
+  [PASS] methodology-guard runs in staged mode
+enforcement-tools | EN-004A | expected=0 actual=0 | methodology-guard --staged ignores unstaged worktree drift
+  [PASS] methodology-guard --staged ignores unstaged worktree drift
+enforcement-tools | EN-014 | expected=0 actual=0 | install-hooks installs wrapper in repository path with spaces
+  [PASS] install-hooks installs wrapper in repository path with spaces
+enforcement-tools | EN-015 | expected=0 actual=0 | install-hooks preserves existing hook and runs it once
+  [PASS] install-hooks preserves existing hook and runs it once
+enforcement-tools | EN-016 | expected=7 actual=7 | install-hooks propagates preserved hook failure
+  [PASS] install-hooks propagates preserved hook failure
+enforcement-tools | EN-017 | expected=6 actual=6 | install-hooks propagates GenDev guard failure
+  [PASS] install-hooks propagates GenDev guard failure
+enforcement-tools | EN-018 | expected=0 actual=0 | install-hooks reinstall is idempotent and uninstall restores original
+  [PASS] install-hooks reinstall is idempotent and uninstall restores original
+enforcement-tools | EN-019 | expected=0 actual=0 | install-hooks resolves custom core.hooksPath
+  [PASS] install-hooks resolves custom core.hooksPath
+enforcement-tools | EN-020 | expected=1 actual=1 | install-hooks fails closed when guard is missing
+  [PASS] install-hooks fails closed when guard is missing
+enforcement-tools | EN-005 | expected=0 actual=0 | methodology-guard --range passes when a new exact gate transition is appended
+  [PASS] methodology-guard --range passes when a new exact gate transition is appended
+enforcement-tools | EN-006 | expected=1 actual=1 | methodology-guard --range fails when gate movement lacks exact new transition
+  [PASS] methodology-guard --range fails when gate movement lacks exact new transition
+enforcement-tools | EN-007 | expected=1 actual=1 | methodology-guard --range fails when prior gate-log event records are edited
+  [PASS] methodology-guard --range fails when prior gate-log event records are edited
+enforcement-tools | EN-008 | expected=1 actual=1 | methodology-guard --range fails when prior gate-log event records are removed
+  [PASS] methodology-guard --range fails when prior gate-log event records are removed
+enforcement-tools | EN-009 | expected=0 actual=0 | methodology-guard --range accepts declared non-adjacent C1/C2 combined transition with required combined event fields
+  [PASS] methodology-guard --range accepts declared non-adjacent C1/C2 combined transition with required combined event fields
+enforcement-tools | EN-010 | expected=1 actual=1 | methodology-guard --range rejects non-adjacent transition lacking combined_gates declaration
+  [PASS] methodology-guard --range rejects non-adjacent transition lacking combined_gates declaration
+enforcement-tools | EN-013 | expected=0 actual=0 | methodology-guard --range ignores unstaged drift from the working tree
+  [PASS] methodology-guard --range ignores unstaged drift from the working tree
+enforcement-tools | EN-011 | expected=1 actual=1 | methodology-guard --range rejects combined movement declared for C3 projects
+  [PASS] methodology-guard --range rejects combined movement declared for C3 projects
+enforcement-tools | EN-012 | expected=1 actual=1 | methodology-guard --range rejects combined movement when combined transition event fields are missing
+  [PASS] methodology-guard --range rejects combined movement when combined transition event fields are missing
+enforcement-tools | ET-PIN-001 | expected=0 actual=0 | pin-provenance detects staleness and repins to checker-identical hash
+  [PASS] pin-provenance detects staleness and repins to checker-identical hash
+
+Suite enforcement-tools: 22 passed, 0 failed, 22 total

@@ -85,9 +85,37 @@ class PreservationRefTests(unittest.TestCase):
         self.checkpoint("1", author="Other Author")
         self.assertTrue(self.compare()[0])
 
-    def test_new_context_without_frozen_anchor_fails(self) -> None:
+    def test_new_context_uses_frozen_tree_anchor(self) -> None:
         self.prefix = "refs/t3/orchestration-v2/checkpoints/other_context/ordinal/"
-        self.checkpoint("1")
+        self.checkpoint("0")
+        errors, allowed = self.compare()
+        self.assertEqual(errors, [])
+        self.assertEqual(allowed[0]["tree"], self.tree)
+        self.assertEqual(allowed[0]["frozen_anchor"], "refs/t3/orchestration-v2/checkpoints/fixture_context/ordinal/0")
+
+    def test_new_context_different_tree_fails(self) -> None:
+        self.prefix = "refs/t3/orchestration-v2/checkpoints/other_context/ordinal/"
+        (self.root / "source.txt").write_text("Changed new context\n")
+        self.git("add", "source.txt")
+        self.checkpoint("0", tree=self.git("write-tree"))
+        self.assertTrue(self.compare()[0])
+
+    def test_new_context_without_any_frozen_checkpoint_fails(self) -> None:
+        self.expected = ""
+        self.assertTrue(self.compare()[0])
+
+    def test_checkpoint_with_wrong_subject_fails(self) -> None:
+        ref = self.prefix + "1"
+        oid = self.git("commit-tree", self.tree, data="Wrong subject\n")
+        self.git("update-ref", ref, oid)
+        self.assertTrue(self.compare()[0])
+
+    def test_checkpoint_ref_to_noncommit_fails(self) -> None:
+        self.git("update-ref", self.prefix + "1", self.tree)
+        self.assertTrue(self.compare()[0])
+
+    def test_existing_context_nonincreasing_ordinal_fails(self) -> None:
+        self.checkpoint("00")
         self.assertTrue(self.compare()[0])
 
 

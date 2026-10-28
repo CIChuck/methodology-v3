@@ -119,6 +119,25 @@ class ToolkitMigrationTests(unittest.TestCase):
         self.assertNotIn(custom.relative_to(self.target).as_posix(), new["files"])
         self.command("./scripts/gendev-doctor.sh")
 
+    def test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it(self) -> None:
+        source = self.source_copy()
+        support = "docs/methodology/dev-skills/council/references/notes.md"
+        nested = "docs/methodology/dev-skills/council/references/example/SKILL.md"
+        for name in (support, nested):
+            path = source / name
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text("---\nname: example-note\ndescription: Supporting example, not a skill entrypoint\n---\n")
+        self.install(source=source)
+        before = inventory(self.target)
+        output = self.command(sys.executable, "scripts/create-dry-run.py", env={"TMPDIR": str(self.base)})
+        fixture = Path(output.stdout.strip())
+        self.addCleanup(shutil.rmtree, fixture)
+        self.assertEqual(len(list((fixture / ".agents/skills").glob("*/SKILL.md"))), 24)
+        self.assertFalse((fixture / ".agents/skills/example-note").exists())
+        for name in (support, nested):
+            self.assertEqual((fixture / name).read_bytes(), (source / name).read_bytes())
+        self.assertEqual(inventory(self.target), before)
+
     def test_edited_baseline_refuses_upgrade_without_writing(self) -> None:
         self.install()
         p = self.target / MANAGED

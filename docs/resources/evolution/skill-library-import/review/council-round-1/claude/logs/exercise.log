@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/exercise-v3-toolkit.py", line 163, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/exercise-v3-toolkit.py", line 77, in main
+    run(fresh, "./scripts/init-project.sh", "Synthetic C1 Toolkit Fixture")
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/exercise-v3-toolkit.py", line 63, in run
+    raise RuntimeError(f"command returned {result.returncode}, expected {expected}: {args}\n{result.stdout}\n{result.stderr}")
+RuntimeError: command returned 3, expected 0: ('./scripts/init-project.sh', 'Synthetic C1 Toolkit Fixture')
+
+ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+

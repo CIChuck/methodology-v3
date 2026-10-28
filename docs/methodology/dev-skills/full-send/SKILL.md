@@ -20,7 +20,7 @@ The user grants you permission to:
 
 - Merge the PR once the merge gate passes.
 - Force-push the PR's own branch with `--force-with-lease` after a rebase.
-- Use the test methods that Proof needs, without asking first.
+- Use the proof methods within accepted authority and harness permissions.
 
 ## Testing permission
 
@@ -76,6 +76,9 @@ Full confidence means all of these are true on the latest commit:
 
 - Your proof covers every change in the diff.
 - Required checks are green.
+- Applicable GenDev independent validation, lifecycle prerequisites and required
+  human approvals for this work are recorded; an advisory Sol APPROVE is not a
+  formal VERIFIED result or a substitute for those approvals.
 - Review bots have finished, and each finding is fixed or dismissed with a
   written reason.
 - No human review still requests changes.

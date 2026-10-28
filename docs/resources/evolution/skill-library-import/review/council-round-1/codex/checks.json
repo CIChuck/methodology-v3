@@ -1,0 +1,112 @@
+[
+  {
+    "command": "./scripts/gendev-doctor.sh",
+    "exit": 0,
+    "log": "check-00.log"
+  },
+  {
+    "command": "./scripts/check-methodology.sh",
+    "exit": 0,
+    "log": "check-01.log"
+  },
+  {
+    "command": "./scripts/check-doc-coherence.sh",
+    "exit": 0,
+    "log": "check-02.log"
+  },
+  {
+    "command": "uv run --frozen --group devboard python scripts/devboard.py validate",
+    "exit": 0,
+    "log": "check-03.log"
+  },
+  {
+    "command": "uv run --frozen --group devboard python scripts/devboard.py next",
+    "exit": 0,
+    "log": "check-04.log"
+  },
+  {
+    "command": "uv run --frozen --group devboard python scripts/devboard.py show skill-library-import",
+    "exit": 0,
+    "log": "check-05.log"
+  },
+  {
+    "command": "tests/methodology/test-checker.sh",
+    "exit": 0,
+    "log": "check-06.log"
+  },
+  {
+    "command": "tests/methodology/test-distribution-tools.sh",
+    "exit": 0,
+    "log": "check-07.log"
+  },
+  {
+    "command": "tests/methodology/test-documentation-coherence.sh",
+    "exit": 0,
+    "log": "check-08.log"
+  },
+  {
+    "command": "tests/methodology/test-enforcement-tools.sh",
+    "exit": 0,
+    "log": "check-09.log"
+  },
+  {
+    "command": "tests/methodology/test-examples.sh",
+    "exit": 0,
+    "log": "check-10.log"
+  },
+  {
+    "command": "tests/methodology/test-installed-context.sh",
+    "exit": 0,
+    "log": "check-11.log"
+  },
+  {
+    "command": "tests/methodology/test-lifecycle-coherence.sh",
+    "exit": 0,
+    "log": "check-12.log"
+  },
+  {
+    "command": "tests/methodology/test-metrics.sh",
+    "exit": 0,
+    "log": "check-13.log"
+  },
+  {
+    "command": "tests/methodology/test-reference-graph.sh",
+    "exit": 0,
+    "log": "check-14.log"
+  },
+  {
+    "command": "tests/methodology/test-release-coherence.sh",
+    "exit": 0,
+    "log": "check-15.log"
+  },
+  {
+    "command": "tests/methodology/test-runtime-tools.sh",
+    "exit": 0,
+    "log": "check-16.log"
+  },
+  {
+    "command": "tests/methodology/test-shell-syntax.sh",
+    "exit": 0,
+    "log": "check-17.log"
+  },
+  {
+    "command": "uv run --frozen --group devboard python -m unittest discover -s tests/devboard -v",
+    "exit": 0,
+    "log": "check-18.log"
+  },
+  {
+    "command": "uv run --frozen --group devboard python -m unittest discover -s tests/migration -v",
+    "exit": 0,
+    "log": "check-19.log"
+  },
+  {
+    "command": "uv run --frozen --group devboard python scripts/exercise-v3-toolkit.py /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/codex/exercise.json",
+    "exit": 0,
+    "log": "check-20.log"
+  },
+  {
+    "command": "python3 scripts/verify-migration-inputs.py",
+    "exit": 1,
+    "log": "check-21.log"
+  }
+]

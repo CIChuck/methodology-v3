@@ -1,0 +1,42 @@
+TARGET /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/claude/tmp/methodology-dry-run._hjgo6rs
+count 24
+ai-construction-directive-builder dir ../../../docs/methodology/dev-skills/ai-construction-directive-builder.md True
+architecture-spec-author dir ../../../docs/methodology/dev-skills/architecture-spec-author.md True
+babysit-pr dirlink ../../docs/methodology/dev-skills/babysit-pr True
+code-conformance-reviewer dir ../../../docs/methodology/dev-skills/code-conformance-reviewer.md True
+council dirlink ../../docs/methodology/dev-skills/council True
+file-pr dirlink ../../docs/methodology/dev-skills/file-pr True
+friday-dev-board dirlink ../../docs/methodology/dev-skills/friday-dev-board True
+full-send dirlink ../../docs/methodology/dev-skills/full-send True
+full-stop dirlink ../../docs/methodology/dev-skills/full-stop True
+governance-security-spec dir ../../../docs/methodology/dev-skills/governance-security-spec.md True
+independent-code-validator dir ../../../docs/methodology/dev-skills/independent-code-validator.md True
+leaving-pr-comments dirlink ../../docs/methodology/dev-skills/leaving-pr-comments True
+migration-refactor-analyst dir ../../../docs/methodology/dev-skills/migration-refactor-analyst.md True
+modernize dirlink ../../docs/methodology/dev-skills/modernize True
+phase-build-planner dir ../../../docs/methodology/dev-skills/phase-build-planner.md True
+prd-author dir ../../../docs/methodology/dev-skills/prd-author.md True
+remediation-closeout dir ../../../docs/methodology/dev-skills/remediation-closeout.md True
+sol-loop dirlink ../../docs/methodology/dev-skills/sol-loop True
+subagent-directives-template dir ../../../docs/methodology/dev-skills/subagent-directives-template.md True
+subagents-worktrees-template dir ../../../docs/methodology/dev-skills/subagents-worktrees-template.md True
+tactical-implementation-planner dir ../../../docs/methodology/dev-skills/tactical-implementation-planner.md True
+takeover dirlink ../../docs/methodology/dev-skills/takeover True
+traceability-matrix dir ../../../docs/methodology/dev-skills/traceability-matrix.md True
+vision-framing dir ../../../docs/methodology/dev-skills/vision-framing.md True
+pr-wait exec True 0o755
+full-send True
+full-stop True
+leaving-pr-comments True
+modernize True
+contract via symlink path (lexical) False resolved True
+board version: 1
+updated: "2026-10-27"
+tasks: []
+events: []
+
+record prov {'methodology_version': '1.0.2', 'source_commit': 'd41e0ebfdc587ecc6d8c3ab336afc530ce90654f', 'source_tag': 'none', 'source_worktree_dirty': True, 'fixture': True}
+record has .agents []
+project dir exists False resources False evolution False
+AGENTS head # Repository Guidelines |  | Use this file as a starting point for a product repository `AGENTS.md`. Replace bracketed | place
+pr-wait digest 90393f85b95b78bff1b039744bdfb09dc88ff2b430e1c3df687ee6f449c97214

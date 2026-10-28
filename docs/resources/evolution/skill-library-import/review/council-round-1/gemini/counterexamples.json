@@ -1,0 +1,26 @@
+{
+  "counterexample_1_invalid_skill_name_in_dry_run": {
+    "returncode": 1,
+    "stderr": "Cannot create dry run: invalid skill name in docs/methodology/dev-skills/council/SKILL.md",
+    "rejected_as_expected": true
+  },
+  "counterexample_2_unowned_skill_sibling_excluded_in_dry_run": {
+    "returncode": 0,
+    "rogue_copied": false,
+    "rogue_via_discovery": false,
+    "custom_rogue_copied": false,
+    "pr_wait_preserved": true,
+    "isolated_as_expected": true
+  },
+  "counterexample_3_modified_support_file_blocks_upgrade_and_doctor": {
+    "upgrade_returncode": 1,
+    "upgrade_stderr": "Warning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/gemini/tmp/ce-modified-support-file-gkw7jbke/installed has no .git directory. Continuing with explicit file operations.\nblocked: locally modified, removed or symlink baseline file: docs/methodology/dev-skills/full-send/agents/openai.yaml; reconcile before upgrading",
+    "doctor_returncode": 5,
+    "rejected_as_expected": true
+  },
+  "counterexample_4_duplicate_skill_name_rejected": {
+    "returncode": 1,
+    "stderr": "Cannot create dry run: duplicate exercise destination",
+    "rejected_as_expected": true
+  }
+}

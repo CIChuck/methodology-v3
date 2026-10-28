@@ -1,8 +1,9 @@
 # Skill Library Import
 
-Status: Authorized follow-up; local implementation and checks; formal review pending
+Status: Merged import; council round 1 BLOCKED; bounded remediation authorized, fresh review pending
 Owner: Chuck Russell
-Branch: integration/v3-skill-import
+Current branch: fix/skills-council-follow-up
+Original import branch: integration/v3-skill-import
 Starting HEAD: ee82653ed6cacb9e1157cd791f12d0fb774f12af
 Preserved VERIFIED migration candidate: 98f8bec4597cd3307fc26e5c28dc86592e01ca08
 
@@ -55,3 +56,12 @@ The bounded authorization in ../github-hosting.md permits a local checkpoint
 and uploading this import as a separate work-in-progress branch. It supersedes
 the previous no-commit/no-remote restriction for this action. Independent review,
 acceptance, PR workflows and release remain unapproved.
+
+## Council review and bounded follow-up
+
+Chuck requested a council review, then explicitly approved the described bounded
+follow-up. See [the controlling directive](review/bounded-follow-up.md) and
+[round-1 consolidation](review/council-round-1/summary.md). This supersedes older
+no-delegation restrictions solely for the scoped council rounds. PR #1 merged
+at d41e0eb on 2026-10-28; that is delivery, not acceptance or verification.
+The authorized remediation is local only on fix/skills-council-follow-up.
