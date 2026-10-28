@@ -8,11 +8,14 @@ tasks:
   condition: normal
   implementation_authority: granted
   packet: docs/planning/active/v3-baseline-migration/
-  next_gate: Finish steps 1–6, then prepare independent review
+  next_gate: 'Step 7: independent candidate review and human acceptance; step 8 documentation refresh pending'
   delivery_state: local
   branch: integration/v3-migration
   depends_on: []
-  validation: []
+  validation:
+  - docs/resources/evolution/v3-migration/validation-results.md (local self-checks; independent review pending)
+  - docs/resources/evolution/v3-migration/validation-summary.json
+  - docs/resources/evolution/v3-migration/experiments.json
   approved_by: Chuck Russell
   approved_at: '2026-10-27'
 events:
@@ -28,3 +31,9 @@ events:
   actor_role: agent
   action: transitioned approved -> started
   note: Begin authorized local baseline migration; acceptance remains pending.
+- task: v3-baseline-migration
+  at: '2026-10-28T02:57:01.790992+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded local validation for steps 1–6
+  note: All authorized implementation/checks recorded; task remains started. No independent VERIFIED, acceptance, publication or product gate decision.

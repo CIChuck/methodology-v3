@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/exercise-v3-toolkit.py", line 156, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/exercise-v3-toolkit.py", line 124, in main
+    board(t3, "validate")
+    ~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/exercise-v3-toolkit.py", line 66, in board
+    return run(target, sys.executable, "scripts/devboard.py", *args)
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/exercise-v3-toolkit.py", line 59, in run
+    raise RuntimeError(f"command returned {result.returncode}, expected {expected}: {args}\n{result.stdout}\n{result.stderr}")
+RuntimeError: command returned 1, expected 0: ('/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3', 'scripts/devboard.py', 'validate')
+
+Development board error:
+planning dashboard is stale; run the render command
+

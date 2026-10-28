@@ -1,6 +1,6 @@
 # Methodology-v3 Migration: Execution Authority and Evidence
 
-Status: Authorized execution, steps 1–6; independent review and acceptance pending
+Status: Steps 1–6 implemented and locally checked; independent review and acceptance pending
 Owner and requesting human: Chuck Russell
 Source baseline: methodology-v2, commit 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a
 Integration branch: integration/v3-migration
@@ -120,3 +120,14 @@ local deterministic checks.
 - input-manifest.json: frozen source inventory, refs and recovery digests.
 - v2-copy-tests.log: all 13 inherited suites passed before integration.
 - Subsequent execution and test records will be added here in step 6.
+
+## Execution outcome
+
+Steps 1–6 are implemented and locally checked. See validation-results.md,
+validation-summary.json and experiments.json for commands, outcomes, encountered
+failures and remediation, source preservation and limits. The user confirmed
+all proposed defaults: local-only, no inherited push destination, unreleased
+candidate identity, standard board toolkit and optional T3 examples.
+
+The source task remains started pending step 7. No independent VERIFIED,
+human acceptance, final documentation refresh or publication is claimed.

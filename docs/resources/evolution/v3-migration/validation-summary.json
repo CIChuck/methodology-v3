@@ -1,0 +1,34 @@
+{
+  "status": "steps_1_through_6_locally_checked",
+  "independent_review": "pending",
+  "human_acceptance": "pending",
+  "documentation_refresh_step_8": "pending",
+  "source_revision_for_final_experiments": "4ac63972feea3223640d0090a0c4252f7b707959",
+  "recorded_at": "2026-10-28T02:57:01.781675+00:00",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "python": "3.13.10",
+  "results": {
+    "inherited_suites": 13,
+    "board_and_schema_tests": 17,
+    "migration_regression_tests": 17,
+    "isolated_scenarios": 4,
+    "synthetic_helper_tests": 3,
+    "skill_manifests_and_links": 15,
+    "source_files_and_links_preserved": 492,
+    "original_git_refs_preserved": 21
+  },
+  "log_sha256": {
+    "board-tests-final.log": "6dbcc0307816303b922ce25d2325d691a3f7e8b0c8345e8c8dd1ed5e63969c97",
+    "experiments-final.log": "376c25f99e18d4f03e9628e00edc8a7702133c62f2a0efe16de22922726d6897",
+    "experiments-first.log": "bf384bbceed16baeb04fc7ba1905a48f1e5c9c22d5d5e9e8630c34c88ce05d04",
+    "toolkit-tests-final.log": "8a8b8db50d88e0cfaa71b25e8e9a9dd946dc083623884a030f003b5c95f80805",
+    "toolkit-tests-first.log": "684453e4617861dc6fcde71ceeb3cb42f22ba9aa23299f1bc7be0c537f8512a2",
+    "v3-full-tests-final.log": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65"
+  },
+  "limits": [
+    "Local macOS only; hosted CI and Linux not executed",
+    "No independent fresh-context review or human acceptance",
+    "Synthetic task-level helper exercise; no real product gate traversal or production deployment",
+    "Final practitioner/HTML/example/release documentation refresh deferred to step 8"
+  ]
+}
