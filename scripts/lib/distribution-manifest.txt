@@ -12,6 +12,7 @@ file|scripts/methodology-guard.sh|scripts/methodology-guard.sh|executable|requir
 file|scripts/install-hooks.sh|scripts/install-hooks.sh|executable|required
 file|scripts/init-project.sh|scripts/init-project.sh|executable|required
 file|scripts/init-phase.sh|scripts/init-phase.sh|executable|required
+file|scripts/create-dry-run.py|scripts/create-dry-run.py|preserve|required
 file|scripts/gendev-doctor.sh|scripts/gendev-doctor.sh|executable|required
 file|scripts/project-state.sh|scripts/project-state.sh|executable|required
 file|scripts/pin-provenance.sh|scripts/pin-provenance.sh|executable|required
