@@ -395,7 +395,12 @@ def _authority_backings(
                     and parts[:2] == ("docs", "planning")
                     and parts[2] in CURRENT_LANES
                 )
-                archived_history = packet == canonical + "historical/"
+                archived_history = (
+                    packet == canonical + "historical/"
+                    and len(parts) == 6
+                    and re.fullmatch(r"[0-9]{4}", parts[3]) is not None
+                    and parts[4] == owner
+                )
                 if (state == "completed" and not planning_history) or (
                     state == "accepted" and not archived_history
                 ):

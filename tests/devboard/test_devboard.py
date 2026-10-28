@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import shutil
+import hashlib
+import json
 import subprocess
 import sys
 import tempfile
@@ -8,6 +10,7 @@ import unittest
 from pathlib import Path
 
 import yaml
+from jsonschema import Draft202012Validator
 
 REPOSITORY = Path(__file__).resolve().parents[2]
 SCRIPT = REPOSITORY / "scripts" / "devboard.py"
@@ -250,6 +253,73 @@ class DevelopmentBoardTests(unittest.TestCase):
             "--actor", "Fixture Agent", "--actor-role", "agent",
             "--note", "Missing merge evidence",
         )
+
+    def closed_board_with_backing(self, state: str) -> dict:
+        canonical = (
+            "docs/archive/completed/2026/example-task/"
+            if state == "accepted" else "docs/planning/review/example-task/"
+        )
+        historical = canonical + "historical/" if state == "accepted" else "docs/planning/active/example-task/"
+        packet = self.root / canonical
+        packet.mkdir(parents=True)
+        (packet / "README.md").write_text("# Synthetic closed-task index\n")
+        history = self.root / historical
+        history.mkdir(parents=True)
+        files = []
+        for kind, name in [("index", "README.md"), ("authority", "authority.md"), ("approval", "approval.md"), ("directive", "directive.md"), ("report", "report.md")]:
+            data = f"# Synthetic {kind}; fixture only\n".encode()
+            (history / name).write_bytes(data)
+            files.append({"path": historical + name, "sha256": hashlib.sha256(data).hexdigest(), "kind": kind})
+        manifest = {"version": 1, "owner": "example-task", "packet": historical, "files": files}
+        raw = (json.dumps(manifest) + "\n").encode()
+        (packet / "history.json").write_bytes(raw)
+        board = {"version": 1, "updated": "2026-10-27", "events": [], "tasks": [{
+            "id": "example-task", "title": "Closed fixture", "priority": 1,
+            "work_state": state, "condition": "normal", "implementation_authority": "closed" if state == "accepted" else "granted",
+            "packet": canonical, "next_gate": "None", "delivery_state": "local",
+            "branch": "feature/fixture", "depends_on": [], "validation": ["Synthetic fixture report"],
+            "approved_by": "Fixture Maintainer", "approved_at": "2026-10-27",
+            "authority_backing_packets": [{"packet": historical, "manifest": canonical + "history.json", "manifest_sha256": hashlib.sha256(raw).hexdigest()}],
+        }]}
+        if state == "accepted":
+            board["tasks"][0].update(accepted_by="Fixture Maintainer", accepted_at="2026-10-27")
+        return board
+
+    def schema_validator(self) -> Draft202012Validator:
+        schema = json.loads((self.planning / "board.schema.json").read_text())
+        Draft202012Validator.check_schema(schema)
+        return Draft202012Validator(schema)
+
+    def test_accepted_archive_history_passes_schema_and_runtime(self) -> None:
+        self.board = self.closed_board_with_backing("accepted")
+        self.schema_validator().validate(self.board)
+        self.write_board()
+        self.succeed("render")
+        self.succeed("validate")
+
+    def test_completed_planning_history_passes_schema_and_runtime(self) -> None:
+        self.board = self.closed_board_with_backing("completed")
+        self.schema_validator().validate(self.board)
+        self.write_board()
+        self.succeed("render")
+        self.succeed("validate")
+
+    def test_archive_and_planning_history_cannot_cross_states(self) -> None:
+        board = self.closed_board_with_backing("accepted")
+        task = board["tasks"][0]
+        task["authority_backing_packets"][0]["packet"] = "docs/planning/active/example-task/"
+        self.assertTrue(list(self.schema_validator().iter_errors(board)))
+        self.board = board
+        self.write_board()
+        self.assert_rejected_without_writes("historical", "validate")
+
+    def test_archive_history_tampering_is_rejected(self) -> None:
+        self.board = self.closed_board_with_backing("accepted")
+        self.write_board()
+        self.succeed("render")
+        report = self.root / "docs/archive/completed/2026/example-task/historical/report.md"
+        report.write_text("# Altered report\n")
+        self.assert_rejected_without_writes("SHA256 mismatch", "validate")
 
 
 if __name__ == "__main__":

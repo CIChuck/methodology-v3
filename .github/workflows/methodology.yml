@@ -10,6 +10,39 @@ permissions:
   contents: read
 
 jobs:
+  toolkit-regression:
+    name: toolkit-regression (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install GenDev prerequisites
+        shell: bash
+        run: |
+          if ! command -v rg >/dev/null 2>&1; then
+            if command -v apt-get >/dev/null 2>&1; then
+              sudo apt-get update -q && sudo apt-get install -y -q ripgrep
+            else
+              brew install ripgrep
+            fi
+          fi
+      - name: Install isolated board test requirements
+        run: python -m pip install -r requirements-devboard.txt
+      - name: Validate source task board
+        run: python scripts/devboard.py validate
+      - name: Board and JSON Schema regressions
+        run: python -B -m unittest discover -s tests/devboard -v
+      - name: Installation, upgrade, rollback and rendering regressions
+        run: python -B -m unittest discover -s tests/migration -v
+
   shell-and-unit:
     name: shell-and-unit (${{ matrix.os }})
     runs-on: ${{ matrix.os }}

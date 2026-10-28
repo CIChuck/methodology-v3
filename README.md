@@ -5,6 +5,11 @@ lifecycle contract. Independent review, human acceptance, final documentation
 refresh and publication remain pending. See
 `docs/resources/evolution/v3-migration/README.md` for authorized scope and evidence.
 
+For product creation and upgrades, follow
+`docs/methodology/guides/distribution-ownership.md`. Product installation seeds
+an empty board and preserves project-owned policies, authority and local skills.
+The source repository's migration board is not a new product's task history.
+
 This repository is a seed baseline for building software products with AI-assisted coding agents
 such as Codex, Claude Code, and similar tools.
 

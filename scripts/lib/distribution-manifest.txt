@@ -1,7 +1,7 @@
 # type|source|target|mode|class
 # type: file or tree
 # mode: executable or preserve
-# class: required, agents, workflow, optional_resources
+# class: required, agents, workflow, optional_resources, project (seed missing files only)
 
 tree|docs/methodology|docs/methodology|preserve|required
 tree|docs/project-template|docs/project-template|preserve|required
@@ -28,3 +28,13 @@ file|scripts/record-deployment-approval.sh|scripts/record-deployment-approval.sh
 file|docs/methodology/templates/product-ci-workflow.yml|.github/workflows/methodology.yml|preserve|workflow
 file|AGENTS.md|AGENTS.md|preserve|agents
 tree|docs/resources|docs/resources|preserve|optional_resources
+
+file|scripts/devboard.py|scripts/devboard.py|preserve|required
+file|scripts/friday-dev-board.py|scripts/friday-dev-board.py|preserve|project
+file|docs/planning/board.schema.json|docs/planning/board.schema.json|preserve|required
+tree|tests/devboard|tests/devboard|preserve|required
+tree|docs/policies|docs/policies|preserve|project
+tree|docs/project-template/planning|docs/planning|preserve|project
+tree|.agents/skills|.agents/skills|preserve|project
+file|docs/archive/completed/.gitkeep|docs/archive/completed/.gitkeep|preserve|project
+file|requirements-devboard.txt|requirements-devboard.txt|preserve|required

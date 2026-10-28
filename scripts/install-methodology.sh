@@ -13,7 +13,7 @@ project authority from this repository.
 
 Options:
   --dry-run                    Validate and report planned actions without writing.
-  --force                      Upgrade existing GenDev-owned paths only.
+  --force                      Upgrade owned paths; stop on local conflicts.
   --with-resources             Also install docs/resources reference material.
   --integrate-agents           Add a managed GenDev include block to existing AGENTS.md.
   --protected-branch BRANCH    Render workflow push checks for BRANCH.
@@ -77,7 +77,11 @@ if gendev_dist_install "$repo_root" "$target_repo" "$force" "$with_resources" "$
   else
     echo "Install completed."
   fi
-  echo "Next: run scripts/init-project.sh \"Your Project Name\" in the target, then scripts/check-methodology.sh."
+  if [ -f "$target_repo/docs/project/project.yaml" ]; then
+    echo "Next: run scripts/project-state.sh and scripts/check-methodology.sh in the target; preserve its current approvals."
+  else
+    echo "Next: run scripts/init-project.sh \"Your Project Name\" in the target, then scripts/check-methodology.sh."
+  fi
   exit 0
 fi
 

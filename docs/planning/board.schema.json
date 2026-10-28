@@ -69,6 +69,58 @@
               }
             }
           }
+        },
+        {
+          "if": {
+            "required": [
+              "work_state",
+              "authority_backing_packets"
+            ],
+            "properties": {
+              "work_state": {
+                "const": "completed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "authority_backing_packets": {
+                "items": {
+                  "properties": {
+                    "packet": {
+                      "pattern": "^docs/planning/(active|queued|review|blocked|deferred|backlog)/[^/]+/$"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "work_state",
+              "authority_backing_packets"
+            ],
+            "properties": {
+              "work_state": {
+                "const": "accepted"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "authority_backing_packets": {
+                "items": {
+                  "properties": {
+                    "packet": {
+                      "pattern": "^docs/archive/completed/[0-9]{4}/[^/]+/historical/$"
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       ],
       "properties": {
@@ -185,7 +237,7 @@
         "packet": {
           "type": "string",
           "maxLength": 1024,
-          "pattern": "^docs/planning/(active|queued|review|blocked|deferred|backlog)/[^/]+/$"
+          "pattern": "^(docs/planning/(active|queued|review|blocked|deferred|backlog)/[^/]+/|docs/archive/completed/[0-9]{4}/[^/]+/historical/)$"
         },
         "manifest": {
           "type": "string",

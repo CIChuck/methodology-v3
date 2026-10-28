@@ -65,9 +65,6 @@ if [ -e "$target" ]; then
 fi
 
 today="$(date +%F)"
-project_name_sed="$(printf '%s' "$project_name" | sed 's/[\/&]/\\&/g')"
-slug_sed="$(printf '%s' "$slug" | sed 's/[\/&]/\\&/g')"
-today_sed="$(printf '%s' "$today" | sed 's/[\/&]/\\&/g')"
 
 mkdir -p \
   "$target/approvals" \
@@ -88,14 +85,7 @@ render_template() {
   src="$1"
   dest="$2"
 
-  sed \
-    -e "s/\[Project Name\]/$project_name_sed/g" \
-    -e "s/\[project name\]/$project_name_sed/g" \
-    -e "s/\[project-slug\]/$slug_sed/g" \
-    -e "s/\[YYYY-MM-DD\]/$today_sed/g" \
-    -e "s/^Date:$/Date: $today_sed/g" \
-    -e "s/^Owner:$/Owner: TBD/g" \
-    "$src" > "$dest"
+  python3 "$script_dir/lib/render_template.py" "$src" "$dest" "$project_name" "$slug" "$today" "1"
 }
 
 render_template "$project_template/project.yaml" "$target/project.yaml"
@@ -115,103 +105,7 @@ render_template "$template_root/value-review-template.md" "$target/as-built/phas
 
 render_template "$template_root/phase-plan-template.md" "$target/build-plan/phase-plan.md"
 
-cat > "$target/build-plan/phases/phase-1-construction-directive.md" <<EOF
-# Phase 1 Construction Directive: $project_name
-
-Status: Draft | Ready for Review | Ready for Approval | Accepted | Stale | Superseded
-project: $slug
-Date: $today
-Owner: TBD
-Authority: docs/methodology/constitution/gendev.md
-Source:
-  Phase Build Plan: docs/project/build-plan/phases/phase-1-build-plan.md
-  Tactical Plan: docs/project/build-plan/phases/phase-1-tactical-implementation-plan.md
-  PRD: docs/project/prd/prd.md
-  Architecture: docs/project/architecture/architecture.md
-  Governance/Security: docs/project/security-governance/governance-security-spec.md
-Produced by: TBD
-Produced on: $today
-Produced with: human-agent collaboration
-Agent identity: TBD
-Derived from:
-  - path: docs/project/build-plan/phases/phase-1-build-plan.md
-    revision: TBD
-  - path: docs/project/build-plan/phases/phase-1-tactical-implementation-plan.md
-    revision: TBD
-  - path: docs/project/prd/prd.md
-    revision: TBD
-  - path: docs/project/architecture/architecture.md
-    revision: TBD
-  - path: docs/project/security-governance/governance-security-spec.md
-    revision: TBD
-
-## Completion Standard
-
-This directive is complete when it can be sent to an implementation agent as the controlling build
-authority for Phase 1.
-
-## AI Builder Role
-
-You are implementing a bounded phase from documented authority. Implement only the scope authorized
-by this directive and the tactical implementation plan.
-
-## Source Authority And Precedence
-
-1. docs/project/security-governance/governance-security-spec.md
-2. docs/project/architecture/architecture.md
-3. docs/project/prd/prd.md
-4. docs/project/build-plan/phases/phase-1-build-plan.md
-5. docs/project/build-plan/phases/phase-1-tactical-implementation-plan.md
-6. This construction directive
-
-## Implementation Objective
-
-\`\`\`text
-Replace with the exact Phase 1 implementation objective.
-\`\`\`
-
-## Allowed Scope
-
-\`\`\`text
-Replace with authorized files, modules, behavior, tests, and documentation changes.
-\`\`\`
-
-## Non-Goals
-
-\`\`\`text
-List deferred and forbidden behavior. The implementation agent must not build these items.
-\`\`\`
-
-## Required Workstreams
-
-\`\`\`text
-Summarize tactical workstreams that must be implemented.
-\`\`\`
-
-## Required Tests And Verification
-
-\`\`\`text
-List required tests, UAT checks, verification commands, and expected evidence.
-\`\`\`
-
-## Security And Governance Requirements
-
-\`\`\`text
-List active security/governance constraints for this phase.
-\`\`\`
-
-## Documentation Close-Out
-
-\`\`\`text
-List docs that must be updated before phase close.
-\`\`\`
-
-## Stop Conditions
-
-Stop and request human or planning review if implementation requires new scope, architecture
-changes, deferred behavior, unapproved external services, destructive migration, or changed
-security/governance behavior.
-EOF
+render_template "$template_root/phase-construction-directive-template.md" "$target/build-plan/phases/phase-1-construction-directive.md"
 
 cat > "$target/README.md" <<EOF
 # $project_name

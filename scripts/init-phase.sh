@@ -64,15 +64,7 @@ render_template() {
     return
   fi
 
-  sed \
-    -e "s/\[Project Name\]/$project_name/g" \
-    -e "s/\[project name\]/$project_name/g" \
-    -e "s/\[project-slug\]/$slug/g" \
-    -e "s/\[phase-id\]/$phase_id/g" \
-    -e "s/\[YYYY-MM-DD\]/$today/g" \
-    -e "s/^Date:$/Date: $today/g" \
-    -e "s/^Owner:$/Owner: TBD/g" \
-    "$src" > "$dest"
+  python3 "$script_dir/lib/render_template.py" "$src" "$dest" "$project_name" "$slug" "$today" "$phase_id"
   printf 'CREATE: %s\n' "$dest"
 }
 

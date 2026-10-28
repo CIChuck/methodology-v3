@@ -14,14 +14,24 @@ Use this guide after changing orchestration guides, project templates, `AGENTS.m
 
 ## Dry-Run Setup
 
-Create an isolated copy of the repository and initialize a project:
+Choose either a fresh initialization exercise or continuation of an existing
+project. Work only in an isolated copy; never replace live project authority.
+
+For fresh initialization, copy baseline/tooling surfaces and omit docs/project,
+Git metadata and runtime state:
 
 ```bash
-tmpdir="$(mktemp -d /tmp/methodology-dry-run.XXXXXX)"
-tar --exclude .git -cf - . | tar -C "$tmpdir" -xf -
+tmpdir="$(mktemp -d ${TMPDIR:-/tmp}/methodology-dry-run.XXXXXX)"
+tar -cf - AGENTS.md docs/methodology docs/project-template scripts tests | tar -C "$tmpdir" -xf -
 cd "$tmpdir"
 ./scripts/init-project.sh "Example Product"
 ```
+
+For a continuation exercise, copy docs/project as well and retain its actual
+approval state. Run project-state instead of initializing again. Fixture copies
+must not include credentials or active runtime data. A dry run never supplies
+missing human approvals. Initialization refuses an existing project by default;
+do not use --force as a workaround on the live source.
 
 Then start the chosen coding-agent CLI from the dry-run directory.
 

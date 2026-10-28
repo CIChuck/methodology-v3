@@ -70,6 +70,16 @@ PYINT
 else
   printf 'Context: authority\n'
 fi
+candidate="$repo_root/docs/methodology/schema/candidate.json"
+if [ -f "$candidate" ]; then
+  python3 - "$candidate" <<'PYCAND'
+import json, sys
+candidate = json.load(open(sys.argv[1]))
+print(f"Distribution candidate: {candidate['id']} ({candidate['status']})")
+print(f"Candidate independent review: {candidate['independent_review']}")
+print(f"Candidate human acceptance: {candidate['human_acceptance']}")
+PYCAND
+fi
 printf 'Lifecycle target: %s\n' "$GENDEV_LIFECYCLE_TARGET_VERSION"
 printf 'Lifecycle status: %s\n' "$GENDEV_LIFECYCLE_REGISTRY_STATUS"
 
