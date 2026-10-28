@@ -183,3 +183,10 @@ Russell explicitly authorized on 2026-10-28: "i authorize this one additional VA
 review/round-3/remediation-directive.md. One bounded fix and one fresh full review
 are authorized. Further mandatory findings return to Chuck; policy, acceptance,
 step 8 and publication boundaries remain unchanged.
+
+## Authorized VAL-005 boundary follow-up
+
+Chuck Russell instructed on 2026-10-28: "lets fix it and test it" after the
+round-4 bounded follow-up proposal and explanation of fresh review. Apply
+review/round-4/remediation-directive.md for this one fix/test/review cycle.
+Further mandatory findings return to Chuck; acceptance remains pending.

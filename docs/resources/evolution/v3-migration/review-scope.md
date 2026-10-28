@@ -131,3 +131,10 @@ Chuck approved exactly one additional VAL-005 remediation/review cycle after
 the two-cycle stop. See review/round-3/human-disposition.md and
 review/round-3/remediation-directive.md. This review remains full RV-01–RV-10;
 further mandatory findings return to the human without automatic remediation.
+
+## Authorized VAL-005 boundary follow-up
+
+Chuck Russell instructed on 2026-10-28: "lets fix it and test it" after the
+round-4 bounded follow-up proposal and explanation of fresh review. Apply
+review/round-4/remediation-directive.md for this one fix/test/review cycle.
+Further mandatory findings return to Chuck; acceptance remains pending.

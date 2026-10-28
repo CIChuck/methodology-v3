@@ -340,7 +340,8 @@ class ToolkitMigrationTests(unittest.TestCase):
                 self.command("./scripts/init-phase.sh", "2", name, expected=2)
                 self.assertEqual(inventory(self.target / "docs/project"), before)
 
-    def exercise_documented_dry_run(self, source: Path) -> None:
+    def exercise_documented_dry_run(self, source: Path, *, omit: str | None = None,
+                                    external_links: bool = False) -> None:
         # Extra files and project adaptations must never leak into fresh setup.
         marker = "LIVE-SECRET-AND-TASK-HISTORY"
         (source / ".env").write_text(marker)
@@ -349,6 +350,21 @@ class ToolkitMigrationTests(unittest.TestCase):
         (source / "docs/policies/legacy-policy-debt.md").write_text(marker)
         (source / "AGENTS.md").write_text(marker)
         (source / "docs/planning/board.yaml").write_text(marker)
+        if omit is not None:
+            path = source / omit
+            shutil.rmtree(path) if path.is_dir() else path.unlink()
+        if external_links:
+            private = self.base / "external-private-skill.md"
+            private.write_text(marker)
+            links = [".agents/skills/private/SKILL.md", "docs/methodology/private-secret.md",
+                     "docs/project-template/planning/private-secret.md",
+                     "docs/project-template/dry-run-policies/private-secret.md"]
+            for name in links:
+                path = source / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.symlink_to(private)
+            # A directory link must also be excluded without walking its files.
+            (source / "docs/methodology/private-directory").symlink_to(self.base, target_is_directory=True)
         before = inventory(source)
         guide = (REPOSITORY / "docs/methodology/guides/orchestration-validation.md").read_text()
         commands = guide.split("```bash\n", 1)[1].split("```", 1)[0]
@@ -403,6 +419,20 @@ class ToolkitMigrationTests(unittest.TestCase):
         self.command("./scripts/init-project.sh", "Existing Fixture")
         self.exercise_documented_dry_run(self.target)
 
+    def test_dry_run_excludes_external_project_and_unowned_baseline_tree_links(self) -> None:
+        self.install()
+        self.command("./scripts/init-project.sh", "Existing Fixture")
+        self.exercise_documented_dry_run(self.target, external_links=True)
+
+    def test_dry_run_does_not_require_live_project_owned_surfaces(self) -> None:
+        for number, surface in enumerate(("AGENTS.md", ".agents/skills", "docs/policies")):
+            with self.subTest(surface=surface):
+                self.target = self.base / f"initialized-product-{number}"
+                self.target.mkdir()
+                self.install()
+                self.command("./scripts/init-project.sh", "Existing Fixture")
+                self.exercise_documented_dry_run(self.target, omit=surface)
+
     def test_documented_fresh_dry_run_works_from_methodology_checkout(self) -> None:
         source = self.source_copy()
         for args in (("git", "init"), ("git", "add", "."),
@@ -424,6 +454,52 @@ class ToolkitMigrationTests(unittest.TestCase):
         before = inventory(self.target)
         result = self.command(sys.executable, "scripts/create-dry-run.py", expected=1)
         self.assertIn("source doctor failed", result.stderr)
+        self.assertEqual(result.stdout, "")
+        self.assertEqual(inventory(self.target), before)
+
+    def test_dry_run_refuses_changed_or_symlinked_owned_baseline(self) -> None:
+        self.install()
+        path = self.target / MANAGED
+        original = path.read_bytes()
+        for kind in ("changed", "symlink"):
+            with self.subTest(kind=kind):
+                path.unlink()
+                if kind == "changed":
+                    path.write_bytes(original + b"\nLocal change.\n")
+                else:
+                    external = self.base / "external-owned-template.md"
+                    external.write_bytes(original)
+                    path.symlink_to(external)
+                before = inventory(self.target)
+                result = self.command(sys.executable, "scripts/create-dry-run.py", expected=1)
+                self.assertIn("source doctor failed", result.stderr)
+                self.assertEqual(result.stdout, "")
+                self.assertEqual(inventory(self.target), before)
+
+    def test_normal_installer_still_rejects_external_source_discovery_links(self) -> None:
+        source = self.source_copy()
+        external = self.base / "external-private.md"
+        external.write_text("Synthetic private skill\n")
+        link = source / ".agents/skills/private/SKILL.md"
+        link.parent.mkdir()
+        link.symlink_to(external)
+        before = inventory(self.target)
+        result = self.install(source=source, expected=1)
+        self.assertIn("external source symlink", result.stderr)
+        self.assertEqual(inventory(self.target), before)
+
+    def test_dry_run_refuses_symlinked_parent_of_selected_owned_files(self) -> None:
+        self.install()
+        templates = self.target / "docs/methodology/templates"
+        external = self.base / "external-template-directory"
+        shutil.move(templates, external)
+        templates.symlink_to(external, target_is_directory=True)
+        # Identical regular child files still hash correctly; source selection
+        # must independently reject their unsafe parent before copying them.
+        self.command("./scripts/gendev-doctor.sh")
+        before = inventory(self.target)
+        result = self.command(sys.executable, "scripts/create-dry-run.py", expected=1)
+        self.assertIn("unsafe target parent: docs/methodology/templates", result.stderr)
         self.assertEqual(result.stdout, "")
         self.assertEqual(inventory(self.target), before)
 

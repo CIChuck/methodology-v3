@@ -1,6 +1,6 @@
 # Human Disposition: VAL-005 Residual
 
-Status: Further remediation not authorized; explicit human disposition required
+Status: Bounded follow-up authorized by Chuck Russell, 2026-10-28
 Owner: Chuck Russell
 Task: v3-baseline-migration
 Reviewed candidate: 6ca2ad10f7eb0c71b9a316d458a20ad667c21c4b
@@ -57,3 +57,7 @@ The task-specific one-cycle extension is exhausted. The independent validation
 policy's two-cycle escalation rule was honored before that extension and the
 approved round-3 directive requires further mandatory findings to return to
 Chuck. This packet proposes a follow-up; it grants no authority to implement it.
+
+## Recorded authorization
+
+Chuck Russell instructed: "lets fix it and test it" in response to the proposed bounded fix, regression checks and fresh independent review. This authorizes that follow-up within the stated local scope; it grants no acceptance, publication or additional automatic cycle.

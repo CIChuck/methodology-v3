@@ -28,6 +28,11 @@ Git metadata, credentials and runtime state. It never initializes the source.
 Source checkouts must have their baseline assets tracked in Git; installed
 products use their installation ownership record. Unrecorded local additions
 are excluded. Archives without either form of provenance must first be installed.
+Selection occurs before source traversal or content reads: absent live AGENTS,
+policy or skill-discovery surfaces, external project-owned skill links and
+unrecorded additions under baseline directories do not block fresh construction.
+Selected owned assets still undergo path/symlink and integrity checks. The normal
+installer retains its full-source selection and source-link protections.
 The helper writes a new explicitly marked fixture record with actual copied
 hashes/modes and source revision, rather than carrying the source's ownership
 claims, local amendments or installation history into a different file set.

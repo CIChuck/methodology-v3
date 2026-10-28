@@ -87,7 +87,16 @@ class Entry:
     owned: bool
 
 
-def source_entries(source: Path, resources: bool, branch: str) -> list[Entry]:
+def source_entries(source: Path, resources: bool, branch: str, *,
+                   owned_only: bool = False,
+                   allowed_paths: set[str] | None = None) -> list[Entry]:
+    """Read selected distribution inputs; defaults retain full installer behavior.
+
+    Fresh exercises select owned groups and recorded/tracked destination paths
+    before touching source surfaces. In that mode, enumerate the allowed paths
+    directly instead of traversing trees containing excluded local additions.
+    Selected sources retain all normal path and symlink protections.
+    """
     entries: list[Entry] = []
     seen: set[str] = set()
     for line in (source / "scripts/lib/distribution-manifest.txt").read_text().splitlines():
@@ -102,11 +111,31 @@ def source_entries(source: Path, resources: bool, branch: str) -> list[Entry]:
             "required", "workflow", "agents", "optional_resources", "project"
         }:
             raise Conflict(f"invalid distribution entry: {src}")
+        owned = group not in {"project", "agents"}
+        if owned_only and not owned:
+            continue
         base = source / src
+        if allowed_paths is None:
+            paths = None
+        elif kind == "file":
+            if dst not in allowed_paths:
+                continue
+            paths = [base]
+        else:
+            paths = []
+            for name in sorted(allowed_paths):
+                if name.startswith(dst + "/"):
+                    relative(name)
+                    paths.append(base / PurePosixPath(name).relative_to(dst))
+            if not paths:
+                continue
         if not base.exists():
             raise Conflict(f"Distribution source missing: {src}")
-        paths = sorted(base.rglob("*")) if kind == "tree" else [base]
+        if paths is None:
+            paths = sorted(base.rglob("*")) if kind == "tree" else [base]
         for path in paths:
+            if allowed_paths is not None:
+                check_parents(source, path.relative_to(source).as_posix())
             if "__pycache__" in path.parts or path.name == ".DS_Store" or path.suffix == ".pyc":
                 continue
             if path.is_dir() and not path.is_symlink():
@@ -130,7 +159,6 @@ def source_entries(source: Path, resources: bool, branch: str) -> list[Entry]:
                 data = path.read_bytes()
             if name == ".github/workflows/methodology.yml":
                 data = data.replace(b"      - master\n", f"      - {branch}\n".encode())
-            owned = group not in {"project", "agents"}
             if link and owned:
                 raise Conflict(f"baseline-owned symlink is unsupported: {name}")
             entries.append(Entry(name, data, 0o755 if mode == "executable" else stat.S_IMODE(path.stat().st_mode), link, owned))

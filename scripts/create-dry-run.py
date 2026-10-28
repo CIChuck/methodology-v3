@@ -16,7 +16,7 @@ import subprocess
 import sys
 import tempfile
 from datetime import datetime, timezone
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent / "lib"))
@@ -51,11 +51,14 @@ def build(source: Path) -> Path:
         kind, _, destination, _, group = line.split("|")
         if kind == "file" and group in {"required", "workflow"} and destination not in allowed:
             raise Conflict(f"required baseline file lacks ownership/tracking: {destination}")
-    entries = [entry for entry in source_entries(source, False, "master")
-               if entry.owned and entry.path in allowed]
+    entries = source_entries(source, False, "master", owned_only=True, allowed_paths=allowed)
+    baseline = {entry.path: entry for entry in entries}
+    agent_template = baseline.get("docs/methodology/agents/sample-agents.md")
+    if agent_template is None:
+        raise Conflict("missing owned canonical agent template")
     # Never copy live AGENTS, adapted policies, skill additions, board/task history,
     # product README, provenance history, Git, environment files or runtime state.
-    entries.append(Entry("AGENTS.md", (source / "docs/methodology/agents/sample-agents.md").read_bytes()
+    entries.append(Entry("AGENTS.md", agent_template.data
                          + b"\nApply docs/policies/*.md. Skills are discoverable under .agents/skills/.\n"
                          + b"Run scripts/gendev-doctor.sh and scripts/project-state.sh before work; "
                          + b"validate the board and inspect next before task selection.\n", 0o644, False, False))
@@ -63,15 +66,12 @@ def build(source: Path) -> Path:
                          b"Disposable synthetic project; no inherited approvals or live product state.\n", 0o644, False, False))
     for base, destination in (("docs/project-template/planning", "docs/planning"),
                               ("docs/project-template/dry-run-policies", "docs/policies")):
-        if not (source / base).is_dir():
+        seeds = [entry for entry in baseline.values() if entry.path.startswith(base + "/")]
+        if not seeds:
             raise Conflict(f"missing canonical exercise seeds: {base}")
-        for path in sorted((source / base).rglob("*")):
-            if path.is_file():
-                name = path.relative_to(source).as_posix()
-                if path.is_symlink() or name not in allowed:
-                    raise Conflict(f"exercise seed is not a baseline-owned regular file: {name}")
-                entries.append(Entry(f"{destination}/{path.relative_to(source / base).as_posix()}",
-                                     path.read_bytes(), 0o644, False, False))
+        for entry in seeds:
+            suffix = PurePosixPath(entry.path).relative_to(base).as_posix()
+            entries.append(Entry(f"{destination}/{suffix}", entry.data, entry.mode, False, False))
     for entry in list(entries):
         if entry.path.startswith("docs/methodology/dev-skills/") and entry.data.startswith(b"---\nname: "):
             name = entry.data.split(b"\n", 2)[1].removeprefix(b"name: ").decode()
@@ -90,9 +90,9 @@ def build(source: Path) -> Path:
               "files": {e.path: digest(e.data) for e in entries if e.owned},
               "file_modes": {e.path: e.mode for e in entries if e.owned},
               "installation_history": [], "local_amendments": []}
-    candidate = source / "docs/methodology/schema/candidate.json"
-    if candidate.exists():
-        record["distribution_candidate"] = json_record(candidate)
+    candidate = baseline.get("docs/methodology/schema/candidate.json")
+    if candidate is not None:
+        record["distribution_candidate"] = json.loads(candidate.data)
     entries.append(Entry(RECORD, (json.dumps(record, indent=2) + "\n").encode(), 0o644, False, False))
     if Path(tempfile.gettempdir()).resolve().is_relative_to(source.resolve()):
         raise Conflict("TMPDIR must be outside the source repository")

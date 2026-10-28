@@ -24,7 +24,7 @@ Task approval and directory placement do not bypass GenDev authority.
 
 | Priority | Initiative | Condition | Authority | Delivery | Next gate |
 | ---: | --- | --- | --- | --- | --- |
-| 1 | [Integrate and validate methodology-v3 steps 1–6](blocked/v3-baseline-migration/) | blocked | granted | local | Chuck disposition on residual VAL-005 after the expressly authorized additional cycle; no VERIFIED result |
+| 1 | [Integrate and validate methodology-v3 steps 1–6](active/v3-baseline-migration/) | normal | granted | local | Fresh full independent review of VAL-005 follow-up; human acceptance pending |
 
 ## Completed
 

@@ -1,0 +1,24 @@
+{
+  "remediation_cycle": 4,
+  "authority": "Chuck Russell: lets fix it and test it",
+  "finding": "VAL-005 residual",
+  "status": "all local checks passed; fresh full independent review pending",
+  "changes": [
+    "Optional owned-group and allowed-destination selection occurs before source existence checks and traversal",
+    "Allowed tree entries are enumerated directly, avoiding unrecorded files and links",
+    "Fresh seeds and agent/candidate metadata reuse selected baseline entries",
+    "Default installer full-source behavior remains unchanged; selected source parents reject symlinks"
+  ],
+  "checks": {
+    "migration_tests": 42,
+    "board_tests": 17,
+    "replay_scenarios": 4,
+    "inherited_suites": 13
+  },
+  "limits": [
+    "Everything local; both originals preserved under additive-checkpoint exception",
+    "Fresh independent review required; acceptance and step 8 pending",
+    "Further mandatory findings return to Chuck"
+  ],
+  "recorded_at": "2026-10-28T21:02:25.138218+00:00"
+}

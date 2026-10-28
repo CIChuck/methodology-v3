@@ -5,10 +5,10 @@ tasks:
   title: Integrate and validate methodology-v3 steps 1–6
   priority: 1
   work_state: started
-  condition: blocked
+  condition: normal
   implementation_authority: granted
-  packet: docs/planning/blocked/v3-baseline-migration/
-  next_gate: Chuck disposition on residual VAL-005 after the expressly authorized additional cycle; no VERIFIED result
+  packet: docs/planning/active/v3-baseline-migration/
+  next_gate: Fresh full independent review of VAL-005 follow-up; human acceptance pending
   delivery_state: local
   branch: integration/v3-migration
   depends_on: []
@@ -24,7 +24,9 @@ tasks:
   - docs/resources/evolution/v3-migration/review/round-3/remediation-results.json (additional human-authorized cycle; fresh
     review pending)
   - docs/resources/evolution/v3-migration/review/round-4/report.md (CHANGES_REQUESTED; residual VAL-005)
-  - docs/resources/evolution/v3-migration/review/round-4/human-disposition.md (proposed follow-up; not authorized)
+  - docs/resources/evolution/v3-migration/review/round-4/human-disposition.md (bounded follow-up authorized by Chuck; fresh
+    review pending)
+  - docs/resources/evolution/v3-migration/review/round-4/remediation-results.json (local checks passed; fresh review pending)
   approved_by: Chuck Russell
   approved_at: '2026-10-27'
 events:
@@ -90,3 +92,17 @@ events:
   note: 'Round 4 requests changes: excluded project-owned surfaces still block fresh setup. Additional cycle exhausted; further
     remediation requires human direction.'
   evidence: docs/resources/evolution/v3-migration/review/round-4/report.md
+- task: v3-baseline-migration
+  at: '2026-10-28T20:57:53+00:00'
+  actor: Chuck Russell
+  actor_role: maintainer
+  action: condition blocked -> normal
+  note: User instructed lets fix it and test it after the bounded follow-up proposal; recorded by Codex.
+  evidence: docs/resources/evolution/v3-migration/review/round-4/remediation-directive.md
+- task: v3-baseline-migration
+  at: '2026-10-28T21:03:22.858611+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded authorized VAL-005 selection-boundary remediation
+  note: 13 inherited suites, 17 board tests, 42 migration tests and four replay scenarios passed locally. Task remains started
+    pending fresh review and human acceptance.
