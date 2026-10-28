@@ -1,0 +1,2 @@
+SIGTERM after 100 real per-file replacements: installer exit 1; exact file/mode/link/directory state restored
+blocked: installation interrupted by signal 15

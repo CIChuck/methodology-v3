@@ -27,7 +27,7 @@ if [ "$#" -lt 1 ] || [ "$#" -gt 2 ]; then
 fi
 
 phase_id="$1"
-project_name="${2:-Project}"
+project_name="${2-Project}"
 
 case "$phase_id" in
   *[!A-Za-z0-9-]* | "" | -* | *--)
@@ -43,6 +43,8 @@ if [ ! -d "$project_root" ]; then
   printf 'ERROR: docs/project is not initialized. Run scripts/init-project.sh first.\n' >&2
   exit 1
 fi
+
+python3 "$script_dir/lib/render_template.py" --validate-project-name "$project_name"
 
 mkdir -p \
   "$project_root/build-plan/phases" \

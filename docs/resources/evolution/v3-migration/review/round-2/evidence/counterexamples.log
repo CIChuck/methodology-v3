@@ -1,0 +1,32 @@
+rendering 'Widget "QA"' initializer exit 0 YAML ERROR while parsing a block mapping
+  in "<unicode string>", line 2, column 3:
+      name: "Widget "QA""
+      ^
+expected <block end>, but found '<scalar>'
+  in "<unicode string>", line 2, column 18:
+      name: "Widget "QA""
+                     ^
+quoted-name project-state exit 0 Project: Widget "QA"
+Slug: widget-qa
+Status: initialized
+Methodology version: 1.0.2
+Current gate: G1
+Current gate status: pending
+Required approver: TBD
+Next gate: G2
+Next role: prd-agent
+Next artifact: docs/project/prd/prd.md
+Validation: ./scripts/check-methodology.sh
+ 
+rendering 'Widget \\tools' initializer exit 0 parsed name 'Widget \tools' literal? False
+rendering 'Literal [id] / A&B' initializer exit 0 parsed name 'Literal [id] / A&B' literal? True
+invalid mode True rejected before writes: Warning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-review-counterexamples-4hlaka30/mode has no .git directory. Continuing with explicit file operations.
+blocked: invalid permission ownership mode: scripts/check-methodology.sh
+invalid mode -1 rejected before writes: Warning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-review-counterexamples-4hlaka30/mode has no .git directory. Continuing with explicit file operations.
+blocked: invalid permission ownership mode: scripts/check-methodology.sh
+invalid mode 4096 rejected before writes: Warning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-review-counterexamples-4hlaka30/mode has no .git directory. Continuing with explicit file operations.
+blocked: invalid permission ownership mode: scripts/check-methodology.sh
+invalid mode '0755' rejected before writes: Warning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-review-counterexamples-4hlaka30/mode has no .git directory. Continuing with explicit file operations.
+blocked: invalid permission ownership mode: scripts/check-methodology.sh
+permission-only 0o700 rejected with exact zero writes
+permission-only 0o644 rejected with exact zero writes

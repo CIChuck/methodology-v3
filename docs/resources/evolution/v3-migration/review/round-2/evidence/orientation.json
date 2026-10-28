@@ -1,0 +1,59 @@
+[
+  {
+    "name": "doctor",
+    "cmd": [
+      "./scripts/gendev-doctor.sh"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "checker",
+    "cmd": [
+      "./scripts/check-methodology.sh"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "board-validate",
+    "cmd": [
+      "uv",
+      "run",
+      "--frozen",
+      "--group",
+      "devboard",
+      "python",
+      "scripts/devboard.py",
+      "validate"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "board-next",
+    "cmd": [
+      "uv",
+      "run",
+      "--frozen",
+      "--group",
+      "devboard",
+      "python",
+      "scripts/devboard.py",
+      "next"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "board-show",
+    "cmd": [
+      "uv",
+      "run",
+      "--frozen",
+      "--group",
+      "devboard",
+      "python",
+      "scripts/devboard.py",
+      "show",
+      "v3-baseline-migration"
+    ],
+    "exit": 0
+  }
+]

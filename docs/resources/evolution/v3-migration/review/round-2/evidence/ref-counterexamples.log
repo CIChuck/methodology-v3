@@ -1,0 +1,6 @@
+higher allowed []
+lower rejected ['added checkpoint does not satisfy approved exception: refs/t3/orchestration-v2/checkpoints/fixture/ordinal/4']
+equal_numeric rejected ['added checkpoint does not satisfy approved exception: refs/t3/orchestration-v2/checkpoints/fixture/ordinal/05']
+wrong_subject rejected ['added checkpoint does not satisfy approved exception: refs/t3/orchestration-v2/checkpoints/fixture/ordinal/7']
+wrong_email rejected ['added checkpoint does not satisfy approved exception: refs/t3/orchestration-v2/checkpoints/fixture/ordinal/8']
+non-commit rejected ['cannot verify added checkpoint: refs/t3/orchestration-v2/checkpoints/fixture/ordinal/9']

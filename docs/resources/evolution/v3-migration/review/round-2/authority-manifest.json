@@ -1,0 +1,50 @@
+{
+  "AGENTS.md": {
+    "revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+    "sha256": "3d593263da054b983a35f13f25c2cb452ef66d9faa9bc90694e7453007134d01"
+  },
+  "docs/methodology/constitution/gendev.md": {
+    "revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+    "sha256": "f7073cd6d2e9f26ad13e97839e80456ce617a63d3d8f5df3660c7e07500dad4f"
+  },
+  "docs/policies/repository-engineering-policy.md": {
+    "revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+    "sha256": "1d57f89d49bd3ecd49fb97ac91248014a2da9a1386100e74aed30b0d144a40bd"
+  },
+  "docs/policies/development-task-lifecycle.md": {
+    "revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+    "sha256": "ac54fc778c216480531001d702006899183a29f3fd19050bb8ea317c3b2803ea"
+  },
+  "docs/policies/independent-validation-policy.md": {
+    "revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+    "sha256": "24a97c9984adf62587b818b5b2963813c7c3fceec8c41fd92a2956c5582b1abc"
+  },
+  "docs/policies/dev-board-integration.md": {
+    "revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+    "sha256": "af36991dc3ae53977aeb347db84a35aed307a58882394319ee49aec3931f5289"
+  },
+  "docs/resources/evolution/v3-migration/README.md": {
+    "revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+    "sha256": "b80365754e4f738b9ca65d2dfb10a949688ca941396408c8f58bd81bace907c2"
+  },
+  "docs/resources/evolution/v3-migration/review-scope.md": {
+    "revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+    "sha256": "e2c02acb2a797fbb31b5ce06f83a91a700a1f6c6b121cafacae9ffd8f91c3f20"
+  },
+  "docs/methodology/dev-skills/independent-code-validator.md": {
+    "revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+    "sha256": "ce179b69caf21f433e7e12f2a22f59de7a2b47648b63c1a444eafea231845af4"
+  },
+  "docs/methodology/guides/subagent-coordination-protocol.md": {
+    "revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+    "sha256": "9b3c227dacbbedffebe64ff3a4767b14081095d64ff0c19eac7bd147ca9b0535"
+  },
+  "docs/resources/evolution/v3-migration/review/round-1/checkpoint-exception-approval.json": {
+    "revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+    "sha256": "37c9fa3d8d5ace42e6822b93a87bf4c54c6a35234f7f860c57146de703d15dd7"
+  },
+  "docs/resources/evolution/v3-migration/review/round-1/remediation-directive.md": {
+    "revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+    "sha256": "944f09c7f43b6f0f363a9726e9cda57fb3b46c202df00151a1a1e50fb243f3cc"
+  }
+}

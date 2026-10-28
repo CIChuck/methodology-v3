@@ -1,0 +1,17 @@
+.agents/skills/ai-construction-directive-builder/SKILL.md: resolves internally; name and description valid
+.agents/skills/architecture-spec-author/SKILL.md: resolves internally; name and description valid
+.agents/skills/code-conformance-reviewer/SKILL.md: resolves internally; name and description valid
+.agents/skills/friday-dev-board/SKILL.md: resolves internally; name and description valid
+.agents/skills/governance-security-spec/SKILL.md: resolves internally; name and description valid
+.agents/skills/independent-code-validator/SKILL.md: resolves internally; name and description valid
+.agents/skills/migration-refactor-analyst/SKILL.md: resolves internally; name and description valid
+.agents/skills/phase-build-planner/SKILL.md: resolves internally; name and description valid
+.agents/skills/prd-author/SKILL.md: resolves internally; name and description valid
+.agents/skills/remediation-closeout/SKILL.md: resolves internally; name and description valid
+.agents/skills/subagent-directives-template/SKILL.md: resolves internally; name and description valid
+.agents/skills/subagents-worktrees-template/SKILL.md: resolves internally; name and description valid
+.agents/skills/tactical-implementation-planner/SKILL.md: resolves internally; name and description valid
+.agents/skills/traceability-matrix/SKILL.md: resolves internally; name and description valid
+.agents/skills/vision-framing/SKILL.md: resolves internally; name and description valid
+All four historical amendments and six promoted-file SHA256s reconciled
+Original input-manifest introduced once and never revised: 08d2be2 Record isolated v3 migration scope and preserved inputs

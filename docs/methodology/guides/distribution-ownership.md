@@ -15,6 +15,13 @@ Then run init-project in the destination. Existing project authority is never
 copied from the source toolkit. The source's migration tasks are not product
 scaffolding; installed products receive an empty board and project-owned seeds.
 
+Initializer project names are nonempty single-line text without control
+characters and must produce a nonempty alphanumeric slug. Quotes, apostrophes,
+backslashes, Unicode, slashes, ampersands and literal bracket tokens remain data.
+The shared renderer serializes whole-scalar name tokens safely in YAML and keeps
+literal text in Markdown. Invalid names are rejected before creating or replacing
+project authority; later-phase setup applies the same input validation.
+
 The distribution manifest identifies baseline-owned assets and `project`
 seeds. Project seeds copy only missing files. Baseline-owned files are pinned
 in installation.json; target-owned policies, board state, task indexes, agent

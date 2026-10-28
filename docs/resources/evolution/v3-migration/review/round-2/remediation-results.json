@@ -1,0 +1,20 @@
+{
+  "remediation_cycle": 2,
+  "status": "locally checked; fresh full review pending",
+  "reviewed_candidate": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+  "finding": "VAL-004",
+  "changes": [
+    "YAML whole-scalar project names use JSON string encoding; Markdown stays literal",
+    "One-pass placeholder substitution retained",
+    "Empty/control/Unicode-line-separator names fail before artifact creation or replacement",
+    "Later-phase explicit empty names no longer silently become the default"
+  ],
+  "checks": {
+    "inherited_suites": 13,
+    "board_schema_tests": 17,
+    "migration_preservation_tests": 33,
+    "isolated_scenarios": 4
+  },
+  "recorded_at": "2026-10-28T03:49:16.575026+00:00",
+  "remaining_policy_boundary": "After two unsuccessful remediation cycles, return unresolved mandatory findings to Chuck rather than starting another automatic cycle."
+}

@@ -1,0 +1,4 @@
+INFO: docs/project is not initialized. Run: ./scripts/init-project.sh "Project Name"
+
+Methodology check passed: 0 warning(s).
+Preparing worktree (detached HEAD 30aa3c7)

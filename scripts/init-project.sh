@@ -41,6 +41,7 @@ repo_root="$(cd "$script_dir/.." && pwd)"
 # an environment the methodology supports.
 . "$script_dir/lib/gendev-common.sh"
 gendev_require_prereqs "init-project.sh" || exit 3
+python3 "$script_dir/lib/render_template.py" --validate-project-name "$project_name"
 target="$repo_root/docs/project"
 template_root="$repo_root/docs/methodology/templates"
 project_template="$repo_root/docs/project-template"

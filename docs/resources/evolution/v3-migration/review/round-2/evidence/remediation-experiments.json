@@ -1,0 +1,281 @@
+{
+  "kind": "local deterministic migration experiments",
+  "recorded_at": "2026-10-28T03:44:59.745005+00:00",
+  "source_revision": "30aa3c7d68451c9b2ed892d30f349e20c0b14c3f",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "python": "3.13.10",
+  "commands": [
+    {
+      "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/install-methodology.sh",
+        "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/fresh"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "ev-board-integration.md\n  installed: docs/policies/development-task-lifecycle.md\n  installed: docs/policies/independent-validation-policy.md\n  installed: docs/policies/legacy-policy-debt.md\n  installed: docs/policies/repository-engineering-policy.md\n  installed: docs/planning/README.md\n  installed: docs/planning/active/.gitkeep\n  installed: docs/planning/backlog/.gitkeep\n  installed: docs/planning/blocked/.gitkeep\n  installed: docs/planning/board.yaml\n  installed: docs/planning/deferred/.gitkeep\n  installed: docs/planning/queued/.gitkeep\n  installed: docs/planning/review/.gitkeep\n  installed: docs/planning/task-template.md\n  installed: .agents/skills/ai-construction-directive-builder/SKILL.md\n  installed: .agents/skills/architecture-spec-author/SKILL.md\n  installed: .agents/skills/code-conformance-reviewer/SKILL.md\n  installed: .agents/skills/friday-dev-board/SKILL.md\n  installed: .agents/skills/governance-security-spec/SKILL.md\n  installed: .agents/skills/independent-code-validator/SKILL.md\n  installed: .agents/skills/migration-refactor-analyst/SKILL.md\n  installed: .agents/skills/phase-build-planner/SKILL.md\n  installed: .agents/skills/prd-author/SKILL.md\n  installed: .agents/skills/remediation-closeout/SKILL.md\n  installed: .agents/skills/subagent-directives-template/SKILL.md\n  installed: .agents/skills/subagents-worktrees-template/SKILL.md\n  installed: .agents/skills/tactical-implementation-planner/SKILL.md\n  installed: .agents/skills/traceability-matrix/SKILL.md\n  installed: .agents/skills/vision-framing/SKILL.md\n  installed: docs/archive/completed/.gitkeep\n  installed: requirements-devboard.txt\n\nInstall completed with preserved AGENTS.md; fully governed operation requires explicit AGENTS integration.\nNext: run scripts/init-project.sh \"Your Project Name\" in the target, then scripts/check-methodology.sh.\nWarning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/fresh has no .git directory. Continuing with explicit file operations.\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/fresh",
+      "argv": [
+        "./scripts/init-project.sh",
+        "Synthetic C1 Toolkit Fixture"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "Initialized docs/project for Synthetic C1 Toolkit Fixture\nProject slug: synthetic-c1-toolkit-fixture\nNext document: docs/project/vision/vision.md\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/v2-source",
+      "argv": [
+        "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/v2-source/scripts/install-methodology.sh",
+        "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/v2-product"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "Distribution report:\ninstalled:\n  - docs/methodology\n  - docs/project-template\n  - scripts/lib\n  - tests/methodology\n  - scripts/check-methodology.sh\n  - scripts/methodology-guard.sh\n  - scripts/install-hooks.sh\n  - scripts/init-project.sh\n  - scripts/init-phase.sh\n  - scripts/gendev-doctor.sh\n  - scripts/project-state.sh\n  - scripts/pin-provenance.sh\n  - scripts/new-artifact.sh\n  - scripts/install-methodology.sh\n  - scripts/backfill-methodology.sh\n  - scripts/methodology-metrics.sh\n  - scripts/test-checker.sh\n  - scripts/test-methodology.sh\n  - scripts/close-gate.sh\n  - scripts/record-phase-checkpoint.sh\n  - scripts/close-phase.sh\n  - scripts/record-deployment-approval.sh\n  - .github/workflows/methodology.yml\n  - AGENTS.md\n  - docs/methodology/schema/installation.json (installation record)\n  - .gitignore (.tmp/ suite scratch rule appended)\nskipped:\n  - docs/resources (optional resources not requested)\n\nInstall completed with preserved AGENTS.md; fully governed operation requires explicit AGENTS integration.\nNext: run scripts/init-project.sh \"Your Project Name\" in the target, then scripts/check-methodology.sh.\nWarning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/v2-product has no .git directory. Continuing with explicit file operations.\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/v2-product",
+      "argv": [
+        "./scripts/init-project.sh",
+        "Synthetic V2 Upgrade Fixture"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "Initialized docs/project for Synthetic V2 Upgrade Fixture\nProject slug: synthetic-v2-upgrade-fixture\nNext document: docs/project/vision/vision.md\n"
+    },
+    {
+      "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/install-methodology.sh",
+        "--force",
+        "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/v2-product"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "tion.md\n  installed: docs/policies/development-task-lifecycle.md\n  installed: docs/policies/independent-validation-policy.md\n  installed: docs/policies/legacy-policy-debt.md\n  installed: docs/policies/repository-engineering-policy.md\n  installed: docs/planning/README.md\n  installed: docs/planning/active/.gitkeep\n  installed: docs/planning/backlog/.gitkeep\n  installed: docs/planning/blocked/.gitkeep\n  installed: docs/planning/board.yaml\n  installed: docs/planning/deferred/.gitkeep\n  installed: docs/planning/queued/.gitkeep\n  installed: docs/planning/review/.gitkeep\n  installed: docs/planning/task-template.md\n  installed: .agents/skills/ai-construction-directive-builder/SKILL.md\n  installed: .agents/skills/architecture-spec-author/SKILL.md\n  installed: .agents/skills/code-conformance-reviewer/SKILL.md\n  installed: .agents/skills/friday-dev-board/SKILL.md\n  installed: .agents/skills/governance-security-spec/SKILL.md\n  installed: .agents/skills/independent-code-validator/SKILL.md\n  installed: .agents/skills/migration-refactor-analyst/SKILL.md\n  installed: .agents/skills/phase-build-planner/SKILL.md\n  installed: .agents/skills/prd-author/SKILL.md\n  installed: .agents/skills/remediation-closeout/SKILL.md\n  installed: .agents/skills/subagent-directives-template/SKILL.md\n  installed: .agents/skills/subagents-worktrees-template/SKILL.md\n  installed: .agents/skills/tactical-implementation-planner/SKILL.md\n  installed: .agents/skills/traceability-matrix/SKILL.md\n  installed: .agents/skills/vision-framing/SKILL.md\n  installed: docs/archive/completed/.gitkeep\n  installed: requirements-devboard.txt\n\nInstall completed with preserved AGENTS.md; fully governed operation requires explicit AGENTS integration.\nNext: run scripts/project-state.sh and scripts/check-methodology.sh in the target; preserve its current approvals.\nWarning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/v2-product has no .git directory. Continuing with explicit file operations.\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/v2-product",
+      "argv": [
+        "./scripts/gendev-doctor.sh"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "GenDev doctor\nRepository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/v2-product\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: /Users/chuckrussell/Dev/gendev/methodology-v3 (tag none, commit 30aa3c7d6845)\nInstalled on: 2026-10-28T03:45:00.946363+00:00\nIntegrity: verified (162 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Synthetic V2 Upgrade Fixture\nProject slug: synthetic-v2-upgrade-fixture\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/v2-product",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "validate"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "Development board validation passed: 0 tasks\n"
+    },
+    {
+      "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/install-methodology.sh",
+        "--force",
+        "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/t3-copy"
+      ],
+      "expected": 1,
+      "actual": 1,
+      "output_tail": "Warning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/t3-copy has no .git directory. Continuing with explicit file operations.\nblocked: unowned collision needs reconciliation: docs/methodology/dev-skills/friday-dev-board/SKILL.md\n"
+    },
+    {
+      "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/install-methodology.sh",
+        "--force",
+        "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/t3-copy"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "t-owned)\n  preserved: docs/planning/blocked/.gitkeep (project-owned)\n  preserved: docs/planning/board.yaml (project-owned)\n  preserved: docs/planning/deferred/.gitkeep (project-owned)\n  preserved: docs/planning/queued/.gitkeep (project-owned)\n  preserved: docs/planning/review/.gitkeep (project-owned)\n  preserved: docs/planning/task-template.md (project-owned)\n  preserved: .agents/skills/ai-construction-directive-builder/SKILL.md (project-owned)\n  preserved: .agents/skills/architecture-spec-author/SKILL.md (project-owned)\n  preserved: .agents/skills/code-conformance-reviewer/SKILL.md (project-owned)\n  preserved: .agents/skills/friday-dev-board/SKILL.md (project-owned)\n  preserved: .agents/skills/governance-security-spec/SKILL.md (project-owned)\n  preserved: .agents/skills/independent-code-validator/SKILL.md (project-owned)\n  preserved: .agents/skills/migration-refactor-analyst/SKILL.md (project-owned)\n  preserved: .agents/skills/phase-build-planner/SKILL.md (project-owned)\n  preserved: .agents/skills/prd-author/SKILL.md (project-owned)\n  preserved: .agents/skills/remediation-closeout/SKILL.md (project-owned)\n  preserved: .agents/skills/subagent-directives-template/SKILL.md (project-owned)\n  preserved: .agents/skills/subagents-worktrees-template/SKILL.md (project-owned)\n  preserved: .agents/skills/tactical-implementation-planner/SKILL.md (project-owned)\n  preserved: .agents/skills/traceability-matrix/SKILL.md (project-owned)\n  preserved: .agents/skills/vision-framing/SKILL.md (project-owned)\n  preserved: docs/archive/completed/.gitkeep (project-owned)\n  installed: requirements-devboard.txt\n\nInstall completed with preserved AGENTS.md; fully governed operation requires explicit AGENTS integration.\nNext: run scripts/project-state.sh and scripts/check-methodology.sh in the target; preserve its current approvals.\nWarning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/t3-copy has no .git directory. Continuing with explicit file operations.\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/t3-copy",
+      "argv": [
+        "./scripts/gendev-doctor.sh"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "GenDev doctor\nRepository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/t3-copy\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: /Users/chuckrussell/Dev/gendev/methodology-v3 (tag none, commit 30aa3c7d6845)\nInstalled on: 2026-10-28T03:45:01.386932+00:00\nIntegrity: verified (161 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: T3_Code_Sample\nProject slug: t3-code-sample\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/t3-copy",
+      "argv": [
+        "./scripts/check-methodology.sh"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "\nMethodology check passed: 0 warning(s).\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/t3-copy",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "render"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "Rendered docs/planning/README.md\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/t3-copy",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "validate"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "Development board validation passed: 0 tasks\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/fresh",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "render"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "Rendered docs/planning/README.md\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/fresh",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "transition",
+        "fixture-tool",
+        "approved",
+        "--actor",
+        "Synthetic Fixture Maintainer",
+        "--actor-role",
+        "maintainer",
+        "--note",
+        "Synthetic fixture task direction; not a real human approval",
+        "--next-gate",
+        "Start isolated helper task"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "Transitioned fixture-tool: queued -> approved\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/fresh",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "transition",
+        "fixture-tool",
+        "started",
+        "--packet",
+        "docs/planning/active/fixture-tool/",
+        "--branch",
+        "fixture/tool",
+        "--actor",
+        "Fixture Builder",
+        "--actor-role",
+        "agent",
+        "--note",
+        "Synthetic isolated task start",
+        "--next-gate",
+        "Run bounded helper verification; independent review pending"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "Transitioned fixture-tool: approved -> started\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/fresh",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_tag_fixture.py",
+        "-v"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "test_case_sensitive (test_tag_fixture.TagFixtureTests.test_case_sensitive) ... ok\ntest_deduplicates_and_strips (test_tag_fixture.TagFixtureTests.test_deduplicates_and_strips) ... ok\ntest_empty (test_tag_fixture.TagFixtureTests.test_empty) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/fresh",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "validate"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "Development board validation passed: 1 tasks\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/fresh",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "next"
+      ],
+      "expected": 0,
+      "actual": 0,
+      "output_tail": "IN_PROGRESS fixture-tool: Run bounded helper verification; independent review pending\n"
+    }
+  ],
+  "scenarios": {
+    "fresh": {
+      "result": "PASS",
+      "owned_files": 161,
+      "skills": 15
+    },
+    "v2_to_v3": {
+      "result": "PASS",
+      "authority_unchanged": true,
+      "prior_installations_retained": 1
+    },
+    "t3_copy_to_v3": {
+      "result": "PASS",
+      "initial_conflict_zero_writes": true,
+      "initial_conflict": "Warning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/gendev-v3-experiments-m9sz6how/t3-copy has no .git directory. Continuing with explicit file operations.\nblocked: unowned collision needs reconciliation: docs/methodology/dev-skills/friday-dev-board/SKILL.md",
+      "explicit_fixture_ownership_adoptions": [
+        "docs/methodology/dev-skills/friday-dev-board/SKILL.md",
+        "docs/methodology/dev-skills/independent-code-validator.md",
+        "docs/methodology/dev-skills/subagent-directives-template.md",
+        "docs/planning/board.schema.json",
+        "scripts/devboard.py",
+        "tests/devboard/test_devboard.py"
+      ],
+      "local_amendments_retained": 4,
+      "project_authority_unchanged": true,
+      "project_policies_unchanged": true
+    },
+    "development_exercise": {
+      "result": "PASS",
+      "kind": "synthetic baseline helper, not product implementation",
+      "executed_tests": 3,
+      "task_state": "started",
+      "product_authority_unchanged": true,
+      "independent_review": "pending",
+      "human_acceptance": "pending"
+    }
+  },
+  "limitations": [
+    "No hosted CI or Linux run",
+    "No fresh-context independent review or human acceptance",
+    "Development exercise is task-level synthetic baseline/tooling authority, not a real product gate traversal"
+  ]
+}

@@ -1,0 +1,23 @@
+id: v3-baseline-migration
+title: Integrate and validate methodology-v3 steps 1–6
+priority: 1
+work_state: started
+condition: normal
+implementation_authority: granted
+packet: docs/planning/active/v3-baseline-migration/
+next_gate: Fresh full independent review after round-1 remediation; human acceptance
+  pending
+delivery_state: local
+branch: integration/v3-migration
+depends_on: []
+validation:
+- docs/resources/evolution/v3-migration/validation-results.md (local self-checks;
+  independent review pending)
+- docs/resources/evolution/v3-migration/validation-summary.json
+- docs/resources/evolution/v3-migration/experiments.json
+- docs/resources/evolution/v3-migration/review/round-1/report.md (CHANGES_REQUESTED,
+  superseded candidate)
+- docs/resources/evolution/v3-migration/review/round-1/remediation-results.json (local
+  checks; fresh review pending)
+approved_by: Chuck Russell
+approved_at: '2026-10-27'

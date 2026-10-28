@@ -304,6 +304,42 @@ class ToolkitMigrationTests(unittest.TestCase):
             self.assertNotIn("[phase-build-plan]", directive)
             self.assertIn("private helpers", directive)
 
+    def test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens(self) -> None:
+        self.install()
+        names = [
+            'Widget "QA"',
+            r"Widget \\ QA",
+            r"Widget \n QA",
+            'Widget "QA" O\'Brien \\ [id] / A&B',
+            "Projet Café 💡 [Project Name] [phase-build-plan]",
+        ]
+        for number, name in enumerate(names):
+            with self.subTest(name=name):
+                args = ("./scripts/init-project.sh", name) if number == 0 else ("./scripts/init-project.sh", "--force", name)
+                self.command(*args)
+                manifest = yaml.safe_load((self.target / "docs/project/project.yaml").read_text())
+                self.assertEqual(manifest["project"]["name"], name)
+                directive = self.target / "docs/project/build-plan/phases/phase-1-construction-directive.md"
+                self.assertIn(name, directive.read_text())
+        self.command("./scripts/init-phase.sh", "2", names[-1])
+        self.assertIn(names[-1], (self.target / "docs/project/build-plan/phases/phase-2-construction-directive.md").read_text())
+
+    def test_invalid_names_fail_before_creation_or_forced_replacement(self) -> None:
+        self.install()
+        invalid = ["", "Widget\nQA", "Widget\tQA", "Widget\x7fQA", "Widget\x80QA", "Widget\u0085QA", "Widget\u2028QA", "Widget\u2029QA", "   "]
+        for name in invalid:
+            with self.subTest(name=name):
+                self.assertIn("single-line", self.command("./scripts/init-project.sh", name, expected=2).stderr)
+                self.assertFalse((self.target / "docs/project").exists())
+        self.command("./scripts/init-project.sh", "Existing valid fixture")
+        before = inventory(self.target / "docs/project")
+        self.command("./scripts/init-project.sh", "--force", invalid[0], expected=2)
+        self.assertEqual(inventory(self.target / "docs/project"), before)
+        for name in invalid:
+            with self.subTest(phase_name=name):
+                self.command("./scripts/init-phase.sh", "2", name, expected=2)
+                self.assertEqual(inventory(self.target / "docs/project"), before)
+
     def test_documented_fresh_dry_run_works_from_initialized_product(self) -> None:
         self.install()
         self.command("./scripts/init-project.sh", "Existing Fixture")
