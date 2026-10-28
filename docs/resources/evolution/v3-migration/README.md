@@ -13,7 +13,8 @@ eight-step plan was reviewed in the T3_Code_Sample conversation. All changes
 and local checkpoint commits belong exclusively to this new repository.
 The methodology-v2 and T3_Code_Sample inputs must retain their contents,
 Git refs, and working state. External publication, a new release, and human
-acceptance are outside this authorization. No delegation is authorized.
+acceptance are outside the steps 1–6 authorization. Step 7 review delegation
+and bounded remediation are authorized separately below.
 
 This is baseline engineering, not implementation of the T3 sample product.
 The baseline deliberately has no initialized docs/project. Its controlling
@@ -54,8 +55,9 @@ manifest, gate approvals, phase plans, directives, and verification authority.
    candidate provenance, and actual board lifecycle constraints. Compare both
    original inputs with their manifests after all work. Record exact commands,
    outcomes, limitations, candidate revisions, and any failures/remediation.
-7. Deferred: freeze a reviewed candidate, obtain independent validation and
-   Chuck's acceptance. Self-checks in step 6 do not produce VERIFIED.
+7. Authorized review and bounded remediation: freeze a candidate, obtain
+   fresh-context independent validation and present Chuck's acceptance decision.
+   Human acceptance remains pending. Self-checks in step 6 do not produce VERIFIED.
 8. Deferred: final documentation refresh, including practitioner/HTML guides,
    examples and release/adoption material, against the accepted candidate.
    Essential operating instructions changed by steps 1–6 must still be usable.
@@ -131,3 +133,25 @@ candidate identity, standard board toolkit and optional T3 examples.
 
 The source task remains started pending step 7. No independent VERIFIED,
 human acceptance, final documentation refresh or publication is claimed.
+
+## Step 7 authorization
+
+Chuck Russell subsequently instructed: "Proceed with step 7. Use one
+independent fresh-context reviewer. Address findings within the approved
+migration scope and obtain fresh review after fixes. Keep both original
+projects intact and everything local."
+
+This authorizes one read-only independent reviewer per review round, with no
+parallel reviewers or nested delegation, local review preparation, bounded
+remediation of findings within steps 1–6, appropriate regression checks, local
+checkpoint commits and fresh review of a changed candidate. It does not
+authorize product work, scope expansion, publishing, a remote, push/merge,
+release, step 8's final refresh, or acceptance on Chuck's behalf. Apply the
+validation policy's two-unsuccessful-remediation-cycle limit. Material scope,
+authority conflicts or critical security findings require human disposition.
+
+The separate review-scope.md defines the review criteria and permitted effects.
+Round requests pin the exact base/candidate and authority files. Reviewer
+output is advisory until the lead records it; VERIFIED does not accept the
+candidate. Human acceptance must name the reviewed candidate and disposition
+of residual risk.
