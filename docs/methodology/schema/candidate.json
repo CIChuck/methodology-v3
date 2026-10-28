@@ -1,0 +1,8 @@
+{
+  "id": "methodology-v3",
+  "status": "unreleased",
+  "base_methodology_version": "1.0.2",
+  "base_commit": "54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a",
+  "independent_review": "pending",
+  "human_acceptance": "pending"
+}

@@ -1,0 +1,2469 @@
+{
+  "created_at": "2026-10-28T02:24:33.933963+00:00",
+  "sources": {
+    "methodology-v2": {
+      "path": "/Users/chuckrussell/Dev/gendev/methodology-v2",
+      "files": {
+        ".github/workflows/methodology.yml": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "84285c90fa14082013abc3be6bd26b3fb0a889e26710e4069a88f98dccbb3d15"
+        },
+        ".gitignore": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "600128db471d343e905f38d9b67a24678bde72cc68429fe3a664987e7208d4c8"
+        },
+        "AGENTS.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "338b2d93977f0e344edf0f1a8a65fd7fec84957aa28974290387416d55608395"
+        },
+        "LICENSE": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "99e60451823354dc4e178fbe184ade4d82a3128b771f9110978fc330968a169e"
+        },
+        "LICENSE-CC-BY-4.0": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "dec22806754018f3559d48fed4c4f46b7592e9d218e51d56893a56a7ff43937d"
+        },
+        "LICENSE-MIT": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ae57838da235d6e10dea1d8d984764b904819c60d6126829ceff5081fe88c87c"
+        },
+        "README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "3f2c7521adf5e3cd356ae84215e02756d01d4e275a05cec59e8aa734009fc867"
+        },
+        "docs/methodology/agents/roles/architecture-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "865c1049110ddb1ceba522e3d87e08fde8a508a26c17857a9c137649855b80fb"
+        },
+        "docs/methodology/agents/roles/as-built-closeout-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "511966bee22e42206a5dd93490802abf05a4418ce9d460a9f582fc75ab924738"
+        },
+        "docs/methodology/agents/roles/code-review-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "9c069f65f0d6f24021356d74819fed4ac1aa65e90a30bf6a384e281977e54f1b"
+        },
+        "docs/methodology/agents/roles/deployment-readiness-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "3517d84763b701f883af1e69159ad448f4bdbeff0af19da838dd67a8f99192c6"
+        },
+        "docs/methodology/agents/roles/implementation-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b6c0bd5c55df1d0ae209b1b35d8cc7e5a37ec96c9ca3c63b82b691e6bf90b696"
+        },
+        "docs/methodology/agents/roles/phase-planning-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b217107e056e406922c21852bece8e7066890ec87f67ec959bc9b2cff0fba379"
+        },
+        "docs/methodology/agents/roles/prd-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "cb536b76e6b2f4e68361ef6ad521c7754d69ea32a8b610c21bdd36973c529008"
+        },
+        "docs/methodology/agents/roles/product-vision-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6da981432324a00fba3e52c53c5cb0cae078e0e4aef9a66b4c6c9563320a7cd6"
+        },
+        "docs/methodology/agents/roles/remediation-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "4d4053e0cf567ba9caa5d255346b08a3b159e1e27126f2e8570ee9779a45c3aa"
+        },
+        "docs/methodology/agents/roles/security-governance-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d8352095e371608084cc13b714eac8a98f9bdb7e2b8a92233d5ec4bb95513129"
+        },
+        "docs/methodology/agents/roles/test-uat-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "7230661797189598c4473da1a9250277d2e95d0b3c8e2ffb1d50aba16c19df3a"
+        },
+        "docs/methodology/agents/sample-agents.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a1450bba660da96873c7e39b49cbad641038caa6e7aaa2c061ff52462371590b"
+        },
+        "docs/methodology/agents/subagents/code-check.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "34f8a0fcac047c72ac7b0f5b14aabf2ae0ea93188cdf0958df0028b41bbd2512"
+        },
+        "docs/methodology/architecture/ux/ux-template-architecture.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "78849acb80528b25ed584327667431b726ac71e658151eec67394057e27efb3d"
+        },
+        "docs/methodology/constitution/gendev.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "f7073cd6d2e9f26ad13e97839e80456ce617a63d3d8f5df3660c7e07500dad4f"
+        },
+        "docs/methodology/design/documentation-structure-decision-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6949bb32c54926394e1903dba7f06010fc277801230ee7f2e49253caf2027beb"
+        },
+        "docs/methodology/design/gate-numbering-reconciliation-decision-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "1226d214d7dc6c4b8b0cdf0e34ffa56c0f0ecaa5bb6a3127c5be02adc84f59f7"
+        },
+        "docs/methodology/design/naa-authority-boundary-decision-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "08bf1d693d59dc1d63844810b5835143c03ba88e88c4db387db6f2f5edcb5531"
+        },
+        "docs/methodology/design/operational-coherence-decision-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "1e8bf034c16b8de57fa33957201aaf75239cf13dd705c8bbd6148cf041a52e8d"
+        },
+        "docs/methodology/design/phase-loop-decision-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b22fa3203f428b96de5de10d25138d2274c25490c16c6b9680b3cf520e1d47f0"
+        },
+        "docs/methodology/design/sample-design.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "83fbc614443a9b3d7569e9956a43e7b8740f9d0f939f58b8154f7a7cec3002b2"
+        },
+        "docs/methodology/design/verification-first-decision-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "be298f6fef4edd2b0598c45af20b14bce9e922bc3de944856ece83ec77eec3e8"
+        },
+        "docs/methodology/dev-skills/ai-construction-directive-builder.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "79b38aa2450e7364d36638faa00d9a2860956b247c278bad95e827d203f8759d"
+        },
+        "docs/methodology/dev-skills/architecture-spec-author.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "67a2d2eedd6bce30e7d13ff8cd8d66b931fc2ed8b577c02960ff2abed46fec5d"
+        },
+        "docs/methodology/dev-skills/code-conformance-reviewer.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c1961d2ffd58fa5e5bbcfb258514916c199a9880ca8dacc729effebf600d6aa0"
+        },
+        "docs/methodology/dev-skills/governance-security-spec.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "30c327e667380b589fe38009a82caa82400e3e0726d802fea21245fa290db95f"
+        },
+        "docs/methodology/dev-skills/here.now.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "cbd5ec0b6b9ea10faf4b7309d63b488cc8e7734b60c7afa03437da4c3e5c167b"
+        },
+        "docs/methodology/dev-skills/migration-refactor-analyst.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5bc50b98a1985f6de42f0d014f92efba403cf47f93e281ee5fdf5197324cdaae"
+        },
+        "docs/methodology/dev-skills/phase-build-planner.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a3e095efa9f6ef1a6ef7864997b2bd2dccb489f8dc2217b38889d1e4a68c528e"
+        },
+        "docs/methodology/dev-skills/prd-author.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "dacf3a42bf79e49440730eb34929d93b72e91963e33005491e0b1b1771571875"
+        },
+        "docs/methodology/dev-skills/remediation-closeout.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e7e2a2a5860947fe303cc0ca56779a33386875cf79c0f672c4cf9072ada5ce53"
+        },
+        "docs/methodology/dev-skills/subagent-directives-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "94b7920d693d36bed2a2279ee2aecaf0e1d587f818dbc7af06d942d01512beeb"
+        },
+        "docs/methodology/dev-skills/subagents-worktrees-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "51b5dff210dbdf0c20a23ae6131c0248f559e91423f6d26be22405753e485320"
+        },
+        "docs/methodology/dev-skills/tactical-implementation-planner.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "272f9dd877289653180da1511b207a4ceb07bc4dbbe13d3913dc0c0ff5dcc62c"
+        },
+        "docs/methodology/dev-skills/traceability-matrix.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "3f81aef78d5cf8540cc43ddb282d7922adbc1b3c1ffd80bc2a70086bcfb36859"
+        },
+        "docs/methodology/dev-skills/vision-framing.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "9dce6dd66b6514414f74524cc4ded5ca5ff5bd761c74cff74d9fe7d85021fcde"
+        },
+        "docs/methodology/guides/agentic-development-workflow.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "35cd2adf0953224b230cb85b4dc6532df2f0438e4b63431035356a8f4c774b96"
+        },
+        "docs/methodology/guides/amendment-and-regression-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e49c63ac7d95f1d8c250f0882be32a8544949011bf2f9aec288980b923030a73"
+        },
+        "docs/methodology/guides/artifact-collaboration-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "795690b23505e315e8f578022e206703a32464d815aff49197fc85e51ab5a87d"
+        },
+        "docs/methodology/guides/collaboration-modes.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b88981fe3669cd7c360264c46de78e0bcf832491db3a49c4698b639bbfdbbe0e"
+        },
+        "docs/methodology/guides/enforcement-contract.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d93fa4aa9018747296c7562e51e01680ffcb497f83a362f118fb73230df2ae30"
+        },
+        "docs/methodology/guides/gate-transition-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c65a3eb755e9fa7f87d8eb849fccc6a9a746a0decc43f9e0e6fc5e1f38d2b2d4"
+        },
+        "docs/methodology/guides/gates.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d2dd748ac9cbab7c6a7255f78c912afc31f9d2d469b7169c35ad8c55c05b9fda"
+        },
+        "docs/methodology/guides/human-agent-collaboration-loop.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "121c356ad751666fd05fb83980f7b89e4b11e989d9d16189a2f026af5c9c42d0"
+        },
+        "docs/methodology/guides/human-approval-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "7686a288dce175c564083bde51b2a534b97dd75b9405d737e7d73b819e2d6e1f"
+        },
+        "docs/methodology/guides/orchestration-validation.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c5b0fe9d65e7623096ebf5c4f6bda44f11248fa244cd60aac6a2a9fe4eefb0f0"
+        },
+        "docs/methodology/guides/phase-loop.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "8d6a5e50cc7df91d888e6b5df447119d5429552dce430c3f2f28f199342f83de"
+        },
+        "docs/methodology/guides/production-operations-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "137bc93ad577981cbb51645babc698aef47ba3d6202de8e5887c5798c9c00f57"
+        },
+        "docs/methodology/guides/publishing.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "969fd9b49324c2346ff079f81355d4f37f1e43362538a104c3887b57942476b0"
+        },
+        "docs/methodology/guides/start-and-next-step-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "314bdf8d6bfce59b29c46dd53cd27523119eceb4f26c0cc1296aa91a356d3ac7"
+        },
+        "docs/methodology/guides/subagent-coordination-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ad60233724cc928fec7e67804be4271d2eb96fe2a37768276d29aa2e456dd277"
+        },
+        "docs/methodology/schema/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "4a07b88fc8dcef23338f1364cbf3a6777772613b82e3c843303318554a96a618"
+        },
+        "docs/methodology/schema/lifecycle.json": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a20593178c42f10a8e44658c708737d82e09384f5b0c27c13a703474010102cb"
+        },
+        "docs/methodology/templates/0001-technology-stack-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "430a0035533e36c09be061f04b2b9cddadaa06fec54686d9d9ef28442032cb10"
+        },
+        "docs/methodology/templates/adr-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "98c3067c0c40ae3760b030094b71952d38765b02be11c2651e469e631739f8f8"
+        },
+        "docs/methodology/templates/aggregate-remediation-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b2e862b988755f4af708b36a9e753da359c8f0c3270bea57770df4fffe2f53af"
+        },
+        "docs/methodology/templates/architecture-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "95c19707311038d448f2b86be489942aa27a4debaf8cec7146c49b806d8e29ae"
+        },
+        "docs/methodology/templates/as-built-closeout-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "4c533ff80ef21b572f676f64c92eef0522cc47652891da285c118e87a5313324"
+        },
+        "docs/methodology/templates/build-instructions-templates.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "9a04a546cbcc68e44334d28b3a39d88c9a98e032e3f57538cecb0c7834702050"
+        },
+        "docs/methodology/templates/code-review-report-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "8909e669519c385d39c55fca5829bdf8ef8d5f726375f39c8008d5409f72bdc8"
+        },
+        "docs/methodology/templates/deployment-readiness-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "db3f8d7302796eb4cff460772745ee7cc7c5bfba73b81bbc7f60c93a68454a24"
+        },
+        "docs/methodology/templates/deployment-record-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a1e163181b7483a8c06544fb73cd6501b9d0c026feec324a8b2dd391307d78f3"
+        },
+        "docs/methodology/templates/final-code-review-report-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5a77900cddd53d7b89c7b460737aca419cc9bd025c8f57c4aa21d3fcc3ab14d1"
+        },
+        "docs/methodology/templates/final-test-uat-report-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d974afbe7344c43e6a9cd6963e2e4992a2649aa9284b9a40960031c55b42ee7c"
+        },
+        "docs/methodology/templates/gate-log-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "20cf24110d5f52ca363ff4788884f1e78055dae72ed3c50dc8038ab9f18c99eb"
+        },
+        "docs/methodology/templates/governance-security-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "53a1dbbd068c2dbe4d4d7b0cd1140e935dd1c7af93e32f2d2706d2935ee2ca20"
+        },
+        "docs/methodology/templates/implementation-summary-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b876477a63ce9e13b0f045ce11822dcf3dd57e6e6d2423e2db70762723eaa3c2"
+        },
+        "docs/methodology/templates/phase-build-plan-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "64c3d1bdaac785e4abf8813cd84d47ce9438b8ee13e7cb620b2712ef87925b12"
+        },
+        "docs/methodology/templates/phase-build-prompt-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "45146260074650bab976c9d5febe606cd4d901a1bef473989a87bc375a8ddcbd"
+        },
+        "docs/methodology/templates/phase-construction-directive-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "83ceae338240d8063f97d34785c69499eb860a86fc50053c7c78d6492309c45a"
+        },
+        "docs/methodology/templates/phase-implementation-evidence-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c48750dced2fd6da30eaa3a687228e57da6d5edba32aa9545f47ea1850ff179f"
+        },
+        "docs/methodology/templates/phase-learnings-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c9deb73b575a48fe482482e2871e5753c7fb9e02651fd7a46f8b3ec6c7bee038"
+        },
+        "docs/methodology/templates/phase-plan-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "82e84f7b2966e2345b5239fc3cf6318b2317179bcf90c302f2b38a1f607bf434"
+        },
+        "docs/methodology/templates/phase-remediation-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ce937a99b9af699aa90da57130fd49b1b3a741cd8db59851eb681ab648466489"
+        },
+        "docs/methodology/templates/prd-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "52ec260585faa3f537c2eb3a8312bef5b7bd925a7fb3ae098b612093f8f8d97d"
+        },
+        "docs/methodology/templates/product-ci-workflow.yml": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "18940beee30159061e67a4abb03932ce5d0c1605abcc6433cf1b4c1fc487815c"
+        },
+        "docs/methodology/templates/production-runbook-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "2dbb8991bfb03c9a52d07cf0a7d3d1b00d47122c26f5630249efb9f0ca047827"
+        },
+        "docs/methodology/templates/project-as-built-closeout-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6395f958f603d8e23455fba2a09f8bd137e21f9dde166c3690c3f1baa288db6c"
+        },
+        "docs/methodology/templates/project-value-review-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a3f66917c9bd7d7211d51a3770b57becf0030915f1d35687181a87a9f1d7b268"
+        },
+        "docs/methodology/templates/tactical-implementation-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "68e8c23c766742c63d004297ceafb55e0901b55e6446f001e07881d5bf80bfe8"
+        },
+        "docs/methodology/templates/test-uat-plan-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ab22b7edaca5d8e6d452d50e9d55f614e95e93051f50b7133b55153253e82c46"
+        },
+        "docs/methodology/templates/traceability-matrix-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "febe26ed31b49e27b92f2499aff46f6410123a6e22e8def79ef42469a54bd4d5"
+        },
+        "docs/methodology/templates/value-review-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "9bfc1a893df50f93e76b48589f58867b8b8445b098219c90e510c42a3a9e31cc"
+        },
+        "docs/methodology/templates/vision-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "83923509ef4d203822cbae02c029a7f7779bdb3335c7bf5e3dba55c76eb1f9ad"
+        },
+        "docs/project-template/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "594139e8c554dd0abaece34d8ed67b8fe59e87b3ab0c625ade04f559fd13f99b"
+        },
+        "docs/project-template/approvals/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/architecture/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/as-built/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/build-plan/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/build-plan/phase-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "54fa479cca570f8624b315c6890a3d10fbbe96b4fc393e255ee0ccdeb7ab14e4"
+        },
+        "docs/project-template/build-plan/phases/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/decisions/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/deployment/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/design/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/prd/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/project.yaml": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "54708d60f117f12ffec002ff57b25648811069cc2de4d7c71e4f98f26b3b61cf"
+        },
+        "docs/project-template/review/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/security-governance/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/testing/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/traceability/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/vision/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/resources/evolution/0.5.0-operational-coherence-closeout-ledger.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "3cd2d68af3441dd06cc4640a3af759f17fa81651b93ae2fa2b7195837da52bf7"
+        },
+        "docs/resources/evolution/0.5.0-operational-coherence-execution-log.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b4297b40eebf161ae08e004b83a2bfaa0ab29b35a931da1cffd4c2590c35a520"
+        },
+        "docs/resources/evolution/0.5.0-operational-coherence-mitigation-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ef302885cb4d52ae6452a0ae80a2ccac85167c308255b2f63a5725cb911606b8"
+        },
+        "docs/resources/evolution/0.5.0-operational-coherence-remediation-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "30e0afe6d51318d7d5fb2849c8970eceef7ffe44cf1448227a120030ad2965e4"
+        },
+        "docs/resources/evolution/0.5.0-operational-coherence-review.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "93bb5433a4ad6ca0a691b44122d0b2c13c147e066635e142ab5661fc82c094b2"
+        },
+        "docs/resources/evolution/1.0.0-documentation-consistency-remediation-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "95f3f11bed8e9f989f42c8ab75c95d1d00a8e1fe19ab39a088ed8bd273f9d72e"
+        },
+        "docs/resources/evolution/1.0.0-production-release-execution-log.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6d0b3614c5e24eb3496bc276619081b4c122296f1e20e34ef1dd3b05f398585a"
+        },
+        "docs/resources/evolution/1.0.0-production-release-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "fc88428a1561a1132323b18fd9ab5b4d4454d7145b6ffd5f936efa7c3700aa76"
+        },
+        "docs/resources/evolution/1.0.1-documentation-consistency-execution-log.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "7e3605a1fd6f61575a8a67d3289c08ca57299727e49d5035994ab2c9c2cf1a9b"
+        },
+        "docs/resources/evolution/1.0.1-independent-review.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "58250f7c2c29fd9dfcf8d13511640d9d91b805a270ed7f0e3d5669068bd75fc2"
+        },
+        "docs/resources/evolution/1.0.1-production-release-execution-log.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "aeb9857fc473d36176bc34f1107cb1cdcfd3d9d91c30a1c508b171b94bbd147e"
+        },
+        "docs/resources/evolution/1.0.2-distribution-context-execution-log.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "bdefce47231859ea7942dc1cdb6ac8d962c118e430ebeaa865139ee06e7e3fcc"
+        },
+        "docs/resources/evolution/1.0.2-distribution-context-remediation-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "fe9d802a35a32a183b2fb1210d85b6dd7511688e5a3d7768bd0a9570bcfe2b0f"
+        },
+        "docs/resources/evolution/1.1-product-evolution-enhancement.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "23aaec7f1cc1fa5a4486cd95cd4993726997b27410bda8a15d3856f146a10a91"
+        },
+        "docs/resources/examples/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e6e1f3d59492d2cad76e50b261b51f19d768c577cd21b55246f8e7e27099b48d"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e0b35c1a75c07a0a176b669d81a9cc713dae21fc3491f609ab9988c64106c383"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/approvals/gate-log.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d9ab89be699c2bf2eedda7662aa3016930f07ac2e5f9815d510c261c74af636c"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/as-built/as-built-closeout.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "891e809b9d6b7b111bb1972322f18d2963c571cbb7e6346ad5fd5cce9b62073d"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/as-built/deployment-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "31845737a0bc774431f26490f15b6e70fba648faf62d583cf57491d51769cd72"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/build-plan/phase-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6f6fe663d40dc11b9c2ad8f5c5c43385fdc9ca48df15463aa4ff0a26380f379b"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/build-plan/phases/phase-1-build-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "13ae7ee94adbf0fca44230e7874ff1f5d9d3f69f74dcd8c50bfa9845084f62a3"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/build-plan/phases/phase-1-build-prompt.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "be35bd3933685609b4ffd77421c38c5c708d452c72d2dd0b9053a39632dc6663"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/build-plan/phases/phase-1-construction-directive.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "f522c9a264d32921636f17625cc65606bc8451d910a7e3ef77b2174edc387fa0"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/build-plan/phases/phase-1-tactical-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "05f545ad3340c8227e531ca53c2b4ac95aba2a6afef3fa48279fa3f8bfdb15ce"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/evidence/implementation-evidence.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "f90a0e1796e43be2972b8c1d8cf6654965222eb9b8609d9ed82dcb2e183c3610"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/example.json": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "0b98a03dfbeb4b72103f90154be18c1abfbbb01025a763b6a4a893af22df78c6"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/fixtures/expected.csv": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "20f900ae1ed29df74ee0e0810b5fe7531c6ed7b37b7192aa277201eb7bb221fa"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/fixtures/input.csv": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5835554097a18f7e19337df72978e374afb4e52e6f936ff39d6fe231b4c088d0"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/framing.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c4f259a61783c1bfdacbe4e8589159412dbdd022c92ec02a13f4bb6d55ca931b"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/project.yaml": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "2ebfad71765352bd1f9b1d477b7e3d98a84b9e9ebb47244ed5b5a6d86438b522"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/review/code-review.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "39c2ebe57f7f96a4521367af6d52521f847fc8188d97abda77f93a8ae1e69736"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/review/remediation.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "21d9dde4710b046aa20dab51f627d22bd2d4378f844ae9739bbf62eb58b7109d"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/src/csv_cleanup.py": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "6ef2905e7ea3b330a68331bf45686049b17afe57798aa387a9a3596741c4c597"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/testing/phase-1-test-uat-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c82a735acc9ea1800c044f355fc6582ea1d65e37e63e28c75ce69a3454972b98"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/tests/run.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "e325af064bc5a6afba25b67925eae5b819a421124b9b400e4d6f7caf6cfb2b1d"
+        },
+        "docs/resources/examples/current/c1-csv-cleanup/traceability/traceability-matrix.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "bb12e4ede1d60f4a053d75c756420d8c659b0597a32a4effa09e1024bcbfcd72"
+        },
+        "docs/resources/examples/current/c2-standard-planning/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "22e15df51bd8deaa8e5946457d0674cde4610c7a9f8949382d868d9f1da5eca6"
+        },
+        "docs/resources/examples/current/c2-standard-planning/approvals/gate-log.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "7b8f5263f9c5b4b94aa1bedc0c8911b462a04a8151803dc7020f3e4521e4d93f"
+        },
+        "docs/resources/examples/current/c2-standard-planning/architecture/architecture.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "9bb1b7395ead0e284ca58d9af3424db312d5ac062f7563ac65f1c2d0a6a7f5ef"
+        },
+        "docs/resources/examples/current/c2-standard-planning/build-plan/phase-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "57cc6b70e9faf23bec0025ad21d45f5d64c5527f59a10d4b18b2d875989753c6"
+        },
+        "docs/resources/examples/current/c2-standard-planning/build-plan/phases/phase-1-build-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "135cf49ac0562e3cd648b044df11770568d1340e77e5950d9e4a3a9fc0ea2ee4"
+        },
+        "docs/resources/examples/current/c2-standard-planning/build-plan/phases/phase-1-construction-directive.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c9ce62fd0b8e532763cfc2119e65080d2310ae70c609d21cc2fa549765444b26"
+        },
+        "docs/resources/examples/current/c2-standard-planning/build-plan/phases/phase-1-tactical-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "f24bc3e1f5620e6454e9e2a52c0817636f5b7b24135569a8132f137a17248775"
+        },
+        "docs/resources/examples/current/c2-standard-planning/example.json": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "998f928125a123de6fb14852c71a1d0f50bec14633e25ae460348e97d9b9cff1"
+        },
+        "docs/resources/examples/current/c2-standard-planning/prd/prd.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e635d0f76153c6e614a5fed3e43f7864bc099fe43d0126eacc4ed14113381eb5"
+        },
+        "docs/resources/examples/current/c2-standard-planning/project.yaml": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "11f3f51b1c18d2efc78ca79dafa6130ff131a8ac7f6f53cdf9bf6440b8c87f33"
+        },
+        "docs/resources/examples/current/c2-standard-planning/security-governance/governance-security-spec.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "292b88068ef1d10ddf215caf5a8e06e550eb2ddfd9ac6687d7f614d7f757165a"
+        },
+        "docs/resources/examples/current/c2-standard-planning/traceability/traceability-matrix.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "4a790a31ca3022acf646b7acfe2e8beb164c304d9c2be95a796fef80e7a8f860"
+        },
+        "docs/resources/examples/current/c2-standard-planning/vision/vision.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a745054b8afdf569f03429bba669092c31439da9953a03dad3e63dc0a5b60a85"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "91f05235c7e8b6e15cdb11ea098a7d239a2ff72aeec1d374688f9af7dc735aa4"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/gendev-lite-contained-tool/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "57a4ae344b568f8fdc55bb0630f0af4adb42242d93d7f610cd3b0539ef57b86a"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a32675c418324fcd601bfe25244abfa7ec7718fc402fc8d599cdc46565d964a5"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/architecture.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "790788e07a7a776e63e3e0ba39c0741925c897404e5cd989cd1c8269094aa8fa"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/as-built-closeout.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5b29a674ba8ed1272a551ebbb1169cc11e9ad792065f00b85055e5be69b5eb27"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/governance-security.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "f71ef40a07eecece0439582dd7c1b6f5b893c04cdbd46d22865efd0a5571f381"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/phase-1-build-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "0aeede194f9a211b651761b3d6bcaccef831f2074305d4f1d057f0fc87301788"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/phase-1-code-review.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "dffec0f0d546df915a7e84fac709cfb4197fe52df5830afe507393ee7f96a741"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/phase-1-construction-directive.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5829e3202462b6ea42db95af47e87aa0830e07289edcc720ba6494d8a08a9099"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/phase-1-tactical-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "85142a4cbf03ecc6322f99391458f36e5c9c4111e3cbdaa9731cf955c8b6528b"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/prd.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "8c7ef6d622ca6c97998143ca626909977532c4058e30e15618a20f1c0af17d2e"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/traceability.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "3454970178a7cbf826e440bbff022a55c1fe11bd3fb176b90822760e802b5276"
+        },
+        "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/vision.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "56c8df6997cf9c47d7a9173d938e6d481aa94e6389e086f063f506621b414961"
+        },
+        "docs/resources/marketing assets/Benecard-Agentic-Development-Readiness-Questionnaire.docx": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "1411508048ac5ae732eab56fdf3aea873470737f58ca2e0fbee1c654de04292e"
+        },
+        "docs/resources/marketing assets/Is-Your-Team-Ready-for-Agentic-AI-Development.docx": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ea778692a38cefb23c18dc6a5a4a839d5bcbdc64ee93ba11936b305739ecd03d"
+        },
+        "docs/resources/practitioner-guide-html/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "206c6c154253f1159988bdcea60547e7ec5c13ecfc08f0392ac220ad7606a136"
+        },
+        "docs/resources/practitioner-guide-html/THIRD_PARTY_NOTICES.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ad942b44f280cac35e5ee16ba9c7ae1c75eb15c87620bc594c8fbb36b81ad7cb"
+        },
+        "docs/resources/practitioner-guide-html/assets/app.js": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "fb1f37e8c95fa33309d03383d04b67dcd5cc58ff813c27b1cfe5355279bea37e"
+        },
+        "docs/resources/practitioner-guide-html/assets/favicon.svg": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "779ef2caba1f70a051328c4f99e4cf5532e2a69590d91581f748b9221ae946be"
+        },
+        "docs/resources/practitioner-guide-html/assets/styles.css": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "176f5eac21ab1ad93269d5abb4406997d508268e2a798fc01cb48305021e62c1"
+        },
+        "docs/resources/practitioner-guide-html/content/01-orientation.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6b3ab9ea010f6ce36e1745be63f61f118fb053b2b1894e7c0049bfdeb19db1f0"
+        },
+        "docs/resources/practitioner-guide-html/content/02-core-mental-model.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5bdf326ed29a921d942f2b45cee440abf5a45bfb6a41234fae4b27e9c1a3095e"
+        },
+        "docs/resources/practitioner-guide-html/content/03-repository-map.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "391eb9885372dfdf19491b73a0e848eb9dd125ac65754a2d76fc4ff067ff4948"
+        },
+        "docs/resources/practitioner-guide-html/content/04-starting-a-new-project.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "60d1bfce056718c88514261b0f51a1021a85530e88123a9fc4169ec89be86c6b"
+        },
+        "docs/resources/practitioner-guide-html/content/05-working-with-the-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6e8fd6c75890d64793d53cdec64cc8149cc949b2d2157fa01fc27332fa827904"
+        },
+        "docs/resources/practitioner-guide-html/content/06-gates-and-artifacts.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "df91bd607317bd1458c46fa97930bf5abb37a3bd72993988e96f4a7d5c7a9cca"
+        },
+        "docs/resources/practitioner-guide-html/content/07-approvals-and-risk.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "8be7bcba315a41a429b62a7c04fa18439e7e60009aa4b2cbba9fdd8090b9ee73"
+        },
+        "docs/resources/practitioner-guide-html/content/08-subagents-and-delegation.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "4ada107a6750d2e713a1c3483b8ca189679c9eaa9278d53c74472f9ecc1ca42a"
+        },
+        "docs/resources/practitioner-guide-html/content/09-build-planning-and-implementation.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c8c03975f38b9127a75e5ac66954e3c6c6c8bcc86ed8b7f148c53fb72155b68c"
+        },
+        "docs/resources/practitioner-guide-html/content/10-review-remediation-and-closeout.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d86dbff5ccafa29c8ddee08a9c64e16ac081aefafffd08600b36b60a8ef54d28"
+        },
+        "docs/resources/practitioner-guide-html/content/11-production-operations.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "37b94d67c87b799e89953cfa268525e62378a399daf52fcf4f855d6ea7ce406d"
+        },
+        "docs/resources/practitioner-guide-html/content/12-vendor-contract-tracker-walkthrough.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "446dae7d422d5aed6685d543c6e5d975f6db7685483f2ba56102ea09786469dd"
+        },
+        "docs/resources/practitioner-guide-html/content/13-codex-specific-notes.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "3c16d8d5fcec524eb2cfc99e24099b5a18991d2ef220070ab76e028bd012066a"
+        },
+        "docs/resources/practitioner-guide-html/content/14-claude-code-specific-notes.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "423545c10e3a2615af8ad942215d5858ae72a83e7f2b04c59872ce804b2d33ed"
+        },
+        "docs/resources/practitioner-guide-html/content/15-prompt-library.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a5f4023ae63e7b6abcf449e6cfb71e89fbeb9a6884f2d48fcc9626c7365a8777"
+        },
+        "docs/resources/practitioner-guide-html/content/16-checklists.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ce3f08e7187b850ad2ba726cf0319d9eb3840d90f92c965c5edada300c629841"
+        },
+        "docs/resources/practitioner-guide-html/content/17-common-failure-modes.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "3f9ab57fa09d02845acef99771811b6bafd569f862a7d184c3198beb2c3ad72c"
+        },
+        "docs/resources/practitioner-guide-html/content/18-glossary.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6da23d62bc4235b6c535d7f87a7123d78c763e6b2e1761b82153a5c4ce3a12f0"
+        },
+        "docs/resources/practitioner-guide-html/content/19-starting-mid-stream.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "fb0323260cdce705aca07e682df7ef8d07a2e445d62173242985eabc3531363e"
+        },
+        "docs/resources/practitioner-guide-html/content/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c0ff23ae28285b9f4fab8c1f11508fa00308f60555c2614323e6dd1dba1d163d"
+        },
+        "docs/resources/practitioner-guide-html/index.html": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d2a0cf5f9ae84db35423dc038efa0a65a371338ac6be950cbaec13fd3b265949"
+        },
+        "docs/resources/practitioner-guide-html/vendor/marked-LICENSE.txt": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+        },
+        "docs/resources/practitioner-guide-html/vendor/marked.umd.js": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ba65f1c8948e6b01321399800843e9048b31e1c197652d4b0fafae840b30e32b"
+        },
+        "docs/resources/practitioner-guide-html/vendor/mermaid-LICENSE.txt": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ec9fb67dcb25eccc416ed56e1aab819222c805a2a4bfe4cb19e7556bf2ffde80"
+        },
+        "docs/resources/practitioner-guide-html/vendor/mermaid.min.js": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "18327bef70d96fb505fe7287d9f6a7362ebf07ff6576ddfaffb1a06f3e1a2954"
+        },
+        "docs/resources/practitioner-guide/01-orientation.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6b3ab9ea010f6ce36e1745be63f61f118fb053b2b1894e7c0049bfdeb19db1f0"
+        },
+        "docs/resources/practitioner-guide/02-core-mental-model.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5bdf326ed29a921d942f2b45cee440abf5a45bfb6a41234fae4b27e9c1a3095e"
+        },
+        "docs/resources/practitioner-guide/03-repository-map.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "391eb9885372dfdf19491b73a0e848eb9dd125ac65754a2d76fc4ff067ff4948"
+        },
+        "docs/resources/practitioner-guide/04-starting-a-new-project.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "60d1bfce056718c88514261b0f51a1021a85530e88123a9fc4169ec89be86c6b"
+        },
+        "docs/resources/practitioner-guide/05-working-with-the-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6e8fd6c75890d64793d53cdec64cc8149cc949b2d2157fa01fc27332fa827904"
+        },
+        "docs/resources/practitioner-guide/06-gates-and-artifacts.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "df91bd607317bd1458c46fa97930bf5abb37a3bd72993988e96f4a7d5c7a9cca"
+        },
+        "docs/resources/practitioner-guide/07-approvals-and-risk.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "8be7bcba315a41a429b62a7c04fa18439e7e60009aa4b2cbba9fdd8090b9ee73"
+        },
+        "docs/resources/practitioner-guide/08-subagents-and-delegation.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "4ada107a6750d2e713a1c3483b8ca189679c9eaa9278d53c74472f9ecc1ca42a"
+        },
+        "docs/resources/practitioner-guide/09-build-planning-and-implementation.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c8c03975f38b9127a75e5ac66954e3c6c6c8bcc86ed8b7f148c53fb72155b68c"
+        },
+        "docs/resources/practitioner-guide/10-review-remediation-and-closeout.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d86dbff5ccafa29c8ddee08a9c64e16ac081aefafffd08600b36b60a8ef54d28"
+        },
+        "docs/resources/practitioner-guide/11-production-operations.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "37b94d67c87b799e89953cfa268525e62378a399daf52fcf4f855d6ea7ce406d"
+        },
+        "docs/resources/practitioner-guide/12-vendor-contract-tracker-walkthrough.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "446dae7d422d5aed6685d543c6e5d975f6db7685483f2ba56102ea09786469dd"
+        },
+        "docs/resources/practitioner-guide/13-codex-specific-notes.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "3c16d8d5fcec524eb2cfc99e24099b5a18991d2ef220070ab76e028bd012066a"
+        },
+        "docs/resources/practitioner-guide/14-claude-code-specific-notes.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "423545c10e3a2615af8ad942215d5858ae72a83e7f2b04c59872ce804b2d33ed"
+        },
+        "docs/resources/practitioner-guide/15-prompt-library.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a5f4023ae63e7b6abcf449e6cfb71e89fbeb9a6884f2d48fcc9626c7365a8777"
+        },
+        "docs/resources/practitioner-guide/16-checklists.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ce3f08e7187b850ad2ba726cf0319d9eb3840d90f92c965c5edada300c629841"
+        },
+        "docs/resources/practitioner-guide/17-common-failure-modes.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "3f9ab57fa09d02845acef99771811b6bafd569f862a7d184c3198beb2c3ad72c"
+        },
+        "docs/resources/practitioner-guide/18-glossary.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6da23d62bc4235b6c535d7f87a7123d78c763e6b2e1761b82153a5c4ce3a12f0"
+        },
+        "docs/resources/practitioner-guide/19-starting-mid-stream.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "fb0323260cdce705aca07e682df7ef8d07a2e445d62173242985eabc3531363e"
+        },
+        "docs/resources/practitioner-guide/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c0ff23ae28285b9f4fab8c1f11508fa00308f60555c2614323e6dd1dba1d163d"
+        },
+        "docs/resources/releases/0.1.0-baseline-provenance/gendev-hardening-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "9c6ab65377744949e4545507a7b16ecfce6ebfae1d54696e6b6ad794e7d7794c"
+        },
+        "docs/resources/releases/0.1.0-baseline-provenance/gendev-methodology-review.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "2e7a8bbbf3d4492c54b18a9d8fd7ca179e80a43b1f0a2fb4627a3a83ffde4eff"
+        },
+        "docs/resources/releases/0.1.0-baseline.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "bc7a05d77e616d085d5c939062dc12eb0243e94331b180f670e729058b06018e"
+        },
+        "docs/resources/releases/0.2.0-phase-loop.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "49a216c32c39f98dfbe8db3c504d8b699310759da9e3b4c61f287c61774960c4"
+        },
+        "docs/resources/releases/0.3.0-documentation-structure.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "58291ff2ee517e04bed56016d7ac302436ebca6d73387d587fde810e70eee994"
+        },
+        "docs/resources/releases/0.4.0-verification-first.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "58f4822e9d5fbd6ca44447c3be63317098f4e6c869722086aa4857c591e56b94"
+        },
+        "docs/resources/releases/0.5.0-operational-coherence-migration.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "aee4d1fd64f7543b136a554948dd1a33bce1c706d3a03d625905c8c6e4058ee4"
+        },
+        "docs/resources/releases/0.5.0-operational-coherence.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a156c1d8f0d7c7b165b8ed9f1041e2d07c855d5104e932e6dadd917bcba2cd47"
+        },
+        "docs/resources/releases/1.0.0.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "f1ec3738c1573c9c70c49feea31771057b5e67e0aa91cd75ac9d399ed8e6eb43"
+        },
+        "docs/resources/releases/1.0.1.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ee4c8c7fa8a422eed638efb0938f01d84297cfe414483516c84e93d95d70b191"
+        },
+        "docs/resources/releases/1.0.2-adoption.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "100e32b3f64651c4a8cf12db07e4d0736b5cef4b74c96c50362114389a672968"
+        },
+        "docs/resources/releases/1.0.2.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "080cf49cdf3684aa416464afde1a3569900ed03f80430b247eed5eb76147fe24"
+        },
+        "docs/resources/releases/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d254127443b52459d13e3607bfd41d3bd2c69666ae99f7b63bf40fe5328b5fb4"
+        },
+        "docs/resources/research/Formal Verification in Spec-Driven Development.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6d5fd181366914d70185dea79fb42440198a1b6c28471b8a64632c87150d7fc1"
+        },
+        "docs/resources/research/doc-coherence-linter-vision.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "43738cca1404d6e97e0aa08604ed112ba894531403738d96262c15d6e780014e"
+        },
+        "docs/resources/research/existing-codebase.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "0a0edca67a58ba0542687f3185ee75d30300d12cb348f0fa0c19bc5ea49b1c74"
+        },
+        "docs/resources/research/init-above-g0-adoption-note.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "997fa8227fceef36b1462074399082564abb6348bb148b5038abb92eeb44c082"
+        },
+        "docs/resources/research/loops.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "89d7562bc73f6fea116048acf9a5045dbea03bfb417e3713ac01596728afd025"
+        },
+        "docs/resources/runbook/g0-to-g7-runbook.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "7c8450bc9c183987024c0efc60c1ce02eb515ecc59d4607f538fdf8289646242"
+        },
+        "gate-remediation.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "09587a40103df0b6dc0ce163c90ebf5bcd88ddb154b9aaefbec030cbe3718260"
+        },
+        "scripts/backfill-methodology.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "d1c4ed9227d3fef1ce13932e827120eae03fdfad43e878549c0c683180e7e063"
+        },
+        "scripts/check-doc-coherence.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "d91d5ffede9c8a01802c3407b8f9884d50dac693c2dc56bf64fe1c56902c35a3"
+        },
+        "scripts/check-lifecycle-coherence.py": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "af12dd52596e8b795ae49de49b4749116db7f241427bab722aface2a25e9fc47"
+        },
+        "scripts/check-methodology.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "9595318ada9304a261b6cf0873c472333d0ad47c2b3262788f75bc050538e685"
+        },
+        "scripts/close-gate.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "f4fd71d8a7938787c080cd0bc32479132bb89e1e5ec264c381d2d870832ced28"
+        },
+        "scripts/close-phase.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "437c915d7b012750fb022cfd1a91c7fb6c98376287391f5fa298d47798af16cf"
+        },
+        "scripts/gendev-doctor.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "cd8fec90589a72cbbc9272f4409f7f53e57ddf05e072a5ddea35add8ab214a5f"
+        },
+        "scripts/generate-lifecycle-contract.py": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "c7dbb9455194317b58e6c41f608eeac748c1100c3c1ea4990aef65a3989b8906"
+        },
+        "scripts/init-phase.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "da0fcbd6517cd0553eba0b7b7dd1c0099943b24e001f0a1341c841ed2b5e9cfd"
+        },
+        "scripts/init-project.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "ce954a2e686758d1f676760a40d2383a585294205097d37958398685cf2f7072"
+        },
+        "scripts/install-hooks.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "c6a16cf56abe7079d57a53f6e92910dad7910995da7b6e283a3d77aac1a9eee5"
+        },
+        "scripts/install-methodology.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "adb4e6f400bed60e9bfb6d1e37e2c517407640c327fe3e863377b89bee2d2212"
+        },
+        "scripts/lib/distribution-manifest.txt": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "307ba646a8346d4b58d3e7e41849586771aee1c72f634a864833fecbcbd82dfc"
+        },
+        "scripts/lib/gate-log.awk": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5348d12b38211b98f56cc4f3ed37027398528be783b1fd2398fb84082537c26f"
+        },
+        "scripts/lib/gendev-common.sh": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6700508f91c381e3319238e7e08b235d1ca6f9dcd32ebe85ef0a2d9da762f37f"
+        },
+        "scripts/lib/gendev-distribution.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "251270def90c1f200713c0926c3544f1147a4dc5af83c6304e1b018bc3bd2c02"
+        },
+        "scripts/lib/gendev-transition.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "c4a8f674ca8d8a30903ce7daf1794679e29824ceffac19b91b3943609c91b0f4"
+        },
+        "scripts/lib/lifecycle-contract.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "cf7e92e17eeff4d630a80713649e23301c15df47323507107eba5e0ed39cac16"
+        },
+        "scripts/methodology-guard.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "0c700ac7dc61603ff1e51c4d213c8d5f456bacf9039fb6aa628b10ee85ba1d9a"
+        },
+        "scripts/methodology-metrics.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "6f4913837d068c1dca32257ffe2b10c3887a5723eca96cbddb60f94dbffcecdd"
+        },
+        "scripts/new-artifact.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "b4a05f7c24f44c747b15da11191e92811b32d68f3c62d472066afbab4d44d511"
+        },
+        "scripts/pin-provenance.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "73d8adfbcad22957fd2275faf6935c53a08dd9b6ae829aa9db129ea2ecb0f415"
+        },
+        "scripts/project-state.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "2f56a500333fcd13c037b439568104b69ac64b5d1d87afc864123a96f0588a60"
+        },
+        "scripts/record-deployment-approval.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "fe2f52904bcb079760f2cc15ddc986366a2ae48ae4339cb091f6b05976293086"
+        },
+        "scripts/record-phase-checkpoint.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "9662c77b587a4cd1b3184ad5a9b48281fdfbb60e702206936465f3026598bad2"
+        },
+        "scripts/test-checker.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "7e6e2df900d71c1f6efbbea1fd4db72b08e71dc969b70c87cf49a74faee3605b"
+        },
+        "scripts/test-methodology.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "3b0d07f1ac02d4281b4a145a48f15d996d6043c267a4c87610d0543a0c02479b"
+        },
+        "tests/methodology/lib/runtime-write-fixtures.sh": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6861bfd487df4528c5d42dafa9f4d2b19bf9277d0b5abfd856d79f4454d48a8f"
+        },
+        "tests/methodology/lib/test-helpers.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "bf71fbc58ea7436c0d893e34f54d796a9ba5b6cd8ed350bffec16190355cfb2f"
+        },
+        "tests/methodology/test-checker.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "aa7c80d9a1b540f18febfe57818b6981b51dfb91d9abad17a2ed396ff56cec6c"
+        },
+        "tests/methodology/test-distribution-tools.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "ddab97493af14cdfea5f4fab1f3ab40bece311adda7d57c8a40ee36577703dc6"
+        },
+        "tests/methodology/test-documentation-coherence.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "b18d59007d268e2c05845c71db7dc4f9535ec36478a94327dfdb1bed28293c91"
+        },
+        "tests/methodology/test-enforcement-tools.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "9d3814606e6552859d122a719b9a8b2bd26974cd20ebc86af842c3b7bca45e33"
+        },
+        "tests/methodology/test-examples.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "0a610ee7ba9d4f5cb75e7a9460a66762f5de496f0483542c9495547c427ab660"
+        },
+        "tests/methodology/test-installed-context.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "73d396afefab7b9fa3cbf73d2f13ec06337f02047f50df47233a74b952c81a7f"
+        },
+        "tests/methodology/test-lifecycle-coherence.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "a96dfdd0c270998b9b90c90487599d5fe1aeb99c286c321c19cd30563b1853e0"
+        },
+        "tests/methodology/test-metrics.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "db7a444eff5a4036d4ef8a84abe082a8eb51d5f25c790214988175ca0961158c"
+        },
+        "tests/methodology/test-migration.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "b8dbe44acdbd4e84661778292751d51273e507bf741cba1cfae286f8ef27014b"
+        },
+        "tests/methodology/test-reference-graph.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "215b2470a618ac16564920d958ff8dc1d3ca5eba396ae93be4f94405356c0d26"
+        },
+        "tests/methodology/test-release-coherence.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "08df975ba8685debf8514c184b573ce15ab9f25742b3cba4ee940049958e7ec9"
+        },
+        "tests/methodology/test-runtime-tools.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "a259fd68f8318371c5cf7cb707055ace60f6b47e42f75469b5504e00f81bdbc4"
+        },
+        "tests/methodology/test-shell-syntax.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "1077b5b3331f611d9eca38ced23e382c3ec760304381af15940d56d5654013a0"
+        }
+      },
+      "status": "",
+      "refs": "refs/heads/docs/1.0.2-gate-closeout e23126ed248f55b1556aa8accb5578ee6b820c42\nrefs/heads/docs/pre-v3-migration-snapshot b8c287126e24700da3373ea94a78eec0d1f1e20a\nrefs/heads/master 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a\nrefs/heads/release/1.0.0-production 321061e073f816d3bf1c587a82c5fc67afd95877\nrefs/heads/release/1.0.1-documentation-consistency a3fc51ac0a97bf9f986f3134f9d421bc0eb35046\nrefs/heads/release/1.0.1-production 29d5c58f7ddbb7f150104e4d17b536eb141359e1\nrefs/heads/release/1.0.2-distribution-context 8a48f1a9e617a7197e1974e5edae90dc9cda1b76\nrefs/remotes/origin/HEAD 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a\nrefs/remotes/origin/docs/1.0.2-gate-closeout e23126ed248f55b1556aa8accb5578ee6b820c42\nrefs/remotes/origin/master 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a\nrefs/remotes/origin/release/1.0.0-production 321061e073f816d3bf1c587a82c5fc67afd95877\nrefs/remotes/origin/release/1.0.1-documentation-consistency a3fc51ac0a97bf9f986f3134f9d421bc0eb35046\nrefs/remotes/origin/release/1.0.1-production 64209968a765113632b9db3f6931e40f31606803\nrefs/remotes/origin/release/1.0.2-distribution-context 8a48f1a9e617a7197e1974e5edae90dc9cda1b76\nrefs/tags/v0.1.0-baseline 3253506406d95251a77a5122a4acbc1d7ae3e311\nrefs/tags/v0.2.0-phase-loop 1748f736bb3c284b43330556c1c5972f314215bb\nrefs/tags/v0.3.0-documentation-structure 3922eaf8695d5bd38963e88d2d13f4f2536d6604\nrefs/tags/v0.4.0-verification-first 95ee66043df88e7a8fba8e5fe712f4afa797dee0\nrefs/tags/v0.5.0-operational-coherence 1734871c44ab76c0085f644996ff740319a0bd77\nrefs/tags/v1.0.1 4354d74b85db14a3437fa7d19a648bcf7a6c29fc\nrefs/tags/v1.0.2 7a3b5cd2e9551b5b20ba875210489a8a971daf90\n",
+      "head": "54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a",
+      "archive": "methodology-v2.tar.gz",
+      "archive_sha256": "f648f681ba865c3d2d141c3a4a1eee2937bfebf84e63808848da5e599be53c83"
+    },
+    "T3_Code_Sample": {
+      "path": "/Users/chuckrussell/Dev/gendev/T3_Code_Sample",
+      "files": {
+        ".agents/skills/ai-construction-directive-builder/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/ai-construction-directive-builder.md"
+        },
+        ".agents/skills/architecture-spec-author/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/architecture-spec-author.md"
+        },
+        ".agents/skills/code-conformance-reviewer/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/code-conformance-reviewer.md"
+        },
+        ".agents/skills/friday-dev-board/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/friday-dev-board/SKILL.md"
+        },
+        ".agents/skills/governance-security-spec/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/governance-security-spec.md"
+        },
+        ".agents/skills/independent-code-validator/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/independent-code-validator.md"
+        },
+        ".agents/skills/migration-refactor-analyst/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/migration-refactor-analyst.md"
+        },
+        ".agents/skills/phase-build-planner/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/phase-build-planner.md"
+        },
+        ".agents/skills/prd-author/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/prd-author.md"
+        },
+        ".agents/skills/remediation-closeout/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/remediation-closeout.md"
+        },
+        ".agents/skills/subagent-directives-template/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/subagent-directives-template.md"
+        },
+        ".agents/skills/subagents-worktrees-template/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/subagets=worktrees-template.md"
+        },
+        ".agents/skills/tactical-implementation-planner/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/tactical-implementation-planner.md"
+        },
+        ".agents/skills/traceability-matrix/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/traceability-matrix.md"
+        },
+        ".agents/skills/vision-framing/SKILL.md": {
+          "kind": "symlink",
+          "target": "../../../docs/methodology/dev-skills/vision-framing.md"
+        },
+        ".github/workflows/methodology.yml": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "18940beee30159061e67a4abb03932ce5d0c1605abcc6433cf1b4c1fc487815c"
+        },
+        ".gitignore": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "98c2b9d9136f3cf8aaf210f43615f30e2e231c5ee847b7802a5c749bf04bddf1"
+        },
+        ".python-version": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "02e735b3dfe1c32833eb550b7ff8ffa17f5f2bc3fa1e7bae61a8f5a3883ce398"
+        },
+        "AGENTS.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "7c29d6fc33618c2b877d923f8f87ee366a0bac8a92fcf1214db792359804e0b1"
+        },
+        "README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ea049ea2656ec4696ee0373ac00fe21ca15668bc5879424390661e4760a8f1cf"
+        },
+        "docs/archive/completed/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "docs/gendev-licenses/LICENSE": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "99e60451823354dc4e178fbe184ade4d82a3128b771f9110978fc330968a169e"
+        },
+        "docs/gendev-licenses/LICENSE-CC-BY-4.0": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "dec22806754018f3559d48fed4c4f46b7592e9d218e51d56893a56a7ff43937d"
+        },
+        "docs/gendev-licenses/LICENSE-MIT": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ae57838da235d6e10dea1d8d984764b904819c60d6126829ceff5081fe88c87c"
+        },
+        "docs/methodology/agents/roles/architecture-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "865c1049110ddb1ceba522e3d87e08fde8a508a26c17857a9c137649855b80fb"
+        },
+        "docs/methodology/agents/roles/as-built-closeout-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "511966bee22e42206a5dd93490802abf05a4418ce9d460a9f582fc75ab924738"
+        },
+        "docs/methodology/agents/roles/code-review-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "9c069f65f0d6f24021356d74819fed4ac1aa65e90a30bf6a384e281977e54f1b"
+        },
+        "docs/methodology/agents/roles/deployment-readiness-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "3517d84763b701f883af1e69159ad448f4bdbeff0af19da838dd67a8f99192c6"
+        },
+        "docs/methodology/agents/roles/implementation-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b6c0bd5c55df1d0ae209b1b35d8cc7e5a37ec96c9ca3c63b82b691e6bf90b696"
+        },
+        "docs/methodology/agents/roles/phase-planning-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b217107e056e406922c21852bece8e7066890ec87f67ec959bc9b2cff0fba379"
+        },
+        "docs/methodology/agents/roles/prd-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "cb536b76e6b2f4e68361ef6ad521c7754d69ea32a8b610c21bdd36973c529008"
+        },
+        "docs/methodology/agents/roles/product-vision-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6da981432324a00fba3e52c53c5cb0cae078e0e4aef9a66b4c6c9563320a7cd6"
+        },
+        "docs/methodology/agents/roles/remediation-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "4d4053e0cf567ba9caa5d255346b08a3b159e1e27126f2e8570ee9779a45c3aa"
+        },
+        "docs/methodology/agents/roles/security-governance-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d8352095e371608084cc13b714eac8a98f9bdb7e2b8a92233d5ec4bb95513129"
+        },
+        "docs/methodology/agents/roles/test-uat-agent.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "7230661797189598c4473da1a9250277d2e95d0b3c8e2ffb1d50aba16c19df3a"
+        },
+        "docs/methodology/agents/sample-agents.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a1450bba660da96873c7e39b49cbad641038caa6e7aaa2c061ff52462371590b"
+        },
+        "docs/methodology/agents/subagents/code-check.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "34f8a0fcac047c72ac7b0f5b14aabf2ae0ea93188cdf0958df0028b41bbd2512"
+        },
+        "docs/methodology/architecture/ux/ux-template-architecture.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "78849acb80528b25ed584327667431b726ac71e658151eec67394057e27efb3d"
+        },
+        "docs/methodology/constitution/gendev.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "f7073cd6d2e9f26ad13e97839e80456ce617a63d3d8f5df3660c7e07500dad4f"
+        },
+        "docs/methodology/design/documentation-structure-decision-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6949bb32c54926394e1903dba7f06010fc277801230ee7f2e49253caf2027beb"
+        },
+        "docs/methodology/design/gate-numbering-reconciliation-decision-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "1226d214d7dc6c4b8b0cdf0e34ffa56c0f0ecaa5bb6a3127c5be02adc84f59f7"
+        },
+        "docs/methodology/design/naa-authority-boundary-decision-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "08bf1d693d59dc1d63844810b5835143c03ba88e88c4db387db6f2f5edcb5531"
+        },
+        "docs/methodology/design/operational-coherence-decision-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "1e8bf034c16b8de57fa33957201aaf75239cf13dd705c8bbd6148cf041a52e8d"
+        },
+        "docs/methodology/design/phase-loop-decision-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b22fa3203f428b96de5de10d25138d2274c25490c16c6b9680b3cf520e1d47f0"
+        },
+        "docs/methodology/design/sample-design.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "83fbc614443a9b3d7569e9956a43e7b8740f9d0f939f58b8154f7a7cec3002b2"
+        },
+        "docs/methodology/design/verification-first-decision-record.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "be298f6fef4edd2b0598c45af20b14bce9e922bc3de944856ece83ec77eec3e8"
+        },
+        "docs/methodology/dev-skills/ai-construction-directive-builder.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "79b38aa2450e7364d36638faa00d9a2860956b247c278bad95e827d203f8759d"
+        },
+        "docs/methodology/dev-skills/architecture-spec-author.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "67a2d2eedd6bce30e7d13ff8cd8d66b931fc2ed8b577c02960ff2abed46fec5d"
+        },
+        "docs/methodology/dev-skills/code-conformance-reviewer.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c1961d2ffd58fa5e5bbcfb258514916c199a9880ca8dacc729effebf600d6aa0"
+        },
+        "docs/methodology/dev-skills/friday-dev-board/SKILL.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "de8fbd5e14ecc0e0bb71047920b99059e73097450180e34b74a79933dddb3f51"
+        },
+        "docs/methodology/dev-skills/governance-security-spec.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "30c327e667380b589fe38009a82caa82400e3e0726d802fea21245fa290db95f"
+        },
+        "docs/methodology/dev-skills/independent-code-validator.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ce179b69caf21f433e7e12f2a22f59de7a2b47648b63c1a444eafea231845af4"
+        },
+        "docs/methodology/dev-skills/migration-refactor-analyst.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5bc50b98a1985f6de42f0d014f92efba403cf47f93e281ee5fdf5197324cdaae"
+        },
+        "docs/methodology/dev-skills/phase-build-planner.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "8871457a16e92e02d057ba6ef3f2ba2532e100e15c8167b36cde74cda3de3568"
+        },
+        "docs/methodology/dev-skills/prd-author.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "dacf3a42bf79e49440730eb34929d93b72e91963e33005491e0b1b1771571875"
+        },
+        "docs/methodology/dev-skills/remediation-closeout.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e7e2a2a5860947fe303cc0ca56779a33386875cf79c0f672c4cf9072ada5ce53"
+        },
+        "docs/methodology/dev-skills/subagent-directives-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ef02db26b1e39270ce1dac079e9aa53a3b8064c0656ebe283b48a9d750f8c024"
+        },
+        "docs/methodology/dev-skills/subagets=worktrees-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "8dec02fa5a5a9841aee17030cb497b027b8ec070fcf33092bca41bc1bd9402e5"
+        },
+        "docs/methodology/dev-skills/tactical-implementation-planner.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "272f9dd877289653180da1511b207a4ceb07bc4dbbe13d3913dc0c0ff5dcc62c"
+        },
+        "docs/methodology/dev-skills/traceability-matrix.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "3f81aef78d5cf8540cc43ddb282d7922adbc1b3c1ffd80bc2a70086bcfb36859"
+        },
+        "docs/methodology/dev-skills/vision-framing.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "9dce6dd66b6514414f74524cc4ded5ca5ff5bd761c74cff74d9fe7d85021fcde"
+        },
+        "docs/methodology/guides/agentic-development-workflow.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "35cd2adf0953224b230cb85b4dc6532df2f0438e4b63431035356a8f4c774b96"
+        },
+        "docs/methodology/guides/amendment-and-regression-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e49c63ac7d95f1d8c250f0882be32a8544949011bf2f9aec288980b923030a73"
+        },
+        "docs/methodology/guides/artifact-collaboration-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "795690b23505e315e8f578022e206703a32464d815aff49197fc85e51ab5a87d"
+        },
+        "docs/methodology/guides/collaboration-modes.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b88981fe3669cd7c360264c46de78e0bcf832491db3a49c4698b639bbfdbbe0e"
+        },
+        "docs/methodology/guides/enforcement-contract.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d93fa4aa9018747296c7562e51e01680ffcb497f83a362f118fb73230df2ae30"
+        },
+        "docs/methodology/guides/gate-transition-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c65a3eb755e9fa7f87d8eb849fccc6a9a746a0decc43f9e0e6fc5e1f38d2b2d4"
+        },
+        "docs/methodology/guides/gates.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d2dd748ac9cbab7c6a7255f78c912afc31f9d2d469b7169c35ad8c55c05b9fda"
+        },
+        "docs/methodology/guides/human-agent-collaboration-loop.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "121c356ad751666fd05fb83980f7b89e4b11e989d9d16189a2f026af5c9c42d0"
+        },
+        "docs/methodology/guides/human-approval-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "7686a288dce175c564083bde51b2a534b97dd75b9405d737e7d73b819e2d6e1f"
+        },
+        "docs/methodology/guides/orchestration-validation.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c5b0fe9d65e7623096ebf5c4f6bda44f11248fa244cd60aac6a2a9fe4eefb0f0"
+        },
+        "docs/methodology/guides/phase-loop.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c08a14572ae40970bff1364689e26528859fe2d553df797f8f307a9c226b81b1"
+        },
+        "docs/methodology/guides/production-operations-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "137bc93ad577981cbb51645babc698aef47ba3d6202de8e5887c5798c9c00f57"
+        },
+        "docs/methodology/guides/start-and-next-step-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "314bdf8d6bfce59b29c46dd53cd27523119eceb4f26c0cc1296aa91a356d3ac7"
+        },
+        "docs/methodology/guides/subagent-coordination-protocol.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "9b3c227dacbbedffebe64ff3a4767b14081095d64ff0c19eac7bd147ca9b0535"
+        },
+        "docs/methodology/schema/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "4a07b88fc8dcef23338f1364cbf3a6777772613b82e3c843303318554a96a618"
+        },
+        "docs/methodology/schema/installation.json": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "7b201c75b1fa15f2019eed9ed4c0a1f9bca72ffa87cacb2492a612cde0ad3842"
+        },
+        "docs/methodology/schema/lifecycle.json": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a20593178c42f10a8e44658c708737d82e09384f5b0c27c13a703474010102cb"
+        },
+        "docs/methodology/templates/0001-technology-stack-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "430a0035533e36c09be061f04b2b9cddadaa06fec54686d9d9ef28442032cb10"
+        },
+        "docs/methodology/templates/adr-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "98c3067c0c40ae3760b030094b71952d38765b02be11c2651e469e631739f8f8"
+        },
+        "docs/methodology/templates/aggregate-remediation-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b2e862b988755f4af708b36a9e753da359c8f0c3270bea57770df4fffe2f53af"
+        },
+        "docs/methodology/templates/architecture-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "7f14dda2d55e990f4f35c94f61615ba009f2181197af097143a14806c3e9041c"
+        },
+        "docs/methodology/templates/as-built-closeout-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "4c533ff80ef21b572f676f64c92eef0522cc47652891da285c118e87a5313324"
+        },
+        "docs/methodology/templates/build-instructions-templates.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "9a04a546cbcc68e44334d28b3a39d88c9a98e032e3f57538cecb0c7834702050"
+        },
+        "docs/methodology/templates/code-review-report-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "8909e669519c385d39c55fca5829bdf8ef8d5f726375f39c8008d5409f72bdc8"
+        },
+        "docs/methodology/templates/deployment-readiness-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "db3f8d7302796eb4cff460772745ee7cc7c5bfba73b81bbc7f60c93a68454a24"
+        },
+        "docs/methodology/templates/deployment-record-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a1e163181b7483a8c06544fb73cd6501b9d0c026feec324a8b2dd391307d78f3"
+        },
+        "docs/methodology/templates/final-code-review-report-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5a77900cddd53d7b89c7b460737aca419cc9bd025c8f57c4aa21d3fcc3ab14d1"
+        },
+        "docs/methodology/templates/final-test-uat-report-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d974afbe7344c43e6a9cd6963e2e4992a2649aa9284b9a40960031c55b42ee7c"
+        },
+        "docs/methodology/templates/gate-log-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "20cf24110d5f52ca363ff4788884f1e78055dae72ed3c50dc8038ab9f18c99eb"
+        },
+        "docs/methodology/templates/governance-security-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "53a1dbbd068c2dbe4d4d7b0cd1140e935dd1c7af93e32f2d2706d2935ee2ca20"
+        },
+        "docs/methodology/templates/implementation-summary-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "b876477a63ce9e13b0f045ce11822dcf3dd57e6e6d2423e2db70762723eaa3c2"
+        },
+        "docs/methodology/templates/phase-build-plan-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "2eddb885685cd510ba18f8490a926ced422d6afe92651c4150890e1c6767d9e2"
+        },
+        "docs/methodology/templates/phase-build-prompt-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "45146260074650bab976c9d5febe606cd4d901a1bef473989a87bc375a8ddcbd"
+        },
+        "docs/methodology/templates/phase-construction-directive-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d03ae6e99e10e37367a487c77ee1c0f6f73c28c6def447d186b22dd1d4a95000"
+        },
+        "docs/methodology/templates/phase-implementation-evidence-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c48750dced2fd6da30eaa3a687228e57da6d5edba32aa9545f47ea1850ff179f"
+        },
+        "docs/methodology/templates/phase-learnings-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c9deb73b575a48fe482482e2871e5753c7fb9e02651fd7a46f8b3ec6c7bee038"
+        },
+        "docs/methodology/templates/phase-plan-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "82e84f7b2966e2345b5239fc3cf6318b2317179bcf90c302f2b38a1f607bf434"
+        },
+        "docs/methodology/templates/phase-remediation-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ce937a99b9af699aa90da57130fd49b1b3a741cd8db59851eb681ab648466489"
+        },
+        "docs/methodology/templates/prd-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "52ec260585faa3f537c2eb3a8312bef5b7bd925a7fb3ae098b612093f8f8d97d"
+        },
+        "docs/methodology/templates/product-ci-workflow.yml": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "18940beee30159061e67a4abb03932ce5d0c1605abcc6433cf1b4c1fc487815c"
+        },
+        "docs/methodology/templates/production-runbook-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "2dbb8991bfb03c9a52d07cf0a7d3d1b00d47122c26f5630249efb9f0ca047827"
+        },
+        "docs/methodology/templates/project-as-built-closeout-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6395f958f603d8e23455fba2a09f8bd137e21f9dde166c3690c3f1baa288db6c"
+        },
+        "docs/methodology/templates/project-value-review-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "a3f66917c9bd7d7211d51a3770b57becf0030915f1d35687181a87a9f1d7b268"
+        },
+        "docs/methodology/templates/tactical-implementation-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "68e8c23c766742c63d004297ceafb55e0901b55e6446f001e07881d5bf80bfe8"
+        },
+        "docs/methodology/templates/test-uat-plan-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ab22b7edaca5d8e6d452d50e9d55f614e95e93051f50b7133b55153253e82c46"
+        },
+        "docs/methodology/templates/traceability-matrix-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "febe26ed31b49e27b92f2499aff46f6410123a6e22e8def79ef42469a54bd4d5"
+        },
+        "docs/methodology/templates/value-review-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "9bfc1a893df50f93e76b48589f58867b8b8445b098219c90e510c42a3a9e31cc"
+        },
+        "docs/methodology/templates/vision-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "83923509ef4d203822cbae02c029a7f7779bdb3335c7bf5e3dba55c76eb1f9ad"
+        },
+        "docs/planning/README.md": {
+          "kind": "file",
+          "mode": 384,
+          "sha256": "73429175fca6e1243ffac10cab2ea7092857b6374de24d65a16f688e05050c3b"
+        },
+        "docs/planning/active/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "docs/planning/backlog/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "docs/planning/blocked/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "docs/planning/board.schema.json": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "1ad24664c16f86cb8820be1facb1e93168f8acd0cc7e70cee96a124fbe96d219"
+        },
+        "docs/planning/board.yaml": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "07bd44499ea68f44339b215bf950d3a1b59273f28f8e57ecbf69ce48104e4611"
+        },
+        "docs/planning/deferred/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "docs/planning/queued/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "docs/planning/review/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "docs/planning/task-template.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "36010d31b92b543a69f52f8a78cf79e4ccb90a75d6ff2ca54cb3f74072b3e0a4"
+        },
+        "docs/policies/architecture-amendment-impact.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "ae8534f2622a8b2838a9b8fd68660ea1c024aa8f63898301ca1a2bb3c57b8af2"
+        },
+        "docs/policies/dev-board-integration.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "da65121f4085f4954baeed6d97cd2a5fbafb29fe05692cb231ee6026a3e9a07b"
+        },
+        "docs/policies/development-task-lifecycle.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "44898e32b17cb692dead9c9e11b912cd7a450dbca4db90dd35d8da842b84cb9c"
+        },
+        "docs/policies/independent-validation-policy.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "3364ec4041e2d931fb9fc2f83f276da15a4864275593da70327edba6190d9a70"
+        },
+        "docs/policies/legacy-policy-debt.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "98e192de7777e148034cfd06b7752e37beeb946f6c7d256ca32c59c4b6894660"
+        },
+        "docs/policies/naa-implementation-choices.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "75c9a584fb5da86523517ce756cbc1dfcb51a6593e034b7d326dde83a1d1f3f3"
+        },
+        "docs/policies/repository-engineering-policy.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "92f9fb62262a61364910e714de91a82656b49bdbb20216e2c9f0fff76183f42c"
+        },
+        "docs/policies/rolling-wave-planning.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "1e969549cb4664f84f8eccd2c20bb15afe1d1052d9ffa86599b0baff44c65118"
+        },
+        "docs/project-template/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "594139e8c554dd0abaece34d8ed67b8fe59e87b3ab0c625ade04f559fd13f99b"
+        },
+        "docs/project-template/approvals/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/architecture/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/as-built/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/build-plan/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/build-plan/phase-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "54fa479cca570f8624b315c6890a3d10fbbe96b4fc393e255ee0ccdeb7ab14e4"
+        },
+        "docs/project-template/build-plan/phases/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/decisions/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/deployment/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/design/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/prd/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/project.yaml": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "54708d60f117f12ffec002ff57b25648811069cc2de4d7c71e4f98f26b3b61cf"
+        },
+        "docs/project-template/review/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/security-governance/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/testing/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/traceability/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project-template/vision/.gitkeep": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        "docs/project/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "714949878cd2b60546acb763943c10067aa12de53f2789581360abe9a34ba7e7"
+        },
+        "docs/project/approvals/gate-log.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "bc3c44b55b8a4425197f5d8090cfbb3e666c15e85c0e6daabe56c22552c96ccf"
+        },
+        "docs/project/architecture/architecture.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e0d6181c627cf03c5e24ed82d5493b8febd676d2ad77d2ca53d628d1abd184ed"
+        },
+        "docs/project/as-built/phase-1-as-built-closeout.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "bfc365ec93bc5f79aae6c87f2d5ae95ede2b5a8be42ad58645c33c259e17ba01"
+        },
+        "docs/project/as-built/phase-1-value-review.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "019bd9335ec8a149c31c5544328cc3e7f3ce23d38c286a6f921adb68922d92da"
+        },
+        "docs/project/build-plan/README.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5bf43846031724686fab260d0a81ee833793db9e89586503e216509ab20bb607"
+        },
+        "docs/project/build-plan/phase-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "89ad95f8285de720a350cccd3d6bf44e4f7c85802b02334d97e9c8008b3cc4db"
+        },
+        "docs/project/build-plan/phases/phase-1-build-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "05d72cde5ed0f7622151a50096c0ad1ce256d1ce06276e9b4da95d5fcbd64810"
+        },
+        "docs/project/build-plan/phases/phase-1-code-review.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "f2ba59104a8e51510ad6be6c0c0cfb0bf29fd232751dfb77dd94ca110099997b"
+        },
+        "docs/project/build-plan/phases/phase-1-construction-directive.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "335ae48d115e2044fc05ff8176c1229b110c4b7c35bea41af12410d9e3b03c17"
+        },
+        "docs/project/build-plan/phases/phase-1-tactical-implementation-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c0c8978d946bb4db6a7ce38da99adf1a88b66a6cd8f0407a75c40c208060b3d9"
+        },
+        "docs/project/decisions/0001-technology-stack.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d4c5de89ffb8ef30c3192672c3f2362091c39ea66d3604b793d272660fcbcdbf"
+        },
+        "docs/project/prd/prd.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "d3ace13113d797816c5db59052249ad2d947adc0d3f8b06d0a83684a0dba3e4a"
+        },
+        "docs/project/project.yaml": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "590c35acff03b7acf7ce63df22304e4f236b89ccbd45cf04aa1ce063291267b9"
+        },
+        "docs/project/security-governance/governance-security-spec.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "68d571a82de43eba998d5b7e8fdbf1c0eed9858e7f21a1345c10c5754e580357"
+        },
+        "docs/project/testing/phase-1-test-uat-plan.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "bbaa7791e4b62c532ad49426d856a37fa78e78818cd0988a99a1dc8dbab882ba"
+        },
+        "docs/project/traceability/traceability-matrix.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "eb0149eb0c26364e2b736a5215267f608e8d5e83a6a68df97f0e7246b547321a"
+        },
+        "docs/project/vision/vision.md": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "e6352f5a040942cb9ddca13edf7e79888b1090c420fffd37a12b9323c9bd15bf"
+        },
+        "main.py": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "c74cf02a5c28272f98b3323a42940c48dddfafdd078daba216f72a8ffb721ec4"
+        },
+        "pyproject.toml": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "7f27862cf57c701d84952bb84fd2a395a2eed13b4841ee6255f9e7e229325d28"
+        },
+        "scripts/backfill-methodology.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "d1c4ed9227d3fef1ce13932e827120eae03fdfad43e878549c0c683180e7e063"
+        },
+        "scripts/check-methodology.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "9595318ada9304a261b6cf0873c472333d0ad47c2b3262788f75bc050538e685"
+        },
+        "scripts/close-gate.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "f4fd71d8a7938787c080cd0bc32479132bb89e1e5ec264c381d2d870832ced28"
+        },
+        "scripts/close-phase.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "437c915d7b012750fb022cfd1a91c7fb6c98376287391f5fa298d47798af16cf"
+        },
+        "scripts/devboard.py": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "aa6bd825c6937b25b65453cd0a088cb3f2179c9cc46fd50208bfa3da01c417fc"
+        },
+        "scripts/friday-dev-board.py": {
+          "kind": "symlink",
+          "target": "devboard.py"
+        },
+        "scripts/gendev-doctor.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "cd8fec90589a72cbbc9272f4409f7f53e57ddf05e072a5ddea35add8ab214a5f"
+        },
+        "scripts/init-phase.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "da0fcbd6517cd0553eba0b7b7dd1c0099943b24e001f0a1341c841ed2b5e9cfd"
+        },
+        "scripts/init-project.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "ce954a2e686758d1f676760a40d2383a585294205097d37958398685cf2f7072"
+        },
+        "scripts/install-hooks.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "c6a16cf56abe7079d57a53f6e92910dad7910995da7b6e283a3d77aac1a9eee5"
+        },
+        "scripts/install-methodology.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "adb4e6f400bed60e9bfb6d1e37e2c517407640c327fe3e863377b89bee2d2212"
+        },
+        "scripts/lib/distribution-manifest.txt": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "307ba646a8346d4b58d3e7e41849586771aee1c72f634a864833fecbcbd82dfc"
+        },
+        "scripts/lib/gate-log.awk": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5348d12b38211b98f56cc4f3ed37027398528be783b1fd2398fb84082537c26f"
+        },
+        "scripts/lib/gendev-common.sh": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6700508f91c381e3319238e7e08b235d1ca6f9dcd32ebe85ef0a2d9da762f37f"
+        },
+        "scripts/lib/gendev-distribution.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "251270def90c1f200713c0926c3544f1147a4dc5af83c6304e1b018bc3bd2c02"
+        },
+        "scripts/lib/gendev-transition.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "c4a8f674ca8d8a30903ce7daf1794679e29824ceffac19b91b3943609c91b0f4"
+        },
+        "scripts/lib/lifecycle-contract.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "cf7e92e17eeff4d630a80713649e23301c15df47323507107eba5e0ed39cac16"
+        },
+        "scripts/methodology-guard.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "0c700ac7dc61603ff1e51c4d213c8d5f456bacf9039fb6aa628b10ee85ba1d9a"
+        },
+        "scripts/methodology-metrics.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "6f4913837d068c1dca32257ffe2b10c3887a5723eca96cbddb60f94dbffcecdd"
+        },
+        "scripts/new-artifact.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "b4a05f7c24f44c747b15da11191e92811b32d68f3c62d472066afbab4d44d511"
+        },
+        "scripts/pin-provenance.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "73d8adfbcad22957fd2275faf6935c53a08dd9b6ae829aa9db129ea2ecb0f415"
+        },
+        "scripts/project-state.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "2f56a500333fcd13c037b439568104b69ac64b5d1d87afc864123a96f0588a60"
+        },
+        "scripts/record-deployment-approval.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "fe2f52904bcb079760f2cc15ddc986366a2ae48ae4339cb091f6b05976293086"
+        },
+        "scripts/record-phase-checkpoint.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "9662c77b587a4cd1b3184ad5a9b48281fdfbb60e702206936465f3026598bad2"
+        },
+        "scripts/test-checker.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "7e6e2df900d71c1f6efbbea1fd4db72b08e71dc969b70c87cf49a74faee3605b"
+        },
+        "scripts/test-methodology.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "3b0d07f1ac02d4281b4a145a48f15d996d6043c267a4c87610d0543a0c02479b"
+        },
+        "t3.json": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "5deb05b4544a2cb14a7396a50229d57305d9a64d268663c51c4d8ef804721a58"
+        },
+        "tests/devboard/test_devboard.py": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "9a9c8f6086d1b1542cf9f42266ee7a17b0f3d1b4fdf3bb7ae8c6634304b644f1"
+        },
+        "tests/methodology/lib/runtime-write-fixtures.sh": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "6861bfd487df4528c5d42dafa9f4d2b19bf9277d0b5abfd856d79f4454d48a8f"
+        },
+        "tests/methodology/lib/test-helpers.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "bf71fbc58ea7436c0d893e34f54d796a9ba5b6cd8ed350bffec16190355cfb2f"
+        },
+        "tests/methodology/test-checker.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "aa7c80d9a1b540f18febfe57818b6981b51dfb91d9abad17a2ed396ff56cec6c"
+        },
+        "tests/methodology/test-distribution-tools.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "ddab97493af14cdfea5f4fab1f3ab40bece311adda7d57c8a40ee36577703dc6"
+        },
+        "tests/methodology/test-documentation-coherence.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "b18d59007d268e2c05845c71db7dc4f9535ec36478a94327dfdb1bed28293c91"
+        },
+        "tests/methodology/test-enforcement-tools.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "9d3814606e6552859d122a719b9a8b2bd26974cd20ebc86af842c3b7bca45e33"
+        },
+        "tests/methodology/test-examples.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "0a610ee7ba9d4f5cb75e7a9460a66762f5de496f0483542c9495547c427ab660"
+        },
+        "tests/methodology/test-installed-context.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "73d396afefab7b9fa3cbf73d2f13ec06337f02047f50df47233a74b952c81a7f"
+        },
+        "tests/methodology/test-lifecycle-coherence.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "a96dfdd0c270998b9b90c90487599d5fe1aeb99c286c321c19cd30563b1853e0"
+        },
+        "tests/methodology/test-metrics.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "db7a444eff5a4036d4ef8a84abe082a8eb51d5f25c790214988175ca0961158c"
+        },
+        "tests/methodology/test-migration.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "b8dbe44acdbd4e84661778292751d51273e507bf741cba1cfae286f8ef27014b"
+        },
+        "tests/methodology/test-reference-graph.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "215b2470a618ac16564920d958ff8dc1d3ca5eba396ae93be4f94405356c0d26"
+        },
+        "tests/methodology/test-release-coherence.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "08df975ba8685debf8514c184b573ce15ab9f25742b3cba4ee940049958e7ec9"
+        },
+        "tests/methodology/test-runtime-tools.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "a259fd68f8318371c5cf7cb707055ace60f6b47e42f75469b5504e00f81bdbc4"
+        },
+        "tests/methodology/test-shell-syntax.sh": {
+          "kind": "file",
+          "mode": 493,
+          "sha256": "1077b5b3331f611d9eca38ced23e382c3ec760304381af15940d56d5654013a0"
+        },
+        "uv.lock": {
+          "kind": "file",
+          "mode": 420,
+          "sha256": "847e121aeefcd4e7f05afdf91519ad10e79df4c91f5a95cc8e25fc01ee4b5e33"
+        }
+      },
+      "status": "?? .agents/skills/ai-construction-directive-builder/SKILL.md\n?? .agents/skills/architecture-spec-author/SKILL.md\n?? .agents/skills/code-conformance-reviewer/SKILL.md\n?? .agents/skills/friday-dev-board/SKILL.md\n?? .agents/skills/governance-security-spec/SKILL.md\n?? .agents/skills/independent-code-validator/SKILL.md\n?? .agents/skills/migration-refactor-analyst/SKILL.md\n?? .agents/skills/phase-build-planner/SKILL.md\n?? .agents/skills/prd-author/SKILL.md\n?? .agents/skills/remediation-closeout/SKILL.md\n?? .agents/skills/subagent-directives-template/SKILL.md\n?? .agents/skills/subagents-worktrees-template/SKILL.md\n?? .agents/skills/tactical-implementation-planner/SKILL.md\n?? .agents/skills/traceability-matrix/SKILL.md\n?? .agents/skills/vision-framing/SKILL.md\n?? .github/workflows/methodology.yml\n?? .gitignore\n?? .python-version\n?? AGENTS.md\n?? README.md\n?? docs/archive/completed/.gitkeep\n?? docs/gendev-licenses/LICENSE\n?? docs/gendev-licenses/LICENSE-CC-BY-4.0\n?? docs/gendev-licenses/LICENSE-MIT\n?? docs/methodology/agents/roles/architecture-agent.md\n?? docs/methodology/agents/roles/as-built-closeout-agent.md\n?? docs/methodology/agents/roles/code-review-agent.md\n?? docs/methodology/agents/roles/deployment-readiness-agent.md\n?? docs/methodology/agents/roles/implementation-agent.md\n?? docs/methodology/agents/roles/phase-planning-agent.md\n?? docs/methodology/agents/roles/prd-agent.md\n?? docs/methodology/agents/roles/product-vision-agent.md\n?? docs/methodology/agents/roles/remediation-agent.md\n?? docs/methodology/agents/roles/security-governance-agent.md\n?? docs/methodology/agents/roles/test-uat-agent.md\n?? docs/methodology/agents/sample-agents.md\n?? docs/methodology/agents/subagents/code-check.md\n?? docs/methodology/architecture/ux/ux-template-architecture.md\n?? docs/methodology/constitution/gendev.md\n?? docs/methodology/design/documentation-structure-decision-record.md\n?? docs/methodology/design/gate-numbering-reconciliation-decision-record.md\n?? docs/methodology/design/naa-authority-boundary-decision-record.md\n?? docs/methodology/design/operational-coherence-decision-record.md\n?? docs/methodology/design/phase-loop-decision-record.md\n?? docs/methodology/design/sample-design.md\n?? docs/methodology/design/verification-first-decision-record.md\n?? docs/methodology/dev-skills/ai-construction-directive-builder.md\n?? docs/methodology/dev-skills/architecture-spec-author.md\n?? docs/methodology/dev-skills/code-conformance-reviewer.md\n?? docs/methodology/dev-skills/friday-dev-board/SKILL.md\n?? docs/methodology/dev-skills/governance-security-spec.md\n?? docs/methodology/dev-skills/independent-code-validator.md\n?? docs/methodology/dev-skills/migration-refactor-analyst.md\n?? docs/methodology/dev-skills/phase-build-planner.md\n?? docs/methodology/dev-skills/prd-author.md\n?? docs/methodology/dev-skills/remediation-closeout.md\n?? docs/methodology/dev-skills/subagent-directives-template.md\n?? docs/methodology/dev-skills/subagets=worktrees-template.md\n?? docs/methodology/dev-skills/tactical-implementation-planner.md\n?? docs/methodology/dev-skills/traceability-matrix.md\n?? docs/methodology/dev-skills/vision-framing.md\n?? docs/methodology/guides/agentic-development-workflow.md\n?? docs/methodology/guides/amendment-and-regression-protocol.md\n?? docs/methodology/guides/artifact-collaboration-protocol.md\n?? docs/methodology/guides/collaboration-modes.md\n?? docs/methodology/guides/enforcement-contract.md\n?? docs/methodology/guides/gate-transition-protocol.md\n?? docs/methodology/guides/gates.md\n?? docs/methodology/guides/human-agent-collaboration-loop.md\n?? docs/methodology/guides/human-approval-protocol.md\n?? docs/methodology/guides/orchestration-validation.md\n?? docs/methodology/guides/phase-loop.md\n?? docs/methodology/guides/production-operations-protocol.md\n?? docs/methodology/guides/start-and-next-step-protocol.md\n?? docs/methodology/guides/subagent-coordination-protocol.md\n?? docs/methodology/schema/README.md\n?? docs/methodology/schema/installation.json\n?? docs/methodology/schema/lifecycle.json\n?? docs/methodology/templates/0001-technology-stack-template.md\n?? docs/methodology/templates/adr-template.md\n?? docs/methodology/templates/aggregate-remediation-template.md\n?? docs/methodology/templates/architecture-template.md\n?? docs/methodology/templates/as-built-closeout-template.md\n?? docs/methodology/templates/build-instructions-templates.md\n?? docs/methodology/templates/code-review-report-template.md\n?? docs/methodology/templates/deployment-readiness-template.md\n?? docs/methodology/templates/deployment-record-template.md\n?? docs/methodology/templates/final-code-review-report-template.md\n?? docs/methodology/templates/final-test-uat-report-template.md\n?? docs/methodology/templates/gate-log-template.md\n?? docs/methodology/templates/governance-security-template.md\n?? docs/methodology/templates/implementation-summary-template.md\n?? docs/methodology/templates/phase-build-plan-template.md\n?? docs/methodology/templates/phase-build-prompt-template.md\n?? docs/methodology/templates/phase-construction-directive-template.md\n?? docs/methodology/templates/phase-implementation-evidence-template.md\n?? docs/methodology/templates/phase-learnings-template.md\n?? docs/methodology/templates/phase-plan-template.md\n?? docs/methodology/templates/phase-remediation-template.md\n?? docs/methodology/templates/prd-template.md\n?? docs/methodology/templates/product-ci-workflow.yml\n?? docs/methodology/templates/production-runbook-template.md\n?? docs/methodology/templates/project-as-built-closeout-template.md\n?? docs/methodology/templates/project-value-review-template.md\n?? docs/methodology/templates/tactical-implementation-template.md\n?? docs/methodology/templates/test-uat-plan-template.md\n?? docs/methodology/templates/traceability-matrix-template.md\n?? docs/methodology/templates/value-review-template.md\n?? docs/methodology/templates/vision-template.md\n?? docs/planning/README.md\n?? docs/planning/active/.gitkeep\n?? docs/planning/backlog/.gitkeep\n?? docs/planning/blocked/.gitkeep\n?? docs/planning/board.schema.json\n?? docs/planning/board.yaml\n?? docs/planning/deferred/.gitkeep\n?? docs/planning/queued/.gitkeep\n?? docs/planning/review/.gitkeep\n?? docs/planning/task-template.md\n?? docs/policies/architecture-amendment-impact.md\n?? docs/policies/dev-board-integration.md\n?? docs/policies/development-task-lifecycle.md\n?? docs/policies/independent-validation-policy.md\n?? docs/policies/legacy-policy-debt.md\n?? docs/policies/naa-implementation-choices.md\n?? docs/policies/repository-engineering-policy.md\n?? docs/policies/rolling-wave-planning.md\n?? docs/project-template/README.md\n?? docs/project-template/approvals/.gitkeep\n?? docs/project-template/architecture/.gitkeep\n?? docs/project-template/as-built/.gitkeep\n?? docs/project-template/build-plan/.gitkeep\n?? docs/project-template/build-plan/phase-plan.md\n?? docs/project-template/build-plan/phases/.gitkeep\n?? docs/project-template/decisions/.gitkeep\n?? docs/project-template/deployment/.gitkeep\n?? docs/project-template/design/.gitkeep\n?? docs/project-template/prd/.gitkeep\n?? docs/project-template/project.yaml\n?? docs/project-template/review/.gitkeep\n?? docs/project-template/security-governance/.gitkeep\n?? docs/project-template/testing/.gitkeep\n?? docs/project-template/traceability/.gitkeep\n?? docs/project-template/vision/.gitkeep\n?? docs/project/README.md\n?? docs/project/approvals/gate-log.md\n?? docs/project/architecture/architecture.md\n?? docs/project/as-built/phase-1-as-built-closeout.md\n?? docs/project/as-built/phase-1-value-review.md\n?? docs/project/build-plan/README.md\n?? docs/project/build-plan/phase-plan.md\n?? docs/project/build-plan/phases/phase-1-build-plan.md\n?? docs/project/build-plan/phases/phase-1-code-review.md\n?? docs/project/build-plan/phases/phase-1-construction-directive.md\n?? docs/project/build-plan/phases/phase-1-tactical-implementation-plan.md\n?? docs/project/decisions/0001-technology-stack.md\n?? docs/project/prd/prd.md\n?? docs/project/project.yaml\n?? docs/project/security-governance/governance-security-spec.md\n?? docs/project/testing/phase-1-test-uat-plan.md\n?? docs/project/traceability/traceability-matrix.md\n?? docs/project/vision/vision.md\n?? main.py\n?? pyproject.toml\n?? scripts/backfill-methodology.sh\n?? scripts/check-methodology.sh\n?? scripts/close-gate.sh\n?? scripts/close-phase.sh\n?? scripts/devboard.py\n?? scripts/friday-dev-board.py\n?? scripts/gendev-doctor.sh\n?? scripts/init-phase.sh\n?? scripts/init-project.sh\n?? scripts/install-hooks.sh\n?? scripts/install-methodology.sh\n?? scripts/lib/distribution-manifest.txt\n?? scripts/lib/gate-log.awk\n?? scripts/lib/gendev-common.sh\n?? scripts/lib/gendev-distribution.sh\n?? scripts/lib/gendev-transition.sh\n?? scripts/lib/lifecycle-contract.sh\n?? scripts/methodology-guard.sh\n?? scripts/methodology-metrics.sh\n?? scripts/new-artifact.sh\n?? scripts/pin-provenance.sh\n?? scripts/project-state.sh\n?? scripts/record-deployment-approval.sh\n?? scripts/record-phase-checkpoint.sh\n?? scripts/test-checker.sh\n?? scripts/test-methodology.sh\n?? t3.json\n?? tests/devboard/test_devboard.py\n?? tests/methodology/lib/runtime-write-fixtures.sh\n?? tests/methodology/lib/test-helpers.sh\n?? tests/methodology/test-checker.sh\n?? tests/methodology/test-distribution-tools.sh\n?? tests/methodology/test-documentation-coherence.sh\n?? tests/methodology/test-enforcement-tools.sh\n?? tests/methodology/test-examples.sh\n?? tests/methodology/test-installed-context.sh\n?? tests/methodology/test-lifecycle-coherence.sh\n?? tests/methodology/test-metrics.sh\n?? tests/methodology/test-migration.sh\n?? tests/methodology/test-reference-graph.sh\n?? tests/methodology/test-release-coherence.sh\n?? tests/methodology/test-runtime-tools.sh\n?? tests/methodology/test-shell-syntax.sh\n?? uv.lock\n",
+      "refs": "refs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/0 88984d876627dd091b1c5c53035e9104e1038817\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/1 b0fda12de49bc8d261ad5d4bebf8e067c53fcf58\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/10 61896272c67cd643763fba5f0d4d7de143a1e47d\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/11 519f88eda15b7cbdbd9667272c37361cc5db5cb8\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/12 69255fc878acb284f33dfd75c5c77f13396877a0\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/13 22f3df773de5b012beedcb4698ed264558867294\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/14 dcad9115741888a6137bbf56e39f9da710c0a1fa\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/15 68a0fbd7d2e8b7c3f041036ddcc8911bbe4e399f\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/16 5a43af866a0ba80663f67f21d1685f48d3deb5c8\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/17 92637de0d52ce491ff5911e618f153ff532280e7\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/18 1142431dfc698b31b04ce1832ecbd8cb37effb8a\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/19 6c42407f8cec08f388f7a460589391d09efeab71\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/2 c70af44aa8ba82e1538a32aeb4e0a6f6dc7a07d3\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/20 6067dccea92862973cdec81daf5e3da8b2570739\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/21 b525757b2a546a130a4bfcf1454c1d17976ed3da\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/22 5036140741323e4a1e0e21a9dc66ea9592917387\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/23 bcd1fa847e5c3c2b4ea2a93cb2bca39b0af02c4d\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/24 6be551cc674b262413a7f278429a50e7dc45dfcc\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/25 6874e3f413b5ecebdaa3a86447a645e746282c22\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/26 f3c1226826529c01f430fedf21e3d2a1ae40a70d\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/27 51a7a3374883d5d8bd3a5af428d3abbe7d0e1b74\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/28 e36cd0cf16650311dbfb33212d67a677996554cd\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/29 8e53daa4399722516df95cd8c490e9c0ac1d088d\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/3 0fb0ac3aa764cc04fdb77279dd860d4633e79c52\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/30 b372a0a156a7d2992dcaeba893cdd9f794e7325d\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/31 e2faafef0b40c10f25c8255d8eaad5a3e5ead07f\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/32 a208955be96f711e3f6a7fdaf46973d695a664dc\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/33 acf4dcd5ce84318d40f1827acda981e7924281a8\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/34 4c1308a4eeddc786b370297d52de0811094d9d01\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/35 d7fccaa6663f1bce3ec7cff88fed37177a433bf2\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/36 818f61c02ba0dcfa485fb8e0354d9a15e7e06907\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/4 295822c0fe9684954204f8390095722fffee6661\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/5 c56cd1aacba82bd7b05e6593b843b46d33785a22\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/6 21c9f98cd9f769c66d28ce9ef3eb6d0f60d07df8\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/7 0da9392277d48d7b0f96bb4bc4e75b9dd97ec5ec\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/8 8596be249c281ffae71a767619f9416b37f9f9ca\nrefs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/9 9e1c5e963453c64364e40353b8a2a9781f3ef0c2\n",
+      "archive": "T3_Code_Sample.tar.gz",
+      "archive_sha256": "559d6df3a58c1a43f5537047b58106e474a57d5e5d793e6da281fe0b5b07ce53"
+    }
+  },
+  "bundle_sha256": "9a3253df5b993a13a38aa1199229234e7c34c50aa488ef63b124f74dd4ce1b23"
+}
