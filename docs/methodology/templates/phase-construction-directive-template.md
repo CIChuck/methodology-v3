@@ -177,10 +177,10 @@ The AI builder must not:
         if a unit is doing two things, it should be two units
 [LA]    produce behavior a reader would not expect from an obvious reading of the
         requirement; correctness without astonishment
-[NAA]   introduce any entity, field, relationship, class, or interface not already
-        present in the Accepted architecture's Domain Model; if a phase genuinely
-        needs something not yet in the model, that is a finding to send upstream,
-        not a silent addition
+[NAA]   expand approved product behavior or introduce or change public/cross-component
+        contracts, persisted/shared/externally exchanged data, architectural ownership,
+        or security/governance boundaries without accepted authority; changes to those
+        boundaries require the approved amendment process before implementation
 [GOV]   silently change architecture
 [GOV]   weaken security or governance behavior
 [GOV]   remove unrelated code
@@ -192,6 +192,18 @@ The AI builder must not:
 Key: YAGNI = You Aren't Gonna Need It; KISS = Keep It Simple; DRY = Don't Repeat Yourself;
 SRP = Single Responsibility; LA = Least Astonishment; NAA = No Undeclared Abstractions;
 GOV = Governance; INT = Integrity.
+
+Within this directive's approved scope, the builder may introduce private helpers,
+internal classes or value types, local adapters, framework-generated types, test
+fixtures, fakes, and mocks needed for implementation. They must remain proportionate
+under YAGNI, KISS, DRY, and SRP, and must not expand approved observable behavior,
+public or cross-component contracts, persisted/shared state, trust boundaries,
+acceptance criteria, or phase scope. An authority-bearing change still needs approved
+upstream authority or an amendment before use.
+
+Explain significant internal implementation choices in the implementation report.
+Individual helpers do not need separate approval or an architecture inventory entry
+merely because they introduce a private class, field, or function.
 
 ## 15. Accuracy Pass
 

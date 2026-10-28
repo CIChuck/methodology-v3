@@ -159,14 +159,26 @@ How do entities relate to each other?
 
 Diagram if useful.
 
-Once this section reaches Accepted status, it is the closed, approved list of
-entities, fields, relationships, classes, and interfaces for this project. Every
-entity, field, relationship, class, and interface a later phase introduces must
-already be named here. If a phase's work genuinely requires something not yet in
-this model, that is a finding: send it back as a deliberate, named amendment to
-this document before the build proceeds. Nothing new is introduced silently
-during generation. This is the enforcement point for the constitution's sixth
-code-quality principle: No Undeclared Abstractions.
+Once this architecture reaches Accepted status, this domain model and the
+linked data, interface, ownership, and security sections define the approved
+authority-bearing abstractions: domain concepts and rules; persisted, shared,
+externally exchanged, or security-sensitive fields and relationships; public
+or cross-component contracts; and architectural and trust boundaries. A later
+phase that needs to add or change these must obtain an approved amendment to
+the governing authority before affected implementation proceeds.
+
+Within an already authorized build task, private helpers, internal types or
+classes, local adapters, framework-generated types, test fixtures, fakes, and
+mocks do not each need an architecture inventory entry or individual approval.
+This allowance applies only when they remain private to a component or test
+scope, add no product behavior, policy, or observable semantics, add no shared,
+persisted, or externally exchanged state, alter no public or cross-component
+contract, and change no acceptance, governance, or phase boundary. They must
+remain proportionate under YAGNI, KISS, DRY, and SRP. Record significant internal
+choices in the implementation report.
+
+This enforces the constitution's sixth code-quality principle, No Undeclared
+Abstractions, at the authority boundary rather than at every private code symbol.
 
 ---
 

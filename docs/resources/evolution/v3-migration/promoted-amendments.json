@@ -1,0 +1,90 @@
+{
+  "origin": "T3_Code_Sample frozen input",
+  "original_local_amendments": [
+    {
+      "id": "naa-implementation-choices-2026-10-27",
+      "scope": "Align directive and reviewer NAA guidance with the constitution's existing implementation-local allowance.",
+      "approved_by": "Chuck Russell",
+      "approved_on": "2026-10-27",
+      "approval_instruction": "approved, make that change",
+      "record": "docs/policies/naa-implementation-choices.md",
+      "files": {
+        "docs/methodology/templates/phase-construction-directive-template.md": {
+          "source_sha256": "83ceae338240d8063f97d34785c69499eb860a86fc50053c7c78d6492309c45a",
+          "effective_sha256": "d03ae6e99e10e37367a487c77ee1c0f6f73c28c6def447d186b22dd1d4a95000"
+        },
+        "docs/methodology/guides/subagent-coordination-protocol.md": {
+          "source_sha256": "ad60233724cc928fec7e67804be4271d2eb96fe2a37768276d29aa2e456dd277",
+          "effective_sha256": "9b3c227dacbbedffebe64ff3a4767b14081095d64ff0c19eac7bd147ca9b0535"
+        }
+      }
+    },
+    {
+      "id": "architecture-amendment-impact-2026-10-27",
+      "scope": "Use impact assessment and amendment reconciliation; regress only when a previously satisfied gate condition is invalidated. Synchronize the existing Phase 1 draft.",
+      "approved_by": "Chuck Russell",
+      "approved_on": "2026-10-27",
+      "approval_instruction": "I approve your changes to issue number 2.",
+      "record": "docs/policies/architecture-amendment-impact.md",
+      "files": {
+        "docs/methodology/templates/phase-build-plan-template.md": {
+          "source_sha256": "64c3d1bdaac785e4abf8813cd84d47ce9438b8ee13e7cb620b2712ef87925b12",
+          "effective_sha256": "2eddb885685cd510ba18f8490a926ced422d6afe92651c4150890e1c6767d9e2"
+        },
+        "docs/methodology/dev-skills/phase-build-planner.md": {
+          "source_sha256": "a3e095efa9f6ef1a6ef7864997b2bd2dccb489f8dc2217b38889d1e4a68c528e",
+          "effective_sha256": "bc63ebb77a4574bb9f33ed128cb57ccfd8a0ff0759dbc7bd99482206e5825871"
+        }
+      },
+      "synchronized_project_artifacts": [
+        "docs/project/build-plan/phases/phase-1-build-plan.md"
+      ]
+    },
+    {
+      "id": "rolling-wave-planning-2026-10-27",
+      "scope": "Permit advance phase-build-plan drafts; finalize detailed tactical plans and directives just in time, preserving formal checkpoint prerequisites and approval boundaries.",
+      "approved_by": "Chuck Russell",
+      "approved_on": "2026-10-27",
+      "approval_instruction": "Approve - make those changes.",
+      "record": "docs/policies/rolling-wave-planning.md",
+      "files": {
+        "docs/methodology/dev-skills/phase-build-planner.md": {
+          "source_sha256": "a3e095efa9f6ef1a6ef7864997b2bd2dccb489f8dc2217b38889d1e4a68c528e",
+          "previous_effective_sha256": "bc63ebb77a4574bb9f33ed128cb57ccfd8a0ff0759dbc7bd99482206e5825871",
+          "effective_sha256": "8871457a16e92e02d057ba6ef3f2ba2532e100e15c8167b36cde74cda3de3568"
+        },
+        "docs/methodology/guides/phase-loop.md": {
+          "source_sha256": "8d6a5e50cc7df91d888e6b5df447119d5429552dce430c3f2f28f199342f83de",
+          "previous_effective_sha256": "8d6a5e50cc7df91d888e6b5df447119d5429552dce430c3f2f28f199342f83de",
+          "effective_sha256": "c08a14572ae40970bff1364689e26528859fe2d553df797f8f307a9c226b81b1"
+        }
+      }
+    },
+    {
+      "id": "naa-architecture-alignment-2026-10-27",
+      "scope": "Align architecture NAA wording with the constitutional authority boundary and implementation-local allowance; synchronize the existing Draft architecture.",
+      "approved_by": "Chuck Russell",
+      "approved_on": "2026-10-27",
+      "approval_instruction": "fix issue 1",
+      "record": "docs/policies/naa-implementation-choices.md",
+      "files": {
+        "docs/methodology/templates/architecture-template.md": {
+          "source_sha256": "95c19707311038d448f2b86be489942aa27a4debaf8cec7146c49b806d8e29ae",
+          "previous_effective_sha256": "95c19707311038d448f2b86be489942aa27a4debaf8cec7146c49b806d8e29ae",
+          "effective_sha256": "7f14dda2d55e990f4f35c94f61615ba009f2181197af097143a14806c3e9041c"
+        }
+      },
+      "synchronized_project_artifacts": [
+        "docs/project/architecture/architecture.md"
+      ]
+    }
+  ],
+  "promoted_files": {
+    "docs/methodology/dev-skills/phase-build-planner.md": "8871457a16e92e02d057ba6ef3f2ba2532e100e15c8167b36cde74cda3de3568",
+    "docs/methodology/guides/phase-loop.md": "c08a14572ae40970bff1364689e26528859fe2d553df797f8f307a9c226b81b1",
+    "docs/methodology/guides/subagent-coordination-protocol.md": "9b3c227dacbbedffebe64ff3a4767b14081095d64ff0c19eac7bd147ca9b0535",
+    "docs/methodology/templates/architecture-template.md": "7f14dda2d55e990f4f35c94f61615ba009f2181197af097143a14806c3e9041c",
+    "docs/methodology/templates/phase-build-plan-template.md": "2eddb885685cd510ba18f8490a926ced422d6afe92651c4150890e1c6767d9e2",
+    "docs/methodology/templates/phase-construction-directive-template.md": "d03ae6e99e10e37367a487c77ee1c0f6f73c28c6def447d186b22dd1d4a95000"
+  }
+}

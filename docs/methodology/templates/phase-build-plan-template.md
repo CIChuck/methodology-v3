@@ -94,8 +94,15 @@ Does the work planned for this phase still conform to the G3 architecture?
 Did planning this phase reveal anything the architecture did not anticipate
   (a missing interface, an unhandled failure mode, an assumption that does not
   hold)?
-If the architecture must change, that is a regression against G3, not a silent
-  phase decision: raise it, do not absorb it here.
+If phase planning reveals a necessary change to accepted architecture, stop
+  affected implementation and assess its impact under the amendment and
+  regression protocol. Record the amendment, obtain the required human approval,
+  and reconcile affected downstream artifacts before using the changed authority.
+Keep the current gate when its governing conditions remain satisfied.
+Regress only when the change invalidates a previously satisfied gate condition;
+  return to the earliest gate whose decision must be revisited, rather than
+  automatically returning to G3.
+Editorial corrections do not require gate regression.
 ```
 
 ---

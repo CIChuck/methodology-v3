@@ -66,8 +66,16 @@ Produce a Markdown build plan with:
 
 Hold the accepted G3 architecture up as a mirror: confirm the phase still conforms
 to it, and surface anything the phase reveals that the architecture did not
-anticipate. If the architecture must change, raise it as a regression against G3,
-not as a silent phase decision.
+anticipate. A necessary change triggers impact assessment under
+`docs/methodology/guides/amendment-and-regression-protocol.md`, not automatic
+regression to G3.
+
+Stop affected implementation, record the amendment and its rationale, identify
+affected requirements/plans/tests, obtain the required human approval, and
+reconcile downstream artifacts before using changed authority. Keep the current
+gate when its governing conditions remain satisfied. Regress only when the change
+invalidates a previously satisfied gate condition, returning to the earliest gate
+whose decision must be revisited. Editorial corrections need no gate regression.
 
 ## Accuracy Pass
 
@@ -78,6 +86,7 @@ Before finalizing, identify:
 - included items without acceptance criteria;
 - a phase exit test that does not trace to PRD requirements and the vision;
 - an unperformed architecture mirror check;
+- an architecture change without an impact assessment and amendment disposition;
 - missing test strategy;
 - missing migration work;
 - missing security/governance work;
@@ -89,8 +98,21 @@ The build plan is complete when a tactical implementation planner can convert it
 
 ## Operational Coherence Requirements
 
-A phase plan must declare the coverage contract, phase sequence, integration criteria, and whether
-any phase is deferred. Phase-specific planning is just in time: build plan, tactical plan,
-construction directive, build prompt, test/UAT plan, review, remediation disposition,
-traceability, and as-built evidence are produced for the active phase instead of fabricated for
-future phases.
+The project-wide phase plan describes the whole build: phase order and scope, requirement
+ownership, dependencies, the coverage contract, integration criteria, and explicit deferrals.
+It does not need to pre-author the detailed implementation of every future phase.
+
+Phase build plans may be drafted ahead to clarify boundaries, non-goals, dependencies, and
+provisional verification expectations. Those advance drafts remain Draft and do not enter,
+close, or advance a checkpoint or authorize code generation. Formal acceptance still requires
+the applicable checkpoint prerequisites, required approval, and pinned upstream authority.
+
+Develop and finalize detailed tactical plans and construction directives just before their
+phase, incorporating the prior phase's learnings (N/A for the first phase). The next phase's
+tactical plan must cite those learnings. Issue a build prompt only through the applicable
+checkpoint from the accepted, pinned directive and authorized current-phase scope.
+
+Record test/UAT execution, review outcomes, remediation disposition, traceability results, and
+as-built evidence from actual work. Advance planning drafts must never present future execution
+or acceptance as already completed. Follow `docs/methodology/guides/phase-loop.md` for this
+rolling-wave drafting cadence and `docs/methodology/guides/gates.md` for checkpoint conditions.

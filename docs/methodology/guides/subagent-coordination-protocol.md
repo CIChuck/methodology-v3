@@ -168,9 +168,9 @@ Stop conditions:
 ### Six-Principle Checklist (Code Conformance Reviewer)
 
 This reviewer operates under the Fresh-Context Review Rule: no shared context with the
-implementing agent, fed only the construction directive, the Accepted architecture's Domain
-Model, the surrounding codebase modules relevant to DRY checking, and the artifact under
-review.
+implementing agent, given the construction directive's approved scope, relevant accepted
+requirements and architecture, interface/data/security contracts, the surrounding codebase
+modules relevant to DRY checking, and the artifact under review.
 
 **What to check, and what each question requires as input:**
 
@@ -180,16 +180,23 @@ review.
 | KISS | Is there a simpler structure that satisfies the same requirement? | The directive's implementation objective and the code |
 | DRY | Does this logic already exist elsewhere in the codebase? | The relevant surrounding modules, not just the new file |
 | SRP | Does any single unit (function, class, module) do more than one coherent job? | The code |
-| NAA | Does every entity, field, relationship, class, and interface in this code already appear in the Accepted architecture's Domain Model? | The Accepted architecture document's Domain Model section |
+| NAA | Does this implementation introduce any unapproved behavior, contract, data model, architectural boundary, or security decision? | The directive's approved scope and relevant accepted requirements, architecture, interface/data contracts, and governance/security authority |
 | LA | Would the obvious reading of the requirement lead a reader to expect this behavior? | The requirement and the code |
 
-**Honest scope of this checklist.** Four of the six questions are cleanly checkable given
-the right inputs: KISS, DRY, NAA (its entity-lookup half), and narrow YAGNI. Two are
-judgment-dependent and the reviewer's finding should be treated as advisory rather than
-deterministic: broad YAGNI (was this genuinely unneeded by the project, requiring roadmap
-knowledge the reviewer does not have) and LA (what would a reader expect, which is closer
-to a human judgment call than a comparison against a document). Do not imply this checklist
-covers everything; state the limits when reporting findings.
+Private helpers, internal classes or value types, local adapters, framework-generated types,
+fixtures, fakes, and mocks may implement approved work without appearing individually in the
+architecture's Domain Model. Check that they remain proportionate and do not expand approved
+behavior, public/cross-component contracts, persisted/shared state, ownership/trust boundaries,
+acceptance criteria, or phase scope. A missing inventory entry alone is not a NAA violation.
+
+**Honest scope of this checklist.** Assess NAA against the approved scope and the actual
+behavior or boundary being introduced; cite a concrete unapproved change for a finding.
+KISS, DRY, and narrow YAGNI remain checks against the available code and directive. Broad
+YAGNI (whether work is needed by the project's wider roadmap) and LA (what a reader would
+expect) depend on context and judgment. Suggestions without a violated requirement remain
+advisory rather than automatic blockers. Do not imply this checklist proves everything;
+state its limits and explain significant internal design choices rather than requiring
+approval for every helper.
 
 **Finding format.** Use the same finding format as all other sub-agent reviewers: principle
 violated (use the key: YAGNI, KISS, DRY, SRP, NAA, LA), specific evidence (the function,

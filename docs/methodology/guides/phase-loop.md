@@ -37,10 +37,12 @@ G5.<id>.4   build, test, exit                    (phase_transition)
 
 ### Checkpoints G5.\<id\>.1 through G5.\<id\>.3 — planning
 
-These three checkpoints produce the phase's planning artifacts. Each artifact is
+These three checkpoints certify the phase's planning artifacts. Each artifact is
 authored from its template, reviewed, and accepted at a pinned revision before
-the next begins. The owning templates are bound to checkpoints in the table in
-the gates.md interior section; the authoring prompts live in
+the next checkpoint is entered. Advance draft work follows the rolling-wave
+guidance below; it does not itself enter, close, or advance a checkpoint. The
+owning templates are bound to checkpoints in the table in the gates.md interior
+section; the authoring prompts live in
 `docs/methodology/templates/build-instructions-templates.md`.
 
 These artifacts are context construction. The build plan defines what the phase
@@ -75,13 +77,27 @@ This is where construction happens. From the pinned build prompt:
 
 ## Rolling wave
 
-Phase build plans lead the wave: you author them ahead, because stating what an
-early phase will not build requires knowing what later phases will. But the
-tactical plan and construction directive for a phase are authored just in time,
-right before that phase is built, because each phase teaches something that
-sharpens the next. The phase learnings document is the carrier: written at the
-close of phase N, it is required input to phase N+1's tactical plan, and that
-tactical plan must cite it.
+The project-wide phase plan describes the whole build at phase granularity:
+order, scope, requirement ownership, dependencies, integration criteria, and
+the coverage contract. It is accepted at its existing G5.0 checkpoint.
+
+Phase build plans may be drafted ahead, because stating what an early phase
+will not build requires knowing what later phases will. Advance drafts remain
+Draft. They clarify boundaries and provisional planning; they do not satisfy
+checkpoint prerequisites or authorize implementation. Accept each artifact only
+at its applicable checkpoint with the required upstream acceptance, approval,
+and pinned revisions. Drafting ahead does not change the declared phase order,
+skip a checkpoint, or issue a future phase's build prompt.
+
+Develop and finalize the detailed tactical plan and construction directive just
+in time, right before their phase is built, because each phase teaches something
+that sharpens the next. The phase learnings document is the carrier: written at
+the close of phase N, it is required input to phase N+1's tactical plan, and that
+tactical plan must cite it (N/A for the first phase).
+
+Test/UAT execution results, review outcomes, remediation disposition, traceability
+results, and as-built evidence describe actual work. Future planning drafts must
+not fabricate execution evidence or imply accepted authority.
 
 This is deliberate. The building agent's experience does not live in a session
 that drifts and then vanishes; it is written down, so the next phase rebuilds

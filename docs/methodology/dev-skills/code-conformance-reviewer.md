@@ -95,7 +95,9 @@ Delta review:
 - Be precise.
 - Do not overstate risk.
 - Identify residual risk if no findings remain.
-- Do not change code unless explicitly requested.
+- Formal independent conformance review is read-only under
+`docs/policies/independent-validation-policy.md`. A requested fix is a separate
+authorized builder/remediator task; it does not permit edits in the reviewer context.
 - Preserve reviewer independence and record context provenance.
 
 ## Completion Standard
