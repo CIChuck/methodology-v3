@@ -155,3 +155,23 @@ Round requests pin the exact base/candidate and authority files. Reviewer
 output is advisory until the lead records it; VERIFIED does not accept the
 candidate. Human acceptance must name the reviewed candidate and disposition
 of residual risk.
+
+## Approved preservation exception: additive T3 checkpoints
+
+Round 1 independently found that the exact ref-set check fails after T3's
+automatic checkpoints append refs. Chuck explicitly approved the requested
+narrow exception: "Approve the narrow checkpoint exception." The original
+inventory is unchanged. Approval is recorded in
+review/round-1/checkpoint-exception-approval.json; the original review and raw
+metadata observations are retained alongside it.
+
+Every frozen ref/OID, file byte, symlink, mode, inventory and working state
+remains protected. Only an additional T3 checkpoint in a context already
+present in the frozen inventory, with a higher ordinal, the expected T3 Code
+author/subject metadata, and an identical tree to that context's latest frozen
+checkpoint is permitted. Rewritten/deleted frozen refs, other additions,
+different trees or unverifiable objects fail. These metadata checks are not
+authentication of the caller; the file-tree and frozen-ref invariants remain
+mandatory. Report each allowed addition explicitly rather than claiming exact
+ref-set equality. Preserve all original refs and new app metadata; never delete
+or rewrite either to make verification pass.

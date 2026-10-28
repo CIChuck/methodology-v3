@@ -1,0 +1,22 @@
+archived refs/heads/docs/1.0.2-gate-closeout e23126ed248f55b1556aa8accb5578ee6b820c42
+archived refs/heads/docs/pre-v3-migration-snapshot b8c287126e24700da3373ea94a78eec0d1f1e20a
+archived refs/heads/master 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a
+archived refs/heads/release/1.0.0-production 321061e073f816d3bf1c587a82c5fc67afd95877
+archived refs/heads/release/1.0.1-documentation-consistency a3fc51ac0a97bf9f986f3134f9d421bc0eb35046
+archived refs/heads/release/1.0.1-production 29d5c58f7ddbb7f150104e4d17b536eb141359e1
+archived refs/heads/release/1.0.2-distribution-context 8a48f1a9e617a7197e1974e5edae90dc9cda1b76
+archived refs/remotes/origin/HEAD 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a
+archived refs/remotes/origin/docs/1.0.2-gate-closeout e23126ed248f55b1556aa8accb5578ee6b820c42
+archived refs/remotes/origin/master 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a
+archived refs/remotes/origin/release/1.0.0-production 321061e073f816d3bf1c587a82c5fc67afd95877
+archived refs/remotes/origin/release/1.0.1-documentation-consistency a3fc51ac0a97bf9f986f3134f9d421bc0eb35046
+archived refs/remotes/origin/release/1.0.1-production 64209968a765113632b9db3f6931e40f31606803
+archived refs/remotes/origin/release/1.0.2-distribution-context 8a48f1a9e617a7197e1974e5edae90dc9cda1b76
+archived refs/tags/v0.1.0-baseline 3253506406d95251a77a5122a4acbc1d7ae3e311
+archived refs/tags/v0.2.0-phase-loop 1748f736bb3c284b43330556c1c5972f314215bb
+archived refs/tags/v0.3.0-documentation-structure 3922eaf8695d5bd38963e88d2d13f4f2536d6604
+archived refs/tags/v0.4.0-verification-first 95ee66043df88e7a8fba8e5fe712f4afa797dee0
+archived refs/tags/v0.5.0-operational-coherence 1734871c44ab76c0085f644996ff740319a0bd77
+archived refs/tags/v1.0.1 4354d74b85db14a3437fa7d19a648bcf7a6c29fc
+archived refs/tags/v1.0.2 7a3b5cd2e9551b5b20ba875210489a8a971daf90
+PASS all inventoried v2 refs archived; no alternates; .git and objects are real local directories

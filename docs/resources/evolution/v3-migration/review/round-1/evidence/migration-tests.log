@@ -1,0 +1,25 @@
+$ uv run --frozen --group devboard python -B -m unittest discover -s tests/migration -v
+test_absorbed_local_amendment_record_survives (test_v3_toolkit.ToolkitMigrationTests.test_absorbed_local_amendment_record_survives) ... ok
+test_approved_local_amendment_conflict_is_not_hidden_by_effective_hash (test_v3_toolkit.ToolkitMigrationTests.test_approved_local_amendment_conflict_is_not_hidden_by_effective_hash) ... ok
+test_clean_owned_file_can_receive_an_actual_upstream_update (test_v3_toolkit.ToolkitMigrationTests.test_clean_owned_file_can_receive_an_actual_upstream_update) ... ok
+test_clean_upgrade_preserves_board_authority_policies_custom_skills_and_history (test_v3_toolkit.ToolkitMigrationTests.test_clean_upgrade_preserves_board_authority_policies_custom_skills_and_history) ... ok
+test_documented_fresh_dry_run_works_from_initialized_product (test_v3_toolkit.ToolkitMigrationTests.test_documented_fresh_dry_run_works_from_initialized_product) ... ok
+test_dry_run_and_preflight_agent_collision_make_no_writes (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_and_preflight_agent_collision_make_no_writes) ... ok
+test_duplicate_ownership_fields_refuse_without_writes (test_v3_toolkit.ToolkitMigrationTests.test_duplicate_ownership_fields_refuse_without_writes) ... ok
+test_edited_baseline_refuses_upgrade_without_writing (test_v3_toolkit.ToolkitMigrationTests.test_edited_baseline_refuses_upgrade_without_writing) ... ok
+test_fresh_install_is_portable_and_has_no_migration_task_or_product_metadata (test_v3_toolkit.ToolkitMigrationTests.test_fresh_install_is_portable_and_has_no_migration_task_or_product_metadata) ... ok
+test_initial_and_later_directives_render_canonical_anti_drift_contract (test_v3_toolkit.ToolkitMigrationTests.test_initial_and_later_directives_render_canonical_anti_drift_contract) ... ok
+test_malformed_ownership_record_refuses_without_writes (test_v3_toolkit.ToolkitMigrationTests.test_malformed_ownership_record_refuses_without_writes) ... ok
+test_new_baseline_file_cannot_clobber_an_unowned_local_addition (test_v3_toolkit.ToolkitMigrationTests.test_new_baseline_file_cannot_clobber_an_unowned_local_addition) ... ok
+test_removed_owned_file_requires_reconciliation (test_v3_toolkit.ToolkitMigrationTests.test_removed_owned_file_requires_reconciliation) ... ok
+test_rollback_restores_fresh_target_after_first_and_last_writes (test_v3_toolkit.ToolkitMigrationTests.test_rollback_restores_fresh_target_after_first_and_last_writes) ... ok
+test_rollback_restores_prior_record_and_local_state_during_upgrade (test_v3_toolkit.ToolkitMigrationTests.test_rollback_restores_prior_record_and_local_state_during_upgrade) ... ok
+test_symlink_in_place_of_owned_file_is_rejected (test_v3_toolkit.ToolkitMigrationTests.test_symlink_in_place_of_owned_file_is_rejected) ... ok
+test_symlink_parent_is_rejected_without_touching_external_files (test_v3_toolkit.ToolkitMigrationTests.test_symlink_parent_is_rejected_without_touching_external_files) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 6.214s
+
+OK
+
+EXIT 0

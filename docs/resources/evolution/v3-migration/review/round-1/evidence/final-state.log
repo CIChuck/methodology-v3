@@ -1,0 +1,4 @@
+2026-10-28 03:13:38.011990+00:00
+PASS HEAD, frozen ref, every ref/OID, tracked worktree and authority pins unchanged
+PASS worktree clean; branch integration/v3-migration; board remains started
+2026-10-28 03:15:25.503799+00:00 final recheck: PASS

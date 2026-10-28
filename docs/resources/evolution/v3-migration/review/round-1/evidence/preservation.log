@@ -1,0 +1,6 @@
+$ python3 scripts/verify-migration-inputs.py
+Checked methodology-v2: 284 files/links and Git state
+Checked T3_Code_Sample: 208 files/links and Git state
+T3_Code_Sample: Git refs changed
+
+EXIT 1

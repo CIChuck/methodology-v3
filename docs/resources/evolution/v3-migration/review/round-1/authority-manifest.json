@@ -1,0 +1,52 @@
+{
+  "AGENTS.md": {
+    "revision": "b869f0cd8df3521666aee51f9b7531631681b2c3",
+    "sha256": "3d593263da054b983a35f13f25c2cb452ef66d9faa9bc90694e7453007134d01",
+    "status": "controlling reusable authority or explicitly authorized migration/review scope; product acceptance not inferred"
+  },
+  "docs/methodology/constitution/gendev.md": {
+    "revision": "b869f0cd8df3521666aee51f9b7531631681b2c3",
+    "sha256": "f7073cd6d2e9f26ad13e97839e80456ce617a63d3d8f5df3660c7e07500dad4f",
+    "status": "controlling reusable authority or explicitly authorized migration/review scope; product acceptance not inferred"
+  },
+  "docs/policies/repository-engineering-policy.md": {
+    "revision": "b869f0cd8df3521666aee51f9b7531631681b2c3",
+    "sha256": "1d57f89d49bd3ecd49fb97ac91248014a2da9a1386100e74aed30b0d144a40bd",
+    "status": "controlling reusable authority or explicitly authorized migration/review scope; product acceptance not inferred"
+  },
+  "docs/policies/development-task-lifecycle.md": {
+    "revision": "b869f0cd8df3521666aee51f9b7531631681b2c3",
+    "sha256": "ac54fc778c216480531001d702006899183a29f3fd19050bb8ea317c3b2803ea",
+    "status": "controlling reusable authority or explicitly authorized migration/review scope; product acceptance not inferred"
+  },
+  "docs/policies/independent-validation-policy.md": {
+    "revision": "b869f0cd8df3521666aee51f9b7531631681b2c3",
+    "sha256": "24a97c9984adf62587b818b5b2963813c7c3fceec8c41fd92a2956c5582b1abc",
+    "status": "controlling reusable authority or explicitly authorized migration/review scope; product acceptance not inferred"
+  },
+  "docs/policies/dev-board-integration.md": {
+    "revision": "b869f0cd8df3521666aee51f9b7531631681b2c3",
+    "sha256": "af36991dc3ae53977aeb347db84a35aed307a58882394319ee49aec3931f5289",
+    "status": "controlling reusable authority or explicitly authorized migration/review scope; product acceptance not inferred"
+  },
+  "docs/resources/evolution/v3-migration/README.md": {
+    "revision": "b869f0cd8df3521666aee51f9b7531631681b2c3",
+    "sha256": "b71902e79b1569a44d6f09943f67673585e55981d0c4fb435a9e0f880f7bc111",
+    "status": "controlling reusable authority or explicitly authorized migration/review scope; product acceptance not inferred"
+  },
+  "docs/resources/evolution/v3-migration/review-scope.md": {
+    "revision": "b869f0cd8df3521666aee51f9b7531631681b2c3",
+    "sha256": "ba8521c3f51847e9f9a2fb81c32988a07591745c569d47fcbeb8a4b5acdf5b57",
+    "status": "controlling reusable authority or explicitly authorized migration/review scope; product acceptance not inferred"
+  },
+  "docs/methodology/dev-skills/independent-code-validator.md": {
+    "revision": "b869f0cd8df3521666aee51f9b7531631681b2c3",
+    "sha256": "ce179b69caf21f433e7e12f2a22f59de7a2b47648b63c1a444eafea231845af4",
+    "status": "controlling reusable authority or explicitly authorized migration/review scope; product acceptance not inferred"
+  },
+  "docs/methodology/guides/subagent-coordination-protocol.md": {
+    "revision": "b869f0cd8df3521666aee51f9b7531631681b2c3",
+    "sha256": "9b3c227dacbbedffebe64ff3a4767b14081095d64ff0c19eac7bd147ca9b0535",
+    "status": "controlling reusable authority or explicitly authorized migration/review scope; product acceptance not inferred"
+  }
+}

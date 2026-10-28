@@ -68,6 +68,10 @@ class ToolkitMigrationTests(unittest.TestCase):
         self.assertFalse((self.target / "uv.lock").exists())
         self.assertFalse((self.target / "docs/project").exists())
         self.assertFalse((self.target / "docs/planning/active/v3-baseline-migration").exists())
+        template = (self.target / "docs/planning/task-template.md").read_text()
+        self.assertNotIn("t3-code-sample", template)
+        self.assertIn("Project: [project-slug]", template)
+        self.assertIn("Project: different-project", template.replace("[project-slug]", "different-project"))
         self.assertEqual(yaml.safe_load((self.target / "docs/planning/board.yaml").read_text())["tasks"], [])
         self.command(sys.executable, "scripts/devboard.py", "validate")
         self.assertEqual(self.command(sys.executable, "scripts/devboard.py", "next").stdout.strip(), "NO_OPEN_TASK")
@@ -199,6 +203,65 @@ class ToolkitMigrationTests(unittest.TestCase):
         before = inventory(self.target)
         self.assertIn("duplicate JSON field", self.install("--force", expected=1).stderr)
         self.assertEqual(inventory(self.target), before)
+
+    def test_permission_only_restriction_and_executable_changes_refuse_without_writes(self) -> None:
+        self.install()
+        p = self.target / "scripts/check-methodology.sh"
+        original_mode = stat.S_IMODE(p.stat().st_mode)
+        for mode in [0o700, 0o644]:
+            p.chmod(mode)
+            before = inventory(self.target)
+            self.assertIn("permissions", self.install("--force", expected=1).stderr)
+            self.assertEqual(inventory(self.target), before)
+            p.chmod(original_mode)
+
+    def test_doctor_detects_permission_only_change(self) -> None:
+        self.install()
+        (self.target / "scripts/check-methodology.sh").chmod(0o700)
+        result = self.command("./scripts/gendev-doctor.sh", expected=5)
+        self.assertIn("modified permissions", result.stdout)
+
+    def test_legacy_permission_record_refuses_ambiguous_replacement(self) -> None:
+        self.install()
+        record = self.record()
+        record.pop("file_modes")
+        (self.target / RECORD).write_text(json.dumps(record))
+        (self.target / "scripts/check-methodology.sh").chmod(0o700)
+        before = inventory(self.target)
+        self.assertIn("legacy permissions", self.install("--force", expected=1).stderr)
+        self.assertEqual(inventory(self.target), before)
+
+    def test_legacy_matching_modes_are_adopted_without_fabricating_history(self) -> None:
+        self.install()
+        record = self.record()
+        record.pop("file_modes")
+        (self.target / RECORD).write_text(json.dumps(record))
+        self.install("--force")
+        upgraded = self.record()
+        self.assertEqual(upgraded["file_modes"]["scripts/check-methodology.sh"], 0o755)
+        self.assertIn("scripts/check-methodology.sh", upgraded["legacy_mode_adoptions"])
+        self.assertNotIn("file_modes", upgraded["installation_history"][-1])
+        self.command("./scripts/gendev-doctor.sh")
+
+    def test_clean_recorded_mode_can_receive_an_upstream_update(self) -> None:
+        self.install()
+        source = self.source_copy()
+        (source / "docs/methodology/constitution/gendev.md").chmod(0o600)
+        self.install("--force", source=source)
+        name = "docs/methodology/constitution/gendev.md"
+        self.assertEqual(stat.S_IMODE((self.target / name).stat().st_mode), 0o600)
+        self.assertEqual(self.record()["file_modes"][name], 0o600)
+        self.command("./scripts/gendev-doctor.sh")
+
+    def test_invalid_permission_metadata_refuses_before_writes(self) -> None:
+        self.install()
+        record = self.record()
+        record["file_modes"]["scripts/check-methodology.sh"] = "0755"
+        (self.target / RECORD).write_text(json.dumps(record))
+        before = inventory(self.target)
+        self.install("--force", expected=1)
+        self.assertEqual(inventory(self.target), before)
+        self.assertIn("invalid recorded permissions", self.command("./scripts/gendev-doctor.sh", expected=5).stdout)
 
     def test_rollback_restores_fresh_target_after_first_and_last_writes(self) -> None:
         (self.target / "AGENTS.md").write_text("# Existing project instructions\n")

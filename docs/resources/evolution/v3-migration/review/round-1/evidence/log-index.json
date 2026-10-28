@@ -1,0 +1,19 @@
+{
+  "board-show.log": "EXIT 0",
+  "archive-and-amendment-check.log": "PASS all six promoted canonical file hashes match frozen amendment record",
+  "full-suite.log": "EXIT 0",
+  "board-validate.log": "EXIT 0",
+  "migration-tests.log": "EXIT 0",
+  "board-tests.log": "EXIT 0",
+  "experiments.log": "EXIT 0",
+  "board-next.log": "EXIT 0",
+  "signal-rollback.log": "signal injected after fourth atomic replacement: True installer exit 1 exact inventory restored True",
+  "pins-and-git.log": "",
+  "preservation.log": "EXIT 1",
+  "doctor.log": "EXIT 0",
+  "checker.log": "EXIT 0",
+  "skill-check.log": "PASS .agents/skills/vision-framing/SKILL.md -> ../../../docs/methodology/dev-skills/vision-framing.md",
+  "range-guard.log": "EXIT 0",
+  "history-check.log": "PASS all inventoried v2 refs archived; no alternates; .git and objects are real local directories",
+  "counterexamples.log": "/Users/chuckrussell/Dev/gendev/T3_Code_Sample added= ['refs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/37 fcf10939b9b10f07b0eadf4a4668617c726f79da', 'refs/t3/orchestration-v2/checkpoints/ZjhjNzIxNWU0NTJkYzY2OTVlOGEwY2E3YTc3YTIwMDM/ordinal/38 0da4ddc97a0eb29a69f1573f8e30f61914fae562'] removed= []"
+}

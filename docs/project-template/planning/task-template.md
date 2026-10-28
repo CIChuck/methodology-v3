@@ -32,7 +32,7 @@ CLI does not create or move task folders.
 # [Task title]
 
 Task ID: [lowercase-kebab-id]
-Project: t3-code-sample
+Project: [project-slug]
 Owner: [named owner]
 
 ## Objective and scope

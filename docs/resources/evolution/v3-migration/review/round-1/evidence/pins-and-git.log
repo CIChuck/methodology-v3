@@ -1,0 +1,79 @@
+2026-10-28 03:06:50.587503+00:00
+AGENTS.md: pin=True worktree=True
+docs/methodology/constitution/gendev.md: pin=True worktree=True
+docs/policies/repository-engineering-policy.md: pin=True worktree=True
+docs/policies/development-task-lifecycle.md: pin=True worktree=True
+docs/policies/independent-validation-policy.md: pin=True worktree=True
+docs/policies/dev-board-integration.md: pin=True worktree=True
+docs/resources/evolution/v3-migration/README.md: pin=True worktree=True
+docs/resources/evolution/v3-migration/review-scope.md: pin=True worktree=True
+docs/methodology/dev-skills/independent-code-validator.md: pin=True worktree=True
+docs/methodology/guides/subagent-coordination-protocol.md: pin=True worktree=True
+git rev-parse HEAD refs/review/v3/round-1
+exit=0
+b869f0cd8df3521666aee51f9b7531631681b2c3
+b869f0cd8df3521666aee51f9b7531631681b2c3
+
+
+git branch --show-current
+exit=0
+integration/v3-migration
+
+
+git status --porcelain=v1
+exit=0
+
+
+git diff --check 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a b869f0cd8df3521666aee51f9b7531631681b2c3
+exit=2
+docs/resources/evolution/v3-migration/validation/experiments-first.log:16: new blank line at EOF.
+
+
+git show-ref
+exit=0
+e23126ed248f55b1556aa8accb5578ee6b820c42 refs/archive/v2/heads/docs/1.0.2-gate-closeout
+b8c287126e24700da3373ea94a78eec0d1f1e20a refs/archive/v2/heads/docs/pre-v3-migration-snapshot
+54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a refs/archive/v2/heads/master
+321061e073f816d3bf1c587a82c5fc67afd95877 refs/archive/v2/heads/release/1.0.0-production
+a3fc51ac0a97bf9f986f3134f9d421bc0eb35046 refs/archive/v2/heads/release/1.0.1-documentation-consistency
+29d5c58f7ddbb7f150104e4d17b536eb141359e1 refs/archive/v2/heads/release/1.0.1-production
+8a48f1a9e617a7197e1974e5edae90dc9cda1b76 refs/archive/v2/heads/release/1.0.2-distribution-context
+54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a refs/archive/v2/remotes/origin/HEAD
+e23126ed248f55b1556aa8accb5578ee6b820c42 refs/archive/v2/remotes/origin/docs/1.0.2-gate-closeout
+54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a refs/archive/v2/remotes/origin/master
+321061e073f816d3bf1c587a82c5fc67afd95877 refs/archive/v2/remotes/origin/release/1.0.0-production
+a3fc51ac0a97bf9f986f3134f9d421bc0eb35046 refs/archive/v2/remotes/origin/release/1.0.1-documentation-consistency
+64209968a765113632b9db3f6931e40f31606803 refs/archive/v2/remotes/origin/release/1.0.1-production
+8a48f1a9e617a7197e1974e5edae90dc9cda1b76 refs/archive/v2/remotes/origin/release/1.0.2-distribution-context
+3253506406d95251a77a5122a4acbc1d7ae3e311 refs/archive/v2/tags/v0.1.0-baseline
+1748f736bb3c284b43330556c1c5972f314215bb refs/archive/v2/tags/v0.2.0-phase-loop
+3922eaf8695d5bd38963e88d2d13f4f2536d6604 refs/archive/v2/tags/v0.3.0-documentation-structure
+95ee66043df88e7a8fba8e5fe712f4afa797dee0 refs/archive/v2/tags/v0.4.0-verification-first
+1734871c44ab76c0085f644996ff740319a0bd77 refs/archive/v2/tags/v0.5.0-operational-coherence
+4354d74b85db14a3437fa7d19a648bcf7a6c29fc refs/archive/v2/tags/v1.0.1
+7a3b5cd2e9551b5b20ba875210489a8a971daf90 refs/archive/v2/tags/v1.0.2
+e23126ed248f55b1556aa8accb5578ee6b820c42 refs/heads/docs/1.0.2-gate-closeout
+b8c287126e24700da3373ea94a78eec0d1f1e20a refs/heads/docs/pre-v3-migration-snapshot
+b869f0cd8df3521666aee51f9b7531631681b2c3 refs/heads/integration/v3-migration
+54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a refs/heads/master
+321061e073f816d3bf1c587a82c5fc67afd95877 refs/heads/release/1.0.0-production
+a3fc51ac0a97bf9f986f3134f9d421bc0eb35046 refs/heads/release/1.0.1-documentation-consistency
+29d5c58f7ddbb7f150104e4d17b536eb141359e1 refs/heads/release/1.0.1-production
+8a48f1a9e617a7197e1974e5edae90dc9cda1b76 refs/heads/release/1.0.2-distribution-context
+b869f0cd8df3521666aee51f9b7531631681b2c3 refs/review/v3/round-1
+3253506406d95251a77a5122a4acbc1d7ae3e311 refs/tags/v0.1.0-baseline
+1748f736bb3c284b43330556c1c5972f314215bb refs/tags/v0.2.0-phase-loop
+3922eaf8695d5bd38963e88d2d13f4f2536d6604 refs/tags/v0.3.0-documentation-structure
+95ee66043df88e7a8fba8e5fe712f4afa797dee0 refs/tags/v0.4.0-verification-first
+1734871c44ab76c0085f644996ff740319a0bd77 refs/tags/v0.5.0-operational-coherence
+4354d74b85db14a3437fa7d19a648bcf7a6c29fc refs/tags/v1.0.1
+7a3b5cd2e9551b5b20ba875210489a8a971daf90 refs/tags/v1.0.2
+
+
+git remote -v
+exit=0
+
+
+git fsck --full
+exit=0
+

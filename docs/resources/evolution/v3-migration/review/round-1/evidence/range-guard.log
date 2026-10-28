@@ -1,0 +1,7 @@
+$ ./scripts/methodology-guard.sh --range 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a b869f0cd8df3521666aee51f9b7531631681b2c3
+INFO: docs/project is not initialized. Run: ./scripts/init-project.sh "Project Name"
+
+Methodology check passed: 0 warning(s).
+Preparing worktree (detached HEAD b869f0c)
+
+EXIT 0

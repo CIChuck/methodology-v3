@@ -42,18 +42,33 @@ if gendev_is_installed_context "$repo_root"; then
   printf 'Context: installed\n'
   record="$(gendev_installation_record_path "$repo_root")"
   python3 - "$repo_root" "$record" <<'PYINT' || integrity_failed=1
-import hashlib, json, os, sys
+import hashlib, json, os, stat, sys
 root, record_path = sys.argv[1], sys.argv[2]
 rec = json.load(open(record_path))
 print(f"Installed methodology version: {rec.get('methodology_version','unknown')}")
 print(f"Installed from: {rec.get('source_remote','unknown')} (tag {rec.get('source_tag','unknown')}, commit {str(rec.get('source_commit','unknown'))[:12]})")
 print(f"Installed on: {rec.get('installed_on','unknown')}")
 bad = []
+modes = rec.get('file_modes', {})
+if not isinstance(modes, dict) or set(modes) - set(rec.get('files', {})):
+    print('Integrity: FAILED (malformed permission ownership record)')
+    raise SystemExit(1)
 for rel, want in rec.get('files', {}).items():
     full = os.path.join(root, rel)
     if not os.path.exists(full):
         bad.append((rel, 'missing'))
         continue
+    if os.path.islink(full) or not os.path.isfile(full):
+        bad.append((rel, 'not a regular owned file'))
+        continue
+    if rel in modes:
+        expected_mode = modes[rel]
+        if type(expected_mode) is not int or not 0 <= expected_mode <= 0o7777:
+            bad.append((rel, 'invalid recorded permissions'))
+            continue
+        if stat.S_IMODE(os.stat(full).st_mode) != expected_mode:
+            bad.append((rel, 'modified permissions'))
+            continue
     h = hashlib.sha256()
     with open(full, 'rb') as f:
         for chunk in iter(lambda: f.read(65536), b''):
@@ -66,6 +81,8 @@ if bad:
         print(f"  {why}: {rel}")
     raise SystemExit(1)
 print(f"Integrity: verified ({len(rec.get('files', {}))} files)")
+if len(modes) < len(rec.get('files', {})):
+    print('Permission integrity: legacy records lack mode evidence for some files')
 PYINT
 else
   printf 'Context: authority\n'

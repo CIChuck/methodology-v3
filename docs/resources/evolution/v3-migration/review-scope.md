@@ -30,6 +30,11 @@ authority boundaries and changed operating instructions must nevertheless work.
   modes, Git refs and working state. V3 preserves all inventoried v2 history,
   branches/tags including local-only history, uses independent Git storage,
   and has no configured remote or shared object alternate.
+  Apply only Chuck's separately recorded narrow additive-checkpoint exception
+  in the migration README and review/round-1/checkpoint-exception-approval.json.
+  It permits matching-tree, higher-ordinal T3 checkpoints in an already frozen
+  context; no frozen ref, file or state may change, and every allowed addition
+  must be reported. The original inventory remains unchanged.
 - RV-02: the copied baseline and its historical/draft/concept material remain
   identifiable. No historical acceptance or proposal is promoted into new
   product authority. Candidate identity is explicitly unreleased and separate

@@ -30,7 +30,8 @@ Before an upgrade, commit or snapshot the destination and inspect the report:
 ```
 
 `--force` permits updates to recorded baseline files; it does not bypass
-conflicts. Preflight refuses changed/missing owned files, unsafe symlinks,
+conflicts. Preflight refuses changed/missing owned files, permission-only
+customizations, unsafe symlinks,
 unowned collisions, malformed ownership data, and local amendments whose
 effective contents differ from the incoming baseline. Inspect each reported
 path against the accepted project authority. Reconcile by moving a local
@@ -45,6 +46,15 @@ History retains prior installation metadata and local amendment records,
 including amendments whose contents are now supplied upstream. Effective
 hashes cover only managed files, not arbitrary local additions. The record
 also identifies an unreleased distribution candidate and source worktree state.
+
+Expected Unix permission modes are recorded in `file_modes` alongside byte
+hashes and checked by both upgrade preflight and doctor. A local chmod requires
+explicit reconciliation, while a clean recorded upstream mode update may proceed.
+Legacy records contain no historical mode evidence: an incoming owned file can
+be adopted only when its current mode already equals the incoming mode. Otherwise
+preflight refuses the ambiguous replacement. Retired files retained without
+writes keep their actual mode. `legacy_mode_adoptions` records this first mode
+observation; prior history is retained rather than inventing past evidence.
 
 Target file changes are staged atomically per file and rolled back on a caught
 failure or interrupt, including new files/directories, managed agent includes,

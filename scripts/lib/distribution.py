@@ -152,7 +152,15 @@ def plan(source: Path, target: Path, force: bool, resources: bool, integrate: bo
     if not isinstance(old, dict) or not isinstance(old.get("files", {}), dict):
         raise Conflict("malformed installation ownership record")
     owned: dict[str, str] = old.get("files", {})
+    modes = old.get("file_modes", {})
+    if not isinstance(modes, dict) or set(modes) - set(owned):
+        raise Conflict("malformed permission ownership record")
+    for name, mode in modes.items():
+        if type(mode) is not int or not 0 <= mode <= 0o7777:
+            raise Conflict(f"invalid permission ownership mode: {name}")
     incoming = {e.path: e for e in entries if e.owned}
+    new_modes: dict[str, int] = dict(modes)
+    legacy_mode_adoptions: list[str] = []
     # Verify all previously owned files, including retired files retained in place.
     for name, expected in owned.items():
         relative(name)
@@ -162,6 +170,16 @@ def plan(source: Path, target: Path, force: bool, resources: bool, integrate: bo
         state = fingerprint(target / name)
         if state is None or state[0] != "file" or digest(state[1]) != expected:
             raise Conflict(f"locally modified, removed or symlink baseline file: {name}; reconcile before upgrading")
+        if name in modes:
+            if state[2] != modes[name]:
+                raise Conflict(f"locally modified permissions: {name}; reconcile before upgrading")
+        else:
+            # Legacy records prove bytes only. Do not silently replace an
+            # ambiguous local restriction. Retired files are not overwritten.
+            if name in incoming and state[2] != incoming[name].mode:
+                raise Conflict(f"legacy permissions need reconciliation: {name}")
+            new_modes[name] = state[2]
+            legacy_mode_adoptions.append(name)
     amendments = old.get("local_amendments", [])
     if not isinstance(amendments, list):
         raise Conflict("malformed local amendment history")
@@ -186,9 +204,10 @@ def plan(source: Path, target: Path, force: bool, resources: bool, integrate: bo
             if state is not None:
                 if not force:
                     raise Conflict(f"{entry.path} exists; use --force after reconciliation")
-                if state[0] != "file" or (entry.path not in owned and state[1] != entry.data):
+                if state[0] != "file" or (entry.path not in owned and (state[1] != entry.data or state[2] != entry.mode)):
                     raise Conflict(f"unowned collision needs reconciliation: {entry.path}")
             new_owned[entry.path] = digest(entry.data)
+            new_modes[entry.path] = entry.mode
         elif state is not None:
             report.append(f"preserved: {entry.path} (project-owned)")
             continue
@@ -203,10 +222,11 @@ def plan(source: Path, target: Path, force: bool, resources: bool, integrate: bo
         include = Entry("AGENTS.gendev.md", (source / "AGENTS.md").read_bytes(), 0o644, False, True)
         check_parents(target, include.path)
         existing = fingerprint(target / include.path)
-        if existing and (existing[0] != "file" or (include.path not in owned and existing[1] != include.data)):
+        if existing and (existing[0] != "file" or (include.path not in owned and (existing[1] != include.data or existing[2] != include.mode))):
             raise Conflict("AGENTS.gendev.md needs reconciliation")
         writes.append(include)
         new_owned[include.path] = digest(include.data)
+        new_modes[include.path] = include.mode
         if b"# BEGIN MANAGED GENDEV INSTRUCTIONS" not in state[1]:
             writes.append(Entry("AGENTS.md", state[1] + b"\n# BEGIN MANAGED GENDEV INSTRUCTIONS\nGenDev methodology instructions are available in AGENTS.gendev.md. Preserve local instructions above unless explicitly amended.\n# END MANAGED GENDEV INSTRUCTIONS\n", state[2], False, False))
 
@@ -232,6 +252,8 @@ def plan(source: Path, target: Path, force: bool, resources: bool, integrate: bo
         "installed_on": datetime.now(timezone.utc).isoformat(),
         "installer_options": f"force={int(force)} resources={int(resources)} agents={int(integrate)} branch={branch}",
         "files": dict(sorted(new_owned.items())),
+        "file_modes": dict(sorted(new_modes.items())),
+        "legacy_mode_adoptions": legacy_mode_adoptions,
         "installation_history": history + ([{k: v for k, v in old.items() if k != "installation_history"}] if old else []),
     })
     candidate = source / "docs/methodology/schema/candidate.json"

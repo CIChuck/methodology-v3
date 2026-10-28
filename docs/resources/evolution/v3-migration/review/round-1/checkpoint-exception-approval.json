@@ -1,0 +1,8 @@
+{
+  "approved_by": "Chuck Russell",
+  "approved_at": "2026-10-28T03:20:44.212718+00:00",
+  "instruction": "Approve the narrow checkpoint exception",
+  "scope": "Permit only additional T3-managed checkpoint refs with the same file tree as the frozen checkpoint. All frozen refs and original file bytes, symlinks, modes, inventory and working state remain protected. Rewritten/deleted refs, different trees and other additions still fail.",
+  "frozen_inventory": "docs/resources/evolution/v3-migration/input-manifest.json",
+  "original_inventory_changed": false
+}

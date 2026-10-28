@@ -1,0 +1,4 @@
+$ uv run --frozen --group devboard python -B scripts/exercise-v3-toolkit.py /tmp/methodology-v3-review-round-1.6t7cpb/experiments.json
+PASS: 4 isolated scenarios; evidence: /tmp/methodology-v3-review-round-1.6t7cpb/experiments.json
+
+EXIT 0

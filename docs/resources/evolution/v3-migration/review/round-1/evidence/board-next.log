@@ -1,0 +1,4 @@
+$ uv run --frozen --group devboard python scripts/devboard.py next
+IN_PROGRESS v3-baseline-migration: Step 7: independent candidate review and human acceptance; step 8 documentation refresh pending
+
+EXIT 0
