@@ -1,0 +1,27 @@
+{
+  "kind": "verified initial GitHub delivery; subsequent evidence-only commits may advance branch tips",
+  "repository": {
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "nameWithOwner": "CIChuck/methodology-v3",
+    "url": "https://github.com/CIChuck/methodology-v3",
+    "visibility": "PRIVATE"
+  },
+  "verified_initial_push": {
+    "main": "58d9cda23a6b7186735cfea339950697861e2330",
+    "integration/v3-migration": "ee82653ed6cacb9e1157cd791f12d0fb774f12af",
+    "integration/v3-skill-import": "1516712bac00a4f45740d6cd76833d9677499e3f"
+  },
+  "verified_migration_candidate": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+  "skill_import_candidate": "1516712bac00a4f45740d6cd76833d9677499e3f",
+  "skill_import_review": "pending; no new VERIFIED",
+  "human_acceptance": "pending",
+  "release": "not created",
+  "pull_request": "not created",
+  "hosted_ci_runs": [],
+  "original_projects": "preserved under approved additive-checkpoint exception",
+  "source_skill_folder": "unchanged",
+  "recovery_directory": "retained locally",
+  "recorded_at": "2026-10-28T21:50:38.872162+00:00"
+}

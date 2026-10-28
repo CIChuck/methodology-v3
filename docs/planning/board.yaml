@@ -9,7 +9,7 @@ tasks:
   implementation_authority: granted
   packet: docs/planning/active/v3-baseline-migration/
   next_gate: Chuck acceptance of VERIFIED candidate 98f8bec4597cd3307fc26e5c28dc86592e01ca08; step 8 remains separate
-  delivery_state: local
+  delivery_state: pushed
   branch: integration/v3-migration
   depends_on: []
   validation:
@@ -21,11 +21,9 @@ tasks:
   - docs/resources/evolution/v3-migration/review/round-2/report.md (CHANGES_REQUESTED, superseded candidate)
   - docs/resources/evolution/v3-migration/review/round-2/remediation-results.json (local checks; fresh review pending)
   - docs/resources/evolution/v3-migration/review/round-3/report.md (CHANGES_REQUESTED, superseded candidate)
-  - docs/resources/evolution/v3-migration/review/round-3/remediation-results.json (additional human-authorized cycle; fresh
-    review pending)
+  - docs/resources/evolution/v3-migration/review/round-3/remediation-results.json (additional human-authorized cycle; fresh review pending)
   - docs/resources/evolution/v3-migration/review/round-4/report.md (CHANGES_REQUESTED; residual VAL-005)
-  - docs/resources/evolution/v3-migration/review/round-4/human-disposition.md (bounded follow-up authorized by Chuck; fresh
-    review pending)
+  - docs/resources/evolution/v3-migration/review/round-4/human-disposition.md (bounded follow-up authorized by Chuck; fresh review pending)
   - docs/resources/evolution/v3-migration/review/round-4/remediation-results.json (local checks passed; fresh review pending)
   - docs/resources/evolution/v3-migration/review/round-5/report.md (VERIFIED, candidate 98f8bec)
   - docs/resources/evolution/v3-migration/review/round-5/acceptance-request.md (human decision pending)
@@ -49,22 +47,19 @@ events:
   actor: Codex
   actor_role: agent
   action: recorded local validation for steps 1–6
-  note: All authorized implementation/checks recorded; task remains started. No independent VERIFIED, acceptance, publication
-    or product gate decision.
+  note: All authorized implementation/checks recorded; task remains started. No independent VERIFIED, acceptance, publication or product gate decision.
 - task: v3-baseline-migration
   at: '2026-10-28T03:29:26.695096+00:00'
   actor: Codex
   actor_role: agent
   action: recorded round-1 review and bounded remediation
-  note: VAL-001 human exception recorded; VAL-002/003 fixed; task remains started pending fresh independent review and human
-    acceptance.
+  note: VAL-001 human exception recorded; VAL-002/003 fixed; task remains started pending fresh independent review and human acceptance.
 - task: v3-baseline-migration
   at: '2026-10-28T03:49:16.576560+00:00'
   actor: Codex
   actor_role: agent
   action: recorded round-2 review and remediation cycle 2
-  note: Prior findings independently cleared; VAL-004 YAML rendering fixed and locally checked. Task remains started; fresh
-    full review and human acceptance pending.
+  note: Prior findings independently cleared; VAL-004 YAML rendering fixed and locally checked. Task remains started; fresh full review and human acceptance pending.
 - task: v3-baseline-migration
   at: '2026-10-28T04:28:43+00:00'
   actor: Codex
@@ -84,15 +79,13 @@ events:
   actor: Codex
   actor_role: agent
   action: recorded human-authorized VAL-005 remediation cycle 3
-  note: All 13 inherited suites, 17 board and 37 migration tests, four scenarios and exact documented uv recipe checked locally.
-    Fresh full review and human acceptance pending.
+  note: All 13 inherited suites, 17 board and 37 migration tests, four scenarios and exact documented uv recipe checked locally. Fresh full review and human acceptance pending.
 - task: v3-baseline-migration
   at: '2026-10-28T16:40:09+00:00'
   actor: Codex
   actor_role: agent
   action: condition normal -> blocked
-  note: 'Round 4 requests changes: excluded project-owned surfaces still block fresh setup. Additional cycle exhausted; further
-    remediation requires human direction.'
+  note: 'Round 4 requests changes: excluded project-owned surfaces still block fresh setup. Additional cycle exhausted; further remediation requires human direction.'
   evidence: docs/resources/evolution/v3-migration/review/round-4/report.md
 - task: v3-baseline-migration
   at: '2026-10-28T20:57:53+00:00'
@@ -106,12 +99,17 @@ events:
   actor: Codex
   actor_role: agent
   action: recorded authorized VAL-005 selection-boundary remediation
-  note: 13 inherited suites, 17 board tests, 42 migration tests and four replay scenarios passed locally. Task remains started
-    pending fresh review and human acceptance.
+  note: 13 inherited suites, 17 board tests, 42 migration tests and four replay scenarios passed locally. Task remains started pending fresh review and human acceptance.
 - task: v3-baseline-migration
   at: '2026-10-28T21:14:18.022667+00:00'
   actor: Codex
   actor_role: agent
   action: recorded independent VERIFIED result
-  note: Full round-5 review VERIFIED candidate 98f8bec; VAL-005 resolved. No human acceptance, gate approval, step 8, source-project
-    resync or publication recorded.
+  note: Full round-5 review VERIFIED candidate 98f8bec; VAL-005 resolved. No human acceptance, gate approval, step 8, source-project resync or publication recorded.
+- task: v3-baseline-migration
+  at: '2026-10-28T21:50:38+00:00'
+  actor: Codex
+  actor_role: agent
+  action: delivery local -> pushed
+  note: Created private CIChuck/methodology-v3; main and migration branch remote hashes verified. Human acceptance remains pending.
+  evidence: docs/resources/evolution/github-delivery.json
