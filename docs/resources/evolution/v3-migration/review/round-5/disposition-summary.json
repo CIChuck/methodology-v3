@@ -1,0 +1,18 @@
+{
+  "outcome": "VERIFIED",
+  "candidate": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+  "report_sha256": "604b70c3ba5127756723ce38b4f6e045d7ffaead5220e2bbb05ed8bf8f371117",
+  "finding": "VAL-005 resolved; no mandatory findings",
+  "checks": {
+    "inherited_suites": 13,
+    "inherited_checks": 409,
+    "board_tests": 17,
+    "migration_tests": 42,
+    "replay_scenarios": 4
+  },
+  "human_acceptance": "pending",
+  "task_state": "started",
+  "step_8": "not performed",
+  "external_effects": "none; everything local",
+  "recorded_at": "2026-10-28T21:14:18.019762+00:00"
+}

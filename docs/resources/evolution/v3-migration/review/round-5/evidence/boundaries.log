@@ -1,0 +1,10 @@
+PASS fresh installed-source boundary ordinary
+PASS fresh installed-source boundary AGENTS.md
+PASS fresh installed-source boundary .agents/skills
+PASS fresh installed-source boundary docs/policies
+PASS fresh installed-source boundary extras
+PASS refused selected owned changed
+PASS refused selected owned missing
+PASS refused selected owned symlink
+PASS refused selected owned parent-symlink
+PASS 11 independent boundary probes

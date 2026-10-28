@@ -1,0 +1,143 @@
+{
+  "archived_refs": [
+    {
+      "original": "refs/heads/docs/1.0.2-gate-closeout",
+      "archived": "refs/archive/v2/heads/docs/1.0.2-gate-closeout",
+      "oid": "e23126ed248f55b1556aa8accb5578ee6b820c42"
+    },
+    {
+      "original": "refs/heads/docs/pre-v3-migration-snapshot",
+      "archived": "refs/archive/v2/heads/docs/pre-v3-migration-snapshot",
+      "oid": "b8c287126e24700da3373ea94a78eec0d1f1e20a"
+    },
+    {
+      "original": "refs/heads/master",
+      "archived": "refs/archive/v2/heads/master",
+      "oid": "54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a"
+    },
+    {
+      "original": "refs/heads/release/1.0.0-production",
+      "archived": "refs/archive/v2/heads/release/1.0.0-production",
+      "oid": "321061e073f816d3bf1c587a82c5fc67afd95877"
+    },
+    {
+      "original": "refs/heads/release/1.0.1-documentation-consistency",
+      "archived": "refs/archive/v2/heads/release/1.0.1-documentation-consistency",
+      "oid": "a3fc51ac0a97bf9f986f3134f9d421bc0eb35046"
+    },
+    {
+      "original": "refs/heads/release/1.0.1-production",
+      "archived": "refs/archive/v2/heads/release/1.0.1-production",
+      "oid": "29d5c58f7ddbb7f150104e4d17b536eb141359e1"
+    },
+    {
+      "original": "refs/heads/release/1.0.2-distribution-context",
+      "archived": "refs/archive/v2/heads/release/1.0.2-distribution-context",
+      "oid": "8a48f1a9e617a7197e1974e5edae90dc9cda1b76"
+    },
+    {
+      "original": "refs/remotes/origin/HEAD",
+      "archived": "refs/archive/v2/remotes/origin/HEAD",
+      "oid": "54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a"
+    },
+    {
+      "original": "refs/remotes/origin/docs/1.0.2-gate-closeout",
+      "archived": "refs/archive/v2/remotes/origin/docs/1.0.2-gate-closeout",
+      "oid": "e23126ed248f55b1556aa8accb5578ee6b820c42"
+    },
+    {
+      "original": "refs/remotes/origin/master",
+      "archived": "refs/archive/v2/remotes/origin/master",
+      "oid": "54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a"
+    },
+    {
+      "original": "refs/remotes/origin/release/1.0.0-production",
+      "archived": "refs/archive/v2/remotes/origin/release/1.0.0-production",
+      "oid": "321061e073f816d3bf1c587a82c5fc67afd95877"
+    },
+    {
+      "original": "refs/remotes/origin/release/1.0.1-documentation-consistency",
+      "archived": "refs/archive/v2/remotes/origin/release/1.0.1-documentation-consistency",
+      "oid": "a3fc51ac0a97bf9f986f3134f9d421bc0eb35046"
+    },
+    {
+      "original": "refs/remotes/origin/release/1.0.1-production",
+      "archived": "refs/archive/v2/remotes/origin/release/1.0.1-production",
+      "oid": "64209968a765113632b9db3f6931e40f31606803"
+    },
+    {
+      "original": "refs/remotes/origin/release/1.0.2-distribution-context",
+      "archived": "refs/archive/v2/remotes/origin/release/1.0.2-distribution-context",
+      "oid": "8a48f1a9e617a7197e1974e5edae90dc9cda1b76"
+    },
+    {
+      "original": "refs/tags/v0.1.0-baseline",
+      "archived": "refs/archive/v2/tags/v0.1.0-baseline",
+      "oid": "3253506406d95251a77a5122a4acbc1d7ae3e311"
+    },
+    {
+      "original": "refs/tags/v0.2.0-phase-loop",
+      "archived": "refs/archive/v2/tags/v0.2.0-phase-loop",
+      "oid": "1748f736bb3c284b43330556c1c5972f314215bb"
+    },
+    {
+      "original": "refs/tags/v0.3.0-documentation-structure",
+      "archived": "refs/archive/v2/tags/v0.3.0-documentation-structure",
+      "oid": "3922eaf8695d5bd38963e88d2d13f4f2536d6604"
+    },
+    {
+      "original": "refs/tags/v0.4.0-verification-first",
+      "archived": "refs/archive/v2/tags/v0.4.0-verification-first",
+      "oid": "95ee66043df88e7a8fba8e5fe712f4afa797dee0"
+    },
+    {
+      "original": "refs/tags/v0.5.0-operational-coherence",
+      "archived": "refs/archive/v2/tags/v0.5.0-operational-coherence",
+      "oid": "1734871c44ab76c0085f644996ff740319a0bd77"
+    },
+    {
+      "original": "refs/tags/v1.0.1",
+      "archived": "refs/archive/v2/tags/v1.0.1",
+      "oid": "4354d74b85db14a3437fa7d19a648bcf7a6c29fc"
+    },
+    {
+      "original": "refs/tags/v1.0.2",
+      "archived": "refs/archive/v2/tags/v1.0.2",
+      "oid": "7a3b5cd2e9551b5b20ba875210489a8a971daf90"
+    }
+  ],
+  "archive_paths": {
+    "methodology-v2": "/Users/chuckrussell/Dev/gendev/methodology-v3-recovery/methodology-v2.tar.gz",
+    "T3_Code_Sample": "/Users/chuckrussell/Dev/gendev/methodology-v3-recovery/T3_Code_Sample.tar.gz"
+  },
+  "bundle_verification": "The bundle contains these 22 refs:\ne23126ed248f55b1556aa8accb5578ee6b820c42 refs/heads/docs/1.0.2-gate-closeout\nb8c287126e24700da3373ea94a78eec0d1f1e20a refs/heads/docs/pre-v3-migration-snapshot\n54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a refs/heads/master\n321061e073f816d3bf1c587a82c5fc67afd95877 refs/heads/release/1.0.0-production\na3fc51ac0a97bf9f986f3134f9d421bc0eb35046 refs/heads/release/1.0.1-documentation-consistency\n29d5c58f7ddbb7f150104e4d17b536eb141359e1 refs/heads/release/1.0.1-production\n8a48f1a9e617a7197e1974e5edae90dc9cda1b76 refs/heads/release/1.0.2-distribution-context\n54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a refs/remotes/origin/HEAD\ne23126ed248f55b1556aa8accb5578ee6b820c42 refs/remotes/origin/docs/1.0.2-gate-closeout\n54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a refs/remotes/origin/master\n321061e073f816d3bf1c587a82c5fc67afd95877 refs/remotes/origin/release/1.0.0-production\na3fc51ac0a97bf9f986f3134f9d421bc0eb35046 refs/remotes/origin/release/1.0.1-documentation-consistency\n64209968a765113632b9db3f6931e40f31606803 refs/remotes/origin/release/1.0.1-production\n8a48f1a9e617a7197e1974e5edae90dc9cda1b76 refs/remotes/origin/release/1.0.2-distribution-context\n3253506406d95251a77a5122a4acbc1d7ae3e311 refs/tags/v0.1.0-baseline\n1748f736bb3c284b43330556c1c5972f314215bb refs/tags/v0.2.0-phase-loop\n3922eaf8695d5bd38963e88d2d13f4f2536d6604 refs/tags/v0.3.0-documentation-structure\n95ee66043df88e7a8fba8e5fe712f4afa797dee0 refs/tags/v0.4.0-verification-first\n1734871c44ab76c0085f644996ff740319a0bd77 refs/tags/v0.5.0-operational-coherence\n4354d74b85db14a3437fa7d19a648bcf7a6c29fc refs/tags/v1.0.1\n7a3b5cd2e9551b5b20ba875210489a8a971daf90 refs/tags/v1.0.2\n54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a HEAD\nThe bundle records a complete history.\nThe bundle uses this hash algorithm: sha1\n/Users/chuckrussell/Dev/gendev/methodology-v3-recovery/methodology-v2.bundle is okay\n",
+  "remotes": "",
+  "alternates": false,
+  "independent_storage": true,
+  "promoted_files": {
+    "docs/methodology/dev-skills/phase-build-planner.md": "8871457a16e92e02d057ba6ef3f2ba2532e100e15c8167b36cde74cda3de3568",
+    "docs/methodology/guides/phase-loop.md": "c08a14572ae40970bff1364689e26528859fe2d553df797f8f307a9c226b81b1",
+    "docs/methodology/guides/subagent-coordination-protocol.md": "9b3c227dacbbedffebe64ff3a4767b14081095d64ff0c19eac7bd147ca9b0535",
+    "docs/methodology/templates/architecture-template.md": "7f14dda2d55e990f4f35c94f61615ba009f2181197af097143a14806c3e9041c",
+    "docs/methodology/templates/phase-build-plan-template.md": "2eddb885685cd510ba18f8490a926ced422d6afe92651c4150890e1c6767d9e2",
+    "docs/methodology/templates/phase-construction-directive-template.md": "d03ae6e99e10e37367a487c77ee1c0f6f73c28c6def447d186b22dd1d4a95000"
+  },
+  "canonical_skill_links": [
+    ".agents/skills/ai-construction-directive-builder/SKILL.md",
+    ".agents/skills/architecture-spec-author/SKILL.md",
+    ".agents/skills/code-conformance-reviewer/SKILL.md",
+    ".agents/skills/friday-dev-board/SKILL.md",
+    ".agents/skills/governance-security-spec/SKILL.md",
+    ".agents/skills/independent-code-validator/SKILL.md",
+    ".agents/skills/migration-refactor-analyst/SKILL.md",
+    ".agents/skills/phase-build-planner/SKILL.md",
+    ".agents/skills/prd-author/SKILL.md",
+    ".agents/skills/remediation-closeout/SKILL.md",
+    ".agents/skills/subagent-directives-template/SKILL.md",
+    ".agents/skills/subagents-worktrees-template/SKILL.md",
+    ".agents/skills/tactical-implementation-planner/SKILL.md",
+    ".agents/skills/traceability-matrix/SKILL.md",
+    ".agents/skills/vision-framing/SKILL.md"
+  ],
+  "diff_stat": "286 files changed, 65286 insertions(+), 577 deletions(-)"
+}

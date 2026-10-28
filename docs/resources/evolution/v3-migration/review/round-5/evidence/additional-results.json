@@ -1,0 +1,72 @@
+[
+  {
+    "probe": "preselection-metadata-and-content-guards",
+    "result": "PASS",
+    "selected_entries": 167,
+    "guarded_methods": [
+      "rglob",
+      "stat",
+      "lstat",
+      "exists",
+      "is_dir",
+      "is_file",
+      "is_symlink",
+      "read_bytes",
+      "read_text",
+      "open",
+      "resolve"
+    ]
+  },
+  {
+    "probe": "metadata-write-interrupt-rollback",
+    "mode": "fresh",
+    "signal": "SIGINT",
+    "result": "PASS",
+    "entries_preserved": 2,
+    "stderr": "blocked:"
+  },
+  {
+    "probe": "metadata-write-interrupt-rollback",
+    "mode": "fresh",
+    "signal": "SIGTERM",
+    "result": "PASS",
+    "entries_preserved": 2,
+    "stderr": "blocked: installation interrupted by signal 15"
+  },
+  {
+    "probe": "metadata-write-interrupt-rollback",
+    "mode": "fresh",
+    "signal": "SIGHUP",
+    "result": "PASS",
+    "entries_preserved": 2,
+    "stderr": "blocked: installation interrupted by signal 1"
+  },
+  {
+    "probe": "metadata-write-interrupt-rollback",
+    "mode": "upgrade",
+    "signal": "SIGINT",
+    "result": "PASS",
+    "entries_preserved": 310,
+    "stderr": "blocked:"
+  },
+  {
+    "probe": "metadata-write-interrupt-rollback",
+    "mode": "upgrade",
+    "signal": "SIGTERM",
+    "result": "PASS",
+    "entries_preserved": 310,
+    "stderr": "blocked: installation interrupted by signal 15"
+  },
+  {
+    "probe": "metadata-write-interrupt-rollback",
+    "mode": "upgrade",
+    "signal": "SIGHUP",
+    "result": "PASS",
+    "entries_preserved": 310,
+    "stderr": "blocked: installation interrupted by signal 1"
+  },
+  {
+    "probe": "documented-standalone-board-command-offline",
+    "result": "PASS"
+  }
+]

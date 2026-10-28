@@ -1,0 +1,7 @@
+PASS preselection before excluded metadata/traversal/content operations
+PASS signal rollback fresh SIGINT
+PASS signal rollback fresh SIGTERM
+PASS signal rollback fresh SIGHUP
+PASS signal rollback upgrade SIGINT
+PASS signal rollback upgrade SIGTERM
+PASS signal rollback upgrade SIGHUP

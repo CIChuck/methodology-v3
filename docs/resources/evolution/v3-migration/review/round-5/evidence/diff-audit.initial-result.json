@@ -1,0 +1,1 @@
+{"returncode":1,"classification":"review harness only","reason":"Initial whitespace classification omitted historical round-1/report.md and round-2/report.md; widened classification to historical review evidence, preserving raw git diff --check output."}

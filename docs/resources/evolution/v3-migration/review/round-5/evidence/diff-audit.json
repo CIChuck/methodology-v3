@@ -1,0 +1,1739 @@
+{
+  "base": "54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a",
+  "candidate": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+  "full_binary_diff_sha256": "80d664e6232d7270d3434f7f9a558a930223fe3d02b67eb17b89b9f950fc4c5f",
+  "changed_paths": [
+    {
+      "path": ".agents/skills/ai-construction-directive-builder/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "bdb78ccbb85c085227ab03d2b2fa79cd1a7300e45b3fdfc5726324591445f4ec",
+      "size": 73
+    },
+    {
+      "path": ".agents/skills/architecture-spec-author/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "0b2018a7a1ad060a173bbf62ef1515783baf379eb07bafcb10406180fe360400",
+      "size": 64
+    },
+    {
+      "path": ".agents/skills/code-conformance-reviewer/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "07e96da920443507508a9f359c94f917e5cfa193bfc6d656be99515e9b354909",
+      "size": 65
+    },
+    {
+      "path": ".agents/skills/friday-dev-board/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "b2e0599159ac416e522e288f67e85badf3e35b0b5a917dc0b3ccbf8e93d4ce36",
+      "size": 62
+    },
+    {
+      "path": ".agents/skills/governance-security-spec/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "ba277988ed784b9aab519099f7e158f918828aab85f49c18fe6149303b86acdf",
+      "size": 64
+    },
+    {
+      "path": ".agents/skills/independent-code-validator/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "5d2d675a7bb3a616cdbe0ecb2d9175f497fe9a746451b2cacf943d46391ddc51",
+      "size": 66
+    },
+    {
+      "path": ".agents/skills/migration-refactor-analyst/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "5ba55a1dca0c79dcc90cbd39c34dde90944b324e3287c0bc4946d44ec917af00",
+      "size": 66
+    },
+    {
+      "path": ".agents/skills/phase-build-planner/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "f2853f1e6a240012eac49b63c428014baf539120cb3e9d788da3d587158ff8af",
+      "size": 59
+    },
+    {
+      "path": ".agents/skills/prd-author/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "d89a2d36a7d635c2d672fd8399425491e9a506d09afc0516825e90715b8f0420",
+      "size": 50
+    },
+    {
+      "path": ".agents/skills/remediation-closeout/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "7f5b15d027b44102017d2b521e77d68f469b942add1a9f205e59716f9654ba7a",
+      "size": 60
+    },
+    {
+      "path": ".agents/skills/subagent-directives-template/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "cea1ed6302e8b2ec74a3e17406d3dc0d8c4e38946f7dcb6a763e39831e49ba6e",
+      "size": 68
+    },
+    {
+      "path": ".agents/skills/subagents-worktrees-template/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "22c7bf81ba6914a6b74a0fd1422f6dca5ed748f35994946941f8182fc59338ba",
+      "size": 68
+    },
+    {
+      "path": ".agents/skills/tactical-implementation-planner/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "640a0054dcb11a521184ebd066e28ed4e175d1b83ed2021746a2bb3b5ed0d87c",
+      "size": 71
+    },
+    {
+      "path": ".agents/skills/traceability-matrix/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "7e62b3af3329c0eb3b7158a7706cbb53efdd002736e8ccb37da2f6b28943602a",
+      "size": 59
+    },
+    {
+      "path": ".agents/skills/vision-framing/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "927f239669b422f2b762d87169fa933f64a422a2297c7d7e8f75db21c66ebfd0",
+      "size": 54
+    },
+    {
+      "path": ".github/workflows/methodology.yml",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "8786f37a491066ff20a894121a758cc202493c12b152a8301f105d2427c4152e",
+      "size": 9991
+    },
+    {
+      "path": "AGENTS.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "3d593263da054b983a35f13f25c2cb452ef66d9faa9bc90694e7453007134d01",
+      "size": 11388
+    },
+    {
+      "path": "README.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "3e28827c4613ae5871a7e124d0202fe4a5722315ba340094f490d6d415d1d85d",
+      "size": 8467
+    },
+    {
+      "path": "docs/archive/completed/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/methodology/dev-skills/code-conformance-reviewer.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "922c992b1b4d5e2978bd2eed0e172b8580d8c20da1c85e59c98d4e4927031540",
+      "size": 3350
+    },
+    {
+      "path": "docs/methodology/dev-skills/friday-dev-board/SKILL.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "bd40da20b9069adcb02a4a42b80b42a0d860dcccac1e5b604c60214d5aaa381e",
+      "size": 3589
+    },
+    {
+      "path": "docs/methodology/dev-skills/independent-code-validator.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "ce179b69caf21f433e7e12f2a22f59de7a2b47648b63c1a444eafea231845af4",
+      "size": 6612
+    },
+    {
+      "path": "docs/methodology/dev-skills/phase-build-planner.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "8871457a16e92e02d057ba6ef3f2ba2532e100e15c8167b36cde74cda3de3568",
+      "size": 4595
+    },
+    {
+      "path": "docs/methodology/dev-skills/subagent-directives-template.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "ea43ed8b9055f8642be2ec84dc541c253b427597cd9669a7f2f8646db332b4bb",
+      "size": 4978
+    },
+    {
+      "path": "docs/methodology/dev-skills/subagents-worktrees-template.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "392d5af84220815ed2d9b5943ae621eb95a0a41e34753cd2fab7510c93c71a53",
+      "size": 1807
+    },
+    {
+      "path": "docs/methodology/guides/distribution-ownership.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "1cb1f3f4a01e8869dcb86e022256df6a931ea7e5c1222c8a613814c2d21027c2",
+      "size": 4674
+    },
+    {
+      "path": "docs/methodology/guides/orchestration-validation.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "3f5fec3501ea7246e27dbeb064217799996ca5f0c346efb1aa8e544b8e3b85e2",
+      "size": 8507
+    },
+    {
+      "path": "docs/methodology/guides/phase-loop.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "c08a14572ae40970bff1364689e26528859fe2d553df797f8f307a9c226b81b1",
+      "size": 6480
+    },
+    {
+      "path": "docs/methodology/guides/subagent-coordination-protocol.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "9b3c227dacbbedffebe64ff3a4767b14081095d64ff0c19eac7bd147ca9b0535",
+      "size": 9844
+    },
+    {
+      "path": "docs/methodology/guides/t3-code-integration.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "3deeb1365c0336ba5f47e5b01dd9260c937bb8644e455887464d03cda0a728be",
+      "size": 701
+    },
+    {
+      "path": "docs/methodology/integrations/t3/t3.json",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "6569a6be7ef3c4db7a6bbca5576de7fa95e9e0d24898d9d6320624bc571a18eb",
+      "size": 1178
+    },
+    {
+      "path": "docs/methodology/schema/candidate.json",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "2446b9f449601da17e3a40b52475d82da5d297e5fb59f4c9faf4ddd6a63e90a2",
+      "size": 223
+    },
+    {
+      "path": "docs/methodology/templates/architecture-template.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "7f14dda2d55e990f4f35c94f61615ba009f2181197af097143a14806c3e9041c",
+      "size": 13137
+    },
+    {
+      "path": "docs/methodology/templates/phase-build-plan-template.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "2eddb885685cd510ba18f8490a926ced422d6afe92651c4150890e1c6767d9e2",
+      "size": 11159
+    },
+    {
+      "path": "docs/methodology/templates/phase-construction-directive-template.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "d03ae6e99e10e37367a487c77ee1c0f6f73c28c6def447d186b22dd1d4a95000",
+      "size": 9366
+    },
+    {
+      "path": "docs/planning/README.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "1be9b2694e329d4f07698a6094a85d62c8780af2d5d8d0c09430aeae6517910a",
+      "size": 2318
+    },
+    {
+      "path": "docs/planning/active/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/planning/active/v3-baseline-migration/README.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "8e59a18706f2be58c0d29889b9bb329886865113f71f4809c5ab6eef9c664622",
+      "size": 977
+    },
+    {
+      "path": "docs/planning/backlog/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/planning/blocked/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/planning/board.schema.json",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "4f017e6a949a2fd5a62f86cf5b03e58583db0e290c50289a9b6a178d7bf4fadf",
+      "size": 7693
+    },
+    {
+      "path": "docs/planning/board.yaml",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "70643113a6a3215c759af775558bb82fff2be60e804181a20d5672a3b27d8f45",
+      "size": 5358
+    },
+    {
+      "path": "docs/planning/deferred/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/planning/queued/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/planning/review/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/planning/task-template.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "3a6c6e73af0642d50f602cd6502c25cfc5efdd1bfda63973d43369846960db7d",
+      "size": 2034
+    },
+    {
+      "path": "docs/policies/dev-board-integration.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "af36991dc3ae53977aeb347db84a35aed307a58882394319ee49aec3931f5289",
+      "size": 2047
+    },
+    {
+      "path": "docs/policies/development-task-lifecycle.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "ac54fc778c216480531001d702006899183a29f3fd19050bb8ea317c3b2803ea",
+      "size": 9545
+    },
+    {
+      "path": "docs/policies/independent-validation-policy.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "24a97c9984adf62587b818b5b2963813c7c3fceec8c41fd92a2956c5582b1abc",
+      "size": 9000
+    },
+    {
+      "path": "docs/policies/legacy-policy-debt.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "7d6a20a58ba99782ff824abcb33fa4f2f2bc4c45bf5ba41157f172b7779aa85b",
+      "size": 561
+    },
+    {
+      "path": "docs/policies/repository-engineering-policy.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "1d57f89d49bd3ecd49fb97ac91248014a2da9a1386100e74aed30b0d144a40bd",
+      "size": 7425
+    },
+    {
+      "path": "docs/project-template/dry-run-policies/dev-board-integration.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "af36991dc3ae53977aeb347db84a35aed307a58882394319ee49aec3931f5289",
+      "size": 2047
+    },
+    {
+      "path": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "ac54fc778c216480531001d702006899183a29f3fd19050bb8ea317c3b2803ea",
+      "size": 9545
+    },
+    {
+      "path": "docs/project-template/dry-run-policies/independent-validation-policy.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "24a97c9984adf62587b818b5b2963813c7c3fceec8c41fd92a2956c5582b1abc",
+      "size": 9000
+    },
+    {
+      "path": "docs/project-template/dry-run-policies/legacy-policy-debt.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "7d6a20a58ba99782ff824abcb33fa4f2f2bc4c45bf5ba41157f172b7779aa85b",
+      "size": 561
+    },
+    {
+      "path": "docs/project-template/dry-run-policies/repository-engineering-policy.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "1d57f89d49bd3ecd49fb97ac91248014a2da9a1386100e74aed30b0d144a40bd",
+      "size": 7425
+    },
+    {
+      "path": "docs/project-template/planning/README.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "c1f8c8c683f80508a31f22ff414e74ecbc75fcaed43cf64d1cc01a6659f3cc9b",
+      "size": 2162
+    },
+    {
+      "path": "docs/project-template/planning/active/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/project-template/planning/backlog/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/project-template/planning/blocked/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/project-template/planning/board.yaml",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "07bd44499ea68f44339b215bf950d3a1b59273f28f8e57ecbf69ce48104e4611",
+      "size": 54
+    },
+    {
+      "path": "docs/project-template/planning/deferred/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/project-template/planning/queued/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/project-template/planning/review/.gitkeep",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/project-template/planning/task-template.md",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "3a6c6e73af0642d50f602cd6502c25cfc5efdd1bfda63973d43369846960db7d",
+      "size": 2034
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/README.md",
+      "classification": "migration authority and human dispositions",
+      "sha256": "dc18fde32cb8e28dad540780fd0a0d57c670af01e85549c6b5280df60847b030",
+      "size": 11258
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/experiments.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "6e097ac588bfd2ab916997c024ad3d1bc450dc280f98ed045cab96c91f780f01",
+      "size": 19739
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/imported-decisions/README.md",
+      "classification": "migration authority and human dispositions",
+      "sha256": "91ff863e09d03a39461e986a41572c585dc77d5ed6a6562d1e03b0e5f0d88f7f",
+      "size": 682
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/imported-decisions/architecture-amendment-impact.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "ae8534f2622a8b2838a9b8fd68660ea1c024aa8f63898301ca1a2bb3c57b8af2",
+      "size": 2331
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/imported-decisions/naa-implementation-choices.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "75c9a584fb5da86523517ce756cbc1dfcb51a6593e034b7d326dde83a1d1f3f3",
+      "size": 3489
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/imported-decisions/rolling-wave-planning.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "1e969549cb4664f84f8eccd2c20bb15afe1d1052d9ffa86599b0baff44c65118",
+      "size": 2599
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/input-manifest.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "f8dee8b8d1ae364ab8d0eeb7dfdc25894577958aa34e7767acedc3d5b911f11b",
+      "size": 120717
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/inputs/T3_Code_Sample.tar.gz",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "559d6df3a58c1a43f5537047b58106e474a57d5e5d793e6da281fe0b5b07ce53",
+      "size": 391158
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/legacy-notes/here.now.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "cbd5ec0b6b9ea10faf4b7309d63b488cc8e7734b60c7afa03437da4c3e5c167b",
+      "size": 767
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/promoted-amendments.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "c64ffe7a556611ecd5667a6d61bc58a508f1c12c3c3e8f32985b157792ff06d8",
+      "size": 5117
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review-scope.md",
+      "classification": "migration authority and human dispositions",
+      "sha256": "33df486e794fd8fb0b545c42eb0f9bf82ae4e9d9d102437b4ff26eb92241c7f1",
+      "size": 8929
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/authority-manifest.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "2e64f5f683dc65e13f47fd4f04f4d00a4d5b6c0c24dc780de640f264d09fed2e",
+      "size": 3268
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/checkpoint-exception-approval.json",
+      "classification": "migration authority and human dispositions",
+      "sha256": "37c9fa3d8d5ace42e6822b93a87bf4c54c6a35234f7f860c57146de703d15dd7",
+      "size": 562
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/archive-and-amendment-check.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "861ab03236fc9627b228e943b3a05831548efe87d52506cfc74b18e44e2af5f4",
+      "size": 2327
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/baseline-mode-check.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "b5015b51cfe5e6a244ebdc8bb0414c1f408dd6ea4fbdc28851703352054bf252",
+      "size": 103
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/board-next.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "85ddf710bcaab9373886117225d7710d28a50dd7e72400f634953a832f6bdbf8",
+      "size": 205
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/board-show.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "5e6804febcd8ef1d9d091088e3b87edae88b8f3b7cd92d3d6e2220b8c49bdc62",
+      "size": 794
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/board-tests.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "84ca8cf5e9a3b4e8a45ee3d31de9244b3cd1bffa8aa1532fa88a7c45e314269e",
+      "size": 2363
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/board-validate.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "ef086c66bf535dcc9dc78cd4a7c9bfdaf8334f48fb011092ee9b2b050bbe732d",
+      "size": 123
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/checker.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "67c4634ca72e862c18c777af8f0639c2fde48ca25b52996639c9a0657c39d7ab",
+      "size": 166
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/complete.diff",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "2773ee1483a3a9b6b359f051016102a37493afb419ed805d0128a7024912582c",
+      "size": 589567
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/counterexamples.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "6e1b536c175b53f8b5c0dc886baee7668a90d03c879f38ec67d03e47094231f1",
+      "size": 795
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/counterexamples.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "3f6ababc0b1345091e6ef7463466c07b8d2c92a1592c56102fff92b80bf4ae4f",
+      "size": 2702
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/doctor.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "e21a07c7a643bd8219a811083048d7ff668ddf43e77310a59d71878788a189d2",
+      "size": 637
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/experiments.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "a954413bff9ab160a7995b0338d3d205d879fb4460a72b94a5847beb912ffc10",
+      "size": 19739
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/experiments.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "15546f8665f7cb491344ce970f2185dee23b360cb37d21a35aae51d364e4bab4",
+      "size": 240
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/final-state.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "65b9ea603b54326a16d94ab53997c7137c7123dd0639bc171efc0892fae7ab5f",
+      "size": 246
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/full-suite.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "7f3be7f25363ba8c8c4d0a32c2b4e6dee73f5094ac0e55f5b36468f852e32e00",
+      "size": 43662
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/history-check.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "f4bf0f330af09d0b7f5144beb225e5c0a76853037b2c2d1d7d71ff7b9724c2a9",
+      "size": 1918
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/log-index.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "76676579d0e2f7b9f58bbc0ec1e068598ef078eb62fc6399cee0160cf00710a1",
+      "size": 1224
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/migration-tests.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "fdd469131443c4444071ffb76b28038ecdf830c6a15b37c0ab6c7cd77add56d0",
+      "size": 3076
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/orientation-results.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "0bc4fa022118762a675bb8c11a377e0a65be285d2d43f6cbf422e0e8833a47f3",
+      "size": 113
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/pins-and-git.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "b5a47e799919cfe5eb781bb5a8beb511feccdcb478b4ea55de34717937f91ce8",
+      "size": 4268
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/preservation-ref-observations.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "258ff45f859db1b053be7b6a58938ff25c83fa5b2a21fde10c0ee735dd05da77",
+      "size": 7045
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/preservation.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "efe85d79d98c171252131324cf5352c162289948401b37690a41646c6f737a99",
+      "size": 193
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/range-guard.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "5a82267a473855a39e9e4c4c570b9ffb498376ae1b21f5ea58dcf5a2dfd4201e",
+      "size": 299
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/remediation-board-tests.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "2920c0f86d7a0ae60d5e399d68fb8b337d2e384ae65584ff638962a2235b8e83",
+      "size": 2268
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/remediation-experiments.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "923fb3eab40b70afda4a97613a4311eb930b3d9652568840d910d3f287d4d0fe",
+      "size": 19739
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/remediation-experiments.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "bf018e3eeb8ff83142daed334cabbfc126b24691920097897472ed1f84f27040",
+      "size": 137
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/remediation-full-suite.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65",
+      "size": 43610
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/remediation-tests.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "3d3b89d773e2e948cc6098e16074d9fb1c44919b32c2470a68bf9feaf4dc8f7b",
+      "size": 5116
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/signal-rollback.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "285473e5aa96026c68f5c7374818037e93cac77133c46e0b2de95c22b1ad72c5",
+      "size": 148
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/signal-rollback.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "e7fcb20a6a3e6dcc2548c15c4313352f21192f6bcbd9abf05bb7e7387069ea2f",
+      "size": 1369
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/evidence/skill-check.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "e5dc886cff39598b2f20f2dc6f3fe61e9ca2f012d2fb220cf3ed3ac856cbe04c",
+      "size": 1801
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/remediation-directive.md",
+      "classification": "migration authority and human dispositions",
+      "sha256": "944f09c7f43b6f0f363a9726e9cda57fb3b46c202df00151a1a1e50fb243f3cc",
+      "size": 3769
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/remediation-results.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "81fc7cd26b06ae3998894ba26b0e310e8ef7bc857132f6158fca43d95b5bc734",
+      "size": 788
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/report.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "bcfe59baf138da0c0c3b7569def69a4ec899cb0409ee52aaddf92b5c9c5e8f00",
+      "size": 14284
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/request.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "2dffcc177d752541420521d69df136cb1ea140f56e4d529822976414de82137d",
+      "size": 3361
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-1/t3-checkpoint-observation.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "45aa07772bb78eb7a2011b3f385983dc6975fe131d5516aef97a6b0576dd20f8",
+      "size": 1261
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/authority-manifest.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "5ac972f7349aae7a831afb749d273e09d112f97c18c84e004f7888186e31b77d",
+      "size": 2450
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/base-rendering.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "220e5bfe48e3798e2742ae7744d5a3d7b06bcadd476950a6cabed0fc682b47b9",
+      "size": 283
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/base-rendering.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "2f2e76c4093e7d3855fbc3fedf29f1fb1c8e374e813e6dcd2c31ad3923874e39",
+      "size": 720
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/board-next.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "63313408b9a1ceea2392c5c41206fea231d6603321b6e196b79b6f3dcd2d55da",
+      "size": 117
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/board-show.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "6386099276756663fba4d441fd7fcf95a432c0e3d84866ef782ee69f0f902fb6",
+      "size": 910
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/board-tests.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "2db4abe3d9a4e4e74f4b9b9a2b9edff71aa94ec6131bc4d2a813fd44a33a7bc0",
+      "size": 2268
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/board-validate.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "59ecdcf0441550affb31de89598199b6a6d116e898bf58687c13616f5edc5a0d",
+      "size": 45
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/checker.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "ec1cd71ff42f33c5cc16c13b125e8f0ff26d80b17cfd895bb7106d6a031c0d29",
+      "size": 126
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/counterexamples.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "990d0be524fd0cdff0fe1bcd7a13c6200265414430c5a0a969733bba4651d395",
+      "size": 2008
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/counterexamples.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "98eee90d9ae337e80e6d2605c6f0dd674151949d76ea334f60073e814856a03f",
+      "size": 2430
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/diff-check.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "93a744905cd6a064a0fe69e35ec5718aa38728d718ba9127c81cefe1748db3b2",
+      "size": 7352
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/doctor.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "f795f8929a8a591a08f6a33f570b6a5371c6874c2b1aa350aca3d56978f250de",
+      "size": 601
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/experiments.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "85205d045e3b50d66f6c84f6962bf38ed11dae12df944ac5960fd6da083969dc",
+      "size": 19739
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/experiments.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "d9de2f1c716fe68a11929dbe2bfc5666977cf283a51c61514bedec3462566fff",
+      "size": 143
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/final-preservation.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4be728bb413b6509a08a759ab69472b855228e2523b014082087382e9912abf4",
+      "size": 865
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/final-state.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "001328170c26c37837e8e02488009798b33efd2f7cc01e23571704bc86fc7d4f",
+      "size": 2497
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/full-suite.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65",
+      "size": 43610
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/history-archive-check.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "fa62396bad9d255acaf592bfd70de043d9700c8cd5f2d52c17984b0ba1f2802d",
+      "size": 2366
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/migration-tests.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "bcae196739c03547ed3f435ee402d61ad47db8d78cd2f2a7016cdb6cb46a2206",
+      "size": 5116
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/orientation.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "fe96d7d5e811b6bd7661e2c17be7293c6e0fe7e860f20245454d66a7a61aca66",
+      "size": 861
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/preservation.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4be728bb413b6509a08a759ab69472b855228e2523b014082087382e9912abf4",
+      "size": 865
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/range-guard.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "fc77b9e1c2513353330f26536026eef177dc74923b605061801c3393e31b5086",
+      "size": 169
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/ref-counterexamples.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "cf5405cb06e53e39188e30d5aa6846885964db3c0d7cf7e2824edcb01fb01fec",
+      "size": 664
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/ref-counterexamples.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "62c2b757066138eacbd5e4ee41e8fe5fad035fafde4e38a03d4f3c8940627230",
+      "size": 2096
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/remediation-board-tests.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "1420870a063358b4a81f972b2b6076ce72c8fe141c6728c8d7857820142dac27",
+      "size": 2268
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/remediation-experiments.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "8dc8f16b928c119d399d3ce51f4c4b450b1e8c105dd91903d1e09da8c3164abe",
+      "size": 19739
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/remediation-experiments.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "ed1c2f5d153e6865da01cfdadd511aecd9a1dbea301b52475dadb4f1d62fe066",
+      "size": 137
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/remediation-full-suite.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65",
+      "size": 43610
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/remediation-tests-final.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "65afc3910f51e9f9f89b9d6a1387e917bd76b5390ae90a09f1aebf649b74b838",
+      "size": 5473
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/signal-rollback-initial-invalid-harness.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "f33d48245e0d13fd84d3bd9be1b3f206e22af8a801437ed1b42c1ad6dd698303",
+      "size": 501
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/signal-rollback.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "610992b996e4da605ad92610bdbe83de504a2e7ea42932fe5551923642f9f02c",
+      "size": 157
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/signal-rollback.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "2c1d286893900452725dc447e277512d6bed967255b13d142c3f2b1c81001eb7",
+      "size": 1335
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/skill-amendment-check.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "ab0a2a9fd6f9b98c6a2d898c77a0741b3dbb09b7d3bc60bab2c11cb51cd5a26c",
+      "size": 1648
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/staged-guard.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "ec1cd71ff42f33c5cc16c13b125e8f0ff26d80b17cfd895bb7106d6a031c0d29",
+      "size": 126
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/evidence/start.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "2018fe282ae05b62b80b4e4415ef1585c0c2a7b8051f375a7fb57736af172aa8",
+      "size": 110
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/remediation-directive.md",
+      "classification": "migration authority and human dispositions",
+      "sha256": "d22c012d033906c7398bdcf873bc514e05246ce97d3f3e314e527ccc78fbe96d",
+      "size": 2520
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/remediation-results.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "50b35bd82b9660cc5baa0e233bcf40f29c0487bed0501778cd7741cbcdfda190",
+      "size": 876
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/report.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "33a4c77231255ae37a679a4cb0a3163541d91cdad33b2ac7750258287db638bb",
+      "size": 12162
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-2/request.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "898569a10c47f7ec4d6c51177aa6732c77803fdca4b718b3c5d178e115e58678",
+      "size": 3683
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/authority-manifest.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4bbe6c356ebfbdeb72f0bfa08dafa560a8c05995c787b84dbd1d7f5c7e10fc52",
+      "size": 2450
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/disposition-summary.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "12d90242e123b3be5279ae068fe5121a651fd820171cde941c3b16d9d4024961",
+      "size": 655
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/board-next.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "d75487f7b4b86e96ff3ec30ba7a2d96886a0a89e69a9acdf487af05a663a4d4c",
+      "size": 105
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/board-show.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "46faa7f3c448c8479cf2a2c74ec6abc848dafd5da9c6b2e3d56ac8578731986a",
+      "size": 1124
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/board-tests.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "c6e249c8aafdde6244afa52c2d22944f11e221c2956d912132297f22cc311e95",
+      "size": 2268
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/board-validate.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "59ecdcf0441550affb31de89598199b6a6d116e898bf58687c13616f5edc5a0d",
+      "size": 45
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/changed-paths.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "818566bc1ff6f10e8d75b8a446d436dc59984c16e1ffe08048dd2e928fd2e311",
+      "size": 11088
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/checker.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "ec1cd71ff42f33c5cc16c13b125e8f0ff26d80b17cfd895bb7106d6a031c0d29",
+      "size": 126
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/counterexamples.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "1f18bfdb9de4830183f19ac845be059ffd7f1632efb9a008b529d0179ffab582",
+      "size": 534
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/counterexamples.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "88296dc5e23328ae0436400c44b861050b9bcb64e1e50c0a0538edcaf61c7e9d",
+      "size": 3297
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/diff-check.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "e96bb09b5be465c4801c0b2213317de55b890d39d63e104842ca2e7a90aa0e29",
+      "size": 15263
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/doctor.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "5856ef3069535d67110a448c9c646b6affbb81f9d61daa1b7685af3af5742fa4",
+      "size": 601
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/documented-board-command.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "59ecdcf0441550affb31de89598199b6a6d116e898bf58687c13616f5edc5a0d",
+      "size": 45
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/dryrun-counterexample.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "c7e945234f28d7976b0dbc3d8789bdbe158773dd33039ad6c8093acc7cff287b",
+      "size": 2724
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/dryrun-counterexample.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "dd5426a49e3de4e2deeab4861ddf047a8935a0d91d88be19ced4ae4de3b50d65",
+      "size": 1501
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/dryrun-installed-counterexample.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "f2ce28cce0a5bd100394b62bf5875dc90b18eecc881ba3747ac8b3cd6419a6fb",
+      "size": 4657
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/dryrun-installed-counterexample.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4b1ee398d29eb24de45f27b07ee515acf4dc46c975f0d6ce058859abd64fc49c",
+      "size": 1875
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/experiments.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "799632eb6aee8fb0bb2c4cf89c7c8facf39ee47914f7234ff13cd2c31e980d72",
+      "size": 19739
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/experiments.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "69ba5af6939543c820fe574117b73f3e4c5fecf441250917c35ebc0d11be8534",
+      "size": 84
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/final-preservation.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4be728bb413b6509a08a759ab69472b855228e2523b014082087382e9912abf4",
+      "size": 865
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/final-state.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "aafabefd7aebd760ec0d9b4b8183bba4b49cb17293371fea2d29bd412f1eca05",
+      "size": 5487
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/fsck.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/full-suite.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65",
+      "size": 43610
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/history-archive-skills.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "6f4da0b59acd89687a637386aaf988b8139dfc4541a58d60dc854f442c13ae62",
+      "size": 3921
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/migration-tests.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "a8bb1106e5ae512f5cc97551b40d82fdecf90935ab84a3dd89f0fe0c1bba03ed",
+      "size": 5473
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/preservation.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4be728bb413b6509a08a759ab69472b855228e2523b014082087382e9912abf4",
+      "size": 865
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/range-guard.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4f36b6005fdd1e3ae878942647e32c02336cbaa05accd9e87c6f3f47d70664cf",
+      "size": 169
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/evidence/staged-guard.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "ec1cd71ff42f33c5cc16c13b125e8f0ff26d80b17cfd895bb7106d6a031c0d29",
+      "size": 126
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/human-disposition.md",
+      "classification": "migration authority and human dispositions",
+      "sha256": "8940e2cc64fdafcd660fb71e93398f6d04f2a6465c8909c5ce6e36518c388ecf",
+      "size": 3062
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/remediation-directive.md",
+      "classification": "migration authority and human dispositions",
+      "sha256": "ccc6142faacb205515ee689a0fa8d33af35a55ddf49754e34b5abe7aaf9c9553",
+      "size": 2142
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/remediation-evidence/builder-documented-recipe.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "fb76289e25f6a96c1802d1cce3225342500c6a4769a98f17b065f94c6f5562a8",
+      "size": 1478
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/remediation-evidence/builder-experiments.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "1bba7aa7752c630011f75da8713b83b019ec35d387e29c16b5f7b78a949c9bd5",
+      "size": 19739
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/remediation-evidence/builder-experiments.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "45a6fb2132a65da160a8b9bbbeecf460dd723a65cbd01ef283d4813440f7baca",
+      "size": 133
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/remediation-evidence/builder-inherited.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65",
+      "size": 43610
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/remediation-evidence/builder-migration.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "04ec1179ccd3e63e9d0748bbdccd69381cfd3a09b50d138e980739192cb4d1ec",
+      "size": 137
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/remediation-results.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "8936e123a6b49a785df7b871e1bacede0b2a55d02643b4a13b5e8f11cd5c9f1b",
+      "size": 1388
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/report.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "3411879fa029a477a376e63fe57df2976d25a61adda0ae79f6a7014dbd863348",
+      "size": 12423
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-3/request.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "fcd2932514567cc9313dfacfb63f2bd2aec5462c6e0a3450ab8c888b4cef39bb",
+      "size": 3555
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/authority-manifest.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4a45b094d48ef6495a743297d0e4d3106c39ba29f4500ecb76200e01e7f02c0e",
+      "size": 2908
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/disposition-summary.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "ff27c8d3c596b29fca7cf742fdd42eaa80e6a05085ffead73580d9cae9c05ee6",
+      "size": 575
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/authority-check.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "c107e304ed6f97d2731693e8673653e68ebd6147268ca4b2cee905b906a67152",
+      "size": 1704
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline-and-diff.initial.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "2584ded475f4eb2206b988dacb3b26805c707da0faa28b15ce50f332e8312055",
+      "size": 1836
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline-and-diff.initial.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "482ad6cae29e5638b8fb56fc9b0e8a27fc011ed80293ab8f9769e6c5a89e0565",
+      "size": 248
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline-and-diff.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "93841f8a1fed8f49a7045b915905e1056d211d76678a2a2797abc0bace489405",
+      "size": 16769
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline-and-diff.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "8714a92f6180c323f9f009201137b84a23995baa1bca4cf3391c9ade5e23565f",
+      "size": 276
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline-and-diff.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "b6e3b891c35f8762a8180baad764258fbaf581efb25e6e82e7229a4bef56bb90",
+      "size": 248
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline_and_diff.initial.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "52393341dea7340bc389b23c9b6fb67f8c087e892907438489209df8698f1c07",
+      "size": 1939
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline_and_diff.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "751cf404c606c600c3aa17b4ed5442f240b27ad48d490b5d307d7bfd0984ff6e",
+      "size": 2028
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/board-next.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "8b48a3dd57f1a277e1768493b42cfd23cc44c9849eb505c3b7bdfadb7de39765",
+      "size": 226
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/board-next.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4e79fcf8bd0e3253075410d11238157f1c14ab96e1c9c0d283cb6f7f74337a28",
+      "size": 288
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/board-show.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4cd259424a3fb1c0dd244385d947e519a01123eea083f60c1714a524c39f8c3f",
+      "size": 1521
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/board-show.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "8a4c0f7225b6b1e63e6ea9632831408f2d1d8a4c282d486674a160ab3e4cd008",
+      "size": 317
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/board-tests.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "ef94f02cd3a23589a6ba6215d6226a18580c24dc2d2ab2d88fe38b539449d9da",
+      "size": 2402
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/board-tests.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4914418d406ae0620259e3695860e042fcd86dbcd0125abada6c600858921905",
+      "size": 343
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/board-validate.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "d63cf150427b6b213bbbc556b417854df81c905757a5ac96e0ba60b5e70461b0",
+      "size": 148
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/board-validate.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "f4f5f341c63ab8cedc9013c844320049f52941a609a21f4e0cab8e2c778b4914",
+      "size": 296
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/candidate.diff",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "6d757db319d791b5f7f3822dc4877405f07a1324653ae7c9af54c22906a87f2f",
+      "size": 1912175
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/checker.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "a3539ae91807c9fc17a8045e2d959ba23fc8586be0f19160c2e399bcf1b262df",
+      "size": 170
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/checker.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "8beba3416dd49ea1f4dc81c1906c897a188a330ed0a721146c9d7d2e17f80f0c",
+      "size": 202
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/counterexamples-commands.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "1daa6b38b3aa962c8c3b9aaefb161c79f7e89cd1d8e1c391842e6148c9345e7e",
+      "size": 30663
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/counterexamples.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "9c403d89a19e48c0582a9c6c04121adbd545c44a1e278b99762c2aaddd453f6f",
+      "size": 1466
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/counterexamples.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "a74b0ab8278de455bc1e3483e58fb3df102fff78da59a47b1f960a14ba4103fe",
+      "size": 7458
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/counterexamples.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "3579b2c30fb089e0d285e1d70cfe7c61500f8056f07621144c518b21fe9bd603",
+      "size": 321
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/doctor.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "eb57bce3aee7fa34ac4da97e7ab56643f852fcbe6a13f6af51006fc36300a960",
+      "size": 641
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/doctor.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4a081b4d50075678a1067592740033d9175d4078871fd67e925c3210c079dad5",
+      "size": 197
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/documented-standalone-command.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "303d79b0c32951c8fbb87853ddcd5904f7daac5dcab7b9cc67a086df2c77ef11",
+      "size": 713
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/evidence-index.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "aba86ecbd8ec9e4a95cd65a4a216537b98adaa59d1e1e09a2c76d8ca59931473",
+      "size": 5087
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/experiments.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "58d970d478eef105ed59e2dc0573a35e80fcc7ef9f603acb910670a2b888dec1",
+      "size": 19271
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/experiments.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "6c0779b50e33aaba4c6b6b298c862ab8f58b4268fd50bf3fc693444b8fb864c7",
+      "size": 245
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/experiments.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "b70236e51f25e0a4ec10349da190f3606bab7efa7d0f9092e51f92fd5b1834ab",
+      "size": 353
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/external-private-skill.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "ceb73ecacb031329ce4d5f37effa32b58aceeab9ad09d085b35048c4b5327b83",
+      "size": 52
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/final-preservation.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4b0be5dc8faaec75e436e76a72311d542538d58688381b085e09d8356607ea7c",
+      "size": 1233
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/final-preservation.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "543717749b3d917eb3ecc34e7bc6a05063c558bb56517e5835cddb63bb20a652",
+      "size": 232
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/final-state.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "b086c7d647f6b318c3355529d45ef9d0ef5b42d34cd0ab2e3cf5fe91b4885811",
+      "size": 3519
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/fsck.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "6dff99a740b67a70382c9b0958eeb614ccffeeb570ff7ef57a6b26c58b0469dc",
+      "size": 216
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/fsck.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "78972448ec9598c3b840151fa28dad572d01f33c155ada18f5432bc24df58b28",
+      "size": 218
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/full-suite.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "64fb47285960c9ec94049dc4e194ddae034719df1701ffc62662658e13dc4c66",
+      "size": 43671
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/full-suite.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "51b2983f0b037e7252d16014fe689e9fd57723dea91e3ad8712d7f06af70e79f",
+      "size": 232
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/history-checks.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "179172fe8dc9b79306ec6295a33a88c2a90811b0a04bd2877d037f0cd72d63e9",
+      "size": 2692
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/history-checks.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "d870d51f157f51ec8ef1f1a40589290cd04803df29b5c97a55811def2e17c731",
+      "size": 319
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/history-observations.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "f6cb3c0cf1305c622cf24a0abb8be2c70475c5733c2cca37421beb8690225abc",
+      "size": 3605
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/history_checks.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "6f6d486d184bd8278be980c0c6d9f06b34e0f31828f8f04ee587149587084a30",
+      "size": 4376
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/initial-state.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4a5178c2df401e26bf37ecefe0dda69b9e683942f9ceb2e656878d9dd9705271",
+      "size": 3487
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/migration-tests.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "3ef852e607068c55c1a9db6f7c326ead3f1fa51992086691c10e259643c31cb9",
+      "size": 6290
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/migration-tests.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "06e5d5a204fa9599121bdb44e29a790dbe38fce5b3c1547ea7bea5c688dd7d02",
+      "size": 350
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/preservation.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "4b0be5dc8faaec75e436e76a72311d542538d58688381b085e09d8356607ea7c",
+      "size": 1233
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/preservation.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "f52563c82a6ec091650233d0c2eb945d4867a8d7c0313abe56f37f5944003764",
+      "size": 226
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/range-guard.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "d3561f5b468669b7b988234a4766bc973fc59fe07521d66afbf3c47649141ce1",
+      "size": 312
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/range-guard.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "baffe185f5e97f3984d687f447345b212092ed4b26480b3e2108f4836132a253",
+      "size": 317
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/report.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "c74fd1802f3b6f119a1c058a502d5692d94f3c032781a6f78bc49173ecd795a8",
+      "size": 20246
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/run.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "2d986568869f78299ae8229d5c9277e2cace6c5484dd03e315911eac084fe928",
+      "size": 715
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/signal_probe.py",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "f3960389d118b4a545a166e3663d213c9ead16ad8559a28e178893f11f5f36a7",
+      "size": 709
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/staged-guard.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "04460363d066fca5fc9635f14e01624ec5477c4f9b1545afc3344e998a750e05",
+      "size": 170
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/staged-guard.result.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "35f297fdd86b1d28981665c8978c129daeea802ec5f3529251d6e8327a4298c7",
+      "size": 207
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/evidence/uv-7149d5f02fed1797.lock",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/human-disposition.md",
+      "classification": "migration authority and human dispositions",
+      "sha256": "c4ecefb123484ef4e427a4fc3055cd77e12d4fd6bf7e82a4b8b2b37e05e8d662",
+      "size": 3575
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/remediation-directive.md",
+      "classification": "migration authority and human dispositions",
+      "sha256": "7f353b851e6a421e0658a17d7dbb38674490eb90167dddff486255c3570432ae",
+      "size": 1669
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/remediation-evidence/builder-board.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "0b9fef00621782d3c2872733a495c7bcd6e4edb830ea3dd387136924372f43a5",
+      "size": 2268
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/remediation-evidence/builder-experiments.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "8c665362d1ef4e66ef13a36057ad465c0217c662a268cf5c216be3e730ecf933",
+      "size": 19739
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/remediation-evidence/builder-experiments.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "6d118167fe9e295d809251222c486d86f9434cd00cf9487fc0e123c5f94e7113",
+      "size": 133
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/remediation-evidence/builder-inherited.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65",
+      "size": 43610
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/remediation-evidence/builder-migration.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "cb0ee32b8ab88d96c1e7d9f38f17e531c3d6dcd51b8ae803374aca653d017648",
+      "size": 7022
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/remediation-results.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "b58f52e602cd5ac582f6a4463061c65fc06cf1e3cbb65c69b75374e4b64268b0",
+      "size": 1006
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/report.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "c74fd1802f3b6f119a1c058a502d5692d94f3c032781a6f78bc49173ecd795a8",
+      "size": 20246
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/review/round-4/request.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "7d630013efd257680d627aac80fa121b713adf9ebc3508a316af55965bc874f3",
+      "size": 4560
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/v2-copy-tests.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65",
+      "size": 43610
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/validation-results.md",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "56e373a0fb2662149efbf5264727c865d36530147583a900cf026a23980a2fb0",
+      "size": 8668
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/validation-summary.json",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "60bea3060b7ed6bcc7536fa0f28e6585f9e4be2da6212d239faf80cb1da68bba",
+      "size": 1621
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/validation/board-tests-final.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "6dbcc0307816303b922ce25d2325d691a3f7e8b0c8345e8c8dd1ed5e63969c97",
+      "size": 2268
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/validation/experiments-final.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "376c25f99e18d4f03e9628e00edc8a7702133c62f2a0efe16de22922726d6897",
+      "size": 139
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/validation/experiments-first.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "bf384bbceed16baeb04fc7ba1905a48f1e5c9c22d5d5e9e8630c34c88ce05d04",
+      "size": 990
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/validation/toolkit-tests-final.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "8a8b8db50d88e0cfaa71b25e8e9a9dd946dc083623884a030f003b5c95f80805",
+      "size": 2980
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/validation/toolkit-tests-first.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "684453e4617861dc6fcde71ceeb3cb42f22ba9aa23299f1bc7be0c537f8512a2",
+      "size": 3724
+    },
+    {
+      "path": "docs/resources/evolution/v3-migration/validation/v3-full-tests-final.log",
+      "classification": "historical review/self-check evidence or frozen input inventory",
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65",
+      "size": 43610
+    },
+    {
+      "path": "pyproject.toml",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "587b28996453fe6447d51b8963d30320987f40fa706768c5e14732e474b4c7e0",
+      "size": 239
+    },
+    {
+      "path": "requirements-devboard.txt",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "a5e2894d77218df8977fc75d7cb1419cc76bc62ca37a48dac6948daf8fbef5ec",
+      "size": 108
+    },
+    {
+      "path": "scripts/create-dry-run.py",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "d2648ba97ea6fc609e1221190d7679fcf27446cbb501ea05ba2d1d63f3d69e55",
+      "size": 6521
+    },
+    {
+      "path": "scripts/devboard.py",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "465ab799f2845bed2c6fd069e2c5341ccd7d5baa6c064ec267b2b4ae7c14da3c",
+      "size": 41617
+    },
+    {
+      "path": "scripts/exercise-v3-toolkit.py",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "1c613d64bbddaee0e258b3ba40e4d4677e20dc1efe009a4b55392a3b1f942dbb",
+      "size": 11058
+    },
+    {
+      "path": "scripts/friday-dev-board.py",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "6613a225832f4f5956bad94fdcf7b7b1e47386a7cb6e2e2b8bbcb3636630c25b",
+      "size": 11
+    },
+    {
+      "path": "scripts/gendev-doctor.sh",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "5e12cf5970ea3eab23bb4c988962cd39fc98a8e3f2b36a94977a8237413e9aec",
+      "size": 5573
+    },
+    {
+      "path": "scripts/init-phase.sh",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "10bb5e84a2dde518ed71f4fa131aaeb65bc50b36a9fc376d70341c178a093fe3",
+      "size": 3030
+    },
+    {
+      "path": "scripts/init-project.sh",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "2e132aa6a2e7d481e1e488da0499ad53aca68496ad8c383bc821673e3acd9da7",
+      "size": 4644
+    },
+    {
+      "path": "scripts/install-methodology.sh",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "0d88f82af00aefbbd4ba4b51a3d4c1623689c9d1b993f110238501a808e8d6aa",
+      "size": 2740
+    },
+    {
+      "path": "scripts/lib/distribution-manifest.txt",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "a38954fcfa8327357fa80ea586c58f7f5f6c6ab3351adbcd2345e670663bb32c",
+      "size": 2741
+    },
+    {
+      "path": "scripts/lib/distribution.py",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "34fa94bd040babc9592da8804e722d8e0dcbf07a43bee3deb83fac8c32ee10b3",
+      "size": 17462
+    },
+    {
+      "path": "scripts/lib/gendev-distribution.sh",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "5f3f6b91d2e46d4a85d6060015401461fe6f6be25a4c04487b7b01758c79784e",
+      "size": 383
+    },
+    {
+      "path": "scripts/lib/render_template.py",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "8dc96a7361627411eaa211e21ee24eee890c9c8a979c780d3682357f5b132f6d",
+      "size": 2449
+    },
+    {
+      "path": "scripts/verify-migration-inputs.py",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "ba9dbe47ffb36dc4a35791647b598699edc5e110030012c7b3069e2e4cdb6b08",
+      "size": 5743
+    },
+    {
+      "path": "tests/devboard/test_devboard.py",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "a37aeeff8d826100755fbc430f7171d3e09f1bc4f0148b4b396fd8bce6669d54",
+      "size": 14337
+    },
+    {
+      "path": "tests/migration/test_preservation_refs.py",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "ef5d749c51c33228d2acd6443babb5a452b14816454701c5ec99713e75904d6d",
+      "size": 4310
+    },
+    {
+      "path": "tests/migration/test_v3_toolkit.py",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "dae8a16a4d80f9c891ffda48a24c6bcf5d101951de96baea095267cb44badbd9",
+      "size": 28316
+    },
+    {
+      "path": "uv.lock",
+      "classification": "primary implementation and portable guidance",
+      "sha256": "ea4d27b726fe1e7b63f0211b0cd51c5bdf2fe605a6309afb29dfc7b49dfb2c68",
+      "size": 61638
+    }
+  ],
+  "whitespace_exit": 2,
+  "whitespace_paths": [
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/complete.diff",
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/pins-and-git.log",
+    "docs/resources/evolution/v3-migration/review/round-1/report.md",
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/counterexamples.log",
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/diff-check.log",
+    "docs/resources/evolution/v3-migration/review/round-2/report.md",
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/diff-check.log",
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/dryrun-counterexample.log",
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/dryrun-installed-counterexample.log",
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/candidate.diff",
+    "docs/resources/evolution/v3-migration/validation/experiments-first.log"
+  ],
+  "initial_equals_final_candidate": true,
+  "v2_original_head": "54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a"
+}

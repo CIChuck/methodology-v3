@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "uv",
+    "run",
+    "--frozen",
+    "--group",
+    "devboard",
+    "python",
+    "-B",
+    "scripts/devboard.py",
+    "next"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "returncode": 0,
+  "expected": 0,
+  "seconds": 0.056
+}

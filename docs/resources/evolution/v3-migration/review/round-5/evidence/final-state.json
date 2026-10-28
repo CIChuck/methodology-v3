@@ -1,0 +1,2208 @@
+{
+  "head": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+  "branch": "integration/v3-migration",
+  "status": "",
+  "refs": "refs/archive/v2/heads/docs/1.0.2-gate-closeout e23126ed248f55b1556aa8accb5578ee6b820c42\nrefs/archive/v2/heads/docs/pre-v3-migration-snapshot b8c287126e24700da3373ea94a78eec0d1f1e20a\nrefs/archive/v2/heads/master 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a\nrefs/archive/v2/heads/release/1.0.0-production 321061e073f816d3bf1c587a82c5fc67afd95877\nrefs/archive/v2/heads/release/1.0.1-documentation-consistency a3fc51ac0a97bf9f986f3134f9d421bc0eb35046\nrefs/archive/v2/heads/release/1.0.1-production 29d5c58f7ddbb7f150104e4d17b536eb141359e1\nrefs/archive/v2/heads/release/1.0.2-distribution-context 8a48f1a9e617a7197e1974e5edae90dc9cda1b76\nrefs/archive/v2/remotes/origin/HEAD 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a\nrefs/archive/v2/remotes/origin/docs/1.0.2-gate-closeout e23126ed248f55b1556aa8accb5578ee6b820c42\nrefs/archive/v2/remotes/origin/master 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a\nrefs/archive/v2/remotes/origin/release/1.0.0-production 321061e073f816d3bf1c587a82c5fc67afd95877\nrefs/archive/v2/remotes/origin/release/1.0.1-documentation-consistency a3fc51ac0a97bf9f986f3134f9d421bc0eb35046\nrefs/archive/v2/remotes/origin/release/1.0.1-production 64209968a765113632b9db3f6931e40f31606803\nrefs/archive/v2/remotes/origin/release/1.0.2-distribution-context 8a48f1a9e617a7197e1974e5edae90dc9cda1b76\nrefs/archive/v2/tags/v0.1.0-baseline 3253506406d95251a77a5122a4acbc1d7ae3e311\nrefs/archive/v2/tags/v0.2.0-phase-loop 1748f736bb3c284b43330556c1c5972f314215bb\nrefs/archive/v2/tags/v0.3.0-documentation-structure 3922eaf8695d5bd38963e88d2d13f4f2536d6604\nrefs/archive/v2/tags/v0.4.0-verification-first 95ee66043df88e7a8fba8e5fe712f4afa797dee0\nrefs/archive/v2/tags/v0.5.0-operational-coherence 1734871c44ab76c0085f644996ff740319a0bd77\nrefs/archive/v2/tags/v1.0.1 4354d74b85db14a3437fa7d19a648bcf7a6c29fc\nrefs/archive/v2/tags/v1.0.2 7a3b5cd2e9551b5b20ba875210489a8a971daf90\nrefs/heads/docs/1.0.2-gate-closeout e23126ed248f55b1556aa8accb5578ee6b820c42\nrefs/heads/docs/pre-v3-migration-snapshot b8c287126e24700da3373ea94a78eec0d1f1e20a\nrefs/heads/integration/v3-migration 98f8bec4597cd3307fc26e5c28dc86592e01ca08\nrefs/heads/master 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a\nrefs/heads/release/1.0.0-production 321061e073f816d3bf1c587a82c5fc67afd95877\nrefs/heads/release/1.0.1-documentation-consistency a3fc51ac0a97bf9f986f3134f9d421bc0eb35046\nrefs/heads/release/1.0.1-production 29d5c58f7ddbb7f150104e4d17b536eb141359e1\nrefs/heads/release/1.0.2-distribution-context 8a48f1a9e617a7197e1974e5edae90dc9cda1b76\nrefs/review/v3/round-1 b869f0cd8df3521666aee51f9b7531631681b2c3\nrefs/review/v3/round-2 30aa3c7d68451c9b2ed892d30f349e20c0b14c3f\nrefs/review/v3/round-3 e69320fa2128f549162d633f14cd24463b743566\nrefs/review/v3/round-4 6ca2ad10f7eb0c71b9a316d458a20ad667c21c4b\nrefs/review/v3/round-5 98f8bec4597cd3307fc26e5c28dc86592e01ca08\nrefs/tags/v0.1.0-baseline 3253506406d95251a77a5122a4acbc1d7ae3e311\nrefs/tags/v0.2.0-phase-loop 1748f736bb3c284b43330556c1c5972f314215bb\nrefs/tags/v0.3.0-documentation-structure 3922eaf8695d5bd38963e88d2d13f4f2536d6604\nrefs/tags/v0.4.0-verification-first 95ee66043df88e7a8fba8e5fe712f4afa797dee0\nrefs/tags/v0.5.0-operational-coherence 1734871c44ab76c0085f644996ff740319a0bd77\nrefs/tags/v1.0.1 4354d74b85db14a3437fa7d19a648bcf7a6c29fc\nrefs/tags/v1.0.2 7a3b5cd2e9551b5b20ba875210489a8a971daf90",
+  "tracked_inventory": {
+    ".agents/skills/ai-construction-directive-builder/SKILL.md": {
+      "mode": 41453,
+      "sha256": "bdb78ccbb85c085227ab03d2b2fa79cd1a7300e45b3fdfc5726324591445f4ec"
+    },
+    ".agents/skills/architecture-spec-author/SKILL.md": {
+      "mode": 41453,
+      "sha256": "0b2018a7a1ad060a173bbf62ef1515783baf379eb07bafcb10406180fe360400"
+    },
+    ".agents/skills/code-conformance-reviewer/SKILL.md": {
+      "mode": 41453,
+      "sha256": "07e96da920443507508a9f359c94f917e5cfa193bfc6d656be99515e9b354909"
+    },
+    ".agents/skills/friday-dev-board/SKILL.md": {
+      "mode": 41453,
+      "sha256": "b2e0599159ac416e522e288f67e85badf3e35b0b5a917dc0b3ccbf8e93d4ce36"
+    },
+    ".agents/skills/governance-security-spec/SKILL.md": {
+      "mode": 41453,
+      "sha256": "ba277988ed784b9aab519099f7e158f918828aab85f49c18fe6149303b86acdf"
+    },
+    ".agents/skills/independent-code-validator/SKILL.md": {
+      "mode": 41453,
+      "sha256": "5d2d675a7bb3a616cdbe0ecb2d9175f497fe9a746451b2cacf943d46391ddc51"
+    },
+    ".agents/skills/migration-refactor-analyst/SKILL.md": {
+      "mode": 41453,
+      "sha256": "5ba55a1dca0c79dcc90cbd39c34dde90944b324e3287c0bc4946d44ec917af00"
+    },
+    ".agents/skills/phase-build-planner/SKILL.md": {
+      "mode": 41453,
+      "sha256": "f2853f1e6a240012eac49b63c428014baf539120cb3e9d788da3d587158ff8af"
+    },
+    ".agents/skills/prd-author/SKILL.md": {
+      "mode": 41453,
+      "sha256": "d89a2d36a7d635c2d672fd8399425491e9a506d09afc0516825e90715b8f0420"
+    },
+    ".agents/skills/remediation-closeout/SKILL.md": {
+      "mode": 41453,
+      "sha256": "7f5b15d027b44102017d2b521e77d68f469b942add1a9f205e59716f9654ba7a"
+    },
+    ".agents/skills/subagent-directives-template/SKILL.md": {
+      "mode": 41453,
+      "sha256": "cea1ed6302e8b2ec74a3e17406d3dc0d8c4e38946f7dcb6a763e39831e49ba6e"
+    },
+    ".agents/skills/subagents-worktrees-template/SKILL.md": {
+      "mode": 41453,
+      "sha256": "22c7bf81ba6914a6b74a0fd1422f6dca5ed748f35994946941f8182fc59338ba"
+    },
+    ".agents/skills/tactical-implementation-planner/SKILL.md": {
+      "mode": 41453,
+      "sha256": "640a0054dcb11a521184ebd066e28ed4e175d1b83ed2021746a2bb3b5ed0d87c"
+    },
+    ".agents/skills/traceability-matrix/SKILL.md": {
+      "mode": 41453,
+      "sha256": "7e62b3af3329c0eb3b7158a7706cbb53efdd002736e8ccb37da2f6b28943602a"
+    },
+    ".agents/skills/vision-framing/SKILL.md": {
+      "mode": 41453,
+      "sha256": "927f239669b422f2b762d87169fa933f64a422a2297c7d7e8f75db21c66ebfd0"
+    },
+    ".github/workflows/methodology.yml": {
+      "mode": 33188,
+      "sha256": "8786f37a491066ff20a894121a758cc202493c12b152a8301f105d2427c4152e"
+    },
+    ".gitignore": {
+      "mode": 33188,
+      "sha256": "600128db471d343e905f38d9b67a24678bde72cc68429fe3a664987e7208d4c8"
+    },
+    "AGENTS.md": {
+      "mode": 33188,
+      "sha256": "3d593263da054b983a35f13f25c2cb452ef66d9faa9bc90694e7453007134d01"
+    },
+    "LICENSE": {
+      "mode": 33188,
+      "sha256": "99e60451823354dc4e178fbe184ade4d82a3128b771f9110978fc330968a169e"
+    },
+    "LICENSE-CC-BY-4.0": {
+      "mode": 33188,
+      "sha256": "dec22806754018f3559d48fed4c4f46b7592e9d218e51d56893a56a7ff43937d"
+    },
+    "LICENSE-MIT": {
+      "mode": 33188,
+      "sha256": "ae57838da235d6e10dea1d8d984764b904819c60d6126829ceff5081fe88c87c"
+    },
+    "README.md": {
+      "mode": 33188,
+      "sha256": "3e28827c4613ae5871a7e124d0202fe4a5722315ba340094f490d6d415d1d85d"
+    },
+    "docs/archive/completed/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/methodology/agents/roles/architecture-agent.md": {
+      "mode": 33188,
+      "sha256": "865c1049110ddb1ceba522e3d87e08fde8a508a26c17857a9c137649855b80fb"
+    },
+    "docs/methodology/agents/roles/as-built-closeout-agent.md": {
+      "mode": 33188,
+      "sha256": "511966bee22e42206a5dd93490802abf05a4418ce9d460a9f582fc75ab924738"
+    },
+    "docs/methodology/agents/roles/code-review-agent.md": {
+      "mode": 33188,
+      "sha256": "9c069f65f0d6f24021356d74819fed4ac1aa65e90a30bf6a384e281977e54f1b"
+    },
+    "docs/methodology/agents/roles/deployment-readiness-agent.md": {
+      "mode": 33188,
+      "sha256": "3517d84763b701f883af1e69159ad448f4bdbeff0af19da838dd67a8f99192c6"
+    },
+    "docs/methodology/agents/roles/implementation-agent.md": {
+      "mode": 33188,
+      "sha256": "b6c0bd5c55df1d0ae209b1b35d8cc7e5a37ec96c9ca3c63b82b691e6bf90b696"
+    },
+    "docs/methodology/agents/roles/phase-planning-agent.md": {
+      "mode": 33188,
+      "sha256": "b217107e056e406922c21852bece8e7066890ec87f67ec959bc9b2cff0fba379"
+    },
+    "docs/methodology/agents/roles/prd-agent.md": {
+      "mode": 33188,
+      "sha256": "cb536b76e6b2f4e68361ef6ad521c7754d69ea32a8b610c21bdd36973c529008"
+    },
+    "docs/methodology/agents/roles/product-vision-agent.md": {
+      "mode": 33188,
+      "sha256": "6da981432324a00fba3e52c53c5cb0cae078e0e4aef9a66b4c6c9563320a7cd6"
+    },
+    "docs/methodology/agents/roles/remediation-agent.md": {
+      "mode": 33188,
+      "sha256": "4d4053e0cf567ba9caa5d255346b08a3b159e1e27126f2e8570ee9779a45c3aa"
+    },
+    "docs/methodology/agents/roles/security-governance-agent.md": {
+      "mode": 33188,
+      "sha256": "d8352095e371608084cc13b714eac8a98f9bdb7e2b8a92233d5ec4bb95513129"
+    },
+    "docs/methodology/agents/roles/test-uat-agent.md": {
+      "mode": 33188,
+      "sha256": "7230661797189598c4473da1a9250277d2e95d0b3c8e2ffb1d50aba16c19df3a"
+    },
+    "docs/methodology/agents/sample-agents.md": {
+      "mode": 33188,
+      "sha256": "a1450bba660da96873c7e39b49cbad641038caa6e7aaa2c061ff52462371590b"
+    },
+    "docs/methodology/agents/subagents/code-check.md": {
+      "mode": 33188,
+      "sha256": "34f8a0fcac047c72ac7b0f5b14aabf2ae0ea93188cdf0958df0028b41bbd2512"
+    },
+    "docs/methodology/architecture/ux/ux-template-architecture.md": {
+      "mode": 33188,
+      "sha256": "78849acb80528b25ed584327667431b726ac71e658151eec67394057e27efb3d"
+    },
+    "docs/methodology/constitution/gendev.md": {
+      "mode": 33188,
+      "sha256": "f7073cd6d2e9f26ad13e97839e80456ce617a63d3d8f5df3660c7e07500dad4f"
+    },
+    "docs/methodology/design/documentation-structure-decision-record.md": {
+      "mode": 33188,
+      "sha256": "6949bb32c54926394e1903dba7f06010fc277801230ee7f2e49253caf2027beb"
+    },
+    "docs/methodology/design/gate-numbering-reconciliation-decision-record.md": {
+      "mode": 33188,
+      "sha256": "1226d214d7dc6c4b8b0cdf0e34ffa56c0f0ecaa5bb6a3127c5be02adc84f59f7"
+    },
+    "docs/methodology/design/naa-authority-boundary-decision-record.md": {
+      "mode": 33188,
+      "sha256": "08bf1d693d59dc1d63844810b5835143c03ba88e88c4db387db6f2f5edcb5531"
+    },
+    "docs/methodology/design/operational-coherence-decision-record.md": {
+      "mode": 33188,
+      "sha256": "1e8bf034c16b8de57fa33957201aaf75239cf13dd705c8bbd6148cf041a52e8d"
+    },
+    "docs/methodology/design/phase-loop-decision-record.md": {
+      "mode": 33188,
+      "sha256": "b22fa3203f428b96de5de10d25138d2274c25490c16c6b9680b3cf520e1d47f0"
+    },
+    "docs/methodology/design/sample-design.md": {
+      "mode": 33188,
+      "sha256": "83fbc614443a9b3d7569e9956a43e7b8740f9d0f939f58b8154f7a7cec3002b2"
+    },
+    "docs/methodology/design/verification-first-decision-record.md": {
+      "mode": 33188,
+      "sha256": "be298f6fef4edd2b0598c45af20b14bce9e922bc3de944856ece83ec77eec3e8"
+    },
+    "docs/methodology/dev-skills/ai-construction-directive-builder.md": {
+      "mode": 33188,
+      "sha256": "79b38aa2450e7364d36638faa00d9a2860956b247c278bad95e827d203f8759d"
+    },
+    "docs/methodology/dev-skills/architecture-spec-author.md": {
+      "mode": 33188,
+      "sha256": "67a2d2eedd6bce30e7d13ff8cd8d66b931fc2ed8b577c02960ff2abed46fec5d"
+    },
+    "docs/methodology/dev-skills/code-conformance-reviewer.md": {
+      "mode": 33188,
+      "sha256": "922c992b1b4d5e2978bd2eed0e172b8580d8c20da1c85e59c98d4e4927031540"
+    },
+    "docs/methodology/dev-skills/friday-dev-board/SKILL.md": {
+      "mode": 33188,
+      "sha256": "bd40da20b9069adcb02a4a42b80b42a0d860dcccac1e5b604c60214d5aaa381e"
+    },
+    "docs/methodology/dev-skills/governance-security-spec.md": {
+      "mode": 33188,
+      "sha256": "30c327e667380b589fe38009a82caa82400e3e0726d802fea21245fa290db95f"
+    },
+    "docs/methodology/dev-skills/independent-code-validator.md": {
+      "mode": 33188,
+      "sha256": "ce179b69caf21f433e7e12f2a22f59de7a2b47648b63c1a444eafea231845af4"
+    },
+    "docs/methodology/dev-skills/migration-refactor-analyst.md": {
+      "mode": 33188,
+      "sha256": "5bc50b98a1985f6de42f0d014f92efba403cf47f93e281ee5fdf5197324cdaae"
+    },
+    "docs/methodology/dev-skills/phase-build-planner.md": {
+      "mode": 33188,
+      "sha256": "8871457a16e92e02d057ba6ef3f2ba2532e100e15c8167b36cde74cda3de3568"
+    },
+    "docs/methodology/dev-skills/prd-author.md": {
+      "mode": 33188,
+      "sha256": "dacf3a42bf79e49440730eb34929d93b72e91963e33005491e0b1b1771571875"
+    },
+    "docs/methodology/dev-skills/remediation-closeout.md": {
+      "mode": 33188,
+      "sha256": "e7e2a2a5860947fe303cc0ca56779a33386875cf79c0f672c4cf9072ada5ce53"
+    },
+    "docs/methodology/dev-skills/subagent-directives-template.md": {
+      "mode": 33188,
+      "sha256": "ea43ed8b9055f8642be2ec84dc541c253b427597cd9669a7f2f8646db332b4bb"
+    },
+    "docs/methodology/dev-skills/subagents-worktrees-template.md": {
+      "mode": 33188,
+      "sha256": "392d5af84220815ed2d9b5943ae621eb95a0a41e34753cd2fab7510c93c71a53"
+    },
+    "docs/methodology/dev-skills/tactical-implementation-planner.md": {
+      "mode": 33188,
+      "sha256": "272f9dd877289653180da1511b207a4ceb07bc4dbbe13d3913dc0c0ff5dcc62c"
+    },
+    "docs/methodology/dev-skills/traceability-matrix.md": {
+      "mode": 33188,
+      "sha256": "3f81aef78d5cf8540cc43ddb282d7922adbc1b3c1ffd80bc2a70086bcfb36859"
+    },
+    "docs/methodology/dev-skills/vision-framing.md": {
+      "mode": 33188,
+      "sha256": "9dce6dd66b6514414f74524cc4ded5ca5ff5bd761c74cff74d9fe7d85021fcde"
+    },
+    "docs/methodology/guides/agentic-development-workflow.md": {
+      "mode": 33188,
+      "sha256": "35cd2adf0953224b230cb85b4dc6532df2f0438e4b63431035356a8f4c774b96"
+    },
+    "docs/methodology/guides/amendment-and-regression-protocol.md": {
+      "mode": 33188,
+      "sha256": "e49c63ac7d95f1d8c250f0882be32a8544949011bf2f9aec288980b923030a73"
+    },
+    "docs/methodology/guides/artifact-collaboration-protocol.md": {
+      "mode": 33188,
+      "sha256": "795690b23505e315e8f578022e206703a32464d815aff49197fc85e51ab5a87d"
+    },
+    "docs/methodology/guides/collaboration-modes.md": {
+      "mode": 33188,
+      "sha256": "b88981fe3669cd7c360264c46de78e0bcf832491db3a49c4698b639bbfdbbe0e"
+    },
+    "docs/methodology/guides/distribution-ownership.md": {
+      "mode": 33188,
+      "sha256": "1cb1f3f4a01e8869dcb86e022256df6a931ea7e5c1222c8a613814c2d21027c2"
+    },
+    "docs/methodology/guides/enforcement-contract.md": {
+      "mode": 33188,
+      "sha256": "d93fa4aa9018747296c7562e51e01680ffcb497f83a362f118fb73230df2ae30"
+    },
+    "docs/methodology/guides/gate-transition-protocol.md": {
+      "mode": 33188,
+      "sha256": "c65a3eb755e9fa7f87d8eb849fccc6a9a746a0decc43f9e0e6fc5e1f38d2b2d4"
+    },
+    "docs/methodology/guides/gates.md": {
+      "mode": 33188,
+      "sha256": "d2dd748ac9cbab7c6a7255f78c912afc31f9d2d469b7169c35ad8c55c05b9fda"
+    },
+    "docs/methodology/guides/human-agent-collaboration-loop.md": {
+      "mode": 33188,
+      "sha256": "121c356ad751666fd05fb83980f7b89e4b11e989d9d16189a2f026af5c9c42d0"
+    },
+    "docs/methodology/guides/human-approval-protocol.md": {
+      "mode": 33188,
+      "sha256": "7686a288dce175c564083bde51b2a534b97dd75b9405d737e7d73b819e2d6e1f"
+    },
+    "docs/methodology/guides/orchestration-validation.md": {
+      "mode": 33188,
+      "sha256": "3f5fec3501ea7246e27dbeb064217799996ca5f0c346efb1aa8e544b8e3b85e2"
+    },
+    "docs/methodology/guides/phase-loop.md": {
+      "mode": 33188,
+      "sha256": "c08a14572ae40970bff1364689e26528859fe2d553df797f8f307a9c226b81b1"
+    },
+    "docs/methodology/guides/production-operations-protocol.md": {
+      "mode": 33188,
+      "sha256": "137bc93ad577981cbb51645babc698aef47ba3d6202de8e5887c5798c9c00f57"
+    },
+    "docs/methodology/guides/publishing.md": {
+      "mode": 33188,
+      "sha256": "969fd9b49324c2346ff079f81355d4f37f1e43362538a104c3887b57942476b0"
+    },
+    "docs/methodology/guides/start-and-next-step-protocol.md": {
+      "mode": 33188,
+      "sha256": "314bdf8d6bfce59b29c46dd53cd27523119eceb4f26c0cc1296aa91a356d3ac7"
+    },
+    "docs/methodology/guides/subagent-coordination-protocol.md": {
+      "mode": 33188,
+      "sha256": "9b3c227dacbbedffebe64ff3a4767b14081095d64ff0c19eac7bd147ca9b0535"
+    },
+    "docs/methodology/guides/t3-code-integration.md": {
+      "mode": 33188,
+      "sha256": "3deeb1365c0336ba5f47e5b01dd9260c937bb8644e455887464d03cda0a728be"
+    },
+    "docs/methodology/integrations/t3/t3.json": {
+      "mode": 33188,
+      "sha256": "6569a6be7ef3c4db7a6bbca5576de7fa95e9e0d24898d9d6320624bc571a18eb"
+    },
+    "docs/methodology/schema/README.md": {
+      "mode": 33188,
+      "sha256": "4a07b88fc8dcef23338f1364cbf3a6777772613b82e3c843303318554a96a618"
+    },
+    "docs/methodology/schema/candidate.json": {
+      "mode": 33188,
+      "sha256": "2446b9f449601da17e3a40b52475d82da5d297e5fb59f4c9faf4ddd6a63e90a2"
+    },
+    "docs/methodology/schema/lifecycle.json": {
+      "mode": 33188,
+      "sha256": "a20593178c42f10a8e44658c708737d82e09384f5b0c27c13a703474010102cb"
+    },
+    "docs/methodology/templates/0001-technology-stack-template.md": {
+      "mode": 33188,
+      "sha256": "430a0035533e36c09be061f04b2b9cddadaa06fec54686d9d9ef28442032cb10"
+    },
+    "docs/methodology/templates/adr-template.md": {
+      "mode": 33188,
+      "sha256": "98c3067c0c40ae3760b030094b71952d38765b02be11c2651e469e631739f8f8"
+    },
+    "docs/methodology/templates/aggregate-remediation-template.md": {
+      "mode": 33188,
+      "sha256": "b2e862b988755f4af708b36a9e753da359c8f0c3270bea57770df4fffe2f53af"
+    },
+    "docs/methodology/templates/architecture-template.md": {
+      "mode": 33188,
+      "sha256": "7f14dda2d55e990f4f35c94f61615ba009f2181197af097143a14806c3e9041c"
+    },
+    "docs/methodology/templates/as-built-closeout-template.md": {
+      "mode": 33188,
+      "sha256": "4c533ff80ef21b572f676f64c92eef0522cc47652891da285c118e87a5313324"
+    },
+    "docs/methodology/templates/build-instructions-templates.md": {
+      "mode": 33188,
+      "sha256": "9a04a546cbcc68e44334d28b3a39d88c9a98e032e3f57538cecb0c7834702050"
+    },
+    "docs/methodology/templates/code-review-report-template.md": {
+      "mode": 33188,
+      "sha256": "8909e669519c385d39c55fca5829bdf8ef8d5f726375f39c8008d5409f72bdc8"
+    },
+    "docs/methodology/templates/deployment-readiness-template.md": {
+      "mode": 33188,
+      "sha256": "db3f8d7302796eb4cff460772745ee7cc7c5bfba73b81bbc7f60c93a68454a24"
+    },
+    "docs/methodology/templates/deployment-record-template.md": {
+      "mode": 33188,
+      "sha256": "a1e163181b7483a8c06544fb73cd6501b9d0c026feec324a8b2dd391307d78f3"
+    },
+    "docs/methodology/templates/final-code-review-report-template.md": {
+      "mode": 33188,
+      "sha256": "5a77900cddd53d7b89c7b460737aca419cc9bd025c8f57c4aa21d3fcc3ab14d1"
+    },
+    "docs/methodology/templates/final-test-uat-report-template.md": {
+      "mode": 33188,
+      "sha256": "d974afbe7344c43e6a9cd6963e2e4992a2649aa9284b9a40960031c55b42ee7c"
+    },
+    "docs/methodology/templates/gate-log-template.md": {
+      "mode": 33188,
+      "sha256": "20cf24110d5f52ca363ff4788884f1e78055dae72ed3c50dc8038ab9f18c99eb"
+    },
+    "docs/methodology/templates/governance-security-template.md": {
+      "mode": 33188,
+      "sha256": "53a1dbbd068c2dbe4d4d7b0cd1140e935dd1c7af93e32f2d2706d2935ee2ca20"
+    },
+    "docs/methodology/templates/implementation-summary-template.md": {
+      "mode": 33188,
+      "sha256": "b876477a63ce9e13b0f045ce11822dcf3dd57e6e6d2423e2db70762723eaa3c2"
+    },
+    "docs/methodology/templates/phase-build-plan-template.md": {
+      "mode": 33188,
+      "sha256": "2eddb885685cd510ba18f8490a926ced422d6afe92651c4150890e1c6767d9e2"
+    },
+    "docs/methodology/templates/phase-build-prompt-template.md": {
+      "mode": 33188,
+      "sha256": "45146260074650bab976c9d5febe606cd4d901a1bef473989a87bc375a8ddcbd"
+    },
+    "docs/methodology/templates/phase-construction-directive-template.md": {
+      "mode": 33188,
+      "sha256": "d03ae6e99e10e37367a487c77ee1c0f6f73c28c6def447d186b22dd1d4a95000"
+    },
+    "docs/methodology/templates/phase-implementation-evidence-template.md": {
+      "mode": 33188,
+      "sha256": "c48750dced2fd6da30eaa3a687228e57da6d5edba32aa9545f47ea1850ff179f"
+    },
+    "docs/methodology/templates/phase-learnings-template.md": {
+      "mode": 33188,
+      "sha256": "c9deb73b575a48fe482482e2871e5753c7fb9e02651fd7a46f8b3ec6c7bee038"
+    },
+    "docs/methodology/templates/phase-plan-template.md": {
+      "mode": 33188,
+      "sha256": "82e84f7b2966e2345b5239fc3cf6318b2317179bcf90c302f2b38a1f607bf434"
+    },
+    "docs/methodology/templates/phase-remediation-template.md": {
+      "mode": 33188,
+      "sha256": "ce937a99b9af699aa90da57130fd49b1b3a741cd8db59851eb681ab648466489"
+    },
+    "docs/methodology/templates/prd-template.md": {
+      "mode": 33188,
+      "sha256": "52ec260585faa3f537c2eb3a8312bef5b7bd925a7fb3ae098b612093f8f8d97d"
+    },
+    "docs/methodology/templates/product-ci-workflow.yml": {
+      "mode": 33188,
+      "sha256": "18940beee30159061e67a4abb03932ce5d0c1605abcc6433cf1b4c1fc487815c"
+    },
+    "docs/methodology/templates/production-runbook-template.md": {
+      "mode": 33188,
+      "sha256": "2dbb8991bfb03c9a52d07cf0a7d3d1b00d47122c26f5630249efb9f0ca047827"
+    },
+    "docs/methodology/templates/project-as-built-closeout-template.md": {
+      "mode": 33188,
+      "sha256": "6395f958f603d8e23455fba2a09f8bd137e21f9dde166c3690c3f1baa288db6c"
+    },
+    "docs/methodology/templates/project-value-review-template.md": {
+      "mode": 33188,
+      "sha256": "a3f66917c9bd7d7211d51a3770b57becf0030915f1d35687181a87a9f1d7b268"
+    },
+    "docs/methodology/templates/tactical-implementation-template.md": {
+      "mode": 33188,
+      "sha256": "68e8c23c766742c63d004297ceafb55e0901b55e6446f001e07881d5bf80bfe8"
+    },
+    "docs/methodology/templates/test-uat-plan-template.md": {
+      "mode": 33188,
+      "sha256": "ab22b7edaca5d8e6d452d50e9d55f614e95e93051f50b7133b55153253e82c46"
+    },
+    "docs/methodology/templates/traceability-matrix-template.md": {
+      "mode": 33188,
+      "sha256": "febe26ed31b49e27b92f2499aff46f6410123a6e22e8def79ef42469a54bd4d5"
+    },
+    "docs/methodology/templates/value-review-template.md": {
+      "mode": 33188,
+      "sha256": "9bfc1a893df50f93e76b48589f58867b8b8445b098219c90e510c42a3a9e31cc"
+    },
+    "docs/methodology/templates/vision-template.md": {
+      "mode": 33188,
+      "sha256": "83923509ef4d203822cbae02c029a7f7779bdb3335c7bf5e3dba55c76eb1f9ad"
+    },
+    "docs/planning/README.md": {
+      "mode": 33152,
+      "sha256": "1be9b2694e329d4f07698a6094a85d62c8780af2d5d8d0c09430aeae6517910a"
+    },
+    "docs/planning/active/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/planning/active/v3-baseline-migration/README.md": {
+      "mode": 33188,
+      "sha256": "8e59a18706f2be58c0d29889b9bb329886865113f71f4809c5ab6eef9c664622"
+    },
+    "docs/planning/backlog/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/planning/blocked/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/planning/board.schema.json": {
+      "mode": 33188,
+      "sha256": "4f017e6a949a2fd5a62f86cf5b03e58583db0e290c50289a9b6a178d7bf4fadf"
+    },
+    "docs/planning/board.yaml": {
+      "mode": 33152,
+      "sha256": "70643113a6a3215c759af775558bb82fff2be60e804181a20d5672a3b27d8f45"
+    },
+    "docs/planning/deferred/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/planning/queued/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/planning/review/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/planning/task-template.md": {
+      "mode": 33188,
+      "sha256": "3a6c6e73af0642d50f602cd6502c25cfc5efdd1bfda63973d43369846960db7d"
+    },
+    "docs/policies/dev-board-integration.md": {
+      "mode": 33188,
+      "sha256": "af36991dc3ae53977aeb347db84a35aed307a58882394319ee49aec3931f5289"
+    },
+    "docs/policies/development-task-lifecycle.md": {
+      "mode": 33188,
+      "sha256": "ac54fc778c216480531001d702006899183a29f3fd19050bb8ea317c3b2803ea"
+    },
+    "docs/policies/independent-validation-policy.md": {
+      "mode": 33188,
+      "sha256": "24a97c9984adf62587b818b5b2963813c7c3fceec8c41fd92a2956c5582b1abc"
+    },
+    "docs/policies/legacy-policy-debt.md": {
+      "mode": 33188,
+      "sha256": "7d6a20a58ba99782ff824abcb33fa4f2f2bc4c45bf5ba41157f172b7779aa85b"
+    },
+    "docs/policies/repository-engineering-policy.md": {
+      "mode": 33188,
+      "sha256": "1d57f89d49bd3ecd49fb97ac91248014a2da9a1386100e74aed30b0d144a40bd"
+    },
+    "docs/project-template/README.md": {
+      "mode": 33188,
+      "sha256": "594139e8c554dd0abaece34d8ed67b8fe59e87b3ab0c625ade04f559fd13f99b"
+    },
+    "docs/project-template/approvals/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/architecture/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/as-built/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/build-plan/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/build-plan/phase-plan.md": {
+      "mode": 33188,
+      "sha256": "54fa479cca570f8624b315c6890a3d10fbbe96b4fc393e255ee0ccdeb7ab14e4"
+    },
+    "docs/project-template/build-plan/phases/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/decisions/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/deployment/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/design/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/dry-run-policies/dev-board-integration.md": {
+      "mode": 33188,
+      "sha256": "af36991dc3ae53977aeb347db84a35aed307a58882394319ee49aec3931f5289"
+    },
+    "docs/project-template/dry-run-policies/development-task-lifecycle.md": {
+      "mode": 33188,
+      "sha256": "ac54fc778c216480531001d702006899183a29f3fd19050bb8ea317c3b2803ea"
+    },
+    "docs/project-template/dry-run-policies/independent-validation-policy.md": {
+      "mode": 33188,
+      "sha256": "24a97c9984adf62587b818b5b2963813c7c3fceec8c41fd92a2956c5582b1abc"
+    },
+    "docs/project-template/dry-run-policies/legacy-policy-debt.md": {
+      "mode": 33188,
+      "sha256": "7d6a20a58ba99782ff824abcb33fa4f2f2bc4c45bf5ba41157f172b7779aa85b"
+    },
+    "docs/project-template/dry-run-policies/repository-engineering-policy.md": {
+      "mode": 33188,
+      "sha256": "1d57f89d49bd3ecd49fb97ac91248014a2da9a1386100e74aed30b0d144a40bd"
+    },
+    "docs/project-template/planning/README.md": {
+      "mode": 33152,
+      "sha256": "c1f8c8c683f80508a31f22ff414e74ecbc75fcaed43cf64d1cc01a6659f3cc9b"
+    },
+    "docs/project-template/planning/active/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/project-template/planning/backlog/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/project-template/planning/blocked/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/project-template/planning/board.yaml": {
+      "mode": 33188,
+      "sha256": "07bd44499ea68f44339b215bf950d3a1b59273f28f8e57ecbf69ce48104e4611"
+    },
+    "docs/project-template/planning/deferred/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/project-template/planning/queued/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/project-template/planning/review/.gitkeep": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/project-template/planning/task-template.md": {
+      "mode": 33188,
+      "sha256": "3a6c6e73af0642d50f602cd6502c25cfc5efdd1bfda63973d43369846960db7d"
+    },
+    "docs/project-template/prd/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/project.yaml": {
+      "mode": 33188,
+      "sha256": "54708d60f117f12ffec002ff57b25648811069cc2de4d7c71e4f98f26b3b61cf"
+    },
+    "docs/project-template/review/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/security-governance/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/testing/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/traceability/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/project-template/vision/.gitkeep": {
+      "mode": 33188,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "docs/resources/evolution/0.5.0-operational-coherence-closeout-ledger.md": {
+      "mode": 33188,
+      "sha256": "3cd2d68af3441dd06cc4640a3af759f17fa81651b93ae2fa2b7195837da52bf7"
+    },
+    "docs/resources/evolution/0.5.0-operational-coherence-execution-log.md": {
+      "mode": 33188,
+      "sha256": "b4297b40eebf161ae08e004b83a2bfaa0ab29b35a931da1cffd4c2590c35a520"
+    },
+    "docs/resources/evolution/0.5.0-operational-coherence-mitigation-plan.md": {
+      "mode": 33188,
+      "sha256": "ef302885cb4d52ae6452a0ae80a2ccac85167c308255b2f63a5725cb911606b8"
+    },
+    "docs/resources/evolution/0.5.0-operational-coherence-remediation-plan.md": {
+      "mode": 33188,
+      "sha256": "30e0afe6d51318d7d5fb2849c8970eceef7ffe44cf1448227a120030ad2965e4"
+    },
+    "docs/resources/evolution/0.5.0-operational-coherence-review.md": {
+      "mode": 33188,
+      "sha256": "93bb5433a4ad6ca0a691b44122d0b2c13c147e066635e142ab5661fc82c094b2"
+    },
+    "docs/resources/evolution/1.0.0-documentation-consistency-remediation-plan.md": {
+      "mode": 33188,
+      "sha256": "95f3f11bed8e9f989f42c8ab75c95d1d00a8e1fe19ab39a088ed8bd273f9d72e"
+    },
+    "docs/resources/evolution/1.0.0-production-release-execution-log.md": {
+      "mode": 33188,
+      "sha256": "6d0b3614c5e24eb3496bc276619081b4c122296f1e20e34ef1dd3b05f398585a"
+    },
+    "docs/resources/evolution/1.0.0-production-release-plan.md": {
+      "mode": 33188,
+      "sha256": "fc88428a1561a1132323b18fd9ab5b4d4454d7145b6ffd5f936efa7c3700aa76"
+    },
+    "docs/resources/evolution/1.0.1-documentation-consistency-execution-log.md": {
+      "mode": 33188,
+      "sha256": "7e3605a1fd6f61575a8a67d3289c08ca57299727e49d5035994ab2c9c2cf1a9b"
+    },
+    "docs/resources/evolution/1.0.1-independent-review.md": {
+      "mode": 33188,
+      "sha256": "58250f7c2c29fd9dfcf8d13511640d9d91b805a270ed7f0e3d5669068bd75fc2"
+    },
+    "docs/resources/evolution/1.0.1-production-release-execution-log.md": {
+      "mode": 33188,
+      "sha256": "aeb9857fc473d36176bc34f1107cb1cdcfd3d9d91c30a1c508b171b94bbd147e"
+    },
+    "docs/resources/evolution/1.0.2-distribution-context-execution-log.md": {
+      "mode": 33188,
+      "sha256": "bdefce47231859ea7942dc1cdb6ac8d962c118e430ebeaa865139ee06e7e3fcc"
+    },
+    "docs/resources/evolution/1.0.2-distribution-context-remediation-plan.md": {
+      "mode": 33188,
+      "sha256": "fe9d802a35a32a183b2fb1210d85b6dd7511688e5a3d7768bd0a9570bcfe2b0f"
+    },
+    "docs/resources/evolution/1.1-product-evolution-enhancement.md": {
+      "mode": 33188,
+      "sha256": "23aaec7f1cc1fa5a4486cd95cd4993726997b27410bda8a15d3856f146a10a91"
+    },
+    "docs/resources/evolution/v3-migration/README.md": {
+      "mode": 33188,
+      "sha256": "dc18fde32cb8e28dad540780fd0a0d57c670af01e85549c6b5280df60847b030"
+    },
+    "docs/resources/evolution/v3-migration/experiments.json": {
+      "mode": 33188,
+      "sha256": "6e097ac588bfd2ab916997c024ad3d1bc450dc280f98ed045cab96c91f780f01"
+    },
+    "docs/resources/evolution/v3-migration/imported-decisions/README.md": {
+      "mode": 33188,
+      "sha256": "91ff863e09d03a39461e986a41572c585dc77d5ed6a6562d1e03b0e5f0d88f7f"
+    },
+    "docs/resources/evolution/v3-migration/imported-decisions/architecture-amendment-impact.md": {
+      "mode": 33188,
+      "sha256": "ae8534f2622a8b2838a9b8fd68660ea1c024aa8f63898301ca1a2bb3c57b8af2"
+    },
+    "docs/resources/evolution/v3-migration/imported-decisions/naa-implementation-choices.md": {
+      "mode": 33188,
+      "sha256": "75c9a584fb5da86523517ce756cbc1dfcb51a6593e034b7d326dde83a1d1f3f3"
+    },
+    "docs/resources/evolution/v3-migration/imported-decisions/rolling-wave-planning.md": {
+      "mode": 33188,
+      "sha256": "1e969549cb4664f84f8eccd2c20bb15afe1d1052d9ffa86599b0baff44c65118"
+    },
+    "docs/resources/evolution/v3-migration/input-manifest.json": {
+      "mode": 33188,
+      "sha256": "f8dee8b8d1ae364ab8d0eeb7dfdc25894577958aa34e7767acedc3d5b911f11b"
+    },
+    "docs/resources/evolution/v3-migration/inputs/T3_Code_Sample.tar.gz": {
+      "mode": 33188,
+      "sha256": "559d6df3a58c1a43f5537047b58106e474a57d5e5d793e6da281fe0b5b07ce53"
+    },
+    "docs/resources/evolution/v3-migration/legacy-notes/here.now.md": {
+      "mode": 33188,
+      "sha256": "cbd5ec0b6b9ea10faf4b7309d63b488cc8e7734b60c7afa03437da4c3e5c167b"
+    },
+    "docs/resources/evolution/v3-migration/promoted-amendments.json": {
+      "mode": 33188,
+      "sha256": "c64ffe7a556611ecd5667a6d61bc58a508f1c12c3c3e8f32985b157792ff06d8"
+    },
+    "docs/resources/evolution/v3-migration/review-scope.md": {
+      "mode": 33188,
+      "sha256": "33df486e794fd8fb0b545c42eb0f9bf82ae4e9d9d102437b4ff26eb92241c7f1"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/authority-manifest.json": {
+      "mode": 33188,
+      "sha256": "2e64f5f683dc65e13f47fd4f04f4d00a4d5b6c0c24dc780de640f264d09fed2e"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/checkpoint-exception-approval.json": {
+      "mode": 33188,
+      "sha256": "37c9fa3d8d5ace42e6822b93a87bf4c54c6a35234f7f860c57146de703d15dd7"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/archive-and-amendment-check.log": {
+      "mode": 33188,
+      "sha256": "861ab03236fc9627b228e943b3a05831548efe87d52506cfc74b18e44e2af5f4"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/baseline-mode-check.log": {
+      "mode": 33188,
+      "sha256": "b5015b51cfe5e6a244ebdc8bb0414c1f408dd6ea4fbdc28851703352054bf252"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/board-next.log": {
+      "mode": 33188,
+      "sha256": "85ddf710bcaab9373886117225d7710d28a50dd7e72400f634953a832f6bdbf8"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/board-show.log": {
+      "mode": 33188,
+      "sha256": "5e6804febcd8ef1d9d091088e3b87edae88b8f3b7cd92d3d6e2220b8c49bdc62"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/board-tests.log": {
+      "mode": 33188,
+      "sha256": "84ca8cf5e9a3b4e8a45ee3d31de9244b3cd1bffa8aa1532fa88a7c45e314269e"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/board-validate.log": {
+      "mode": 33188,
+      "sha256": "ef086c66bf535dcc9dc78cd4a7c9bfdaf8334f48fb011092ee9b2b050bbe732d"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/checker.log": {
+      "mode": 33188,
+      "sha256": "67c4634ca72e862c18c777af8f0639c2fde48ca25b52996639c9a0657c39d7ab"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/complete.diff": {
+      "mode": 33188,
+      "sha256": "2773ee1483a3a9b6b359f051016102a37493afb419ed805d0128a7024912582c"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/counterexamples.log": {
+      "mode": 33188,
+      "sha256": "6e1b536c175b53f8b5c0dc886baee7668a90d03c879f38ec67d03e47094231f1"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/counterexamples.py": {
+      "mode": 33188,
+      "sha256": "3f6ababc0b1345091e6ef7463466c07b8d2c92a1592c56102fff92b80bf4ae4f"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/doctor.log": {
+      "mode": 33188,
+      "sha256": "e21a07c7a643bd8219a811083048d7ff668ddf43e77310a59d71878788a189d2"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/experiments.json": {
+      "mode": 33188,
+      "sha256": "a954413bff9ab160a7995b0338d3d205d879fb4460a72b94a5847beb912ffc10"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/experiments.log": {
+      "mode": 33188,
+      "sha256": "15546f8665f7cb491344ce970f2185dee23b360cb37d21a35aae51d364e4bab4"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/final-state.log": {
+      "mode": 33188,
+      "sha256": "65b9ea603b54326a16d94ab53997c7137c7123dd0639bc171efc0892fae7ab5f"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/full-suite.log": {
+      "mode": 33188,
+      "sha256": "7f3be7f25363ba8c8c4d0a32c2b4e6dee73f5094ac0e55f5b36468f852e32e00"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/history-check.log": {
+      "mode": 33188,
+      "sha256": "f4bf0f330af09d0b7f5144beb225e5c0a76853037b2c2d1d7d71ff7b9724c2a9"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/log-index.json": {
+      "mode": 33188,
+      "sha256": "76676579d0e2f7b9f58bbc0ec1e068598ef078eb62fc6399cee0160cf00710a1"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/migration-tests.log": {
+      "mode": 33188,
+      "sha256": "fdd469131443c4444071ffb76b28038ecdf830c6a15b37c0ab6c7cd77add56d0"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/orientation-results.json": {
+      "mode": 33188,
+      "sha256": "0bc4fa022118762a675bb8c11a377e0a65be285d2d43f6cbf422e0e8833a47f3"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/pins-and-git.log": {
+      "mode": 33188,
+      "sha256": "b5a47e799919cfe5eb781bb5a8beb511feccdcb478b4ea55de34717937f91ce8"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/preservation-ref-observations.json": {
+      "mode": 33188,
+      "sha256": "258ff45f859db1b053be7b6a58938ff25c83fa5b2a21fde10c0ee735dd05da77"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/preservation.log": {
+      "mode": 33188,
+      "sha256": "efe85d79d98c171252131324cf5352c162289948401b37690a41646c6f737a99"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/range-guard.log": {
+      "mode": 33188,
+      "sha256": "5a82267a473855a39e9e4c4c570b9ffb498376ae1b21f5ea58dcf5a2dfd4201e"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/remediation-board-tests.log": {
+      "mode": 33188,
+      "sha256": "2920c0f86d7a0ae60d5e399d68fb8b337d2e384ae65584ff638962a2235b8e83"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/remediation-experiments.json": {
+      "mode": 33188,
+      "sha256": "923fb3eab40b70afda4a97613a4311eb930b3d9652568840d910d3f287d4d0fe"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/remediation-experiments.log": {
+      "mode": 33188,
+      "sha256": "bf018e3eeb8ff83142daed334cabbfc126b24691920097897472ed1f84f27040"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/remediation-full-suite.log": {
+      "mode": 33188,
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/remediation-tests.log": {
+      "mode": 33188,
+      "sha256": "3d3b89d773e2e948cc6098e16074d9fb1c44919b32c2470a68bf9feaf4dc8f7b"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/signal-rollback.log": {
+      "mode": 33188,
+      "sha256": "285473e5aa96026c68f5c7374818037e93cac77133c46e0b2de95c22b1ad72c5"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/signal-rollback.py": {
+      "mode": 33188,
+      "sha256": "e7fcb20a6a3e6dcc2548c15c4313352f21192f6bcbd9abf05bb7e7387069ea2f"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/evidence/skill-check.log": {
+      "mode": 33188,
+      "sha256": "e5dc886cff39598b2f20f2dc6f3fe61e9ca2f012d2fb220cf3ed3ac856cbe04c"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/remediation-directive.md": {
+      "mode": 33188,
+      "sha256": "944f09c7f43b6f0f363a9726e9cda57fb3b46c202df00151a1a1e50fb243f3cc"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/remediation-results.json": {
+      "mode": 33188,
+      "sha256": "81fc7cd26b06ae3998894ba26b0e310e8ef7bc857132f6158fca43d95b5bc734"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/report.md": {
+      "mode": 33188,
+      "sha256": "bcfe59baf138da0c0c3b7569def69a4ec899cb0409ee52aaddf92b5c9c5e8f00"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/request.md": {
+      "mode": 33188,
+      "sha256": "2dffcc177d752541420521d69df136cb1ea140f56e4d529822976414de82137d"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/t3-checkpoint-observation.json": {
+      "mode": 33188,
+      "sha256": "45aa07772bb78eb7a2011b3f385983dc6975fe131d5516aef97a6b0576dd20f8"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/authority-manifest.json": {
+      "mode": 33188,
+      "sha256": "5ac972f7349aae7a831afb749d273e09d112f97c18c84e004f7888186e31b77d"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/base-rendering.log": {
+      "mode": 33188,
+      "sha256": "220e5bfe48e3798e2742ae7744d5a3d7b06bcadd476950a6cabed0fc682b47b9"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/base-rendering.py": {
+      "mode": 33188,
+      "sha256": "2f2e76c4093e7d3855fbc3fedf29f1fb1c8e374e813e6dcd2c31ad3923874e39"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/board-next.log": {
+      "mode": 33188,
+      "sha256": "63313408b9a1ceea2392c5c41206fea231d6603321b6e196b79b6f3dcd2d55da"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/board-show.log": {
+      "mode": 33188,
+      "sha256": "6386099276756663fba4d441fd7fcf95a432c0e3d84866ef782ee69f0f902fb6"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/board-tests.log": {
+      "mode": 33188,
+      "sha256": "2db4abe3d9a4e4e74f4b9b9a2b9edff71aa94ec6131bc4d2a813fd44a33a7bc0"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/board-validate.log": {
+      "mode": 33188,
+      "sha256": "59ecdcf0441550affb31de89598199b6a6d116e898bf58687c13616f5edc5a0d"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/checker.log": {
+      "mode": 33188,
+      "sha256": "ec1cd71ff42f33c5cc16c13b125e8f0ff26d80b17cfd895bb7106d6a031c0d29"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/counterexamples.log": {
+      "mode": 33188,
+      "sha256": "990d0be524fd0cdff0fe1bcd7a13c6200265414430c5a0a969733bba4651d395"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/counterexamples.py": {
+      "mode": 33188,
+      "sha256": "98eee90d9ae337e80e6d2605c6f0dd674151949d76ea334f60073e814856a03f"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/diff-check.log": {
+      "mode": 33188,
+      "sha256": "93a744905cd6a064a0fe69e35ec5718aa38728d718ba9127c81cefe1748db3b2"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/doctor.log": {
+      "mode": 33188,
+      "sha256": "f795f8929a8a591a08f6a33f570b6a5371c6874c2b1aa350aca3d56978f250de"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/experiments.json": {
+      "mode": 33188,
+      "sha256": "85205d045e3b50d66f6c84f6962bf38ed11dae12df944ac5960fd6da083969dc"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/experiments.log": {
+      "mode": 33188,
+      "sha256": "d9de2f1c716fe68a11929dbe2bfc5666977cf283a51c61514bedec3462566fff"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/final-preservation.log": {
+      "mode": 33188,
+      "sha256": "4be728bb413b6509a08a759ab69472b855228e2523b014082087382e9912abf4"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/final-state.log": {
+      "mode": 33188,
+      "sha256": "001328170c26c37837e8e02488009798b33efd2f7cc01e23571704bc86fc7d4f"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/full-suite.log": {
+      "mode": 33188,
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/history-archive-check.log": {
+      "mode": 33188,
+      "sha256": "fa62396bad9d255acaf592bfd70de043d9700c8cd5f2d52c17984b0ba1f2802d"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/migration-tests.log": {
+      "mode": 33188,
+      "sha256": "bcae196739c03547ed3f435ee402d61ad47db8d78cd2f2a7016cdb6cb46a2206"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/orientation.json": {
+      "mode": 33188,
+      "sha256": "fe96d7d5e811b6bd7661e2c17be7293c6e0fe7e860f20245454d66a7a61aca66"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/preservation.log": {
+      "mode": 33188,
+      "sha256": "4be728bb413b6509a08a759ab69472b855228e2523b014082087382e9912abf4"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/range-guard.log": {
+      "mode": 33188,
+      "sha256": "fc77b9e1c2513353330f26536026eef177dc74923b605061801c3393e31b5086"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/ref-counterexamples.log": {
+      "mode": 33188,
+      "sha256": "cf5405cb06e53e39188e30d5aa6846885964db3c0d7cf7e2824edcb01fb01fec"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/ref-counterexamples.py": {
+      "mode": 33188,
+      "sha256": "62c2b757066138eacbd5e4ee41e8fe5fad035fafde4e38a03d4f3c8940627230"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/remediation-board-tests.log": {
+      "mode": 33188,
+      "sha256": "1420870a063358b4a81f972b2b6076ce72c8fe141c6728c8d7857820142dac27"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/remediation-experiments.json": {
+      "mode": 33188,
+      "sha256": "8dc8f16b928c119d399d3ce51f4c4b450b1e8c105dd91903d1e09da8c3164abe"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/remediation-experiments.log": {
+      "mode": 33188,
+      "sha256": "ed1c2f5d153e6865da01cfdadd511aecd9a1dbea301b52475dadb4f1d62fe066"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/remediation-full-suite.log": {
+      "mode": 33188,
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/remediation-tests-final.log": {
+      "mode": 33188,
+      "sha256": "65afc3910f51e9f9f89b9d6a1387e917bd76b5390ae90a09f1aebf649b74b838"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/signal-rollback-initial-invalid-harness.log": {
+      "mode": 33188,
+      "sha256": "f33d48245e0d13fd84d3bd9be1b3f206e22af8a801437ed1b42c1ad6dd698303"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/signal-rollback.log": {
+      "mode": 33188,
+      "sha256": "610992b996e4da605ad92610bdbe83de504a2e7ea42932fe5551923642f9f02c"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/signal-rollback.py": {
+      "mode": 33188,
+      "sha256": "2c1d286893900452725dc447e277512d6bed967255b13d142c3f2b1c81001eb7"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/skill-amendment-check.log": {
+      "mode": 33188,
+      "sha256": "ab0a2a9fd6f9b98c6a2d898c77a0741b3dbb09b7d3bc60bab2c11cb51cd5a26c"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/staged-guard.log": {
+      "mode": 33188,
+      "sha256": "ec1cd71ff42f33c5cc16c13b125e8f0ff26d80b17cfd895bb7106d6a031c0d29"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/evidence/start.json": {
+      "mode": 33188,
+      "sha256": "2018fe282ae05b62b80b4e4415ef1585c0c2a7b8051f375a7fb57736af172aa8"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/remediation-directive.md": {
+      "mode": 33188,
+      "sha256": "d22c012d033906c7398bdcf873bc514e05246ce97d3f3e314e527ccc78fbe96d"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/remediation-results.json": {
+      "mode": 33188,
+      "sha256": "50b35bd82b9660cc5baa0e233bcf40f29c0487bed0501778cd7741cbcdfda190"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/report.md": {
+      "mode": 33188,
+      "sha256": "33a4c77231255ae37a679a4cb0a3163541d91cdad33b2ac7750258287db638bb"
+    },
+    "docs/resources/evolution/v3-migration/review/round-2/request.md": {
+      "mode": 33188,
+      "sha256": "898569a10c47f7ec4d6c51177aa6732c77803fdca4b718b3c5d178e115e58678"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/authority-manifest.json": {
+      "mode": 33188,
+      "sha256": "4bbe6c356ebfbdeb72f0bfa08dafa560a8c05995c787b84dbd1d7f5c7e10fc52"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/disposition-summary.json": {
+      "mode": 33188,
+      "sha256": "12d90242e123b3be5279ae068fe5121a651fd820171cde941c3b16d9d4024961"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/board-next.log": {
+      "mode": 33188,
+      "sha256": "d75487f7b4b86e96ff3ec30ba7a2d96886a0a89e69a9acdf487af05a663a4d4c"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/board-show.log": {
+      "mode": 33188,
+      "sha256": "46faa7f3c448c8479cf2a2c74ec6abc848dafd5da9c6b2e3d56ac8578731986a"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/board-tests.log": {
+      "mode": 33188,
+      "sha256": "c6e249c8aafdde6244afa52c2d22944f11e221c2956d912132297f22cc311e95"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/board-validate.log": {
+      "mode": 33188,
+      "sha256": "59ecdcf0441550affb31de89598199b6a6d116e898bf58687c13616f5edc5a0d"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/changed-paths.log": {
+      "mode": 33188,
+      "sha256": "818566bc1ff6f10e8d75b8a446d436dc59984c16e1ffe08048dd2e928fd2e311"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/checker.log": {
+      "mode": 33188,
+      "sha256": "ec1cd71ff42f33c5cc16c13b125e8f0ff26d80b17cfd895bb7106d6a031c0d29"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/counterexamples.log": {
+      "mode": 33188,
+      "sha256": "1f18bfdb9de4830183f19ac845be059ffd7f1632efb9a008b529d0179ffab582"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/counterexamples.py": {
+      "mode": 33188,
+      "sha256": "88296dc5e23328ae0436400c44b861050b9bcb64e1e50c0a0538edcaf61c7e9d"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/diff-check.log": {
+      "mode": 33188,
+      "sha256": "e96bb09b5be465c4801c0b2213317de55b890d39d63e104842ca2e7a90aa0e29"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/doctor.log": {
+      "mode": 33188,
+      "sha256": "5856ef3069535d67110a448c9c646b6affbb81f9d61daa1b7685af3af5742fa4"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/documented-board-command.log": {
+      "mode": 33188,
+      "sha256": "59ecdcf0441550affb31de89598199b6a6d116e898bf58687c13616f5edc5a0d"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/dryrun-counterexample.log": {
+      "mode": 33188,
+      "sha256": "c7e945234f28d7976b0dbc3d8789bdbe158773dd33039ad6c8093acc7cff287b"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/dryrun-counterexample.py": {
+      "mode": 33188,
+      "sha256": "dd5426a49e3de4e2deeab4861ddf047a8935a0d91d88be19ced4ae4de3b50d65"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/dryrun-installed-counterexample.log": {
+      "mode": 33188,
+      "sha256": "f2ce28cce0a5bd100394b62bf5875dc90b18eecc881ba3747ac8b3cd6419a6fb"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/dryrun-installed-counterexample.py": {
+      "mode": 33188,
+      "sha256": "4b1ee398d29eb24de45f27b07ee515acf4dc46c975f0d6ce058859abd64fc49c"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/experiments.json": {
+      "mode": 33188,
+      "sha256": "799632eb6aee8fb0bb2c4cf89c7c8facf39ee47914f7234ff13cd2c31e980d72"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/experiments.log": {
+      "mode": 33188,
+      "sha256": "69ba5af6939543c820fe574117b73f3e4c5fecf441250917c35ebc0d11be8534"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/final-preservation.log": {
+      "mode": 33188,
+      "sha256": "4be728bb413b6509a08a759ab69472b855228e2523b014082087382e9912abf4"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/final-state.log": {
+      "mode": 33188,
+      "sha256": "aafabefd7aebd760ec0d9b4b8183bba4b49cb17293371fea2d29bd412f1eca05"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/fsck.log": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/full-suite.log": {
+      "mode": 33188,
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/history-archive-skills.log": {
+      "mode": 33188,
+      "sha256": "6f4da0b59acd89687a637386aaf988b8139dfc4541a58d60dc854f442c13ae62"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/migration-tests.log": {
+      "mode": 33188,
+      "sha256": "a8bb1106e5ae512f5cc97551b40d82fdecf90935ab84a3dd89f0fe0c1bba03ed"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/preservation.log": {
+      "mode": 33188,
+      "sha256": "4be728bb413b6509a08a759ab69472b855228e2523b014082087382e9912abf4"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/range-guard.log": {
+      "mode": 33188,
+      "sha256": "4f36b6005fdd1e3ae878942647e32c02336cbaa05accd9e87c6f3f47d70664cf"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/evidence/staged-guard.log": {
+      "mode": 33188,
+      "sha256": "ec1cd71ff42f33c5cc16c13b125e8f0ff26d80b17cfd895bb7106d6a031c0d29"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/human-disposition.md": {
+      "mode": 33188,
+      "sha256": "8940e2cc64fdafcd660fb71e93398f6d04f2a6465c8909c5ce6e36518c388ecf"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/remediation-directive.md": {
+      "mode": 33188,
+      "sha256": "ccc6142faacb205515ee689a0fa8d33af35a55ddf49754e34b5abe7aaf9c9553"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/remediation-evidence/builder-documented-recipe.log": {
+      "mode": 33188,
+      "sha256": "fb76289e25f6a96c1802d1cce3225342500c6a4769a98f17b065f94c6f5562a8"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/remediation-evidence/builder-experiments.json": {
+      "mode": 33188,
+      "sha256": "1bba7aa7752c630011f75da8713b83b019ec35d387e29c16b5f7b78a949c9bd5"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/remediation-evidence/builder-experiments.log": {
+      "mode": 33188,
+      "sha256": "45a6fb2132a65da160a8b9bbbeecf460dd723a65cbd01ef283d4813440f7baca"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/remediation-evidence/builder-inherited.log": {
+      "mode": 33188,
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/remediation-evidence/builder-migration.log": {
+      "mode": 33188,
+      "sha256": "04ec1179ccd3e63e9d0748bbdccd69381cfd3a09b50d138e980739192cb4d1ec"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/remediation-results.json": {
+      "mode": 33188,
+      "sha256": "8936e123a6b49a785df7b871e1bacede0b2a55d02643b4a13b5e8f11cd5c9f1b"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/report.md": {
+      "mode": 33188,
+      "sha256": "3411879fa029a477a376e63fe57df2976d25a61adda0ae79f6a7014dbd863348"
+    },
+    "docs/resources/evolution/v3-migration/review/round-3/request.md": {
+      "mode": 33188,
+      "sha256": "fcd2932514567cc9313dfacfb63f2bd2aec5462c6e0a3450ab8c888b4cef39bb"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/authority-manifest.json": {
+      "mode": 33188,
+      "sha256": "4a45b094d48ef6495a743297d0e4d3106c39ba29f4500ecb76200e01e7f02c0e"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/disposition-summary.json": {
+      "mode": 33188,
+      "sha256": "ff27c8d3c596b29fca7cf742fdd42eaa80e6a05085ffead73580d9cae9c05ee6"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/authority-check.json": {
+      "mode": 33188,
+      "sha256": "c107e304ed6f97d2731693e8673653e68ebd6147268ca4b2cee905b906a67152"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline-and-diff.initial.log": {
+      "mode": 33188,
+      "sha256": "2584ded475f4eb2206b988dacb3b26805c707da0faa28b15ce50f332e8312055"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline-and-diff.initial.result.json": {
+      "mode": 33188,
+      "sha256": "482ad6cae29e5638b8fb56fc9b0e8a27fc011ed80293ab8f9769e6c5a89e0565"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline-and-diff.json": {
+      "mode": 33188,
+      "sha256": "93841f8a1fed8f49a7045b915905e1056d211d76678a2a2797abc0bace489405"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline-and-diff.log": {
+      "mode": 33188,
+      "sha256": "8714a92f6180c323f9f009201137b84a23995baa1bca4cf3391c9ade5e23565f"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline-and-diff.result.json": {
+      "mode": 33188,
+      "sha256": "b6e3b891c35f8762a8180baad764258fbaf581efb25e6e82e7229a4bef56bb90"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline_and_diff.initial.py": {
+      "mode": 33188,
+      "sha256": "52393341dea7340bc389b23c9b6fb67f8c087e892907438489209df8698f1c07"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/baseline_and_diff.py": {
+      "mode": 33188,
+      "sha256": "751cf404c606c600c3aa17b4ed5442f240b27ad48d490b5d307d7bfd0984ff6e"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/board-next.log": {
+      "mode": 33188,
+      "sha256": "8b48a3dd57f1a277e1768493b42cfd23cc44c9849eb505c3b7bdfadb7de39765"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/board-next.result.json": {
+      "mode": 33188,
+      "sha256": "4e79fcf8bd0e3253075410d11238157f1c14ab96e1c9c0d283cb6f7f74337a28"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/board-show.log": {
+      "mode": 33188,
+      "sha256": "4cd259424a3fb1c0dd244385d947e519a01123eea083f60c1714a524c39f8c3f"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/board-show.result.json": {
+      "mode": 33188,
+      "sha256": "8a4c0f7225b6b1e63e6ea9632831408f2d1d8a4c282d486674a160ab3e4cd008"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/board-tests.log": {
+      "mode": 33188,
+      "sha256": "ef94f02cd3a23589a6ba6215d6226a18580c24dc2d2ab2d88fe38b539449d9da"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/board-tests.result.json": {
+      "mode": 33188,
+      "sha256": "4914418d406ae0620259e3695860e042fcd86dbcd0125abada6c600858921905"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/board-validate.log": {
+      "mode": 33188,
+      "sha256": "d63cf150427b6b213bbbc556b417854df81c905757a5ac96e0ba60b5e70461b0"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/board-validate.result.json": {
+      "mode": 33188,
+      "sha256": "f4f5f341c63ab8cedc9013c844320049f52941a609a21f4e0cab8e2c778b4914"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/candidate.diff": {
+      "mode": 33188,
+      "sha256": "6d757db319d791b5f7f3822dc4877405f07a1324653ae7c9af54c22906a87f2f"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/checker.log": {
+      "mode": 33188,
+      "sha256": "a3539ae91807c9fc17a8045e2d959ba23fc8586be0f19160c2e399bcf1b262df"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/checker.result.json": {
+      "mode": 33188,
+      "sha256": "8beba3416dd49ea1f4dc81c1906c897a188a330ed0a721146c9d7d2e17f80f0c"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/counterexamples-commands.json": {
+      "mode": 33188,
+      "sha256": "1daa6b38b3aa962c8c3b9aaefb161c79f7e89cd1d8e1c391842e6148c9345e7e"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/counterexamples.log": {
+      "mode": 33188,
+      "sha256": "9c403d89a19e48c0582a9c6c04121adbd545c44a1e278b99762c2aaddd453f6f"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/counterexamples.py": {
+      "mode": 33188,
+      "sha256": "a74b0ab8278de455bc1e3483e58fb3df102fff78da59a47b1f960a14ba4103fe"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/counterexamples.result.json": {
+      "mode": 33188,
+      "sha256": "3579b2c30fb089e0d285e1d70cfe7c61500f8056f07621144c518b21fe9bd603"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/doctor.log": {
+      "mode": 33188,
+      "sha256": "eb57bce3aee7fa34ac4da97e7ab56643f852fcbe6a13f6af51006fc36300a960"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/doctor.result.json": {
+      "mode": 33188,
+      "sha256": "4a081b4d50075678a1067592740033d9175d4078871fd67e925c3210c079dad5"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/documented-standalone-command.json": {
+      "mode": 33188,
+      "sha256": "303d79b0c32951c8fbb87853ddcd5904f7daac5dcab7b9cc67a086df2c77ef11"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/evidence-index.json": {
+      "mode": 33188,
+      "sha256": "aba86ecbd8ec9e4a95cd65a4a216537b98adaa59d1e1e09a2c76d8ca59931473"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/experiments.json": {
+      "mode": 33188,
+      "sha256": "58d970d478eef105ed59e2dc0573a35e80fcc7ef9f603acb910670a2b888dec1"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/experiments.log": {
+      "mode": 33188,
+      "sha256": "6c0779b50e33aaba4c6b6b298c862ab8f58b4268fd50bf3fc693444b8fb864c7"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/experiments.result.json": {
+      "mode": 33188,
+      "sha256": "b70236e51f25e0a4ec10349da190f3606bab7efa7d0f9092e51f92fd5b1834ab"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/external-private-skill.md": {
+      "mode": 33188,
+      "sha256": "ceb73ecacb031329ce4d5f37effa32b58aceeab9ad09d085b35048c4b5327b83"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/final-preservation.log": {
+      "mode": 33188,
+      "sha256": "4b0be5dc8faaec75e436e76a72311d542538d58688381b085e09d8356607ea7c"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/final-preservation.result.json": {
+      "mode": 33188,
+      "sha256": "543717749b3d917eb3ecc34e7bc6a05063c558bb56517e5835cddb63bb20a652"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/final-state.json": {
+      "mode": 33188,
+      "sha256": "b086c7d647f6b318c3355529d45ef9d0ef5b42d34cd0ab2e3cf5fe91b4885811"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/fsck.log": {
+      "mode": 33188,
+      "sha256": "6dff99a740b67a70382c9b0958eeb614ccffeeb570ff7ef57a6b26c58b0469dc"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/fsck.result.json": {
+      "mode": 33188,
+      "sha256": "78972448ec9598c3b840151fa28dad572d01f33c155ada18f5432bc24df58b28"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/full-suite.log": {
+      "mode": 33188,
+      "sha256": "64fb47285960c9ec94049dc4e194ddae034719df1701ffc62662658e13dc4c66"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/full-suite.result.json": {
+      "mode": 33188,
+      "sha256": "51b2983f0b037e7252d16014fe689e9fd57723dea91e3ad8712d7f06af70e79f"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/history-checks.log": {
+      "mode": 33188,
+      "sha256": "179172fe8dc9b79306ec6295a33a88c2a90811b0a04bd2877d037f0cd72d63e9"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/history-checks.result.json": {
+      "mode": 33188,
+      "sha256": "d870d51f157f51ec8ef1f1a40589290cd04803df29b5c97a55811def2e17c731"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/history-observations.json": {
+      "mode": 33188,
+      "sha256": "f6cb3c0cf1305c622cf24a0abb8be2c70475c5733c2cca37421beb8690225abc"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/history_checks.py": {
+      "mode": 33188,
+      "sha256": "6f6d486d184bd8278be980c0c6d9f06b34e0f31828f8f04ee587149587084a30"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/initial-state.json": {
+      "mode": 33188,
+      "sha256": "4a5178c2df401e26bf37ecefe0dda69b9e683942f9ceb2e656878d9dd9705271"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/migration-tests.log": {
+      "mode": 33188,
+      "sha256": "3ef852e607068c55c1a9db6f7c326ead3f1fa51992086691c10e259643c31cb9"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/migration-tests.result.json": {
+      "mode": 33188,
+      "sha256": "06e5d5a204fa9599121bdb44e29a790dbe38fce5b3c1547ea7bea5c688dd7d02"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/preservation.log": {
+      "mode": 33188,
+      "sha256": "4b0be5dc8faaec75e436e76a72311d542538d58688381b085e09d8356607ea7c"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/preservation.result.json": {
+      "mode": 33188,
+      "sha256": "f52563c82a6ec091650233d0c2eb945d4867a8d7c0313abe56f37f5944003764"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/range-guard.log": {
+      "mode": 33188,
+      "sha256": "d3561f5b468669b7b988234a4766bc973fc59fe07521d66afbf3c47649141ce1"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/range-guard.result.json": {
+      "mode": 33188,
+      "sha256": "baffe185f5e97f3984d687f447345b212092ed4b26480b3e2108f4836132a253"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/report.md": {
+      "mode": 33188,
+      "sha256": "c74fd1802f3b6f119a1c058a502d5692d94f3c032781a6f78bc49173ecd795a8"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/run.py": {
+      "mode": 33188,
+      "sha256": "2d986568869f78299ae8229d5c9277e2cace6c5484dd03e315911eac084fe928"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/signal_probe.py": {
+      "mode": 33188,
+      "sha256": "f3960389d118b4a545a166e3663d213c9ead16ad8559a28e178893f11f5f36a7"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/staged-guard.log": {
+      "mode": 33188,
+      "sha256": "04460363d066fca5fc9635f14e01624ec5477c4f9b1545afc3344e998a750e05"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/staged-guard.result.json": {
+      "mode": 33188,
+      "sha256": "35f297fdd86b1d28981665c8978c129daeea802ec5f3529251d6e8327a4298c7"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/evidence/uv-7149d5f02fed1797.lock": {
+      "mode": 33188,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/human-disposition.md": {
+      "mode": 33188,
+      "sha256": "c4ecefb123484ef4e427a4fc3055cd77e12d4fd6bf7e82a4b8b2b37e05e8d662"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/remediation-directive.md": {
+      "mode": 33188,
+      "sha256": "7f353b851e6a421e0658a17d7dbb38674490eb90167dddff486255c3570432ae"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/remediation-evidence/builder-board.log": {
+      "mode": 33188,
+      "sha256": "0b9fef00621782d3c2872733a495c7bcd6e4edb830ea3dd387136924372f43a5"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/remediation-evidence/builder-experiments.json": {
+      "mode": 33188,
+      "sha256": "8c665362d1ef4e66ef13a36057ad465c0217c662a268cf5c216be3e730ecf933"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/remediation-evidence/builder-experiments.log": {
+      "mode": 33188,
+      "sha256": "6d118167fe9e295d809251222c486d86f9434cd00cf9487fc0e123c5f94e7113"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/remediation-evidence/builder-inherited.log": {
+      "mode": 33188,
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/remediation-evidence/builder-migration.log": {
+      "mode": 33188,
+      "sha256": "cb0ee32b8ab88d96c1e7d9f38f17e531c3d6dcd51b8ae803374aca653d017648"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/remediation-results.json": {
+      "mode": 33188,
+      "sha256": "b58f52e602cd5ac582f6a4463061c65fc06cf1e3cbb65c69b75374e4b64268b0"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/report.md": {
+      "mode": 33188,
+      "sha256": "c74fd1802f3b6f119a1c058a502d5692d94f3c032781a6f78bc49173ecd795a8"
+    },
+    "docs/resources/evolution/v3-migration/review/round-4/request.md": {
+      "mode": 33188,
+      "sha256": "7d630013efd257680d627aac80fa121b713adf9ebc3508a316af55965bc874f3"
+    },
+    "docs/resources/evolution/v3-migration/v2-copy-tests.log": {
+      "mode": 33188,
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65"
+    },
+    "docs/resources/evolution/v3-migration/validation-results.md": {
+      "mode": 33188,
+      "sha256": "56e373a0fb2662149efbf5264727c865d36530147583a900cf026a23980a2fb0"
+    },
+    "docs/resources/evolution/v3-migration/validation-summary.json": {
+      "mode": 33188,
+      "sha256": "60bea3060b7ed6bcc7536fa0f28e6585f9e4be2da6212d239faf80cb1da68bba"
+    },
+    "docs/resources/evolution/v3-migration/validation/board-tests-final.log": {
+      "mode": 33188,
+      "sha256": "6dbcc0307816303b922ce25d2325d691a3f7e8b0c8345e8c8dd1ed5e63969c97"
+    },
+    "docs/resources/evolution/v3-migration/validation/experiments-final.log": {
+      "mode": 33188,
+      "sha256": "376c25f99e18d4f03e9628e00edc8a7702133c62f2a0efe16de22922726d6897"
+    },
+    "docs/resources/evolution/v3-migration/validation/experiments-first.log": {
+      "mode": 33188,
+      "sha256": "bf384bbceed16baeb04fc7ba1905a48f1e5c9c22d5d5e9e8630c34c88ce05d04"
+    },
+    "docs/resources/evolution/v3-migration/validation/toolkit-tests-final.log": {
+      "mode": 33188,
+      "sha256": "8a8b8db50d88e0cfaa71b25e8e9a9dd946dc083623884a030f003b5c95f80805"
+    },
+    "docs/resources/evolution/v3-migration/validation/toolkit-tests-first.log": {
+      "mode": 33188,
+      "sha256": "684453e4617861dc6fcde71ceeb3cb42f22ba9aa23299f1bc7be0c537f8512a2"
+    },
+    "docs/resources/evolution/v3-migration/validation/v3-full-tests-final.log": {
+      "mode": 33188,
+      "sha256": "7d62f26db50d36ae21c5da75678ac4de6567ab829e93962180d79033faeb4a65"
+    },
+    "docs/resources/examples/README.md": {
+      "mode": 33188,
+      "sha256": "e6e1f3d59492d2cad76e50b261b51f19d768c577cd21b55246f8e7e27099b48d"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/README.md": {
+      "mode": 33188,
+      "sha256": "e0b35c1a75c07a0a176b669d81a9cc713dae21fc3491f609ab9988c64106c383"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/approvals/gate-log.md": {
+      "mode": 33188,
+      "sha256": "d9ab89be699c2bf2eedda7662aa3016930f07ac2e5f9815d510c261c74af636c"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/as-built/as-built-closeout.md": {
+      "mode": 33188,
+      "sha256": "891e809b9d6b7b111bb1972322f18d2963c571cbb7e6346ad5fd5cce9b62073d"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/as-built/deployment-record.md": {
+      "mode": 33188,
+      "sha256": "31845737a0bc774431f26490f15b6e70fba648faf62d583cf57491d51769cd72"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/build-plan/phase-plan.md": {
+      "mode": 33188,
+      "sha256": "6f6fe663d40dc11b9c2ad8f5c5c43385fdc9ca48df15463aa4ff0a26380f379b"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/build-plan/phases/phase-1-build-plan.md": {
+      "mode": 33188,
+      "sha256": "13ae7ee94adbf0fca44230e7874ff1f5d9d3f69f74dcd8c50bfa9845084f62a3"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/build-plan/phases/phase-1-build-prompt.md": {
+      "mode": 33188,
+      "sha256": "be35bd3933685609b4ffd77421c38c5c708d452c72d2dd0b9053a39632dc6663"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/build-plan/phases/phase-1-construction-directive.md": {
+      "mode": 33188,
+      "sha256": "f522c9a264d32921636f17625cc65606bc8451d910a7e3ef77b2174edc387fa0"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/build-plan/phases/phase-1-tactical-plan.md": {
+      "mode": 33188,
+      "sha256": "05f545ad3340c8227e531ca53c2b4ac95aba2a6afef3fa48279fa3f8bfdb15ce"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/evidence/implementation-evidence.md": {
+      "mode": 33188,
+      "sha256": "f90a0e1796e43be2972b8c1d8cf6654965222eb9b8609d9ed82dcb2e183c3610"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/example.json": {
+      "mode": 33188,
+      "sha256": "0b98a03dfbeb4b72103f90154be18c1abfbbb01025a763b6a4a893af22df78c6"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/fixtures/expected.csv": {
+      "mode": 33188,
+      "sha256": "20f900ae1ed29df74ee0e0810b5fe7531c6ed7b37b7192aa277201eb7bb221fa"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/fixtures/input.csv": {
+      "mode": 33188,
+      "sha256": "5835554097a18f7e19337df72978e374afb4e52e6f936ff39d6fe231b4c088d0"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/framing.md": {
+      "mode": 33188,
+      "sha256": "c4f259a61783c1bfdacbe4e8589159412dbdd022c92ec02a13f4bb6d55ca931b"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/project.yaml": {
+      "mode": 33188,
+      "sha256": "2ebfad71765352bd1f9b1d477b7e3d98a84b9e9ebb47244ed5b5a6d86438b522"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/review/code-review.md": {
+      "mode": 33188,
+      "sha256": "39c2ebe57f7f96a4521367af6d52521f847fc8188d97abda77f93a8ae1e69736"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/review/remediation.md": {
+      "mode": 33188,
+      "sha256": "21d9dde4710b046aa20dab51f627d22bd2d4378f844ae9739bbf62eb58b7109d"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/src/csv_cleanup.py": {
+      "mode": 33261,
+      "sha256": "6ef2905e7ea3b330a68331bf45686049b17afe57798aa387a9a3596741c4c597"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/testing/phase-1-test-uat-plan.md": {
+      "mode": 33188,
+      "sha256": "c82a735acc9ea1800c044f355fc6582ea1d65e37e63e28c75ce69a3454972b98"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/tests/run.sh": {
+      "mode": 33261,
+      "sha256": "e325af064bc5a6afba25b67925eae5b819a421124b9b400e4d6f7caf6cfb2b1d"
+    },
+    "docs/resources/examples/current/c1-csv-cleanup/traceability/traceability-matrix.md": {
+      "mode": 33188,
+      "sha256": "bb12e4ede1d60f4a053d75c756420d8c659b0597a32a4effa09e1024bcbfcd72"
+    },
+    "docs/resources/examples/current/c2-standard-planning/README.md": {
+      "mode": 33188,
+      "sha256": "22e15df51bd8deaa8e5946457d0674cde4610c7a9f8949382d868d9f1da5eca6"
+    },
+    "docs/resources/examples/current/c2-standard-planning/approvals/gate-log.md": {
+      "mode": 33188,
+      "sha256": "7b8f5263f9c5b4b94aa1bedc0c8911b462a04a8151803dc7020f3e4521e4d93f"
+    },
+    "docs/resources/examples/current/c2-standard-planning/architecture/architecture.md": {
+      "mode": 33188,
+      "sha256": "9bb1b7395ead0e284ca58d9af3424db312d5ac062f7563ac65f1c2d0a6a7f5ef"
+    },
+    "docs/resources/examples/current/c2-standard-planning/build-plan/phase-plan.md": {
+      "mode": 33188,
+      "sha256": "57cc6b70e9faf23bec0025ad21d45f5d64c5527f59a10d4b18b2d875989753c6"
+    },
+    "docs/resources/examples/current/c2-standard-planning/build-plan/phases/phase-1-build-plan.md": {
+      "mode": 33188,
+      "sha256": "135cf49ac0562e3cd648b044df11770568d1340e77e5950d9e4a3a9fc0ea2ee4"
+    },
+    "docs/resources/examples/current/c2-standard-planning/build-plan/phases/phase-1-construction-directive.md": {
+      "mode": 33188,
+      "sha256": "c9ce62fd0b8e532763cfc2119e65080d2310ae70c609d21cc2fa549765444b26"
+    },
+    "docs/resources/examples/current/c2-standard-planning/build-plan/phases/phase-1-tactical-plan.md": {
+      "mode": 33188,
+      "sha256": "f24bc3e1f5620e6454e9e2a52c0817636f5b7b24135569a8132f137a17248775"
+    },
+    "docs/resources/examples/current/c2-standard-planning/example.json": {
+      "mode": 33188,
+      "sha256": "998f928125a123de6fb14852c71a1d0f50bec14633e25ae460348e97d9b9cff1"
+    },
+    "docs/resources/examples/current/c2-standard-planning/prd/prd.md": {
+      "mode": 33188,
+      "sha256": "e635d0f76153c6e614a5fed3e43f7864bc099fe43d0126eacc4ed14113381eb5"
+    },
+    "docs/resources/examples/current/c2-standard-planning/project.yaml": {
+      "mode": 33188,
+      "sha256": "11f3f51b1c18d2efc78ca79dafa6130ff131a8ac7f6f53cdf9bf6440b8c87f33"
+    },
+    "docs/resources/examples/current/c2-standard-planning/security-governance/governance-security-spec.md": {
+      "mode": 33188,
+      "sha256": "292b88068ef1d10ddf215caf5a8e06e550eb2ddfd9ac6687d7f614d7f757165a"
+    },
+    "docs/resources/examples/current/c2-standard-planning/traceability/traceability-matrix.md": {
+      "mode": 33188,
+      "sha256": "4a790a31ca3022acf646b7acfe2e8beb164c304d9c2be95a796fef80e7a8f860"
+    },
+    "docs/resources/examples/current/c2-standard-planning/vision/vision.md": {
+      "mode": 33188,
+      "sha256": "a745054b8afdf569f03429bba669092c31439da9953a03dad3e63dc0a5b60a85"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/README.md": {
+      "mode": 33188,
+      "sha256": "91f05235c7e8b6e15cdb11ea098a7d239a2ff72aeec1d374688f9af7dc735aa4"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/gendev-lite-contained-tool/README.md": {
+      "mode": 33188,
+      "sha256": "57a4ae344b568f8fdc55bb0630f0af4adb42242d93d7f610cd3b0539ef57b86a"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/README.md": {
+      "mode": 33188,
+      "sha256": "a32675c418324fcd601bfe25244abfa7ec7718fc402fc8d599cdc46565d964a5"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/architecture.md": {
+      "mode": 33188,
+      "sha256": "790788e07a7a776e63e3e0ba39c0741925c897404e5cd989cd1c8269094aa8fa"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/as-built-closeout.md": {
+      "mode": 33188,
+      "sha256": "5b29a674ba8ed1272a551ebbb1169cc11e9ad792065f00b85055e5be69b5eb27"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/governance-security.md": {
+      "mode": 33188,
+      "sha256": "f71ef40a07eecece0439582dd7c1b6f5b893c04cdbd46d22865efd0a5571f381"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/phase-1-build-plan.md": {
+      "mode": 33188,
+      "sha256": "0aeede194f9a211b651761b3d6bcaccef831f2074305d4f1d057f0fc87301788"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/phase-1-code-review.md": {
+      "mode": 33188,
+      "sha256": "dffec0f0d546df915a7e84fac709cfb4197fe52df5830afe507393ee7f96a741"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/phase-1-construction-directive.md": {
+      "mode": 33188,
+      "sha256": "5829e3202462b6ea42db95af47e87aa0830e07289edcc720ba6494d8a08a9099"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/phase-1-tactical-plan.md": {
+      "mode": 33188,
+      "sha256": "85142a4cbf03ecc6322f99391458f36e5c9c4111e3cbdaa9731cf955c8b6528b"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/prd.md": {
+      "mode": 33188,
+      "sha256": "8c7ef6d622ca6c97998143ca626909977532c4058e30e15618a20f1c0af17d2e"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/traceability.md": {
+      "mode": 33188,
+      "sha256": "3454970178a7cbf826e440bbff022a55c1fe11bd3fb176b90822760e802b5276"
+    },
+    "docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/vision.md": {
+      "mode": 33188,
+      "sha256": "56c8df6997cf9c47d7a9173d938e6d481aa94e6389e086f063f506621b414961"
+    },
+    "docs/resources/marketing assets/Benecard-Agentic-Development-Readiness-Questionnaire.docx": {
+      "mode": 33188,
+      "sha256": "1411508048ac5ae732eab56fdf3aea873470737f58ca2e0fbee1c654de04292e"
+    },
+    "docs/resources/marketing assets/Is-Your-Team-Ready-for-Agentic-AI-Development.docx": {
+      "mode": 33188,
+      "sha256": "ea778692a38cefb23c18dc6a5a4a839d5bcbdc64ee93ba11936b305739ecd03d"
+    },
+    "docs/resources/practitioner-guide-html/README.md": {
+      "mode": 33188,
+      "sha256": "206c6c154253f1159988bdcea60547e7ec5c13ecfc08f0392ac220ad7606a136"
+    },
+    "docs/resources/practitioner-guide-html/THIRD_PARTY_NOTICES.md": {
+      "mode": 33188,
+      "sha256": "ad942b44f280cac35e5ee16ba9c7ae1c75eb15c87620bc594c8fbb36b81ad7cb"
+    },
+    "docs/resources/practitioner-guide-html/assets/app.js": {
+      "mode": 33188,
+      "sha256": "fb1f37e8c95fa33309d03383d04b67dcd5cc58ff813c27b1cfe5355279bea37e"
+    },
+    "docs/resources/practitioner-guide-html/assets/favicon.svg": {
+      "mode": 33188,
+      "sha256": "779ef2caba1f70a051328c4f99e4cf5532e2a69590d91581f748b9221ae946be"
+    },
+    "docs/resources/practitioner-guide-html/assets/styles.css": {
+      "mode": 33188,
+      "sha256": "176f5eac21ab1ad93269d5abb4406997d508268e2a798fc01cb48305021e62c1"
+    },
+    "docs/resources/practitioner-guide-html/content/01-orientation.md": {
+      "mode": 33188,
+      "sha256": "6b3ab9ea010f6ce36e1745be63f61f118fb053b2b1894e7c0049bfdeb19db1f0"
+    },
+    "docs/resources/practitioner-guide-html/content/02-core-mental-model.md": {
+      "mode": 33188,
+      "sha256": "5bdf326ed29a921d942f2b45cee440abf5a45bfb6a41234fae4b27e9c1a3095e"
+    },
+    "docs/resources/practitioner-guide-html/content/03-repository-map.md": {
+      "mode": 33188,
+      "sha256": "391eb9885372dfdf19491b73a0e848eb9dd125ac65754a2d76fc4ff067ff4948"
+    },
+    "docs/resources/practitioner-guide-html/content/04-starting-a-new-project.md": {
+      "mode": 33188,
+      "sha256": "60d1bfce056718c88514261b0f51a1021a85530e88123a9fc4169ec89be86c6b"
+    },
+    "docs/resources/practitioner-guide-html/content/05-working-with-the-agent.md": {
+      "mode": 33188,
+      "sha256": "6e8fd6c75890d64793d53cdec64cc8149cc949b2d2157fa01fc27332fa827904"
+    },
+    "docs/resources/practitioner-guide-html/content/06-gates-and-artifacts.md": {
+      "mode": 33188,
+      "sha256": "df91bd607317bd1458c46fa97930bf5abb37a3bd72993988e96f4a7d5c7a9cca"
+    },
+    "docs/resources/practitioner-guide-html/content/07-approvals-and-risk.md": {
+      "mode": 33188,
+      "sha256": "8be7bcba315a41a429b62a7c04fa18439e7e60009aa4b2cbba9fdd8090b9ee73"
+    },
+    "docs/resources/practitioner-guide-html/content/08-subagents-and-delegation.md": {
+      "mode": 33188,
+      "sha256": "4ada107a6750d2e713a1c3483b8ca189679c9eaa9278d53c74472f9ecc1ca42a"
+    },
+    "docs/resources/practitioner-guide-html/content/09-build-planning-and-implementation.md": {
+      "mode": 33188,
+      "sha256": "c8c03975f38b9127a75e5ac66954e3c6c6c8bcc86ed8b7f148c53fb72155b68c"
+    },
+    "docs/resources/practitioner-guide-html/content/10-review-remediation-and-closeout.md": {
+      "mode": 33188,
+      "sha256": "d86dbff5ccafa29c8ddee08a9c64e16ac081aefafffd08600b36b60a8ef54d28"
+    },
+    "docs/resources/practitioner-guide-html/content/11-production-operations.md": {
+      "mode": 33188,
+      "sha256": "37b94d67c87b799e89953cfa268525e62378a399daf52fcf4f855d6ea7ce406d"
+    },
+    "docs/resources/practitioner-guide-html/content/12-vendor-contract-tracker-walkthrough.md": {
+      "mode": 33188,
+      "sha256": "446dae7d422d5aed6685d543c6e5d975f6db7685483f2ba56102ea09786469dd"
+    },
+    "docs/resources/practitioner-guide-html/content/13-codex-specific-notes.md": {
+      "mode": 33188,
+      "sha256": "3c16d8d5fcec524eb2cfc99e24099b5a18991d2ef220070ab76e028bd012066a"
+    },
+    "docs/resources/practitioner-guide-html/content/14-claude-code-specific-notes.md": {
+      "mode": 33188,
+      "sha256": "423545c10e3a2615af8ad942215d5858ae72a83e7f2b04c59872ce804b2d33ed"
+    },
+    "docs/resources/practitioner-guide-html/content/15-prompt-library.md": {
+      "mode": 33188,
+      "sha256": "a5f4023ae63e7b6abcf449e6cfb71e89fbeb9a6884f2d48fcc9626c7365a8777"
+    },
+    "docs/resources/practitioner-guide-html/content/16-checklists.md": {
+      "mode": 33188,
+      "sha256": "ce3f08e7187b850ad2ba726cf0319d9eb3840d90f92c965c5edada300c629841"
+    },
+    "docs/resources/practitioner-guide-html/content/17-common-failure-modes.md": {
+      "mode": 33188,
+      "sha256": "3f9ab57fa09d02845acef99771811b6bafd569f862a7d184c3198beb2c3ad72c"
+    },
+    "docs/resources/practitioner-guide-html/content/18-glossary.md": {
+      "mode": 33188,
+      "sha256": "6da23d62bc4235b6c535d7f87a7123d78c763e6b2e1761b82153a5c4ce3a12f0"
+    },
+    "docs/resources/practitioner-guide-html/content/19-starting-mid-stream.md": {
+      "mode": 33188,
+      "sha256": "fb0323260cdce705aca07e682df7ef8d07a2e445d62173242985eabc3531363e"
+    },
+    "docs/resources/practitioner-guide-html/content/README.md": {
+      "mode": 33188,
+      "sha256": "c0ff23ae28285b9f4fab8c1f11508fa00308f60555c2614323e6dd1dba1d163d"
+    },
+    "docs/resources/practitioner-guide-html/index.html": {
+      "mode": 33188,
+      "sha256": "d2a0cf5f9ae84db35423dc038efa0a65a371338ac6be950cbaec13fd3b265949"
+    },
+    "docs/resources/practitioner-guide-html/vendor/marked-LICENSE.txt": {
+      "mode": 33188,
+      "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+    },
+    "docs/resources/practitioner-guide-html/vendor/marked.umd.js": {
+      "mode": 33188,
+      "sha256": "ba65f1c8948e6b01321399800843e9048b31e1c197652d4b0fafae840b30e32b"
+    },
+    "docs/resources/practitioner-guide-html/vendor/mermaid-LICENSE.txt": {
+      "mode": 33188,
+      "sha256": "ec9fb67dcb25eccc416ed56e1aab819222c805a2a4bfe4cb19e7556bf2ffde80"
+    },
+    "docs/resources/practitioner-guide-html/vendor/mermaid.min.js": {
+      "mode": 33188,
+      "sha256": "18327bef70d96fb505fe7287d9f6a7362ebf07ff6576ddfaffb1a06f3e1a2954"
+    },
+    "docs/resources/practitioner-guide/01-orientation.md": {
+      "mode": 33188,
+      "sha256": "6b3ab9ea010f6ce36e1745be63f61f118fb053b2b1894e7c0049bfdeb19db1f0"
+    },
+    "docs/resources/practitioner-guide/02-core-mental-model.md": {
+      "mode": 33188,
+      "sha256": "5bdf326ed29a921d942f2b45cee440abf5a45bfb6a41234fae4b27e9c1a3095e"
+    },
+    "docs/resources/practitioner-guide/03-repository-map.md": {
+      "mode": 33188,
+      "sha256": "391eb9885372dfdf19491b73a0e848eb9dd125ac65754a2d76fc4ff067ff4948"
+    },
+    "docs/resources/practitioner-guide/04-starting-a-new-project.md": {
+      "mode": 33188,
+      "sha256": "60d1bfce056718c88514261b0f51a1021a85530e88123a9fc4169ec89be86c6b"
+    },
+    "docs/resources/practitioner-guide/05-working-with-the-agent.md": {
+      "mode": 33188,
+      "sha256": "6e8fd6c75890d64793d53cdec64cc8149cc949b2d2157fa01fc27332fa827904"
+    },
+    "docs/resources/practitioner-guide/06-gates-and-artifacts.md": {
+      "mode": 33188,
+      "sha256": "df91bd607317bd1458c46fa97930bf5abb37a3bd72993988e96f4a7d5c7a9cca"
+    },
+    "docs/resources/practitioner-guide/07-approvals-and-risk.md": {
+      "mode": 33188,
+      "sha256": "8be7bcba315a41a429b62a7c04fa18439e7e60009aa4b2cbba9fdd8090b9ee73"
+    },
+    "docs/resources/practitioner-guide/08-subagents-and-delegation.md": {
+      "mode": 33188,
+      "sha256": "4ada107a6750d2e713a1c3483b8ca189679c9eaa9278d53c74472f9ecc1ca42a"
+    },
+    "docs/resources/practitioner-guide/09-build-planning-and-implementation.md": {
+      "mode": 33188,
+      "sha256": "c8c03975f38b9127a75e5ac66954e3c6c6c8bcc86ed8b7f148c53fb72155b68c"
+    },
+    "docs/resources/practitioner-guide/10-review-remediation-and-closeout.md": {
+      "mode": 33188,
+      "sha256": "d86dbff5ccafa29c8ddee08a9c64e16ac081aefafffd08600b36b60a8ef54d28"
+    },
+    "docs/resources/practitioner-guide/11-production-operations.md": {
+      "mode": 33188,
+      "sha256": "37b94d67c87b799e89953cfa268525e62378a399daf52fcf4f855d6ea7ce406d"
+    },
+    "docs/resources/practitioner-guide/12-vendor-contract-tracker-walkthrough.md": {
+      "mode": 33188,
+      "sha256": "446dae7d422d5aed6685d543c6e5d975f6db7685483f2ba56102ea09786469dd"
+    },
+    "docs/resources/practitioner-guide/13-codex-specific-notes.md": {
+      "mode": 33188,
+      "sha256": "3c16d8d5fcec524eb2cfc99e24099b5a18991d2ef220070ab76e028bd012066a"
+    },
+    "docs/resources/practitioner-guide/14-claude-code-specific-notes.md": {
+      "mode": 33188,
+      "sha256": "423545c10e3a2615af8ad942215d5858ae72a83e7f2b04c59872ce804b2d33ed"
+    },
+    "docs/resources/practitioner-guide/15-prompt-library.md": {
+      "mode": 33188,
+      "sha256": "a5f4023ae63e7b6abcf449e6cfb71e89fbeb9a6884f2d48fcc9626c7365a8777"
+    },
+    "docs/resources/practitioner-guide/16-checklists.md": {
+      "mode": 33188,
+      "sha256": "ce3f08e7187b850ad2ba726cf0319d9eb3840d90f92c965c5edada300c629841"
+    },
+    "docs/resources/practitioner-guide/17-common-failure-modes.md": {
+      "mode": 33188,
+      "sha256": "3f9ab57fa09d02845acef99771811b6bafd569f862a7d184c3198beb2c3ad72c"
+    },
+    "docs/resources/practitioner-guide/18-glossary.md": {
+      "mode": 33188,
+      "sha256": "6da23d62bc4235b6c535d7f87a7123d78c763e6b2e1761b82153a5c4ce3a12f0"
+    },
+    "docs/resources/practitioner-guide/19-starting-mid-stream.md": {
+      "mode": 33188,
+      "sha256": "fb0323260cdce705aca07e682df7ef8d07a2e445d62173242985eabc3531363e"
+    },
+    "docs/resources/practitioner-guide/README.md": {
+      "mode": 33188,
+      "sha256": "c0ff23ae28285b9f4fab8c1f11508fa00308f60555c2614323e6dd1dba1d163d"
+    },
+    "docs/resources/releases/0.1.0-baseline-provenance/gendev-hardening-plan.md": {
+      "mode": 33188,
+      "sha256": "9c6ab65377744949e4545507a7b16ecfce6ebfae1d54696e6b6ad794e7d7794c"
+    },
+    "docs/resources/releases/0.1.0-baseline-provenance/gendev-methodology-review.md": {
+      "mode": 33188,
+      "sha256": "2e7a8bbbf3d4492c54b18a9d8fd7ca179e80a43b1f0a2fb4627a3a83ffde4eff"
+    },
+    "docs/resources/releases/0.1.0-baseline.md": {
+      "mode": 33188,
+      "sha256": "bc7a05d77e616d085d5c939062dc12eb0243e94331b180f670e729058b06018e"
+    },
+    "docs/resources/releases/0.2.0-phase-loop.md": {
+      "mode": 33188,
+      "sha256": "49a216c32c39f98dfbe8db3c504d8b699310759da9e3b4c61f287c61774960c4"
+    },
+    "docs/resources/releases/0.3.0-documentation-structure.md": {
+      "mode": 33188,
+      "sha256": "58291ff2ee517e04bed56016d7ac302436ebca6d73387d587fde810e70eee994"
+    },
+    "docs/resources/releases/0.4.0-verification-first.md": {
+      "mode": 33188,
+      "sha256": "58f4822e9d5fbd6ca44447c3be63317098f4e6c869722086aa4857c591e56b94"
+    },
+    "docs/resources/releases/0.5.0-operational-coherence-migration.md": {
+      "mode": 33188,
+      "sha256": "aee4d1fd64f7543b136a554948dd1a33bce1c706d3a03d625905c8c6e4058ee4"
+    },
+    "docs/resources/releases/0.5.0-operational-coherence.md": {
+      "mode": 33188,
+      "sha256": "a156c1d8f0d7c7b165b8ed9f1041e2d07c855d5104e932e6dadd917bcba2cd47"
+    },
+    "docs/resources/releases/1.0.0.md": {
+      "mode": 33188,
+      "sha256": "f1ec3738c1573c9c70c49feea31771057b5e67e0aa91cd75ac9d399ed8e6eb43"
+    },
+    "docs/resources/releases/1.0.1.md": {
+      "mode": 33188,
+      "sha256": "ee4c8c7fa8a422eed638efb0938f01d84297cfe414483516c84e93d95d70b191"
+    },
+    "docs/resources/releases/1.0.2-adoption.md": {
+      "mode": 33188,
+      "sha256": "100e32b3f64651c4a8cf12db07e4d0736b5cef4b74c96c50362114389a672968"
+    },
+    "docs/resources/releases/1.0.2.md": {
+      "mode": 33188,
+      "sha256": "080cf49cdf3684aa416464afde1a3569900ed03f80430b247eed5eb76147fe24"
+    },
+    "docs/resources/releases/README.md": {
+      "mode": 33188,
+      "sha256": "d254127443b52459d13e3607bfd41d3bd2c69666ae99f7b63bf40fe5328b5fb4"
+    },
+    "docs/resources/research/Formal Verification in Spec-Driven Development.md": {
+      "mode": 33188,
+      "sha256": "6d5fd181366914d70185dea79fb42440198a1b6c28471b8a64632c87150d7fc1"
+    },
+    "docs/resources/research/doc-coherence-linter-vision.md": {
+      "mode": 33188,
+      "sha256": "43738cca1404d6e97e0aa08604ed112ba894531403738d96262c15d6e780014e"
+    },
+    "docs/resources/research/existing-codebase.md": {
+      "mode": 33188,
+      "sha256": "0a0edca67a58ba0542687f3185ee75d30300d12cb348f0fa0c19bc5ea49b1c74"
+    },
+    "docs/resources/research/init-above-g0-adoption-note.md": {
+      "mode": 33188,
+      "sha256": "997fa8227fceef36b1462074399082564abb6348bb148b5038abb92eeb44c082"
+    },
+    "docs/resources/research/loops.md": {
+      "mode": 33188,
+      "sha256": "89d7562bc73f6fea116048acf9a5045dbea03bfb417e3713ac01596728afd025"
+    },
+    "docs/resources/runbook/g0-to-g7-runbook.md": {
+      "mode": 33188,
+      "sha256": "7c8450bc9c183987024c0efc60c1ce02eb515ecc59d4607f538fdf8289646242"
+    },
+    "gate-remediation.md": {
+      "mode": 33188,
+      "sha256": "09587a40103df0b6dc0ce163c90ebf5bcd88ddb154b9aaefbec030cbe3718260"
+    },
+    "pyproject.toml": {
+      "mode": 33188,
+      "sha256": "587b28996453fe6447d51b8963d30320987f40fa706768c5e14732e474b4c7e0"
+    },
+    "requirements-devboard.txt": {
+      "mode": 33188,
+      "sha256": "a5e2894d77218df8977fc75d7cb1419cc76bc62ca37a48dac6948daf8fbef5ec"
+    },
+    "scripts/backfill-methodology.sh": {
+      "mode": 33261,
+      "sha256": "d1c4ed9227d3fef1ce13932e827120eae03fdfad43e878549c0c683180e7e063"
+    },
+    "scripts/check-doc-coherence.sh": {
+      "mode": 33261,
+      "sha256": "d91d5ffede9c8a01802c3407b8f9884d50dac693c2dc56bf64fe1c56902c35a3"
+    },
+    "scripts/check-lifecycle-coherence.py": {
+      "mode": 33261,
+      "sha256": "af12dd52596e8b795ae49de49b4749116db7f241427bab722aface2a25e9fc47"
+    },
+    "scripts/check-methodology.sh": {
+      "mode": 33261,
+      "sha256": "9595318ada9304a261b6cf0873c472333d0ad47c2b3262788f75bc050538e685"
+    },
+    "scripts/close-gate.sh": {
+      "mode": 33261,
+      "sha256": "f4fd71d8a7938787c080cd0bc32479132bb89e1e5ec264c381d2d870832ced28"
+    },
+    "scripts/close-phase.sh": {
+      "mode": 33261,
+      "sha256": "437c915d7b012750fb022cfd1a91c7fb6c98376287391f5fa298d47798af16cf"
+    },
+    "scripts/create-dry-run.py": {
+      "mode": 33188,
+      "sha256": "d2648ba97ea6fc609e1221190d7679fcf27446cbb501ea05ba2d1d63f3d69e55"
+    },
+    "scripts/devboard.py": {
+      "mode": 33188,
+      "sha256": "465ab799f2845bed2c6fd069e2c5341ccd7d5baa6c064ec267b2b4ae7c14da3c"
+    },
+    "scripts/exercise-v3-toolkit.py": {
+      "mode": 33188,
+      "sha256": "1c613d64bbddaee0e258b3ba40e4d4677e20dc1efe009a4b55392a3b1f942dbb"
+    },
+    "scripts/friday-dev-board.py": {
+      "mode": 41453,
+      "sha256": "6613a225832f4f5956bad94fdcf7b7b1e47386a7cb6e2e2b8bbcb3636630c25b"
+    },
+    "scripts/gendev-doctor.sh": {
+      "mode": 33261,
+      "sha256": "5e12cf5970ea3eab23bb4c988962cd39fc98a8e3f2b36a94977a8237413e9aec"
+    },
+    "scripts/generate-lifecycle-contract.py": {
+      "mode": 33261,
+      "sha256": "c7dbb9455194317b58e6c41f608eeac748c1100c3c1ea4990aef65a3989b8906"
+    },
+    "scripts/init-phase.sh": {
+      "mode": 33261,
+      "sha256": "10bb5e84a2dde518ed71f4fa131aaeb65bc50b36a9fc376d70341c178a093fe3"
+    },
+    "scripts/init-project.sh": {
+      "mode": 33261,
+      "sha256": "2e132aa6a2e7d481e1e488da0499ad53aca68496ad8c383bc821673e3acd9da7"
+    },
+    "scripts/install-hooks.sh": {
+      "mode": 33261,
+      "sha256": "c6a16cf56abe7079d57a53f6e92910dad7910995da7b6e283a3d77aac1a9eee5"
+    },
+    "scripts/install-methodology.sh": {
+      "mode": 33261,
+      "sha256": "0d88f82af00aefbbd4ba4b51a3d4c1623689c9d1b993f110238501a808e8d6aa"
+    },
+    "scripts/lib/distribution-manifest.txt": {
+      "mode": 33188,
+      "sha256": "a38954fcfa8327357fa80ea586c58f7f5f6c6ab3351adbcd2345e670663bb32c"
+    },
+    "scripts/lib/distribution.py": {
+      "mode": 33188,
+      "sha256": "34fa94bd040babc9592da8804e722d8e0dcbf07a43bee3deb83fac8c32ee10b3"
+    },
+    "scripts/lib/gate-log.awk": {
+      "mode": 33188,
+      "sha256": "5348d12b38211b98f56cc4f3ed37027398528be783b1fd2398fb84082537c26f"
+    },
+    "scripts/lib/gendev-common.sh": {
+      "mode": 33188,
+      "sha256": "6700508f91c381e3319238e7e08b235d1ca6f9dcd32ebe85ef0a2d9da762f37f"
+    },
+    "scripts/lib/gendev-distribution.sh": {
+      "mode": 33261,
+      "sha256": "5f3f6b91d2e46d4a85d6060015401461fe6f6be25a4c04487b7b01758c79784e"
+    },
+    "scripts/lib/gendev-transition.sh": {
+      "mode": 33261,
+      "sha256": "c4a8f674ca8d8a30903ce7daf1794679e29824ceffac19b91b3943609c91b0f4"
+    },
+    "scripts/lib/lifecycle-contract.sh": {
+      "mode": 33261,
+      "sha256": "cf7e92e17eeff4d630a80713649e23301c15df47323507107eba5e0ed39cac16"
+    },
+    "scripts/lib/render_template.py": {
+      "mode": 33188,
+      "sha256": "8dc96a7361627411eaa211e21ee24eee890c9c8a979c780d3682357f5b132f6d"
+    },
+    "scripts/methodology-guard.sh": {
+      "mode": 33261,
+      "sha256": "0c700ac7dc61603ff1e51c4d213c8d5f456bacf9039fb6aa628b10ee85ba1d9a"
+    },
+    "scripts/methodology-metrics.sh": {
+      "mode": 33261,
+      "sha256": "6f4913837d068c1dca32257ffe2b10c3887a5723eca96cbddb60f94dbffcecdd"
+    },
+    "scripts/new-artifact.sh": {
+      "mode": 33261,
+      "sha256": "b4a05f7c24f44c747b15da11191e92811b32d68f3c62d472066afbab4d44d511"
+    },
+    "scripts/pin-provenance.sh": {
+      "mode": 33261,
+      "sha256": "73d8adfbcad22957fd2275faf6935c53a08dd9b6ae829aa9db129ea2ecb0f415"
+    },
+    "scripts/project-state.sh": {
+      "mode": 33261,
+      "sha256": "2f56a500333fcd13c037b439568104b69ac64b5d1d87afc864123a96f0588a60"
+    },
+    "scripts/record-deployment-approval.sh": {
+      "mode": 33261,
+      "sha256": "fe2f52904bcb079760f2cc15ddc986366a2ae48ae4339cb091f6b05976293086"
+    },
+    "scripts/record-phase-checkpoint.sh": {
+      "mode": 33261,
+      "sha256": "9662c77b587a4cd1b3184ad5a9b48281fdfbb60e702206936465f3026598bad2"
+    },
+    "scripts/test-checker.sh": {
+      "mode": 33261,
+      "sha256": "7e6e2df900d71c1f6efbbea1fd4db72b08e71dc969b70c87cf49a74faee3605b"
+    },
+    "scripts/test-methodology.sh": {
+      "mode": 33261,
+      "sha256": "3b0d07f1ac02d4281b4a145a48f15d996d6043c267a4c87610d0543a0c02479b"
+    },
+    "scripts/verify-migration-inputs.py": {
+      "mode": 33188,
+      "sha256": "ba9dbe47ffb36dc4a35791647b598699edc5e110030012c7b3069e2e4cdb6b08"
+    },
+    "tests/devboard/test_devboard.py": {
+      "mode": 33188,
+      "sha256": "a37aeeff8d826100755fbc430f7171d3e09f1bc4f0148b4b396fd8bce6669d54"
+    },
+    "tests/methodology/lib/runtime-write-fixtures.sh": {
+      "mode": 33188,
+      "sha256": "6861bfd487df4528c5d42dafa9f4d2b19bf9277d0b5abfd856d79f4454d48a8f"
+    },
+    "tests/methodology/lib/test-helpers.sh": {
+      "mode": 33261,
+      "sha256": "bf71fbc58ea7436c0d893e34f54d796a9ba5b6cd8ed350bffec16190355cfb2f"
+    },
+    "tests/methodology/test-checker.sh": {
+      "mode": 33261,
+      "sha256": "aa7c80d9a1b540f18febfe57818b6981b51dfb91d9abad17a2ed396ff56cec6c"
+    },
+    "tests/methodology/test-distribution-tools.sh": {
+      "mode": 33261,
+      "sha256": "ddab97493af14cdfea5f4fab1f3ab40bece311adda7d57c8a40ee36577703dc6"
+    },
+    "tests/methodology/test-documentation-coherence.sh": {
+      "mode": 33261,
+      "sha256": "b18d59007d268e2c05845c71db7dc4f9535ec36478a94327dfdb1bed28293c91"
+    },
+    "tests/methodology/test-enforcement-tools.sh": {
+      "mode": 33261,
+      "sha256": "9d3814606e6552859d122a719b9a8b2bd26974cd20ebc86af842c3b7bca45e33"
+    },
+    "tests/methodology/test-examples.sh": {
+      "mode": 33261,
+      "sha256": "0a610ee7ba9d4f5cb75e7a9460a66762f5de496f0483542c9495547c427ab660"
+    },
+    "tests/methodology/test-installed-context.sh": {
+      "mode": 33261,
+      "sha256": "73d396afefab7b9fa3cbf73d2f13ec06337f02047f50df47233a74b952c81a7f"
+    },
+    "tests/methodology/test-lifecycle-coherence.sh": {
+      "mode": 33261,
+      "sha256": "a96dfdd0c270998b9b90c90487599d5fe1aeb99c286c321c19cd30563b1853e0"
+    },
+    "tests/methodology/test-metrics.sh": {
+      "mode": 33261,
+      "sha256": "db7a444eff5a4036d4ef8a84abe082a8eb51d5f25c790214988175ca0961158c"
+    },
+    "tests/methodology/test-migration.sh": {
+      "mode": 33261,
+      "sha256": "b8dbe44acdbd4e84661778292751d51273e507bf741cba1cfae286f8ef27014b"
+    },
+    "tests/methodology/test-reference-graph.sh": {
+      "mode": 33261,
+      "sha256": "215b2470a618ac16564920d958ff8dc1d3ca5eba396ae93be4f94405356c0d26"
+    },
+    "tests/methodology/test-release-coherence.sh": {
+      "mode": 33261,
+      "sha256": "08df975ba8685debf8514c184b573ce15ab9f25742b3cba4ee940049958e7ec9"
+    },
+    "tests/methodology/test-runtime-tools.sh": {
+      "mode": 33261,
+      "sha256": "a259fd68f8318371c5cf7cb707055ace60f6b47e42f75469b5504e00f81bdbc4"
+    },
+    "tests/methodology/test-shell-syntax.sh": {
+      "mode": 33261,
+      "sha256": "1077b5b3331f611d9eca38ced23e382c3ec760304381af15940d56d5654013a0"
+    },
+    "tests/migration/test_preservation_refs.py": {
+      "mode": 33188,
+      "sha256": "ef5d749c51c33228d2acd6443babb5a452b14816454701c5ec99713e75904d6d"
+    },
+    "tests/migration/test_v3_toolkit.py": {
+      "mode": 33188,
+      "sha256": "dae8a16a4d80f9c891ffda48a24c6bcf5d101951de96baea095267cb44badbd9"
+    },
+    "uv.lock": {
+      "mode": 33188,
+      "sha256": "ea4d27b726fe1e7b63f0211b0cd51c5bdf2fe605a6309afb29dfc7b49dfb2c68"
+    }
+  }
+}

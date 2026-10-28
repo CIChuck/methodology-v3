@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "./scripts/test-methodology.sh",
+    "--suite",
+    "all"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "returncode": 0,
+  "expected": 0,
+  "seconds": 159.719
+}

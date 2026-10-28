@@ -1,0 +1,79 @@
+[
+  {
+    "case": "ordinary",
+    "result": "PASS",
+    "input_entries_preserved": 313,
+    "fixture": "/tmp/v3-independent-round5.x5446H/fixtures/methodology-dry-run.i9hwteu1",
+    "checker_errors": [
+      "ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected=\"enforcement.attested.required_attester is a named human\" actual=\"missing or unknown\" message=\"Manifest attested enforcement is missing required_attester field.\""
+    ]
+  },
+  {
+    "case": "AGENTS.md",
+    "result": "PASS",
+    "input_entries_preserved": 312,
+    "fixture": "/tmp/v3-independent-round5.x5446H/fixtures/methodology-dry-run.nca5qf25",
+    "checker_errors": [
+      "ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected=\"enforcement.attested.required_attester is a named human\" actual=\"missing or unknown\" message=\"Manifest attested enforcement is missing required_attester field.\""
+    ]
+  },
+  {
+    "case": ".agents/skills",
+    "result": "PASS",
+    "input_entries_preserved": 282,
+    "fixture": "/tmp/v3-independent-round5.x5446H/fixtures/methodology-dry-run.wow0oyhl",
+    "checker_errors": [
+      "ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected=\"enforcement.attested.required_attester is a named human\" actual=\"missing or unknown\" message=\"Manifest attested enforcement is missing required_attester field.\""
+    ]
+  },
+  {
+    "case": "docs/policies",
+    "result": "PASS",
+    "input_entries_preserved": 307,
+    "fixture": "/tmp/v3-independent-round5.x5446H/fixtures/methodology-dry-run.6ngk16i2",
+    "checker_errors": [
+      "ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected=\"enforcement.attested.required_attester is a named human\" actual=\"missing or unknown\" message=\"Manifest attested enforcement is missing required_attester field.\""
+    ]
+  },
+  {
+    "case": "extras",
+    "result": "PASS",
+    "input_entries_preserved": 356,
+    "fixture": "/tmp/v3-independent-round5.x5446H/fixtures/methodology-dry-run.nvkg1osr",
+    "checker_errors": [
+      "ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected=\"enforcement.attested.required_attester is a named human\" actual=\"missing or unknown\" message=\"Manifest attested enforcement is missing required_attester field.\""
+    ]
+  },
+  {
+    "case": "instrumented-preselection",
+    "result": "PASS",
+    "selected_owned_entries": 167,
+    "no_rglob": true,
+    "no_excluded_content_reads": true
+  },
+  {
+    "case": "owned-changed",
+    "result": "PASS",
+    "error": "Cannot create dry run: source doctor failed; repair the source before making an exercise:\nGenDev doctor\nRepository: /private/tmp/v3-independent-round5.x5446H/fixtures/boundary/unsafe-changed\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: /Users/chuckrussell/Dev/gendev/methodology-v3 (tag none, commit 98f8bec4597c)\nInstalled on: 2026-10-28T21:07:05.376132+00:00\nIntegrity: FAILED (1 file(s))\n  modified: docs/methodology/templates/architecture-template.md\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Independent Synthetic Source\nProject slug: independent-synthetic-source\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\nDoctor result: installed file integrity check failed; see list above."
+  },
+  {
+    "case": "owned-missing",
+    "result": "PASS",
+    "error": "Cannot create dry run: source doctor failed; repair the source before making an exercise:\nGenDev doctor\nRepository: /private/tmp/v3-independent-round5.x5446H/fixtures/boundary/unsafe-missing\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: /Users/chuckrussell/Dev/gendev/methodology-v3 (tag none, commit 98f8bec4597c)\nInstalled on: 2026-10-28T21:07:05.976598+00:00\nIntegrity: FAILED (1 file(s))\n  missing: docs/methodology/templates/architecture-template.md\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Independent Synthetic Source\nProject slug: independent-synthetic-source\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\nDoctor result: installed file integrity check failed; see list above."
+  },
+  {
+    "case": "owned-symlink",
+    "result": "PASS",
+    "error": "Cannot create dry run: source doctor failed; repair the source before making an exercise:\nGenDev doctor\nRepository: /private/tmp/v3-independent-round5.x5446H/fixtures/boundary/unsafe-symlink\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: /Users/chuckrussell/Dev/gendev/methodology-v3 (tag none, commit 98f8bec4597c)\nInstalled on: 2026-10-28T21:07:06.579409+00:00\nIntegrity: FAILED (1 file(s))\n  not a regular owned file: docs/methodology/templates/architecture-template.md\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Independent Synthetic Source\nProject slug: independent-synthetic-source\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\nDoctor result: installed file integrity check failed; see list above."
+  },
+  {
+    "case": "owned-parent-symlink",
+    "result": "PASS",
+    "error": "Cannot create dry run: unsafe target parent: docs/methodology/templates"
+  },
+  {
+    "case": "normal-installer-external-link",
+    "result": "PASS",
+    "error": "Warning: /tmp/v3-independent-round5.x5446H/fixtures/boundary/normal-target has no .git directory. Continuing with explicit file operations.\nblocked: external source symlink: .agents/skills/private/SKILL.md"
+  }
+]

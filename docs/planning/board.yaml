@@ -8,7 +8,7 @@ tasks:
   condition: normal
   implementation_authority: granted
   packet: docs/planning/active/v3-baseline-migration/
-  next_gate: Fresh full independent review of VAL-005 follow-up; human acceptance pending
+  next_gate: Chuck acceptance of VERIFIED candidate 98f8bec4597cd3307fc26e5c28dc86592e01ca08; step 8 remains separate
   delivery_state: local
   branch: integration/v3-migration
   depends_on: []
@@ -27,6 +27,8 @@ tasks:
   - docs/resources/evolution/v3-migration/review/round-4/human-disposition.md (bounded follow-up authorized by Chuck; fresh
     review pending)
   - docs/resources/evolution/v3-migration/review/round-4/remediation-results.json (local checks passed; fresh review pending)
+  - docs/resources/evolution/v3-migration/review/round-5/report.md (VERIFIED, candidate 98f8bec)
+  - docs/resources/evolution/v3-migration/review/round-5/acceptance-request.md (human decision pending)
   approved_by: Chuck Russell
   approved_at: '2026-10-27'
 events:
@@ -106,3 +108,10 @@ events:
   action: recorded authorized VAL-005 selection-boundary remediation
   note: 13 inherited suites, 17 board tests, 42 migration tests and four replay scenarios passed locally. Task remains started
     pending fresh review and human acceptance.
+- task: v3-baseline-migration
+  at: '2026-10-28T21:14:18.022667+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded independent VERIFIED result
+  note: Full round-5 review VERIFIED candidate 98f8bec; VAL-005 resolved. No human acceptance, gate approval, step 8, source-project
+    resync or publication recorded.

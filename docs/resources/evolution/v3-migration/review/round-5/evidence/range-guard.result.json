@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "./scripts/methodology-guard.sh",
+    "--range",
+    "54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a",
+    "98f8bec4597cd3307fc26e5c28dc86592e01ca08"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "returncode": 0,
+  "expected": 0,
+  "seconds": 0.193
+}

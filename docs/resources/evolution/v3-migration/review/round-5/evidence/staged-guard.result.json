@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "./scripts/methodology-guard.sh",
+    "--staged"
+  ],
+  "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+  "returncode": 0,
+  "expected": 0,
+  "seconds": 0.216
+}

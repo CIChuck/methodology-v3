@@ -1,0 +1,82 @@
+{
+  "AGENTS.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "3d593263da054b983a35f13f25c2cb452ef66d9faa9bc90694e7453007134d01",
+    "verified": true
+  },
+  "docs/methodology/constitution/gendev.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "f7073cd6d2e9f26ad13e97839e80456ce617a63d3d8f5df3660c7e07500dad4f",
+    "verified": true
+  },
+  "docs/policies/repository-engineering-policy.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "1d57f89d49bd3ecd49fb97ac91248014a2da9a1386100e74aed30b0d144a40bd",
+    "verified": true
+  },
+  "docs/policies/development-task-lifecycle.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "ac54fc778c216480531001d702006899183a29f3fd19050bb8ea317c3b2803ea",
+    "verified": true
+  },
+  "docs/policies/independent-validation-policy.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "24a97c9984adf62587b818b5b2963813c7c3fceec8c41fd92a2956c5582b1abc",
+    "verified": true
+  },
+  "docs/policies/dev-board-integration.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "af36991dc3ae53977aeb347db84a35aed307a58882394319ee49aec3931f5289",
+    "verified": true
+  },
+  "docs/resources/evolution/v3-migration/README.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "dc18fde32cb8e28dad540780fd0a0d57c670af01e85549c6b5280df60847b030",
+    "verified": true
+  },
+  "docs/resources/evolution/v3-migration/review-scope.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "33df486e794fd8fb0b545c42eb0f9bf82ae4e9d9d102437b4ff26eb92241c7f1",
+    "verified": true
+  },
+  "docs/methodology/dev-skills/independent-code-validator.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "ce179b69caf21f433e7e12f2a22f59de7a2b47648b63c1a444eafea231845af4",
+    "verified": true
+  },
+  "docs/methodology/guides/subagent-coordination-protocol.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "9b3c227dacbbedffebe64ff3a4767b14081095d64ff0c19eac7bd147ca9b0535",
+    "verified": true
+  },
+  "docs/resources/evolution/v3-migration/review/round-1/checkpoint-exception-approval.json": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "37c9fa3d8d5ace42e6822b93a87bf4c54c6a35234f7f860c57146de703d15dd7",
+    "verified": true
+  },
+  "docs/resources/evolution/v3-migration/review/round-2/remediation-directive.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "d22c012d033906c7398bdcf873bc514e05246ce97d3f3e314e527ccc78fbe96d",
+    "verified": true
+  },
+  "docs/resources/evolution/v3-migration/review/round-3/human-disposition.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "8940e2cc64fdafcd660fb71e93398f6d04f2a6465c8909c5ce6e36518c388ecf",
+    "verified": true
+  },
+  "docs/resources/evolution/v3-migration/review/round-3/remediation-directive.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "ccc6142faacb205515ee689a0fa8d33af35a55ddf49754e34b5abe7aaf9c9553",
+    "verified": true
+  },
+  "docs/resources/evolution/v3-migration/review/round-4/human-disposition.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "c4ecefb123484ef4e427a4fc3055cd77e12d4fd6bf7e82a4b8b2b37e05e8d662",
+    "verified": true
+  },
+  "docs/resources/evolution/v3-migration/review/round-4/remediation-directive.md": {
+    "revision": "98f8bec4597cd3307fc26e5c28dc86592e01ca08",
+    "sha256": "7f353b851e6a421e0658a17d7dbb38674490eb90167dddff486255c3570432ae",
+    "verified": true
+  }
+}
