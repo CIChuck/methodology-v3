@@ -56,3 +56,9 @@ An existing AGENTS.md is preserved by default. `--integrate-agents` adds a
 managed include only when requested and refuses collisions in that include.
 Project gate approvals, formal review and human acceptance retain their
 independent meaning; successful installation supplies none of them.
+
+After an upgrade that changes the board renderer, regenerate its derived
+dashboard with the documented board `render` command, then run `validate` and
+`next`. Rendering updates the view and must leave board.yaml task state and
+events unchanged. The installer preserves the existing view until that explicit
+refresh; a stale-dashboard report is not permission to change task approvals.
