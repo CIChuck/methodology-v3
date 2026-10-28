@@ -1,4 +1,9 @@
-# AI-Assisted Development Methodology Baseline
+# GenDev Methodology-v3 — Unreleased Integration Candidate
+
+This is a local, unreleased integration candidate based on the GenDev 1.0.2
+lifecycle contract. Independent review, human acceptance, final documentation
+refresh and publication remain pending. See
+`docs/resources/evolution/v3-migration/README.md` for authorized scope and evidence.
 
 This repository is a seed baseline for building software products with AI-assisted coding agents
 such as Codex, Claude Code, and similar tools.
@@ -221,11 +226,13 @@ as its architecture and phase plans mature.
 
 Current methodology version: `1.0.2`
 
-This is the GenDev 1.0 production release line. Release notes are in
+The inherited lifecycle contract is GenDev 1.0.2. This modified distribution is
+unreleased, as declared in `docs/methodology/schema/candidate.json`. Historical
+release notes are in
 `docs/resources/releases/1.0.2.md`, and the release execution log is in
 `docs/resources/evolution/1.0.2-distribution-context-execution-log.md`.
 
-The planned release tag is:
+The inherited published baseline tag is:
 
 ```text
 v1.0.2

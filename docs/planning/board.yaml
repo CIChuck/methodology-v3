@@ -1,0 +1,30 @@
+version: 1
+updated: '2026-10-27'
+tasks:
+- id: v3-baseline-migration
+  title: Integrate and validate methodology-v3 steps 1–6
+  priority: 1
+  work_state: started
+  condition: normal
+  implementation_authority: granted
+  packet: docs/planning/active/v3-baseline-migration/
+  next_gate: Finish steps 1–6, then prepare independent review
+  delivery_state: local
+  branch: integration/v3-migration
+  depends_on: []
+  validation: []
+  approved_by: Chuck Russell
+  approved_at: '2026-10-27'
+events:
+- task: v3-baseline-migration
+  at: '2026-10-28T02:31:31+00:00'
+  actor: Chuck Russell
+  actor_role: maintainer
+  action: transitioned queued -> approved
+  note: 'Explicit user instruction: execute steps 1 through 6; preserve both inputs. Recorded by Codex.'
+- task: v3-baseline-migration
+  at: '2026-10-28T02:31:31+00:00'
+  actor: Codex
+  actor_role: agent
+  action: transitioned approved -> started
+  note: Begin authorized local baseline migration; acceptance remains pending.

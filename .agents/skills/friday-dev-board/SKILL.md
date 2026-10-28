@@ -1,0 +1,1 @@
+../../../docs/methodology/dev-skills/friday-dev-board/SKILL.md

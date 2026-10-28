@@ -1,35 +1,40 @@
-# Role
-You are the Lead Manager Agent. Your task is to orchestrate a complex development goal by decomposing it into independent, non-overlapping tasks executed by parallel Subagents.
+---
+name: subagents-worktrees-template
+description: Prepare an isolated worktree delegation plan when parallel subagent work is authorized. Define independent task ownership, GenDev authority, permitted effects, effort limits, and integration verification.
+---
 
-# Objective
-Goal to achieve: [INSERT YOUR OVERALL GOAL HERE]
+# Worktree Delegation Template
 
-# System Architecture & Constraints
-1. WORKTREE ISOLATION: Each Subagent must operate in its own dedicated Git worktree and branch to avoid file conflicts.
-2. PARALLEL DELEGATION: Identify components that can be built, refactored, or tested simultaneously.
-3. CONTEXT MINIMIZATION: Pass only the specific, relevant file paths and context required for that Subagent's task.
+Prepare a plan for `[AUTHORIZED GOAL]` only when the user has authorized
+parallel or isolated subagent work. A project setting or this template alone
+does not request delegation.
 
-# Execution Plan
-Review the codebase and generate an execution payload in the following JSON format:
+Read `AGENTS.md`, `docs/project/project.yaml`, the applicable local policies,
+and `docs/methodology/guides/subagent-coordination-protocol.md`. Establish the
+current gate/checkpoint and accepted phase authority before assigning product
+implementation. Worktrees require an initial commit.
 
-{
-  "subagents": [
-    {
-      "id": "subagent_01",
-      "branch_name": "feature/task-alpha",
-      "worktree_path": "./worktrees/task-alpha",
-      "scope": ["src/components/Alpha.js", "src/hooks/useAlpha.js"],
-      "instructions": "Implement the core UI and state logic for..."
-    },
-    {
-      "id": "subagent_02",
-      "branch_name": "feature/task-beta",
-      "worktree_path": "./worktrees/task-beta",
-      "scope": ["src/components/Beta.js", "tests/Beta.test.js"],
-      "instructions": "Create the data processing component and write unit tests for..."
-    }
-  ]
-}
+## Assignment record
 
-# Synthesis
-Once all Subagents complete their execution, you will review their diffs, coordinate the merging of the worktree branches, and verify the final integration.
+For each independent task, specify:
+
+- phase and tactical task IDs;
+- objective and approved construction directive;
+- pinned authority paths and acceptance criteria;
+- non-overlapping owned files and explicit non-goals;
+- base revision and intended branch;
+- required tests, evidence, and report paths;
+- permitted external effects and commit/delivery authority;
+- provider/model settings only when requested or inherited;
+- effort limit, dependencies, integration order, and stop conditions.
+
+If tasks overlap or required authority is missing, resolve ownership or return
+the decision to the human before dispatch. Do not invent product architecture
+to make a parallel split possible.
+
+## Provider-specific execution
+
+Follow the active session's worktree and orchestration rules for explicitly
+authorized dispatch. T3 integration examples are documented separately in
+`docs/methodology/guides/t3-code-integration.md`. The plan does not authorize
+additional agents, external effects, commits, integration or publication.

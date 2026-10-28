@@ -8,6 +8,19 @@ member and AI coding agents.
 
 Do not treat chat history as build authority when methodology or project authority documents apply.
 
+Project-local discovery entries in `.agents/skills/` link to canonical sources
+under `docs/methodology/dev-skills/`. The engineering, task lifecycle and
+independent validation policies under `docs/policies/` supplement GenDev.
+Read `docs/policies/dev-board-integration.md` for the task/gate boundary.
+The board is tooling; task state never substitutes for product gate approval.
+
+In this methodology source repository, baseline engineering follows the
+explicitly authorized evolution plan under `docs/resources/evolution/`.
+The active v3 migration is recorded in
+`docs/resources/evolution/v3-migration/README.md`. Do not initialize a product
+merely to modify this reusable baseline. When installed into a product,
+`docs/project/` remains required before product implementation.
+
 ## Methodology Authority
 
 Follow `docs/methodology/constitution/gendev.md` for documentation-first development,
@@ -168,6 +181,49 @@ If a user request changes scope, architecture, security behavior, acceptance cri
 boundaries, update the relevant authority document before implementation.
 
 ## Implementation Rules
+
+### Board and Code-Generation Start Contract
+
+Before generating or modifying product code:
+
+1. Run the GenDev doctor and project-state commands, then
+   `uv run --no-project --with-requirements requirements-devboard.txt python scripts/devboard.py validate` and `next`.
+   Inspect the selected task with `show <task-id>`.
+2. Confirm the board task is `started`, has `implementation_authority: granted`, and names
+   the current feature branch. `approved` permits execution preparation; it does not begin
+   product code generation. Check the actual human direction behind the recorded approval.
+3. Read the tracking index and its links to accepted canonical GenDev authority. Confirm the
+   current project gate and phase checkpoints permit that implementation scope.
+4. Read the approved phase build plan, tactical plan, construction directive, and verification
+   plan. Each work unit needs exact scope, non-goals, requirements, tests, and stop conditions.
+   Only the documented maintenance route applies to eligible non-product maintenance.
+5. Reconcile task state, branch/checkout, authority revisions, source, tests, and evidence
+   before proceeding if they disagree. No directory, label, role flag, or tool result supplies
+   missing authority.
+
+The board tracks tasks through queued, approved, started, completed, and accepted. Only the human
+approves or accepts task scope. Task state and recorded delivery never substitute for GenDev
+approval. Preserve unrelated changes and local runtime data; do not clean or broad-stage them.
+
+### Candidate Review and Acceptance
+
+After authorized product generation, freeze a stable candidate commit when committing is
+authorized, then obtain fresh-context, read-only conformance review. Supply pinned authority,
+the directive, exact candidate/diff, acceptance criteria, and required evidence; exclude the
+builder's transcript, private reasoning, and conclusions. The reviewer returns exactly
+`VERIFIED`, `CHANGES_REQUESTED`, or `BLOCKED` with reproducible evidence.
+
+Work remains `started` through required review and bounded remediation. A changed candidate or
+authority makes the prior result stale and requires fresh review. Propose `completed` only
+after the applicable independent `VERIFIED` result; only the human records `accepted`.
+If a candidate cannot yet be frozen, report that limit rather than claiming formal verification.
+Eligible documentation maintenance follows its separately recorded scope and checks.
+
+Review does not authorize reviewer edits, automatic unbounded remediation, additional delegates,
+push, merge, release, deployment, credential disclosure, or external effects. Keep board tracking
+indexes and their evidence in the lanes described by the local lifecycle policy; canonical
+GenDev authority stays under `docs/project/` through tracking moves and archival.
+
 
 Before meaningful code generation, confirm that the active project has enough documented authority
 to answer:

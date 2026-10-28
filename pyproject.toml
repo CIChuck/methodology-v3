@@ -1,0 +1,9 @@
+[project]
+name = "gendev-methodology"
+version = "0.0.0"
+description = "Unreleased methodology-v3 development toolkit"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+devboard = ["PyYAML>=6.0.3,<7", "jsonschema>=4.23,<5"]

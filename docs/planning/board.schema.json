@@ -1,0 +1,302 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:gendev:development-board:v1",
+  "title": "Repository development task board",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "updated",
+    "tasks",
+    "events"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/task"
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/event"
+      }
+    }
+  },
+  "$defs": {
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "priority",
+        "work_state",
+        "condition",
+        "implementation_authority",
+        "packet",
+        "next_gate",
+        "delivery_state",
+        "branch",
+        "depends_on",
+        "validation"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "authority_backing_packets"
+            ]
+          },
+          "then": {
+            "properties": {
+              "work_state": {
+                "enum": [
+                  "completed",
+                  "accepted"
+                ]
+              },
+              "condition": {
+                "const": "normal"
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "work_state": {
+          "enum": [
+            "queued",
+            "approved",
+            "started",
+            "completed",
+            "accepted"
+          ]
+        },
+        "condition": {
+          "enum": [
+            "normal",
+            "blocked",
+            "deferred",
+            "backlog"
+          ]
+        },
+        "implementation_authority": {
+          "enum": [
+            "not_granted",
+            "design_only",
+            "granted",
+            "closed"
+          ]
+        },
+        "packet": {
+          "type": "string",
+          "pattern": "^docs/(planning|archive)/.+/$"
+        },
+        "next_gate": {
+          "type": "string",
+          "minLength": 1
+        },
+        "delivery_state": {
+          "enum": [
+            "not_started",
+            "local",
+            "pushed",
+            "merged",
+            "released",
+            "unknown"
+          ]
+        },
+        "branch": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "depends_on": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "validation": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "legacy_import": {
+          "type": "boolean"
+        },
+        "approved_by": {
+          "type": "string"
+        },
+        "approved_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "accepted_by": {
+          "type": "string"
+        },
+        "accepted_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "authority_backing_packets": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 64,
+          "items": {
+            "$ref": "#/$defs/authorityBacking"
+          }
+        }
+      }
+    },
+    "authorityBacking": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "packet",
+        "manifest",
+        "manifest_sha256"
+      ],
+      "properties": {
+        "packet": {
+          "type": "string",
+          "maxLength": 1024,
+          "pattern": "^docs/planning/(active|queued|review|blocked|deferred|backlog)/[^/]+/$"
+        },
+        "manifest": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1024
+        },
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "authorityBackingManifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "owner",
+        "packet",
+        "files"
+      ],
+      "properties": {
+        "version": {
+          "type": "integer",
+          "const": 1
+        },
+        "owner": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "packet": {
+          "type": "string",
+          "maxLength": 1024
+        },
+        "files": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 8192,
+          "items": {
+            "$ref": "#/$defs/authorityBackingFile"
+          }
+        }
+      }
+    },
+    "authorityBackingFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256",
+        "kind"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1024
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "kind": {
+          "enum": [
+            "index",
+            "authority",
+            "approval",
+            "directive",
+            "report",
+            "evidence"
+          ]
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task",
+        "at",
+        "actor",
+        "actor_role",
+        "action",
+        "note"
+      ],
+      "properties": {
+        "task": {
+          "type": "string"
+        },
+        "at": {
+          "type": "string"
+        },
+        "actor": {
+          "type": "string"
+        },
+        "actor_role": {
+          "enum": [
+            "maintainer",
+            "agent"
+          ]
+        },
+        "action": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

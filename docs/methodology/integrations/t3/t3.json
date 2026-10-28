@@ -1,0 +1,41 @@
+{
+  "$schema": "https://t3.codes/schema/t3.json",
+  "scripts": [
+    {
+      "name": "GenDev Health",
+      "command": "./scripts/gendev-doctor.sh",
+      "icon": "configure",
+      "runOnWorktreeCreate": false
+    },
+    {
+      "name": "GenDev State",
+      "command": "./scripts/project-state.sh",
+      "icon": "play",
+      "runOnWorktreeCreate": false
+    },
+    {
+      "name": "GenDev Validate",
+      "command": "./scripts/gendev-doctor.sh && ./scripts/check-methodology.sh",
+      "icon": "test",
+      "runOnWorktreeCreate": true
+    },
+    {
+      "name": "GenDev Shell Check",
+      "command": "./scripts/test-methodology.sh --suite shell-syntax",
+      "icon": "lint",
+      "runOnWorktreeCreate": false
+    },
+    {
+      "name": "Dev Board Next",
+      "command": "uv run --no-project --with-requirements requirements-devboard.txt python scripts/devboard.py next",
+      "icon": "play",
+      "runOnWorktreeCreate": false
+    },
+    {
+      "name": "Dev Board Validate",
+      "command": "uv run --no-project --with-requirements requirements-devboard.txt python scripts/devboard.py validate",
+      "icon": "test",
+      "runOnWorktreeCreate": false
+    }
+  ]
+}

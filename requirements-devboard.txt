@@ -1,0 +1,3 @@
+# Isolated development-board tooling; no product runtime dependencies.
+PyYAML>=6.0.3,<7
+jsonschema>=4.23,<5
