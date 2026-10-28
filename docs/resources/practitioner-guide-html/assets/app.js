@@ -7,7 +7,7 @@
       file: "README.md",
       number: "00",
       title: "Guide Home",
-      documentTitle: "GenDev Practitioner Guide",
+      documentTitle: "GenDev V3 Practitioner Guide",
       group: "Start here",
     },
     { id: "01-orientation", file: "01-orientation.md", number: "01", title: "Orientation", group: "Foundations" },
@@ -29,6 +29,9 @@
     { id: "17-common-failure-modes", file: "17-common-failure-modes.md", number: "17", title: "Common Failure Modes", group: "Reference" },
     { id: "18-glossary", file: "18-glossary.md", number: "18", title: "Glossary", group: "Reference" },
     { id: "19-starting-mid-stream", file: "19-starting-mid-stream.md", number: "19", title: "Starting Mid-Stream", group: "Appendix" },
+    { id: "20-work-item-board", file: "20-work-item-board.md", number: "20", title: "Work-Item Board", group: "V3 toolkit" },
+    { id: "21-skill-library-and-workflows", file: "21-skill-library-and-workflows.md", number: "21", title: "Skill Library And Workflows", group: "V3 toolkit" },
+    { id: "22-installation-and-upgrades", file: "22-installation-and-upgrades.md", number: "22", title: "Installation And Upgrades", group: "V3 toolkit" },
   ];
 
   const chapterById = new Map(CHAPTERS.map((chapter) => [chapter.id, chapter]));
@@ -354,8 +357,8 @@
     chapterLocation.textContent = chapter.title;
     readingTime.textContent = "Loading…";
     document.title = chapter.id === "README"
-      ? "GenDev Practitioner Guide"
-      : `${chapter.documentTitle || chapter.title} · GenDev Practitioner Guide`;
+      ? "GenDev V3 Practitioner Guide"
+      : `${chapter.documentTitle || chapter.title} · GenDev V3 Practitioner Guide`;
 
     try {
       const markdown = await loadMarkdown(chapter);

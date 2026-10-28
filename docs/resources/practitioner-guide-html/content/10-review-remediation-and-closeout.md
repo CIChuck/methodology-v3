@@ -1,237 +1,130 @@
 # 10. Review, Remediation, And Close-Out
 
-## Purpose
+## Review Is Conformance
 
-This chapter explains how GenDev handles implementation review (checking built work against
-accepted authority), remediation (fixing review findings or explicitly resolving them),
-acceptance (human decision to accept the implemented state), and as-built documentation (records of
-what actually exists after implementation).
+Review compares actual implementation with accepted scope and authority: the
+construction directive, tactical and phase plans, PRD, architecture, governance,
+verification plan and traceability. It checks the six constitutional principles
+as well as behavior, boundaries, security, failure paths and evidence. A green
+test suite does not prove those concerns or replace human acceptance.
 
-## Review Is Conformance, Not Taste
+## Freeze The Candidate And Pin The Request
 
-The code review stage checks whether implementation conforms to documented authority (the accepted
-artifacts and records governing the work).
+Formal validation requires a stable commit and exact base/candidate diff. The
+request identifies project/phase/task, branch/checkout, pinned authority revisions
+or digests, directive, acceptance criteria, required commands, known baseline
+failures, exclusions, permitted effects and report/evidence locations. Uncommitted
+work can receive advisory review, not formal VERIFIED.
 
-Conformance review should be independent from the implementation context. Independent review means
-the reviewer starts from accepted authority, the implementation diff or artifact, and verification
-evidence, rather than continuing from the implementation agent's chat session.
-
-The review should compare implementation against:
-
-- construction directive (the controlling build instruction);
-- tactical implementation plan (the actionable workstream and task plan);
-- phase build plan (the approved phase scope and objectives);
-- PRD (product requirements document);
-- architecture (system structure and technical boundaries);
-- governance/security specification (identity, authorization, data, audit, tool, and approval
-  rules);
-- test/UAT plan (automated and user acceptance testing plan);
-- traceability matrix (map from requirements to implementation, tests, and evidence).
-
-Review findings should be ordered by severity (how seriously a finding affects acceptance or
-deployment) and tied to source authority (the governing document or record that the finding cites).
-The review should also record source revisions when practical. A finding tied to `REQ-003` is more
-useful when the reviewer can identify the PRD revision, architecture revision, construction
-directive revision, and implementation diff that were actually reviewed.
-
-If review discovers that accepted authority is wrong or incomplete, the reviewer should not fix the
-implementation by inventing hidden authority. The finding should recommend amendment or regression.
-The lead agent should then classify the amendment, record the decision, and reconcile downstream
-artifacts before acceptance.
-
-### Checking the Six Principles
-
-Conformance is not only "does the code match the directive's scope." It also includes whether the
-code holds the constitution's six code-quality principles, and this is a specific reviewer's job. The
-sub-agent coordination protocol defines a code conformance reviewer that checks exactly this, under
-the same independence rule as all conformance review: it works from the directive, the Accepted
-architecture's Domain Model, the relevant surrounding code, and the artifact under review, with no
-access to the implementing agent's session.
-
-The reviewer asks six questions: was anything built that no requirement or directive asked for
-(YAGNI); is there a simpler structure that satisfies the same requirement (KISS); does this logic
-already exist elsewhere in the codebase (DRY); does any single unit do more than one job (single
-responsibility); does every entity, field, relationship, class, and interface in the code already
-appear in the Domain Model (no undeclared abstractions); and would the obvious reading of the
-requirement lead a reader to expect this behavior (least astonishment).
-
-Be honest about what this reviewer can and cannot settle, because overclaiming here is its own kind
-of drift. Four of the six are cleanly checkable given the right inputs: KISS, DRY, the entity-lookup
-half of no-undeclared-abstractions, and the narrow form of YAGNI (was it requested, checked against
-a specific non-goals section). Two are not reliably checkable by an independent reviewer and should
-be treated as advisory rather than blocking: the broad form of YAGNI (was this genuinely unneeded by
-the project, which requires roadmap knowledge the reviewer does not have) and least astonishment
-(what a reader would find surprising, which is a judgment call, not a comparison against a document).
-A review that reports a broad-YAGNI or least-astonishment concern is flagging something for a human
-to weigh, not failing the gate on its own authority. Treating all six as equally mechanical would
-claim a precision the reviewer does not have.
+Use a new fresh context for every conformance review or changed candidate. Supply
+only the needed authority, diff, surrounding code, verification evidence and
+questions. Exclude the builder transcript, private reasoning and conclusions as
+proof. The reviewer remains read-only, creates only permitted disposable test
+outputs, and cannot start nested reviewers, remediate, change state or deliver.
+A different model is optional; independent context is mandatory.
 
 ## Context Provenance
 
-Every code review report should include context provenance, the record of what the reviewer was
-given.
+Record reviewer identity/model when available, context creation time, inputs,
+authority pins, exact candidate/diff, whether implementer context was shared and
+any justified exception. Preserve commands, actual results, skipped checks and
+limits. A changed candidate or authority makes the previous result stale; retain
+it as a historical result for its own revision, then obtain fresh review.
 
-Minimum fields:
+Use canonical phase review/evidence paths under `docs/project/` for products.
+The board tracking packet links to those records; it does not move them into a
+tracking archive. Baseline evolution uses its explicitly authorized equivalent.
 
-```text
-Reviewing agent:
-Model/version:
-Review context created on:
-Inputs provided:
-Authority document revisions used:
-Implementation diff or commit reviewed:
-Implementer session shared with reviewer: No
-Exceptions:
-```
+## The Six Principles And NAA
 
-`Implementer session shared with reviewer` should normally be `No`. If the reviewer receives
-implementer chat history or reasoning, the report should explain why that exception was necessary
-and how it may affect independence.
+Review whether work is requested (YAGNI), proportionate (KISS), reuses existing
+logic (DRY), separates responsibilities (SRP), behaves as intended (least
+astonishment), and respects declared authority (NAA). Private helpers, adapters,
+values and fixtures may implement approved scope without individual architecture
+entries if they add no new domain concept, persisted/shared state, public or
+cross-component contract, component/ownership/trust/security/lifecycle boundary,
+or unapproved behavior. A new private symbol alone is not a NAA finding.
 
-Example:
+Architectural or security boundary changes need amendment and impact assessment;
+they do not automatically regress the project to G3. Identify the actual
+requirement violation and reconcile the affected authority before deciding whether
+prior gate conditions are invalidated. Preferences without a violated requirement
+remain advisory; a mandatory violation remains mandatory even if rare.
 
-```text
-Reviewing agent: Codex review session
-Model/version: TBD
-Review context created on: 2026-06-10
-Inputs provided: AGENTS.md, project.yaml, PRD, architecture, governance spec, construction directive, diff, test output
-Authority document revisions used: PRD abc1234, architecture def5678, governance 901abcd
-Implementation diff or commit reviewed: pull request #42
-Implementer session shared with reviewer: No
-Exceptions: None
-```
+## Outcomes And Findings
 
-## Code Review Report
+The independent validator returns exactly one outcome:
 
-The code review report should include:
+| Outcome | Meaning |
+| --- | --- |
+| VERIFIED | Required conformance/evidence established for the exact candidate; no unmet mandatory requirement |
+| CHANGES_REQUESTED | A mandatory requirement needs remediation, regardless of its severity label |
+| BLOCKED | Authority, candidate stability or required evidence is insufficient for a defensible conclusion |
 
-- files reviewed;
-- authority reviewed, including pinned revisions where practical;
-- context provenance;
-- construction directive or implementation prompt that produced the change;
-- implementation reference, such as commit, diff, or pull request;
-- findings by severity;
-- missing tests;
-- scope drift (implementation moving beyond or away from approved scope);
-- security/governance issues;
-- documentation drift;
-- residual risks (risks remaining after remediation);
-- recommended remediation.
+Each finding needs a stable ID, severity, exact location, governing requirement,
+reproducible evidence, risk, required mitigation and verification. Explain whether
+it is inherited or a regression. Severity conventions may vary by report, but
+minor/low does not mean optional when a mandatory requirement was violated.
+Advisory APPROVE, bot scores, successful commands and branch status are separate
+evidence classes and never rewrite these formal outcomes.
 
-Findings should be concrete. A finding such as "needs cleanup" is not enough. A useful finding says
-what violates authority, why it matters, and what must change.
+Human risk acceptance does not change CHANGES_REQUESTED to VERIFIED. A governing
+exception or amendment must be handled through the actual authority process;
+review the resulting candidate/authority as required. Missing identity, approval
+or evidence cannot be filled by a role flag or a report label.
 
-## Severity
+## Bounded Remediation
 
-Use practical severity categories:
+Translate findings into a directive with exact scope, tests, non-goals and stop
+conditions. Fix within the approved migration/phase/task boundary, rerun relevant
+checks and freeze the revised candidate. Request fresh independent review; do not
+have the builder self-attest or reuse a reviewer conversation for a new candidate.
+After two unsuccessful remediation cycles, return unresolved findings and options
+to the human instead of continuing automatically. A round budget or workflow
+skill never extends that limit without human disposition.
 
-- critical: cannot accept or deploy;
-- major: must remediate or explicitly accept risk;
-- minor: should fix but does not block acceptance;
-- advisory: improvement suggestion, not a required change.
+If the defect is in accepted authority, record and classify an amendment, assess
+the affected subtree, reconcile it and determine whether a gate must regress.
+Do not silently rewrite source requirements to match implementation.
 
-Critical and major findings require remediation or explicit human acceptance before phase
-acceptance.
+## Board, Verification, Acceptance And Delivery
 
-## Remediation
+Work remains under execution through required review/remediation. Propose
+completed only with the applicable independent VERIFIED evidence; only the human
+records accepted. Baseline evolution may explicitly remain started through human
+acceptance. Keep branch, task state, candidate and evidence consistent.
 
-The remediation agent (the agent role focused on fixing review findings) or lead agent should
-address findings exactly once.
-
-For each finding:
-
-- remediate;
-- defer with human approval (move the issue to later work intentionally);
-- accept risk with human approval (carry the known risk forward);
-- open an amendment if the finding exposes incorrect accepted authority;
-- reopen planning if the finding exposes an authority gap (missing or conflicting project
-  authority).
-
-The agent should not silently broaden scope during remediation.
-
-## Verification After Remediation
-
-After remediation, the agent should rerun relevant checks and update evidence (proof supporting
-the new readiness claim).
-
-Evidence may include:
-
-- test command output summary;
-- UAT result summary;
-- security test result;
-- migration validation (proof that data, schema, configuration, or environment changes worked);
-- manual verification notes;
-- review confirmation.
-
-If verification cannot be run, the agent must report why and whether the risk is acceptable.
-
-## Acceptance
-
-Phase acceptance means the human accepts the implemented state after review and remediation.
-
-Before acceptance, confirm:
-
-```text
-[ ] critical findings are remediated
-[ ] major findings are remediated or explicitly accepted
-[ ] required tests passed or exceptions are recorded
-[ ] UAT evidence exists where required
-[ ] traceability matrix reflects actual evidence
-[ ] active amendments are resolved or explicitly non-blocking
-[ ] code review report includes context provenance
-[ ] known limitations are documented
-[ ] deferred items are tracked
-```
+A commit, push, merge, release or deployment is an observed delivery event,
+recorded separately from verification and acceptance. A pushed feature branch
+can still be unreviewed. A VERIFIED candidate can still await human acceptance.
+Record both facts accurately; do not use delivery to imply gate approval.
 
 ## As-Built Close-Out
 
-As-built close-out records what actually exists (not merely what the plan said should exist).
+Record actual implemented behavior and deviations; test/UAT and security/migration
+evidence; review/remediation status; accepted risks and deferred work; current
+traceability and source provenance; amended authority; operational limits and
+next actions. Report unavailable verification with its reason. Reconcile the
+approved documents and the actual result rather than presenting plans as built.
 
-It should update or reference:
-
-- implemented behavior;
-- deviations from plan (differences between intended and actual implementation);
-- deferred behavior;
-- known limitations;
-- test/UAT evidence;
-- traceability status;
-- provenance updates, including changed source revisions and any stale downstream artifacts;
-- architecture or PRD changes discovered during implementation;
-- operational notes;
-- next phase or backlog items (future work intentionally postponed or newly discovered).
-
-The as-built document is important because future agents will not have perfect memory of the
-implementation session.
-
-## Close-Out Prompt
+A useful prompt is:
 
 ```text
-Perform as-built close-out for Phase 1. Use the implementation summary, review report, remediation
-results, test/UAT evidence, and traceability matrix. Update only the documents needed to make the
-actual implemented state clear to a future agent.
+Perform Phase 1 as-built close-out from the reviewed candidate and actual test,
+UAT, remediation and traceability evidence. Identify gaps, stale authority and
+residual risks. Propose acceptance; do not record a human decision for me.
 ```
-
-Expected agent behavior:
-
-- read the relevant evidence;
-- identify planned-versus-actual differences;
-- update close-out docs;
-- update traceability;
-- update artifact provenance or mark downstream artifacts stale when authority changed;
-- report any missing evidence;
-- recommend phase acceptance or next remediation.
 
 ## Phase Review Versus Aggregate Acceptance
 
-Per-phase review happens inside the G5-to-G6 phase loop. It checks one implemented phase against
-that phase's accepted directive, tactical plan, phase plan, test/UAT plan, and source authority.
-Per-phase close-out records what that phase actually changed.
+Per-phase review occurs inside the G5-to-G6 loop against that phase's accepted
+artifacts. G6 is aggregate readiness for review after all declared live phases
+exit; G7 is final implementation acceptance after aggregate review/remediation;
+G9 is terminal project close-out. A phase review is not G6 or final acceptance.
+Use the canonical phase and aggregate records required by the manifest, including
+final review/test reports, remediation disposition and project-level as-built/value
+records. Close-out documentation never supplies deployment or gate approval.
 
-G6 is different: it is aggregate implementation readiness for review after all declared live phases
-have exited. G7 is final implementation acceptance after aggregate review and remediation. G9 is
-terminal project close-out. Do not label a per-phase review as G6, and do not label G6 as final
-acceptance.
-
-Remediation records should resolve each finding exactly once: fixed, deferred with approval,
-accepted as risk with approval, escalated as an amendment, or reopened as a planning gap. Close-out
-must carry the actual result, not the intended result from the plan.
+The policies under `docs/policies/` and the constitution control this workflow.
+Documentation-only maintenance has its bounded direct-authorization route and
+checks; it is not a new formal independent VERIFIED result.

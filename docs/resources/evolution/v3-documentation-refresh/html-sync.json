@@ -1,0 +1,176 @@
+{
+  "result": "PASS",
+  "files": 23,
+  "checks": [
+    "exact filename sets",
+    "byte equality",
+    "chapter catalog coverage",
+    "pinned Marked HTML rendering"
+  ],
+  "limits": [
+    "No browser visual UAT or external site deployment"
+  ],
+  "chapters": [
+    {
+      "file": "README.md",
+      "id": "README",
+      "bytes": 5298,
+      "sha256": "92ffe05abb838c309036f542bd4bab2fc1f46b44e26307cad9962a37bdc72020",
+      "rendered": true
+    },
+    {
+      "file": "01-orientation.md",
+      "id": "01-orientation",
+      "bytes": 6800,
+      "sha256": "43762b6d133dd34712eb7dac4bf19d46b258de75e19b05d93cf0bbd4ded88fc5",
+      "rendered": true
+    },
+    {
+      "file": "02-core-mental-model.md",
+      "id": "02-core-mental-model",
+      "bytes": 17287,
+      "sha256": "b353897d44467b79767306a24d5122819b6891cd7f479d2e49e5688c8e38f9b1",
+      "rendered": true
+    },
+    {
+      "file": "03-repository-map.md",
+      "id": "03-repository-map",
+      "bytes": 8657,
+      "sha256": "c3207d397e290eedc9f2eab39ad59547e73726dccc95aac7b731288bfbca35a9",
+      "rendered": true
+    },
+    {
+      "file": "04-starting-a-new-project.md",
+      "id": "04-starting-a-new-project",
+      "bytes": 6507,
+      "sha256": "c7454cb968c1dbc19b2d86131ac708d87103bd8a9ba1f1522bc7d9cde99ab96e",
+      "rendered": true
+    },
+    {
+      "file": "05-working-with-the-agent.md",
+      "id": "05-working-with-the-agent",
+      "bytes": 8839,
+      "sha256": "0508d42b64920dd35cd0b8c582f9f93ec25e2c55b1190eab571cb0e054258fa2",
+      "rendered": true
+    },
+    {
+      "file": "06-gates-and-artifacts.md",
+      "id": "06-gates-and-artifacts",
+      "bytes": 22353,
+      "sha256": "cc84ebf6d2e269cda3408a0869ad48f0781a74b8191733dbd7ebe8cd8e493731",
+      "rendered": true
+    },
+    {
+      "file": "07-approvals-and-risk.md",
+      "id": "07-approvals-and-risk",
+      "bytes": 14108,
+      "sha256": "2d73c7a6fb4890c3ddd650d2d78a0d85ff2e893623de5c868de99c3a41f6ccf0",
+      "rendered": true
+    },
+    {
+      "file": "08-subagents-and-delegation.md",
+      "id": "08-subagents-and-delegation",
+      "bytes": 8526,
+      "sha256": "5d72ba70222e0c21019e64e6970656e77696bed3fbc58dde18c4876f4d66be30",
+      "rendered": true
+    },
+    {
+      "file": "09-build-planning-and-implementation.md",
+      "id": "09-build-planning-and-implementation",
+      "bytes": 13964,
+      "sha256": "0fd4ef64305589f2fa41b0eb41ccdda594ba3f76bc4d35e4f4b9157c0e370213",
+      "rendered": true
+    },
+    {
+      "file": "10-review-remediation-and-closeout.md",
+      "id": "10-review-remediation-and-closeout",
+      "bytes": 7149,
+      "sha256": "25aa8c600d4a9fdadd887b21df496d4ca13624ae0a4c19082dab8bb8576c0304",
+      "rendered": true
+    },
+    {
+      "file": "11-production-operations.md",
+      "id": "11-production-operations",
+      "bytes": 6987,
+      "sha256": "31f31f5e6571c87990cf68735da57434b8cb99f3a8ec6f7e69a32fddafc1fb3d",
+      "rendered": true
+    },
+    {
+      "file": "12-vendor-contract-tracker-walkthrough.md",
+      "id": "12-vendor-contract-tracker-walkthrough",
+      "bytes": 19383,
+      "sha256": "a5ba707e9b2ea7cad54ddea976cee9c3c2f4f7d590061fb6e5837661d93580c2",
+      "rendered": true
+    },
+    {
+      "file": "13-codex-specific-notes.md",
+      "id": "13-codex-specific-notes",
+      "bytes": 2895,
+      "sha256": "1774c462cb02d087b62f0cc3c2d76d75ccaee3216a097899fc37247d4973647f",
+      "rendered": true
+    },
+    {
+      "file": "14-claude-code-specific-notes.md",
+      "id": "14-claude-code-specific-notes",
+      "bytes": 2770,
+      "sha256": "d8600ec52b668f8c9ef6c0f2e1096c263483eb34df4907f530dbee3505be80d1",
+      "rendered": true
+    },
+    {
+      "file": "15-prompt-library.md",
+      "id": "15-prompt-library",
+      "bytes": 9927,
+      "sha256": "a7a77dbfd13ab713230557e8643520ef4381f5414681022238dade4f43267af1",
+      "rendered": true
+    },
+    {
+      "file": "16-checklists.md",
+      "id": "16-checklists",
+      "bytes": 11830,
+      "sha256": "aa360e97d479fdd2be0bdc842e1cf6f786714b5371bf782adbbe6179e1989d95",
+      "rendered": true
+    },
+    {
+      "file": "17-common-failure-modes.md",
+      "id": "17-common-failure-modes",
+      "bytes": 14123,
+      "sha256": "b41fe78ba07fe634ec45f4fbc5a9f7a7dc4df8dc8257c6fe82122d57616d64db",
+      "rendered": true
+    },
+    {
+      "file": "18-glossary.md",
+      "id": "18-glossary",
+      "bytes": 74540,
+      "sha256": "c8e00d04dc511d80e5e6061208966685dfc0af9dbd2d3b6a02be99689d01bc69",
+      "rendered": true
+    },
+    {
+      "file": "19-starting-mid-stream.md",
+      "id": "19-starting-mid-stream",
+      "bytes": 24598,
+      "sha256": "6b1428eb4de7c347619adf5462dc0eaca07c3a54713347b6d7b533322285551e",
+      "rendered": true
+    },
+    {
+      "file": "20-work-item-board.md",
+      "id": "20-work-item-board",
+      "bytes": 4108,
+      "sha256": "f8ff946c18bb2f093c1762dd4e39e04b53638bfdfbc6056bc9564df7218ffce9",
+      "rendered": true
+    },
+    {
+      "file": "21-skill-library-and-workflows.md",
+      "id": "21-skill-library-and-workflows",
+      "bytes": 5351,
+      "sha256": "f805a9b823e2ef4ad58e262e2e0862b72190eb1fc1f3a88241a85d367bf9a5e7",
+      "rendered": true
+    },
+    {
+      "file": "22-installation-and-upgrades.md",
+      "id": "22-installation-and-upgrades",
+      "bytes": 6001,
+      "sha256": "e219dd1f6d73021f463cdf8358432b66c363d5b74d1f9a33c038b02a352bf6b3",
+      "rendered": true
+    }
+  ]
+}

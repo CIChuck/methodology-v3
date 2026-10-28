@@ -307,7 +307,7 @@ as upstream authority, and (if present) the backfill conformance report.
 
 Preserve the existing content. Map it into the required sections by the standard
 rules. This gate is the heaviest: a presales architecture is usually a diagram
-and a stack recommendation, and the template requires a closed Domain Model,
+and a stack recommendation, and the template requires an authority-bearing Domain Model,
 Component Ownership with explicit boundaries, Runtime and Data models, State
 Lifecycle, Interfaces, Error and Failure Behavior, Security-Sensitive
 Boundaries, a Requirement Traceability section, and a Verification Specification
@@ -315,10 +315,11 @@ derived from the G2 acceptance criteria. Expect to write the sections a sales
 document never had, using only what the accepted PRD and the existing
 architecture support.
 
-Treat the Domain Model as a closed list once written: it is the approved set of
-entities, fields, relationships, classes, and interfaces. Do not introduce
-architecture that invents a requirement the accepted PRD does not contain; flag
-any such gap as a reconciliation finding for the human.
+Treat accepted authority as controlling for domain concepts, persisted/shared
+data, public/cross-component interfaces, components and ownership/trust/security
+boundaries. Proportionate private implementation detail may be chosen within an
+approved task without individual model entries. Do not invent architecture or
+requirements; flag a genuine authority change for amendment and impact assessment.
 
 Add required front-matter, set Status to "Ready for Review". Return the conformed
 document and any reconciliation findings.
@@ -439,3 +440,24 @@ then run each existing artifact through the same conform, reconcile, accept, and
 gate order. Stop backfilling when you run out of existing artifacts; author the rest normally. And
 remember the one rule that governs all of it: you are only as far along as your last accepted
 artifact, never as far as your last existing one.
+
+All iterative validation in this appendix follows the local independent-validation
+policy: use fresh contexts and pinned authority/candidates, and return unresolved
+mandatory findings after two unsuccessful remediation cycles. Do not turn an
+advisory source-document conformance pass into a formal implementation VERIFIED.
+
+## V3 Distribution And Task Boundary
+
+Use `docs/resources/releases/v3-adoption.md` for current installation and upgrade
+ownership; the inherited 1.0.2 adoption guide remains a baseline reference.
+Backfill maps declared product source documents into actual canonical authority;
+it does not import source toolkit task/approval history. The destination's owner
+chooses an empty board's initial conformance tasks and records actual acceptance.
+
+Preserve original documents and snapshots. Existing local method customizations
+require explicit reconciliation during upgrade; --force is not permission to
+replace them. A fresh installed manifest's unset attester causes the explicit
+pre-approval error until a real human is named, without approving any gate.
+When architecture work changes accepted scope/contracts/security, assess and
+reconcile the amendment before deciding regression. No private-symbol list check
+or task label substitutes for that impact assessment.

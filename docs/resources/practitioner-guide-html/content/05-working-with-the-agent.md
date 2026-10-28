@@ -251,3 +251,21 @@ confirmation when the current mode requires confirmation.
 Brainstorming is allowed before an artifact is ready, but it must not become hidden authority. Use the agent to explore candidate goals, users, requirements, risks, or architecture options, then ask it to map only accepted material into the artifact template. Keep speculative ideas labeled as options, open questions, or rejected alternatives until a human accepts them.
 
 Traceability should begin early and become more precise as artifacts mature. Vision discussions may produce outcome-level criteria. PRD work turns those criteria into stable requirement IDs and acceptance criteria. Architecture work binds requirements to components, verification strategy, and coverage expectations. The traceability matrix can therefore evolve progressively, but each row must name its source authority and must not claim verification before matching evidence exists.
+
+## Task Scope Alongside Gate State
+
+After reading the manifest and gate log, validate the board and inspect the
+owner-selected task. Confirm actual branch, authority revisions, prerequisites
+and permitted effects. A board approval allows bounded preparation; product code
+requires started/granted task state and accepted phase/tactical/directive/test
+authority at the applicable checkpoints. An empty board means no task was seeded,
+not that G1 is approved. The owner decides what to add.
+
+Private helpers and fixtures may be implementation choices within approved scope;
+new behavior, shared contracts, architecture or security boundaries need amendment.
+State assumptions and stop for a real authority gap, rather than seeking approval
+for every private symbol or silently enlarging the product.
+
+Record local checks, independent review, human acceptance and external delivery
+as distinct facts. Read the actual skill and user's request before using a workflow;
+installation, discussion and capability discovery are not workflow invocation.

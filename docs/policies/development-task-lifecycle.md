@@ -2,7 +2,7 @@
 
 Status: Reusable operating policy
 Authority: AGENTS.md and docs/methodology/constitution/gendev.md
-Derived from: the the active project integration; provenance is recorded in the v3 migration inventory.
+Derived from: the active project integration; provenance is recorded in the v3 migration inventory.
 
 ## Purpose and authoritative state
 

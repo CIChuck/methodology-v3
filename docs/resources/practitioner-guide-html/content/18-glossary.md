@@ -1280,17 +1280,14 @@ see what the gate log, traceability matrix, enforcement records, and value revie
 
 ## No Undeclared Abstractions
 
-No undeclared abstractions (NAA) is one of the constitution's six First Principles of Code Quality,
-and the one most specific to AI-generated code. It holds that every entity, field, relationship,
-class, and interface a build introduces must already appear in an approved upstream authority: a
-business concept named in the requirements, or a design element named in the architecture's Accepted
-Domain Model. A build implements the approved model; it does not silently expand it. This is why the
-Domain Model is treated as a closed list once accepted: anything a phase needs beyond it is a finding
-sent back to amend the architecture, not an abstraction the build invents on its own. NAA splits into
-two halves with different checkability. The entity-lookup half (does this thing already appear in the
-Domain Model) is cleanly checkable by a fresh-context reviewer given the Domain Model. The
-invented-machinery half (a base class or interface reached for to build something authorized, which
-is not a domain entity at all) is closer to a KISS judgment than a list comparison.
+NAA requires applicable accepted authority for new domain concepts, shared or
+persisted data, public/cross-component interfaces, architectural components and
+ownership, trust, security or lifecycle boundaries. Private implementation-local
+helpers, adapters, values and test fixtures may implement an approved task when
+they add no such concept, state, contract, boundary or unapproved behavior and
+remain proportionate under the six principles. A missing private-symbol inventory
+entry alone is not a violation. Review semantics and impact; a genuine authority
+change requires amendment before implementation.
 
 ## Non-Goal
 
@@ -1880,3 +1877,43 @@ the exact authorized work item.
 A typed target kind is the relationship on a supporting-artifact reference, such as `implements`,
 `satisfies`, `tested-by`, `constrained-by`, or `refines`. The type states why the supporting
 artifact matters and which coherence obligation it creates.
+
+
+## Work-Item Board
+
+The owner-controlled task registry alongside GenDev. It tracks priority, dependencies, scope authorization, condition and delivery. It does not own product gate approval. Fresh installations receive an empty board.
+
+
+## Implementation Authority
+
+Task-scoped permission to perform the approved work. Product generation additionally needs started task state, the named branch and accepted phase/tactical/directive/test authority permitted by the actual gate.
+
+
+## Frozen Candidate
+
+The stable exact commit and base/diff selected for formal conformance review. Pins and fresh context make the result reproducible; a later changed candidate needs new review.
+
+
+## Independent VERIFIED
+
+The formal policy outcome that the exact candidate meets required conformance/evidence. It does not record human acceptance, release, deployment or GitHub delivery.
+
+
+## Baseline Ownership
+
+The installed record of toolkit-managed file hashes and modes. It excludes arbitrary local additions and project-owned seeds such as board/policy state, allowing upgrades to detect conflicts before writes.
+
+
+## Rolling-Wave Draft
+
+A provisional later phase build plan used to clarify scope. It remains Draft, does not satisfy a checkpoint and grants no code authority; tactical plans/directives are finalized just in time.
+
+
+## Skill Bundle
+
+Canonical instructions with any scripts, references, assets or provider UI metadata required by the workflow. Whole-folder discovery preserves relative resources. Discovery or discussion is not invocation.
+
+
+## Delivery State
+
+Observed local, pushed, merged or released state, recorded separately from task approval, independent verification and human acceptance.

@@ -79,3 +79,15 @@ Distinguish per-phase review from aggregate G6/G7 review. Phase review checks th
 against its directive, tactical task IDs, phase plan, test/UAT plan, and authority. G6 readiness is
 aggregate whole-build review readiness; G7 is final implementation acceptance after review and
 remediation.
+
+## V3 Formal Validation Boundary
+
+Apply docs/policies/independent-validation-policy.md. Formal validation requires
+a frozen exact candidate/base diff, pinned authority and a new fresh read-only
+context. Return VERIFIED, CHANGES_REQUESTED or BLOCKED with reproducible evidence.
+Any unmet mandatory requirement requires changes irrespective of severity; risk
+acceptance alone does not relabel the result. No reviewer edits, nested reviewers,
+state changes or delivery effects. A changed candidate needs fresh review, and
+two unsuccessful remediation cycles return findings/options to the human.
+Evaluate actual authority-bearing NAA impact rather than requiring every private
+helper or fixture to appear in the architecture inventory.

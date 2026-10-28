@@ -42,3 +42,11 @@ cases that expect nonzero command status.
 
 This example is not active authority for a new clone. Its command output is evidence only for this
 example directory.
+
+## V3 Reuse Note
+
+The recorded fixture methodology_version and evidence are preserved. This example
+is not a newly executed v3 product. Recreate/adopt its authority with the chosen
+toolkit, owner-controlled empty board and actual new approvals/evidence before
+using it as local project authority. See the v3 adoption guide and Practitioner
+Chapters 20–22 for distribution, task and skill boundaries.

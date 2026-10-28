@@ -489,3 +489,21 @@ Correction:
 Use backfill as a safe seeding step only. Keep imported documents Draft or Ready for Review until
 each gate's conformance, reconciliation, validation, and human approval are complete.
 ```
+
+## V3 Board, Skill And Distribution Failures
+
+| Symptom | Correction |
+| --- | --- |
+| A new board is populated with source migration tasks or G1 approvals | Restore a fresh empty seed; owner selects tasks, manifest retains G1 pending |
+| Approved board task is treated as code authority | Confirm started/granted state, branch and accepted upstream artifacts |
+| Every private helper is escalated to architecture approval | Evaluate actual domain/state/contract/security impact under NAA |
+| Architecture edit automatically regresses to G3 | Classify, assess impact and reconcile before deciding regression |
+| Advance plan drafts are treated as accepted checkpoints | Keep Draft status and just-in-time tactical/directive acceptance |
+| Old review or green tests are called VERIFIED for a new commit | Freeze and review the exact new candidate in a fresh context |
+| Workflow loops continue after repeated mandatory failures | Escalate after the policy limit; extra cycles need human disposition |
+| A pushed/merged branch is called accepted | Reconcile observed delivery and obtain the actual human decision separately |
+| Installer --force hides local changes | Stop on conflicts and reconcile ownership/amendments; never reset hashes to conceal edits |
+| Fresh fixture rejects an unrelated private skill link | Use preselection of owned/tracked assets; keep unsafe owned paths refused |
+| Only SKILL.md was copied from a bundle | Restore whole-folder discovery and support files |
+| Guide HTML still displays old procedures | Recopy every canonical Markdown file and check filename/byte/catalog equality |
+| Fresh checker exit 1 is called a clean pass | Identify the sole unset-attester condition explicitly; investigate other errors |

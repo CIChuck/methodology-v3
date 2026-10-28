@@ -1,0 +1,33 @@
+{
+  "status": "documentation maintenance locally checked; no new formal VERIFIED or human acceptance",
+  "date": "2026-10-28T22:33:16.076381+00:00",
+  "branch": "docs/v3-documentation",
+  "base": "60f4385066ee24b2560d8fce6695ac975d9f82d7",
+  "canonical_guide_files": 23,
+  "mirror": "exact filename/byte equality; full chapter catalog; pinned Marked render pass",
+  "changes": [
+    "All 20 existing guide files reconciled plus three v3 toolkit chapters",
+    "Root/agent/operating/adoption/template/example/runbook references updated",
+    "Proportional NAA, impact-based regression and rolling-wave planning reconciled",
+    "Owner-controlled board, exact candidate review, skill availability and safe upgrades documented",
+    "Provider notes cite current official Codex/Claude instruction/skill documentation",
+    "Historical evidence and lifecycle/release identity preserved"
+  ],
+  "checks": {
+    "inherited_suites": 13,
+    "inherited_checks": 409,
+    "migration_tests": 42,
+    "board_tests": 17,
+    "final_documentation_checks": 7,
+    "final_reference_checks": 3,
+    "local_links": 90,
+    "documented_commands": "synthetic fresh install, upgrade and installed-source fresh exercise passed",
+    "original_preservation": "passed under approved identical-tree checkpoint exception"
+  },
+  "limits": [
+    "No live documentation site deployment or browser visual UAT",
+    "No hosted CI/Linux/real product gate traversal",
+    "Nine-skill follow-up still awaits independent review",
+    "Migration human acceptance and final release/main integration remain separate"
+  ]
+}

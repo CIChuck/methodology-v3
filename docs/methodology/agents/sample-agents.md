@@ -222,3 +222,21 @@ A phase is not done until:
 - as-built documentation reflects what was actually built;
 - the traceability matrix is updated;
 - deferred items and known limitations are current.
+
+## V3 Task And Skill Entry
+
+Read docs/policies/development-task-lifecycle.md, independent-validation-policy.md
+and dev-board-integration.md. Installation seeds an empty board; the product
+starts G1 pending and its owner chooses tasks. Run doctor/project-state and board
+validate/next/show. Product code requires a started/granted task on its branch,
+accepted phase/tactical/directive/test authority and satisfied gate checkpoints.
+Private implementation choices stay within approved behavior/boundaries; real
+architecture/security changes require amendment impact assessment before any
+regression decision. Advance plan drafts do not authorize code.
+
+Canonical skills live in docs/methodology/dev-skills/ with discovery entries in
+.agents/skills/. Preserve whole bundles and read the requested workflow before
+use. A capability, skill name or permissive provider setting supplies no GenDev
+approval. Formal conformance uses a frozen candidate, pinned authority and fresh
+read-only context. Apply bounded remediation and keep human acceptance/delivery
+separate. Product authority remains under docs/project through tracking archival.

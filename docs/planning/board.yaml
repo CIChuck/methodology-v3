@@ -47,6 +47,23 @@ tasks:
   - docs/resources/evolution/github-delivery.json (GitHub delivery verified; not conformance approval)
   approved_by: Chuck Russell
   approved_at: '2026-10-28'
+- id: v3-documentation-refresh
+  title: Refresh v3 documentation and synchronize Practitioner Guide
+  priority: 3
+  work_state: started
+  condition: normal
+  implementation_authority: granted
+  packet: docs/planning/active/v3-documentation-refresh/
+  next_gate: Owner review of checked documentation and main integration decision; no new formal VERIFIED
+  delivery_state: local
+  branch: docs/v3-documentation
+  depends_on: []
+  validation:
+  - docs/resources/evolution/v3-documentation-refresh/validation-summary.json
+  - docs/resources/evolution/v3-documentation-refresh/html-sync.json
+  - docs/resources/evolution/v3-documentation-refresh/coverage.md
+  approved_by: Chuck Russell
+  approved_at: '2026-10-28'
 events:
 - task: v3-baseline-migration
   at: '2026-10-28T02:31:31+00:00'
@@ -172,3 +189,23 @@ events:
   note: Verified remote feature-branch hash matches skill-import checkpoint 1516712; independent review and acceptance remain
     pending.
   evidence: docs/resources/evolution/github-delivery.json
+- task: v3-documentation-refresh
+  at: '2026-10-28T22:09:41.180938+00:00'
+  actor: Chuck Russell
+  actor_role: maintainer
+  action: authorized documentation refresh
+  note: Explicit request to update docs for v3 and synchronize Practitioner Guide; recorded by Codex. No candidate acceptance
+    or release.
+- task: v3-documentation-refresh
+  at: '2026-10-28T22:09:41.180938+00:00'
+  actor: Codex
+  actor_role: agent
+  action: started bounded documentation maintenance
+  note: Separate documentation branch; preserve code and original projects.
+- task: v3-documentation-refresh
+  at: '2026-10-28T22:33:16.080851+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded documentation maintenance checks
+  note: 23-file canonical/HTML mirror synchronized; inherited, board/migration, reference and command checks pass. No new
+    formal VERIFIED, human acceptance or site deployment.

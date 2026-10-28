@@ -53,7 +53,8 @@ The agent may:
 - identify missing information;
 - propose approval language;
 - update non-final draft documents when instructed or when the current mode permits;
-- coordinate sub-agents for bounded advisory work.
+- coordinate sub-agents for bounded advisory work when delegation is authorized
+  and the active harness supports the requested provider/settings.
 
 The agent must stop for:
 

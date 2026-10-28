@@ -201,3 +201,23 @@ Expected lead-agent behavior:
 - identify conflicts;
 - recommend artifact revisions;
 - avoid gate approval until the human decides.
+
+## V3 Dispatch And Workflow Skills
+
+Use the active harness's current dispatch and worktree rules after delegation is
+authorized. Same-provider native review may be available; named models/settings,
+other providers or isolated checkouts may require its delegation service. Resolve
+actual capabilities and stop on an unavailable requested choice instead of silently
+substituting. Do not create top-level threads as a substitute for delegates.
+
+Every formal review/recheck needs a fresh context, frozen candidate and pinned
+request, including after fixes. Read-only reviewers do not remediate, create
+nested reviewers, change board/gate state or push work. Skill invocation grants
+only its stated task scope within accepted authority. Council scores and Sol
+APPROVE remain advisory unless the required formal policy result is separately
+established. The local two-unsuccessful-remediation-cycle escalation still applies.
+
+In T3, respect parent-owned PR watches and its watch/unwatch continuation model.
+Worktree setup validates existing project state rather than reinitializing it.
+Keep model/account/access defaults outside the reusable method. The nine new
+workflow skills remain a pending-review follow-up; see Chapter 21.

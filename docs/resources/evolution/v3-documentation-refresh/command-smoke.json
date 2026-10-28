@@ -1,0 +1,217 @@
+{
+  "kind": "synthetic disposable documentation command exercise",
+  "commands": [
+    {
+      "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/install-methodology.sh",
+        "--with-resources",
+        "--dry-run",
+        "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product"
+      ],
+      "exit": 0,
+      "stdout_sha256": "37bf2fd70f402dd638110da9c1931340afe557f3ebaa471ff8a4480774f05a47",
+      "stdout_tail": "ote.md\n  installed: docs/resources/research/loops.md\n  installed: docs/resources/runbook/g0-to-g7-runbook.md\n  installed: scripts/devboard.py\n  installed: scripts/friday-dev-board.py\n  installed: docs/planning/board.schema.json\n  installed: tests/devboard/test_devboard.py\n  installed: docs/policies/dev-board-integration.md\n  installed: docs/policies/development-task-lifecycle.md\n  installed: docs/policies/independent-validation-policy.md\n  installed: docs/policies/legacy-policy-debt.md\n  installed: docs/policies/repository-engineering-policy.md\n  installed: docs/planning/README.md\n  installed: docs/planning/active/.gitkeep\n  installed: docs/planning/backlog/.gitkeep\n  installed: docs/planning/blocked/.gitkeep\n  installed: docs/planning/board.yaml\n  installed: docs/planning/deferred/.gitkeep\n  installed: docs/planning/queued/.gitkeep\n  installed: docs/planning/review/.gitkeep\n  installed: docs/planning/task-template.md\n  installed: .agents/skills/ai-construction-directive-builder/SKILL.md\n  installed: .agents/skills/architecture-spec-author/SKILL.md\n  installed: .agents/skills/babysit-pr\n  installed: .agents/skills/code-conformance-reviewer/SKILL.md\n  installed: .agents/skills/council\n  installed: .agents/skills/file-pr\n  installed: .agents/skills/friday-dev-board/SKILL.md\n  installed: .agents/skills/full-send\n  installed: .agents/skills/full-stop\n  installed: .agents/skills/governance-security-spec/SKILL.md\n  installed: .agents/skills/independent-code-validator/SKILL.md\n  installed: .agents/skills/leaving-pr-comments\n  installed: .agents/skills/migration-refactor-analyst/SKILL.md\n  installed: .agents/skills/modernize\n  installed: .agents/skills/phase-build-planner/SKILL.md\n  installed: .agents/skills/prd-author/SKILL.md\n  installed: .agents/skills/remediation-closeout/SKILL.md\n  installed: .agents/skills/sol-loop\n  installed: .agents/skills/subagent-directives-template/SKILL.md\n  installed: .agents/skills/subagents-worktrees-template/SKILL.md\n  installed: .agents/skills/tactical-implementation-planner/SKILL.md\n  installed: .agents/skills/takeover\n  installed: .agents/skills/traceability-matrix/SKILL.md\n  installed: .agents/skills/vision-framing/SKILL.md\n  installed: docs/archive/completed/.gitkeep\n  installed: requirements-devboard.txt\n\nInstall completed.\nNext: run scripts/init-project.sh \"Your Project Name\" in the target, then scripts/check-methodology.sh.\n",
+      "stderr_sha256": "e20ac268aa629ffc7884a46ced9c4dda218acdd65b2118bc8b7acc6dba6afde1",
+      "stderr_tail": "Warning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product has no .git directory. Continuing with explicit file operations.\n"
+    },
+    {
+      "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/install-methodology.sh",
+        "--with-resources",
+        "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product"
+      ],
+      "exit": 0,
+      "stdout_sha256": "4298d051d5e81cf5dfe8025eb70b4b8c2863a998a1a8aa1d1d77e96518d1ece0",
+      "stdout_tail": "/g0-to-g7-runbook.md\n  installed: scripts/devboard.py\n  installed: scripts/friday-dev-board.py\n  installed: docs/planning/board.schema.json\n  installed: tests/devboard/test_devboard.py\n  installed: docs/policies/dev-board-integration.md\n  installed: docs/policies/development-task-lifecycle.md\n  installed: docs/policies/independent-validation-policy.md\n  installed: docs/policies/legacy-policy-debt.md\n  installed: docs/policies/repository-engineering-policy.md\n  installed: docs/planning/README.md\n  installed: docs/planning/active/.gitkeep\n  installed: docs/planning/backlog/.gitkeep\n  installed: docs/planning/blocked/.gitkeep\n  installed: docs/planning/board.yaml\n  installed: docs/planning/deferred/.gitkeep\n  installed: docs/planning/queued/.gitkeep\n  installed: docs/planning/review/.gitkeep\n  installed: docs/planning/task-template.md\n  installed: .agents/skills/ai-construction-directive-builder/SKILL.md\n  installed: .agents/skills/architecture-spec-author/SKILL.md\n  installed: .agents/skills/babysit-pr\n  installed: .agents/skills/code-conformance-reviewer/SKILL.md\n  installed: .agents/skills/council\n  installed: .agents/skills/file-pr\n  installed: .agents/skills/friday-dev-board/SKILL.md\n  installed: .agents/skills/full-send\n  installed: .agents/skills/full-stop\n  installed: .agents/skills/governance-security-spec/SKILL.md\n  installed: .agents/skills/independent-code-validator/SKILL.md\n  installed: .agents/skills/leaving-pr-comments\n  installed: .agents/skills/migration-refactor-analyst/SKILL.md\n  installed: .agents/skills/modernize\n  installed: .agents/skills/phase-build-planner/SKILL.md\n  installed: .agents/skills/prd-author/SKILL.md\n  installed: .agents/skills/remediation-closeout/SKILL.md\n  installed: .agents/skills/sol-loop\n  installed: .agents/skills/subagent-directives-template/SKILL.md\n  installed: .agents/skills/subagents-worktrees-template/SKILL.md\n  installed: .agents/skills/tactical-implementation-planner/SKILL.md\n  installed: .agents/skills/takeover\n  installed: .agents/skills/traceability-matrix/SKILL.md\n  installed: .agents/skills/vision-framing/SKILL.md\n  installed: docs/archive/completed/.gitkeep\n  installed: requirements-devboard.txt\n\nInstall completed with preserved AGENTS.md; fully governed operation requires explicit AGENTS integration.\nNext: run scripts/init-project.sh \"Your Project Name\" in the target, then scripts/check-methodology.sh.\n",
+      "stderr_sha256": "e20ac268aa629ffc7884a46ced9c4dda218acdd65b2118bc8b7acc6dba6afde1",
+      "stderr_tail": "Warning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product has no .git directory. Continuing with explicit file operations.\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product",
+      "argv": [
+        "./scripts/gendev-doctor.sh"
+      ],
+      "exit": 0,
+      "stdout_sha256": "f919faac6c70588f764589244b5ad096884f3cdc12e9c287bd0c23dafaabdfd8",
+      "stdout_tail": "GenDev doctor\nRepository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: https://github.com/CIChuck/methodology-v3.git (tag none, commit 60f4385066ee)\nInstalled on: 2026-10-28T22:29:34.135074+00:00\nIntegrity: verified (602 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: no\nNext action: ./scripts/init-project.sh \"Project Name\"\nGate log: missing\nRecommended validation: ./scripts/check-methodology.sh\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product",
+      "argv": [
+        "./scripts/init-project.sh",
+        "Synthetic Documentation Exercise"
+      ],
+      "exit": 0,
+      "stdout_sha256": "c252f72c11a8e2a90da12d3ef8bda3df059b87bfd4f0b871134cb7c428d848b5",
+      "stdout_tail": "Initialized docs/project for Synthetic Documentation Exercise\nProject slug: synthetic-documentation-exercise\nNext document: docs/project/vision/vision.md\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product",
+      "argv": [
+        "./scripts/project-state.sh"
+      ],
+      "exit": 0,
+      "stdout_sha256": "d8da920a41a7f085b64e285a6cdd5a41ba2149510eecbadc11d87038c262fb2d",
+      "stdout_tail": "Project: Synthetic Documentation Exercise\nSlug: synthetic-documentation-exercise\nStatus: initialized\nMethodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nRequired approver: TBD\nNext gate: G2\nNext role: prd-agent\nNext artifact: docs/project/prd/prd.md\nValidation: ./scripts/check-methodology.sh\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "validate"
+      ],
+      "exit": 0,
+      "stdout_sha256": "547c17a68219668fba877bd05be86769a5233d415536c903b3ee222df2a858cf",
+      "stdout_tail": "Development board validation passed: 0 tasks\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "next"
+      ],
+      "exit": 0,
+      "stdout_sha256": "dfa1460060b3da02b80ec0f45085589a57cb63058474264da9f87c8bd09c71d6",
+      "stdout_tail": "NO_OPEN_TASK\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product",
+      "argv": [
+        "./scripts/check-methodology.sh"
+      ],
+      "exit": 1,
+      "stdout_sha256": "4b132c9192e2229aab1042eb4001e0948b1c350fd29b0c8668cf6a9dc797d6e3",
+      "stdout_tail": "ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected=\"enforcement.attested.required_attester is a named human\" actual=\"missing or unknown\" message=\"Manifest attested enforcement is missing required_attester field.\"\n\nMethodology check failed: 1 error(s), 0 warning(s).\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    },
+    {
+      "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/install-methodology.sh",
+        "--with-resources",
+        "--force",
+        "--dry-run",
+        "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product"
+      ],
+      "exit": 0,
+      "stdout_sha256": "94c97e57ae4b0518319857b744f54598818d213741bc0b76930313fdc782be72",
+      "stdout_tail": "keep (project-owned)\n  preserved: docs/planning/backlog/.gitkeep (project-owned)\n  preserved: docs/planning/blocked/.gitkeep (project-owned)\n  preserved: docs/planning/board.yaml (project-owned)\n  preserved: docs/planning/deferred/.gitkeep (project-owned)\n  preserved: docs/planning/queued/.gitkeep (project-owned)\n  preserved: docs/planning/review/.gitkeep (project-owned)\n  preserved: docs/planning/task-template.md (project-owned)\n  preserved: .agents/skills/ai-construction-directive-builder/SKILL.md (project-owned)\n  preserved: .agents/skills/architecture-spec-author/SKILL.md (project-owned)\n  preserved: .agents/skills/babysit-pr (project-owned)\n  preserved: .agents/skills/code-conformance-reviewer/SKILL.md (project-owned)\n  preserved: .agents/skills/council (project-owned)\n  preserved: .agents/skills/file-pr (project-owned)\n  preserved: .agents/skills/friday-dev-board/SKILL.md (project-owned)\n  preserved: .agents/skills/full-send (project-owned)\n  preserved: .agents/skills/full-stop (project-owned)\n  preserved: .agents/skills/governance-security-spec/SKILL.md (project-owned)\n  preserved: .agents/skills/independent-code-validator/SKILL.md (project-owned)\n  preserved: .agents/skills/leaving-pr-comments (project-owned)\n  preserved: .agents/skills/migration-refactor-analyst/SKILL.md (project-owned)\n  preserved: .agents/skills/modernize (project-owned)\n  preserved: .agents/skills/phase-build-planner/SKILL.md (project-owned)\n  preserved: .agents/skills/prd-author/SKILL.md (project-owned)\n  preserved: .agents/skills/remediation-closeout/SKILL.md (project-owned)\n  preserved: .agents/skills/sol-loop (project-owned)\n  preserved: .agents/skills/subagent-directives-template/SKILL.md (project-owned)\n  preserved: .agents/skills/subagents-worktrees-template/SKILL.md (project-owned)\n  preserved: .agents/skills/tactical-implementation-planner/SKILL.md (project-owned)\n  preserved: .agents/skills/takeover (project-owned)\n  preserved: .agents/skills/traceability-matrix/SKILL.md (project-owned)\n  preserved: .agents/skills/vision-framing/SKILL.md (project-owned)\n  preserved: docs/archive/completed/.gitkeep (project-owned)\n  upgraded: requirements-devboard.txt\n\nInstall completed with preserved AGENTS.md; fully governed operation requires explicit AGENTS integration.\nNext: run scripts/project-state.sh and scripts/check-methodology.sh in the target; preserve its current approvals.\n",
+      "stderr_sha256": "e20ac268aa629ffc7884a46ced9c4dda218acdd65b2118bc8b7acc6dba6afde1",
+      "stderr_tail": "Warning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product has no .git directory. Continuing with explicit file operations.\n"
+    },
+    {
+      "cwd": "/Users/chuckrussell/Dev/gendev/methodology-v3",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/install-methodology.sh",
+        "--with-resources",
+        "--force",
+        "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product"
+      ],
+      "exit": 0,
+      "stdout_sha256": "075a61ba2e2ac2d37edc0dd6f0f8a2c1327deb11dcf23d2a9eb4269b3cb4ba9f",
+      "stdout_tail": "keep (project-owned)\n  preserved: docs/planning/backlog/.gitkeep (project-owned)\n  preserved: docs/planning/blocked/.gitkeep (project-owned)\n  preserved: docs/planning/board.yaml (project-owned)\n  preserved: docs/planning/deferred/.gitkeep (project-owned)\n  preserved: docs/planning/queued/.gitkeep (project-owned)\n  preserved: docs/planning/review/.gitkeep (project-owned)\n  preserved: docs/planning/task-template.md (project-owned)\n  preserved: .agents/skills/ai-construction-directive-builder/SKILL.md (project-owned)\n  preserved: .agents/skills/architecture-spec-author/SKILL.md (project-owned)\n  preserved: .agents/skills/babysit-pr (project-owned)\n  preserved: .agents/skills/code-conformance-reviewer/SKILL.md (project-owned)\n  preserved: .agents/skills/council (project-owned)\n  preserved: .agents/skills/file-pr (project-owned)\n  preserved: .agents/skills/friday-dev-board/SKILL.md (project-owned)\n  preserved: .agents/skills/full-send (project-owned)\n  preserved: .agents/skills/full-stop (project-owned)\n  preserved: .agents/skills/governance-security-spec/SKILL.md (project-owned)\n  preserved: .agents/skills/independent-code-validator/SKILL.md (project-owned)\n  preserved: .agents/skills/leaving-pr-comments (project-owned)\n  preserved: .agents/skills/migration-refactor-analyst/SKILL.md (project-owned)\n  preserved: .agents/skills/modernize (project-owned)\n  preserved: .agents/skills/phase-build-planner/SKILL.md (project-owned)\n  preserved: .agents/skills/prd-author/SKILL.md (project-owned)\n  preserved: .agents/skills/remediation-closeout/SKILL.md (project-owned)\n  preserved: .agents/skills/sol-loop (project-owned)\n  preserved: .agents/skills/subagent-directives-template/SKILL.md (project-owned)\n  preserved: .agents/skills/subagents-worktrees-template/SKILL.md (project-owned)\n  preserved: .agents/skills/tactical-implementation-planner/SKILL.md (project-owned)\n  preserved: .agents/skills/takeover (project-owned)\n  preserved: .agents/skills/traceability-matrix/SKILL.md (project-owned)\n  preserved: .agents/skills/vision-framing/SKILL.md (project-owned)\n  preserved: docs/archive/completed/.gitkeep (project-owned)\n  upgraded: requirements-devboard.txt\n\nInstall completed with preserved AGENTS.md; fully governed operation requires explicit AGENTS integration.\nNext: run scripts/project-state.sh and scripts/check-methodology.sh in the target; preserve its current approvals.\n",
+      "stderr_sha256": "e20ac268aa629ffc7884a46ced9c4dda218acdd65b2118bc8b7acc6dba6afde1",
+      "stderr_tail": "Warning: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product has no .git directory. Continuing with explicit file operations.\n"
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product",
+      "argv": [
+        "./scripts/gendev-doctor.sh"
+      ],
+      "exit": 0,
+      "stdout_sha256": "2576cdb0b8bb47d93d3d6a7e86325a5d08ab1e75fc9349691e66579113185119",
+      "stdout_tail": "GenDev doctor\nRepository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: https://github.com/CIChuck/methodology-v3.git (tag none, commit 60f4385066ee)\nInstalled on: 2026-10-28T22:29:36.502979+00:00\nIntegrity: verified (602 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Synthetic Documentation Exercise\nProject slug: synthetic-documentation-exercise\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-documentation-smoke-_f1rxi11/synthetic-product",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/create-dry-run.py"
+      ],
+      "exit": 0,
+      "stdout_sha256": "a5aeaea609f38bbda701d8ef00c61eae3e3b177f32ee894a3ea0f79cf3f26f10",
+      "stdout_tail": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/methodology-dry-run.36r33u__\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/methodology-dry-run.36r33u__",
+      "argv": [
+        "./scripts/init-project.sh",
+        "Example Product"
+      ],
+      "exit": 0,
+      "stdout_sha256": "112c33c90064e0e4edd43d44c7b06ed1b7dd0762dbfeb31b73b050e677f729bc",
+      "stdout_tail": "Initialized docs/project for Example Product\nProject slug: example-product\nNext document: docs/project/vision/vision.md\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/methodology-dry-run.36r33u__",
+      "argv": [
+        "./scripts/gendev-doctor.sh"
+      ],
+      "exit": 0,
+      "stdout_sha256": "f21c8e9201702a0951d39b25d061b83ba197846db225d4350ddcadda01f89fc0",
+      "stdout_tail": "GenDev doctor\nRepository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/methodology-dry-run.36r33u__\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: isolated-local-exercise (tag none, commit 60f4385066ee)\nInstalled on: 2026-10-28T22:29:36.934419+00:00\nIntegrity: verified (182 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Example Product\nProject slug: example-product\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/methodology-dry-run.36r33u__",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "validate"
+      ],
+      "exit": 0,
+      "stdout_sha256": "547c17a68219668fba877bd05be86769a5233d415536c903b3ee222df2a858cf",
+      "stdout_tail": "Development board validation passed: 0 tasks\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/methodology-dry-run.36r33u__",
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "next"
+      ],
+      "exit": 0,
+      "stdout_sha256": "dfa1460060b3da02b80ec0f45085589a57cb63058474264da9f87c8bd09c71d6",
+      "stdout_tail": "NO_OPEN_TASK\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    },
+    {
+      "cwd": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/methodology-dry-run.36r33u__",
+      "argv": [
+        "./scripts/check-methodology.sh"
+      ],
+      "exit": 1,
+      "stdout_sha256": "4b132c9192e2229aab1042eb4001e0948b1c350fd29b0c8668cf6a9dc797d6e3",
+      "stdout_tail": "ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected=\"enforcement.attested.required_attester is a named human\" actual=\"missing or unknown\" message=\"Manifest attested enforcement is missing required_attester field.\"\n\nMethodology check failed: 1 error(s), 0 warning(s).\n",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": ""
+    }
+  ],
+  "result": "PASS; no real project approval, deployment or live provider workflow",
+  "full_raw_record": "/Users/chuckrussell/Dev/gendev/methodology-v3-recovery/v3-documentation-refresh/command-smoke-full.json"
+}

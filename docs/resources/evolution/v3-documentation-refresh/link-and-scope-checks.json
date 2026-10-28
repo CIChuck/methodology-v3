@@ -1,0 +1,387 @@
+{
+  "checked_markdown_files": 72,
+  "local_links": 90,
+  "contextual_product_links": [
+    {
+      "file": "docs/policies/development-task-lifecycle.md",
+      "target": "../project/project.yaml"
+    },
+    {
+      "file": "docs/policies/development-task-lifecycle.md",
+      "target": "../project/approvals/gate-log.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "target": "../project/project.yaml"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "target": "../project/approvals/gate-log.md"
+    }
+  ],
+  "results": [
+    {
+      "file": "README.md",
+      "target": "docs/resources/practitioner-guide/README.md"
+    },
+    {
+      "file": "README.md",
+      "target": "docs/resources/releases/v3-adoption.md"
+    },
+    {
+      "file": "docs/planning/README.md",
+      "target": "board.yaml"
+    },
+    {
+      "file": "docs/planning/README.md",
+      "target": "../policies/development-task-lifecycle.md"
+    },
+    {
+      "file": "docs/planning/README.md",
+      "target": "active/v3-baseline-migration/"
+    },
+    {
+      "file": "docs/planning/README.md",
+      "target": "active/skill-library-import/"
+    },
+    {
+      "file": "docs/planning/README.md",
+      "target": "active/v3-documentation-refresh/"
+    },
+    {
+      "file": "docs/planning/README.md",
+      "target": "../archive/"
+    },
+    {
+      "file": "docs/policies/development-task-lifecycle.md",
+      "target": "../../AGENTS.md"
+    },
+    {
+      "file": "docs/policies/development-task-lifecycle.md",
+      "target": "repository-engineering-policy.md"
+    },
+    {
+      "file": "docs/policies/development-task-lifecycle.md",
+      "target": "independent-validation-policy.md"
+    },
+    {
+      "file": "docs/policies/development-task-lifecycle.md",
+      "target": "../methodology/guides/gates.md"
+    },
+    {
+      "file": "docs/policies/development-task-lifecycle.md",
+      "target": "../methodology/guides/phase-loop.md"
+    },
+    {
+      "file": "docs/policies/development-task-lifecycle.md",
+      "target": "../methodology/guides/human-approval-protocol.md"
+    },
+    {
+      "file": "docs/policies/development-task-lifecycle.md",
+      "target": "../planning/board.yaml"
+    },
+    {
+      "file": "docs/policies/development-task-lifecycle.md",
+      "target": "../planning/README.md"
+    },
+    {
+      "file": "docs/policies/development-task-lifecycle.md",
+      "target": "dev-board-integration.md"
+    },
+    {
+      "file": "docs/policies/development-task-lifecycle.md",
+      "target": "../methodology/guides/subagent-coordination-protocol.md"
+    },
+    {
+      "file": "docs/policies/independent-validation-policy.md",
+      "target": "../../AGENTS.md"
+    },
+    {
+      "file": "docs/policies/independent-validation-policy.md",
+      "target": "repository-engineering-policy.md"
+    },
+    {
+      "file": "docs/policies/independent-validation-policy.md",
+      "target": "development-task-lifecycle.md"
+    },
+    {
+      "file": "docs/policies/repository-engineering-policy.md",
+      "target": "../../AGENTS.md"
+    },
+    {
+      "file": "docs/policies/repository-engineering-policy.md",
+      "target": "../methodology/constitution/gendev.md"
+    },
+    {
+      "file": "docs/policies/repository-engineering-policy.md",
+      "target": "development-task-lifecycle.md"
+    },
+    {
+      "file": "docs/policies/repository-engineering-policy.md",
+      "target": "independent-validation-policy.md"
+    },
+    {
+      "file": "docs/policies/repository-engineering-policy.md",
+      "target": "legacy-policy-debt.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "target": "../../AGENTS.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "target": "repository-engineering-policy.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "target": "independent-validation-policy.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "target": "../methodology/guides/gates.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "target": "../methodology/guides/phase-loop.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "target": "../methodology/guides/human-approval-protocol.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "target": "../planning/board.yaml"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "target": "../planning/README.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "target": "dev-board-integration.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "target": "../methodology/guides/subagent-coordination-protocol.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/independent-validation-policy.md",
+      "target": "../../AGENTS.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/independent-validation-policy.md",
+      "target": "repository-engineering-policy.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/independent-validation-policy.md",
+      "target": "development-task-lifecycle.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/repository-engineering-policy.md",
+      "target": "../../AGENTS.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/repository-engineering-policy.md",
+      "target": "../methodology/constitution/gendev.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/repository-engineering-policy.md",
+      "target": "development-task-lifecycle.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/repository-engineering-policy.md",
+      "target": "independent-validation-policy.md"
+    },
+    {
+      "file": "docs/project-template/dry-run-policies/repository-engineering-policy.md",
+      "target": "legacy-policy-debt.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/03-repository-map.md",
+      "target": "21-skill-library-and-workflows.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "01-orientation.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "02-core-mental-model.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "03-repository-map.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "04-starting-a-new-project.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "05-working-with-the-agent.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "06-gates-and-artifacts.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "07-approvals-and-risk.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "08-subagents-and-delegation.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "09-build-planning-and-implementation.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "10-review-remediation-and-closeout.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "11-production-operations.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "12-vendor-contract-tracker-walkthrough.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "13-codex-specific-notes.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "14-claude-code-specific-notes.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "15-prompt-library.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "16-checklists.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "17-common-failure-modes.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "18-glossary.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "19-starting-mid-stream.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "20-work-item-board.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "21-skill-library-and-workflows.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide-html/content/README.md",
+      "target": "22-installation-and-upgrades.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/03-repository-map.md",
+      "target": "21-skill-library-and-workflows.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "01-orientation.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "02-core-mental-model.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "03-repository-map.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "04-starting-a-new-project.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "05-working-with-the-agent.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "06-gates-and-artifacts.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "07-approvals-and-risk.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "08-subagents-and-delegation.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "09-build-planning-and-implementation.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "10-review-remediation-and-closeout.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "11-production-operations.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "12-vendor-contract-tracker-walkthrough.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "13-codex-specific-notes.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "14-claude-code-specific-notes.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "15-prompt-library.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "16-checklists.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "17-common-failure-modes.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "18-glossary.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "19-starting-mid-stream.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "20-work-item-board.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "21-skill-library-and-workflows.md"
+    },
+    {
+      "file": "docs/resources/practitioner-guide/README.md",
+      "target": "22-installation-and-upgrades.md"
+    }
+  ],
+  "html_runtime_logic": "unchanged apart from title/chapter data",
+  "executable_tooling_tests_workflows": "unchanged",
+  "harness_note": "Initial audit accidentally included concurrent .tmp fixture files; final audit is scoped to owning repository documentation paths."
+}

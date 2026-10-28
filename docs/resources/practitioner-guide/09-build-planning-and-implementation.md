@@ -23,9 +23,11 @@ Build-ready usually means:
   testable phases, with a requirement coverage map and integration criteria;
   this is what G5 certifies).
 
-The per-phase build plan, tactical implementation plan, construction directive,
-and build prompt are then produced one phase at a time inside the phase loop
-(the G5.x checkpoints), each accepted before that phase is built. See
+Per-phase artifacts earn acceptance at their applicable G5.x checkpoints before
+implementation. Phase build-plan drafts may be prepared ahead to clarify scope
+and non-goals, but remain Draft and grant no checkpoint acceptance or code
+authority. Finalize detailed tactical plans and construction directives just
+in time, using preceding phase learnings. See
 docs/methodology/guides/phase-loop.md.
 
 This may look like a lot of ceremony. The point is to prevent implementation from becoming the
@@ -131,8 +133,10 @@ reviewer does the work tests cannot: whether the implementation holds at the edg
 enumerate (implementation verification), and whether the phase still conforms to the architecture
 (design verification). That last check has a name. Each phase holds the accepted G3 architecture up
 as a mirror and asks whether the work still conforms to it and whether building it revealed
-something the architecture did not anticipate. If the architecture must change, that is a regression
-against G3 raised in the open, not a quiet decision absorbed into the phase. The phase exit is the
+something the architecture did not anticipate. If architecture changes, record its
+amendment and assess impact before deciding whether gate entry conditions were
+invalidated. Reconcile the affected authority and evidence; regress to G3 only
+when that assessment requires it, rather than automatically for every change. The phase exit is the
 sum of these: tests green, the mirror check clean, and the delivered behavior traced back to the PRD
 requirements and the vision it claims to satisfy.
 
@@ -178,12 +182,13 @@ violation when the phase touches more than its scope implied, which phases routi
 The six, in the form the directive carries them: do not build for requirements that do not yet exist
 (YAGNI); do not build a more complex structure than the requirement needs (KISS); do not rewrite
 logic that already exists in the codebase (DRY); do not let any unit do more than one job (single
-responsibility); do not produce behavior a reader would not expect from the obvious reading of the
-requirement (least astonishment); and do not introduce any entity, field, relationship, class, or
-interface that is not already in the Accepted architecture's Domain Model (no undeclared
-abstractions). The last one is why the Domain Model is a closed list once accepted: if a phase
-genuinely needs something not in it, that is a finding sent back to amend the architecture, not a
-thing the build invents on its own.
+responsibility); preserve expected behavior (least astonishment); and declare
+authority-bearing domain/data/contract/architecture/security abstractions before
+implementation (NAA). Private helpers, local adapters, internal values and test
+fixtures may implement accepted scope without individual architecture approval
+when they introduce no new product concept, shared state, public/cross-component
+contract, ownership/trust boundary, behavior or security rule. Classify actual
+semantics, not the presence of a new symbol. A boundary change needs an amendment.
 
 You do not have to write these from scratch. The construction directive template carries them as a
 standing section; your job at build planning is to make sure the phase's scope and non-goals are
@@ -244,8 +249,23 @@ A tactical implementation plan is not merely a narrative. In 1.0 it should carry
 that can be cited by implementation evidence, review findings, remediation records, and traceability
 rows. A useful task ID names the phase, workstream, and task, for example `P1-WS2-T003`.
 
-Scaffold phase artifacts just in time. The aggregate G5 phase plan defines the phase sequence and
-coverage contract; the phase build plan, tactical plan, construction directive, build prompt,
-phase test/UAT plan, phase evidence, phase review, remediation disposition, traceability update,
-and phase as-built close-out are produced for the phase being worked. Do not fabricate later-phase
-evidence to make the project look complete.
+The aggregate G5 phase plan defines sequence, requirement ownership, dependencies
+and coverage. Draft phase build plans ahead when useful, keeping them visibly
+provisional. Finalize detailed tactical plans/directives just in time at their
+checkpoints. Evidence, review, remediation, traceability and as-built records
+describe actual execution; never fabricate future results or future acceptance.
+
+## Board And Code-Generation Start Contract
+
+Before product code, run the doctor and project-state, board validate/next and
+show for the selected task. Confirm started state, implementation_authority:
+granted, the named branch and the actual human direction behind scope approval.
+Read accepted canonical phase/tactical/directive/verification artifacts linked
+from the tracking packet and confirm the gate/checkpoints allow the work.
+
+If task state, branch, authority, candidate, tests or evidence disagree, reconcile
+them before proceeding. Neither a task label, a workflow name nor a directory
+supplies missing approval. Documentation maintenance and baseline toolkit work
+follow their specifically authorized routes; they do not grant product authority.
+Freeze the resulting candidate for fresh independent conformance review and keep
+execution open through required remediation and evidence reconciliation.

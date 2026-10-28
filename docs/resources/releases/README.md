@@ -16,6 +16,16 @@ creation and pushing remain publication actions requiring separate human approva
 | 1.0.1 | Published | 2026-07-12 | `v1.0.1` observed | `docs/resources/evolution/1.0.1-production-release-execution-log.md` | 1.0.0 | 1.0.2 | Use 1.0 adoption guide for current projects. |
 | 1.0.2 | Published | 2026-07-13 | `v1.0.2` observed | `docs/resources/evolution/1.0.2-distribution-context-execution-log.md` | 1.0.1 | N/A | `docs/resources/releases/1.0.2-adoption.md` |
 
+## Methodology-v3 Distribution
+
+V3 is an unreleased development distribution on the inherited 1.0.2 lifecycle.
+GitHub hosting is not a new release. The migration candidate 98f8bec received
+independent VERIFIED; human acceptance remains pending. The expanded nine-skill
+follow-up at 1516712 is locally checked and pushed but awaits independent review.
+This documentation refresh does not change either status or create a release tag.
+Use `docs/resources/releases/v3-adoption.md` for current adoption/upgrade guidance.
+The published-version rows above remain historical baseline records.
+
 ## Historical tag policy
 
 `v0.1.0-baseline` is the original observed published tag. The 0.2 through 0.4

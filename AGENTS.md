@@ -269,3 +269,16 @@ For each completed phase, update:
 - deferred item list and known limitations.
 
 Report skipped verification honestly with the reason.
+
+## V3 Documentation And Availability
+
+The current Practitioner Guide is under docs/resources/practitioner-guide/; its
+HTML edition mirrors that canonical Markdown exactly when resources are present.
+Use docs/resources/releases/v3-adoption.md for current distribution/adoption
+instructions. These are reference guides; canonical authority above still governs.
+The inherited lifecycle is 1.0.2 and the v3 distribution remains unreleased.
+Migration candidate 98f8bec is independently VERIFIED with human acceptance
+pending; the additional nine workflow skills are a separate pending-review
+follow-up. Read the guide's availability table for branch-specific contents.
+Do not treat a documentation refresh or GitHub upload as a new verification,
+acceptance, product gate transition or methodology release.

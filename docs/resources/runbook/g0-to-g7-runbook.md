@@ -11,6 +11,26 @@ Companion references: the constitution
 (`docs/resources/practitioner-guide/`), and the phase-loop guide
 (`docs/methodology/guides/phase-loop.md`)
 
+## V3 Operating Overlay
+
+Documentation reconciliation: 2026-10-28. The field-validation claims above are
+historical and are not extended to a new v3 product traversal. Use the v3 adoption
+guide and Practitioner Chapters 4 and 20–22 with this command reference. V3
+starts a product G1 pending with an empty board; its owner selects tasks. Required
+attester TBD causes the sole inherited pre-approval checker error until named.
+
+Before product generation, confirm started/granted task state, branch and accepted
+phase/tactical/directive/test authority. Allow proportional implementation-local
+choices, assess amendment impact before regression and keep advance phase-plan
+drafts distinct from checkpoint acceptance. Formal candidate review is fresh and
+read-only with bounded remediation and separate human acceptance/delivery.
+
+Answers files must record actual human decisions or clearly synthetic tests;
+an agent must never invent approvals/checked statements. Stage and commit only
+reviewed intended paths in a mixed checkout; broad staging examples below assume
+an isolated new product. Upgrades use ownership reconciliation, not initializer
+--force. Keep existing project authority and runtime state intact.
+
 ## How To Read This Runbook
 
 Commands marked REQUIRED are the methodology's control plane; skipping one
@@ -115,8 +135,9 @@ git config user.email "<you@example.com>"
 git commit --allow-empty -m "Empty repository baseline"
 ```
 
-Install the methodology from a clone of the methodology repository at its
-release tag. REQUIRED:
+Install from the chosen, pinned toolkit revision. Use an actual release tag
+for the inherited release, or an explicitly selected unreleased v3 candidate
+with its own review/acceptance evidence. REQUIRED:
 
 ```bash
 <methodology-clone>/scripts/install-methodology.sh --with-resources --protected-branch main "$PWD"
@@ -143,7 +164,7 @@ Expect the first check to fail. This is the methodology refusing unnamed
 authority, and fixing it is your first real task. Edit
 `docs/project/project.yaml` and replace `TBD` with named humans for: owner,
 approver, deployment_approver, required_approver, and
-enforcement.attested.required_attester; name the lead_agent; set mode_set_by,
+enforcement.attestation.required_attester; name the lead_agent; set mode_set_by,
 mode_set_on, classification_owner, and class_set_on. Create a `README.md`
 describing the product in a paragraph. Review the blast-radius class: the
 default is C2; if your project is genuinely contained (single operator, no

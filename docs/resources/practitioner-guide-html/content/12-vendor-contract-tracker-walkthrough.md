@@ -588,3 +588,17 @@ The lead agent should generate missing late-lifecycle artifacts with:
 
 The human must still approve G8 deployment or non-deployment and G9 close-out. Generated files do
 not advance gates by themselves.
+
+## Applying The V3 Toolkit To This Walkthrough
+
+This remains an illustrative product walkthrough, not the active product or an
+executed v3 gate traversal. A newly installed instance would begin G1 pending
+with an empty board. Its owner could add a vision task and later bounded phase
+tasks linked to the actual accepted authority. Board approval alone never starts
+implementation. Private helpers may implement approved tasks without inventing
+new domain/contracts; any real authority change uses amendment impact assessment.
+
+Draft later phase build plans only as provisional scope boundaries, finalize
+implementation detail just in time, and freeze each real candidate for fresh
+review. The owner must supply actual approvals and executed evidence; copying
+this walkthrough, its task ideas or its examples supplies neither.

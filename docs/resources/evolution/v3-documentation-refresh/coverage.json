@@ -1,0 +1,1016 @@
+{
+  "base": "60f4385066ee24b2560d8fce6695ac975d9f82d7",
+  "scope": "active operating/reference docs; vendor assets and frozen historical evidence are not rewritten",
+  "files": [
+    {
+      "path": "README.md",
+      "treatment": "reconciled",
+      "sha256": "2c946c4b059162707eaac1440fe694a282889b1500ef4564ed1bd365756300d6"
+    },
+    {
+      "path": "AGENTS.md",
+      "treatment": "reconciled",
+      "sha256": "3a508c7abb748015ff8710c6808fa8a95333b1ac77e7de217f21371e90e9aceb"
+    },
+    {
+      "path": "docs/methodology/design/operational-coherence-decision-record.md",
+      "treatment": "historical-preserved",
+      "sha256": "1e8bf034c16b8de57fa33957201aaf75239cf13dd705c8bbd6148cf041a52e8d"
+    },
+    {
+      "path": "docs/methodology/design/documentation-structure-decision-record.md",
+      "treatment": "historical-preserved",
+      "sha256": "6949bb32c54926394e1903dba7f06010fc277801230ee7f2e49253caf2027beb"
+    },
+    {
+      "path": "docs/methodology/design/naa-authority-boundary-decision-record.md",
+      "treatment": "historical-preserved",
+      "sha256": "08bf1d693d59dc1d63844810b5835143c03ba88e88c4db387db6f2f5edcb5531"
+    },
+    {
+      "path": "docs/methodology/design/phase-loop-decision-record.md",
+      "treatment": "historical-preserved",
+      "sha256": "b22fa3203f428b96de5de10d25138d2274c25490c16c6b9680b3cf520e1d47f0"
+    },
+    {
+      "path": "docs/methodology/design/gate-numbering-reconciliation-decision-record.md",
+      "treatment": "historical-preserved",
+      "sha256": "1226d214d7dc6c4b8b0cdf0e34ffa56c0f0ecaa5bb6a3127c5be02adc84f59f7"
+    },
+    {
+      "path": "docs/methodology/design/verification-first-decision-record.md",
+      "treatment": "historical-preserved",
+      "sha256": "be298f6fef4edd2b0598c45af20b14bce9e922bc3de944856ece83ec77eec3e8"
+    },
+    {
+      "path": "docs/methodology/design/sample-design.md",
+      "treatment": "historical-preserved",
+      "sha256": "83fbc614443a9b3d7569e9956a43e7b8740f9d0f939f58b8154f7a7cec3002b2"
+    },
+    {
+      "path": "docs/methodology/agents/sample-agents.md",
+      "treatment": "reconciled",
+      "sha256": "c65c48d931e74afd7fac5bcca4fe564d72299b53a3a9594feceffad5c66dac85"
+    },
+    {
+      "path": "docs/methodology/constitution/gendev.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "f7073cd6d2e9f26ad13e97839e80456ce617a63d3d8f5df3660c7e07500dad4f"
+    },
+    {
+      "path": "docs/methodology/schema/README.md",
+      "treatment": "reconciled",
+      "sha256": "d2e7c5d3259165fa0bca3841dd112235036864e844ef9f4abf84286ec988ced8"
+    },
+    {
+      "path": "docs/methodology/guides/artifact-collaboration-protocol.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "795690b23505e315e8f578022e206703a32464d815aff49197fc85e51ab5a87d"
+    },
+    {
+      "path": "docs/methodology/guides/human-agent-collaboration-loop.md",
+      "treatment": "reconciled",
+      "sha256": "281706cb0ab17d3e0c58796eaf0425b778db1fc4e2d4f98e97fdebf956741bdd"
+    },
+    {
+      "path": "docs/methodology/guides/enforcement-contract.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "d93fa4aa9018747296c7562e51e01680ffcb497f83a362f118fb73230df2ae30"
+    },
+    {
+      "path": "docs/methodology/guides/amendment-and-regression-protocol.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "e49c63ac7d95f1d8c250f0882be32a8544949011bf2f9aec288980b923030a73"
+    },
+    {
+      "path": "docs/methodology/guides/publishing.md",
+      "treatment": "reconciled",
+      "sha256": "f0f5dd65897ff4bccff7f1835414e560fceee686b5ca7d6a657695950cd456e6"
+    },
+    {
+      "path": "docs/methodology/guides/production-operations-protocol.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "137bc93ad577981cbb51645babc698aef47ba3d6202de8e5887c5798c9c00f57"
+    },
+    {
+      "path": "docs/methodology/guides/human-approval-protocol.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "7686a288dce175c564083bde51b2a534b97dd75b9405d737e7d73b819e2d6e1f"
+    },
+    {
+      "path": "docs/methodology/guides/skill-execution-contract.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "ea5381d2c26dcb4f6a7902a97200a3a95132c444b12ad34e9ebb6bea4fd5f901"
+    },
+    {
+      "path": "docs/methodology/guides/orchestration-validation.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "3f5fec3501ea7246e27dbeb064217799996ca5f0c346efb1aa8e544b8e3b85e2"
+    },
+    {
+      "path": "docs/methodology/guides/collaboration-modes.md",
+      "treatment": "reconciled",
+      "sha256": "c904119c8c1f537e40ce4d52e99dd0a42360b27d7582c6a497dec1d871b1bf11"
+    },
+    {
+      "path": "docs/methodology/guides/subagent-coordination-protocol.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "9b3c227dacbbedffebe64ff3a4767b14081095d64ff0c19eac7bd147ca9b0535"
+    },
+    {
+      "path": "docs/methodology/guides/gate-transition-protocol.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "c65a3eb755e9fa7f87d8eb849fccc6a9a746a0decc43f9e0e6fc5e1f38d2b2d4"
+    },
+    {
+      "path": "docs/methodology/guides/distribution-ownership.md",
+      "treatment": "reconciled",
+      "sha256": "99e13f89563a5017a5f1f6a49535573d8537d40b295d71798406c550d4e480ef"
+    },
+    {
+      "path": "docs/methodology/guides/gates.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "d2dd748ac9cbab7c6a7255f78c912afc31f9d2d469b7169c35ad8c55c05b9fda"
+    },
+    {
+      "path": "docs/methodology/guides/phase-loop.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "c08a14572ae40970bff1364689e26528859fe2d553df797f8f307a9c226b81b1"
+    },
+    {
+      "path": "docs/methodology/guides/start-and-next-step-protocol.md",
+      "treatment": "reconciled",
+      "sha256": "d8f8c019d10fc22d0d823aeefaf3574f501be1ecd8d249c8d7a24ca6336e29db"
+    },
+    {
+      "path": "docs/methodology/guides/agentic-development-workflow.md",
+      "treatment": "reconciled",
+      "sha256": "139308c0bf8a4ef3086dd116794d34e8d4127ac18a8eb800cfecb6e4de2a65cd"
+    },
+    {
+      "path": "docs/methodology/guides/t3-code-integration.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "3deeb1365c0336ba5f47e5b01dd9260c937bb8644e455887464d03cda0a728be"
+    },
+    {
+      "path": "docs/methodology/dev-skills/architecture-spec-author.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "67a2d2eedd6bce30e7d13ff8cd8d66b931fc2ed8b577c02960ff2abed46fec5d"
+    },
+    {
+      "path": "docs/methodology/dev-skills/tactical-implementation-planner.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "272f9dd877289653180da1511b207a4ceb07bc4dbbe13d3913dc0c0ff5dcc62c"
+    },
+    {
+      "path": "docs/methodology/dev-skills/migration-refactor-analyst.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "5bc50b98a1985f6de42f0d014f92efba403cf47f93e281ee5fdf5197324cdaae"
+    },
+    {
+      "path": "docs/methodology/dev-skills/vision-framing.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "9dce6dd66b6514414f74524cc4ded5ca5ff5bd761c74cff74d9fe7d85021fcde"
+    },
+    {
+      "path": "docs/methodology/dev-skills/governance-security-spec.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "30c327e667380b589fe38009a82caa82400e3e0726d802fea21245fa290db95f"
+    },
+    {
+      "path": "docs/methodology/dev-skills/subagent-directives-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "ea43ed8b9055f8642be2ec84dc541c253b427597cd9669a7f2f8646db332b4bb"
+    },
+    {
+      "path": "docs/methodology/dev-skills/phase-build-planner.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "8871457a16e92e02d057ba6ef3f2ba2532e100e15c8167b36cde74cda3de3568"
+    },
+    {
+      "path": "docs/methodology/dev-skills/traceability-matrix.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "3f81aef78d5cf8540cc43ddb282d7922adbc1b3c1ffd80bc2a70086bcfb36859"
+    },
+    {
+      "path": "docs/methodology/dev-skills/code-conformance-reviewer.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "922c992b1b4d5e2978bd2eed0e172b8580d8c20da1c85e59c98d4e4927031540"
+    },
+    {
+      "path": "docs/methodology/dev-skills/remediation-closeout.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "e7e2a2a5860947fe303cc0ca56779a33386875cf79c0f672c4cf9072ada5ce53"
+    },
+    {
+      "path": "docs/methodology/dev-skills/subagents-worktrees-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "392d5af84220815ed2d9b5943ae621eb95a0a41e34753cd2fab7510c93c71a53"
+    },
+    {
+      "path": "docs/methodology/dev-skills/prd-author.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "dacf3a42bf79e49440730eb34929d93b72e91963e33005491e0b1b1771571875"
+    },
+    {
+      "path": "docs/methodology/dev-skills/independent-code-validator.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "ce179b69caf21f433e7e12f2a22f59de7a2b47648b63c1a444eafea231845af4"
+    },
+    {
+      "path": "docs/methodology/dev-skills/ai-construction-directive-builder.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "79b38aa2450e7364d36638faa00d9a2860956b247c278bad95e827d203f8759d"
+    },
+    {
+      "path": "docs/methodology/templates/phase-build-plan-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "2eddb885685cd510ba18f8490a926ced422d6afe92651c4150890e1c6767d9e2"
+    },
+    {
+      "path": "docs/methodology/templates/code-review-report-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "8909e669519c385d39c55fca5829bdf8ef8d5f726375f39c8008d5409f72bdc8"
+    },
+    {
+      "path": "docs/methodology/templates/phase-build-prompt-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "45146260074650bab976c9d5febe606cd4d901a1bef473989a87bc375a8ddcbd"
+    },
+    {
+      "path": "docs/methodology/templates/gate-log-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "20cf24110d5f52ca363ff4788884f1e78055dae72ed3c50dc8038ab9f18c99eb"
+    },
+    {
+      "path": "docs/methodology/templates/production-runbook-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "2dbb8991bfb03c9a52d07cf0a7d3d1b00d47122c26f5630249efb9f0ca047827"
+    },
+    {
+      "path": "docs/methodology/templates/value-review-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "9bfc1a893df50f93e76b48589f58867b8b8445b098219c90e510c42a3a9e31cc"
+    },
+    {
+      "path": "docs/methodology/templates/final-test-uat-report-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "d974afbe7344c43e6a9cd6963e2e4992a2649aa9284b9a40960031c55b42ee7c"
+    },
+    {
+      "path": "docs/methodology/templates/build-instructions-templates.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "9a04a546cbcc68e44334d28b3a39d88c9a98e032e3f57538cecb0c7834702050"
+    },
+    {
+      "path": "docs/methodology/templates/phase-plan-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "82e84f7b2966e2345b5239fc3cf6318b2317179bcf90c302f2b38a1f607bf434"
+    },
+    {
+      "path": "docs/methodology/templates/aggregate-remediation-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "b2e862b988755f4af708b36a9e753da359c8f0c3270bea57770df4fffe2f53af"
+    },
+    {
+      "path": "docs/methodology/templates/phase-learnings-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "c9deb73b575a48fe482482e2871e5753c7fb9e02651fd7a46f8b3ec6c7bee038"
+    },
+    {
+      "path": "docs/methodology/templates/phase-construction-directive-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "d03ae6e99e10e37367a487c77ee1c0f6f73c28c6def447d186b22dd1d4a95000"
+    },
+    {
+      "path": "docs/methodology/templates/deployment-readiness-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "db3f8d7302796eb4cff460772745ee7cc7c5bfba73b81bbc7f60c93a68454a24"
+    },
+    {
+      "path": "docs/methodology/templates/phase-implementation-evidence-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "c48750dced2fd6da30eaa3a687228e57da6d5edba32aa9545f47ea1850ff179f"
+    },
+    {
+      "path": "docs/methodology/templates/project-as-built-closeout-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "6395f958f603d8e23455fba2a09f8bd137e21f9dde166c3690c3f1baa288db6c"
+    },
+    {
+      "path": "docs/methodology/templates/prd-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "52ec260585faa3f537c2eb3a8312bef5b7bd925a7fb3ae098b612093f8f8d97d"
+    },
+    {
+      "path": "docs/methodology/templates/as-built-closeout-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "4c533ff80ef21b572f676f64c92eef0522cc47652891da285c118e87a5313324"
+    },
+    {
+      "path": "docs/methodology/templates/phase-remediation-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "ce937a99b9af699aa90da57130fd49b1b3a741cd8db59851eb681ab648466489"
+    },
+    {
+      "path": "docs/methodology/templates/project-value-review-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "a3f66917c9bd7d7211d51a3770b57becf0030915f1d35687181a87a9f1d7b268"
+    },
+    {
+      "path": "docs/methodology/templates/architecture-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "7f14dda2d55e990f4f35c94f61615ba009f2181197af097143a14806c3e9041c"
+    },
+    {
+      "path": "docs/methodology/templates/tactical-implementation-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "68e8c23c766742c63d004297ceafb55e0901b55e6446f001e07881d5bf80bfe8"
+    },
+    {
+      "path": "docs/methodology/templates/vision-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "83923509ef4d203822cbae02c029a7f7779bdb3335c7bf5e3dba55c76eb1f9ad"
+    },
+    {
+      "path": "docs/methodology/templates/governance-security-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "53a1dbbd068c2dbe4d4d7b0cd1140e935dd1c7af93e32f2d2706d2935ee2ca20"
+    },
+    {
+      "path": "docs/methodology/templates/0001-technology-stack-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "430a0035533e36c09be061f04b2b9cddadaa06fec54686d9d9ef28442032cb10"
+    },
+    {
+      "path": "docs/methodology/templates/traceability-matrix-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "febe26ed31b49e27b92f2499aff46f6410123a6e22e8def79ef42469a54bd4d5"
+    },
+    {
+      "path": "docs/methodology/templates/test-uat-plan-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "ab22b7edaca5d8e6d452d50e9d55f614e95e93051f50b7133b55153253e82c46"
+    },
+    {
+      "path": "docs/methodology/templates/final-code-review-report-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "5a77900cddd53d7b89c7b460737aca419cc9bd025c8f57c4aa21d3fcc3ab14d1"
+    },
+    {
+      "path": "docs/methodology/templates/adr-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "98c3067c0c40ae3760b030094b71952d38765b02be11c2651e469e631739f8f8"
+    },
+    {
+      "path": "docs/methodology/templates/deployment-record-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "a1e163181b7483a8c06544fb73cd6501b9d0c026feec324a8b2dd391307d78f3"
+    },
+    {
+      "path": "docs/methodology/templates/implementation-summary-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "b876477a63ce9e13b0f045ce11822dcf3dd57e6e6d2423e2db70762723eaa3c2"
+    },
+    {
+      "path": "docs/methodology/dev-skills/modernize/SKILL.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "664632a948ee5178e3c22906653a679dcfa098b01f515628a46fcb34d3ee5f52"
+    },
+    {
+      "path": "docs/methodology/dev-skills/council/SKILL.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "62165c4229ec96977e53cf57eaece58635b85e57fb1e9d8511f6b267caeee157"
+    },
+    {
+      "path": "docs/methodology/dev-skills/file-pr/SKILL.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "cc9db71ef88b856ccb083f95f65b36639e151f6dc11b61d11c2560e5374beba5"
+    },
+    {
+      "path": "docs/methodology/dev-skills/friday-dev-board/SKILL.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "bd40da20b9069adcb02a4a42b80b42a0d860dcccac1e5b604c60214d5aaa381e"
+    },
+    {
+      "path": "docs/methodology/dev-skills/full-stop/SKILL.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "7f57b52e8d76fdaf4a86470dd814c4bada9dda1013d9a17eb19acd79e530cc0d"
+    },
+    {
+      "path": "docs/methodology/dev-skills/leaving-pr-comments/SKILL.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "26f2a5830d09c344b9d22365c1fc6cda1d5430381e8a30f1ad12e30fd8fea141"
+    },
+    {
+      "path": "docs/methodology/dev-skills/takeover/SKILL.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "1e442abbc00618f5d06c3d259768512106796848f5c6ba07d856d362a36be102"
+    },
+    {
+      "path": "docs/methodology/dev-skills/sol-loop/SKILL.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "269cb88224879fb2cb7a995bf448b15484a2d34611b2a29d61069cd200b21a4d"
+    },
+    {
+      "path": "docs/methodology/dev-skills/babysit-pr/SKILL.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "fa99ba06d7f515c39026a8ac3a50fa6e324898ff0ff9cad3a2063db8a339235f"
+    },
+    {
+      "path": "docs/methodology/dev-skills/full-send/SKILL.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "f6d538b1deab8c2a82ac3fcd58d21422f01abbbee929307716fe96657463a4f7"
+    },
+    {
+      "path": "docs/methodology/architecture/ux/ux-template-architecture.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "78849acb80528b25ed584327667431b726ac71e658151eec67394057e27efb3d"
+    },
+    {
+      "path": "docs/methodology/agents/subagents/code-check.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "34f8a0fcac047c72ac7b0f5b14aabf2ae0ea93188cdf0958df0028b41bbd2512"
+    },
+    {
+      "path": "docs/methodology/agents/roles/as-built-closeout-agent.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "511966bee22e42206a5dd93490802abf05a4418ce9d460a9f582fc75ab924738"
+    },
+    {
+      "path": "docs/methodology/agents/roles/code-review-agent.md",
+      "treatment": "reconciled",
+      "sha256": "37e98f8eb1a1ae13ae15729211cc34a83a397c8b5527a077d611d7fe956705e7"
+    },
+    {
+      "path": "docs/methodology/agents/roles/architecture-agent.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "865c1049110ddb1ceba522e3d87e08fde8a508a26c17857a9c137649855b80fb"
+    },
+    {
+      "path": "docs/methodology/agents/roles/remediation-agent.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "4d4053e0cf567ba9caa5d255346b08a3b159e1e27126f2e8570ee9779a45c3aa"
+    },
+    {
+      "path": "docs/methodology/agents/roles/deployment-readiness-agent.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "3517d84763b701f883af1e69159ad448f4bdbeff0af19da838dd67a8f99192c6"
+    },
+    {
+      "path": "docs/methodology/agents/roles/prd-agent.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "cb536b76e6b2f4e68361ef6ad521c7754d69ea32a8b610c21bdd36973c529008"
+    },
+    {
+      "path": "docs/methodology/agents/roles/security-governance-agent.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "d8352095e371608084cc13b714eac8a98f9bdb7e2b8a92233d5ec4bb95513129"
+    },
+    {
+      "path": "docs/methodology/agents/roles/phase-planning-agent.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "b217107e056e406922c21852bece8e7066890ec87f67ec959bc9b2cff0fba379"
+    },
+    {
+      "path": "docs/methodology/agents/roles/product-vision-agent.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "6da981432324a00fba3e52c53c5cb0cae078e0e4aef9a66b4c6c9563320a7cd6"
+    },
+    {
+      "path": "docs/methodology/agents/roles/implementation-agent.md",
+      "treatment": "reconciled",
+      "sha256": "4a22b0435dbbef019847cf5a9924557e672758dd8864627e1e78daa905188de1"
+    },
+    {
+      "path": "docs/methodology/agents/roles/test-uat-agent.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "7230661797189598c4473da1a9250277d2e95d0b3c8e2ffb1d50aba16c19df3a"
+    },
+    {
+      "path": "docs/project-template/README.md",
+      "treatment": "reconciled",
+      "sha256": "e0a08eab0822e9af97b3086393ae217b80a50722f720219def4374cc73c2dcad"
+    },
+    {
+      "path": "docs/project-template/build-plan/phase-plan.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "54fa479cca570f8624b315c6890a3d10fbbe96b4fc393e255ee0ccdeb7ab14e4"
+    },
+    {
+      "path": "docs/project-template/planning/README.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "c1f8c8c683f80508a31f22ff414e74ecbc75fcaed43cf64d1cc01a6659f3cc9b"
+    },
+    {
+      "path": "docs/project-template/planning/task-template.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "3a6c6e73af0642d50f602cd6502c25cfc5efdd1bfda63973d43369846960db7d"
+    },
+    {
+      "path": "docs/project-template/dry-run-policies/repository-engineering-policy.md",
+      "treatment": "reconciled",
+      "sha256": "7477396d2d8487552866bd19c41e49542dca54fc15b9a7847512229e1a6a1b9e"
+    },
+    {
+      "path": "docs/project-template/dry-run-policies/independent-validation-policy.md",
+      "treatment": "reconciled",
+      "sha256": "ab022a5f6fa019f0e6631f3244e65c38a07ff110a90a391300267cff645e7bff"
+    },
+    {
+      "path": "docs/project-template/dry-run-policies/development-task-lifecycle.md",
+      "treatment": "reconciled",
+      "sha256": "33321bf308f42a645714f95ee1f9463f4b43b197964e540e5aa03f25eb5a9058"
+    },
+    {
+      "path": "docs/project-template/dry-run-policies/legacy-policy-debt.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "7d6a20a58ba99782ff824abcb33fa4f2f2bc4c45bf5ba41157f172b7779aa85b"
+    },
+    {
+      "path": "docs/project-template/dry-run-policies/dev-board-integration.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "af36991dc3ae53977aeb347db84a35aed307a58882394319ee49aec3931f5289"
+    },
+    {
+      "path": "docs/policies/repository-engineering-policy.md",
+      "treatment": "reconciled",
+      "sha256": "7477396d2d8487552866bd19c41e49542dca54fc15b9a7847512229e1a6a1b9e"
+    },
+    {
+      "path": "docs/policies/independent-validation-policy.md",
+      "treatment": "reconciled",
+      "sha256": "ab022a5f6fa019f0e6631f3244e65c38a07ff110a90a391300267cff645e7bff"
+    },
+    {
+      "path": "docs/policies/development-task-lifecycle.md",
+      "treatment": "reconciled",
+      "sha256": "33321bf308f42a645714f95ee1f9463f4b43b197964e540e5aa03f25eb5a9058"
+    },
+    {
+      "path": "docs/policies/legacy-policy-debt.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "7d6a20a58ba99782ff824abcb33fa4f2f2bc4c45bf5ba41157f172b7779aa85b"
+    },
+    {
+      "path": "docs/policies/dev-board-integration.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "af36991dc3ae53977aeb347db84a35aed307a58882394319ee49aec3931f5289"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/03-repository-map.md",
+      "treatment": "reconciled",
+      "sha256": "c3207d397e290eedc9f2eab39ad59547e73726dccc95aac7b731288bfbca35a9"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/12-vendor-contract-tracker-walkthrough.md",
+      "treatment": "reconciled",
+      "sha256": "a5ba707e9b2ea7cad54ddea976cee9c3c2f4f7d590061fb6e5837661d93580c2"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/15-prompt-library.md",
+      "treatment": "reconciled",
+      "sha256": "a7a77dbfd13ab713230557e8643520ef4381f5414681022238dade4f43267af1"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/19-starting-mid-stream.md",
+      "treatment": "reconciled",
+      "sha256": "6b1428eb4de7c347619adf5462dc0eaca07c3a54713347b6d7b533322285551e"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/10-review-remediation-and-closeout.md",
+      "treatment": "reconciled",
+      "sha256": "25aa8c600d4a9fdadd887b21df496d4ca13624ae0a4c19082dab8bb8576c0304"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/08-subagents-and-delegation.md",
+      "treatment": "reconciled",
+      "sha256": "5d72ba70222e0c21019e64e6970656e77696bed3fbc58dde18c4876f4d66be30"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/14-claude-code-specific-notes.md",
+      "treatment": "reconciled",
+      "sha256": "d8600ec52b668f8c9ef6c0f2e1096c263483eb34df4907f530dbee3505be80d1"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/04-starting-a-new-project.md",
+      "treatment": "reconciled",
+      "sha256": "c7454cb968c1dbc19b2d86131ac708d87103bd8a9ba1f1522bc7d9cde99ab96e"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/06-gates-and-artifacts.md",
+      "treatment": "reconciled",
+      "sha256": "cc84ebf6d2e269cda3408a0869ad48f0781a74b8191733dbd7ebe8cd8e493731"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/21-skill-library-and-workflows.md",
+      "treatment": "reconciled",
+      "sha256": "f805a9b823e2ef4ad58e262e2e0862b72190eb1fc1f3a88241a85d367bf9a5e7"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/16-checklists.md",
+      "treatment": "reconciled",
+      "sha256": "aa360e97d479fdd2be0bdc842e1cf6f786714b5371bf782adbbe6179e1989d95"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/11-production-operations.md",
+      "treatment": "reconciled",
+      "sha256": "31f31f5e6571c87990cf68735da57434b8cb99f3a8ec6f7e69a32fddafc1fb3d"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/20-work-item-board.md",
+      "treatment": "reconciled",
+      "sha256": "f8ff946c18bb2f093c1762dd4e39e04b53638bfdfbc6056bc9564df7218ffce9"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/01-orientation.md",
+      "treatment": "reconciled",
+      "sha256": "43762b6d133dd34712eb7dac4bf19d46b258de75e19b05d93cf0bbd4ded88fc5"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/22-installation-and-upgrades.md",
+      "treatment": "reconciled",
+      "sha256": "e219dd1f6d73021f463cdf8358432b66c363d5b74d1f9a33c038b02a352bf6b3"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/README.md",
+      "treatment": "reconciled",
+      "sha256": "92ffe05abb838c309036f542bd4bab2fc1f46b44e26307cad9962a37bdc72020"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/07-approvals-and-risk.md",
+      "treatment": "reconciled",
+      "sha256": "2d73c7a6fb4890c3ddd650d2d78a0d85ff2e893623de5c868de99c3a41f6ccf0"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/09-build-planning-and-implementation.md",
+      "treatment": "reconciled",
+      "sha256": "0fd4ef64305589f2fa41b0eb41ccdda594ba3f76bc4d35e4f4b9157c0e370213"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/02-core-mental-model.md",
+      "treatment": "reconciled",
+      "sha256": "b353897d44467b79767306a24d5122819b6891cd7f479d2e49e5688c8e38f9b1"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/13-codex-specific-notes.md",
+      "treatment": "reconciled",
+      "sha256": "1774c462cb02d087b62f0cc3c2d76d75ccaee3216a097899fc37247d4973647f"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/17-common-failure-modes.md",
+      "treatment": "reconciled",
+      "sha256": "b41fe78ba07fe634ec45f4fbc5a9f7a7dc4df8dc8257c6fe82122d57616d64db"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/18-glossary.md",
+      "treatment": "reconciled",
+      "sha256": "c8e00d04dc511d80e5e6061208966685dfc0af9dbd2d3b6a02be99689d01bc69"
+    },
+    {
+      "path": "docs/resources/practitioner-guide/05-working-with-the-agent.md",
+      "treatment": "reconciled",
+      "sha256": "0508d42b64920dd35cd0b8c582f9f93ec25e2c55b1190eab571cb0e054258fa2"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/index.html",
+      "treatment": "reconciled",
+      "sha256": "5c1436ba51b4da5b87e91ee9019781dcbfd22efd9c4cd0fdf678425129f35ea5"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/THIRD_PARTY_NOTICES.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "ad942b44f280cac35e5ee16ba9c7ae1c75eb15c87620bc594c8fbb36b81ad7cb"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/README.md",
+      "treatment": "reconciled",
+      "sha256": "7906b951abdce8e57e7f2bc61683afbc65ebc9fd781b50c3b10e2c3c19e250d8"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/03-repository-map.md",
+      "treatment": "reconciled",
+      "sha256": "c3207d397e290eedc9f2eab39ad59547e73726dccc95aac7b731288bfbca35a9"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/12-vendor-contract-tracker-walkthrough.md",
+      "treatment": "reconciled",
+      "sha256": "a5ba707e9b2ea7cad54ddea976cee9c3c2f4f7d590061fb6e5837661d93580c2"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/15-prompt-library.md",
+      "treatment": "reconciled",
+      "sha256": "a7a77dbfd13ab713230557e8643520ef4381f5414681022238dade4f43267af1"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/19-starting-mid-stream.md",
+      "treatment": "reconciled",
+      "sha256": "6b1428eb4de7c347619adf5462dc0eaca07c3a54713347b6d7b533322285551e"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/10-review-remediation-and-closeout.md",
+      "treatment": "reconciled",
+      "sha256": "25aa8c600d4a9fdadd887b21df496d4ca13624ae0a4c19082dab8bb8576c0304"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/08-subagents-and-delegation.md",
+      "treatment": "reconciled",
+      "sha256": "5d72ba70222e0c21019e64e6970656e77696bed3fbc58dde18c4876f4d66be30"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/14-claude-code-specific-notes.md",
+      "treatment": "reconciled",
+      "sha256": "d8600ec52b668f8c9ef6c0f2e1096c263483eb34df4907f530dbee3505be80d1"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/04-starting-a-new-project.md",
+      "treatment": "reconciled",
+      "sha256": "c7454cb968c1dbc19b2d86131ac708d87103bd8a9ba1f1522bc7d9cde99ab96e"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/06-gates-and-artifacts.md",
+      "treatment": "reconciled",
+      "sha256": "cc84ebf6d2e269cda3408a0869ad48f0781a74b8191733dbd7ebe8cd8e493731"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/21-skill-library-and-workflows.md",
+      "treatment": "reconciled",
+      "sha256": "f805a9b823e2ef4ad58e262e2e0862b72190eb1fc1f3a88241a85d367bf9a5e7"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/16-checklists.md",
+      "treatment": "reconciled",
+      "sha256": "aa360e97d479fdd2be0bdc842e1cf6f786714b5371bf782adbbe6179e1989d95"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/11-production-operations.md",
+      "treatment": "reconciled",
+      "sha256": "31f31f5e6571c87990cf68735da57434b8cb99f3a8ec6f7e69a32fddafc1fb3d"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/20-work-item-board.md",
+      "treatment": "reconciled",
+      "sha256": "f8ff946c18bb2f093c1762dd4e39e04b53638bfdfbc6056bc9564df7218ffce9"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/01-orientation.md",
+      "treatment": "reconciled",
+      "sha256": "43762b6d133dd34712eb7dac4bf19d46b258de75e19b05d93cf0bbd4ded88fc5"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/22-installation-and-upgrades.md",
+      "treatment": "reconciled",
+      "sha256": "e219dd1f6d73021f463cdf8358432b66c363d5b74d1f9a33c038b02a352bf6b3"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/README.md",
+      "treatment": "reconciled",
+      "sha256": "92ffe05abb838c309036f542bd4bab2fc1f46b44e26307cad9962a37bdc72020"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/07-approvals-and-risk.md",
+      "treatment": "reconciled",
+      "sha256": "2d73c7a6fb4890c3ddd650d2d78a0d85ff2e893623de5c868de99c3a41f6ccf0"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/09-build-planning-and-implementation.md",
+      "treatment": "reconciled",
+      "sha256": "0fd4ef64305589f2fa41b0eb41ccdda594ba3f76bc4d35e4f4b9157c0e370213"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/02-core-mental-model.md",
+      "treatment": "reconciled",
+      "sha256": "b353897d44467b79767306a24d5122819b6891cd7f479d2e49e5688c8e38f9b1"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/13-codex-specific-notes.md",
+      "treatment": "reconciled",
+      "sha256": "1774c462cb02d087b62f0cc3c2d76d75ccaee3216a097899fc37247d4973647f"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/17-common-failure-modes.md",
+      "treatment": "reconciled",
+      "sha256": "b41fe78ba07fe634ec45f4fbc5a9f7a7dc4df8dc8257c6fe82122d57616d64db"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/18-glossary.md",
+      "treatment": "reconciled",
+      "sha256": "c8e00d04dc511d80e5e6061208966685dfc0af9dbd2d3b6a02be99689d01bc69"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/content/05-working-with-the-agent.md",
+      "treatment": "reconciled",
+      "sha256": "0508d42b64920dd35cd0b8c582f9f93ec25e2c55b1190eab571cb0e054258fa2"
+    },
+    {
+      "path": "docs/resources/practitioner-guide-html/assets/app.js",
+      "treatment": "reconciled",
+      "sha256": "49e63bb4cd9f283e0e00d7dae12b2623d9d05f4ee20194eab2b31a8c5131fdd0"
+    },
+    {
+      "path": "docs/resources/runbook/g0-to-g7-runbook.md",
+      "treatment": "reconciled",
+      "sha256": "ebd4f76132493f9582057b8ffa8e1dc6f1396e04c6aa38bd9011225f69228cf2"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/framing.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "c4f259a61783c1bfdacbe4e8589159412dbdd022c92ec02a13f4bb6d55ca931b"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/README.md",
+      "treatment": "reconciled",
+      "sha256": "bac4b81731ac40ff3a70701aa202a31b98dae5a0d723e9504b1666bf407fbbe4"
+    },
+    {
+      "path": "docs/resources/examples/current/c2-standard-planning/README.md",
+      "treatment": "reconciled",
+      "sha256": "99a82addb92a5568a33b477d5dda50810a46262861546fe2ed9948fb8662e509"
+    },
+    {
+      "path": "docs/resources/examples/current/c2-standard-planning/build-plan/phase-plan.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "57cc6b70e9faf23bec0025ad21d45f5d64c5527f59a10d4b18b2d875989753c6"
+    },
+    {
+      "path": "docs/resources/examples/current/c2-standard-planning/security-governance/governance-security-spec.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "292b88068ef1d10ddf215caf5a8e06e550eb2ddfd9ac6687d7f614d7f757165a"
+    },
+    {
+      "path": "docs/resources/examples/current/c2-standard-planning/traceability/traceability-matrix.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "4a790a31ca3022acf646b7acfe2e8beb164c304d9c2be95a796fef80e7a8f860"
+    },
+    {
+      "path": "docs/resources/examples/current/c2-standard-planning/vision/vision.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "a745054b8afdf569f03429bba669092c31439da9953a03dad3e63dc0a5b60a85"
+    },
+    {
+      "path": "docs/resources/examples/current/c2-standard-planning/architecture/architecture.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "9bb1b7395ead0e284ca58d9af3424db312d5ac062f7563ac65f1c2d0a6a7f5ef"
+    },
+    {
+      "path": "docs/resources/examples/current/c2-standard-planning/prd/prd.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "e635d0f76153c6e614a5fed3e43f7864bc099fe43d0126eacc4ed14113381eb5"
+    },
+    {
+      "path": "docs/resources/examples/current/c2-standard-planning/approvals/gate-log.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "7b8f5263f9c5b4b94aa1bedc0c8911b462a04a8151803dc7020f3e4521e4d93f"
+    },
+    {
+      "path": "docs/resources/examples/current/c2-standard-planning/build-plan/phases/phase-1-construction-directive.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "c9ce62fd0b8e532763cfc2119e65080d2310ae70c609d21cc2fa549765444b26"
+    },
+    {
+      "path": "docs/resources/examples/current/c2-standard-planning/build-plan/phases/phase-1-build-plan.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "135cf49ac0562e3cd648b044df11770568d1340e77e5950d9e4a3a9fc0ea2ee4"
+    },
+    {
+      "path": "docs/resources/examples/current/c2-standard-planning/build-plan/phases/phase-1-tactical-plan.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "f24bc3e1f5620e6454e9e2a52c0817636f5b7b24135569a8132f137a17248775"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/evidence/implementation-evidence.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "f90a0e1796e43be2972b8c1d8cf6654965222eb9b8609d9ed82dcb2e183c3610"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/build-plan/phase-plan.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "6f6fe663d40dc11b9c2ad8f5c5c43385fdc9ca48df15463aa4ff0a26380f379b"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/traceability/traceability-matrix.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "bb12e4ede1d60f4a053d75c756420d8c659b0597a32a4effa09e1024bcbfcd72"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/as-built/as-built-closeout.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "891e809b9d6b7b111bb1972322f18d2963c571cbb7e6346ad5fd5cce9b62073d"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/as-built/deployment-record.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "31845737a0bc774431f26490f15b6e70fba648faf62d583cf57491d51769cd72"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/testing/phase-1-test-uat-plan.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "c82a735acc9ea1800c044f355fc6582ea1d65e37e63e28c75ce69a3454972b98"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/review/remediation.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "21d9dde4710b046aa20dab51f627d22bd2d4378f844ae9739bbf62eb58b7109d"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/review/code-review.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "39c2ebe57f7f96a4521367af6d52521f847fc8188d97abda77f93a8ae1e69736"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/approvals/gate-log.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "d9ab89be699c2bf2eedda7662aa3016930f07ac2e5f9815d510c261c74af636c"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/build-plan/phases/phase-1-construction-directive.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "f522c9a264d32921636f17625cc65606bc8451d910a7e3ef77b2174edc387fa0"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/build-plan/phases/phase-1-build-plan.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "13ae7ee94adbf0fca44230e7874ff1f5d9d3f69f74dcd8c50bfa9845084f62a3"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/build-plan/phases/phase-1-tactical-plan.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "05f545ad3340c8227e531ca53c2b4ac95aba2a6afef3fa48279fa3f8bfdb15ce"
+    },
+    {
+      "path": "docs/resources/examples/current/c1-csv-cleanup/build-plan/phases/phase-1-build-prompt.md",
+      "treatment": "reference-and-drift-scanned-retained",
+      "sha256": "be35bd3933685609b4ffd77421c38c5c708d452c72d2dd0b9053a39632dc6663"
+    },
+    {
+      "path": "docs/resources/releases/1.0.1.md",
+      "treatment": "historical-preserved",
+      "sha256": "ee4c8c7fa8a422eed638efb0938f01d84297cfe414483516c84e93d95d70b191"
+    },
+    {
+      "path": "docs/resources/releases/1.0.0.md",
+      "treatment": "historical-preserved",
+      "sha256": "f1ec3738c1573c9c70c49feea31771057b5e67e0aa91cd75ac9d399ed8e6eb43"
+    },
+    {
+      "path": "docs/resources/releases/0.3.0-documentation-structure.md",
+      "treatment": "historical-preserved",
+      "sha256": "58291ff2ee517e04bed56016d7ac302436ebca6d73387d587fde810e70eee994"
+    },
+    {
+      "path": "docs/resources/releases/0.4.0-verification-first.md",
+      "treatment": "historical-preserved",
+      "sha256": "58f4822e9d5fbd6ca44447c3be63317098f4e6c869722086aa4857c591e56b94"
+    },
+    {
+      "path": "docs/resources/releases/1.0.2-adoption.md",
+      "treatment": "reconciled",
+      "sha256": "c5c7ab78284ce98b90927efd8a7f1f2df4e80196b5b61c5eefa0310cea5332f5"
+    },
+    {
+      "path": "docs/resources/releases/0.5.0-operational-coherence-migration.md",
+      "treatment": "historical-preserved",
+      "sha256": "aee4d1fd64f7543b136a554948dd1a33bce1c706d3a03d625905c8c6e4058ee4"
+    },
+    {
+      "path": "docs/resources/releases/README.md",
+      "treatment": "reconciled",
+      "sha256": "f893f8e1fcc411aab3f7e473312ed6126be93a8e496e5dfde77b956006da4290"
+    },
+    {
+      "path": "docs/resources/releases/0.1.0-baseline.md",
+      "treatment": "historical-preserved",
+      "sha256": "bc7a05d77e616d085d5c939062dc12eb0243e94331b180f670e729058b06018e"
+    },
+    {
+      "path": "docs/resources/releases/v3-adoption.md",
+      "treatment": "reconciled",
+      "sha256": "3b5dd66f591de4dccae9e11d724019209e09fe038ed457873c7143eab668e3e1"
+    },
+    {
+      "path": "docs/resources/releases/0.2.0-phase-loop.md",
+      "treatment": "historical-preserved",
+      "sha256": "49a216c32c39f98dfbe8db3c504d8b699310759da9e3b4c61f287c61774960c4"
+    },
+    {
+      "path": "docs/resources/releases/0.5.0-operational-coherence.md",
+      "treatment": "historical-preserved",
+      "sha256": "a156c1d8f0d7c7b165b8ed9f1041e2d07c855d5104e932e6dadd917bcba2cd47"
+    },
+    {
+      "path": "docs/resources/releases/1.0.2.md",
+      "treatment": "historical-preserved",
+      "sha256": "080cf49cdf3684aa416464afde1a3569900ed03f80430b247eed5eb76147fe24"
+    },
+    {
+      "path": "docs/resources/releases/0.1.0-baseline-provenance/gendev-methodology-review.md",
+      "treatment": "historical-preserved",
+      "sha256": "2e7a8bbbf3d4492c54b18a9d8fd7ca179e80a43b1f0a2fb4627a3a83ffde4eff"
+    },
+    {
+      "path": "docs/resources/releases/0.1.0-baseline-provenance/gendev-hardening-plan.md",
+      "treatment": "historical-preserved",
+      "sha256": "9c6ab65377744949e4545507a7b16ecfce6ebfae1d54696e6b6ad794e7d7794c"
+    }
+  ]
+}

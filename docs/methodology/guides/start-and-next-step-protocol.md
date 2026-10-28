@@ -38,7 +38,9 @@ Before recommending a next action, the agent checks:
 11. Blocking missing authority.
 ```
 
-If `docs/project/` does not exist, the next action is initialization.
+For a new product without docs/project, the next action is initialization in
+its product destination. A methodology source explicitly authorized for baseline
+evolution instead reads that directive; do not initialize a fictitious product.
 
 ## "Let's Begin"
 
@@ -48,7 +50,8 @@ Agent response:
 
 ```text
 1. Confirm whether docs/project exists.
-2. If missing, recommend running ./scripts/init-project.sh "Project Name".
+2. For a product with missing authority, recommend initialization in its destination;
+   for authorized baseline engineering, read the evolution directive instead.
 3. Run ./scripts/gendev-doctor.sh.
 4. If initialized, run ./scripts/project-state.sh and read project.yaml.
 5. Identify current gate, active artifact, and approval state.
@@ -247,3 +250,18 @@ Agent role:
 
 This protocol is working when short human prompts produce predictable, gate-aware, mode-aware
 responses that move the project forward without bypassing approval or authority.
+
+## V3 Board And Skills At Resumption
+
+Validate the board and inspect next and show for the owner-selected task. Confirm
+task scope, actual branch, dependencies, implementation authority and canonical
+links alongside project state. An empty board is expected for a new installation;
+its owner chooses tasks. For product code, require started/granted state and
+accepted phase/tactical/directive/test authority at the applicable checkpoints.
+A task title or workflow name cannot supply missing approval. Baseline and
+eligible documentation maintenance follow their explicitly recorded routes.
+
+Read the requested skill's canonical source where discovery is unavailable.
+Keep provider/model/access settings out of baseline project authority. Treat a
+plain stop/pause as a stop. Preserve unrelated/runtime state, review exact
+candidates in fresh contexts and record delivery independently of acceptance.
