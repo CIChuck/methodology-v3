@@ -1,0 +1,54 @@
+PASS pinned authority e69320fa2128f549162d633f14cd24463b743566 3d593263da054b983a35f13f25c2cb452ef66d9faa9bc90694e7453007134d01 AGENTS.md
+PASS pinned authority e69320fa2128f549162d633f14cd24463b743566 f7073cd6d2e9f26ad13e97839e80456ce617a63d3d8f5df3660c7e07500dad4f docs/methodology/constitution/gendev.md
+PASS pinned authority e69320fa2128f549162d633f14cd24463b743566 1d57f89d49bd3ecd49fb97ac91248014a2da9a1386100e74aed30b0d144a40bd docs/policies/repository-engineering-policy.md
+PASS pinned authority e69320fa2128f549162d633f14cd24463b743566 ac54fc778c216480531001d702006899183a29f3fd19050bb8ea317c3b2803ea docs/policies/development-task-lifecycle.md
+PASS pinned authority e69320fa2128f549162d633f14cd24463b743566 24a97c9984adf62587b818b5b2963813c7c3fceec8c41fd92a2956c5582b1abc docs/policies/independent-validation-policy.md
+PASS pinned authority e69320fa2128f549162d633f14cd24463b743566 af36991dc3ae53977aeb347db84a35aed307a58882394319ee49aec3931f5289 docs/policies/dev-board-integration.md
+PASS pinned authority e69320fa2128f549162d633f14cd24463b743566 b80365754e4f738b9ca65d2dfb10a949688ca941396408c8f58bd81bace907c2 docs/resources/evolution/v3-migration/README.md
+PASS pinned authority e69320fa2128f549162d633f14cd24463b743566 e2c02acb2a797fbb31b5ce06f83a91a700a1f6c6b121cafacae9ffd8f91c3f20 docs/resources/evolution/v3-migration/review-scope.md
+PASS pinned authority e69320fa2128f549162d633f14cd24463b743566 ce179b69caf21f433e7e12f2a22f59de7a2b47648b63c1a444eafea231845af4 docs/methodology/dev-skills/independent-code-validator.md
+PASS pinned authority e69320fa2128f549162d633f14cd24463b743566 9b3c227dacbbedffebe64ff3a4767b14081095d64ff0c19eac7bd147ca9b0535 docs/methodology/guides/subagent-coordination-protocol.md
+PASS pinned authority e69320fa2128f549162d633f14cd24463b743566 37c9fa3d8d5ace42e6822b93a87bf4c54c6a35234f7f860c57146de703d15dd7 docs/resources/evolution/v3-migration/review/round-1/checkpoint-exception-approval.json
+PASS pinned authority e69320fa2128f549162d633f14cd24463b743566 d22c012d033906c7398bdcf873bc514e05246ce97d3f3e314e527ccc78fbe96d docs/resources/evolution/v3-migration/review/round-2/remediation-directive.md
+PASS final clean tracked/untracked checkout, pinned HEAD/ref, baseline context without product authority
+Final refs:
+refs/archive/v2/heads/docs/1.0.2-gate-closeout e23126ed248f55b1556aa8accb5578ee6b820c42
+refs/archive/v2/heads/docs/pre-v3-migration-snapshot b8c287126e24700da3373ea94a78eec0d1f1e20a
+refs/archive/v2/heads/master 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a
+refs/archive/v2/heads/release/1.0.0-production 321061e073f816d3bf1c587a82c5fc67afd95877
+refs/archive/v2/heads/release/1.0.1-documentation-consistency a3fc51ac0a97bf9f986f3134f9d421bc0eb35046
+refs/archive/v2/heads/release/1.0.1-production 29d5c58f7ddbb7f150104e4d17b536eb141359e1
+refs/archive/v2/heads/release/1.0.2-distribution-context 8a48f1a9e617a7197e1974e5edae90dc9cda1b76
+refs/archive/v2/remotes/origin/HEAD 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a
+refs/archive/v2/remotes/origin/docs/1.0.2-gate-closeout e23126ed248f55b1556aa8accb5578ee6b820c42
+refs/archive/v2/remotes/origin/master 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a
+refs/archive/v2/remotes/origin/release/1.0.0-production 321061e073f816d3bf1c587a82c5fc67afd95877
+refs/archive/v2/remotes/origin/release/1.0.1-documentation-consistency a3fc51ac0a97bf9f986f3134f9d421bc0eb35046
+refs/archive/v2/remotes/origin/release/1.0.1-production 64209968a765113632b9db3f6931e40f31606803
+refs/archive/v2/remotes/origin/release/1.0.2-distribution-context 8a48f1a9e617a7197e1974e5edae90dc9cda1b76
+refs/archive/v2/tags/v0.1.0-baseline 3253506406d95251a77a5122a4acbc1d7ae3e311
+refs/archive/v2/tags/v0.2.0-phase-loop 1748f736bb3c284b43330556c1c5972f314215bb
+refs/archive/v2/tags/v0.3.0-documentation-structure 3922eaf8695d5bd38963e88d2d13f4f2536d6604
+refs/archive/v2/tags/v0.4.0-verification-first 95ee66043df88e7a8fba8e5fe712f4afa797dee0
+refs/archive/v2/tags/v0.5.0-operational-coherence 1734871c44ab76c0085f644996ff740319a0bd77
+refs/archive/v2/tags/v1.0.1 4354d74b85db14a3437fa7d19a648bcf7a6c29fc
+refs/archive/v2/tags/v1.0.2 7a3b5cd2e9551b5b20ba875210489a8a971daf90
+refs/heads/docs/1.0.2-gate-closeout e23126ed248f55b1556aa8accb5578ee6b820c42
+refs/heads/docs/pre-v3-migration-snapshot b8c287126e24700da3373ea94a78eec0d1f1e20a
+refs/heads/integration/v3-migration e69320fa2128f549162d633f14cd24463b743566
+refs/heads/master 54f0de27f2b59fdcc54e4f57bb9f73dc92843f4a
+refs/heads/release/1.0.0-production 321061e073f816d3bf1c587a82c5fc67afd95877
+refs/heads/release/1.0.1-documentation-consistency a3fc51ac0a97bf9f986f3134f9d421bc0eb35046
+refs/heads/release/1.0.1-production 29d5c58f7ddbb7f150104e4d17b536eb141359e1
+refs/heads/release/1.0.2-distribution-context 8a48f1a9e617a7197e1974e5edae90dc9cda1b76
+refs/review/v3/round-1 b869f0cd8df3521666aee51f9b7531631681b2c3
+refs/review/v3/round-2 30aa3c7d68451c9b2ed892d30f349e20c0b14c3f
+refs/review/v3/round-3 e69320fa2128f549162d633f14cd24463b743566
+refs/tags/v0.1.0-baseline 3253506406d95251a77a5122a4acbc1d7ae3e311
+refs/tags/v0.2.0-phase-loop 1748f736bb3c284b43330556c1c5972f314215bb
+refs/tags/v0.3.0-documentation-structure 3922eaf8695d5bd38963e88d2d13f4f2536d6604
+refs/tags/v0.4.0-verification-first 95ee66043df88e7a8fba8e5fe712f4afa797dee0
+refs/tags/v0.5.0-operational-coherence 1734871c44ab76c0085f644996ff740319a0bd77
+refs/tags/v1.0.1 4354d74b85db14a3437fa7d19a648bcf7a6c29fc
+refs/tags/v1.0.2 7a3b5cd2e9551b5b20ba875210489a8a971daf90
+Final time UTC 2026-10-28T03:56:34.474788+00:00

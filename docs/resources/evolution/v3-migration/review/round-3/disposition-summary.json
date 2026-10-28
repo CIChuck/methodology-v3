@@ -1,0 +1,15 @@
+{
+  "review_outcome": "CHANGES_REQUESTED",
+  "reviewed_candidate": "e69320fa2128f549162d633f14cd24463b743566",
+  "report_sha256": "3411879fa029a477a376e63fe57df2976d25a61adda0ae79f6a7014dbd863348",
+  "remaining_finding": "VAL-005",
+  "severity": "medium, mandatory",
+  "prior_findings": "VAL-001 through VAL-004 addressed under governing scope",
+  "remediation_cycles_used": 2,
+  "additional_cycle_authority": "not granted; explicit human disposition required",
+  "task_state": "started",
+  "task_condition": "blocked",
+  "human_acceptance": "pending",
+  "publication": "not authorized or performed",
+  "recorded_at": "2026-10-28T04:28:43.675438+00:00"
+}

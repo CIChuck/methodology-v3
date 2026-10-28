@@ -1,0 +1,90 @@
+COMMAND ['/Users/chuckrussell/Dev/gendev/methodology-v3/scripts/install-methodology.sh', '/tmp/v3-round3-review.DruBam/initialized-product'] RC 0
+md
+  installed: .agents/skills/independent-code-validator/SKILL.md
+  installed: .agents/skills/migration-refactor-analyst/SKILL.md
+  installed: .agents/skills/phase-build-planner/SKILL.md
+  installed: .agents/skills/prd-author/SKILL.md
+  installed: .agents/skills/remediation-closeout/SKILL.md
+  installed: .agents/skills/subagent-directives-template/SKILL.md
+  installed: .agents/skills/subagents-worktrees-template/SKILL.md
+  installed: .agents/skills/tactical-implementation-planner/SKILL.md
+  installed: .agents/skills/traceability-matrix/SKILL.md
+  installed: .agents/skills/vision-framing/SKILL.md
+  installed: docs/archive/completed/.gitkeep
+  installed: requirements-devboard.txt
+
+Install completed with preserved AGENTS.md; fully governed operation requires explicit AGENTS integration.
+Next: run scripts/init-project.sh "Your Project Name" in the target, then scripts/check-methodology.sh.
+
+Warning: /tmp/v3-round3-review.DruBam/initialized-product has no .git directory. Continuing with explicit file operations.
+
+COMMAND ['./scripts/init-project.sh', 'Existing Product'] RC 0
+Initialized docs/project for Existing Product
+Project slug: existing-product
+Next document: docs/project/vision/vision.md
+
+
+COMMAND ['bash', '-e', '-c', 'tmpdir="$(mktemp -d ${TMPDIR:-/tmp}/methodology-dry-run.XXXXXX)"\ntar -cf - AGENTS.md docs/methodology docs/project-template scripts tests | tar -C "$tmpdir" -xf -\ncd "$tmpdir"\n./scripts/init-project.sh "Example Product"\n\nprintf "FIXTURE=%s\\n" "$PWD"\n'] RC 0
+Initialized docs/project for Example Product
+Project slug: example-product
+Next document: docs/project/vision/vision.md
+FIXTURE=/tmp/v3-round3-review.DruBam/methodology-dry-run.IGMTER
+
+
+PASS live initialized authority preserved
+COMMAND ['./scripts/gendev-doctor.sh'] RC 5
+equisite rg: present
+Context: installed
+Installed methodology version: 1.0.2
+Installed from: /Users/chuckrussell/Dev/gendev/methodology-v3 (tag none, commit e69320fa2128)
+Installed on: 2026-10-28T03:56:09.032476+00:00
+Integrity: FAILED (3 file(s))
+  missing: .github/workflows/methodology.yml
+  missing: docs/planning/board.schema.json
+  missing: requirements-devboard.txt
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: unavailable
+Git HEAD: unavailable
+Tags at HEAD: unavailable
+Project initialized: yes
+Project name: Example Product
+Project slug: example-product
+Project methodology version: 1.0.2
+Current gate: G1
+Current gate status: pending
+Next artifact: docs/project/prd/prd.md
+Gate log: present
+Recommended validation: ./scripts/check-methodology.sh
+
+Doctor result: installed file integrity check failed; see list above.
+
+COMMAND ['./scripts/check-methodology.sh'] RC 1
+age="Missing required file: README.md"
+ERROR: [GENDEV-CHECK-000] file=unknown line=unknown event_id=unknown expected="methodology invariant holds" actual="Missing required file: .github/workflows/methodology.yml" message="Missing required file: .github/workflows/methodology.yml"
+ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected="enforcement.attested.required_attester is a named human" actual="missing or unknown" message="Manifest attested enforcement is missing required_attester field."
+WARN: [GENDEV-CHECK-000] file=unknown line=unknown event_id=unknown expected="methodology invariant holds" actual="Manifest enforcement binding path does not exist: .github/workflows/methodology.yml" message="Manifest enforcement binding path does not exist: .github/workflows/methodology.yml"
+
+Methodology check failed: 3 error(s), 1 warning(s).
+
+
+COMMAND ['/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3', 'scripts/devboard.py', 'validate'] RC 1
+
+Development board error:
+missing board: /private/tmp/v3-round3-review.DruBam/methodology-dry-run.IGMTER/docs/planning/board.yaml
+
+COMMAND ['./scripts/init-project.sh', 'Baseline Product'] RC 0
+Initialized docs/project for Baseline Product
+Project slug: baseline-product
+Next document: docs/project/vision/vision.md
+
+
+COMMAND ['./scripts/check-methodology.sh'] RC 1
+ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected="enforcement.attested.required_attester is a named human" actual="missing or unknown" message="Manifest attested enforcement is missing required_attester field."
+
+Methodology check failed: 1 error(s), 0 warning(s).
+
+

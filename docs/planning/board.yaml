@@ -1,14 +1,14 @@
 version: 1
-updated: '2026-10-27'
+updated: '2026-10-28'
 tasks:
 - id: v3-baseline-migration
   title: Integrate and validate methodology-v3 steps 1–6
   priority: 1
   work_state: started
-  condition: normal
+  condition: blocked
   implementation_authority: granted
-  packet: docs/planning/active/v3-baseline-migration/
-  next_gate: Fresh full review after remediation cycle 2; human acceptance pending
+  packet: docs/planning/blocked/v3-baseline-migration/
+  next_gate: 'Chuck disposition: authorize one additional VAL-005 remediation/review cycle or defer; no VERIFIED result'
   delivery_state: local
   branch: integration/v3-migration
   depends_on: []
@@ -53,3 +53,10 @@ events:
   actor_role: agent
   action: recorded round-2 review and remediation cycle 2
   note: Prior findings independently cleared; VAL-004 YAML rendering fixed and locally checked. Task remains started; fresh full review and human acceptance pending.
+- task: v3-baseline-migration
+  at: '2026-10-28T04:28:43+00:00'
+  actor: Codex
+  actor_role: agent
+  action: condition normal -> blocked
+  note: Round 3 returned mandatory VAL-005 after two remediation cycles; policy requires human disposition.
+  evidence: docs/resources/evolution/v3-migration/review/round-3/report.md

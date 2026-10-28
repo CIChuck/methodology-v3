@@ -1,0 +1,7 @@
+PASS caught interrupt restores full target after final metadata write: SIGINT
+PASS caught interrupt restores full target after final metadata write: SIGTERM
+PASS caught interrupt restores full target after final metadata write: SIGHUP
+PASS combined quotes/backslash/unicode/scaffold tokens round-trip YAML and literal Markdown through initial/later directives
+PASS all independent invalid --force names refused before replacement
+PASS orphan permission-ownership metadata refused with zero writes
+PASS all independent counterexamples

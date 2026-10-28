@@ -1,0 +1,56 @@
+documented setup rc 0
+Initialized docs/project for Example Product
+Project slug: example-product
+Next document: docs/project/vision/vision.md
+FIXTURE=/tmp/v3-round3-review.DruBam/methodology-dry-run.SDXGNq
+
+
+docs/policies/repository-engineering-policy.md MISSING
+docs/policies/development-task-lifecycle.md MISSING
+docs/policies/independent-validation-policy.md MISSING
+docs/policies/dev-board-integration.md MISSING
+docs/planning/board.yaml MISSING
+docs/planning/board.schema.json MISSING
+requirements-devboard.txt MISSING
+.agents/skills/independent-code-validator/SKILL.md MISSING
+COMMAND ['/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3', 'scripts/devboard.py', 'validate'] RC 1
+
+Development board error:
+missing board: /private/tmp/v3-round3-review.DruBam/methodology-dry-run.SDXGNq/docs/planning/board.yaml
+
+COMMAND ['./scripts/gendev-doctor.sh'] RC 0
+GenDev doctor
+Repository: /private/tmp/v3-round3-review.DruBam/methodology-dry-run.SDXGNq
+Prerequisite bash: present
+Prerequisite git: present
+Prerequisite python3: present
+Prerequisite rg: present
+Context: authority
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: unavailable
+Git HEAD: unavailable
+Tags at HEAD: unavailable
+Project initialized: yes
+Project name: Example Product
+Project slug: example-product
+Project methodology version: 1.0.2
+Current gate: G1
+Current gate status: pending
+Next artifact: docs/project/prd/prd.md
+Gate log: present
+Recommended validation: ./scripts/check-methodology.sh
+
+
+COMMAND ['./scripts/check-methodology.sh'] RC 1
+ERROR: [GENDEV-CHECK-000] file=unknown line=unknown event_id=unknown expected="methodology invariant holds" actual="Missing required file: README.md" message="Missing required file: README.md"
+ERROR: [GENDEV-CHECK-000] file=unknown line=unknown event_id=unknown expected="methodology invariant holds" actual="Missing required file: .github/workflows/methodology.yml" message="Missing required file: .github/workflows/methodology.yml"
+ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected="enforcement.attested.required_attester is a named human" actual="missing or unknown" message="Manifest attested enforcement is missing required_attester field."
+WARN: [GENDEV-CHECK-000] file=unknown line=unknown event_id=unknown expected="methodology invariant holds" actual="Manifest enforcement binding path does not exist: .github/workflows/methodology.yml" message="Manifest enforcement binding path does not exist: .github/workflows/methodology.yml"
+
+Methodology check failed: 3 error(s), 1 warning(s).
+
+
