@@ -1,0 +1,62 @@
+{
+  "kind": "local staged-source fresh fixture",
+  "fixture": "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/methodology-dry-run.ek6pm6yi",
+  "skills": 24,
+  "commands": [
+    {
+      "argv": [
+        "./scripts/init-project.sh",
+        "Synthetic Skill Import Fixture"
+      ],
+      "exit": 0,
+      "stdout": "Initialized docs/project for Synthetic Skill Import Fixture\nProject slug: synthetic-skill-import-fixture\nNext document: docs/project/vision/vision.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "./scripts/gendev-doctor.sh"
+      ],
+      "exit": 0,
+      "stdout": "GenDev doctor\nRepository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/methodology-dry-run.ek6pm6yi\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: present\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: isolated-local-exercise (tag none, commit ee82653ed6ca)\nInstalled on: 2026-10-28T21:33:22.578867+00:00\nIntegrity: verified (182 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: yes\nProject name: Synthetic Skill Import Fixture\nProject slug: synthetic-skill-import-fixture\nProject methodology version: 1.0.2\nCurrent gate: G1\nCurrent gate status: pending\nNext artifact: docs/project/prd/prd.md\nGate log: present\nRecommended validation: ./scripts/check-methodology.sh\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "validate"
+      ],
+      "exit": 0,
+      "stdout": "Development board validation passed: 0 tasks\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        "scripts/devboard.py",
+        "next"
+      ],
+      "exit": 0,
+      "stdout": "NO_OPEN_TASK\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/chuckrussell/Dev/gendev/methodology-v3/.venv/bin/python3",
+        ".agents/skills/babysit-pr/scripts/pr-wait",
+        "--help"
+      ],
+      "exit": 0,
+      "stdout": "usage: pr-wait [-h] [--repo REPO] [--until {green,ready,any-change}]\n               [--interval INTERVAL]\n               [pr]\n\nWatch a GitHub PR and print one line per real event.\n\npositional arguments:\n  pr                    PR number or URL\n\noptions:\n  -h, --help            show this help message and exit\n  --repo REPO           owner/name (default: from the URL or the current\n                        checkout)\n  --until {green,ready,any-change}\n  --interval INTERVAL   seconds between polls (default 20, min 5)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "./scripts/check-methodology.sh"
+      ],
+      "exit": 1,
+      "stdout": "ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected=\"enforcement.attested.required_attester is a named human\" actual=\"missing or unknown\" message=\"Manifest attested enforcement is missing required_attester field.\"\n\nMethodology check failed: 1 error(s), 0 warning(s).\n",
+      "stderr": ""
+    }
+  ]
+}

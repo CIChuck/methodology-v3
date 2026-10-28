@@ -349,3 +349,26 @@ Runtime transition commands are preferred where available because they update th
 `docs/project/project.yaml`, and `docs/project/approvals/gate-log.md` together. A manual approval
 entry that updates only one of those surfaces is a partial transition and should be treated as drift
 until reconciled.
+
+## Task, Review And Delivery Decisions
+
+The owner approves task scope and records human acceptance separately from
+product gate decisions. Started/granted board state is necessary for applicable
+product generation but cannot supply missing GenDev acceptance. A reviewer may
+return VERIFIED for a frozen candidate while its human acceptance remains pending.
+A GitHub push, green CI or advisory score does not change that distinction.
+
+Where accepted authority changes, classify and assess the amendment first, then
+reconcile the affected documents/evidence and decide whether prior gate conditions
+were invalidated. Architecture changes do not automatically require G3 regression.
+A private implementation helper inside approved behavior/boundaries does not itself
+require a separate architecture approval. Real risk/authority changes remain controlled.
+
+A mandatory review violation still returns CHANGES_REQUESTED; human risk acceptance
+alone does not relabel it VERIFIED. Record any governing exception through the
+proper authority route and obtain the required new review. After two unsuccessful
+remediation cycles, bring unresolved findings/options back to the human.
+
+Prepared answers and piped input are recording mechanisms, not permission for an
+agent to invent human approvals or checked statements. Use actual authorized
+decisions, or clearly labeled synthetic fixtures when testing the commands.

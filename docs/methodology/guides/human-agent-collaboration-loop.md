@@ -42,7 +42,9 @@ docs/methodology/guides/gates.md
 current active project artifact for the gate
 ```
 
-If `docs/project/` does not exist, the next step is initialization.
+For a new product without docs/project, initialize in its product destination.
+An explicitly authorized methodology baseline task instead reads its evolution
+directive and does not create fictitious product authority.
 
 The lead agent should report:
 
@@ -217,3 +219,17 @@ The lead agent must stop when:
 The loop is working when the human can start with a simple prompt, the lead agent can identify the
 current gate, ask only material questions, draft the right artifact, record approval, and recommend
 the next step without relying on hidden assumptions.
+
+## V3 Work-Item And Review Reconciliation
+
+Orient to the owner-selected board task alongside canonical authority. Validate
+the board and inspect next/show; a new installation is empty. Product generation
+needs started/granted scope on its named branch and accepted implementation
+authority at the real checkpoints. Skills and collaboration mode do not supply
+missing delegation, gate or delivery authorization.
+
+Review a frozen candidate with pinned inputs in a fresh read-only context. Use
+actual formal outcomes and bounded remediation under the validation policy; keep
+human acceptance and external delivery separate. Advance plan drafts stay Draft,
+private implementation choices stay within accepted boundaries, and real authority
+changes undergo amendment impact assessment before regression decisions.

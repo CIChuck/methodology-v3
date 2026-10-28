@@ -1,257 +1,160 @@
-# GenDev Methodology-v3 — Unreleased Integration Candidate
+# GenDev Methodology-v3 — Unreleased Development Toolkit
 
-This is a local, unreleased integration candidate based on the GenDev 1.0.2
-lifecycle contract. Independent review, human acceptance, final documentation
-refresh and publication remain pending. See
-`docs/resources/evolution/v3-migration/README.md` for authorized scope and evidence.
-
-For product creation and upgrades, follow
-`docs/methodology/guides/distribution-ownership.md`. Product installation seeds
-an empty board and preserves project-owned policies, authority and local skills.
-The source repository's migration board is not a new product's task history.
-
-This repository is a seed baseline for building software products with AI-assisted coding agents
-such as Codex, Claude Code, and similar tools.
-
-The baseline is meant to be cloned, initialized for a specific product, and then evolved with a
-human team member and one or more AI agents. The method emphasizes documented authority,
-traceability, explicit phase boundaries, planned tests, code review, remediation, and as-built
-documentation close-out.
-
-## If You Read Three Files
-
-For first orientation, read these files in order:
-
-```text
-AGENTS.md
-docs/methodology/constitution/gendev.md
-docs/resources/practitioner-guide/README.md
-```
-
-`AGENTS.md` tells AI coding agents how to enter the repository. The constitution defines the
-controlling method. The practitioner guide explains how humans and agents use the method in
-practice.
-
-## Repository Model
-
-```text
-docs/methodology/
-  Reusable methodology authority, templates, and agent guidance.
-
-docs/project/
-  Active project authority after initialization. This directory is created by
-  scripts/init-project.sh and should govern the product being built.
-
-docs/project-template/
-  Clone-time skeleton used by the initialization script.
-
-docs/resources/practitioner-guide/
-  Field manual for technical practitioners using the methodology with AI coding agents.
-
-docs/resources/examples/
-  Non-authoritative examples and future worked examples.
-```
-
-For a lightweight C1 path, see:
-
-```text
-docs/resources/examples/current/c1-csv-cleanup/
-```
-
-## Core Method
-
-The controlling standard is:
-
-```text
-docs/methodology/constitution/gendev.md
-```
-
-For meaningful implementation, agents and humans should work through this chain:
-
-```text
-vision
-PRD
-architecture
-governance/security
-phase build plan
-tactical implementation plan
-construction directive
-implementation and tests
-code review
-remediation
-as-built close-out
-traceability update
-```
-
-Small projects may combine artifacts when they are classified as contained C1 work, but the content
-still needs to exist. Default C2 product work should normally use the full chain. Critical C3 work
-should add review, evidence, and enforcement discipline rather than compressing gates.
-
-## Prerequisites
-
-GenDev requires these tools on every platform:
-
-```text
-bash 4 or later
-git
-python3
-ripgrep (rg)
-```
-
-Ripgrep is required, not optional: the coherence checkers and regression suites
-standardize on one regex engine so pattern checks behave identically everywhere.
-Install it with `apt install ripgrep`, `brew install ripgrep`,
-`winget install BurntSushi.ripgrep.MSVC`, or `cargo install ripgrep`.
-
-Verify prerequisites before initializing:
-
-```bash
-./scripts/gendev-doctor.sh
-```
-
-The doctor reports each prerequisite, and `init-project.sh` refuses to
-initialize until all of them are present.
-
-## Initialize A Project
-
-From a fresh clone:
-
-```bash
-./scripts/init-project.sh "My Product Name"
-```
-
-This creates `docs/project/` with starter authority documents copied from
-`docs/methodology/templates/`.
-
-If `docs/project/` already exists, the script stops unless `--force` is supplied:
-
-```bash
-./scripts/init-project.sh --force "My Product Name"
-```
-
-## Agent Entry Point
-
-Root-level agent instructions live in:
-
-```text
-AGENTS.md
-```
-
-AI coding agents should read that file first, then follow the constitution and the active project
-documents under `docs/project/`.
-
-## Reusable Assets
-
-- Constitution: `docs/methodology/constitution/gendev.md`
-- Operating workflow: `docs/methodology/guides/agentic-development-workflow.md`
-- Gate model: `docs/methodology/guides/gates.md`
-- Collaboration modes: `docs/methodology/guides/collaboration-modes.md`
-- Human-agent loop: `docs/methodology/guides/human-agent-collaboration-loop.md`
-- Start/next-step protocol: `docs/methodology/guides/start-and-next-step-protocol.md`
-- Gate transition protocol: `docs/methodology/guides/gate-transition-protocol.md`
-- Amendment/regression protocol: `docs/methodology/guides/amendment-and-regression-protocol.md`
-- Enforcement contract: `docs/methodology/guides/enforcement-contract.md`
-- Human approval protocol: `docs/methodology/guides/human-approval-protocol.md`
-- Sub-agent coordination protocol: `docs/methodology/guides/subagent-coordination-protocol.md`
-- Artifact collaboration protocol: `docs/methodology/guides/artifact-collaboration-protocol.md`
-- Production operations protocol: `docs/methodology/guides/production-operations-protocol.md`
-- Orchestration validation: `docs/methodology/guides/orchestration-validation.md`
-- Practitioner guide: `docs/resources/practitioner-guide/`
-- Templates: `docs/methodology/templates/`
-- Dev-skill guidance: `docs/methodology/dev-skills/`
-- Agent role playbooks: `docs/methodology/agents/roles/`
-- Sample agent instructions: `docs/methodology/agents/sample-agents.md`
-- Examples: `docs/resources/examples/`
-- Methodology checker: `scripts/check-methodology.sh`
-- Methodology guard: `scripts/methodology-guard.sh`
-- Methodology metrics: `scripts/methodology-metrics.sh`
-- Optional hook installer: `scripts/install-hooks.sh`
-
-## Validate The Methodology State
-
-Before implementation, phase close-out, or handoff, run:
-
-```bash
-./scripts/check-methodology.sh
-```
-
-On an uninitialized baseline, the checker reports that `docs/project/` does not exist yet. After
-initialization, it checks the active project structure, manifest paths, approval-state invariants,
-ready/accepted artifact placeholders, phase planning sections, and traceability evidence signals.
-
-For diff-aware enforcement, use the guard wrapper:
-
-```bash
-./scripts/methodology-guard.sh --staged
-```
-
-To install the optional local pre-commit hook:
-
-```bash
-./scripts/install-hooks.sh
-```
-
-The repository also includes a GitHub Actions reference binding at
-`.github/workflows/methodology.yml`.
-
-To generate an on-demand process and value metrics report for an initialized project:
-
-```bash
-./scripts/methodology-metrics.sh docs/project
-```
-
-## Orchestration Layer
-
-The orchestration layer is procedural documentation. It tells a human team member, lead agent, and
-sub-agents how to collaborate from `Let's begin` through production operation.
-
-The core behaviors are:
-
-```text
-set collaboration mode
-orient to project.yaml and current gate
-ask material questions
-draft the next artifact
-review and revise with the human
-record lightweight approvals
-preserve gate history in docs/project/approvals/gate-log.md
-coordinate bounded sub-agent work
-advance gates only with required evidence
-prepare deployment, rollback, monitoring, and runbook procedures
-```
-
-Tool-specific addenda for Codex, Claude Code, Cursor, or other systems may be added later. The core
-methodology remains tool-agnostic.
+GenDev combines documented product authority and human gate decisions with
+bounded AI code generation, a work-item board, reusable skills, independent
+candidate validation and evidence-based close-out. This repository is hosted at
+https://github.com/CIChuck/methodology-v3 and is still an unreleased distribution.
 
 ## Current Status
 
-This repository is a methodology baseline, not an implemented product. Product-specific source code,
-tests, configuration, CI, deployment, and runtime commands should be added by the initialized project
-as its architecture and phase plans mature.
+| Component | Availability and evidence |
+| --- | --- |
+| Inherited lifecycle | GenDev 1.0.2; gate numbering and release identity remain unchanged |
+| Migration baseline | Candidate 98f8bec independently VERIFIED; human acceptance pending |
+| Default GitHub main | Migration plus review/hosting records; 15 baseline skills |
+| Expanded skills | Nine more on integration/v3-skill-import; 24 total on that branch and this docs branch; local checks passed, independent review pending |
+| Documentation | V3 Practitioner Guide and matching HTML content; describes status without granting acceptance |
+
+A GitHub push is delivery, not verification, acceptance or a methodology release.
+Use an exact source revision and its own evidence. Earlier VERIFIED results do
+not cover subsequent imports or documentation changes. Historical release and
+review records remain preserved at their original revisions.
 
 Current methodology version: `1.0.2`
 
-The inherited lifecycle contract is GenDev 1.0.2. This modified distribution is
-unreleased, as declared in `docs/methodology/schema/candidate.json`. Historical
-release notes are in
-`docs/resources/releases/1.0.2.md`, and the release execution log is in
-`docs/resources/evolution/1.0.2-distribution-context-execution-log.md`.
+That value identifies the inherited normative lifecycle. The separate unreleased
+v3 distribution identity lives in `docs/methodology/schema/candidate.json`.
+Historical 1.0.2 publication evidence belongs to the inherited baseline, not a
+new v3 release. See `docs/resources/releases/README.md` and
+`docs/resources/evolution/v3-migration/review/round-5/report.md`.
 
-The inherited published baseline tag is:
+## Start Here
 
-```text
-v1.0.2
+Read `AGENTS.md`, `docs/methodology/constitution/gendev.md` and the
+[Practitioner Guide](docs/resources/practitioner-guide/README.md).
+Current adoption instructions are in [V3 Adoption](docs/resources/releases/v3-adoption.md).
+The HTML guide source is under `docs/resources/practitioner-guide-html/`.
+
+## What Changed In V3
+
+- The owner-controlled task board tracks scope, priorities and delivery alongside
+  GenDev; the manifest and gate log retain product/phase approval authority.
+- Product code starts from a started/granted task on its named branch and the
+  accepted phase, tactical, directive and verification artifacts.
+- Private implementation details may be proportionate choices within approved
+  scope; changes to domain/shared contracts/architecture/security stay controlled.
+- Amendment impact and reconciliation determine whether regression is needed;
+  an architecture edit does not automatically send the product back to G3.
+- Phase build-plan drafts can be prepared ahead without acceptance; detailed
+  tactical plans and directives are finalized just in time.
+- Formal review freezes an exact candidate and uses fresh read-only context.
+  Mandatory findings drive bounded remediation; human acceptance stays separate.
+- Ownership-aware installation/upgrades preserve project data and local extensions,
+  refuse conflicts before writes and support documented rollback.
+- Canonical skill content is discoverable through linked entries; complete bundles
+  retain scripts, references and UI metadata. Provider-specific actions are optional.
+
+## Repository Model
+
+| Location | Role |
+| --- | --- |
+| docs/methodology | Constitution, operating guides, templates, canonical skills, schema and optional integrations |
+| docs/project-template | Product manifest plus planning and fresh-exercise seeds |
+| docs/project | Active product authority, created in a product destination by initialization |
+| docs/policies | Project-owned engineering, lifecycle, validation and board policies |
+| docs/planning | Owner-selected tasks, indexes and generated dashboard |
+| .agents/skills | Discovery links to canonical skills |
+| docs/resources | Practitioner editions, adoption guides, examples and historical evidence |
+
+This methodology source is not an initialized product. Its own engineering tasks
+follow explicitly authorized evolution plans under `docs/resources/evolution/`.
+Install into a separate destination for a product; do not inherit source migration
+tasks, project approvals or machine/account settings.
+
+## Prerequisites
+
+GenDev requires **bash 4+, git, python3 and ripgrep (rg)**. Run the doctor first;
+a missing prerequisite is blocking. Install rg using the package manager for
+your platform. Board tooling requires Python 3.11+ and `requirements-devboard.txt`;
+uv is convenient, or use a separate tooling environment. Product runtime
+requirements and lockfiles remain the product's responsibility.
+
+## Install And Initialize A Product
+
+From the chosen toolkit checkout, into an existing destination directory:
+
+```bash
+./scripts/gendev-doctor.sh
+./scripts/install-methodology.sh --dry-run /path/to/product
+./scripts/install-methodology.sh /path/to/product
 ```
 
-Before publication, the release branch must pass local validation, remote CI,
-branch protection verification, independent review, and GitHub Release
-publication gates recorded in the 1.0 release plan.
+Add --with-resources to include examples and the Practitioner Guide. An existing
+AGENTS.md is preserved unless an authorized managed include is requested through
+--integrate-agents. In the destination, preserve its existing README.md or create a short product
+README first; the installer does not copy the toolkit README. Then run:
+
+```bash
+./scripts/gendev-doctor.sh
+./scripts/init-project.sh "My Product Name"
+./scripts/project-state.sh
+./scripts/check-methodology.sh
+```
+
+Initialization creates canonical authority and starts **G1 pending**, while the
+installed board is **empty**. The owner selects its tasks and priorities. The
+fresh manifest's required_attester is TBD: checker exit 1 with
+GENDEV-MANIFEST-ENFORCEMENT-002 is expected until a real human is named. Do not
+invent identity or approval; investigate other errors separately.
+
+An existing docs/project means resume its actual state. Installer --force updates
+owned baseline paths subject to conflict checks; initializer --force replaces
+project authority and is not an upgrade. Snapshot the destination and follow
+`docs/methodology/guides/distribution-ownership.md` before any upgrade.
+
+## Work With The Board And Agent
+
+```bash
+uv run --no-project --with-requirements requirements-devboard.txt python scripts/devboard.py validate
+uv run --no-project --with-requirements requirements-devboard.txt python scripts/devboard.py next
+```
+
+Use show with the selected task ID. Task labels and role flags cannot supply
+missing authority. Keep canonical project artifacts under docs/project even when
+tracking packets move or are archived. Read the applicable skill and the actual
+user request before workflow execution; discovery is not invocation.
+
+## Validation And Close-Out
+
+Run `./scripts/check-methodology.sh` before implementation/handoff. Use the
+applicable product verification plan and `./scripts/methodology-guard.sh --staged`
+for diff-aware checks. Source-only contributors also use documentation, lifecycle,
+reference and regression suites; installed products use their product bindings.
+The optional `./scripts/install-hooks.sh` supplies local staged checks, not human
+approval or branch protection. Metrics come from
+`./scripts/methodology-metrics.sh docs/project`.
+
+The source Actions workflow currently runs for PRs and pushes to master. A main
+or feature-branch upload alone is not hosted CI evidence. No v3 release or
+production deployment is implied by successful local checks or repository hosting.
+
+Record actual tests/UAT, independent review/remediation, traceability, as-built
+state, deferred work and human decisions. The project uses the same G0–G9 gates
+and G5 phase checkpoints; the board and workflow skills support that process.
+
+## Reference Paths
+
+- Operating workflow: `docs/methodology/guides/agentic-development-workflow.md`
+- Phase loop: `docs/methodology/guides/phase-loop.md`
+- Board boundary: `docs/policies/dev-board-integration.md`
+- Validation: `docs/policies/independent-validation-policy.md`
+- Skill workflow contract: `docs/methodology/guides/skill-execution-contract.md` on the expanded branch
+- Optional T3 integration: `docs/methodology/guides/t3-code-integration.md`
+- Safe dry runs: `docs/methodology/guides/orchestration-validation.md`
+- Current examples: `docs/resources/examples/current/` (non-authoritative)
 
 ## License
 
-This repository uses a split license:
-
-- Documentation is licensed under Creative Commons Attribution 4.0 International (`CC-BY-4.0`).
-- Scripts and source code are licensed under the MIT License (`MIT`).
-
-See `LICENSE`, `LICENSE-CC-BY-4.0`, and `LICENSE-MIT`.
+Documentation uses CC-BY-4.0; scripts/source use MIT. See `LICENSE`,
+`LICENSE-CC-BY-4.0` and `LICENSE-MIT`. Third-party browser bundles retain their
+own notices. Source and archived evidence are retained for provenance.

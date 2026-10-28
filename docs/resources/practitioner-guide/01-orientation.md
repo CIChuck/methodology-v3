@@ -120,3 +120,12 @@ The orientation phase is successful when the human and agent both know:
 - which blast-radius class applies;
 - how success will eventually be measured;
 - what the next human decision will be.
+
+## V3 Orientation In Practice
+
+Read the guide home availability table before choosing a source branch. The
+unreleased v3 toolkit preserves the 1.0.2 lifecycle and adds explicit task/skill,
+review and installation practices. A new installed product starts G1 pending
+with an empty board. Its owner chooses tasks; source migration history is not
+product authority. Use Chapters 20–22 for those operating surfaces and current
+adoption instructions. A successful push or a named workflow is not approval.

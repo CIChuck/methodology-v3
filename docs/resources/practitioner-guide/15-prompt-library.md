@@ -216,3 +216,38 @@ Perform terminal G8 -> G9 close-out. Use the deployment record or approved non-d
 disposition, operational validation, value-review disposition, final traceability, and as-built
 close-out. Do not mark unmeasurable value as success.
 ```
+
+## V3 Task Orientation
+
+```text
+Read the manifest, gate log, board and selected task. Confirm current gate,
+branch, started/granted scope and accepted authority revisions. Report the next
+permitted action and missing decisions; do not infer approval from task labels.
+```
+
+## Advance Drafts Without Authority Drift
+
+```text
+Draft later phase build plans to clarify scope and non-goals. Keep them Draft
+and do not advance checkpoints or authorize implementation. Finalize tactical
+plans and construction directives just in time using prior phase learnings.
+```
+
+## Frozen Candidate Review
+
+```text
+Prepare a read-only fresh-context validation request for this exact candidate
+and base diff. Pin authority/directive and acceptance criteria, required commands,
+known baseline failures, permitted outputs and report path. Return VERIFIED,
+CHANGES_REQUESTED or BLOCKED with reproducible evidence. No builder transcript,
+reviewer edits, nested delegation, delivery effects or automatic acceptance.
+```
+
+## Upgrade Without Resetting A Product
+
+```text
+Snapshot the product and run the installer upgrade dry run. Reconcile owned-file,
+mode, local-amendment and collision conflicts before writes. Preserve canonical
+authority, gate history, owner-controlled board, policies, skills and runtime.
+Do not use initializer --force or edit integrity hashes to bypass a conflict.
+```

@@ -206,8 +206,10 @@ The constitution names them in its First Principles of Code Quality section: YAG
 current requirement asks for), KISS (the simplest structure that satisfies the requirement is the
 right one), DRY (do not rewrite logic that already exists), single responsibility (each unit does one
 job), least astonishment (behavior matches the obvious reading of the requirement), and no undeclared
-abstractions (every entity, field, relationship, class, and interface the build introduces already
-appears in an approved upstream authority).
+abstractions (new authority-bearing domain, shared-contract, architecture or security
+concepts must be declared in accepted authority). Proportionate private helpers, internal
+adapters and test fixtures may implement an approved task without a separate architecture
+inventory entry when they do not expand approved scope, shared contracts or security boundaries.
 
 The reason these sit on the method side of the line, not the technique side, is the same reason "the
 architecture must cohere with the PRD" sits there. They are properties the result must have,

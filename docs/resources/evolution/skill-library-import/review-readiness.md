@@ -1,0 +1,44 @@
+# Skill Import Review Readiness
+
+Status: Checkpoint/upload authorized; independent review authorization pending
+Repository: /Users/chuckrussell/Dev/gendev/methodology-v3
+Branch: integration/v3-skill-import
+Base: ee82653ed6cacb9e1157cd791f12d0fb774f12af
+Current result: 9 imported skills, 24 total; local checks pass; no new VERIFIED.
+
+## Proposed next authorized slice
+
+The GitHub hosting instruction authorizes the local checkpoint and upload.
+The proposed next slice is an independent fresh-context full review of this
+follow-up diff, once reviewer dispatch is authorized.
+Pin the resulting commit and the authority below before dispatch. Keep review
+read-only and local/offline, without additional agents or live PR effects.
+Do not reuse the migration verdict as evidence for this changed candidate.
+
+Authority: AGENTS, constitution, engineering/lifecycle/independent-validation
+policies, this import's README, source inventory and adaptation notes. Review
+scope is the imported SKILL.md instructions, unchanged bundled helper/UI files,
+whole-folder discovery, shared execution contract, narrow dry-run packaging
+extension and regression changes. The existing migration is the frozen base,
+not a request to redo or expand its unrelated scope or historical audit.
+
+## Acceptance criteria
+
+- All nine skills preserve intended capabilities while respecting GenDev
+  authority, human approvals, scoped effects, review independence and budgets.
+- Importing or discussing a skill does not invoke it. Ordinary stop requests
+  stop work; workflow grants are scoped and cannot waive required approvals.
+- Discovery and relative helper/UI/reference paths work from source, fresh
+  installation and disposable initialized exercises. All 24 skills are present.
+- Runtime packaging retains source-selection and upgrade safety; original
+  folders, projects and frozen refs are preserved under the approved exception.
+- Exact source and adapted copies are traceable; no global install, credentials,
+  network operation, PR/comment/watch/merge or imported delegate workflow ran.
+- Required local methodology, migration, board, skill metadata/link, support
+  help/syntax and replay checks pass with honest limitations. No human acceptance,
+  Linux/hosted CI, live watcher semantics or real product gate traversal is inferred.
+
+The actual review request/authority manifest must name its frozen candidate,
+report/evidence paths, permitted fixture outputs and exact required commands.
+Commit/upload authority is recorded separately in ../github-hosting.md. This
+readiness packet grants no delegation, further external or acceptance authority.

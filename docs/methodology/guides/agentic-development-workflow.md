@@ -354,3 +354,25 @@ At each gate, record evidence in the active project docs. Evidence can include:
 This workflow is working when a new agent can enter an initialized repository, read `AGENTS.md`,
 `docs/project/project.yaml`, and the current gate documents, then know whether to plan, implement,
 review, remediate, close out, or stop for human approval.
+
+## V3 Execution Surfaces
+
+Use a selected/pinned toolkit revision to install into a separate product
+repository. The source's evolution tasks and examples do not become product
+history. Installation seeds an empty work-item board alongside canonical product
+authority, standalone tooling requirements and linked skills.
+
+Before product generation, reconcile manifest/gate, board task, actual branch,
+accepted artifacts and verification plan. The task must be started/granted on
+its named branch; approval alone permits preparation. Read the local lifecycle,
+engineering and independent-validation policies. The board's task action and
+observed delivery never approve a GenDev gate. A baseline source with no
+product uses its explicitly authorized evolution directive instead of fake
+initialization.
+
+V3 permits proportional private implementation details within accepted scope,
+assesses amendments before regression, and permits Draft phase plans ahead of
+just-in-time tactical/directive acceptance. Freeze candidates for fresh read-only
+review; apply the two-unsuccessful-cycle escalation rule and separate VERIFIED,
+completion, human acceptance and delivery. The Practitioner Guide's Chapters
+20–22 cover the board, skills and distribution mechanics in detail.

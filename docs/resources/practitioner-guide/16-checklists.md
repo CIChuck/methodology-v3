@@ -36,7 +36,7 @@ checklists here remain manual reminders.
 ## New Project Checklist
 
 ```text
-[ ] baseline repository cloned
+[ ] pinned toolkit revision chosen and installed into the product destination
 [ ] working branch selected
 [ ] ./scripts/init-project.sh "Project Name" run
 [ ] docs/project/project.yaml created
@@ -52,11 +52,13 @@ checklists here remain manual reminders.
 [ ] ./scripts/gendev-doctor.sh passes or findings are dispositioned
 [ ] ./scripts/project-state.sh reports the expected gate and approval state
 [ ] ./scripts/check-methodology.sh passes
-[ ] ./scripts/check-doc-coherence.sh passes when methodology docs changed
+[ ] ./scripts/check-doc-coherence.sh passes in the source toolkit when applicable;
+    installed products use their product-context checks
 [ ] optional local hook installed, if the team wants pre-commit checks
 [ ] AI agent started from repository root
 [ ] owner identified
 [ ] gate approver identified
+[ ] required attester identified; the fresh unset-attester error is explicitly resolved
 [ ] collaboration mode selected
 [ ] current gate confirmed as G1
 ```
@@ -275,3 +277,28 @@ Phase-exit checks:
 [ ] per-phase as-built close-out records actual behavior and deviations
 [ ] ./scripts/check-doc-coherence.sh passes before release-note or guide publication
 ```
+
+## V3 Installation And Task Checklist
+
+```text
+[ ] Chosen toolkit revision and its review/acceptance status are recorded.
+[ ] Product destination is separate from source evolution history.
+[ ] Doctor reports bash 4+, git, python3 and ripgrep; board Python 3.11+ is available.
+[ ] Installation integrity/provenance is valid; product dependency files were preserved.
+[ ] Product starts G1 pending with an empty board; owner chooses initial tasks.
+[ ] Named required attester resolves the explicit inherited pre-approval error.
+[ ] Selected product task is started/granted on the correct branch.
+[ ] Accepted phase/tactical/directive/verification authority permits the scope.
+[ ] New domain/shared-contract/security boundaries are declared or amended.
+[ ] Later build-plan drafts are not accepted authority or fabricated evidence.
+[ ] Amendment impact, reconciliation and any gate regression are recorded.
+[ ] Exact candidate and authority pins support a fresh read-only review.
+[ ] Two unsuccessful remediation cycles trigger human disposition.
+[ ] VERIFIED, completion, human acceptance and delivery are separate records.
+[ ] Skill bundles retain resources and no workflow ran merely because it was installed.
+[ ] Upgrade/dry-run exercises preserve live authority and task history.
+[ ] Canonical Practitioner Markdown and HTML copies have identical file sets and bytes.
+```
+
+For current command examples use Chapters 4 and 20–22 and the v3 adoption guide.
+Source-only documentation checks do not belong to an installed product's CI.

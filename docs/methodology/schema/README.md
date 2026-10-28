@@ -597,3 +597,13 @@ bash tests/methodology/test-lifecycle-coherence.sh
 
 Release preparation additionally runs the coherence validator in release mode. Any `planned`
 delivery or contract marker blocks release.
+
+## V3 Distribution Identity
+
+This released registry still defines the inherited 1.0.2 lifecycle contract.
+The v3 distribution is separately identified as unreleased in candidate.json;
+installation.json records its actual source, candidate, owned file hashes/modes,
+installation history and local amendments. Neither the registry release mode nor
+a GitHub branch upload publishes v3, approves a gate or accepts a task. The board
+has its own work-item schema and does not redefine product gate vocabulary.
+See docs/resources/releases/v3-adoption.md for current distribution adoption.

@@ -18,3 +18,11 @@ implementation planning relies on it.
 Because no real implementation ships in this example, `real_code: false` and there are no runtime
 validation commands. The correct next action is implementation under an accepted construction
 directive, not retrospective evidence fabrication.
+
+## V3 Reuse Note
+
+The recorded fixture methodology_version and evidence are preserved. This example
+is not a newly executed v3 product. Recreate/adopt its authority with the chosen
+toolkit, owner-controlled empty board and actual new approvals/evidence before
+using it as local project authority. See the v3 adoption guide and Practitioner
+Chapters 20–22 for distribution, task and skill boundaries.

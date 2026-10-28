@@ -102,3 +102,18 @@ The template also includes an optional Git pre-commit hook installer:
 
 The hook runs the methodology guard against staged changes. It is a convenience binding, not a
 substitute for CI or human gate approval.
+
+## V3 Installation Seeds
+
+The installer, not product initialization alone, seeds the empty board/dashboard,
+tracking lanes, project-owned policy copies and discovery entries. The planning
+and dry-run policy subdirectories here are source seeds; init-project renders
+the canonical docs/project manifest/artifacts rather than cloning source tasks.
+
+A new product is G1 pending with an empty owner-controlled board. Name the actual
+required attester; the fresh TBD value causes the explicit inherited
+GENDEV-MANIFEST-ENFORCEMENT-002 error until resolved, without granting approval.
+Board tooling stays separate from the product environment. Current startup and
+upgrade guidance is docs/resources/releases/v3-adoption.md and Practitioner
+Chapters 4 and 20–22. The 1.0.2 manifest lifecycle version is intentional while
+methodology-v3 remains an unreleased distribution.

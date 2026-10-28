@@ -102,8 +102,10 @@ Regression example:
 ```text
 Current gate: G6
 Change: Add a new requirement that requires a different data model and authorization behavior.
-Likely action: regress to G3 or G4 because architecture and governance entry conditions are no
-longer satisfied.
+First action: classify the amendment, assess its architectural/security impact
+and reconcile the affected authority. Regress to G3 or G4 if that assessment shows
+the earlier gate entry/exit conditions are invalidated; otherwise hold the current
+gate while the affected records and evidence are reconciled.
 ```
 
 The practical question is:
@@ -518,3 +520,15 @@ criteria when the work is genuinely contained, but every class still records unw
 failure and abuse paths where those paths exist. G3 must convert those criteria into a
 human-approved verification specification with stable criterion IDs before implementation planning
 uses them.
+
+## Board State Does Not Create A Gate
+
+V3 keeps the same gates and G5 interior checkpoints. Board next_gate describes a
+next work-item action and may be free text; project.yaml and the gate log own the
+actual product gate. A fresh installed board is empty even though initialization
+sets G1 pending. Owner-approved tasks still need applicable upstream authority.
+
+Future phase build plans may be drafted for scope boundaries while remaining
+Draft. Their existence does not enter or satisfy G5 checkpoints. Finalize and
+accept detailed tactical plans and directives at their applicable just-in-time
+checkpoints. Future tests, approvals and as-built records cannot be fabricated.

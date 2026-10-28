@@ -182,3 +182,13 @@ validation result where applicable, final traceability, as-built close-out, and 
 disposition. `met`, `missed`, and `unmeasurable` are distinct value-review outcomes;
 `unmeasurable` is not success. If no value readout is applicable, record why rather than claiming a
 measurement.
+
+## Workflow Automation Preserves Production Boundaries
+
+The task board and PR skills can coordinate approved delivery work; their statuses
+and confidence do not approve production. Full-send/full-stop, bot readiness and
+GitHub merge outcomes cannot supply the named deployment decision, attestation,
+runbook/rollback evidence or security acceptance required by the project.
+Record commit, push, merge, release and deployment as separate observed events.
+Provider watchers and credentials follow the active harness. A documentation
+refresh or repository upload does not deploy the product or publish a docs site.

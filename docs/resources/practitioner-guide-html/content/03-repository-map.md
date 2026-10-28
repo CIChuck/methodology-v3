@@ -204,3 +204,28 @@ sed -n '1,120p' docs/project/approvals/gate-log.md
 
 The practitioner should not need to inspect every file manually on every turn. The lead agent should
 do that orientation work and report the current state.
+
+## V3 Toolkit And Tracking Surfaces
+
+The source repo has an authorized evolution plan instead of a fabricated product.
+Install into a separate product destination; do not carry source tasks into it.
+
+| Path | Owner and purpose |
+| --- | --- |
+| docs/policies/ | Project-owned operating adaptations for engineering, tasks and validation |
+| docs/planning/board.yaml | Owner-controlled work-item state; empty in a new installation |
+| docs/planning/README.md | Generated task dashboard |
+| docs/planning/active/ and other lanes | Tracking indexes linking to canonical authority |
+| docs/archive/completed/ | Accepted task indexes/evidence, not relocated product authority |
+| .agents/skills/ | Discovery links to canonical skill content |
+| docs/methodology/dev-skills/ | Shipped skill instructions and complete bundles |
+| docs/methodology/schema/installation.json | Installed baseline ownership/provenance |
+| docs/methodology/schema/candidate.json | Separate unreleased distribution identity |
+| requirements-devboard.txt | Standalone board tooling dependencies |
+| docs/methodology/integrations/t3/ | Optional provider integration examples |
+
+The installer seeds missing board/policy/discovery surfaces without treating
+arbitrary local additions as baseline-owned. The initialized project's canonical
+docs/project paths above remain in place throughout task moves and archival.
+The 24-skill working branch and 15-skill reviewed baseline are distinguished in
+[Skill Library And Workflows](21-skill-library-and-workflows.md).

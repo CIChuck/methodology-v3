@@ -60,3 +60,14 @@ honestly skipped, and the change is ready for conformance review.
 Implement only accepted tactical task IDs from the current phase construction directive. Stop if
 work requires a new requirement, unapproved architecture, changed governance, C1/C2/C3
 reclassification, or evidence outside the accepted phase scope.
+
+## V3 Start And Handoff
+
+Confirm the owner-selected task is started/granted on its named branch and that
+the actual gate and accepted phase/tactical/directive/test authority permit code.
+Private helpers/adapters/values/fixtures are choices within approved scope only
+when no new domain concept, shared state/contract, component/trust/security or
+unapproved observable behavior is introduced. Real authority changes require amendment and
+impact assessment; architecture edits do not automatically regress to G3.
+Keep future phase drafts provisional, freeze the candidate for fresh independent
+review, and leave human acceptance/delivery decisions separate.

@@ -79,3 +79,17 @@ dashboard with the documented board `render` command, then run `validate` and
 `next`. Rendering updates the view and must leave board.yaml task state and
 events unchanged. The installer preserves the existing view until that explicit
 refresh; a stale-dashboard report is not permission to change task approvals.
+
+## Complete Skill Bundles And Current Adoption
+
+Canonical packaged skills retain all scripts, references and provider metadata.
+Whole-folder discovery links preserve those paths; legacy flat skills retain
+single-file discovery. Project-owned discovery entries are seeded only when
+missing. The fresh exercise constructs its canonical discovery from selected
+owned/tracked inputs, including complete bundle resources, without inspecting
+excluded live additions first.
+
+Use docs/resources/releases/v3-adoption.md and Practitioner Chapters 20–22 for
+current adoption/operations. Branch availability matters: the 15-skill reviewed
+migration and the nine-skill pending-review follow-up are separate candidates.
+The registry's released 1.0.2 identity does not publish the v3 distribution.

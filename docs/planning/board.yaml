@@ -21,14 +21,49 @@ tasks:
   - docs/resources/evolution/v3-migration/review/round-2/report.md (CHANGES_REQUESTED, superseded candidate)
   - docs/resources/evolution/v3-migration/review/round-2/remediation-results.json (local checks; fresh review pending)
   - docs/resources/evolution/v3-migration/review/round-3/report.md (CHANGES_REQUESTED, superseded candidate)
-  - docs/resources/evolution/v3-migration/review/round-3/remediation-results.json (additional human-authorized cycle; fresh review pending)
+  - docs/resources/evolution/v3-migration/review/round-3/remediation-results.json (additional human-authorized cycle; fresh
+    review pending)
   - docs/resources/evolution/v3-migration/review/round-4/report.md (CHANGES_REQUESTED; residual VAL-005)
-  - docs/resources/evolution/v3-migration/review/round-4/human-disposition.md (bounded follow-up authorized by Chuck; fresh review pending)
+  - docs/resources/evolution/v3-migration/review/round-4/human-disposition.md (bounded follow-up authorized by Chuck; fresh
+    review pending)
   - docs/resources/evolution/v3-migration/review/round-4/remediation-results.json (local checks passed; fresh review pending)
   - docs/resources/evolution/v3-migration/review/round-5/report.md (VERIFIED, candidate 98f8bec)
   - docs/resources/evolution/v3-migration/review/round-5/acceptance-request.md (human decision pending)
   approved_by: Chuck Russell
   approved_at: '2026-10-27'
+- id: skill-library-import
+  title: Import and reconcile nine local workflow skills
+  priority: 2
+  work_state: started
+  condition: normal
+  implementation_authority: granted
+  packet: docs/planning/active/skill-library-import/
+  next_gate: Authorize fresh independent review of pushed skill-import candidate 1516712; human acceptance pending
+  delivery_state: pushed
+  branch: integration/v3-skill-import
+  depends_on: []
+  validation:
+  - docs/resources/evolution/skill-library-import/validation-summary.json
+  - docs/resources/evolution/github-delivery.json (GitHub delivery verified; not conformance approval)
+  approved_by: Chuck Russell
+  approved_at: '2026-10-28'
+- id: v3-documentation-refresh
+  title: Refresh v3 documentation and synchronize Practitioner Guide
+  priority: 3
+  work_state: started
+  condition: normal
+  implementation_authority: granted
+  packet: docs/planning/active/v3-documentation-refresh/
+  next_gate: Owner review of checked documentation and main integration decision; no new formal VERIFIED
+  delivery_state: pushed
+  branch: docs/v3-documentation
+  depends_on: []
+  validation:
+  - docs/resources/evolution/v3-documentation-refresh/validation-summary.json
+  - docs/resources/evolution/v3-documentation-refresh/html-sync.json
+  - docs/resources/evolution/v3-documentation-refresh/coverage.md
+  approved_by: Chuck Russell
+  approved_at: '2026-10-28'
 events:
 - task: v3-baseline-migration
   at: '2026-10-28T02:31:31+00:00'
@@ -47,19 +82,22 @@ events:
   actor: Codex
   actor_role: agent
   action: recorded local validation for steps 1–6
-  note: All authorized implementation/checks recorded; task remains started. No independent VERIFIED, acceptance, publication or product gate decision.
+  note: All authorized implementation/checks recorded; task remains started. No independent VERIFIED, acceptance, publication
+    or product gate decision.
 - task: v3-baseline-migration
   at: '2026-10-28T03:29:26.695096+00:00'
   actor: Codex
   actor_role: agent
   action: recorded round-1 review and bounded remediation
-  note: VAL-001 human exception recorded; VAL-002/003 fixed; task remains started pending fresh independent review and human acceptance.
+  note: VAL-001 human exception recorded; VAL-002/003 fixed; task remains started pending fresh independent review and human
+    acceptance.
 - task: v3-baseline-migration
   at: '2026-10-28T03:49:16.576560+00:00'
   actor: Codex
   actor_role: agent
   action: recorded round-2 review and remediation cycle 2
-  note: Prior findings independently cleared; VAL-004 YAML rendering fixed and locally checked. Task remains started; fresh full review and human acceptance pending.
+  note: Prior findings independently cleared; VAL-004 YAML rendering fixed and locally checked. Task remains started; fresh
+    full review and human acceptance pending.
 - task: v3-baseline-migration
   at: '2026-10-28T04:28:43+00:00'
   actor: Codex
@@ -79,13 +117,15 @@ events:
   actor: Codex
   actor_role: agent
   action: recorded human-authorized VAL-005 remediation cycle 3
-  note: All 13 inherited suites, 17 board and 37 migration tests, four scenarios and exact documented uv recipe checked locally. Fresh full review and human acceptance pending.
+  note: All 13 inherited suites, 17 board and 37 migration tests, four scenarios and exact documented uv recipe checked locally.
+    Fresh full review and human acceptance pending.
 - task: v3-baseline-migration
   at: '2026-10-28T16:40:09+00:00'
   actor: Codex
   actor_role: agent
   action: condition normal -> blocked
-  note: 'Round 4 requests changes: excluded project-owned surfaces still block fresh setup. Additional cycle exhausted; further remediation requires human direction.'
+  note: 'Round 4 requests changes: excluded project-owned surfaces still block fresh setup. Additional cycle exhausted; further
+    remediation requires human direction.'
   evidence: docs/resources/evolution/v3-migration/review/round-4/report.md
 - task: v3-baseline-migration
   at: '2026-10-28T20:57:53+00:00'
@@ -99,17 +139,89 @@ events:
   actor: Codex
   actor_role: agent
   action: recorded authorized VAL-005 selection-boundary remediation
-  note: 13 inherited suites, 17 board tests, 42 migration tests and four replay scenarios passed locally. Task remains started pending fresh review and human acceptance.
+  note: 13 inherited suites, 17 board tests, 42 migration tests and four replay scenarios passed locally. Task remains started
+    pending fresh review and human acceptance.
 - task: v3-baseline-migration
   at: '2026-10-28T21:14:18.022667+00:00'
   actor: Codex
   actor_role: agent
   action: recorded independent VERIFIED result
-  note: Full round-5 review VERIFIED candidate 98f8bec; VAL-005 resolved. No human acceptance, gate approval, step 8, source-project resync or publication recorded.
+  note: Full round-5 review VERIFIED candidate 98f8bec; VAL-005 resolved. No human acceptance, gate approval, step 8, source-project
+    resync or publication recorded.
+- task: skill-library-import
+  at: '2026-10-28T21:26:49.295612+00:00'
+  actor: Chuck Russell
+  actor_role: maintainer
+  action: recorded approved task scope
+  note: User asked to add local skills and provided the requested source folder; bounded scope recorded by Codex.
+- task: skill-library-import
+  at: '2026-10-28T21:26:49.295612+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded started task scope
+  note: Begin separate local import; no external workflows or acceptance authorized.
+- task: skill-library-import
+  at: '2026-10-28T21:32:54.120641+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded local skill import validation
+  note: 9 skills imported and reconciled; 24 total. All local suites pass. No new formal VERIFIED, commit, remote effects,
+    acceptance or delegates.
+- task: skill-library-import
+  at: '2026-10-28T21:48:59.897007+00:00'
+  actor: Chuck Russell
+  actor_role: maintainer
+  action: authorized GitHub checkpoint and push
+  note: User requested a methodology-v3 remote and push; private repository created. Recorded by Codex. No acceptance or additional
+    reviewer authorization inferred.
 - task: v3-baseline-migration
   at: '2026-10-28T21:50:38+00:00'
   actor: Codex
   actor_role: agent
   action: delivery local -> pushed
-  note: Created private CIChuck/methodology-v3; main and migration branch remote hashes verified. Human acceptance remains pending.
+  note: Created private CIChuck/methodology-v3; main and migration branch remote hashes verified. Human acceptance remains
+    pending.
   evidence: docs/resources/evolution/github-delivery.json
+- task: v3-baseline-migration
+  at: '2026-10-28T21:50:55+00:00'
+  actor: Codex
+  actor_role: agent
+  action: delivery local -> pushed
+  note: Verified migration history is pushed to the private repository; acceptance remains pending.
+  evidence: docs/resources/evolution/github-delivery.json
+- task: skill-library-import
+  at: '2026-10-28T21:50:55+00:00'
+  actor: Codex
+  actor_role: agent
+  action: delivery local -> pushed
+  note: Verified remote feature-branch hash matches skill-import checkpoint 1516712; independent review and acceptance remain
+    pending.
+  evidence: docs/resources/evolution/github-delivery.json
+- task: v3-documentation-refresh
+  at: '2026-10-28T22:09:41.180938+00:00'
+  actor: Chuck Russell
+  actor_role: maintainer
+  action: authorized documentation refresh
+  note: Explicit request to update docs for v3 and synchronize Practitioner Guide; recorded by Codex. No candidate acceptance
+    or release.
+- task: v3-documentation-refresh
+  at: '2026-10-28T22:09:41.180938+00:00'
+  actor: Codex
+  actor_role: agent
+  action: started bounded documentation maintenance
+  note: Separate documentation branch; preserve code and original projects.
+- task: v3-documentation-refresh
+  at: '2026-10-28T22:33:16.080851+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded documentation maintenance checks
+  note: 23-file canonical/HTML mirror synchronized; inherited, board/migration, reference and command checks pass. No new
+    formal VERIFIED, human acceptance or site deployment.
+- task: v3-documentation-refresh
+  at: '2026-10-28T22:35:45+00:00'
+  actor: Codex
+  actor_role: agent
+  action: delivery local -> pushed
+  note: Documentation branch 0fbce66 pushed and remote hash verified. Exact 23-file guide mirror checked; owner review and
+    main integration remain pending. No site deployment.
+  evidence: docs/resources/evolution/v3-documentation-refresh/delivery.json

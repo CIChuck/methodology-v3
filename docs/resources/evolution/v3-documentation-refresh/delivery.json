@@ -1,0 +1,13 @@
+{
+  "kind": "verified initial documentation branch delivery; later tracking-only commit may advance tip",
+  "repository": "https://github.com/CIChuck/methodology-v3",
+  "branch": "docs/v3-documentation",
+  "documentation_candidate": "0fbce6680814fc233d2d95b7f32e4f470e4c3321",
+  "remote_oid_verified": "0fbce6680814fc233d2d95b7f32e4f470e4c3321",
+  "main_unchanged": "0ce737d1b4d54e45f516cf47c7fb923d553fc73c",
+  "skill_import_review": "still pending; this branch is based on that follow-up",
+  "merge": "not performed",
+  "site_deployment": "not performed",
+  "formal_VERIFIED": "not claimed for documentation maintenance",
+  "recorded_at": "2026-10-28T22:35:45.787607+00:00"
+}

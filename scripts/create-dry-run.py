@@ -77,8 +77,14 @@ def build(source: Path) -> Path:
             name = entry.data.split(b"\n", 2)[1].removeprefix(b"name: ").decode()
             if not name or any(c not in "abcdefghijklmnopqrstuvwxyz0123456789-" for c in name):
                 raise Conflict(f"invalid skill name in {entry.path}")
-            relative = "../../../" + entry.path
-            entries.append(Entry(f".agents/skills/{name}/SKILL.md", os.fsencode(relative), 0o644, True, False))
+            path = PurePosixPath(entry.path)
+            if path.name == "SKILL.md":
+                # Whole bundles retain scripts, sibling references and UI metadata.
+                relative = "../../" + path.parent.as_posix()
+                entries.append(Entry(f".agents/skills/{name}", os.fsencode(relative), 0o755, True, False))
+            else:
+                relative = "../../../" + entry.path
+                entries.append(Entry(f".agents/skills/{name}/SKILL.md", os.fsencode(relative), 0o644, True, False))
     entries.append(Entry("docs/archive/completed/.gitkeep", b"", 0o644, False, False))
     names = [entry.path for entry in entries]
     if len(names) != len(set(names)):

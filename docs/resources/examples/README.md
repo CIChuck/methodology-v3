@@ -27,4 +27,14 @@ docs/resources/examples/legacy/0.1.0-pre-phase-loop/minimal-saas-product/
 
 Legacy examples are preserved for historical reference only. They predate the G5 phase loop and are
 excluded from current-conformance checks. Do not rewrite their artifact claims to look current, and
-do not cite them as evidence for a 0.5 project.
+do not cite them as current product or v3 execution evidence.
+
+## Using Examples With V3
+
+The current examples retain their recorded methodology_version and fixture
+history; they are not relabeled as newly executed v3 products. Reuse their ideas
+by initializing with the chosen toolkit revision, drafting/adopting actual
+canonical authority and running matching tests. Add owner-selected tasks to the
+new empty board and record new approvals/evidence rather than copying example
+claims. The Practitioner Guide explains v3's board, skill, amendment and review
+boundaries. Legacy examples remain historical and excluded from current proof.
