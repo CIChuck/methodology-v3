@@ -17,21 +17,58 @@ Use this guide after changing orchestration guides, project templates, `AGENTS.m
 Choose either a fresh initialization exercise or continuation of an existing
 project. Work only in an isolated copy; never replace live project authority.
 
-For fresh initialization, copy baseline/tooling surfaces and omit docs/project,
-Git metadata and runtime state:
+For a fresh exercise, run this same recipe from either the methodology source
+checkout or an initialized installed product. The helper checks source integrity,
+uses the distribution inventory and baseline ownership, and creates a new
+installation in an external temporary directory. It adds a fixture README,
+canonical policy seeds, skill discovery links and an empty board. It excludes
+live `docs/project`, adapted policies/AGENTS, task history, extra local files,
+Git metadata, credentials and runtime state. It never initializes the source.
+`TMPDIR`, if set, must point outside the source repository.
+Source checkouts must have their baseline assets tracked in Git; installed
+products use their installation ownership record. Unrecorded local additions
+are excluded. Archives without either form of provenance must first be installed.
+The helper writes a new explicitly marked fixture record with actual copied
+hashes/modes and source revision, rather than carrying the source's ownership
+claims, local amendments or installation history into a different file set.
+Canonical dry-run policy snapshots under `docs/project-template/dry-run-policies/`
+must be reconciled with reusable source policies when those policies change;
+the toolkit regression suite enforces that consistency in this baseline.
 
 ```bash
-tmpdir="$(mktemp -d ${TMPDIR:-/tmp}/methodology-dry-run.XXXXXX)"
-tar -cf - AGENTS.md docs/methodology docs/project-template scripts tests | tar -C "$tmpdir" -xf -
+tmpdir="$(python3 scripts/create-dry-run.py)"
 cd "$tmpdir"
 ./scripts/init-project.sh "Example Product"
 ```
 
-For a continuation exercise, copy docs/project as well and retain its actual
-approval state. Run project-state instead of initializing again. Fixture copies
-must not include credentials or active runtime data. A dry run never supplies
-missing human approvals. Initialization refuses an existing project by default;
-do not use --force as a workaround on the live source.
+Check the complete exercise before starting an agent (board commands require
+uv and the standalone tooling dependencies; installation does not add product
+dependencies):
+
+```bash
+./scripts/gendev-doctor.sh
+uv run --no-project --with-requirements requirements-devboard.txt python scripts/devboard.py validate
+uv run --no-project --with-requirements requirements-devboard.txt python scripts/devboard.py next
+./scripts/check-methodology.sh
+```
+
+Doctor must report verified installation integrity; the board must validate and
+`next` must return `NO_OPEN_TASK`. A newly initialized manifest deliberately has
+no named required attester. Until the human identifies that person, the checker
+returns exit 1 with `GENDEV-MANIFEST-ENFORCEMENT-002` (missing required_attester).
+This is the inherited pre-approval condition, not a warning or setup failure.
+No other checker errors are expected. Record a real named attester when known;
+do not fabricate an identity or approval to make the check pass. Naming the
+attester does not approve G1 or advance the gate.
+
+For a continuation exercise, first create the clean fixture above, then copy
+only a human-reviewed, sanitized `docs/project` snapshot into that fixture
+instead of initializing it. Retain its actual approval state and run
+`./scripts/project-state.sh`. Do not copy the entire live repository, task
+history, credentials or active runtime data. This manual continuation path
+requires content review and is separate from the automated fresh setup.
+A dry run never supplies missing human approvals. Initialization refuses an
+existing project by default; do not use `--force` on the live source.
 
 Then start the chosen coding-agent CLI from the dry-run directory.
 
@@ -127,7 +164,8 @@ The agent must stop and ask for human input when:
 A dry run passes when:
 
 ```text
-[ ] ./scripts/check-methodology.sh passes, or only reports expected pre-approval warnings
+[ ] doctor integrity and board validation pass; board next returns NO_OPEN_TASK for a fresh exercise
+[ ] checker passes, or only reports the explicitly recorded pre-approval unset-attester error
 [ ] the current gate did not advance without recorded human approval
 [ ] the active artifact status matches the manifest gate status
 [ ] future-stage templates remain templates until their gate is active

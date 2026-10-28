@@ -1,6 +1,6 @@
 # Human Disposition Required: VAL-005
 
-Status: Queued proposed remediation; additional cycle not authorized
+Status: Approved one additional bounded VAL-005 remediation/review cycle
 Task: v3-baseline-migration
 Reviewed candidate: e69320fa2128f549162d633f14cd24463b743566
 Independent result: CHANGES_REQUESTED
@@ -51,3 +51,7 @@ publication and acceptance remain excluded.
 No VAL-005 implementation has been performed. The independent-validation
 policy requires returning unresolved findings after two unsuccessful cycles,
 so the task remains started and blocked pending this decision.
+
+## Recorded human decision
+
+Chuck Russell explicitly instructed on 2026-10-28: "i authorize this one additional VAL-005 remediation/review cycle." This approves the proposed scope above for one cycle only. The two-cycle stop was honored; this is a task-specific extension, not a change to the reusable policy. Acceptance and step 8 remain pending.

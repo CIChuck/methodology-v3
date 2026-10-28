@@ -175,3 +175,11 @@ authentication of the caller; the file-tree and frozen-ref invariants remain
 mandatory. Report each allowed addition explicitly rather than claiming exact
 ref-set equality. Preserve all original refs and new app metadata; never delete
 or rewrite either to make verification pass.
+
+## Approved additional VAL-005 cycle
+
+After two bounded remediation cycles and round-3 CHANGES_REQUESTED, Chuck
+Russell explicitly authorized on 2026-10-28: "i authorize this one additional VAL-005 remediation/review cycle." The task-specific directive is
+review/round-3/remediation-directive.md. One bounded fix and one fresh full review
+are authorized. Further mandatory findings return to Chuck; policy, acceptance,
+step 8 and publication boundaries remain unchanged.

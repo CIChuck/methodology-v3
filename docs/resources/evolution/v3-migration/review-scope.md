@@ -124,3 +124,10 @@ performed. Stop for critical security risk, missing/conflicting authority, scope
 expansion, needed external effects or candidate drift. The lead may remediate
 in-scope findings and request a new fresh-context review; after two unsuccessful
 remediation cycles, return remaining findings to Chuck.
+
+## Task-specific cycle extension
+
+Chuck approved exactly one additional VAL-005 remediation/review cycle after
+the two-cycle stop. See review/round-3/human-disposition.md and
+review/round-3/remediation-directive.md. This review remains full RV-01–RV-10;
+further mandatory findings return to the human without automatic remediation.

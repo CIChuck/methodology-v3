@@ -1,0 +1,37 @@
+Initialized docs/project for Example Product
+Project slug: example-product
+Next document: docs/project/vision/vision.md
+GenDev doctor
+Repository: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/methodology-dry-run.tz72glqq
+Prerequisite bash: present
+Prerequisite git: present
+Prerequisite python3: present
+Prerequisite rg: present
+Context: installed
+Installed methodology version: 1.0.2
+Installed from: isolated-local-exercise (tag none, commit a51948634f94)
+Installed on: 2026-10-28T16:24:00.193906+00:00
+Integrity: verified (167 files)
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: unavailable
+Git HEAD: unavailable
+Tags at HEAD: unavailable
+Project initialized: yes
+Project name: Example Product
+Project slug: example-product
+Project methodology version: 1.0.2
+Current gate: G1
+Current gate status: pending
+Next artifact: docs/project/prd/prd.md
+Gate log: present
+Recommended validation: ./scripts/check-methodology.sh
+Development board validation passed: 0 tasks
+NO_OPEN_TASK
+ERROR: [GENDEV-MANIFEST-ENFORCEMENT-002] file=docs/project/project.yaml line=unknown event_id=unknown expected="enforcement.attested.required_attester is a named human" actual="missing or unknown" message="Manifest attested enforcement is missing required_attester field."
+
+Methodology check failed: 1 error(s), 0 warning(s).
+Installed 6 packages in 8ms

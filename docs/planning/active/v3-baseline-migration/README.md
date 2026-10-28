@@ -9,3 +9,7 @@ final documentation refresh, and implementation of historical proposals.
 
 Remain started until the applicable independent review and human disposition.
 Deterministic checks are recorded with the canonical migration authority.
+
+Additional authority: docs/resources/evolution/v3-migration/review/round-3/remediation-directive.md
+Chuck explicitly approved one additional VAL-005 remediation/review cycle on 2026-10-28.
+Further mandatory findings return to the human; acceptance remains pending.

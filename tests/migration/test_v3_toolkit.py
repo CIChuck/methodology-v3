@@ -340,15 +340,101 @@ class ToolkitMigrationTests(unittest.TestCase):
                 self.command("./scripts/init-phase.sh", "2", name, expected=2)
                 self.assertEqual(inventory(self.target / "docs/project"), before)
 
+    def exercise_documented_dry_run(self, source: Path) -> None:
+        # Extra files and project adaptations must never leak into fresh setup.
+        marker = "LIVE-SECRET-AND-TASK-HISTORY"
+        (source / ".env").write_text(marker)
+        (source / "docs/methodology/unowned-secret.env").write_text(marker)
+        (source / "docs/policies/local-secret.env").write_text(marker)
+        (source / "docs/policies/legacy-policy-debt.md").write_text(marker)
+        (source / "AGENTS.md").write_text(marker)
+        (source / "docs/planning/board.yaml").write_text(marker)
+        before = inventory(source)
+        guide = (REPOSITORY / "docs/methodology/guides/orchestration-validation.md").read_text()
+        commands = guide.split("```bash\n", 1)[1].split("```", 1)[0]
+        result = subprocess.run(["bash", "-e", "-c", commands + '\nprintf "FIXTURE=%s\\n" "$PWD"\n'],
+                                cwd=source, capture_output=True, text=True,
+                                env={**os.environ, "TMPDIR": str(self.base)})
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("Initialized docs/project for Example Product", result.stdout)
+        self.assertEqual(inventory(source), before)
+        fixture = Path(next(line.removeprefix("FIXTURE=") for line in result.stdout.splitlines() if line.startswith("FIXTURE=")))
+        self.assertNotEqual(fixture, source)
+        def run(*args: str, expected: int = 0) -> subprocess.CompletedProcess[str]:
+            result = subprocess.run(args, cwd=fixture, capture_output=True, text=True)
+            self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+            return result
+        self.assertIn("Integrity: verified", run("./scripts/gendev-doctor.sh").stdout)
+        run(sys.executable, "scripts/devboard.py", "validate")
+        self.assertEqual(run(sys.executable, "scripts/devboard.py", "next").stdout.strip(), "NO_OPEN_TASK")
+        checker = run("./scripts/check-methodology.sh", expected=1)
+        errors = [line for line in checker.stdout.splitlines() if line.startswith("ERROR:")]
+        self.assertEqual(len(errors), 1, checker.stdout + checker.stderr)
+        self.assertIn("GENDEV-MANIFEST-ENFORCEMENT-002", errors[0])
+        self.assertIn("required_attester", errors[0])
+        record = json.loads((fixture / RECORD).read_text())
+        self.assertTrue(record["fixture"])
+        self.assertEqual(record["installation_history"], [])
+        self.assertEqual(record["local_amendments"], [])
+        self.assertFalse((fixture / ".git").exists())
+        self.assertFalse((fixture / ".env").exists())
+        self.assertFalse((fixture / "docs/methodology/unowned-secret.env").exists())
+        self.assertFalse((fixture / "docs/policies/local-secret.env").exists())
+        self.assertFalse((fixture / "docs/planning/active/v3-baseline-migration").exists())
+        self.assertEqual(yaml.safe_load((fixture / "docs/planning/board.yaml").read_text())["tasks"], [])
+        for policy in (REPOSITORY / "docs/project-template/dry-run-policies").glob("*.md"):
+            self.assertEqual((fixture / "docs/policies" / policy.name).read_bytes(), policy.read_bytes())
+        skills = list((fixture / ".agents/skills").glob("*/SKILL.md"))
+        self.assertEqual(len(skills), 15)
+        self.assertTrue(all(skill.is_file() and skill.is_symlink() for skill in skills))
+        for path in fixture.rglob("*"):
+            if path.is_file():
+                self.assertNotIn(marker.encode(), path.read_bytes(), str(path))
+        manifest = yaml.safe_load((fixture / "docs/project/project.yaml").read_text())
+        self.assertEqual(manifest["approvals"]["current_gate"]["gate"], "G1")
+        self.assertEqual(manifest["approvals"]["current_gate"]["status"], "pending")
+        # Explicit synthetic fixture identity only; naming supplies no approval.
+        manifest_path = fixture / "docs/project/project.yaml"
+        manifest_path.write_text(manifest_path.read_text().replace("required_attester: TBD", "required_attester: Synthetic Fixture Attester"))
+        run("./scripts/check-methodology.sh")
+
     def test_documented_fresh_dry_run_works_from_initialized_product(self) -> None:
         self.install()
         self.command("./scripts/init-project.sh", "Existing Fixture")
-        authority = inventory(self.target / "docs/project")
-        guide = (REPOSITORY / "docs/methodology/guides/orchestration-validation.md").read_text()
-        commands = guide.split("```bash\n", 1)[1].split("```", 1)[0]
-        result = self.command("bash", "-e", "-c", commands, env={"TMPDIR": str(self.base)})
-        self.assertIn("Initialized docs/project for Example Product", result.stdout)
-        self.assertEqual(inventory(self.target / "docs/project"), authority)
+        self.exercise_documented_dry_run(self.target)
+
+    def test_documented_fresh_dry_run_works_from_methodology_checkout(self) -> None:
+        source = self.source_copy()
+        for args in (("git", "init"), ("git", "add", "."),
+                     ("git", "-c", "user.name=Fixture", "-c", "user.email=fixture@example.invalid",
+                      "commit", "-qm", "Synthetic source fixture")):
+            subprocess.run(args, cwd=source, check=True, capture_output=True)
+        self.exercise_documented_dry_run(source)
+
+    def test_dry_run_seed_snapshots_match_reusable_source_policies(self) -> None:
+        seeds = REPOSITORY / "docs/project-template/dry-run-policies"
+        policies = REPOSITORY / "docs/policies"
+        self.assertEqual({p.name for p in seeds.glob("*.md")}, {p.name for p in policies.glob("*.md")})
+        for path in seeds.glob("*.md"):
+            self.assertEqual(path.read_bytes(), (policies / path.name).read_bytes())
+
+    def test_dry_run_refuses_incomplete_installed_baseline_before_output(self) -> None:
+        self.install()
+        (self.target / "requirements-devboard.txt").unlink()
+        before = inventory(self.target)
+        result = self.command(sys.executable, "scripts/create-dry-run.py", expected=1)
+        self.assertIn("source doctor failed", result.stderr)
+        self.assertEqual(result.stdout, "")
+        self.assertEqual(inventory(self.target), before)
+
+    def test_dry_run_refuses_internal_tmpdir_without_source_mutation(self) -> None:
+        self.install()
+        before = inventory(self.target)
+        result = self.command(sys.executable, "scripts/create-dry-run.py", expected=1,
+                              env={"TMPDIR": str(self.target)})
+        self.assertIn("TMPDIR must be outside", result.stderr)
+        self.assertEqual(result.stdout, "")
+        self.assertEqual(inventory(self.target), before)
 
 
 if __name__ == "__main__":
