@@ -31,6 +31,21 @@ tasks:
   - docs/resources/evolution/v3-migration/review/round-5/acceptance-request.md (human decision pending)
   approved_by: Chuck Russell
   approved_at: '2026-10-27'
+- id: skill-library-import
+  title: Import and reconcile nine local workflow skills
+  priority: 2
+  work_state: started
+  condition: normal
+  implementation_authority: granted
+  packet: docs/planning/active/skill-library-import/
+  next_gate: Push the authorized checkpoint, then fresh independent review when dispatch is authorized
+  delivery_state: local
+  branch: integration/v3-skill-import
+  depends_on: []
+  validation:
+  - docs/resources/evolution/skill-library-import/validation-summary.json
+  approved_by: Chuck Russell
+  approved_at: '2026-10-28'
 events:
 - task: v3-baseline-migration
   at: '2026-10-28T02:31:31+00:00'
@@ -115,3 +130,29 @@ events:
   action: recorded independent VERIFIED result
   note: Full round-5 review VERIFIED candidate 98f8bec; VAL-005 resolved. No human acceptance, gate approval, step 8, source-project
     resync or publication recorded.
+- task: skill-library-import
+  at: '2026-10-28T21:26:49.295612+00:00'
+  actor: Chuck Russell
+  actor_role: maintainer
+  action: recorded approved task scope
+  note: User asked to add local skills and provided the requested source folder; bounded scope recorded by Codex.
+- task: skill-library-import
+  at: '2026-10-28T21:26:49.295612+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded started task scope
+  note: Begin separate local import; no external workflows or acceptance authorized.
+- task: skill-library-import
+  at: '2026-10-28T21:32:54.120641+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded local skill import validation
+  note: 9 skills imported and reconciled; 24 total. All local suites pass. No new formal VERIFIED, commit, remote effects,
+    acceptance or delegates.
+- task: skill-library-import
+  at: '2026-10-28T21:48:59.897007+00:00'
+  actor: Chuck Russell
+  actor_role: maintainer
+  action: authorized GitHub checkpoint and push
+  note: User requested a methodology-v3 remote and push; private repository created. Recorded by Codex. No acceptance or additional
+    reviewer authorization inferred.

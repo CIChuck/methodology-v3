@@ -1,0 +1,47 @@
+[
+  {
+    "skill": "babysit-pr",
+    "metadata_validation": 0,
+    "output": "Skill is valid!\n"
+  },
+  {
+    "skill": "council",
+    "metadata_validation": 0,
+    "output": "Skill is valid!\n"
+  },
+  {
+    "skill": "file-pr",
+    "metadata_validation": 0,
+    "output": "Skill is valid!\n"
+  },
+  {
+    "skill": "full-send",
+    "metadata_validation": 0,
+    "output": "Skill is valid!\n"
+  },
+  {
+    "skill": "full-stop",
+    "metadata_validation": 0,
+    "output": "Skill is valid!\n"
+  },
+  {
+    "skill": "leaving-pr-comments",
+    "metadata_validation": 0,
+    "output": "Skill is valid!\n"
+  },
+  {
+    "skill": "modernize",
+    "metadata_validation": 0,
+    "output": "Skill is valid!\n"
+  },
+  {
+    "skill": "sol-loop",
+    "metadata_validation": 0,
+    "output": "Skill is valid!\n"
+  },
+  {
+    "skill": "takeover",
+    "metadata_validation": 0,
+    "output": "Skill is valid!\n"
+  }
+]

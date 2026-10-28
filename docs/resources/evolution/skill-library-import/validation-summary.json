@@ -1,0 +1,27 @@
+{
+  "status": "local checks passed; no new formal VERIFIED result",
+  "branch": "integration/v3-skill-import",
+  "imported_skills": 9,
+  "total_skills": 24,
+  "checks": {
+    "skill_metadata_and_UI": 9,
+    "inherited_suites": 13,
+    "board_tests": 17,
+    "migration_tests": 42,
+    "replay_scenarios": 4,
+    "source_preserved": true,
+    "support_files_byte_identical": true,
+    "local_links": "passed",
+    "watcher_syntax_and_offline_help": "passed via fresh install and dry-run regressions",
+    "staged_source_fresh_fixture": "24 skills; doctor, board and helper --help pass; sole expected attester error",
+    "original_projects_preserved": "passed with approved additive-checkpoint exception"
+  },
+  "limits": [
+    "No live GitHub/monitor/merge/delegation behavior invoked or proven",
+    "No Linux/hosted CI run",
+    "Import checkpoint and upload authorized; no fresh independent review",
+    "VERIFIED remains pinned solely to migration candidate 98f8bec4597cd3307fc26e5c28dc86592e01ca08"
+  ],
+  "next": "Authorize fresh independent review of the separate GitHub skill-import checkpoint",
+  "recorded_at": "2026-10-28T21:32:54.117434+00:00"
+}

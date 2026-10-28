@@ -16,6 +16,8 @@ import yaml
 REPOSITORY = Path(__file__).resolve().parents[2]
 RECORD = "docs/methodology/schema/installation.json"
 MANAGED = "docs/methodology/templates/architecture-template.md"
+IMPORTED_SKILLS = {"babysit-pr", "council", "file-pr", "full-send", "full-stop",
+                   "leaving-pr-comments", "modernize", "sol-loop", "takeover"}
 
 
 def inventory(root: Path) -> dict[str, tuple[str, object, int]]:
@@ -76,12 +78,17 @@ class ToolkitMigrationTests(unittest.TestCase):
         self.command(sys.executable, "scripts/devboard.py", "validate")
         self.assertEqual(self.command(sys.executable, "scripts/devboard.py", "next").stdout.strip(), "NO_OPEN_TASK")
         skills = list((self.target / ".agents/skills").glob("*/SKILL.md"))
-        self.assertEqual(len(skills), 15)
+        self.assertEqual(len(skills), 24)
+        self.assertTrue(IMPORTED_SKILLS <= {skill.parent.name for skill in skills})
         for skill in skills:
             self.assertTrue(skill.is_file(), skill)
             metadata = yaml.safe_load(skill.read_text().split("---", 2)[1])
             self.assertEqual(metadata["name"], skill.parent.name)
             self.assertTrue(metadata["description"])
+        helper = ".agents/skills/babysit-pr/scripts/pr-wait"
+        self.assertIn("Watch a GitHub PR", self.command(sys.executable, helper, "--help").stdout)
+        for name in ("full-send", "full-stop", "leaving-pr-comments", "modernize"):
+            self.assertTrue((self.target / ".agents/skills" / name / "agents/openai.yaml").is_file())
         record = self.record()
         self.assertEqual(record["distribution_candidate"]["status"], "unreleased")
         self.assertNotIn("docs/planning/board.yaml", record["files"])
@@ -401,8 +408,11 @@ class ToolkitMigrationTests(unittest.TestCase):
         for policy in (REPOSITORY / "docs/project-template/dry-run-policies").glob("*.md"):
             self.assertEqual((fixture / "docs/policies" / policy.name).read_bytes(), policy.read_bytes())
         skills = list((fixture / ".agents/skills").glob("*/SKILL.md"))
-        self.assertEqual(len(skills), 15)
-        self.assertTrue(all(skill.is_file() and skill.is_symlink() for skill in skills))
+        self.assertEqual(len(skills), 24)
+        self.assertTrue(IMPORTED_SKILLS <= {skill.parent.name for skill in skills})
+        self.assertTrue(all(skill.is_file() and (skill.is_symlink() or skill.parent.is_symlink()) for skill in skills))
+        self.assertIn("Watch a GitHub PR", run(sys.executable, ".agents/skills/babysit-pr/scripts/pr-wait", "--help").stdout)
+        self.assertTrue((fixture / ".agents/skills/full-send/agents/openai.yaml").is_file())
         for path in fixture.rglob("*"):
             if path.is_file():
                 self.assertNotIn(marker.encode(), path.read_bytes(), str(path))
