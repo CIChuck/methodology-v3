@@ -38,7 +38,7 @@ tasks:
   condition: normal
   implementation_authority: granted
   packet: docs/planning/active/skill-library-import/
-  next_gate: 'Fresh focused council round 4 on five clarified instructions, then PR #2 update; acceptance pending'
+  next_gate: 'Owner review/acceptance via PR #2 after scoped round-4 VERIFIED at 464cdec; no whole-v3 acceptance inferred'
   delivery_state: local
   branch: fix/skills-council-follow-up
   depends_on: []
@@ -54,6 +54,8 @@ tasks:
     5e2ab40)
   - docs/resources/evolution/skill-library-import/review/advisory-clarifications.md
   - docs/resources/evolution/skill-library-import/review/advisory-validation/results.json
+  - "docs/resources/evolution/skill-library-import/review/council-round-4/summary.md (all 3 VERIFIED for AC-01\u201305/interactions,\
+    \ candidate 464cdec)"
   approved_by: Chuck Russell
   approved_at: '2026-10-28'
 - id: v3-documentation-refresh
@@ -307,3 +309,11 @@ events:
   note: "AC-01\u201305 wording implemented; metadata/source/support/link, doctor, methodology, docs, board, guide mirror,\
     \ original preservation and local gh help checks pass. Runtime unchanged; fresh council and PR update pending."
   evidence: docs/resources/evolution/skill-library-import/review/advisory-validation/results.json
+- task: skill-library-import
+  at: '2026-10-29T00:45:48.433674+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded council round 4 scoped VERIFIED
+  note: "All three reviewers verified AC-01\u201305 and instruction interactions. Scores Sol 9.5, Claude 9, Gemini 10; optional\
+    \ polish recorded without edits. Owner acceptance/PR delivery remain separate."
+  evidence: docs/resources/evolution/skill-library-import/review/council-round-4/summary.md

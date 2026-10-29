@@ -1,0 +1,11 @@
+HEAD=464cdec246996ebf5bc769174b22a4c62f82305e
+branch=fix/skills-council-follow-up
+status (incl untracked):
+ignored pycache in skill/helper paths:
+!! docs/methodology/dev-skills/babysit-pr/scripts/__pycache__/
+!! scripts/__pycache__/
+refs:
+f73e655a8217de81069af7438d27150c47db6001c7a4292982d0b468fde94569  -
+source originals:
+dad642bfecb6c80567abb7e3af9798b261845252e7d2ff7afd381f58cdd5f958  -
+Thu Oct 29 00:39:17 UTC 2026

@@ -25,7 +25,7 @@ Task approval and directory placement do not bypass GenDev authority.
 | Priority | Initiative | Condition | Authority | Delivery | Next gate |
 | ---: | --- | --- | --- | --- | --- |
 | 1 | [Integrate and validate methodology-v3 steps 1–6](active/v3-baseline-migration/) | normal | granted | pushed | Chuck acceptance of VERIFIED candidate 98f8bec4597cd3307fc26e5c28dc86592e01ca08; step 8 remains separate |
-| 2 | [Import and reconcile nine local workflow skills](active/skill-library-import/) | normal | granted | local | Fresh focused council round 4 on five clarified instructions, then PR #2 update; acceptance pending |
+| 2 | [Import and reconcile nine local workflow skills](active/skill-library-import/) | normal | granted | local | Owner review/acceptance via PR #2 after scoped round-4 VERIFIED at 464cdec; no whole-v3 acceptance inferred |
 | 3 | [Refresh v3 documentation and synchronize Practitioner Guide](active/v3-documentation-refresh/) | normal | granted | merged | Main integration complete via PR #1; owner acceptance pending; no new formal VERIFIED |
 
 ## Completed

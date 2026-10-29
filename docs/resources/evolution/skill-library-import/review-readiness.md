@@ -1,10 +1,11 @@
 # Round-4 Focused Review Readiness
 
-Status: Five-document clarifications authorized and implemented; focused checks and fresh council pending
+Status: AC-01–05 and instruction interactions VERIFIED by all three round-4 reviewers at 464cdec; human acceptance pending
 Branch: fix/skills-council-follow-up
 Task: skill-library-import
 Current authority: review/advisory-clarifications.md, AC-01–05
 Counterexamples: review/advisory-counterexamples.json
+Current reports: review/council-round-4/summary.md
 Prior instruction candidate: 5e2ab40; current PR #2 head before update: 8abacf4
 Round-3 disagreement remains historical and is not silently waived.
 Earlier readiness snapshots below are retained as superseded history.

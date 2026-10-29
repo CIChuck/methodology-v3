@@ -1,0 +1,4 @@
+$ ./scripts/check-doc-coherence.sh
+Documentation coherence: clean
+
+EXIT 0

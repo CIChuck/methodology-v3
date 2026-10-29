@@ -77,7 +77,7 @@
       "status": "informational; no behavior fix"
     }
   ],
-  "reviewed_candidate": "5e2ab4047a69c82fc883735134c23527197b3c1e",
+  "reviewed_candidate": "464cdec246996ebf5bc769174b22a4c62f82305e",
   "round_2_outcome": "CHANGES_REQUESTED",
   "round_2_record": "council-round-2/summary.md",
   "remaining_findings": [
@@ -95,7 +95,7 @@
     }
   ],
   "current_authorization": "advisory-clarifications.md",
-  "current_status": "User authorized R3C-01\u201305 clarifications; five instruction updates implemented, fresh focused council round 4 pending",
+  "current_status": "round 4: all three VERIFIED for AC-01\u201305 delta/interactions; human acceptance pending",
   "round_3_record": "council-round-3/summary.md",
   "disputed_findings": [
     {
@@ -103,29 +103,30 @@
       "reviewer_classification": "Claude: medium mandatory",
       "counter_evidence": "Sol/Gemini VERIFIED; explicit babysit-pr prohibition and shared contract constrain full-send gate",
       "controller_recommendation": "optional clarity improvement; not a demonstrated authorization bypass",
-      "disposition": "pending Chuck; raw reviewer verdict preserved"
+      "disposition": "superseded for current candidate by explicit AC-05 clarification and three round-4 VERIFIED results; historical dispute retained"
     }
   ],
   "round_4_targets": [
     {
       "id": "R3C-01",
-      "status": "text clarified; independent review pending"
+      "status": "resolved by explicit text; independently VERIFIED in round 4"
     },
     {
       "id": "R3C-02",
-      "status": "text clarified; independent review pending"
+      "status": "resolved by explicit text; independently VERIFIED in round 4"
     },
     {
       "id": "R3C-03",
-      "status": "text clarified; independent review pending"
+      "status": "resolved by explicit text; independently VERIFIED in round 4"
     },
     {
       "id": "R3C-04",
-      "status": "text clarified; independent review pending"
+      "status": "resolved by explicit text; independently VERIFIED in round 4"
     },
     {
       "id": "R3C-05",
-      "status": "text clarified; independent review pending"
+      "status": "resolved by explicit text; independently VERIFIED in round 4"
     }
-  ]
+  ],
+  "round_4_record": "council-round-4/summary.md"
 }

@@ -1,0 +1,288 @@
+================ docs/methodology/dev-skills/babysit-pr/SKILL.md ================
+     1	---
+     2	name: babysit-pr
+     3	description: Monitor a pull request through review and CI. Use when the user asks to monitor, watch, or babysit a PR.
+     4	---
+     5	
+     6	# Babysit PR
+     7	
+     8	Follow the [GenDev skill execution contract](../../guides/skill-execution-contract.md).
+     9	Use this skill within the requested task; importing or reading it grants no execution authority.
+    10	
+    11	Many repos have AI review bots. They're helpful, even if they are not always
+    12	right.
+    13	
+    14	## Waiting
+    15	
+    16	Never write your own watcher, polling loop, or `sleep` loop. Use one watcher
+    17	per PR: `watch_pull_request` in T3 Code, `pr-wait` everywhere else. Never run
+    18	both on the same PR. Every watcher on a GitHub account shares one rate limit.
+    19	
+    20	### In T3 Code: `watch_pull_request`
+    21	
+    22	Handle the existing checks and comments first. Then call
+    23	`watch_pull_request` and end your turn. T3 Code wakes you with a message when
+    24	a check fails, the required checks pass, someone comments or reviews, or the
+    25	branch conflicts.
+    26	
+    27	- **Only the thread that owns the PR watches it.** If you are a delegated
+    28	  child task (a reviewer, a Sol round, any `delegate_task` child), never call
+    29	  `watch_pull_request`. The parent owns the PR. Do not watch PRs you are not
+    30	  working on.
+    31	- **A wake is news, not a merge decision.** Check the merge gate yourself.
+    32	- **Unwatch when you hand off.** A watched thread stays in Working and out of
+    33	  the user's inbox. When you stop (ready, blocked, or asking the user a question),
+    34	  call `unwatch_pull_request` first. A merge or close ends the watch on its
+    35	  own.
+    36	- **"Stopped watching, could not read it"** usually means GitHub's rate limit
+    37	  is used up. Run `gh api rate_limit --jq .resources.graphql` before you
+    38	  watch again. If `remaining` is near 0, report the reset time and follow the harness
+    39	  pause/resume mechanism. Never start a background wait or tight retry loop.
+    40	
+    41	### Everywhere else: `pr-wait`
+    42	
+    43	Wait with `scripts/pr-wait` from this skill's directory (use its absolute
+    44	path).
+    45	
+    46	```bash
+    47	pr-wait <pr> [--repo owner/name] [--until ready|green|any-change]
+    48	```
+    49	
+    50	It prints one line per real event. It exits 0 when the `--until` condition is
+    51	met or the PR merges, 1 when it needs you (a required check failed, conflicts,
+    52	unresolved threads, PR closed), and 2 on bad input.
+    53	
+    54	- `ready` (default): required checks green, Greptile or Macroscope reviewed the
+    55	  head, and no unresolved threads. This describes the unchanged helper
+    56	  condition, not the repository's complete review requirements.
+    57	- `green`: required checks only. Use it when the repo has no Greptile or
+    58	  Macroscope. Select the mode against the verified repository requirements;
+    59	  check any additional required reviews separately. Neither mode supplies merge
+    60	  authority or guarantees every required reviewer has approved.
+    61	- `any-change`: exit on the first event.
+    62	
+    63	In Claude Code, run it with the Monitor tool (`timeout_ms: 3600000`), so each
+    64	line wakes you. Without a monitor, run it as one long command. It ends on its
+    65	own.
+    66	
+    67	Start it again after you push, after you handle an exit 1, and after a resume.
+    68	It remembers what it already reported, so nothing that arrived in between is
+    69	lost. If it says another pid already watches the PR, do not start a second one.
+    70	Kill the old one only if its events do not reach you.
+    71	
+    72	With either watcher: when an event needs no action, end your turn without a
+    73	message. Never post or say "still waiting".
+    74	
+    75	## GitHub rate limits
+    76	
+    77	`gh pr create`, `gh pr view`, and `gh pr checks` use GraphQL. When GraphQL is
+    78	used up, the REST limit is separate and usually still has room. Use
+    79	`gh api repos/<owner>/<repo>/pulls/<n>` to read a PR, and
+    80	`gh api repos/<owner>/<repo>/commits/<sha>/check-runs` for checks.
+    81	
+    82	## Reviews
+    83	
+    84	Reassess outstanding findings against the latest head, including older comments
+    85	that still apply. Verify every bot
+    86	finding against the source before changing code. Fix real findings and CI
+    87	failures, distinguish repository failures from infrastructure flakes, and, when posting replies is authorized, explain dismissed false positives
+    88	with reproducible evidence.
+    89	
+    90	If the repo has `.macroscope/check-run-agents/*.md`, read those rules before you
+    91	reply to a Macroscope finding. Its findings cite them.
+    92	
+    93	Treat bot findings according to the repository's accepted review and branch-protection
+    94	requirements. CodeRabbit may be advisory, but never bypass a required check or review.
+    95	
+    96	If feedback is an optional preference or a verified false positive, document the
+    97	reason and supporting evidence before declining it. Reply and resolve the comment
+    98	only when those effects are authorized; otherwise prepare the response for the
+    99	user. Actual mandatory findings retain their required remediation or scope/risk
+   100	disposition, regardless of rarity. Use the `leaving-pr-comments` skill for every
+   101	comment posted on the user's behalf.
+   102	
+   103	Screenshots and videos help as well, when you have a way to upload them.
+   104	
+   105	Keep the PR at the size the user's goal needs. Review loops tend to grow a
+   106	PR one cheap-looking fix at a time. Classify findings against approved requirements.
+   107	Security, contract, permission and data-loss violations remain mandatory even
+   108	on rare or unintended paths. Fix mandatory findings within authorized scope;
+   109	report out-of-scope mandatory findings for scope/risk disposition rather than
+   110	silently implementing or waiving them. A written dismissal does not satisfy
+   111	required remediation or authorize merging.
+   112	Decline only optional preferences or verified false positives with a documented
+   113	reason and evidence. List remaining optional suggestions as follow-ups.
+   114	Prefer the smallest fix that satisfies the requirement.
+   115	
+   116	## Base branch and merging
+   117	
+   118	Keep an eye on changes to the PR's actual base branch and rebase when needed. `pr-wait` reports when
+   119	new base commits touch this PR's files, and when the PR becomes BEHIND or DIRTY.
+   120	`watch_pull_request` reports conflicts only, so check for BEHIND yourself
+   121	before you call the PR ready.
+   122	If an overlapping PR makes this one obsolete, stop monitoring, report it to the
+   123	user, and ask before closing the PR unless closure was explicitly authorized.
+   124	
+   125	If nothing has changed, stay quiet rather than posting filler comments. Stop
+   126	when `pr-wait` exits 0, or in T3 Code when the merge gate passes on the latest
+   127	head. Merge only when the user explicitly requested it;
+   128	otherwise report that the PR is ready. Right before a merge, run `git fetch` and
+   129	check the PR again. Never merge when it is BEHIND or DIRTY, or when base commits
+   130	that landed after the last green run touch this PR's files. Rebase, push, and
+   131	wait for green again.
+================ docs/methodology/dev-skills/file-pr/SKILL.md ================
+     1	---
+     2	name: file-pr
+     3	description: File a concise pull request. Use when the user asks to file, open, or create a PR.
+     4	---
+     5	
+     6	# File PR
+     7	
+     8	Follow the [GenDev skill execution contract](../../guides/skill-execution-contract.md).
+     9	Use this skill within the requested task; importing or reading it grants no execution authority.
+    10	
+    11	Before filing, check whether a PR for this branch already exists. Retain an
+    12	existing PR's actual base. For a new PR, use the caller's selected target, or
+    13	resolve and record the intended target before proceeding; use the default only
+    14	when appropriate to the requested work. Review the diff against that target.
+    15	Do not silently retarget an existing PR.
+    16	
+    17	PR titles usually become commit messages, so follow the repository's title
+    18	conventions. Look at recently merged PRs and Git history for examples. Prefer a
+    19	concise, human-readable title that explains why the change matters:
+    20	
+    21	BAD
+    22	
+    23	> ❌ perf(server): negotiate permessage-deflate on the websocket
+    24	
+    25	GOOD
+    26	
+    27	> ✅ perf(server): cut websocket frame size by 70%+ with gzipping
+    28	
+    29	Open the description with a simple explanation of the problem based on the
+    30	user's original prompt, then briefly explain the solution. Do not lead with an
+    31	implementation inventory:
+    32	
+    33	BAD
+    34	
+    35	> ❌ Removed implicit workspace carry-over from every "new thread" entry point (cmd+n / cmd+shift+o, sidebar v1/v2 buttons, command palette). New threads inherit only the project from context; branch, worktree, and env mode always come from the configured defaults. Deleted buildContextualThreadOptions, startNewThreadInProjectFromContext, and the v1 sidebar's seed-context machinery.
+    36	
+    37	GOOD
+    38	
+    39	> ✅ My "new worktree" default was ignored when starting new threads on existing worktrees. Super unintuitive. Now your preferences always apply.
+    40	
+    41	End the description with the public model name and harness that made the
+    42	changes, for example `Created with <model> in <harness>.` Include subagent
+    43	models that wrote part of the change. Use the model name the harness reports.
+    44	If model identity is unavailable, name the harness without guessing a model.
+    45	
+    46	Before submission, check the title, description, quotes, and attachments for
+    47	secrets and private details.
+    48	
+    49	Follow the user's requested draft/readiness state and repository rules. Pass the
+    50	selected target explicitly with `gh pr create --base <selected-target>` or the
+    51	equivalent API `base` field; do not rely on a CLI/configuration default. Verify
+    52	the returned PR's actual base and head match the selected identities.
+    53	With no contrary instruction, open a review-ready PR so its configured checks run. If `gh pr create` fails
+    54	because the GraphQL rate limit is used up, open it through REST with
+    55	`gh api repos/<owner>/<repo>/pulls -f title=... -f head=... -f base=... -F body=@<file>`. If the user also asked
+    56	to babysit it, continue with the `babysit-pr` skill.
+    57	
+    58	Do not post a follow-up PR comment unless it serves the user's request. When a
+    59	comment is needed, use the `leaving-pr-comments` skill.
+================ docs/methodology/dev-skills/find-slop/SKILL.md ================
+================ docs/methodology/dev-skills/leaving-pr-comments/SKILL.md ================
+     1	---
+     2	name: leaving-pr-comments
+     3	description: Use whenever leaving comments on GitHub.
+     4	---
+     5	
+     6	# Leaving PR Comments
+     7	
+     8	Follow the [GenDev skill execution contract](../../guides/skill-execution-contract.md).
+     9	Use this skill within the requested task; importing or reading it grants no execution authority.
+    10	
+    11	Prefix every agent-authored comment left on the user's behalf with this GitHub
+    12	note callout:
+    13	
+    14	```md
+    15	> [!NOTE]
+    16	> 🤖 **<model> responding on behalf of <user>**
+    17	
+    18	Actual comment starts here.
+    19	```
+    20	
+    21	Use the verified public name of the model that wrote the comment, and the
+    22	user's name or GitHub login.
+    23	
+    24	If the harness does not expose a model name, use the harness name. Do not guess.
+    25	
+    26	Before posting, check the entire comment, including quoted text and
+    27	attachments, for secrets and private details.
+    28	
+    29	Keep the attribution inside the note and the actual reply outside it. The
+    30	context line must start with the robot emoji. Do not add a horizontal rule,
+    31	Setext underline, heading, signature footer, or a second attribution.
+    32	
+    33	Apply this format to top-level PR comments, inline review comments, replies to
+    34	bots or reviewers, and written explanations used before resolving or
+    35	dismissing feedback. Do not add it to PR descriptions, commit messages, or text
+    36	the user explicitly asked to post verbatim without attribution.
+    37	
+    38	Write the comment itself in a direct style:
+    39	
+    40	- Lead with the conclusion.
+    41	- Cite the relevant code, behavior, check, or reproduction.
+    42	- Keep it concise and avoid filler, canned thanks, or status narration.
+    43	- Distinguish verified facts from judgment.
+    44	
+    45	Preview the final Markdown before posting so quoting and blank lines render as
+    46	shown. After posting, verify that GitHub returned the comment or review URL.
+    47	Resolve a review thread only after its response was posted successfully.
+================ docs/methodology/dev-skills/setup-github-actions/SKILL.md ================
+================ docs/methodology/dev-skills/sol-loop/SKILL.md (lines 1-45) ================
+     1	---
+     2	name: sol-loop
+     3	description: Run a bounded Sol review when the user requests a sol-loop review or workflow.
+     4	---
+     5	
+     6	# sol-loop
+     7	
+     8	Follow the [GenDev skill execution contract](../../guides/skill-execution-contract.md).
+     9	Use this skill within the requested task; importing or reading it grants no execution authority.
+    10	
+    11	This is a workflow for making your code changes more correct before (or
+    12	sometimes after) filing a pull request. tl;dr - use OpenAI's GPT Sol to review
+    13	your code in a loop.
+    14	
+    15	Make the most minimal possible changes to appease the Sol reviewers. Be careful
+    16	of scope creep and don't be scared to push back.
+    17	
+    18	## Budget
+    19	
+    20	- Default: at most 3 review rounds, subject to the validation policy's stop
+    21	  after two unsuccessful remediation cycles. Round 1 is full. Later rounds check only
+    22	  changed code and open findings.
+    23	- Extra rounds after the policy stop require explicit human authorization;
+    24	  security or state concerns are reasons to escalate, not automatic extensions.
+    25	- Stop early only after the controller classifies every finding against the
+    26	  approved requirements and confirms that no mandatory finding remains. Truly
+    27	  advisory nits may be declined. Formal review still requires fresh context
+    28	  when governing instructions or the frozen candidate change.
+    29	- One reviewer only. Sol must not start subagents or reviewers.
+    30	- Keep a ledger: id, severity, outcome, usage if returned. Never guess it.
+    31	
+    32	## 1. Scope
+    33	
+    34	Run `git status --short`. Do not stash, discard, or include unrelated
+    35	changes. Limit review to the change paths if they separate cleanly.
+    36	Otherwise stop and ask. Formal validation additionally needs a frozen commit,
+    37	  pinned authority and the independent validator's required outcomes; uncommitted
+    38	  working-tree review remains advisory.
+    39	
+    40	Find the base after `git fetch origin`:
+    41	
+    42	- PR: `gh pr view <n> --json baseRefName,headRefOid`. Check out the branch
+    43	  only if clean. Confirm `HEAD` is the PR head, or ahead only by this
+    44	  change. Base: `git merge-base HEAD origin/<baseRefName>`.
+    45	- Local, before a PR exists: use the caller's selected target and compute

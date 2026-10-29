@@ -1,0 +1,3288 @@
+================ AGENTS.md ================
+     1	# Repository Guidelines
+     2	
+     3	## Repository Role
+     4	
+     5	This repository is a reusable baseline for AI-assisted product development. It is intended to be
+     6	cloned, initialized for a specific project, and evolved toward documented goals with a human team
+     7	member and AI coding agents.
+     8	
+     9	Do not treat chat history as build authority when methodology or project authority documents apply.
+    10	
+    11	Project-local discovery entries in `.agents/skills/` link to canonical sources
+    12	under `docs/methodology/dev-skills/`. The engineering, task lifecycle and
+    13	independent validation policies under `docs/policies/` supplement GenDev.
+    14	Read `docs/policies/dev-board-integration.md` for the task/gate boundary.
+    15	The board is tooling; task state never substitutes for product gate approval.
+    16	
+    17	In this methodology source repository, baseline engineering follows the
+    18	explicitly authorized evolution plan under `docs/resources/evolution/`.
+    19	The active v3 migration is recorded in
+    20	`docs/resources/evolution/v3-migration/README.md`. Do not initialize a product
+    21	merely to modify this reusable baseline. When installed into a product,
+    22	`docs/project/` remains required before product implementation.
+    23	
+    24	## Methodology Authority
+    25	
+    26	Follow `docs/methodology/constitution/gendev.md` for documentation-first development,
+    27	traceability, phase boundaries, test planning, review, remediation, and as-built close-out.
+    28	
+    29	Use reusable templates from `docs/methodology/templates/` when creating project artifacts.
+    30	
+    31	Use dev-skill guidance from `docs/methodology/dev-skills/` when creating or revising methodology
+    32	artifacts, including:
+    33	
+    34	- `vision-framing.md`
+    35	- `prd-author.md`
+    36	- `architecture-spec-author.md`
+    37	- `governance-security-spec.md`
+    38	- `phase-build-planner.md`
+    39	- `tactical-implementation-planner.md`
+    40	- `ai-construction-directive-builder.md`
+    41	- `code-conformance-reviewer.md`
+    42	- `remediation-closeout.md`
+    43	- `traceability-matrix.md`
+    44	
+    45	Use operating guides from `docs/methodology/guides/`:
+    46	
+    47	- `agentic-development-workflow.md`
+    48	- `gates.md`
+    49	- `collaboration-modes.md`
+    50	- `human-agent-collaboration-loop.md`
+    51	- `start-and-next-step-protocol.md`
+    52	- `gate-transition-protocol.md`
+    53	- `amendment-and-regression-protocol.md`
+    54	- `enforcement-contract.md`
+    55	- `human-approval-protocol.md`
+    56	- `subagent-coordination-protocol.md`
+    57	- `artifact-collaboration-protocol.md`
+    58	- `production-operations-protocol.md`
+    59	- `orchestration-validation.md`
+    60	
+    61	Use role playbooks from `docs/methodology/agents/roles/` when a task maps to a specific lifecycle
+    62	role.
+    63	
+    64	## Orchestration Behavior
+    65	
+    66	## Agent Start Contract
+    67	
+    68	At the start of a task, the lead agent must establish repository state before
+    69	editing methodology or project artifacts:
+    70	
+    71	```bash
+    72	./scripts/gendev-doctor.sh
+    73	```
+    74	
+    75	The doctor's prerequisite report is contract, not decoration: GenDev requires
+    76	bash 4+, git, python3, and ripgrep (rg). If the doctor reports a missing
+    77	prerequisite (exit code 3), stop and have it installed before any methodology
+    78	work; do not substitute another tool or emulate the missing one.
+    79	
+    80	If the project is initialized, also run:
+    81	
+    82	```bash
+    83	./scripts/project-state.sh
+    84	```
+    85	
+    86	Use the output to report the current gate, next artifact, required approver, and
+    87	recommended validation. If `docs/project/` is missing, initialize the project
+    88	before product implementation. If current state is unclear or authority is
+    89	missing, stop and ask for human disposition rather than inferring approval.
+    90	
+    91	For canonical late-lifecycle artifacts, prefer the generator over ad hoc files:
+    92	
+    93	```bash
+    94	./scripts/new-artifact.sh --kind deployment-readiness
+    95	```
+    96	
+    97	The human may set the collaboration mode in plain language, such as:
+    98	
+    99	```text
+   100	Lead proactively.
+   101	Use approval-gated mode.
+   102	Stay advisory.
+   103	Proceed execution-focused.
+   104	```
+   105	
+   106	The lead agent must follow the selected mode while preserving required human approvals. Proactive
+   107	mode does not bypass gate approvals, security approvals, or production approval.
+   108	
+   109	For short prompts such as `Let's begin`, `What's next?`, `Continue`, `Proceed`, `Pause`, and
+   110	`Resume`, follow `docs/methodology/guides/start-and-next-step-protocol.md`.
+   111	
+   112	When coordinating sub-agents, follow `docs/methodology/guides/subagent-coordination-protocol.md`.
+   113	Sub-agent output is advisory until accepted into active project documents or approval records.
+   114	
+   115	When accepted authority must change, follow
+   116	`docs/methodology/guides/amendment-and-regression-protocol.md`. Do not keep moving forward with
+   117	stale authority, and do not regress gates unless the amendment invalidates gate entry conditions.
+   118	
+   119	When enforcement class, gate protection, or implementation-path controls matter, follow
+   120	`docs/methodology/guides/enforcement-contract.md`. Attested enforcement is valid at baseline, but
+   121	the active project must declare its class in `docs/project/project.yaml`.
+   122	
+   123	When project scale, gate combination, or GenDev Lite matters, follow
+   124	`docs/methodology/guides/gates.md`. The active project must declare `scaling.blast_radius_class`
+   125	as `C1`, `C2`, or `C3` in `docs/project/project.yaml`. Enforcement class and blast-radius class are
+   126	different controls.
+   127	
+   128	Use `docs/project/project.yaml` as the active project control-plane summary and
+   129	`docs/project/approvals/gate-log.md` as the durable approval history. Do not treat a gate as
+   130	approved unless the required approver, approval date, evidence, and risk disposition are recorded.
+   131	
+   132	## Active Project Paths
+   133	
+   134	For an initialized product, active authority belongs under `docs/project/`. Because
+   135	artifact names are canonical and project-independent (constitution Rule 14), these
+   136	pointers name the actual authority files, not just their directories:
+   137	
+   138	```text
+   139	docs/project/vision/vision.md
+   140	docs/project/prd/prd.md
+   141	docs/project/architecture/architecture.md
+   142	docs/project/security-governance/governance-security-spec.md
+   143	docs/project/decisions/0001-technology-stack.md
+   144	docs/project/build-plan/phase-plan.md
+   145	docs/project/traceability/traceability-matrix.md
+   146	docs/project/approvals/gate-log.md
+   147	docs/project/project.yaml
+   148	```
+   149	
+   150	Per-phase and multi-artifact authority lives in directories, one set per phase or
+   151	record:
+   152	
+   153	```text
+   154	docs/project/build-plan/phases/
+   155	docs/project/testing/
+   156	docs/project/as-built/
+   157	docs/project/decisions/
+   158	```
+   159	
+   160	If `docs/project/` does not exist, initialize it before product implementation:
+   161	
+   162	```bash
+   163	./scripts/init-project.sh "Project Name"
+   164	```
+   165	
+   166	## Authority Precedence
+   167	
+   168	When documents conflict, use this precedence unless the active project explicitly defines a
+   169	different order:
+   170	
+   171	1. `docs/methodology/constitution/gendev.md`
+   172	2. Active project governance/security specification
+   173	3. Active project architecture specification
+   174	4. Active project PRD
+   175	5. Active project phase build plan
+   176	6. Active project tactical implementation plan
+   177	7. Active project construction directive
+   178	8. Current user instruction, only within the documented scope above
+   179	
+   180	If a user request changes scope, architecture, security behavior, acceptance criteria, or phase
+   181	boundaries, update the relevant authority document before implementation.
+   182	
+   183	## Implementation Rules
+   184	
+   185	### Board and Code-Generation Start Contract
+   186	
+   187	Before generating or modifying product code:
+   188	
+   189	1. Run the GenDev doctor and project-state commands, then
+   190	   `uv run --no-project --with-requirements requirements-devboard.txt python scripts/devboard.py validate` and `next`.
+   191	   Inspect the selected task with `show <task-id>`.
+   192	2. Confirm the board task is `started`, has `implementation_authority: granted`, and names
+   193	   the current feature branch. `approved` permits execution preparation; it does not begin
+   194	   product code generation. Check the actual human direction behind the recorded approval.
+   195	3. Read the tracking index and its links to accepted canonical GenDev authority. Confirm the
+   196	   current project gate and phase checkpoints permit that implementation scope.
+   197	4. Read the approved phase build plan, tactical plan, construction directive, and verification
+   198	   plan. Each work unit needs exact scope, non-goals, requirements, tests, and stop conditions.
+   199	   Only the documented maintenance route applies to eligible non-product maintenance.
+   200	5. Reconcile task state, branch/checkout, authority revisions, source, tests, and evidence
+   201	   before proceeding if they disagree. No directory, label, role flag, or tool result supplies
+   202	   missing authority.
+   203	
+   204	The board tracks tasks through queued, approved, started, completed, and accepted. Only the human
+   205	approves or accepts task scope. Task state and recorded delivery never substitute for GenDev
+   206	approval. Preserve unrelated changes and local runtime data; do not clean or broad-stage them.
+   207	
+   208	### Candidate Review and Acceptance
+   209	
+   210	After authorized product generation, freeze a stable candidate commit when committing is
+   211	authorized, then obtain fresh-context, read-only conformance review. Supply pinned authority,
+   212	the directive, exact candidate/diff, acceptance criteria, and required evidence; exclude the
+   213	builder's transcript, private reasoning, and conclusions. The reviewer returns exactly
+   214	`VERIFIED`, `CHANGES_REQUESTED`, or `BLOCKED` with reproducible evidence.
+   215	
+   216	Work remains `started` through required review and bounded remediation. A changed candidate or
+   217	authority makes the prior result stale and requires fresh review. Propose `completed` only
+   218	after the applicable independent `VERIFIED` result; only the human records `accepted`.
+   219	If a candidate cannot yet be frozen, report that limit rather than claiming formal verification.
+   220	Eligible documentation maintenance follows its separately recorded scope and checks.
+   221	
+   222	Review does not authorize reviewer edits, automatic unbounded remediation, additional delegates,
+   223	push, merge, release, deployment, credential disclosure, or external effects. Keep board tracking
+   224	indexes and their evidence in the lanes described by the local lifecycle policy; canonical
+   225	GenDev authority stays under `docs/project/` through tracking moves and archival.
+   226	
+   227	
+   228	Before meaningful code generation, confirm that the active project has enough documented authority
+   229	to answer:
+   230	
+   231	- what is being built;
+   232	- why it is being built;
+   233	- who it is for;
+   234	- what is in scope;
+   235	- what is out of scope;
+   236	- what architecture governs it;
+   237	- what security and governance rules apply;
+   238	- what tests or UAT checks prove it works;
+   239	- what documentation must be reconciled afterward.
+   240	
+   241	Do not implement deferred features, silently widen scope, weaken security/governance behavior,
+   242	or mark planned behavior as implemented unless it is actually implemented and verified.
+   243	
+   244	## Examples Are Not Active Authority
+   245	
+   246	`docs/resources/examples/` contains example methodology artifacts. It is not the active project for a new
+   247	clone. Do not cite example PRDs, architecture docs, traceability matrices, implementation evidence,
+   248	source paths, tests, or UAT claims as local project authority unless the active project explicitly
+   249	adopts that material and matching local source/test files exist.
+   250	
+   251	## Verification and Close-Out
+   252	
+   253	When implementing product code, follow the active project verification commands. If commands are not
+   254	yet defined, create or update the relevant phase plan before proceeding.
+   255	
+   256	Run the methodology checker before implementation, phase close-out, and handoff when applicable:
+   257	
+   258	```bash
+   259	./scripts/check-methodology.sh
+   260	```
+   261	
+   262	For each completed phase, update:
+   263	
+   264	- test or UAT evidence;
+   265	- code review findings or review status;
+   266	- remediation status, if applicable;
+   267	- as-built close-out;
+   268	- traceability matrix;
+   269	- deferred item list and known limitations.
+   270	
+   271	Report skipped verification honestly with the reason.
+   272	
+   273	## V3 Documentation And Availability
+   274	
+   275	The current Practitioner Guide is under docs/resources/practitioner-guide/; its
+   276	HTML edition mirrors that canonical Markdown exactly when resources are present.
+   277	Use docs/resources/releases/v3-adoption.md for current distribution/adoption
+   278	instructions. These are reference guides; canonical authority above still governs.
+   279	The inherited lifecycle is 1.0.2 and the v3 distribution remains unreleased.
+   280	Migration candidate 98f8bec is independently VERIFIED with human acceptance
+   281	pending. The additional nine workflow skills merged in PR #1; council round 1
+   282	is consolidated as BLOCKED. The authorized bounded follow-up is recorded at
+   283	docs/resources/evolution/skill-library-import/review/bounded-follow-up.md; its
+   284	local revised candidate needs fresh review. Read the guide's availability table
+   285	for revision-specific contents.
+   286	Do not treat a documentation refresh or GitHub upload as a new verification,
+   287	acceptance, product gate transition or methodology release.
+================ docs/methodology/constitution/gendev.md ================
+     1	# AI-Assisted Software Engineering Documentation Constitution
+     2	
+     3	Status: Reusable Standard  
+     4	Version: 1.0.2
+     5	License: CC BY 4.0 for documentation; see repository `LICENSE`.
+     6	Audience: Product owners, architects, engineering leads, AI-assisted coding operators, reviewers, and implementation agents  
+     7	Scope: Documentation, traceability, build governance, testability, and AI-assisted implementation process for software projects
+     8	
+     9	## Purpose
+    10	
+    11	This constitution defines a reusable documentation-first engineering method for building reliable, testable software with AI-assisted software engineering tools such as Codex, Claude Code, or similar implementation agents.
+    12	
+    13	The method exists to ensure that software is not built from vague intent, chat history, or isolated prompts. It requires a traceable chain from vision to requirements, architecture, implementation planning, code generation, testing, review, remediation, and as-built documentation close-out.
+    14	
+    15	The core objective:
+    16	
+    17	```text
+    18	build software from explicit authority,
+    19	verify it against testable requirements,
+    20	preserve traceability from intent to implementation,
+    21	and prevent AI-assisted phase drift.
+    22	```
+    23	
+    24	## Core Principle
+    25	
+    26	No meaningful implementation should occur unless the implementer, human or AI, can answer:
+    27	
+    28	```text
+    29	what are we building?
+    30	why are we building it?
+    31	who is it for?
+    32	what is in scope?
+    33	what is out of scope?
+    34	what architecture governs it?
+    35	what security and governance rules apply?
+    36	what tests prove it works?
+    37	what documentation must be reconciled when complete?
+    38	```
+    39	
+    40	If those answers are not documented, the project is not ready for code generation.
+    41	
+    42	## Technique Neutrality
+    43	
+    44	This is a first-order principle of the methodology. The rules that follow —
+    45	canonical naming, the documentation scaffold, the supporting-artifact mechanism,
+    46	and the reference discipline — are its consequences.
+    47	
+    48	GenDev governs how work earns authority and how that authority is gated,
+    49	reviewed, and kept coherent. It does not specify how the work is conceived,
+    50	modeled, or built. The method is the authority-and-gate machinery; the technique
+    51	is everything about how a team designs and constructs — object-oriented,
+    52	data-driven, event-driven, or an approach not yet invented. The method must not
+    53	couple itself to a technology stack or to a software-engineering approach.
+    54	
+    55	The blend point is the artifact. A technique's artifacts enter the methodology
+    56	through a fixed authority-and-reference discipline: they are named, located,
+    57	provenanced, and referenced by the method's rules, and because they obey that
+    58	discipline the method can gate and coherence-check them without knowing which
+    59	technique produced them. The method is opinionated about how an artifact earns
+    60	authority; it is silent about what the artifact contains.
+    61	
+    62	Stated as a maxim: the method does not specify the technique, but the technique
+    63	must blend with the method.
+    64	
+    65	Every other rule in this constitution that concerns artifact structure,
+    66	naming, scaffolding, or references must remain consistent with this principle. A
+    67	future rule that couples the method to a specific technology stack or engineering
+    68	approach violates it.
+    69	
+    70	## First Principles of Code Quality
+    71	
+    72	This is a first-order principle of the methodology, and a deliberate complement
+    73	to Technique Neutrality. Technique Neutrality states what the method is silent
+    74	about: how the work is conceived, modeled, and built. This principle states what
+    75	the method is not silent about: six properties the produced code must have,
+    76	whatever technique produced it.
+    77	
+    78	These six are constitutional, not technical. They do not tell a builder how to
+    79	design or which pattern to reach for. They state properties the result must hold
+    80	regardless of how it was built, the same way "the architecture must cohere with
+    81	the PRD" is a property of the result and not a technique for producing it. They
+    82	sit on the method side of the Technique Neutrality line, alongside blast radius
+    83	and accountability, not on the technique side alongside object-oriented or
+    84	data-driven design.
+    85	
+    86	The six:
+    87	
+    88	```text
+    89	YAGNI  You Aren't Gonna Need It. Build only what a current, approved requirement
+    90	       asks for. Do not build for a requirement that does not yet exist.
+    91	KISS   Keep It Simple. The simplest structure that satisfies the requirement is
+    92	       the correct one, not the most general or most extensible.
+    93	DRY    Don't Repeat Yourself. Logic that already exists is called, not rewritten.
+    94	SRP    Single Responsibility. Each unit does one coherent job.
+    95	LA     Least Astonishment. Behavior matches what an obvious reading of the
+    96	       requirement would lead a reader to expect.
+    97	NAA    No Undeclared Abstractions. Any authority-bearing abstraction the build
+    98	       introduces must already be declared in approved upstream authority or be
+    99	       introduced through an amendment before use. A build implements the
+   100	       approved model. It does not silently expand behavior, authority boundaries,
+   101	       or trust model.
+   102	```
+   103	
+   104	These principles exist because a generator, left unconstrained, violates all six
+   105	by default. Verbosity, over-generalization, duplication, conflated
+   106	responsibilities, surprising behavior, and unrequested abstraction are the
+   107	standing tendencies of machine generation, not occasional lapses. A test suite
+   108	does not catch them, because all six can be present in code that passes every
+   109	test. The method therefore states them explicitly and binds them at the points
+   110	where generation happens.
+   111	
+   112	The binding mechanism follows from this. These six are restated in full in every
+   113	construction directive's anti-drift section, at the point of generation, every
+   114	phase, without exception. They are checked at code review by a conformance
+   115	reviewer operating under the reviewer-independence rule.
+   116	
+   117	For this methodology, NAA applies to authority-bearing abstractions:
+   118	
+   119	```text
+   120	domain or business concepts and rules
+   121	persisted, shared, externally exchanged, or security-sensitive fields
+   122	public, externally consumed, or cross-component interfaces
+   123	architectural boundaries (components, services, storage, ownership)
+   124	trust, identity, authorization, audit, data sensitivity, and lifecycle control
+   125	```
+   126	
+   127	A build may add implementation-local detail without amendment only when the build
+   128	task already authorizes it and all of these conditions hold:
+   129	
+   130	```text
+   131	it is private to a component or test scope
+   132	it does not add product behavior, policy, or observable semantics
+   133	it does not add shared, persisted, or externally exchanged state
+   134	it does not add or alter public or cross-component contracts
+   135	it does not change acceptance, governance, or phase boundaries
+   136	it is proportionate under YAGNI, KISS, DRY, and SRP
+   137	```
+   138	
+   139	Typical allowed categories are private helpers, local adapters, internal value
+   140	types, framework-generated types, test fixtures, fakes, and mocks.
+   141	
+   142	Every other rule in this constitution that concerns what a build produces must
+   143	remain consistent with these six.
+   144	
+   145	## Applicability
+   146	
+   147	Use this standard for:
+   148	
+   149	```text
+   150	new product development
+   151	feature phases
+   152	large refactors
+   153	security-sensitive systems
+   154	agent platforms
+   155	governance or permission subsystems
+   156	CLI-first UAT projects
+   157	AI-assisted implementation workflows
+   158	projects where traceability and testability matter
+   159	```
+   160	
+   161	This standard may be scaled down for small work, but the traceability chain should not be abandoned.
+   162	
+   163	## Verification-First Principle
+   164	
+   165	A project must define how it will know the work is correct before it builds the work, and a human
+   166	must approve that definition of correctness in a form precise enough to test. Verification is a
+   167	design input, not a downstream check. This principle is the reason "what tests prove it works?" is
+   168	one of the questions the Core Principle requires answered before code generation.
+   169	
+   170	Verification answers three distinct questions. They are exhaustive: there is nothing to verify
+   171	outside the requirement, the design, and the code.
+   172	
+   173	```text
+   174	behavioral:     does the implementation do what is required, including the negative and edge
+   175	                cases, not only the happy path? (user acceptance is the user-facing slice)
+   176	design:         does the design hold under the conditions it must survive (partition, network
+   177	                loss, security boundary, degradation, scale, evolution)? this is evaluable the
+   178	                moment the design is written, before any code exists
+   179	implementation: is the code sound as an artifact and durable under change (correct types and
+   180	                contracts, no brittle assumptions that erode over time)?
+   181	```
+   182	
+   183	What unifies the three is that each asks whether the work is correct under conditions the happy
+   184	path does not reveal: the requirement's edges, the design's failure modes, and time.
+   185	
+   186	Verification-First is a methodological commitment, not a technique. The method requires the
+   187	verification and gates it; it does not prescribe how the verification is produced. Test-driven,
+   188	behavior-driven, acceptance-test-driven, property-based, and classic test-after development are
+   189	techniques, and the method stays neutral on them under the same reasoning as Technique Neutrality.
+   190	The philosophy is methodology; the practice is technique. The maxim: define how you will know it
+   191	works before you make it work.
+   192	
+   193	This standard scales with blast radius (a small project may answer the three questions briefly,
+   194	including an honest "no failure modes beyond single-process operation"), but the questions should
+   195	not be left unasked.
+   196	
+   197	## Blast-Radius Scaling Principle
+   198	
+   199	GenDev ceremony scales with the blast radius of the work. Blast radius means the plausible impact
+   200	of a wrong requirement, bad implementation, unsafe deployment, missed review finding, or agent
+   201	misstep.
+   202	
+   203	Every initialized project should declare a blast-radius class in `docs/project/project.yaml`:
+   204	
+   205	```text
+   206	C1 Contained
+   207	  Internal tools, reversible outputs, no sensitive data, low operational risk.
+   208	
+   209	C2 Standard
+   210	  Default product work, moderate operational or data risk, ordinary production release discipline.
+   211	
+   212	C3 Critical
+   213	  Regulated data, irreversible actions, external integrations, production-sensitive automation,
+   214	  agentic runtime behavior, or high operational impact.
+   215	```
+   216	
+   217	Scaling down is legitimate only when required content remains explicit. A C1 project may combine
+   218	early gates or artifacts, but it must still define the problem, requirements, architecture
+   219	assumptions, security assumptions, build plan, verification, approval, and close-out evidence.
+   220	Scaling down does not waive production approval, rollback thinking, or security assumptions when
+   221	the product is deployed or touches meaningful data.
+   222	
+   223	Scaling up is mandatory when exposure increases. A C3 project should not combine lifecycle gates.
+   224	It should use stronger independent review, evidence sampling, explicit override discipline, and
+   225	stricter enforcement than the baseline.
+   226	
+   227	Gate combination must be recorded with a justification, class, affected gates, preserved content,
+   228	approver, and evidence path. If the justification is missing, the methodology treats the combined
+   229	gate path as a process risk, not as an informal shortcut.
+   230	
+   231	## Version-Control Assumption
+   232	
+   233	This methodology assumes a version control system with immutable revision identifiers, diffable
+   234	history, and branch isolation. Git is the default implementation, but any system with equivalent
+   235	properties can support the methodology.
+   236	
+   237	Revision control is not incidental. Provenance, amendment, review independence, enforcement, and
+   238	as-built close-out all depend on being able to identify what changed, when it changed, and what
+   239	authority governed the change.
+   240	
+   241	## Constitutional Rules
+   242	
+   243	### Rule 1: Documentation Is Build Authority
+   244	
+   245	AI-assisted implementation must be grounded in authoritative documents.
+   246	
+   247	Implementation prompts must cite or summarize the relevant authority:
+   248	
+   249	```text
+   250	vision or product goal
+   251	PRD requirements
+   252	architecture specification
+   253	governance/security rules
+   254	phase build plan
+   255	tactical implementation plan
+   256	acceptance criteria
+   257	test expectations
+   258	documentation close-out requirements
+   259	```
+   260	
+   261	The AI builder must not infer new product scope from casual conversation unless the operator explicitly authorizes that change and updates the relevant documentation.
+   262	
+   263	### Rule 2: Traceability Is Mandatory
+   264	
+   265	Every material requirement must map forward to implementation and verification.
+   266	
+   267	Minimum traceability chain:
+   268	
+   269	```text
+   270	requirement
+   271	  -> architecture rule or design decision
+   272	     -> build-plan scope item
+   273	        -> tactical implementation task
+   274	           -> test or UAT evidence
+   275	              -> code review confirmation
+   276	                 -> as-built documentation update
+   277	```
+   278	
+   279	If a requirement cannot be traced to a test or UAT check, it is not yet implementation-ready.
+   280	
+   281	### Rule 3: Verification Is a Design Input
+   282	
+   283	As a consequence of the Verification-First Principle, tests and other verification are planned
+   284	before or during architecture and tactical planning, not treated as cleanup after code generation.
+   285	
+   286	Architecture and implementation plans should identify:
+   287	
+   288	```text
+   289	unit tests
+   290	integration tests
+   291	security tests
+   292	negative tests
+   293	migration tests
+   294	CLI/UAT scenarios
+   295	fixture requirements
+   296	acceptance scripts
+   297	manual verification steps when automation is not practical
+   298	```
+   299	
+   300	The absence of tests must be explicit and justified.
+   301	
+   302	### Rule 4: Security and Governance Are First-Class
+   303	
+   304	Security, governance, identity, permission, audit, and policy behavior must be documented early.
+   305	
+   306	Any system involving agents, tools, automation, workflow execution, file access, external APIs, user data, secrets, or persistent state must define:
+   307	
+   308	```text
+   309	identity model
+   310	authorization model
+   311	permission boundaries
+   312	policy boundaries
+   313	approval requirements
+   314	audit records
+   315	failure behavior
+   316	revocation or deactivation behavior
+   317	data retention and sensitivity rules
+   318	observable side effects
+   319	```
+   320	
+   321	These rules must be testable.
+   322	
+   323	### Rule 5: Phase Boundaries Must Be Defended
+   324	
+   325	Phase plans must define:
+   326	
+   327	```text
+   328	in scope
+   329	out of scope
+   330	deferred features
+   331	non-goals
+   332	migration boundaries
+   333	acceptance criteria
+   334	documentation close-out
+   335	```
+   336	
+   337	AI builders must not smuggle deferred features into the current phase.
+   338	
+   339	If a deferred feature appears necessary, stop and update the plan before implementation continues.
+   340	
+   341	### Rule 6: AI Build Prompts Are Controlled Artifacts
+   342	
+   343	Prompts used to drive implementation are build artifacts.
+   344	
+   345	They must be:
+   346	
+   347	```text
+   348	precise
+   349	bounded
+   350	traceable to authority
+   351	explicit about non-goals
+   352	explicit about tests
+   353	explicit about migration behavior
+   354	explicit about documentation close-out
+   355	clear about what files or subsystems may change
+   356	clear about what must not change
+   357	```
+   358	
+   359	Construction directives and large implementation prompts must be preserved with the directive text,
+   360	implementing agent identity when known, source authority revisions, and the resulting commit, diff,
+   361	or implementation reference. Implementation whose controlling directive cannot be produced is
+   362	treated as unreviewed until a human reviewer reconstructs and accepts the authority record.
+   363	
+   364	### Rule 7: Code Review Verifies Conformance
+   365	
+   366	Code review must evaluate whether the implementation matches the documentation authority.
+   367	Conformance review must be performed in a context independent of the implementation context.
+   368	
+   369	Reviewer independence means the reviewer starts from:
+   370	
+   371	```text
+   372	authority documents at pinned revisions
+   373	implementation diff or artifact under review
+   374	applicable test and UAT evidence
+   375	```
+   376	
+   377	The reviewer should not receive the implementation agent's session transcript, private reasoning,
+   378	or broad conversational history unless the exception is explicitly justified in the review report.
+   379	The review should record context provenance so future humans and agents can see what the reviewer
+   380	was given and what was intentionally excluded.
+   381	
+   382	Review must check:
+   383	
+   384	```text
+   385	requirement conformance
+   386	architecture conformance
+   387	security/governance conformance
+   388	test completeness
+   389	CLI/UAT completeness
+   390	error handling
+   391	migration behavior
+   392	deferred-feature boundaries
+   393	documentation drift
+   394	engineering quality
+   395	```
+   396	
+   397	Review findings should produce traceable remediation work.
+   398	
+   399	### Rule 8: Remediation Must Be Precise
+   400	
+   401	Remediation prompts or plans must map directly to findings.
+   402	
+   403	Each finding should have:
+   404	
+   405	```text
+   406	finding id
+   407	severity
+   408	affected requirement or architecture rule
+   409	affected files or modules, if known
+   410	required correction
+   411	required tests
+   412	acceptance criteria
+   413	documentation update, if needed
+   414	```
+   415	
+   416	Remediation should not introduce unrelated scope.
+   417	
+   418	### Rule 9: As-Built Documentation Is Definition of Done
+   419	
+   420	A phase is not complete until documentation reflects what was actually built.
+   421	
+   422	Close-out must reconcile:
+   423	
+   424	```text
+   425	developer guides
+   426	architecture docs
+   427	CLI docs
+   428	configuration docs
+   429	API docs
+   430	examples
+   431	schema references
+   432	implemented-vs-planned status
+   433	deferred-feature lists
+   434	known limitations
+   435	test evidence
+   436	```
+   437	
+   438	If the implementation differs from the plan, the documentation must say so.
+   439	
+   440	### Rule 10: Decisions Must Be Durable
+   441	
+   442	Important decisions must not live only in chat history.
+   443	
+   444	Record:
+   445	
+   446	```text
+   447	decision
+   448	rationale
+   449	alternatives considered
+   450	selected option
+   451	scope impact
+   452	test impact
+   453	security impact
+   454	deferred implications
+   455	date
+   456	owner or approver, when applicable
+   457	```
+   458	
+   459	### Rule 11: The Documentation Scaffold Is Canonical and Architecture-Independent
+   460	
+   461	The documentation scaffold — the docs/project/ directory tree and the canonical
+   462	filenames within it — is fixed and identical for every project, regardless of
+   463	technology stack or engineering approach. It is a consequence of Technique
+   464	Neutrality: the method owns how work is documented and gated, so the documentation
+   465	structure is the method's to fix.
+   466	
+   467	The code scaffold — source layout, package structure, module organization — is
+   468	architecture-determined. The method does not prescribe it. The method only records
+   469	it, through the technology-stack decision artifact
+   470	(docs/project/decisions/0001-technology-stack.md) and the implementation_paths
+   471	field in the project manifest. This is the seam between the canonical documentation
+   472	layer and the technique-specific code layer: the method records where code lives so
+   473	tooling can reason about it, without dictating where code goes.
+   474	
+   475	### Rule 12: Supporting Artifacts Attach Through a Typed, Acyclic Reference Graph
+   476	
+   477	Canonical gate artifacts may reference project-specific supporting artifacts
+   478	(produced by whatever analysis or design technique a project uses — a data model,
+   479	an object-interaction model, a state-transition model, a user-story set, a UX
+   480	specification) through a Supporting Artifacts section. The references form a
+   481	directed acyclic graph rooted at canonical gate artifacts:
+   482	
+   483	```text
+   484	the graph is rooted at canonical gate artifacts; a canonical artifact holds the
+   485	  Supporting Artifacts section and names the supporting artifacts it references, so
+   486	  edges run from the canonical (referencing) artifact to the supporting
+   487	  (referenced) artifact
+   488	cycles are forbidden and must be flagged
+   489	references are one level deep by default; supporting artifacts do not themselves
+   490	  carry supporting-artifact references, and greater depth is a declared, justified
+   491	  exception
+   492	```
+   493	
+   494	Edge topology and authority direction are distinct. Topology is fixed: the
+   495	canonical artifact references the supporting artifact. Authority direction depends
+   496	on the relationship type below: for some types the referencing (canonical) artifact
+   497	is the one obligated to conform to the referenced artifact, and for others the
+   498	reverse. Each type states explicitly which artifact holds authority, so the
+   499	coherence obligation is unambiguous regardless of which end holds the reference.
+   500	
+   501	Each reference carries a relationship type from this bounded vocabulary. In every
+   502	case the referencing artifact is the canonical gate artifact, and the referenced
+   503	artifact is the supporting artifact it names. The type declares the coherence
+   504	obligation and which end holds authority:
+   505	
+   506	```text
+   507	implements     - the referencing artifact realizes a structure the referenced
+   508	                 artifact defines. Authority: the referenced artifact. Obligation:
+   509	                 every named element in the referencing artifact resolves to a
+   510	                 definition in the referenced artifact.
+   511	satisfies      - the referencing artifact fulfills requirements the referenced
+   512	                 artifact states. Authority: the referenced artifact. Obligation:
+   513	                 every requirement in the referenced artifact is covered by the
+   514	                 referencing artifact.
+   515	tested-by      - the referencing artifact's correctness is verified by the
+   516	                 referenced test artifact. Authority: the referencing artifact (the
+   517	                 test serves it). Obligation: the referenced test artifact exists,
+   518	                 covers the referencing artifact's claims, and passes.
+   519	constrained-by - the referencing artifact must not violate limits the referenced
+   520	                 artifact sets. Authority: the referenced artifact. Obligation: the
+   521	                 referencing artifact contains nothing the referenced artifact
+   522	                 forbids.
+   523	refines        - the referencing artifact adds detail within the scope the
+   524	                 referenced artifact sets. Authority: the referenced artifact.
+   525	                 Obligation: the referencing artifact stays within the referenced
+   526	                 artifact's scope, adding detail without contradicting or expanding
+   527	                 it.
+   528	```
+   529	
+   530	The provenance relationship (which canonical artifact an artifact descends from)
+   531	is handled separately by the Derived from provenance header and is not part of this
+   532	vocabulary.
+   533	
+   534	The purpose of this structure is to present coherent context to an AI coding
+   535	assistant: the reference graph is the context an agent walks to understand what it
+   536	is building, and a cycle or a drifted reference is misleading context.
+   537	
+   538	### Rule 13: Supporting Artifacts Are Form-Disciplined and Content-Free
+   539	
+   540	The method constrains the form of a supporting artifact, not its content or name —
+   541	a direct consequence of Technique Neutrality.
+   542	
+   543	```text
+   544	form (method-governed):
+   545	  filename is a valid lowercase-kebab identifier (no spaces, quotes, or slashes;
+   546	    .md extension)
+   547	  the artifact lives at the canonical supporting-artifact location in the locked
+   548	    scaffold
+   549	  it carries the required project front-matter field and its typed relationship to
+   550	    what it supports
+   551	content and name (technique-governed):
+   552	  the artifact is whatever the technique requires, named whatever the technique
+   553	    calls it, within the form constraint
+   554	```
+   555	
+   556	Identity is the typed reference edge plus front matter, not the filename; a
+   557	supporting artifact may be renamed freely as long as the reference pointing at it is
+   558	updated. The authoritative form of a supporting artifact is textual; diagrams are
+   559	embedded (for example Mermaid) or referenced from authoritative text, so the
+   560	artifact stays diff-able and coherence-checkable.
+   561	
+   562	### Rule 14: Canonical Artifact Naming
+   563	
+   564	Per-project artifacts use fixed, role-based filenames that are identical across all
+   565	projects. A filename identifies an artifact's role (vision.md, prd.md,
+   566	architecture.md, phase-plan.md), never its project. This is a consequence of
+   567	Technique Neutrality: the method fixes the form by which an artifact is named and
+   568	referenced, so that authority pointers resolve identically for every project.
+   569	
+   570	```text
+   571	the project slug and project name must not appear in any artifact filename or in
+   572	  any cross-reference path between artifacts; cross-references use the fixed
+   573	  canonical paths
+   574	the slug must not be baked into filenames or cross-reference paths; it lives as a
+   575	  field in docs/project/project.yaml and is echoed only as the artifact identity
+   576	  field below
+   577	project identity is carried by location (the docs/project/ tree and the
+   578	  repository), by project.yaml, and by a strictly required front-matter field,
+   579	  project: <slug>, on every per-project authority artifact (every gate artifact,
+   580	  supporting artifact, and the gate log; navigational index files such as
+   581	  directory README.md files are exempt)
+   582	the project front-matter field must be present and must match the slug in
+   583	  project.yaml; it is a checkable provenance claim, not decoration
+   584	authority pointers, including AGENTS.md, reference canonical artifacts by their
+   585	  fixed full path; because names are project-independent, a single pointer is
+   586	  correct for all projects and requires no per-project maintenance
+   587	```
+   588	
+   589	Scaling down a small project may combine or omit content (per the Blast-Radius
+   590	Scaling Principle), but it does not float artifact names: a combined or reduced
+   591	artifact still uses its canonical role-based name. Naming is fixed independently of
+   592	how much content a project's gates carry.
+   593	
+   594	## Documentation Artifact Chain
+   595	
+   596	The standard documentation chain is:
+   597	
+   598	```text
+   599	1. Vision / Problem Framing
+   600	2. Product Requirements Document
+   601	3. Architecture Specification
+   602	4. Governance and Security Specification
+   603	5. Phase Plan (the build partition; certified at G5)
+   604	   The following are produced per phase inside the phase loop (G5.x checkpoints):
+   605	6. Phase Build Plan
+   606	7. Tactical Implementation Plan
+   607	8. Construction Directive / Build Prompt
+   608	9. Test and UAT Plan (the phase exit test is specified in the phase build plan)
+   609	10. Implementation Evidence
+   610	11. Code Review Report
+   611	12. Remediation Plan / Remediation Prompt
+   612	13. Phase Learnings
+   613	14. As-Built Documentation Close-Out
+   614	15. Traceability Matrix
+   615	```
+   616	
+   617	The phase plan partitions the build into ordered, independently testable phases
+   618	and is what G5 certifies. Artifacts 6 through 13 are produced for each phase in
+   619	the loop interior to the G5 to G6 span. See docs/methodology/guides/phase-loop.md.
+   620	
+   621	Not every project needs every document as a separate file. For small projects, multiple artifacts may be combined. The required content must still exist.
+   622	
+   623	## Artifact Provenance
+   624	
+   625	Authority and evidence artifacts must identify their origin. A future human or agent should be able
+   626	to determine who produced the artifact, when it was produced, whether an agent participated, and
+   627	which upstream documents or prompts it was derived from.
+   628	
+   629	Minimum provenance fields:
+   630	
+   631	```text
+   632	Produced by
+   633	Produced on
+   634	Produced with
+   635	Agent identity
+   636	Derived from path and revision
+   637	```
+   638	
+   639	Revision values should be immutable identifiers where practical, such as a commit SHA, tag, pull
+   640	request revision, signed release, or other durable artifact identifier. Draft artifacts may use
+   641	`TBD` until the upstream source is committed or otherwise pinned.
+   642	
+   643	If an upstream authority changes after an artifact pins that authority, the downstream artifact is
+   644	`Stale` until reviewed and reconciled. Stale artifacts may remain useful context, but they should
+   645	not be used as gate evidence without explicit reconciliation.
+   646	
+   647	## Authority Amendment And Regression
+   648	
+   649	Accepted authority may be amended when the project learns something material. The methodology does
+   650	not require teams to pretend that accepted artifacts are immutable. It requires teams to make the
+   651	cost of change visible.
+   652	
+   653	Amendment cost scales with blast radius:
+   654	
+   655	```text
+   656	editorial change
+   657	  -> record if useful; no re-approval
+   658	additive-within-scope change
+   659	  -> lightweight approval and downstream review
+   660	structural change
+   661	  -> explicit approval and downstream reconciliation
+   662	gate-invalidating change
+   663	  -> formal regression to the affected gate
+   664	```
+   665	
+   666	An amendment must identify affected downstream artifacts, traceability rows, plans, tests, reviews,
+   667	implementation evidence, deployment evidence, or close-out records. Downstream artifacts that may no
+   668	longer match amended authority must be marked `Stale` until reconciled or `Superseded` if replaced.
+   669	
+   670	Unamended stale authority is a methodology violation. It is not permission for agents to infer new
+   671	scope, reinterpret architecture, bypass security/governance rules, or continue a gate transition
+   672	using evidence known to be stale.
+   673	
+   674	## Enforcement Principle
+   675	
+   676	Methodology rules should be enforced where practical, attested where enforcement is unavailable,
+   677	and declared in the active project control plane.
+   678	
+   679	Projects must state their enforcement class in `docs/project/project.yaml`:
+   680	
+   681	```text
+   682	enforced
+   683	attested
+   684	```
+   685	
+   686	`enforced` means a mechanical binding exists, such as hooks, protected-branch checks, policy
+   687	automation, or equivalent controls. `attested` means a named human performs or reviews the required
+   688	checks on a declared cadence and records attestation in the gate log.
+   689	
+   690	Attested mode is valid at baseline. It must not become invisible. Exceptions, cadence, required
+   691	attester, override policy, and binding paths belong in the project enforcement block. The active
+   692	contract is `docs/methodology/guides/enforcement-contract.md`.
+   693	
+   694	## Measurement Principle
+   695	
+   696	GenDev projects should emit enough evidence to test whether the methodology is reducing drift,
+   697	rework, approval delay, and escaped defects. Measurement must be derived from artifacts this
+   698	constitution already requires: gate-log events, approvals, traceability, review results, as-built
+   699	records, enforcement overrides, and value reviews.
+   700	
+   701	Measurement must not become a separate bureaucracy. At baseline, metrics are computed on demand
+   702	from project records, and phase close-out may snapshot the generated report. Outcome metrics outrank
+   703	activity metrics. A high finding count is not automatically good, a low finding count is not
+   704	automatically good, and success criteria cannot be redefined after delivery to make the project look
+   705	successful.
+   706	
+   707	Every G1 vision must define success criteria with a measure, target, read timing, owner, and
+   708	evidence source. Production or value-bearing releases must eventually report those criteria as
+   709	`met`, `missed`, or `unmeasurable`.
+   710	
+   711	## Required Artifact Definitions
+   712	
+   713	### Vision / Problem Framing
+   714	
+   715	Purpose:
+   716	
+   717	```text
+   718	define why the project or phase exists
+   719	```
+   720	
+   721	Must include:
+   722	
+   723	```text
+   724	problem statement
+   725	target users
+   726	desired outcomes
+   727	success criteria
+   728	non-goals
+   729	strategic constraints
+   730	major risks
+   731	```
+   732	
+   733	Completion standard:
+   734	
+   735	```text
+   736	the team can explain why the work matters and what success looks like
+   737	```
+   738	
+   739	### Product Requirements Document
+   740	
+   741	Purpose:
+   742	
+   743	```text
+   744	define product-visible requirements and acceptance boundaries
+   745	```
+   746	
+   747	Must include:
+   748	
+   749	```text
+   750	user goals
+   751	functional requirements
+   752	non-functional requirements
+   753	acceptance criteria
+   754	primary user workflows
+   755	edge cases
+   756	out-of-scope behavior
+   757	dependencies
+   758	open questions
+   759	```
+   760	
+   761	Completion standard:
+   762	
+   763	```text
+   764	requirements are specific enough to become architecture and test cases
+   765	```
+   766	
+   767	### Architecture Specification
+   768	
+   769	Purpose:
+   770	
+   771	```text
+   772	define system structure, ownership, behavior, and boundaries
+   773	```
+   774	
+   775	Must include:
+   776	
+   777	```text
+   778	terminology
+   779	domain model
+   780	component ownership
+   781	runtime model
+   782	data model
+   783	state lifecycle
+   784	interfaces
+   785	error behavior
+   786	security-sensitive boundaries
+   787	extension points
+   788	deferred architecture
+   789	diagrams where useful
+   790	```
+   791	
+   792	Completion standard:
+   793	
+   794	```text
+   795	implementation cannot reinterpret major object ownership or lifecycle behavior
+   796	```
+   797	
+   798	### Governance and Security Specification
+   799	
+   800	Purpose:
+   801	
+   802	```text
+   803	define how the system remains safe, auditable, and controlled
+   804	```
+   805	
+   806	Must include:
+   807	
+   808	```text
+   809	identity model
+   810	roles and permissions
+   811	authorization rules
+   812	policy model
+   813	approval model
+   814	audit model
+   815	secrets handling
+   816	data sensitivity
+   817	trust boundaries
+   818	threat scenarios
+   819	security tests
+   820	failure and recovery behavior
+   821	```
+   822	
+   823	Completion standard:
+   824	
+   825	```text
+   826	security-sensitive behavior is explicit, testable, and not left to implementation inference
+   827	```
+   828	
+   829	### Phase Plan
+   830	
+   831	Purpose:
+   832	
+   833	```text
+   834	partition the build into ordered, independently testable phases; this is the
+   835	artifact that gate G5 certifies
+   836	```
+   837	
+   838	Must include:
+   839	
+   840	```text
+   841	the ordered phase sequence, each phase identified by a stable label
+   842	a requirement coverage map assigning every in-scope requirement to an owning phase
+   843	cross-phase rules and invariants
+   844	the partitioning rationale, including the sizing criterion
+   845	integration criteria and who declares the integration tests
+   846	an amendments section for later phase insertions and splits
+   847	```
+   848	
+   849	Completion standard:
+   850	
+   851	```text
+   852	the build is partitioned into ordered, independently testable phases, every
+   853	in-scope requirement is assigned to a phase, and integration criteria are
+   854	declared
+   855	```
+   856	
+   857	Note: phase order is defined by this plan, never computed from the phase label.
+   858	The per-phase build plan, tactical plan, construction directive, build prompt,
+   859	and learnings are produced inside the phase loop at the interior G5.x
+   860	checkpoints. See docs/methodology/guides/phase-loop.md.
+   861	
+   862	### Build Definition
+   863	
+   864	Purpose:
+   865	
+   866	```text
+   867	define the buildable unit of work and its authority
+   868	```
+   869	
+   870	Must include:
+   871	
+   872	```text
+   873	scope
+   874	source authority documents
+   875	feature boundaries
+   876	implementation constraints
+   877	deferred items
+   878	required test categories
+   879	documentation close-out requirements
+   880	```
+   881	
+   882	Completion standard:
+   883	
+   884	```text
+   885	the team knows what this build may and may not implement
+   886	```
+   887	
+   888	### Phase Build Plan
+   889	
+   890	Purpose:
+   891	
+   892	```text
+   893	sequence the build into a manageable phase
+   894	```
+   895	
+   896	Must include:
+   897	
+   898	```text
+   899	phase objective
+   900	phase scope
+   901	out-of-scope items
+   902	dependencies
+   903	implementation workstreams
+   904	risk areas
+   905	test strategy
+   906	CLI/UAT strategy, if applicable
+   907	migration strategy
+   908	acceptance criteria
+   909	documentation close-out
+   910	```
+   911	
+   912	Completion standard:
+   913	
+   914	```text
+   915	the phase is bounded and can be converted into tactical implementation work
+   916	```
+   917	
+   918	### Tactical Implementation Plan
+   919	
+   920	Purpose:
+   921	
+   922	```text
+   923	convert phase intent into executable implementation work
+   924	```
+   925	
+   926	Must include:
+   927	
+   928	```text
+   929	workstreams
+   930	file/module ownership expectations
+   931	data/schema changes
+   932	API/CLI changes
+   933	migration order
+   934	test plan
+   935	negative tests
+   936	acceptance criteria
+   937	verification commands
+   938	rollback or reset considerations
+   939	documentation close-out
+   940	accuracy pass findings
+   941	```
+   942	
+   943	Completion standard:
+   944	
+   945	```text
+   946	an AI builder can implement from this plan without inventing architecture or scope
+   947	```
+   948	
+   949	### Construction Directive / AI Build Prompt
+   950	
+   951	Purpose:
+   952	
+   953	```text
+   954	instruct an AI engineering tool to implement a bounded unit of work
+   955	```
+   956	
+   957	Must include:
+   958	
+   959	```text
+   960	role of the AI builder
+   961	source authority documents
+   962	source authority revisions
+   963	implementation objective
+   964	allowed scope
+   965	explicit non-goals
+   966	required behavior
+   967	required tests
+   968	required verification
+   969	migration instructions
+   970	security constraints
+   971	documentation close-out
+   972	reporting expectations
+   973	```
+   974	
+   975	Completion standard:
+   976	
+   977	```text
+   978	the directive is preserved, pinned to authority, and precise enough to reduce drift while remaining
+   979	broad enough to complete the phase
+   980	```
+   981	
+   982	### Test and UAT Plan
+   983	
+   984	Purpose:
+   985	
+   986	```text
+   987	define how success will be proven
+   988	```
+   989	
+   990	Must include:
+   991	
+   992	```text
+   993	unit test requirements
+   994	integration test requirements
+   995	CLI/UAT scenarios
+   996	security/governance tests
+   997	negative tests
+   998	migration tests
+   999	fixtures
+  1000	manual checks
+  1001	expected outputs
+  1002	coverage gaps
+  1003	```
+  1004	
+  1005	Completion standard:
+  1006	
+  1007	```text
+  1008	the implementation can be accepted or rejected using documented evidence
+  1009	```
+  1010	
+  1011	### Code Review Report
+  1012	
+  1013	Purpose:
+  1014	
+  1015	```text
+  1016	evaluate whether the code matches the documented authority
+  1017	```
+  1018	
+  1019	Must include:
+  1020	
+  1021	```text
+  1022	review scope
+  1023	source documents reviewed
+  1024	implementation areas reviewed
+  1025	findings
+  1026	severity
+  1027	spec drift
+  1028	test gaps
+  1029	security risks
+  1030	quality concerns
+  1031	opportunities for improvement
+  1032	residual risk
+  1033	```
+  1034	
+  1035	Completion standard:
+  1036	
+  1037	```text
+  1038	the team knows whether the implementation is conformant and what must be remediated
+  1039	```
+  1040	
+  1041	### Remediation Plan / Prompt
+  1042	
+  1043	Purpose:
+  1044	
+  1045	```text
+  1046	correct specific review findings without widening scope
+  1047	```
+  1048	
+  1049	Must include:
+  1050	
+  1051	```text
+  1052	finding-to-remediation mapping
+  1053	precise implementation instructions
+  1054	tests required for each finding
+  1055	non-goals
+  1056	verification steps
+  1057	documentation updates
+  1058	```
+  1059	
+  1060	Completion standard:
+  1061	
+  1062	```text
+  1063	each finding has a targeted correction path
+  1064	```
+  1065	
+  1066	### As-Built Documentation Close-Out
+  1067	
+  1068	Purpose:
+  1069	
+  1070	```text
+  1071	reconcile documentation with the implemented system
+  1072	```
+  1073	
+  1074	Must include:
+  1075	
+  1076	```text
+  1077	implemented behavior
+  1078	deferred behavior
+  1079	changed assumptions
+  1080	updated developer guides
+  1081	updated CLI/API/config docs
+  1082	updated examples
+  1083	updated diagrams
+  1084	updated schema references
+  1085	known limitations
+  1086	test evidence
+  1087	```
+  1088	
+  1089	Completion standard:
+  1090	
+  1091	```text
+  1092	future developers can understand the actual system without relying on chat history
+  1093	```
+  1094	
+  1095	### Traceability Matrix
+  1096	
+  1097	Purpose:
+  1098	
+  1099	```text
+  1100	prove requirement-to-test continuity
+  1101	```
+  1102	
+  1103	Minimum columns:
+  1104	
+  1105	```text
+  1106	requirement id
+  1107	requirement summary
+  1108	source document
+  1109	architecture rule
+  1110	build-plan item
+  1111	tactical task
+  1112	implementation file/module
+  1113	test or UAT evidence
+  1114	status
+  1115	notes
+  1116	```
+  1117	
+  1118	Completion standard:
+  1119	
+  1120	```text
+  1121	major requirements have visible implementation and verification evidence
+  1122	```
+  1123	
+  1124	## Process Gates
+  1125	
+  1126	The canonical gate enumeration and detailed entry/exit criteria live in
+  1127	docs/methodology/guides/gates.md. The enumeration below must remain synchronized
+  1128	with that document. In any conflict, gates.md controls.
+  1129	
+  1130	### G0: Project Initialized
+  1131	
+  1132	Exit criteria:
+  1133	
+  1134	```text
+  1135	manifest paths are syntactically valid
+  1136	starter docs exist
+  1137	current gate is recorded as G1
+  1138	```
+  1139	
+  1140	### G1: Vision Ready
+  1141	
+  1142	Exit criteria:
+  1143	
+  1144	```text
+  1145	problem statement is clear
+  1146	target users are clear
+  1147	success criteria are measurable and include read timing
+  1148	non-goals are explicit
+  1149	blocking open questions are assigned
+  1150	```
+  1151	
+  1152	### G2: Requirements Ready
+  1153	
+  1154	Exit criteria:
+  1155	
+  1156	```text
+  1157	every baseline requirement has acceptance criteria
+  1158	requirements are specific enough for architecture and tests
+  1159	deferred items have reasons
+  1160	open questions that block architecture are resolved or assigned
+  1161	```
+  1162	
+  1163	### G3: Architecture Ready
+  1164	
+  1165	Exit criteria:
+  1166	
+  1167	```text
+  1168	architecture rules trace to requirements
+  1169	ownership boundaries are clear
+  1170	state and lifecycle are defined
+  1171	stack decision is accepted
+  1172	implementation does not need to invent core structure
+  1173	```
+  1174	
+  1175	### G4: Governance Ready
+  1176	
+  1177	Exit criteria:
+  1178	
+  1179	```text
+  1180	every actor has permitted and forbidden actions
+  1181	authorization rules include positive and negative tests
+  1182	audit requirements are explicit
+  1183	secrets and sensitive data handling are defined
+  1184	agent/tool stop conditions are documented or marked N/A
+  1185	```
+  1186	
+  1187	### G5: Build Ready
+  1188	
+  1189	Exit criteria:
+  1190	
+  1191	```text
+  1192	the build is partitioned into ordered, independently testable phases
+  1193	every phase carries a stable id label; order is defined by the phase plan
+  1194	the requirement coverage map accounts for all in-scope requirements
+  1195	integration criteria are declared
+  1196	the partitioning rationale records the sizing criterion
+  1197	```
+  1198	
+  1199	The G5 to G6 span has an interior phase loop: while current gate stays G5, the
+  1200	build proceeds one phase at a time through interior checkpoints (`G5.x`) that
+  1201	produce each phase's planning artifacts and record its exit. Checkpoints are not
+  1202	gates; `G5.0` is the phase plan checkpoint, not a gate transition. Current
+  1203	gate remains G5 through all `G5.x`.
+  1204	
+  1205	The canonical definition is in docs/methodology/guides/gates.md ("G5 Interior:
+  1206	The Phase Loop") and docs/methodology/guides/phase-loop.md.
+  1207	
+  1208	### G6: Implementation Ready For Review
+  1209	
+  1210	Exit criteria:
+  1211	
+  1212	```text
+  1213	all declared phases have closed phase-exit checkpoints
+  1214	aggregate regression suite is green at the candidate revision
+  1215	integration criteria are satisfied or carried forward as explicit residuals
+  1216	implementation summary and evidence are complete enough for one conformance cycle
+  1217	```
+  1218	
+  1219	### G7: Acceptance Ready
+  1220	
+  1221	Exit criteria:
+  1222	
+  1223	```text
+  1224	critical findings are remediated
+  1225	major findings are remediated or explicitly accepted with rationale
+  1226	tests and UAT evidence exist
+  1227	residual risk is documented
+  1228	traceability matrix reflects actual status
+  1229	```
+  1230	
+  1231	### G8: Deployment Ready
+  1232	
+  1233	Exit criteria:
+  1234	
+  1235	```text
+  1236	deployment/release scope is accepted
+  1237	deployment approvals, command/rollback plan, runbook, and monitoring are defined
+  1238	production-impacting migrations and security implications are approved
+  1239	post-deployment owner, value-review disposition, and validation trigger are defined
+  1240	if not deploying, a non-deployment disposition is explicitly accepted
+  1241	```
+  1242	
+  1243	### G9: As-Built Closed
+  1244	
+  1245	Exit criteria:
+  1246	
+  1247	```text
+  1248	future agents can understand the actual system without chat history
+  1249	implemented behavior, deferred behavior, and deviations are explicit
+  1250	deployment/validation outcomes and operational disposition are recorded
+  1251	test evidence is complete and traceable
+  1252	project status is closed for this iteration or release
+  1253	```
+  1254	
+  1255	## AI-Assisted Build Prompt Standard
+  1256	
+  1257	Every substantial AI build prompt should include this structure.
+  1258	
+  1259	```markdown
+  1260	# Build Prompt
+  1261	
+  1262	## Role
+  1263	You are implementing a bounded software phase from documented authority.
+  1264	
+  1265	## Source Authority
+  1266	- Vision:
+  1267	- PRD:
+  1268	- Architecture:
+  1269	- Governance/Security:
+  1270	- Build Plan:
+  1271	- Tactical Implementation Plan:
+  1272	- Traceability Matrix:
+  1273	
+  1274	## Objective
+  1275	State exactly what must be built.
+  1276	
+  1277	## Scope
+  1278	State what is in scope.
+  1279	
+  1280	## Non-Goals
+  1281	State what must not be built.
+  1282	
+  1283	## Implementation Requirements
+  1284	List required behavior, modules, schemas, APIs, CLI commands, and migration behavior.
+  1285	
+  1286	## Security and Governance Requirements
+  1287	List permission, identity, audit, approval, data, and policy requirements.
+  1288	
+  1289	## Test Requirements
+  1290	List required tests, negative tests, fixtures, and UAT commands.
+  1291	
+  1292	## Documentation Close-Out
+  1293	List docs that must be updated.
+  1294	
+  1295	## Verification
+  1296	List commands to run and expected evidence.
+  1297	
+  1298	## Reporting
+  1299	Require summary of changes, tests run, skipped tests, risks, and deviations.
+  1300	```
+  1301	
+  1302	## Review Standard
+  1303	
+  1304	A review should prioritize findings over summary.
+  1305	
+  1306	Minimum review questions:
+  1307	
+  1308	```text
+  1309	does the code implement the documented requirements?
+  1310	does the code preserve architecture boundaries?
+  1311	does the code preserve security and governance rules?
+  1312	does the code include required tests?
+  1313	does the CLI/API expose the required UAT surface?
+  1314	does the code introduce undocumented scope?
+  1315	does the implementation leave deferred features accidentally executable?
+  1316	does the documentation reflect the as-built result?
+  1317	```
+  1318	
+  1319	Finding format:
+  1320	
+  1321	```text
+  1322	id:
+  1323	severity:
+  1324	source requirement:
+  1325	affected code:
+  1326	problem:
+  1327	risk:
+  1328	required remediation:
+  1329	required test:
+  1330	```
+  1331	
+  1332	## Traceability Matrix Template
+  1333	
+  1334	```markdown
+  1335	| Requirement ID | Requirement | Source | Architecture Rule | Build Item | Tactical Task | Implementation | Test/UAT Evidence | Status | Notes |
+  1336	| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+  1337	| REQ-001 |  |  |  |  |  |  |  | planned |  |
+  1338	```
+  1339	
+  1340	Status values:
+  1341	
+  1342	```text
+  1343	planned
+  1344	implemented
+  1345	verified
+  1346	deferred
+  1347	rejected
+  1348	blocked
+  1349	```
+  1350	
+  1351	## Decision Record Template
+  1352	
+  1353	```markdown
+  1354	# Decision Record: <title>
+  1355	
+  1356	Date:
+  1357	Status: Proposed | Accepted | Rejected | Superseded
+  1358	Owner:
+  1359	
+  1360	## Context
+  1361	
+  1362	## Decision
+  1363	
+  1364	## Rationale
+  1365	
+  1366	## Alternatives Considered
+  1367	
+  1368	## Consequences
+  1369	
+  1370	## Test Impact
+  1371	
+  1372	## Security/Governance Impact
+  1373	
+  1374	## Documentation Impact
+  1375	
+  1376	## Deferred Follow-Up
+  1377	```
+  1378	
+  1379	## Documentation Close-Out Checklist
+  1380	
+  1381	```text
+  1382	developer guide updated
+  1383	architecture docs updated
+  1384	PRD status updated
+  1385	CLI/API/config docs updated
+  1386	examples updated
+  1387	schemas updated
+  1388	diagrams updated
+  1389	traceability matrix updated
+  1390	deferred backlog updated
+  1391	known limitations updated
+  1392	test evidence recorded
+  1393	as-built deviations documented
+  1394	```
+  1395	
+  1396	## Anti-Patterns
+  1397	
+  1398	Avoid:
+  1399	
+  1400	```text
+  1401	building directly from a chat idea
+  1402	using an AI prompt as the only source of truth
+  1403	letting implementation define architecture
+  1404	adding tests only after code review finds gaps
+  1405	mixing deferred features into current phase
+  1406	keeping security behavior implicit
+  1407	letting docs describe planned behavior as implemented
+  1408	accepting code without traceability to requirements
+  1409	writing remediation prompts that do not map to findings
+  1410	allowing AI tools to silently broaden scope
+  1411	```
+  1412	
+  1413	## Minimal Project Profile
+  1414	
+  1415	For a small project or prototype, the minimum acceptable artifact set is:
+  1416	
+  1417	```text
+  1418	1. short vision/problem statement
+  1419	2. compact PRD with acceptance criteria
+  1420	3. lightweight architecture note
+  1421	4. tactical implementation plan with tests
+  1422	5. AI build prompt
+  1423	6. review/remediation notes
+  1424	7. as-built close-out
+  1425	```
+  1426	
+  1427	Even in the minimal profile, the project must preserve:
+  1428	
+  1429	```text
+  1430	scope boundaries
+  1431	testability
+  1432	security notes
+  1433	deferred items
+  1434	traceability from requirement to verification
+  1435	```
+  1436	
+  1437	## Large Project Profile
+  1438	
+  1439	For complex, security-sensitive, agentic, or multi-phase projects, use the full artifact chain:
+  1440	
+  1441	```text
+  1442	vision
+  1443	PRD
+  1444	architecture specification
+  1445	governance/security specification
+  1446	build definition
+  1447	phase build plans
+  1448	tactical implementation plans
+  1449	construction directives
+  1450	test/UAT plans
+  1451	traceability matrix
+  1452	code review reports
+  1453	remediation prompts
+  1454	as-built documentation close-out
+  1455	decision records
+  1456	deferred feature backlog
+  1457	```
+  1458	
+  1459	## Final Standard
+  1460	
+  1461	A project governed by this constitution is ready for AI-assisted implementation only when:
+  1462	
+  1463	```text
+  1464	the work is documented
+  1465	the scope is bounded
+  1466	the architecture is explicit
+  1467	security and governance are testable
+  1468	implementation prompts cite authority
+  1469	tests are planned
+  1470	review checks conformance
+  1471	remediation is traceable
+  1472	documentation is reconciled
+  1473	```
+  1474	
+  1475	If those conditions are not met, the next task is documentation, not code generation.
+  1476	
+  1477	## Appendix A: Reusable AI Prompt Library
+  1478	
+  1479	This appendix provides reusable prompts for applying this constitution with AI-assisted engineering tools.
+  1480	
+  1481	The prompts are intentionally verbose. Their purpose is to reduce ambiguity, control scope, preserve traceability, and prevent AI-assisted phase drift.
+  1482	
+  1483	Use these prompts as templates. Replace bracketed values with project-specific context.
+  1484	
+  1485	### Prompt 1: Vision and Problem Framing
+  1486	
+  1487	Use when starting a new product, major feature, or refactor before writing requirements.
+  1488	
+  1489	```text
+  1490	I am starting a new software effort: [project or feature name].
+  1491	
+  1492	Help me build a vision and problem-framing document that can serve as the first authority document for future requirements, architecture, and implementation planning.
+  1493	
+  1494	The document must include:
+  1495	
+  1496	- problem statement;
+  1497	- target users or operators;
+  1498	- user pain or opportunity;
+  1499	- desired outcomes;
+  1500	- success criteria;
+  1501	- non-goals;
+  1502	- major assumptions;
+  1503	- major risks;
+  1504	- initial security, governance, or compliance concerns;
+  1505	- likely testability implications;
+  1506	- open questions that must be answered before writing a PRD.
+  1507	
+  1508	Do not write implementation details yet.
+  1509	
+  1510	Ask any clarifying questions that would materially improve the document before drafting. If assumptions are necessary, state them explicitly.
+  1511	```
+  1512	
+  1513	### Prompt 2: PRD Construction
+  1514	
+  1515	Use after vision/problem framing is stable.
+  1516	
+  1517	```text
+  1518	Using the following vision/problem-framing document as authority:
+  1519	
+  1520	[attach or cite document path]
+  1521	
+  1522	Build a Product Requirements Document for [project or feature name].
+  1523	
+  1524	The PRD must be precise, testable, and implementation-ready but must not prescribe code architecture unless the vision document already requires it.
+  1525	
+  1526	Include:
+  1527	
+  1528	- product objective;
+  1529	- target users;
+  1530	- functional requirements;
+  1531	- non-functional requirements;
+  1532	- primary workflows;
+  1533	- edge cases;
+  1534	- explicit non-goals;
+  1535	- deferred items;
+  1536	- acceptance criteria;
+  1537	- security/governance requirements visible at the product level;
+  1538	- observability/audit requirements if applicable;
+  1539	- testability notes;
+  1540	- open questions.
+  1541	
+  1542	Assign stable requirement IDs.
+  1543	
+  1544	For each requirement, identify whether it is:
+  1545	
+  1546	- baseline;
+  1547	- deferred;
+  1548	- optional;
+  1549	- open pending decision.
+  1550	
+  1551	Perform an accuracy pass when complete. During the accuracy pass, identify contradictions, vague requirements, missing acceptance criteria, untestable claims, and any scope that appears to exceed the vision document.
+  1552	```
+  1553	
+  1554	### Prompt 3: Architecture Specification
+  1555	
+  1556	Use after the PRD is accepted.
+  1557	
+  1558	```text
+  1559	Using these authority documents:
+  1560	
+  1561	- Vision / Problem Framing: [path]
+  1562	- PRD: [path]
+  1563	
+  1564	Build an architecture specification for [project or feature name].
+  1565	
+  1566	The architecture must be detailed enough to guide future tactical implementation plans and AI-assisted code generation without forcing implementers to invent core boundaries.
+  1567	
+  1568	Include:
+  1569	
+  1570	- purpose and scope;
+  1571	- terminology and glossary;
+  1572	- domain model;
+  1573	- component responsibilities;
+  1574	- ownership boundaries;
+  1575	- runtime model;
+  1576	- data model;
+  1577	- state lifecycle;
+  1578	- interfaces and integration points;
+  1579	- error and failure behavior;
+  1580	- security/governance boundaries;
+  1581	- identity and permission model if applicable;
+  1582	- audit and observability model if applicable;
+  1583	- configuration model;
+  1584	- extension points;
+  1585	- deferred architecture;
+  1586	- diagrams where useful;
+  1587	- verification specification;
+  1588	- open decisions.
+  1589	
+  1590	Every major architecture rule must trace back to one or more PRD requirements.
+  1591	
+  1592	Do not implement code.
+  1593	
+  1594	Ask clarifying questions before drafting if needed. After drafting, perform an accuracy pass that identifies ambiguity, contradictions, missing security boundaries, missing testability hooks, and likely implementation risks.
+  1595	```
+  1596	
+  1597	### Prompt 4: Governance and Security Specification
+  1598	
+  1599	Use for security-sensitive systems or any agentic/tool-using platform.
+  1600	
+  1601	```text
+  1602	Using these authority documents:
+  1603	
+  1604	- Vision / Problem Framing: [path]
+  1605	- PRD: [path]
+  1606	- Architecture Specification: [path]
+  1607	
+  1608	Build a governance and security specification for [project or feature name].
+  1609	
+  1610	The specification must define security-sensitive behavior as testable requirements, not advisory guidance.
+  1611	
+  1612	Include:
+  1613	
+  1614	- identity model;
+  1615	- actor types;
+  1616	- permission model;
+  1617	- authorization boundaries;
+  1618	- policy model;
+  1619	- approval model;
+  1620	- audit record model;
+  1621	- data sensitivity model;
+  1622	- secrets handling;
+  1623	- tool or external-system access rules;
+  1624	- failure, pause, stop, retry, and recovery behavior;
+  1625	- revocation/deactivation behavior;
+  1626	- threat scenarios;
+  1627	- negative tests;
+  1628	- CLI/API/UAT inspection requirements if applicable;
+  1629	- documentation close-out requirements.
+  1630	
+  1631	For agentic systems, explicitly define:
+  1632	
+  1633	- agent identity;
+  1634	- agent definition/versioning;
+  1635	- agent sessions;
+  1636	- agent actions/effects;
+  1637	- tool-use attribution;
+  1638	- artifact attribution;
+  1639	- cross-run or cross-workflow lineage;
+  1640	- what must be auditable.
+  1641	
+  1642	Perform an accuracy pass and identify any missing security boundary that could cause implementation drift.
+  1643	```
+  1644	
+  1645	### Prompt 5: Build Definition
+  1646	
+  1647	Use to convert accepted requirements and architecture into a buildable unit of work.
+  1648	
+  1649	```text
+  1650	Using these authority documents:
+  1651	
+  1652	- PRD: [path]
+  1653	- Architecture Specification: [path]
+  1654	- Governance/Security Specification: [path, if applicable]
+  1655	
+  1656	Build a build definition for [project or feature name].
+  1657	
+  1658	This document must define what the implementation effort is authorized to build.
+  1659	
+  1660	Include:
+  1661	
+  1662	- build objective;
+  1663	- source authority documents;
+  1664	- in-scope capabilities;
+  1665	- out-of-scope capabilities;
+  1666	- deferred features;
+  1667	- implementation constraints;
+  1668	- required schemas or interfaces;
+  1669	- migration/removal requirements if applicable;
+  1670	- required test categories;
+  1671	- required CLI/API/UAT evidence;
+  1672	- security/governance constraints;
+  1673	- documentation close-out requirements;
+  1674	- open decisions that block implementation.
+  1675	
+  1676	Do not write a tactical implementation plan yet.
+  1677	
+  1678	Perform an accuracy pass and identify any scope ambiguity, missing test requirement, missing migration boundary, or undocumented security assumption.
+  1679	```
+  1680	
+  1681	### Prompt 6: Phase Build Plan
+  1682	
+  1683	Use when work must be split into phases.
+  1684	
+  1685	```text
+  1686	Using the following authority documents:
+  1687	
+  1688	- Build Definition: [path]
+  1689	- Architecture Specification: [path]
+  1690	- PRD: [path]
+  1691	
+  1692	Build a phase build plan for [phase name].
+  1693	
+  1694	The phase plan must be bounded and must prevent feature smuggling.
+  1695	
+  1696	Include:
+  1697	
+  1698	- phase objective;
+  1699	- phase scope;
+  1700	- explicit non-goals;
+  1701	- dependencies;
+  1702	- deferred items;
+  1703	- workstreams;
+  1704	- sequencing;
+  1705	- risk areas;
+  1706	- security/governance implications;
+  1707	- migration/removal implications;
+  1708	- test strategy;
+  1709	- CLI/API/UAT strategy;
+  1710	- acceptance criteria;
+  1711	- documentation close-out requirements.
+  1712	
+  1713	Mark every requirement or feature as:
+  1714	
+  1715	- included in this phase;
+  1716	- explicitly deferred;
+  1717	- not applicable;
+  1718	- blocked pending decision.
+  1719	
+  1720	Perform an accuracy pass and identify anything that is too vague to implement or too broad for this phase.
+  1721	```
+  1722	
+  1723	### Prompt 7: Tactical Implementation Plan
+  1724	
+  1725	Use before any substantial code generation.
+  1726	
+  1727	```text
+  1728	Using these authority documents:
+  1729	
+  1730	- Vision / Problem Framing: [path]
+  1731	- PRD: [path]
+  1732	- Architecture Specification: [path]
+  1733	- Governance/Security Specification: [path, if applicable]
+  1734	- Build Definition: [path]
+  1735	- Phase Build Plan: [path]
+  1736	
+  1737	Build a tactical implementation plan for [phase name].
+  1738	
+  1739	The tactical plan must be detailed, precise, and executable by an AI-assisted engineering tool without requiring it to invent architecture, scope, or tests.
+  1740	
+  1741	Include:
+  1742	
+  1743	- implementation objective;
+  1744	- source authority and precedence;
+  1745	- assumptions;
+  1746	- non-goals;
+  1747	- workstreams;
+  1748	- file/module ownership expectations;
+  1749	- data/schema changes;
+  1750	- API/CLI/config changes;
+  1751	- migration order;
+  1752	- security/governance work;
+  1753	- tests for each workstream;
+  1754	- negative tests;
+  1755	- CLI/API/UAT checks;
+  1756	- verification commands;
+  1757	- acceptance criteria;
+  1758	- documentation close-out;
+  1759	- deferred items;
+  1760	- known risks.
+  1761	
+  1762	Every workstream must include test expectations.
+  1763	
+  1764	Every security-sensitive behavior must include verification requirements.
+  1765	
+  1766	Perform an accuracy pass when complete. During the accuracy pass, identify errors, omissions, contradictions, vague instructions, missing tests, missing migration steps, missing documentation close-out items, and opportunities for improvement.
+  1767	```
+  1768	
+  1769	### Prompt 8: Construction Directive
+  1770	
+  1771	Use to convert the tactical plan into implementation authority for an AI builder.
+  1772	
+  1773	```text
+  1774	Using this tactical implementation plan as primary authority:
+  1775	
+  1776	[path]
+  1777	
+  1778	And these supporting authority documents:
+  1779	
+  1780	- PRD: [path]
+  1781	- Architecture Specification: [path]
+  1782	- Governance/Security Specification: [path, if applicable]
+  1783	- Phase Build Plan: [path]
+  1784	
+  1785	Build a construction directive for [phase name].
+  1786	
+  1787	The directive will be sent to an AI engineering tool to implement the phase.
+  1788	
+  1789	It must be precise, bounded, and tightly coupled to the tactical implementation plan.
+  1790	
+  1791	Include:
+  1792	
+  1793	- AI builder role;
+  1794	- implementation objective;
+  1795	- source authority and precedence;
+  1796	- allowed scope;
+  1797	- explicit non-goals;
+  1798	- required implementation workstreams;
+  1799	- required migration/removal behavior;
+  1800	- required security/governance behavior;
+  1801	- required tests;
+  1802	- required verification commands;
+  1803	- required CLI/API/UAT evidence;
+  1804	- documentation close-out requirements;
+  1805	- reporting requirements;
+  1806	- stop conditions.
+  1807	
+  1808	The directive must tell the AI builder not to implement deferred features, not to silently change architecture, and not to broaden scope without explicit authorization.
+  1809	
+  1810	Perform an accuracy pass and verify that each tactical workstream is represented in the directive.
+  1811	```
+  1812	
+  1813	### Prompt 9: Direct AI Build Prompt
+  1814	
+  1815	Use when sending the final implementation request to an AI builder.
+  1816	
+  1817	```text
+  1818	You are implementing [phase name] for [project name].
+  1819	
+  1820	Primary authority:
+  1821	
+  1822	[construction directive path or pasted directive]
+  1823	
+  1824	Supporting authority:
+  1825	
+  1826	- Tactical Implementation Plan: [path]
+  1827	- Phase Build Plan: [path]
+  1828	- Architecture Specification: [path]
+  1829	- Governance/Security Specification: [path, if applicable]
+  1830	- PRD: [path]
+  1831	
+  1832	Your task:
+  1833	
+  1834	Implement only the scope authorized by the construction directive.
+  1835	
+  1836	You must:
+  1837	
+  1838	- follow the documented architecture;
+  1839	- preserve all phase boundaries;
+  1840	- avoid deferred features;
+  1841	- implement required tests;
+  1842	- implement required migration/rejection behavior;
+  1843	- preserve security and governance requirements;
+  1844	- update required documentation;
+  1845	- run the specified verification commands where possible;
+  1846	- report tests run, skipped tests, risks, and deviations.
+  1847	
+  1848	You must not:
+  1849	
+  1850	- infer new scope from surrounding context;
+  1851	- rename core concepts unless authorized;
+  1852	- remove unrelated code;
+  1853	- weaken permissions, identity, audit, or policy behavior;
+  1854	- mark planned behavior as implemented unless it is actually implemented;
+  1855	- hide failures or skipped verification.
+  1856	
+  1857	When complete, provide:
+  1858	
+  1859	- summary of implementation;
+  1860	- files changed;
+  1861	- tests added/updated;
+  1862	- commands run;
+  1863	- skipped verification with reasons;
+  1864	- known risks;
+  1865	- documentation updated;
+  1866	- any deviations from the directive.
+  1867	```
+  1868	
+  1869	### Prompt 10: Full Code Review
+  1870	
+  1871	Use after AI-generated implementation.
+  1872	
+  1873	```text
+  1874	The code for [phase name] has been generated.
+  1875	
+  1876	Perform a deep, independent code review.
+  1877	
+  1878	Authority documents:
+  1879	
+  1880	- PRD: [path]
+  1881	- Architecture Specification: [path]
+  1882	- Governance/Security Specification: [path, if applicable]
+  1883	- Phase Build Plan: [path]
+  1884	- Tactical Implementation Plan: [path]
+  1885	- Construction Directive: [path]
+  1886	
+  1887	Evaluate:
+  1888	
+  1889	1. Did the code drift from the specification?
+  1890	2. Does the code support the assertions made in the authority documents?
+  1891	3. Is the code internally consistent with the documented architecture?
+  1892	4. Does the code meet engineering quality expectations?
+  1893	5. Are there security, governance, identity, permission, audit, or data risks?
+  1894	6. Are required CLI/API/UAT surfaces implemented?
+  1895	7. Are required tests present and meaningful?
+  1896	8. Were deferred features accidentally implemented?
+  1897	9. Were required documentation updates completed?
+  1898	10. Are there opportunities for improvement?
+  1899	
+  1900	Do not change code unless explicitly instructed.
+  1901	
+  1902	Produce a Markdown review report with findings ordered by severity.
+  1903	
+  1904	For each finding include:
+  1905	
+  1906	- finding id;
+  1907	- severity;
+  1908	- affected files/modules;
+  1909	- violated requirement or architecture rule;
+  1910	- problem;
+  1911	- risk;
+  1912	- required remediation;
+  1913	- required tests;
+  1914	- documentation impact.
+  1915	
+  1916	After findings, include residual risks and testing gaps.
+  1917	```
+  1918	
+  1919	### Prompt 11: Delta Code Review
+  1920	
+  1921	Use after remediation or a smaller code update.
+  1922	
+  1923	```text
+  1924	The implementation for [phase name] has been updated after prior review/remediation.
+  1925	
+  1926	Perform a delta review only.
+  1927	
+  1928	Authority documents:
+  1929	
+  1930	- Prior Code Review: [path]
+  1931	- Remediation Plan or Prompt: [path]
+  1932	- Tactical Implementation Plan: [path]
+  1933	- Architecture Specification: [path]
+  1934	- PRD: [path]
+  1935	
+  1936	Evaluate:
+  1937	
+  1938	- whether each prior finding was fully remediated;
+  1939	- whether the remediation introduced regressions;
+  1940	- whether tests were added or updated correctly;
+  1941	- whether documentation close-out was completed;
+  1942	- whether any new issue appears in the changed code.
+  1943	
+  1944	Do not repeat the full original review unless necessary.
+  1945	
+  1946	Produce precise findings only. If no findings remain, say so and identify residual risk.
+  1947	```
+  1948	
+  1949	### Prompt 12: Remediation Prompt
+  1950	
+  1951	Use to turn review findings into a direct fix prompt for an AI builder.
+  1952	
+  1953	```text
+  1954	Using this code review as authority:
+  1955	
+  1956	[path]
+  1957	
+  1958	Construct a remediation prompt for [phase name].
+  1959	
+  1960	The remediation prompt must mitigate every finding and must not introduce unrelated scope.
+  1961	
+  1962	For each finding, include:
+  1963	
+  1964	- finding id;
+  1965	- required code change;
+  1966	- required test change;
+  1967	- required documentation change, if any;
+  1968	- acceptance criteria for the fix.
+  1969	
+  1970	The prompt must instruct the AI builder to:
+  1971	
+  1972	- preserve existing architecture;
+  1973	- avoid deferred features;
+  1974	- avoid broad refactors not required by the findings;
+  1975	- run relevant tests;
+  1976	- report any skipped verification;
+  1977	- summarize how each finding was remediated.
+  1978	
+  1979	Before finalizing, perform an accuracy pass and confirm that every finding is covered exactly once.
+  1980	```
+  1981	
+  1982	### Prompt 13: Traceability Matrix Construction
+  1983	
+  1984	Use to enforce requirement-to-test continuity.
+  1985	
+  1986	```text
+  1987	Using these authority documents:
+  1988	
+  1989	- PRD: [path]
+  1990	- Architecture Specification: [path]
+  1991	- Governance/Security Specification: [path, if applicable]
+  1992	- Build Plan: [path]
+  1993	- Tactical Implementation Plan: [path]
+  1994	- Test/UAT Plan: [path, if separate]
+  1995	
+  1996	Build a traceability matrix.
+  1997	
+  1998	The matrix must map:
+  1999	
+  2000	- requirement id;
+  2001	- requirement summary;
+  2002	- source document;
+  2003	- architecture rule;
+  2004	- build-plan item;
+  2005	- tactical task;
+  2006	- implementation area, if known;
+  2007	- test or UAT evidence;
+  2008	- status;
+  2009	- notes.
+  2010	
+  2011	Identify:
+  2012	
+  2013	- requirements without architecture coverage;
+  2014	- architecture rules without implementation tasks;
+  2015	- implementation tasks without tests;
+  2016	- tests that do not map to requirements;
+  2017	- deferred requirements;
+  2018	- blocked requirements;
+  2019	- unclear or untestable requirements.
+  2020	
+  2021	Do not invent implementation status unless evidence exists.
+  2022	```
+  2023	
+  2024	### Prompt 14: Documentation Close-Out
+  2025	
+  2026	Use after implementation and remediation.
+  2027	
+  2028	```text
+  2029	Perform documentation close-out for [phase name].
+  2030	
+  2031	Authority documents:
+  2032	
+  2033	- Tactical Implementation Plan: [path]
+  2034	- Construction Directive: [path]
+  2035	- Code Review Report: [path]
+  2036	- Remediation Report or Prompt: [path]
+  2037	- Implementation summary: [path or pasted summary]
+  2038	
+  2039	Update documentation to reflect the as-built outcome.
+  2040	
+  2041	Review and update, as applicable:
+  2042	
+  2043	- developer guide;
+  2044	- architecture docs;
+  2045	- PRD implementation status;
+  2046	- CLI/API docs;
+  2047	- configuration docs;
+  2048	- examples;
+  2049	- schema references;
+  2050	- diagrams;
+  2051	- deferred feature backlog;
+  2052	- known limitations;
+  2053	- traceability matrix;
+  2054	- test evidence.
+  2055	
+  2056	Do not describe planned behavior as implemented unless it is actually implemented.
+  2057	
+  2058	Identify any documentation that could not be updated and explain why.
+  2059	```
+  2060	
+  2061	### Prompt 15: Migration and Removal Analysis
+  2062	
+  2063	Use before a major refactor or replacement of old architecture.
+  2064	
+  2065	```text
+  2066	We are planning a refactor for [system/subsystem].
+  2067	
+  2068	Using these authority documents:
+  2069	
+  2070	- Current Architecture or Code Review: [path]
+  2071	- Target Architecture Specification: [path]
+  2072	- Build Plan: [path, if available]
+  2073	
+  2074	Build a migration and removal analysis.
+  2075	
+  2076	The analysis must compare the old implementation against the new target architecture object by object.
+  2077	
+  2078	Classify each current object, module, schema, command, and test as:
+  2079	
+  2080	- replace;
+  2081	- adapt;
+  2082	- split;
+  2083	- retain;
+  2084	- quarantine;
+  2085	- remove;
+  2086	- defer.
+  2087	
+  2088	Include:
+  2089	
+  2090	- current implementation inventory;
+  2091	- target object inventory;
+  2092	- object-by-object migration matrix;
+  2093	- superseded concepts;
+  2094	- retained/adapted subsystems;
+  2095	- removal requirements;
+  2096	- schema/store migration requirements;
+  2097	- CLI/API migration requirements;
+  2098	- test migration requirements;
+  2099	- risks;
+  2100	- acceptance criteria.
+  2101	
+  2102	Assume backward compatibility is [required/not required].
+  2103	
+  2104	Be precise. The goal is to prevent old architecture from surviving under new names.
+  2105	```
+  2106	
+  2107	### Prompt 16: Architecture Drift Review
+  2108	
+  2109	Use when several AI-generated phases may have drifted from documentation.
+  2110	
+  2111	```text
+  2112	We have made significant code changes across multiple phases:
+  2113	
+  2114	[list phases]
+  2115	
+  2116	Perform a deep architecture drift review.
+  2117	
+  2118	Authority documents:
+  2119	
+  2120	- PRDs: [paths]
+  2121	- Architecture Specifications: [paths]
+  2122	- Build Plans: [paths]
+  2123	- Tactical Implementation Plans: [paths]
+  2124	- Construction Directives: [paths]
+  2125	
+  2126	Evaluate:
+  2127	
+  2128	- whether code drifted from specifications;
+  2129	- whether code supports assertions made in the documents;
+  2130	- whether code evolution is internally consistent;
+  2131	- whether generated code quality meets engineering standards;
+  2132	- whether security/governance/identity/permission/audit behavior is correct;
+  2133	- whether required CLI/API/UAT surfaces exist;
+  2134	- whether tests prove feature completeness;
+  2135	- whether design decisions should be revisited.
+  2136	
+  2137	Do not change code.
+  2138	
+  2139	Create a Markdown report with precise findings, risks, and opportunities for improvement.
+  2140	
+  2141	For each finding, identify the violated authority and recommended remediation.
+  2142	```
+  2143	
+  2144	### Prompt 17: Q&A Hardening Session
+  2145	
+  2146	Use when the architecture needs collaborative tightening before implementation.
+  2147	
+  2148	```text
+  2149	We are not ready to implement yet.
+  2150	
+  2151	Help run a Q&A hardening session for [topic/system/phase].
+  2152	
+  2153	Use these documents as context:
+  2154	
+  2155	- [paths]
+  2156	
+  2157	Your role:
+  2158	
+  2159	- identify the next most important unresolved decision;
+  2160	- ask one focused question at a time;
+  2161	- explain why the question matters;
+  2162	- recommend an option when useful;
+  2163	- identify risks and tradeoffs;
+  2164	- record locked decisions;
+  2165	- identify deferred items;
+  2166	- identify documentation updates needed after each decision.
+  2167	
+  2168	Do not write code.
+  2169	
+  2170	Do not broaden scope.
+  2171	
+  2172	After the session, produce or update a decision document summarizing:
+  2173	
+  2174	- locked decisions;
+  2175	- open decisions;
+  2176	- deferred features;
+  2177	- terminology changes;
+  2178	- architecture implications;
+  2179	- tactical planning implications.
+  2180	```
+  2181	
+  2182	### Prompt 18: Accuracy Pass
+  2183	
+  2184	Use after any important document is drafted.
+  2185	
+  2186	```text
+  2187	Perform an accuracy pass on this document:
+  2188	
+  2189	[path]
+  2190	
+  2191	Evaluate:
+  2192	
+  2193	- contradictions;
+  2194	- missing definitions;
+  2195	- terminology drift;
+  2196	- unclear authority;
+  2197	- untestable requirements;
+  2198	- missing acceptance criteria;
+  2199	- missing security/governance requirements;
+  2200	- missing migration behavior;
+  2201	- missing documentation close-out;
+  2202	- accidental deferred-feature authorization;
+  2203	- implementation ambiguity.
+  2204	
+  2205	Do not rewrite the document yet.
+  2206	
+  2207	Return:
+  2208	
+  2209	- findings;
+  2210	- severity;
+  2211	- recommended correction;
+  2212	- questions that must be answered before finalizing.
+  2213	```
+  2214	
+  2215	### Prompt 19: Prompt Quality Review
+  2216	
+  2217	Use before sending a construction prompt to an AI builder.
+  2218	
+  2219	```text
+  2220	Review this AI construction prompt before I send it to an implementation agent:
+  2221	
+  2222	[path or pasted prompt]
+  2223	
+  2224	Evaluate whether the prompt:
+  2225	
+  2226	- cites the correct authority documents;
+  2227	- has clear scope;
+  2228	- has clear non-goals;
+  2229	- prevents phase drift;
+  2230	- includes required tests;
+  2231	- includes security/governance requirements;
+  2232	- includes migration/removal instructions;
+  2233	- includes documentation close-out;
+  2234	- defines reporting expectations;
+  2235	- has any ambiguity that could cause incorrect implementation.
+  2236	
+  2237	Do not implement anything.
+  2238	
+  2239	Return recommended edits and a revised prompt if needed.
+  2240	```
+  2241	
+  2242	### Prompt 20: Deferred Feature Backlog Extraction
+  2243	
+  2244	Use to prevent deferred features from being lost or accidentally implemented.
+  2245	
+  2246	```text
+  2247	Using these documents:
+  2248	
+  2249	- PRD: [path]
+  2250	- Architecture Specification: [path]
+  2251	- Build Plan: [path]
+  2252	- Tactical Implementation Plan: [path]
+  2253	- Code Review Report: [path, if available]
+  2254	
+  2255	Extract a deferred feature backlog.
+  2256	
+  2257	For each deferred item include:
+  2258	
+  2259	- id;
+  2260	- title;
+  2261	- source document;
+  2262	- description;
+  2263	- reason deferred;
+  2264	- dependencies;
+  2265	- security/governance implications;
+  2266	- likely tests;
+  2267	- suggested future phase;
+  2268	- notes.
+  2269	
+  2270	Also identify any deferred feature that appears to have been accidentally implemented or partially implemented.
+  2271	```
+  2272	
+  2273	## Appendix B: Prompt Selection Guide
+  2274	
+  2275	Use this guide to choose the right prompt.
+  2276	
+  2277	| Situation | Use Prompt |
+  2278	| --- | --- |
+  2279	| Starting from an idea | Vision and Problem Framing |
+  2280	| Turning vision into product requirements | PRD Construction |
+  2281	| Defining system boundaries | Architecture Specification |
+  2282	| Defining permissions, identity, audit, or policy | Governance and Security Specification |
+  2283	| Deciding what a build may include | Build Definition |
+  2284	| Partitioning the build into ordered, testable phases | Phase Plan |
+  2285	| Splitting work into phases | Phase Build Plan |
+  2286	| Preparing executable implementation instructions | Tactical Implementation Plan |
+  2287	| Creating the AI builder's authority document | Construction Directive |
+  2288	| Sending implementation work to an AI builder | Direct AI Build Prompt |
+  2289	| Reviewing generated code | Full Code Review |
+  2290	| Reviewing after fixes | Delta Code Review |
+  2291	| Fixing review findings | Remediation Prompt |
+  2292	| Proving requirement-to-test coverage | Traceability Matrix Construction |
+  2293	| Reconciling docs after build | Documentation Close-Out |
+  2294	| Planning a refactor | Migration and Removal Analysis |
+  2295	| Checking multi-phase drift | Architecture Drift Review |
+  2296	| Tightening uncertain architecture | Q&A Hardening Session |
+  2297	| Checking a document | Accuracy Pass |
+  2298	| Checking a build prompt | Prompt Quality Review |
+  2299	| Capturing out-of-scope future work | Deferred Feature Backlog Extraction |
+================ docs/policies/repository-engineering-policy.md ================
+     1	# Repository Engineering Policy
+     2	
+     3	Status: Reusable operating policy
+     4	Authority: AGENTS.md and docs/methodology/constitution/gendev.md
+     5	Derived from: the active project integration; provenance is recorded in the v3 migration inventory.
+     6	
+     7	## Purpose and authority
+     8	
+     9	This policy governs engineering work in the active project. It supplements
+    10	[AGENTS.md](../../AGENTS.md) and the
+    11	[GenDev constitution](../methodology/constitution/gendev.md). Use the authority
+    12	precedence defined in AGENTS.md; this document introduces no competing order.
+    13	Accepted project governance, architecture, requirements, and approved phase
+    14	authority remain controlling for their scope. Stop and surface a conflict
+    15	rather than silently choosing a lower-level rule.
+    16	
+    17	The [task lifecycle policy](development-task-lifecycle.md) governs execution and
+    18	handoff. The [independent validation policy](independent-validation-policy.md)
+    19	governs conformance review. Confirmed pre-existing findings belong in the
+    20	[policy debt register](legacy-policy-debt.md).
+    21	
+    22	These are repository operating rules. Their adaptation does not accept the
+    23	project's draft specifications, grant product implementation authority, or
+    24	advance a GenDev gate.
+    25	
+    26	## Scope and current layout
+    27	
+    28	Apply this policy to product source, product tests, dependency declarations,
+    29	lockfiles, runtime configuration, and documents that define product contracts.
+    30	
+    31	Product source layout, language/toolchain, tests, runtime configuration, and
+    32	implementation paths are defined by the active project's accepted architecture,
+    33	stack decision, phase plan, and manifest. No sample application's paths or
+    34	Python version are inherited by this policy.
+    35	
+    36	In an installed project, the installation record identifies baseline-owned
+    37	files. Local policies, board/task state and additional skills are project-owned.
+    38	Use the distribution's conflict-aware upgrade path; never update integrity
+    39	hashes merely to hide an unapproved change. In the methodology source repository,
+    40	baseline engineering follows its explicitly authorized migration/evolution plan
+    41	and remains separate from any initialized product's gates.
+    42	
+    43	## Before implementation
+    44	
+    45	Run the GenDev doctor and project-state command. Read the manifest, active
+    46	artifact, approval record, and governing directive. Report the current gate,
+    47	approval state, and next authorized work.
+    48	
+    49	Product implementation requires the accepted upstream authority and phase
+    50	checkpoints specified by GenDev. The initialized draft scaffold is not build
+    51	authority. At G1, framing and authorized environment or policy maintenance may
+    52	proceed; product code generation awaits the required authority.
+    53	
+    54	Preserve unrelated changes. Inspect branch and checkout ownership before
+    55	editing, committing, or integrating. Stage only files belonging to the
+    56	current task when a commit is authorized.
+    57	
+    58	## Design and interface rules
+    59	
+    60	Apply GenDev's six principles: YAGNI, KISS, DRY, SRP, least astonishment, and no
+    61	undeclared authority-bearing abstractions. Use existing logic and keep each
+    62	unit responsible for one coherent task.
+    63	
+    64	When components or public interfaces exist, use documented contracts rather
+    65	than internal reach-through or incidental side effects. A contract change
+    66	must identify affected consumers, migration needs, tests, and documentation.
+    67	Do not introduce packages, interfaces, schemas, or dependencies merely to
+    68	satisfy a hypothetical future need.
+    69	
+    70	Structured data crossing a persistent, external, or component boundary must
+    71	have an explicit contract. Use the simplest suitable representation. A typed
+    72	dataclass, typed dictionary, or validation library may be appropriate; this
+    73	policy does not select or install a new library.
+    74	
+    75	## Typing and runtime invariants
+    76	
+    77	For new or materially changed Python product code:
+    78	
+    79	- annotate public functions and boundary methods, including return types;
+    80	- make exchanged values and failure behavior explicit;
+    81	- justify `Any` at dynamic boundaries rather than propagating it;
+    82	- prefer validation and stronger contracts over repeated casts; and
+    83	- avoid blanket source suppressions or weakening type-checker configuration.
+    84	
+    85	Tests may use narrow, justified relaxations for dynamic fixtures and doubles.
+    86	Test ergonomics do not justify hiding source defects. Pre-existing exceptions
+    87	must be recorded as debt rather than silently treated as compliant.
+    88	
+    89	Use explicit exceptions or validation for external inputs, configuration,
+    90	authorization, persistence, and essential lifecycle requirements. Use `assert`
+    91	only for internal programmer checks whose removal cannot weaken required
+    92	runtime behavior. A cast needs an already-established invariant and must
+    93	narrow to the actual contract; it cannot substitute for validation.
+    94	
+    95	## Verification and available tooling
+    96	
+    97	Define verification before product implementation in the phase build plan,
+    98	tactical plan, construction directive, and test/UAT plan. Cover the meaningful
+    99	positive, negative, regression, boundary, and failure cases for that scope.
+   100	Do not add tests that merely repeat implementation wording.
+   101	
+   102	The available repository checks are:
+   103	
+   104	```sh
+   105	./scripts/gendev-doctor.sh
+   106	./scripts/project-state.sh
+   107	./scripts/check-methodology.sh
+   108	./scripts/test-methodology.sh --suite shell-syntax
+   109	```
+   110	
+   111	The first three orient and validate the installed project. The shell suite is
+   112	appropriate when shell tooling or its integration changes. These checks do
+   113	not establish product correctness, independent verification, or acceptance.
+   114	
+   115	No product linter, product test runner, or type checker is currently declared
+   116	in `pyproject.toml`. Select and configure any such tools through the accepted
+   117	stack and implementation plan. Do not report Ruff, pytest, or mypy as existing
+   118	repository gates or install them just to satisfy this imported policy.
+   119	
+   120	PyYAML is declared separately in the `devboard` tooling dependency group.
+   121	For board changes and task selection, run board validation. For board code or
+   122	schema changes, also run the focused standard-library test suite:
+   123	
+   124	```sh
+   125	uv run --no-project --with-requirements requirements-devboard.txt python scripts/devboard.py validate
+   126	uv run --no-project --with-requirements requirements-devboard.txt python -m unittest discover -s tests/devboard -v
+   127	```
+   128	
+   129	These checks cover task-tracking behavior, not product tests, independent
+   130	conformance, authenticated approval, or remotely reconciled delivery.
+   131	
+   132	Source and installed-product workflows run their context-appropriate checks
+   133	when hosted and enabled. Its presence is not evidence that a hosted run, branch protection,
+   134	or local hook is active. Enforcement remains as declared in the project
+   135	manifest; full filesystem access does not grant project approval.
+   136	
+   137	## Review, exceptions, and closeout
+   138	
+   139	Applicable implementation must receive independent conformance review under
+   140	the validation policy before it is proposed as complete. Passing commands or
+   141	a builder's report do not substitute for that review or human acceptance.
+   142	
+   143	A policy exception identifies the named human, date, scope, requirement,
+   144	reason, risk, validation, and expiry or follow-up. It cannot silently override
+   145	the constitution, accepted security requirements, or a required gate. Use the
+   146	GenDev amendment or override protocol when those controls are affected.
+   147	
+   148	Update test/UAT evidence, review findings, remediation disposition, as-built
+   149	records, and traceability as applicable. Report omitted checks and known
+   150	limits. Keep verification, human acceptance, delivery, and deployment distinct.
+================ docs/policies/development-task-lifecycle.md ================
+     1	# Development Task Lifecycle Policy
+     2	
+     3	Status: Reusable operating policy
+     4	Authority: AGENTS.md and docs/methodology/constitution/gendev.md
+     5	Derived from: the active project integration; provenance is recorded in the v3 migration inventory.
+     6	
+     7	## Purpose and authoritative state
+     8	
+     9	This policy applies GenDev to development tasks in the active project. It
+    10	supplements [AGENTS.md](../../AGENTS.md), the
+    11	[engineering policy](repository-engineering-policy.md), and the
+    12	[independent validation policy](independent-validation-policy.md).
+    13	
+    14	The authoritative project summary is
+    15	[project.yaml](../project/project.yaml). The durable approval and transition
+    16	history is the [gate log](../project/approvals/gate-log.md). Follow the installed
+    17	[gate definitions](../methodology/guides/gates.md),
+    18	[phase loop](../methodology/guides/phase-loop.md), and
+    19	[human approval protocol](../methodology/guides/human-approval-protocol.md).
+    20	
+    21	The work-item tracker is [board.yaml](../planning/board.yaml), rendered as the
+    22	[planning dashboard](../planning/README.md). It owns task state, priority,
+    23	dependencies, task-scoped authority, and recorded delivery state. GenDev's
+    24	manifest and gate log continue to own project and phase gates. If task scope,
+    25	project state, approval history, and evidence disagree, reconcile them before
+    26	execution. Never infer approval from a thread status or a board label.
+    27	
+    28	The [integration record](dev-board-integration.md) defines this boundary and
+    29	the setup's validation limits.
+    30	
+    31	## Orientation and authorization
+    32	
+    33	Begin with the doctor and project-state commands. Inspect branch/checkout
+    34	ownership, unrelated changes, the current gate, active artifact, required
+    35	approver, and documented next action.
+    36	
+    37	The current major gate and approval state use the values defined by GenDev.
+    38	Artifact status and gate approval status have different meanings; a Draft,
+    39	Complete, or VERIFIED report is not an approved gate.
+    40	
+    41	Task authorization must identify scope, permitted effects, expected artifact,
+    42	and verification. A direct request to maintain repository documentation or
+    43	configuration authorizes that bounded work. It does not accept future product
+    44	specifications, grant product implementation authority, or bypass a gate.
+    45	
+    46	For product implementation, the accepted phase plan, phase build plan,
+    47	tactical plan, construction directive, and test/UAT authority must satisfy the
+    48	applicable GenDev checkpoints. A pre-created template is not approval.
+    49	
+    50	## Task progress and blockers
+    51	
+    52	Track each work item as `queued`, `approved`, `started`, `completed`, or
+    53	`accepted`. Only explicit human direction permits approval or acceptance.
+    54	Queued work has no implementation authority. Starting requires a named branch
+    55	and satisfied dependencies. Completion requires the applicable verification
+    56	evidence and independent review; acceptance remains a separate human decision.
+    57	
+    58	The board's `implementation_authority` records task-scoped permission. It does
+    59	not satisfy GenDev's upstream artifact approvals or phase checkpoints. A task
+    60	can be approved for design or environment work at G1 without authorizing
+    61	product implementation. The board's free-text `next_gate` describes its next
+    62	task action; it is not a GenDev gate value.
+    63	
+    64	Use `normal`, `blocked`, `deferred`, or `backlog` as task conditions. Preserve
+    65	their reason and exit condition in the tracking index and next action.
+    66	Keep implementation, review, and remediation evidence in the appropriate
+    67	canonical phase artifacts and link it from the board's tracking index.
+    68	
+    69	A task remains under execution while required review or remediation is
+    70	unfinished. When blocked, record the missing decision or evidence, owner, and
+    71	exit condition in its relevant artifact. Deferred work stays in the plan's
+    72	explicit deferred scope. A blocker or deferral grants no implementation
+    73	permission and does not by itself regress or advance a gate.
+    74	
+    75	## Canonical artifact locations
+    76	
+    77	Use the fixed GenDev artifacts and the paths recorded in the manifest:
+    78	
+    79	- `docs/project/vision/vision.md` and `docs/project/prd/prd.md` for framing and
+    80	  requirements;
+    81	- `docs/project/architecture/architecture.md`,
+    82	  `docs/project/security-governance/governance-security-spec.md`, and
+    83	  `docs/project/decisions/0001-technology-stack.md` for design and governance;
+    84	- `docs/project/build-plan/phase-plan.md` for the ordered build partition;
+    85	- `docs/project/build-plan/phases/` for phase build plans, tactical plans,
+    86	  construction directives, implementation evidence, reviews, and remediation;
+    87	- `docs/project/testing/` for test/UAT plans and execution evidence;
+    88	- `docs/project/review/` for aggregate reviews and their bounded supporting
+    89	  request, evidence, and remediation records;
+    90	- `docs/project/as-built/` for closeout and value evidence; and
+    91	- `docs/project/approvals/gate-log.md` for required human decisions and events.
+    92	
+    93	Phase filenames use the phase identifier and the canonical role, never the
+    94	project name or slug. Preserve canonical authority locations as work
+    95	progresses. Do not relocate accepted authority to an unrelated archive tree.
+    96	Retain superseded evidence with explicit status and revision identity.
+    97	
+    98	Board tracking indexes live under `docs/planning/queued/`, `active/`, `review/`,
+    99	`blocked/`, `deferred/`, or `backlog/` according to task state and condition.
+   100	Accepted indexes live under `docs/archive/completed/<year>/<task-id>/`.
+   101	Archive tracking metadata and task evidence only; canonical GenDev authority
+   102	remains under `docs/project/`. Repair tracking links and update the board and
+   103	generated dashboard together. Use the tracking template in
+   104	`docs/planning/task-template.md`; do not copy another project's tasks/history.
+   105	
+   106	## Branches, commits, and delegation
+   107	
+   108	Use an isolated branch for product implementation and record its baseline and
+   109	candidate revision. The repository needs an initial commit before Git
+   110	worktrees or a formal candidate diff can be used.
+   111	
+   112	A request to edit files does not automatically authorize staging unrelated
+   113	work, making commits, pushing, merging, or changing external systems. Respect
+   114	any explicit task authorization for those actions.
+   115	
+   116	Subagent capability or a skill template does not itself request delegation.
+   117	When delegation is authorized, use a bounded assignment and the installed
+   118	[subagent protocol](../methodology/guides/subagent-coordination-protocol.md).
+   119	Provide the task, controlling authority, owned files, verification, effects,
+   120	effort limit, and stop conditions.
+   121	
+   122	Use the active provider's orchestration instructions for authorized dispatch.
+   123	Reviewer assignments require a fresh context without the builder transcript.
+   124	Optional T3-specific examples are in
+   125	`docs/methodology/guides/t3-code-integration.md`; provider capabilities do not
+   126	grant delegation, implementation, or external-effect authority.
+   127	
+   128	## Verification, acceptance, and delivery
+   129	
+   130	The independent validator returns VERIFIED, CHANGES_REQUESTED, or BLOCKED for
+   131	a frozen candidate. The controller records the evidence and handles bounded
+   132	remediation. Only the named human accepts scope, risk, artifact authority, or
+   133	phase closeout where GenDev requires human approval.
+   134	
+   135	Maintain separate evidence for a local change, commit, push, merge, release,
+   136	and deployment when those events occur. None proves human acceptance or
+   137	replaces independent validation. An agent run marked completed is an execution
+   138	fact, not a project gate decision.
+   139	
+   140	## Gate and phase operations
+   141	
+   142	Use the installed commands after the required evidence and human decision
+   143	exist. Read each command's help and supply its required answers:
+   144	
+   145	- `scripts/close-gate.sh` records a major gate transition;
+   146	- `scripts/record-phase-checkpoint.sh` records an interior phase checkpoint;
+   147	- `scripts/close-phase.sh` records a phase exit; and
+   148	- `scripts/record-deployment-approval.sh` records deployment or non-deployment
+   149	  approval without performing a production action.
+   150	
+   151	A --dry-run invocation can prepare a reviewable transition. Never generate
+   152	approval answers, checked statements, dates, or risk acceptance on behalf of
+   153	a human. Keep the major gate at G5 during the G5 phase-loop checkpoints and
+   154	update the manifest and corresponding gate-log event together.
+   155	
+   156	No gate movement, human attestation, or product acceptance is recorded merely
+   157	because these policies were adapted. The next product task follows the actual
+   158	manifest and active gate evidence.
+   159	
+   160	## Board operations
+   161	
+   162	Run from the repository root:
+   163	
+   164	```sh
+   165	uv run --no-project --with-requirements requirements-devboard.txt python scripts/devboard.py validate
+   166	uv run --no-project --with-requirements requirements-devboard.txt python scripts/devboard.py next
+   167	uv run --no-project --with-requirements requirements-devboard.txt python scripts/devboard.py list
+   168	```
+   169	
+   170	Use `show <id>` for task details and `render --check` to check the dashboard
+   171	without rewriting it. `render` regenerates the dashboard. `transition`,
+   172	`set-condition`, and `set-delivery` require recorded task authority, actor,
+   173	role, note, and the evidence/next action required by their command help.
+   174	The CLI does not move tracking folders; prepare their correct locations and
+   175	links as part of the authorized transition.
+   176	
+   177	Role flags are declarations, not authentication or proof of a human decision.
+   178	The controller must check actual authority and independent review before
+   179	recording the corresponding task state. Board validation checks structure,
+   180	schema agreement, packet presence, and dashboard consistency; it does not
+   181	contact Git hosts, authenticate the actor, prove formal VERIFIED evidence, or
+   182	advance a GenDev gate. No board-only result substitutes for those checks.
+================ docs/policies/independent-validation-policy.md ================
+     1	# Independent Validation Policy
+     2	
+     3	Status: Reusable operating policy
+     4	Authority: AGENTS.md and docs/methodology/constitution/gendev.md
+     5	Derived from: the active project integration; provenance is recorded in the v3 migration inventory.
+     6	
+     7	## Purpose and authority
+     8	
+     9	This policy defines independent conformance review for the active project. It
+    10	supplements [AGENTS.md](../../AGENTS.md), the
+    11	[engineering policy](repository-engineering-policy.md), and the
+    12	[task lifecycle policy](development-task-lifecycle.md). GenDev authority and
+    13	the accepted project specifications control; this policy cannot waive them.
+    14	
+    15	Independent review answers whether a stable candidate conforms to its named
+    16	authority. It does not accept the project, approve a gate, authorize delivery,
+    17	or establish deployment readiness.
+    18	
+    19	## Applicability and documentation maintenance
+    20	
+    21	Product code, behavioral tests, dependency/environment changes, runtime
+    22	configuration, migrations, and public contract changes require independent
+    23	review proportionate to their scope before being proposed as complete.
+    24	GenDev's independent-context rule applies even when deterministic checks pass.
+    25	
+    26	A bounded documentation-only maintenance request may use a direct user
+    27	authorization record, scope description, accuracy pass, link checks, and
+    28	methodology checks. It does not automatically require a new construction
+    29	directive or a formal frozen-candidate report. Record who requested the work,
+    30	the scope, checks, and limitations in the relevant artifact or task evidence.
+    31	
+    32	This maintenance route does not approve product specifications, waive a
+    33	mandatory review in accepted authority, or cover runtime, dependency,
+    34	enforcement-code, or security-behavior changes. If the task crosses those
+    35	boundaries, stop and obtain the required authority. Rewriting policy documents
+    36	must not be reported as formal independent VERIFIED evidence.
+    37	
+    38	## Roles and independence
+    39	
+    40	The human approver owns scope, risk, required artifact acceptance, and gate
+    41	approval. The controller owns bounded dispatch and evidence reconciliation.
+    42	The builder implements authorized work. A validator reviews the frozen
+    43	candidate read-only. A remediator changes only the authorized findings.
+    44	
+    45	The builder may also be the controller, but may not validate its own candidate
+    46	or remediation. An independent human reviewer or a separate fresh-context
+    47	agent may perform the validation. A different model is optional; independent
+    48	context is mandatory. A skill or enabled capability is not authorization to
+    49	start additional agents.
+    50	
+    51	A reviewer receives pinned authority, the selected candidate diff and relevant
+    52	surrounding code, requirements, and permitted verification evidence. Do not
+    53	supply the builder's session transcript, private reasoning, or conclusions as
+    54	proof. A justified context exception must be recorded with its limits.
+    55	
+    56	## Candidate and required request
+    57	
+    58	Formal validation needs a stable candidate commit and an exact base/candidate
+    59	diff. Uncommitted work can receive advisory review but not formal VERIFIED.
+    60	The repository must have an initial commit before this process is available.
+    61	
+    62	Before dispatch, prepare a request containing:
+    63	
+    64	- project and phase identity, work-unit or tactical task IDs, and review mode;
+    65	- base commit, candidate commit, branch or checkout identity, and exact diff;
+    66	- controlling authority paths with revisions or hashes and artifact status;
+    67	- the approved construction directive and acceptance criteria;
+    68	- relevant architecture rules, including the accepted domain model;
+    69	- required commands and expected behavioral, design, and implementation evidence;
+    70	- known baseline failures, exclusions, and explicitly approved exceptions;
+    71	- permitted external effects, credential use, and costs, if any; and
+    72	- exact repository locations for the request, report, and evidence.
+    73	
+    74	For board-tracked work, include its task ID and link the same canonical phase
+    75	authority and evidence from its tracking index. Use tactical identifiers from
+    76	the actual approved plan; a board label does not approve that plan. Missing,
+    77	stale, contradictory, or unapproved authority blocks formal validation.
+    78	
+    79	## Evidence locations and provenance
+    80	
+    81	Use the canonical phase code-review report referenced by the manifest for
+    82	phase review. Store detailed phase requests and evidence beside their phase
+    83	artifacts, and aggregate review support under `docs/project/review/`.
+    84	Reference these records from the canonical review report, traceability, and
+    85	as-built closeout as appropriate. Choose exact paths in the request rather
+    86	than inventing a separate planning packet or board schema.
+    87	
+    88	Record project identity, reviewer identity/model where known, review-context
+    89	creation time, review mode, candidate/diff identity, authority revisions,
+    90	shared-context exceptions, commands, results, skipped checks, and residual
+    91	risk. Include the GenDev provenance fields on authority and evidence artifacts.
+    92	
+    93	## Read-only review procedure
+    94	
+    95	1. Read AGENTS.md, these local policies, and every authority named in the request.
+    96	2. Confirm candidate stability, checkout ownership, authority pins, and diff bounds.
+    97	3. Map every acceptance criterion and directive task to implementation and evidence.
+    98	4. Inspect the complete selected diff and relevant surrounding code for drift,
+    99	   undeclared abstractions, duplication, contract violations, and deferred scope.
+   100	5. Evaluate GenDev's six code-quality principles and the required behavioral,
+   101	   design, security, failure-path, migration, and implementation checks.
+   102	6. Run authorized commands and separate pre-existing failures from regressions.
+   103	7. Reconcile documentation, configuration, traceability, and closeout obligations.
+   104	8. Return exactly one outcome with reproducible evidence and stated limits.
+   105	
+   106	Do not edit or remediate the candidate, change project state, commit, push,
+   107	merge, release, deploy, or send external messages. Read-only review may create
+   108	ordinary disposable test outputs only when the request permits them; it must
+   109	not mutate governed files or persistent application state. Never print or
+   110	persist credentials. If a required command needs an unauthorized effect or
+   111	cannot respect those boundaries, omit it and report the resulting blocker.
+   112	
+   113	## Review modes and outcomes
+   114	
+   115	A full review covers the complete selected work-unit scope. A delta review
+   116	checks specified remediation and regressions against the new candidate. An
+   117	aggregate review covers the complete integration or phase scope before its
+   118	required closeout; delta review alone does not establish integration conformance.
+   119	
+   120	Return VERIFIED only when all mandatory criteria and checks have cited
+   121	evidence, any permitted exception is explicitly recorded, no mandatory
+   122	requirement is violated, no blocker/critical/high finding remains, and the
+   123	required closeout evidence is reconciled. Advisory suggestions may remain;
+   124	an uncited assertion cannot support VERIFIED.
+   125	
+   126	Return CHANGES_REQUESTED when the candidate violates authority or needs
+   127	remediation. Every finding identifies its stable ID, severity, location,
+   128	violated requirement, evidence, risk, fix, required verification, and
+   129	configuration/documentation impact.
+   130	
+   131	Return BLOCKED when authority, candidate stability, acceptance criteria,
+   132	infrastructure, or permitted evidence is insufficient. Identify checks already
+   133	performed, the exact blocker, and what would resolve it. BLOCKED is not a code
+   134	failure or a formal verification result.
+   135	
+   136	A human may separately accept a documented risk within their authority. That
+   137	decision does not rewrite a validator's result or turn unmet mandatory review
+   138	conditions into VERIFIED. Resolve governing exceptions through GenDev's
+   139	approval/amendment process and review the resulting candidate as required.
+   140	
+   141	## Remediation and stale candidates
+   142	
+   143	The controller converts each numbered finding into a bounded remediation
+   144	directive with tests, documentation, acceptance criteria, and non-goals. The
+   145	original builder may perform authorized mechanical fixes. Use independent
+   146	expertise when the risk or accepted plan requires it; do not start extra agents
+   147	without the applicable delegation authority.
+   148	
+   149	Commit the corrected candidate when authorized, retain the old report as
+   150	historical/superseded evidence, and obtain a fresh review of the new revision.
+   151	After two unsuccessful remediation cycles, return unresolved findings and
+   152	options to the human instead of continuing automatically.
+   153	
+   154	A change to reviewed code, tests, runtime configuration, governing authority,
+   155	or the candidate revision makes a running review stale. Stabilize and request
+   156	a new independent review; do not reuse the old conclusion. Evidence-only
+   157	closeout additions may be reviewed as such, but do not excuse changes to the
+   158	governed candidate.
+   159	
+   160	## Acceptance boundary
+   161	
+   162	VERIFIED permits a recommendation for human acceptance or the next authorized
+   163	checkpoint. It is not acceptance, phase exit, deployment approval, or a gate
+   164	transition. Record those decisions through the GenDev gate-log and manifest
+   165	process only when the named human has actually made them.
+================ docs/methodology/guides/skill-execution-contract.md ================
+     1	# Skill Execution Contract
+     2	
+     3	Status: Reusable operating guidance for workflow skills
+     4	Authority: AGENTS.md, the GenDev constitution and applicable project authority
+     5	
+     6	Skills supply techniques within an authorized task. Discovery, installation,
+     7	mentioning a skill while discussing it, and reviewing its text do not invoke its
+     8	workflow or grant approval. Apply the user's actual requested scope and selected
+     9	collaboration mode. A request to pause or stop is a stop instruction; do not turn
+    10	ordinary wording into a PR workflow.
+    11	
+    12	## Authority and effects
+    13	
+    14	Before implementation, read the manifest and gate log for an initialized product,
+    15	or the explicitly authorized evolution directive for baseline toolkit work.
+    16	Follow the task lifecycle and independent validation policies. Workflow labels,
+    17	review scores, tool readiness, bot verdicts and a green PR do not approve GenDev
+    18	gates, accept work, supply attestation or authorize production.
+    19	
+    20	Explicit workflow invocation may grant its stated task-scoped execution effects
+    21	when compatible with the user's instruction and accepted authority. Confirm the
+    22	actual scope before commits, pushes, comments, rebases, force-with-lease, merges
+    23	or live tests; retain separate evidence for each. A material authority change
+    24	requires amendment before implementation. Never bypass branch protection or
+    25	required human approval. When an explicitly invoked skill authorizes messages
+    26	to others, name and link that skill in the final report. Reviewer advice to obtain human review cannot be
+    27	silently discarded when a governing approval requirement applies.
+    28	
+    29	No new dependency, provider/account, credential, remote, deployment or unrelated
+    30	mutation is authorized merely because a skill could use it. Use the active
+    31	harness's credential and tool mechanisms. Do not print credentials. A scoped
+    32	review is read-only unless explicitly assigned remediation as separate work.
+    33	
+    34	## Review and remediation
+    35	
+    36	Use the independent validation policy for formal conformance: freeze an exact
+    37	candidate, pin authority, supply acceptance criteria and receive VERIFIED,
+    38	CHANGES_REQUESTED or BLOCKED. Advisory APPROVE, confidence scores and bot checks
+    39	do not replace that result. Every review/recheck gets a fresh context without the
+    40	builder transcript or private reasoning; an earlier result does not cover a
+    41	changed candidate. No reviewer edits, nested delegation or external effects.
+    42	
+    43	Apply the declared round budget and the policy's stop after two unsuccessful
+    44	remediation cycles. Return unresolved mandatory findings and options to the human;
+    45	extra rounds require human disposition. A mandatory contract or security violation
+    46	remains mandatory even when rare or outside the happy path. Report out-of-scope
+    47	findings separately; do not silently implement them or waive governing criteria.
+    48	
+    49	## Provider integration and monitoring
+    50	
+    51	Follow the active provider's orchestration rules. Availability does not authorize
+    52	delegation. Resolve requested provider/model/settings at runtime; unavailable
+    53	choices are blockers, never grounds for an unasked substitution. In T3, use its
+    54	capability/delegation tools where required, fresh review tasks, bounded budgets
+    55	and parent-owned PR watches. Do not make top-level threads for delegates.
+    56	
+    57	Use one supported watcher per PR and the provider's wait/resume semantics. In T3,
+    58	use watch_pull_request and unwatch at handoff; never run the bundled fallback or
+    59	an additional polling/sleep loop there. Outside T3, use the bundled pr-wait only
+    60	when that harness permits it. It requires Unix, Python 3.11+ and an authenticated
+    61	gh CLI, reads GitHub and stores local state under ~/.local/state/pr-wait/. It
+    62	reports events, not permission to merge. If the supported watcher is unavailable,
+    63	report the limitation; do not invent a background workaround.
+    64	
+    65	Use verified repository review/check requirements, not assumed bot brands or a
+    66	hard-coded default branch. Resolve the actual PR base/head and recheck their
+    67	identity before external mutations. Link, watch and stop tasks using the active
+    68	harness's rules. Capability documentation governs tool parameters.
+================ docs/methodology/dev-skills/council/SKILL.md ================
+     1	---
+     2	name: council
+     3	description: Obtain a three-provider independent review when the user explicitly requests a council review or workflow.
+     4	---
+     5	
+     6	# Council
+     7	
+     8	Follow the [GenDev skill execution contract](../../guides/skill-execution-contract.md).
+     9	Use this skill within the requested task; importing or reading it grants no execution authority.
+    10	
+    11	Establish whether the user requested read-only review or implementation plus
+    12	review. Perform known fixes only within authorized implementation scope, then
+    13	freeze the candidate. A read-only council reports known issues without edits.
+    14	If the user wants new ideas, review the proposal rather than fixing discarded code.
+    15	
+    16	Bring in three delegates to help with the user's request, usually for review
+    17	or feedback. Use one strong model from each of three different providers, at
+    18	high reasoning effort. If the user's instructions name council members, use
+    19	those. Otherwise pick the latest flagship model from each provider, for
+    20	example Claude Opus, GPT Sol, and Gemini Pro.
+    21	
+    22	In T3 Code, use `orchestrator_capabilities` to resolve the models, then
+    23	`delegate_task` to start one delegate per model in parallel. Elsewhere, use
+    24	the harness's subagent tools. If you cannot reach three providers, or a named
+    25	member is unavailable, report it instead of substituting.
+    26	
+    27	Give each delegate the request and relevant context. For review or feedback,
+    28	keep their work read-only. Collect their responses and summarize the useful
+    29	findings, disagreements, and recommended next steps.
+    30	
+    31	For a code review, ask each delegate for a score out of 10.
+    32	Count each full review pass as one round.
+    33	A fresh review after fixes starts a new round.
+    34	
+    35	If the work ends in a pull request, put the results in the PR description.
+    36	Put this section before the model and harness line at the end:
+    37	
+    38	```markdown
+    39	## Council review
+    40	
+    41	Rounds: 2
+    42	
+    43	| Delegate | Round 1 | Round 2 |
+    44	| --- | --- | --- |
+    45	| Claude Opus | 7/10 | 9/10 |
+    46	| GPT Sol | 8/10 | 10/10 |
+    47	| Gemini Pro | 7/10 | 9/10 |
+    48	```
+    49	
+    50	If a delegate gives no score, write `no score`. Do not invent one.
+    51	If the PR is open and editing its description is within the authorized scope,
+    52	edit the description. Do not post a comment for this. Otherwise put the same
+    53	results in the final reply only. A read-only review does not authorize PR edits.
+    54	
+    55	Remediate agreed findings only within the approved scope, then request fresh
+    56	review contexts against the revised frozen candidate. Use one full council pass
+    57	per round, within the declared budget and two-unsuccessful-cycle escalation rule.
+    58	Scores are advisory; formal GenDev validation still requires its policy outcome.
+    59	Return unresolved mandatory findings to the human rather than looping indefinitely.
+    60	
+    61	Do not let repeated reviews result in scope creep. It is your job to fight to
+    62	keep scope limited.
+================ docs/resources/evolution/skill-library-import/README.md ================
+     1	# Skill Library Import
+     2	
+     3	Status: Merged import; council round 1 BLOCKED; bounded remediation authorized, fresh review pending
+     4	Owner: Chuck Russell
+     5	Current branch: fix/skills-council-follow-up
+     6	Original import branch: integration/v3-skill-import
+     7	Starting HEAD: ee82653ed6cacb9e1157cd791f12d0fb774f12af
+     8	Preserved VERIFIED migration candidate: 98f8bec4597cd3307fc26e5c28dc86592e01ca08
+     9	
+    10	## Authority and scope
+    11	
+    12	Chuck asked to add the skills from his local folder to methodology-v3 and
+    13	provided /Users/chuckrussell/Dev/gendev/tstack/skills in response to the proposed
+    14	inspection, reconciliation, import, discovery-link and inventory-check workflow.
+    15	This directly authorizes that bounded follow-up. Apply the GenDev constitution
+    16	and local engineering/lifecycle/validation policies. This is baseline toolkit
+    17	work, not an initialized product; do not fabricate product authority.
+    18	
+    19	Import nine complete skill folders, preserve supporting files and attribution,
+    20	record source digests, reconcile contradictions with GenDev and current provider
+    21	orchestration rules, and retain automatic discovery metadata. Do not invoke the
+    22	imported workflows. Supply whole-folder discovery for packaged skills so relative
+    23	helpers/metadata work in both installed and disposable projects. Update the
+    24	focused inventory/distribution regressions for the expanded 24-skill library.
+    25	
+    26	## Acceptance criteria and checks
+    27	
+    28	All nine skills have valid metadata, resolvable resources and discoverable
+    29	canonical entries. They preserve task scope, product gates, independent context,
+    30	bounded remediation, human acceptance and external-effect permissions. The PR
+    31	watch helper is copied unchanged and checked offline; no live GitHub workflow is
+    32	run. Fresh installation and dry-run copies carry complete bundles, usable
+    33	relative helpers, an empty board and unchanged live inputs. Existing installation,
+    34	upgrade, source-selection and preservation regressions remain green.
+    35	
+    36	Run skill metadata/UI/link checks, script syntax and help checks without network,
+    37	focused board/migration tests, applicable inherited suites and isolated replay.
+    38	Record exact outcomes and limitations. A new formal candidate requires its own
+    39	freeze and independent review; VERIFIED for 98f8bec does not apply to this import.
+    40	
+    41	## Exclusions and stopping conditions
+    42	
+    43	No source-folder, methodology-v2 or T3 original mutations; no global skill install,
+    44	new dependencies, product implementation/gate approval, step 8 final refresh,
+    45	PR/network/comment/merge/delegation workflow invocation or remote configuration.
+    46	Do not infer commit or additional reviewer authorization from importing skills.
+    47	Stop for conflicting authority, source preservation failures or expanded scope.
+    48	The imported helper and packaging changes require formal review under the local
+    49	policy before completion; prepare the concrete result and request the necessary
+    50	local freeze/reviewer authority at handoff if not already supplied.
+    51	
+    52	## GitHub checkpoint authorization
+    53	
+    54	Chuck subsequently requested creation of the methodology-v3 remote and a push.
+    55	The bounded authorization in ../github-hosting.md permits a local checkpoint
+    56	and uploading this import as a separate work-in-progress branch. It supersedes
+    57	the previous no-commit/no-remote restriction for this action. Independent review,
+    58	acceptance, PR workflows and release remain unapproved.
+    59	
+    60	## Council review and bounded follow-up
+    61	
+    62	Chuck requested a council review, then explicitly approved the described bounded
+    63	follow-up. See [the controlling directive](review/bounded-follow-up.md) and
+    64	[round-1 consolidation](review/council-round-1/summary.md). This supersedes older
+    65	no-delegation restrictions solely for the scoped council rounds. PR #1 merged
+    66	at d41e0eb on 2026-10-28; that is delivery, not acceptance or verification.
+    67	The authorized remediation is local only on fix/skills-council-follow-up.

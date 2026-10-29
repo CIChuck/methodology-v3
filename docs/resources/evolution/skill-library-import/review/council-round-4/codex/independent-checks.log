@@ -1,0 +1,138 @@
+PASS HEAD pin
+PASS branch pin
+PASS entry governed tree clean
+PASS request digest
+PASS authority AGENTS.md
+PASS authority docs/methodology/constitution/gendev.md
+PASS authority docs/policies/repository-engineering-policy.md
+PASS authority docs/policies/development-task-lifecycle.md
+PASS authority docs/policies/independent-validation-policy.md
+PASS authority docs/methodology/guides/skill-execution-contract.md
+PASS authority docs/methodology/dev-skills/council/SKILL.md
+PASS authority docs/resources/evolution/skill-library-import/README.md
+PASS authority docs/resources/evolution/skill-library-import/review/advisory-clarifications.md
+PASS authority docs/resources/evolution/v3-migration/review/round-1/checkpoint-exception-approval.json
+PASS exact clarification diff digest
+PASS adjacent diff byte equality
+PASS only five changed executable/skill assets since delta base
+PASS runtime diff empty
+PASS frozen record unchanged docs/resources/evolution/v3-migration/input-manifest.json
+PASS frozen record unchanged docs/resources/evolution/v3-migration/review/round-1/checkpoint-exception-approval.json
+PASS 14 source/import records
+PASS source HEAD unchanged
+PASS source tree clean
+PASS source bytes/mode babysit-pr/SKILL.md
+PASS import bytes/mode babysit-pr/SKILL.md
+PASS source bytes/mode babysit-pr/scripts/pr-wait
+PASS import bytes/mode babysit-pr/scripts/pr-wait
+PASS support byte equality source/runtime babysit-pr/scripts/pr-wait
+PASS support runtime mode babysit-pr/scripts/pr-wait
+PASS source bytes/mode council/SKILL.md
+PASS import bytes/mode council/SKILL.md
+PASS source bytes/mode file-pr/SKILL.md
+PASS import bytes/mode file-pr/SKILL.md
+PASS source bytes/mode full-send/SKILL.md
+PASS import bytes/mode full-send/SKILL.md
+PASS source bytes/mode full-send/agents/openai.yaml
+PASS import bytes/mode full-send/agents/openai.yaml
+PASS support byte equality source/runtime full-send/agents/openai.yaml
+PASS support runtime mode full-send/agents/openai.yaml
+PASS source bytes/mode full-stop/SKILL.md
+PASS import bytes/mode full-stop/SKILL.md
+PASS source bytes/mode full-stop/agents/openai.yaml
+PASS import bytes/mode full-stop/agents/openai.yaml
+PASS support byte equality source/runtime full-stop/agents/openai.yaml
+PASS support runtime mode full-stop/agents/openai.yaml
+PASS source bytes/mode leaving-pr-comments/SKILL.md
+PASS import bytes/mode leaving-pr-comments/SKILL.md
+PASS source bytes/mode leaving-pr-comments/agents/openai.yaml
+PASS import bytes/mode leaving-pr-comments/agents/openai.yaml
+PASS support byte equality source/runtime leaving-pr-comments/agents/openai.yaml
+PASS support runtime mode leaving-pr-comments/agents/openai.yaml
+PASS source bytes/mode modernize/SKILL.md
+PASS import bytes/mode modernize/SKILL.md
+PASS source bytes/mode modernize/agents/openai.yaml
+PASS import bytes/mode modernize/agents/openai.yaml
+PASS support byte equality source/runtime modernize/agents/openai.yaml
+PASS support runtime mode modernize/agents/openai.yaml
+PASS source bytes/mode sol-loop/SKILL.md
+PASS import bytes/mode sol-loop/SKILL.md
+PASS source bytes/mode takeover/SKILL.md
+PASS import bytes/mode takeover/SKILL.md
+PASS 24 discovery entrypoints
+PASS metadata ai-construction-directive-builder
+PASS metadata architecture-spec-author
+PASS metadata babysit-pr
+PASS relative resource babysit-pr:../../guides/skill-execution-contract.md
+PASS metadata code-conformance-reviewer
+PASS metadata council
+PASS relative resource council:../../guides/skill-execution-contract.md
+PASS metadata file-pr
+PASS relative resource file-pr:../../guides/skill-execution-contract.md
+PASS metadata friday-dev-board
+PASS metadata full-send
+PASS relative resource full-send:../../guides/skill-execution-contract.md
+PASS metadata full-stop
+PASS relative resource full-stop:../../guides/skill-execution-contract.md
+PASS relative resource full-stop:../full-send/SKILL.md
+PASS metadata governance-security-spec
+PASS metadata independent-code-validator
+PASS metadata leaving-pr-comments
+PASS relative resource leaving-pr-comments:../../guides/skill-execution-contract.md
+PASS metadata migration-refactor-analyst
+PASS metadata modernize
+PASS relative resource modernize:../../guides/skill-execution-contract.md
+PASS metadata phase-build-planner
+PASS metadata prd-author
+PASS metadata remediation-closeout
+PASS metadata sol-loop
+PASS relative resource sol-loop:../../guides/skill-execution-contract.md
+PASS metadata subagent-directives-template
+PASS metadata subagents-worktrees-template
+PASS metadata tactical-implementation-planner
+PASS metadata takeover
+PASS relative resource takeover:../../guides/skill-execution-contract.md
+PASS metadata traceability-matrix
+PASS metadata vision-framing
+PASS whole-bundle discovery babysit-pr
+PASS whole-bundle discovery council
+PASS whole-bundle discovery file-pr
+PASS whole-bundle discovery full-send
+PASS whole-bundle discovery full-stop
+PASS whole-bundle discovery leaving-pr-comments
+PASS whole-bundle discovery modernize
+PASS whole-bundle discovery sol-loop
+PASS whole-bundle discovery takeover
+PASS UI YAML docs/methodology/dev-skills/full-send/agents/openai.yaml
+PASS UI YAML docs/methodology/dev-skills/full-stop/agents/openai.yaml
+PASS UI YAML docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml
+PASS UI YAML docs/methodology/dev-skills/modernize/agents/openai.yaml
+PASS helper ast.parse and compile in memory
+PASS helper --help only
+PASS exact 23-file guide inventory
+PASS guide mirror 01-orientation.md
+PASS guide mirror 02-core-mental-model.md
+PASS guide mirror 03-repository-map.md
+PASS guide mirror 04-starting-a-new-project.md
+PASS guide mirror 05-working-with-the-agent.md
+PASS guide mirror 06-gates-and-artifacts.md
+PASS guide mirror 07-approvals-and-risk.md
+PASS guide mirror 08-subagents-and-delegation.md
+PASS guide mirror 09-build-planning-and-implementation.md
+PASS guide mirror 10-review-remediation-and-closeout.md
+PASS guide mirror 11-production-operations.md
+PASS guide mirror 12-vendor-contract-tracker-walkthrough.md
+PASS guide mirror 13-codex-specific-notes.md
+PASS guide mirror 14-claude-code-specific-notes.md
+PASS guide mirror 15-prompt-library.md
+PASS guide mirror 16-checklists.md
+PASS guide mirror 17-common-failure-modes.md
+PASS guide mirror 18-glossary.md
+PASS guide mirror 19-starting-mid-stream.md
+PASS guide mirror 20-work-item-board.md
+PASS guide mirror 21-skill-library-and-workflows.md
+PASS guide mirror 22-installation-and-upgrades.md
+PASS guide mirror README.md
+PASS entire guide/HTML unchanged since runtime reference
+PASS exit candidate clean/pinned
+ALL INDEPENDENT CHECKS PASSED 2026-10-29T00:37:13.154157+00:00
