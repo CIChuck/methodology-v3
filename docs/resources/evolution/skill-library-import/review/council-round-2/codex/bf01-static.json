@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "controller_classification_before_stop": true,
+    "mandatory_rare_paths": true,
+    "optional_nit_only": true,
+    "out_of_scope_mandatory_escalates": true,
+    "prior_bad_classifier_present": true,
+    "bad_classifier_removed": true
+  },
+  "cases": {
+    "rare_permission_bypass": "mandatory; cannot take nit-only stop",
+    "rare_contract_break": "mandatory; cannot decline as preference",
+    "rare_data_loss": "mandatory; out-of-scope requires disposition",
+    "style_preference_no_requirement": "optional nit; may decline"
+  },
+  "limit": "Static instruction checks only. Two initial evidence assertions matched original-source wording rather than d41e0eb; corrected to actual prior wording. No candidate failure."
+}

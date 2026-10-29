@@ -35,10 +35,11 @@ tasks:
   title: Import and reconcile nine local workflow skills
   priority: 2
   work_state: started
-  condition: normal
+  condition: blocked
   implementation_authority: granted
-  packet: docs/planning/active/skill-library-import/
-  next_gate: Fresh council round 2 on corrected local candidate; human acceptance pending
+  packet: docs/planning/blocked/skill-library-import/
+  next_gate: Chuck disposition on R2-01 rare-path finding policy and R2-02 actual PR base; another fix/review cycle needs
+    authorization
   delivery_state: local
   branch: fix/skills-council-follow-up
   depends_on: []
@@ -47,6 +48,7 @@ tasks:
   - docs/resources/evolution/github-delivery.json (GitHub delivery verified; not conformance approval)
   - docs/resources/evolution/skill-library-import/review/bounded-follow-up.md
   - docs/resources/evolution/skill-library-import/review/remediation-results.json
+  - docs/resources/evolution/skill-library-import/review/council-round-2/summary.md (CHANGES_REQUESTED, candidate aa25aa8)
   approved_by: Chuck Russell
   approved_at: '2026-10-28'
 - id: v3-documentation-refresh
@@ -250,3 +252,11 @@ events:
   note: 13 inherited suites, 17 board and 48 migration tests, four replay scenarios, skill/source and original preservation
     checks passed. Remediation local only; fresh council and acceptance pending.
   evidence: docs/resources/evolution/skill-library-import/review/remediation-results.json
+- task: skill-library-import
+  at: '2026-10-29T00:01:15.483222+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded council round 2 CHANGES_REQUESTED; condition normal -> blocked
+  note: Required checks pass in all three contexts; two residual instruction contradictions remain. Authorized bounded cycle
+    complete; return findings to Chuck before another cycle. No acceptance or remote effects.
+  evidence: docs/resources/evolution/skill-library-import/review/council-round-2/summary.md

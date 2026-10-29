@@ -1,0 +1,18 @@
+test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it (audit_toolkit.ToolkitMigrationTests.test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it) ... FAIL
+
+======================================================================
+FAIL: test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it (audit_toolkit.ToolkitMigrationTests.test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 132, in test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it
+    output = self.command(sys.executable, "scripts/create-dry-run.py", env={"TMPDIR": str(self.base)})
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Cannot create dry run: unsafe target parent: .agents/skills/example-note
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.621s
+
+FAILED (failures=1)

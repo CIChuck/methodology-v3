@@ -1,0 +1,29 @@
+PASS ai-construction-directive-builder ['description', 'metadata', 'name'] 'Use when creating construction directives or direct build prompts for Codex, Claude Code, Art, or similar AI 
+PASS architecture-spec-author ['description', 'metadata', 'name'] 'Use when creating or revising an architecture specification from PRDs or build authority. Focuses on terminol
+PASS babysit-pr ['description', 'name'] 'Monitor a pull request through review and CI. Use when the user asks to monitor, watch, or babysit a PR.'
+PASS code-conformance-reviewer ['description', 'metadata', 'name'] 'Use when reviewing generated or human-written code against PRDs, architecture specifications, governance/secu
+PASS council ['description', 'name'] 'Obtain a three-provider independent review when the user explicitly requests a council review or workflow.'
+PASS file-pr ['description', 'name'] 'File a concise pull request. Use when the user asks to file, open, or create a PR.'
+PASS friday-dev-board ['description', 'name'] "Operate this repository's work-item board alongside GenDev. Use for selecting, queuing, resuming, tracking, o
+PASS full-send ['description', 'name'] "Trigger this if the user says 'full send'."
+PASS full-stop ['description', 'name'] 'Prepare an explicitly requested full-stop PR workflow for human merge. A plain request to stop or pause means
+PASS governance-security-spec ['description', 'metadata', 'name'] 'Use when defining governance, security, identity, permission, policy, approval, audit, data sensitivity, tool
+PASS independent-code-validator ['description', 'metadata', 'name'] 'Use in a fresh, read-only review context to validate a frozen implementation candidate against its exact GenD
+PASS leaving-pr-comments ['description', 'name'] 'Use whenever leaving comments on GitHub.'
+PASS migration-refactor-analyst ['description', 'metadata', 'name'] 'Use when planning a major refactor, architecture replacement, schema migration, legacy removal, or old-vs-new
+PASS modernize ['description', 'name'] 'For getting old prs up to date. Use when asked to rebase a pr or "modernize".'
+PASS phase-build-planner ['description', 'metadata', 'name'] 'Use when defining build definitions or phase build plans from accepted PRD and architecture authority. Focuse
+PASS prd-author ['description', 'metadata', 'name'] 'Use when turning a vision/problem framing document into a Product Requirements Document with stable requireme
+PASS remediation-closeout ['description', 'metadata', 'name'] 'Use when converting review findings into remediation prompts/plans and reconciling documentation after implem
+PASS sol-loop ['description', 'name'] 'Run a bounded Sol review when the user requests a sol-loop review or workflow.'
+PASS subagent-directives-template ['description', 'name'] 'Prepare bounded builder and independent validator handoffs for authorized GenDev implementation and review. C
+PASS subagents-worktrees-template ['description', 'name'] 'Prepare an isolated worktree delegation plan when parallel subagent work is authorized. Define independent ta
+PASS tactical-implementation-planner ['description', 'metadata', 'name'] 'Use when creating detailed tactical implementation plans from phase build plans and architecture authority. F
+PASS takeover ['description', 'name'] 'Take over existing work. Use when the user asks to take over a PR, branch, or agent thread, or requests a tak
+PASS traceability-matrix ['description', 'metadata', 'name'] 'Use when mapping requirements to architecture rules, build-plan items, tactical tasks, implementation areas, 
+PASS vision-framing ['description', 'metadata', 'name'] 'Use when starting a new product, project, feature, refactor, or research effort and the user needs a clear vi
+UI full-send {'interface': {'display_name': 'Full Send', 'short_description': 'Prove, file, babysit, and merge a PR unattended', 'default_prompt': 'Use $full-send to take this to a merged PR. I am not watching this thread.'}}
+UI full-stop {'interface': {'display_name': 'Full Stop', 'short_description': 'Prove, review, and prepare a PR without merging', 'default_prompt': 'Use $full-stop to make this PR ready for me to merge.'}}
+UI leaving-pr-comments {'interface': {'display_name': 'Leaving PR Comments', 'short_description': 'Format agent-authored GitHub PR comments', 'default_prompt': 'Use $leaving-pr-comments when posting this comment on my behalf.'}}
+UI modernize {'interface': {'display_name': 'Modernize PR', 'short_description': 'Rebase and reassess an aging pull request', 'default_prompt': 'Use $modernize to rebase this PR on its current base, check for conceptual conflicts, and tell me honestly whether it should stay open.'}}
+frontmatter failures: 0

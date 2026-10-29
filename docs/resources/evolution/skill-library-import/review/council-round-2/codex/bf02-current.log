@@ -1,0 +1,6 @@
+test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it (audit_toolkit.ToolkitMigrationTests.test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.690s
+
+OK

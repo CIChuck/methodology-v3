@@ -7,7 +7,7 @@
         "SKL-C-01"
       ],
       "change": "sol-loop severity, controller classification and stop/decline rules",
-      "status": "implemented; fresh review pending"
+      "status": "specific remediation independently checked in round 2; overall result still CHANGES_REQUESTED"
     },
     {
       "ids": [
@@ -16,14 +16,14 @@
         "OBS-OUT-001"
       ],
       "change": "same-tree cross-context T3 additions, immutable anchors and negative tests",
-      "status": "implemented; fresh review pending"
+      "status": "specific remediation independently checked in round 2; overall result still CHANGES_REQUESTED"
     },
     {
       "ids": [
         "SKL-B-01"
       ],
       "change": "fresh request requires real bundled rg PATH before doctor; no stubs",
-      "status": "controller binary verified; child preflight pending"
+      "status": "independently resolved: real rg and doctor pass in all three contexts"
     },
     {
       "ids": [
@@ -31,35 +31,35 @@
         "SKL-L-02"
       ],
       "change": "explicit council request, scoped PR edits",
-      "status": "implemented; fresh review pending"
+      "status": "specific remediation independently checked in round 2; overall result still CHANGES_REQUESTED"
     },
     {
       "ids": [
         "SKL-L-03"
       ],
       "change": "actual base branch; unchanged fallback semantics and extra required reviews distinguished",
-      "status": "implemented; fresh review pending"
+      "status": "specific helper/base wording fixed; related rare-path review language remains open as R2-01"
     },
     {
       "ids": [
         "SKL-L-04"
       ],
       "change": "full-send proof scope and formal validation/approvals in merge gate",
-      "status": "implemented; fresh review pending"
+      "status": "specific remediation independently checked in round 2; overall result still CHANGES_REQUESTED"
     },
     {
       "ids": [
         "SKL-L-05"
       ],
       "change": "only top-level flat or direct bundle entrypoint discovery; reference-preservation regression",
-      "status": "implemented; fresh review pending"
+      "status": "specific remediation independently checked in round 2; overall result still CHANGES_REQUESTED"
     },
     {
       "ids": [
         "SK-IMP-001"
       ],
       "change": "modernize subject/verb typo",
-      "status": "implemented; fresh review pending"
+      "status": "specific remediation independently checked in round 2; overall result still CHANGES_REQUESTED"
     },
     {
       "ids": [
@@ -75,6 +75,23 @@
       ],
       "change": "friday bundle discovery remains working directory link; no shape change required",
       "status": "informational; no behavior fix"
+    }
+  ],
+  "reviewed_candidate": "aa25aa89762974012c0243e6134e9785f5db970d",
+  "round_2_outcome": "CHANGES_REQUESTED",
+  "round_2_record": "council-round-2/summary.md",
+  "remaining_findings": [
+    {
+      "id": "R2-01",
+      "source": "Claude F-01",
+      "status": "open; new remediation authorization required",
+      "scope": "babysit-pr mandatory rare-path findings"
+    },
+    {
+      "id": "R2-02",
+      "source": "Sol COD-R2-001 / Claude F-02",
+      "status": "open; new remediation authorization required",
+      "scope": "full-send actual PR base; inherited full-stop readiness"
     }
   ]
 }

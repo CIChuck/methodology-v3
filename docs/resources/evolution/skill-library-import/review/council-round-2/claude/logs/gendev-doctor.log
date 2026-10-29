@@ -1,0 +1,22 @@
+PATH rg: /opt/homebrew/lib/node_modules/@openai/codex/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/codex-path/rg
+ripgrep 15.2.0 (rev e89fff89ac)
+GenDev doctor
+Repository: /Users/chuckrussell/Dev/gendev/methodology-v3
+Prerequisite bash: present
+Prerequisite git: present
+Prerequisite python3: present
+Prerequisite rg: present
+Context: authority
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: fix/skills-council-follow-up
+Git HEAD: aa25aa8
+Tags at HEAD: none
+Project initialized: no
+Next action: ./scripts/init-project.sh "Project Name"
+Gate log: missing
+Recommended validation: ./scripts/check-methodology.sh
+EXIT=0

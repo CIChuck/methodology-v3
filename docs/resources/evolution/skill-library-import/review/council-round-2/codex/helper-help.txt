@@ -1,0 +1,15 @@
+usage: pr-wait [-h] [--repo REPO] [--until {green,ready,any-change}]
+               [--interval INTERVAL]
+               [pr]
+
+Watch a GitHub PR and print one line per real event.
+
+positional arguments:
+  pr                    PR number or URL
+
+options:
+  -h, --help            show this help message and exit
+  --repo REPO           owner/name (default: from the URL or the current
+                        checkout)
+  --until {green,ready,any-change}
+  --interval INTERVAL   seconds between polls (default 20, min 5)

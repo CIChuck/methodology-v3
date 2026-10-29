@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-28T23:54:42.481112+00:00",
+  "head": "aa25aa89762974012c0243e6134e9785f5db970d",
+  "branch": "fix/skills-council-follow-up",
+  "status": "",
+  "all_12_authority_hashes_match": true,
+  "frozen_inventory_and_approval_unchanged_vs_base": true,
+  "transient_tmp": "Observed during self-cleaning inherited suite; absent at final check"
+}

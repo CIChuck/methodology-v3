@@ -1,0 +1,24 @@
+doctor=0
+verify-migration-inputs final rc=0
+36
+PASS: original project contents/state and frozen refs preserved; only explicitly approved identical-tree T3 checkpoint additions permitted
+HEAD aa25aa89762974012c0243e6134e9785f5db970d branch fix/skills-council-follow-up dirty=0
+pinned ok AGENTS.md
+pinned ok docs/methodology/constitution/gendev.md
+pinned ok docs/policies/repository-engineering-policy.md
+pinned ok docs/policies/development-task-lifecycle.md
+pinned ok docs/policies/independent-validation-policy.md
+pinned ok docs/policies/dev-board-integration.md
+pinned ok docs/methodology/guides/skill-execution-contract.md
+pinned ok docs/methodology/dev-skills/council/SKILL.md
+pinned ok docs/resources/evolution/skill-library-import/README.md
+pinned ok docs/resources/evolution/skill-library-import/review/bounded-follow-up.md
+pinned ok docs/resources/evolution/skill-library-import/review/findings-ledger.json
+pinned ok docs/resources/evolution/v3-migration/review/round-1/checkpoint-exception-approval.json
+d3982d502fe00042f9e274ec66ee9809e2b2a10668fc9fe127f84fdb729477ba  /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round2-278hync6/claude/../request.md
+d34f9b633a639eebe2e9b6bb31cc50ce941b777c3a59cba1c18d1363a88ba0ca  /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round2-278hync6/claude/../selected.diff
+103:PR one cheap-looking fix at a time. Fix real bugs in the intended case.
+96:PR one cheap-looking fix at a time. Fix real bugs in the intended case.
+97:Decline the rest with a written reason, and list them as follow-ups:
+38:   that could. If you are on the default branch, create a branch first.
+85:- The branch is up to date with the default branch, and GitHub reports it as

@@ -1,0 +1,10 @@
+BF-01 PASS: sol-loop requirement-based severity, controller reclassification before nit-only stop, and out-of-scope mandatory disposition verified
+BF-01 PASS: council explicit request and scoped PR description edits verified
+BF-01 PASS: babysit-pr actual base branch and helper fallback vs repository review requirements verified
+BF-01 PASS: full-send scoped proof methods and formal validation/approvals in merge gate verified
+BF-01 PASS: modernize subject/verb agreement verified
+BF-02 PASS: counterexample nested reference markdown (including nested SKILL.md and depth>2 SKILL.md) copied as support without discovery entry; 24 skills preserved
+BF-03 Case 1 PASS: positive same-context (>ordinal) and cross-context (ordinal 0, 1) anchored to frozen inventory
+BF-03 Case 2 PASS: existing context non-increasing ordinal rejected
+BF-03 Case 3 PASS: new context cannot self-anchor to added ref or use different tree
+BF-03 Case 4 PASS: without frozen checkpoint anchor in inventory, all added refs rejected
