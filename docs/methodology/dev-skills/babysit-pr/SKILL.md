@@ -100,11 +100,14 @@ for every comment posted on the user's behalf.
 Screenshots and videos help as well, when you have a way to upload them.
 
 Keep the PR at the size the user's goal needs. Review loops tend to grow a
-PR one cheap-looking fix at a time. Fix real bugs in the intended case.
-Decline the rest with a written reason, and list them as follow-ups:
-unneeded tests, guards for edge cases that do not matter, extra integration
-or compatibility, and small performance costs. Prefer the fix that deletes or
-narrows code.
+PR one cheap-looking fix at a time. Classify findings against approved requirements.
+Security, contract, permission and data-loss violations remain mandatory even
+on rare or unintended paths. Fix mandatory findings within authorized scope;
+report out-of-scope mandatory findings for scope/risk disposition rather than
+silently implementing or waiving them. A written dismissal does not satisfy
+required remediation or authorize merging.
+Decline only optional preferences with a written reason and list them as
+follow-ups. Prefer the smallest fix that satisfies the requirement.
 
 ## Base branch and merging
 

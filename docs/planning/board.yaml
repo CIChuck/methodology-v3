@@ -35,11 +35,10 @@ tasks:
   title: Import and reconcile nine local workflow skills
   priority: 2
   work_state: started
-  condition: blocked
+  condition: normal
   implementation_authority: granted
-  packet: docs/planning/blocked/skill-library-import/
-  next_gate: Chuck disposition on R2-01 rare-path finding policy and R2-02 actual PR base; another fix/review cycle needs
-    authorization
+  packet: docs/planning/active/skill-library-import/
+  next_gate: Fresh council round 3 on the two corrected instructions; acceptance pending
   delivery_state: local
   branch: fix/skills-council-follow-up
   depends_on: []
@@ -49,6 +48,8 @@ tasks:
   - docs/resources/evolution/skill-library-import/review/bounded-follow-up.md
   - docs/resources/evolution/skill-library-import/review/remediation-results.json
   - docs/resources/evolution/skill-library-import/review/council-round-2/summary.md (CHANGES_REQUESTED, candidate aa25aa8)
+  - docs/resources/evolution/skill-library-import/review/wording-follow-up.md
+  - docs/resources/evolution/skill-library-import/review/wording-validation/results.json
   approved_by: Chuck Russell
   approved_at: '2026-10-28'
 - id: v3-documentation-refresh
@@ -260,3 +261,20 @@ events:
   note: Required checks pass in all three contexts; two residual instruction contradictions remain. Authorized bounded cycle
     complete; return findings to Chuck before another cycle. No acceptance or remote effects.
   evidence: docs/resources/evolution/skill-library-import/review/council-round-2/summary.md
+- task: skill-library-import
+  at: '2026-10-29T00:09:27.974750+00:00'
+  actor: Chuck Russell
+  actor_role: maintainer
+  action: authorized wording remediation; condition blocked -> normal
+  note: User said proceed after proposed two instruction corrections and fresh review. Recorded by Codex; local scope only,
+    acceptance pending.
+  evidence: docs/resources/evolution/skill-library-import/review/wording-follow-up.md
+- task: skill-library-import
+  at: '2026-10-29T00:11:02.989004+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded two wording fixes and focused local checks
+  note: Mandatory finding handling and actual PR target corrected. Metadata/support/links/manifest, methodology, docs, board,
+    guide mirror and preservation checks pass. No runtime changes or repeated runtime-test claim; local freeze and fresh council
+    pending.
+  evidence: docs/resources/evolution/skill-library-import/review/wording-validation/results.json

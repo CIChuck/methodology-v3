@@ -31,6 +31,13 @@ blanket permission to amend product contracts, approve gates, invent attestation
 waive required human approval or touch production. Resolve authority changes
 before implementation and retain harness/system approval boundaries.
 
+## Target base
+
+For an existing PR, resolve and retain its actual target base branch. For a new
+PR, explicitly select its intended target; use the repository default only when
+appropriate to the requested work. Record that target and use it consistently
+for rebasing and readiness. Do not retarget an existing PR without authorization.
+
 ## Steps
 
 1. **Finish the change.** Complete the goal from the user's request with the
@@ -38,9 +45,9 @@ before implementation and retain harness/system approval boundaries.
    that could. If you are on the default branch, create a branch first.
 2. **Prove it.** Get proof for every change you made. See "Proof".
 3. **Get feedback.** Use the `sol-loop` skill to verify changes.
-4. **File the PR** with the `file-pr` skill. Rebase onto the latest default
-   branch first. Add one short line to the description that says how you proved
-   the change.
+4. **File or update the PR** with the `file-pr` skill. Rebase onto the latest
+   selected target base first, retaining an existing PR's actual base. Add one
+   short line to the description that says how you proved the change.
 5. **Babysit the PR** with the `babysit-pr` skill. Fix real findings and CI
    failures. Get proof for each fix before you push it.
 6. **Merge** when the merge gate passes.
@@ -82,8 +89,9 @@ Full confidence means all of these are true on the latest commit:
 - Review bots have finished, and each finding is fixed or dismissed with a
   written reason.
 - No human review still requests changes.
-- The branch is up to date with the default branch, and GitHub reports it as
-  mergeable.
+- The PR's actual base matches the selected target, the branch is up to date
+  with that base, and GitHub reports it as mergeable. Recheck the actual base
+  and head before merging; a changed target requires reconciliation.
 
 Merge with the method the repo uses. Check the allowed methods and recent merged
 PRs. If the repo uses a merge queue or auto-merge, stay until GitHub reports the

@@ -1,0 +1,37 @@
+import hashlib,json,os,re,stat,subprocess,tempfile,shutil
+from pathlib import Path
+import yaml
+R=Path.cwd(); O=Path(__file__).parent
+sha=lambda b:hashlib.sha256(b).hexdigest()
+D=R/'docs/resources/evolution/skill-library-import'
+inv=json.loads((D/'source-inventory.json').read_text()); manifest=json.loads((D/'import-manifest.json').read_text())
+S=Path(inv['source']); actual={p.relative_to(S).as_posix() for p in S.rglob('*') if p.is_file()}
+assert actual==set(inv['files'])
+for name,record in inv['files'].items():
+ p=S/name
+ assert sha(p.read_bytes())==record['sha256'],name
+ assert stat.S_IMODE(p.stat().st_mode)==record['mode'],name
+assert subprocess.check_output(['git','-C',str(S),'rev-parse','HEAD'],text=True).strip()==inv['source_commit']
+assert {m['source'] for m in manifest}==actual
+for m in manifest:
+ src=S/m['source']; dst=R/m['destination']
+ assert sha(src.read_bytes())==m['source_sha256']
+ assert sha(dst.read_bytes())==m['destination_sha256']
+ assert (src.read_bytes()!=dst.read_bytes())==m['changed']
+ assert stat.S_IMODE(src.stat().st_mode)==stat.S_IMODE(dst.stat().st_mode)
+print('PASS all 14 original/import file digests, modes, inventory and source commit; 5 support files unchanged')
+names={Path(m['source']).parts[0] for m in manifest}
+def check(root):
+ skills=list((root/'.agents/skills').glob('*/SKILL.md')); assert len(skills)==24
+ for skill in skills:
+  meta=yaml.safe_load(skill.read_text().split('---',2)[1]); assert meta['name']==skill.parent.name; assert isinstance(meta['description'],str) and meta['description']
+ for name in names:
+  folder=root/'.agents/skills'/name; assert folder.is_symlink(); assert folder.resolve()==(root/'docs/methodology/dev-skills'/name).resolve()
+  for link in re.findall(r'\]\(([^)]+)\)',(folder/'SKILL.md').read_text()):
+   assert (folder.resolve()/link).is_file(),(name,link)
+  for ui in folder.glob('agents/*.yaml'):
+   x=yaml.safe_load(ui.read_text())['interface']; assert all(isinstance(x[k],str) and x[k] for k in ['display_name','short_description','default_prompt']); assert 25<=len(x['short_description'])<=64
+ helper=root/'.agents/skills/babysit-pr/scripts/pr-wait'; compile(helper.read_text(),str(helper),'exec')
+ out=subprocess.check_output(['python3',str(helper),'--help'],text=True); assert 'Watch a GitHub PR' in out
+ print('PASS',root,': 24 metadata entries; 9 bundles, all Markdown links, 4 UI metadata; helper syntax/help')
+check(R)

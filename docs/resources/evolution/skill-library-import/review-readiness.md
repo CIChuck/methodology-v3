@@ -1,3 +1,17 @@
+# Round-3 Review Readiness
+
+Status: Two residual wording corrections authorized and locally checked; fresh council round 3 pending
+Branch: fix/skills-council-follow-up
+Task: skill-library-import
+Controlling follow-up: review/wording-follow-up.md
+Evidence: review/wording-validation/results.json and review/wording-counterexamples.json
+Previous reviewed candidate: aa25aa8, round 2 CHANGES_REQUESTED
+No current-candidate VERIFIED, acceptance, remote delivery or release inferred.
+The frozen round-3 request must pin the new candidate and exact authority.
+Earlier readiness snapshots below are retained historical, superseded as current state.
+
+---
+
 # Current Skills Review Readiness
 
 Status: Council round 1 BLOCKED; authorized bounded remediation and one fresh round

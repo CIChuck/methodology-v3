@@ -1,0 +1,48 @@
+{
+  "mode": "static text/counterexample accuracy pass; no live workflow or runtime proof",
+  "prior": "f6de7a2e121a2bf26c0d306f7451568854c5d2d5",
+  "recorded_at": "2026-10-29T00:10:06.759469+00:00",
+  "prior_evidence": {
+    "babysit_intended_case": true,
+    "full_send_default_rebase": true,
+    "full_send_default_gate": true
+  },
+  "cases": [
+    {
+      "case": "rare permission bypass in a bot finding",
+      "before": "babysit-pr says fix intended-case bugs and decline the rest; mandatory exception absent in that paragraph",
+      "after": "mandatory regardless of rarity; within-scope remediation or explicit scope/risk disposition; written dismissal cannot authorize merge"
+    },
+    {
+      "case": "out-of-scope data-loss finding",
+      "before": "the rest can be declined with a reason",
+      "after": "report for scope/risk disposition; no silent implementation or waiver"
+    },
+    {
+      "case": "optional style preference",
+      "before": "decline as follow-up",
+      "after": "still optional; decline with a written reason"
+    },
+    {
+      "case": "existing PR targets release/1.x while default is main",
+      "before": "full-send requires default main rebase/readiness",
+      "after": "retain release/1.x as selected actual target; rebase/readiness against release/1.x"
+    },
+    {
+      "case": "stacked PR targets feature/parent",
+      "before": "default main is required by step 4 and gate",
+      "after": "retain feature/parent; do not retarget without authorization"
+    },
+    {
+      "case": "new ordinary PR intended for main",
+      "before": "default main used implicitly",
+      "after": "select main explicitly when appropriate; rebase/readiness against main"
+    },
+    {
+      "case": "PR base changes after initial resolution",
+      "before": "default-branch gate does not reconcile actual target",
+      "after": "recheck actual base/head before merge; reconcile changed target"
+    }
+  ],
+  "full_stop": "Unchanged; explicitly inherits full-send proof/workflow/readiness gate while forbidding merge. Inherits corrected target behavior."
+}

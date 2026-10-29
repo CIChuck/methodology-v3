@@ -3,7 +3,7 @@
     "source": "babysit-pr/SKILL.md",
     "source_sha256": "fbe43ba3ab76a466a88ef8b46dca1b41fb8101347d24a396903849865173a6ac",
     "destination": "docs/methodology/dev-skills/babysit-pr/SKILL.md",
-    "destination_sha256": "4fa88385a7509d1962da3605ecb160bd14e918a82ed376d8091468af215af581",
+    "destination_sha256": "48ca5c421f768e6160ad6cf377afef9d371cfe467367c9b6100aa8921bd83e35",
     "changed": true
   },
   {
@@ -31,7 +31,7 @@
     "source": "full-send/SKILL.md",
     "source_sha256": "ba585e47cd901506b0e2de13025b0e39bc02462c136cf27491ad3efbdfe66020",
     "destination": "docs/methodology/dev-skills/full-send/SKILL.md",
-    "destination_sha256": "90f0e53736e68302ed6ebb64bb8fb900e933b3868ece269796c4888a8d4c9322",
+    "destination_sha256": "b7300ce38f128a1a44da02c7afc72a50cedc195f260d1a62c04dc2395b5ada40",
     "changed": true
   },
   {
