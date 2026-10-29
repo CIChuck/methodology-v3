@@ -35,10 +35,11 @@ tasks:
   title: Import and reconcile nine local workflow skills
   priority: 2
   work_state: started
-  condition: normal
+  condition: blocked
   implementation_authority: granted
-  packet: docs/planning/active/skill-library-import/
-  next_gate: Fresh council round 3 on the two corrected instructions; acceptance pending
+  packet: docs/planning/blocked/skill-library-import/
+  next_gate: 'Chuck disposition on disputed R3C-01: explicit mandatory-finding prohibition versus general bot gate wording;
+    acceptance pending'
   delivery_state: local
   branch: fix/skills-council-follow-up
   depends_on: []
@@ -50,6 +51,8 @@ tasks:
   - docs/resources/evolution/skill-library-import/review/council-round-2/summary.md (CHANGES_REQUESTED, candidate aa25aa8)
   - docs/resources/evolution/skill-library-import/review/wording-follow-up.md
   - docs/resources/evolution/skill-library-import/review/wording-validation/results.json
+  - docs/resources/evolution/skill-library-import/review/council-round-3/summary.md (2 VERIFIED / 1 CHANGES_REQUESTED; candidate
+    5e2ab40)
   approved_by: Chuck Russell
   approved_at: '2026-10-28'
 - id: v3-documentation-refresh
@@ -278,3 +281,12 @@ events:
     guide mirror and preservation checks pass. No runtime changes or repeated runtime-test claim; local freeze and fresh council
     pending.
   evidence: docs/resources/evolution/skill-library-import/review/wording-validation/results.json
+- task: skill-library-import
+  at: '2026-10-29T00:21:13.748456+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded round 3 conflict; condition normal -> blocked
+  note: All focused checks pass. Two independent instruction-scope VERIFIED results and one CHANGES_REQUESTED preserved; controller
+    recommends advisory classification with concrete textual evidence, but returns dispute to Chuck. No aggregate VERIFIED,
+    acceptance, further fixes/review or remote effects.
+  evidence: docs/resources/evolution/skill-library-import/review/council-round-3/summary.md

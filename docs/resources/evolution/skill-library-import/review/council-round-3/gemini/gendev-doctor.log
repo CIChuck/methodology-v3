@@ -1,0 +1,21 @@
+GenDev doctor
+Repository: /Users/chuckrussell/Dev/gendev/methodology-v3
+Prerequisite bash: present
+Prerequisite git: present
+Prerequisite python3: present
+Prerequisite rg: present
+Context: authority
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: fix/skills-council-follow-up
+Git HEAD: 5e2ab40
+Tags at HEAD: none
+Project initialized: no
+Next action: ./scripts/init-project.sh "Project Name"
+Gate log: missing
+Recommended validation: ./scripts/check-methodology.sh
+
+EXIT_CODE=0

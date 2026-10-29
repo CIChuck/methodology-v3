@@ -77,23 +77,33 @@
       "status": "informational; no behavior fix"
     }
   ],
-  "reviewed_candidate": "aa25aa89762974012c0243e6134e9785f5db970d",
+  "reviewed_candidate": "5e2ab4047a69c82fc883735134c23527197b3c1e",
   "round_2_outcome": "CHANGES_REQUESTED",
   "round_2_record": "council-round-2/summary.md",
   "remaining_findings": [
     {
       "id": "R2-01",
       "source": "Claude F-01",
-      "status": "wording corrected; fresh council round 3 pending",
+      "status": "specific wording correction independently confirmed in round 3; aggregate classification dispute remains",
       "scope": "babysit-pr mandatory rare-path findings"
     },
     {
       "id": "R2-02",
       "source": "Sol COD-R2-001 / Claude F-02",
-      "status": "wording corrected; fresh council round 3 pending",
+      "status": "specific wording correction independently confirmed in round 3; aggregate classification dispute remains",
       "scope": "full-send actual PR base; inherited full-stop readiness"
     }
   ],
   "current_authorization": "wording-follow-up.md",
-  "current_status": "two residual wording fixes implemented; fresh council round 3 pending"
+  "current_status": "round 3 complete: two VERIFIED / one CHANGES_REQUESTED; R3C-01 classification disputed, Chuck disposition pending",
+  "round_3_record": "council-round-3/summary.md",
+  "disputed_findings": [
+    {
+      "id": "R3C-01",
+      "reviewer_classification": "Claude: medium mandatory",
+      "counter_evidence": "Sol/Gemini VERIFIED; explicit babysit-pr prohibition and shared contract constrain full-send gate",
+      "controller_recommendation": "optional clarity improvement; not a demonstrated authorization bypass",
+      "disposition": "pending Chuck; raw reviewer verdict preserved"
+    }
+  ]
 }
