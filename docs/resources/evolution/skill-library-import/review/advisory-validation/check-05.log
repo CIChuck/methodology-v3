@@ -1,0 +1,27 @@
+id: skill-library-import
+title: Import and reconcile nine local workflow skills
+priority: 2
+work_state: started
+condition: normal
+implementation_authority: granted
+packet: docs/planning/active/skill-library-import/
+next_gate: Implement approved five-skill clarifications; focused checks and fresh
+  council round 4 before PR update
+delivery_state: local
+branch: fix/skills-council-follow-up
+depends_on: []
+validation:
+- docs/resources/evolution/skill-library-import/validation-summary.json
+- docs/resources/evolution/github-delivery.json (GitHub delivery verified; not conformance
+  approval)
+- docs/resources/evolution/skill-library-import/review/bounded-follow-up.md
+- docs/resources/evolution/skill-library-import/review/remediation-results.json
+- docs/resources/evolution/skill-library-import/review/council-round-2/summary.md
+  (CHANGES_REQUESTED, candidate aa25aa8)
+- docs/resources/evolution/skill-library-import/review/wording-follow-up.md
+- docs/resources/evolution/skill-library-import/review/wording-validation/results.json
+- docs/resources/evolution/skill-library-import/review/council-round-3/summary.md
+  (2 VERIFIED / 1 CHANGES_REQUESTED; candidate 5e2ab40)
+- docs/resources/evolution/skill-library-import/review/advisory-clarifications.md
+approved_by: Chuck Russell
+approved_at: '2026-10-28'

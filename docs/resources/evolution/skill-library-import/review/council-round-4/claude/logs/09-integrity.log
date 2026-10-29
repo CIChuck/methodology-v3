@@ -1,0 +1,202 @@
+PASS manifest entries = 14
+PASS source digest babysit-pr/SKILL.md
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/babysit-pr/SKILL.md
+PASS changed flag docs/methodology/dev-skills/babysit-pr/SKILL.md = True
+PASS mode docs/methodology/dev-skills/babysit-pr/SKILL.md git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/babysit-pr/SKILL.md=100644
+PASS source digest babysit-pr/scripts/pr-wait
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/babysit-pr/scripts/pr-wait
+PASS changed flag docs/methodology/dev-skills/babysit-pr/scripts/pr-wait = False
+PASS mode docs/methodology/dev-skills/babysit-pr/scripts/pr-wait git=100755 source=100755
+PASS worktree mode docs/methodology/dev-skills/babysit-pr/scripts/pr-wait=100755
+PASS source digest council/SKILL.md
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/council/SKILL.md
+PASS changed flag docs/methodology/dev-skills/council/SKILL.md = True
+PASS mode docs/methodology/dev-skills/council/SKILL.md git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/council/SKILL.md=100644
+PASS source digest file-pr/SKILL.md
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/file-pr/SKILL.md
+PASS changed flag docs/methodology/dev-skills/file-pr/SKILL.md = True
+PASS mode docs/methodology/dev-skills/file-pr/SKILL.md git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/file-pr/SKILL.md=100644
+PASS source digest full-send/SKILL.md
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/full-send/SKILL.md
+PASS changed flag docs/methodology/dev-skills/full-send/SKILL.md = True
+PASS mode docs/methodology/dev-skills/full-send/SKILL.md git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/full-send/SKILL.md=100644
+PASS source digest full-send/agents/openai.yaml
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/full-send/agents/openai.yaml
+PASS changed flag docs/methodology/dev-skills/full-send/agents/openai.yaml = False
+PASS mode docs/methodology/dev-skills/full-send/agents/openai.yaml git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/full-send/agents/openai.yaml=100644
+PASS source digest full-stop/SKILL.md
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/full-stop/SKILL.md
+PASS changed flag docs/methodology/dev-skills/full-stop/SKILL.md = True
+PASS mode docs/methodology/dev-skills/full-stop/SKILL.md git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/full-stop/SKILL.md=100644
+PASS source digest full-stop/agents/openai.yaml
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/full-stop/agents/openai.yaml
+PASS changed flag docs/methodology/dev-skills/full-stop/agents/openai.yaml = False
+PASS mode docs/methodology/dev-skills/full-stop/agents/openai.yaml git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/full-stop/agents/openai.yaml=100644
+PASS source digest leaving-pr-comments/SKILL.md
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/leaving-pr-comments/SKILL.md
+PASS changed flag docs/methodology/dev-skills/leaving-pr-comments/SKILL.md = True
+PASS mode docs/methodology/dev-skills/leaving-pr-comments/SKILL.md git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/leaving-pr-comments/SKILL.md=100644
+PASS source digest leaving-pr-comments/agents/openai.yaml
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml
+PASS changed flag docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml = False
+PASS mode docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml=100644
+PASS source digest modernize/SKILL.md
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/modernize/SKILL.md
+PASS changed flag docs/methodology/dev-skills/modernize/SKILL.md = True
+PASS mode docs/methodology/dev-skills/modernize/SKILL.md git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/modernize/SKILL.md=100644
+PASS source digest modernize/agents/openai.yaml
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/modernize/agents/openai.yaml
+PASS changed flag docs/methodology/dev-skills/modernize/agents/openai.yaml = False
+PASS mode docs/methodology/dev-skills/modernize/agents/openai.yaml git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/modernize/agents/openai.yaml=100644
+PASS source digest sol-loop/SKILL.md
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/sol-loop/SKILL.md
+PASS changed flag docs/methodology/dev-skills/sol-loop/SKILL.md = True
+PASS mode docs/methodology/dev-skills/sol-loop/SKILL.md git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/sol-loop/SKILL.md=100644
+PASS source digest takeover/SKILL.md
+PASS dest digest (tree+worktree) docs/methodology/dev-skills/takeover/SKILL.md
+PASS changed flag docs/methodology/dev-skills/takeover/SKILL.md = True
+PASS mode docs/methodology/dev-skills/takeover/SKILL.md git=100644 source=100644
+PASS worktree mode docs/methodology/dev-skills/takeover/SKILL.md=100644
+PASS source tree file set (14) == manifest
+PASS unchanged support files = 5
+PASS support byte-identical src/ref/base/cand docs/methodology/dev-skills/babysit-pr/scripts/pr-wait
+PASS support mode unchanged since ref docs/methodology/dev-skills/babysit-pr/scripts/pr-wait (100755)
+PASS support byte-identical src/ref/base/cand docs/methodology/dev-skills/full-send/agents/openai.yaml
+PASS support mode unchanged since ref docs/methodology/dev-skills/full-send/agents/openai.yaml (100644)
+PASS support byte-identical src/ref/base/cand docs/methodology/dev-skills/full-stop/agents/openai.yaml
+PASS support mode unchanged since ref docs/methodology/dev-skills/full-stop/agents/openai.yaml (100644)
+PASS support byte-identical src/ref/base/cand docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml
+PASS support mode unchanged since ref docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml (100644)
+PASS support byte-identical src/ref/base/cand docs/methodology/dev-skills/modernize/agents/openai.yaml
+PASS support mode unchanged since ref docs/methodology/dev-skills/modernize/agents/openai.yaml (100644)
+PASS discovery link babysit-pr -> ../../docs/methodology/dev-skills/babysit-pr
+PASS link resolves babysit-pr
+PASS link committed as symlink babysit-pr
+PASS discovery link council -> ../../docs/methodology/dev-skills/council
+PASS link resolves council
+PASS link committed as symlink council
+PASS discovery link file-pr -> ../../docs/methodology/dev-skills/file-pr
+PASS link resolves file-pr
+PASS link committed as symlink file-pr
+PASS discovery link full-send -> ../../docs/methodology/dev-skills/full-send
+PASS link resolves full-send
+PASS link committed as symlink full-send
+PASS discovery link full-stop -> ../../docs/methodology/dev-skills/full-stop
+PASS link resolves full-stop
+PASS link committed as symlink full-stop
+PASS discovery link leaving-pr-comments -> ../../docs/methodology/dev-skills/leaving-pr-comments
+PASS link resolves leaving-pr-comments
+PASS link committed as symlink leaving-pr-comments
+PASS discovery link modernize -> ../../docs/methodology/dev-skills/modernize
+PASS link resolves modernize
+PASS link committed as symlink modernize
+PASS discovery link sol-loop -> ../../docs/methodology/dev-skills/sol-loop
+PASS link resolves sol-loop
+PASS link committed as symlink sol-loop
+PASS discovery link takeover -> ../../docs/methodology/dev-skills/takeover
+PASS link resolves takeover
+PASS link committed as symlink takeover
+PASS skill entries = 24
+PASS frontmatter ai-construction-directive-builder
+PASS name matches dir ai-construction-directive-builder
+PASS description non-empty ai-construction-directive-builder
+PASS frontmatter architecture-spec-author
+PASS name matches dir architecture-spec-author
+PASS description non-empty architecture-spec-author
+PASS frontmatter babysit-pr
+PASS name matches dir babysit-pr
+PASS description non-empty babysit-pr
+PASS link babysit-pr: ../../guides/skill-execution-contract.md
+PASS frontmatter code-conformance-reviewer
+PASS name matches dir code-conformance-reviewer
+PASS description non-empty code-conformance-reviewer
+PASS frontmatter council
+PASS name matches dir council
+PASS description non-empty council
+PASS link council: ../../guides/skill-execution-contract.md
+PASS frontmatter file-pr
+PASS name matches dir file-pr
+PASS description non-empty file-pr
+PASS link file-pr: ../../guides/skill-execution-contract.md
+PASS frontmatter friday-dev-board
+PASS name matches dir friday-dev-board
+PASS description non-empty friday-dev-board
+PASS frontmatter full-send
+PASS name matches dir full-send
+PASS description non-empty full-send
+PASS link full-send: ../../guides/skill-execution-contract.md
+PASS frontmatter full-stop
+PASS name matches dir full-stop
+PASS description non-empty full-stop
+PASS link full-stop: ../../guides/skill-execution-contract.md
+PASS link full-stop: ../full-send/SKILL.md
+PASS frontmatter governance-security-spec
+PASS name matches dir governance-security-spec
+PASS description non-empty governance-security-spec
+PASS frontmatter independent-code-validator
+PASS name matches dir independent-code-validator
+PASS description non-empty independent-code-validator
+PASS frontmatter leaving-pr-comments
+PASS name matches dir leaving-pr-comments
+PASS description non-empty leaving-pr-comments
+PASS link leaving-pr-comments: ../../guides/skill-execution-contract.md
+PASS frontmatter migration-refactor-analyst
+PASS name matches dir migration-refactor-analyst
+PASS description non-empty migration-refactor-analyst
+PASS frontmatter modernize
+PASS name matches dir modernize
+PASS description non-empty modernize
+PASS link modernize: ../../guides/skill-execution-contract.md
+PASS frontmatter phase-build-planner
+PASS name matches dir phase-build-planner
+PASS description non-empty phase-build-planner
+PASS frontmatter prd-author
+PASS name matches dir prd-author
+PASS description non-empty prd-author
+PASS frontmatter remediation-closeout
+PASS name matches dir remediation-closeout
+PASS description non-empty remediation-closeout
+PASS frontmatter sol-loop
+PASS name matches dir sol-loop
+PASS description non-empty sol-loop
+PASS link sol-loop: ../../guides/skill-execution-contract.md
+PASS frontmatter subagent-directives-template
+PASS name matches dir subagent-directives-template
+PASS description non-empty subagent-directives-template
+PASS frontmatter subagents-worktrees-template
+PASS name matches dir subagents-worktrees-template
+PASS description non-empty subagents-worktrees-template
+PASS frontmatter tactical-implementation-planner
+PASS name matches dir tactical-implementation-planner
+PASS description non-empty tactical-implementation-planner
+PASS frontmatter takeover
+PASS name matches dir takeover
+PASS description non-empty takeover
+PASS link takeover: ../../guides/skill-execution-contract.md
+PASS frontmatter traceability-matrix
+PASS name matches dir traceability-matrix
+PASS description non-empty traceability-matrix
+PASS frontmatter vision-framing
+PASS name matches dir vision-framing
+PASS description non-empty vision-framing
+PASS pr-wait ast.parse+compile in memory
+PASS pr-wait shebang: #!/usr/bin/env python3
+PASS guide mirror exact 23/23
+PASS guide + HTML unchanged since aa25aa8
+PASS frozen input manifest + checkpoint approval unchanged since aa25aa8
+PASS methodology/executable/skill asset changes since base: ['docs/methodology/dev-skills/babysit-pr/SKILL.md', 'docs/methodology/dev-skills/file-pr/SKILL.md', 'docs/methodology/dev-skills/full-send/SKILL.md', 'docs/methodology/dev-skills/full-stop/SKILL.md', 'docs/methodology/dev-skills/sol-loop/SKILL.md']
+PASS other changes confined to tracking/evidence: 20 files
+
+RESULT: PASS 0

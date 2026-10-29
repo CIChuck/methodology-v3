@@ -1,0 +1,8 @@
+PASS all 10 authority pins match candidate and checkout
+PASS selected diff hash 6818fab01b30764ed63cee1b214fd63b3fceed8f6a5062fcdcf450ccd4100b1c
+PASS all 14 original/import file digests, modes, inventory and source commit; 5 support files unchanged
+PASS /Users/chuckrussell/Dev/gendev/methodology-v3 : 24 metadata entries; 9 bundles, all Markdown links, 4 UI metadata; helper syntax/help
+PASS /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/codex/tmp/independent-install-p0drgn6v : 24 metadata entries; 9 bundles, all Markdown links, 4 UI metadata; helper syntax/help
+PASS /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/codex/tmp/methodology-dry-run.h_q77aop : 24 metadata entries; 9 bundles, all Markdown links, 4 UI metadata; helper syntax/help
+PASS disposable exercise empty board, no inherited project, fresh provenance
+PASS all independent offline assertions

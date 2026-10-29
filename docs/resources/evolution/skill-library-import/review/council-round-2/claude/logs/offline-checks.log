@@ -1,0 +1,165 @@
+PASS source inventory babysit-pr/SKILL.md
+PASS source inventory babysit-pr/scripts/pr-wait
+PASS source inventory council/SKILL.md
+PASS source inventory file-pr/SKILL.md
+PASS source inventory full-send/SKILL.md
+PASS source inventory full-send/agents/openai.yaml
+PASS source inventory full-stop/SKILL.md
+PASS source inventory full-stop/agents/openai.yaml
+PASS source inventory leaving-pr-comments/SKILL.md
+PASS source inventory leaving-pr-comments/agents/openai.yaml
+PASS source inventory modernize/SKILL.md
+PASS source inventory modernize/agents/openai.yaml
+PASS source inventory sol-loop/SKILL.md
+PASS source inventory takeover/SKILL.md
+PASS inventory covers every file in the nine source folders
+source top-level folders: ['babysit-pr', 'council', 'file-pr', 'full-send', 'full-stop', 'leaving-pr-comments', 'modernize', 'sol-loop', 'takeover']
+PASS nine imports: ['babysit-pr', 'council', 'file-pr', 'full-send', 'full-stop', 'leaving-pr-comments', 'modernize', 'sol-loop', 'takeover']
+PASS dest digest docs/methodology/dev-skills/babysit-pr/SKILL.md
+PASS manifest source digest babysit-pr/SKILL.md
+PASS dest digest docs/methodology/dev-skills/babysit-pr/scripts/pr-wait
+PASS manifest source digest babysit-pr/scripts/pr-wait
+PASS unchanged bytes+mode docs/methodology/dev-skills/babysit-pr/scripts/pr-wait
+PASS dest digest docs/methodology/dev-skills/council/SKILL.md
+PASS manifest source digest council/SKILL.md
+PASS dest digest docs/methodology/dev-skills/file-pr/SKILL.md
+PASS manifest source digest file-pr/SKILL.md
+PASS dest digest docs/methodology/dev-skills/full-send/SKILL.md
+PASS manifest source digest full-send/SKILL.md
+PASS dest digest docs/methodology/dev-skills/full-send/agents/openai.yaml
+PASS manifest source digest full-send/agents/openai.yaml
+PASS unchanged bytes+mode docs/methodology/dev-skills/full-send/agents/openai.yaml
+PASS dest digest docs/methodology/dev-skills/full-stop/SKILL.md
+PASS manifest source digest full-stop/SKILL.md
+PASS dest digest docs/methodology/dev-skills/full-stop/agents/openai.yaml
+PASS manifest source digest full-stop/agents/openai.yaml
+PASS unchanged bytes+mode docs/methodology/dev-skills/full-stop/agents/openai.yaml
+PASS dest digest docs/methodology/dev-skills/leaving-pr-comments/SKILL.md
+PASS manifest source digest leaving-pr-comments/SKILL.md
+PASS dest digest docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml
+PASS manifest source digest leaving-pr-comments/agents/openai.yaml
+PASS unchanged bytes+mode docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml
+PASS dest digest docs/methodology/dev-skills/modernize/SKILL.md
+PASS manifest source digest modernize/SKILL.md
+PASS dest digest docs/methodology/dev-skills/modernize/agents/openai.yaml
+PASS manifest source digest modernize/agents/openai.yaml
+PASS unchanged bytes+mode docs/methodology/dev-skills/modernize/agents/openai.yaml
+PASS dest digest docs/methodology/dev-skills/sol-loop/SKILL.md
+PASS manifest source digest sol-loop/SKILL.md
+PASS dest digest docs/methodology/dev-skills/takeover/SKILL.md
+PASS manifest source digest takeover/SKILL.md
+PASS manifest has one row per source file
+PASS 24 discovery entries (24)
+PASS ai-construction-directive-builder/SKILL.md symlink -> ../../../docs/methodology/dev-skills/ai-construction-directive-builder.md
+PASS ai-construction-directive-builder/SKILL.md readable through discovery
+PASS ai-construction-directive-builder resolves to docs/methodology/dev-skills/ai-construction-directive-builder.md
+FAIL ai-construction-directive-builder frontmatter name/description
+PASS architecture-spec-author/SKILL.md symlink -> ../../../docs/methodology/dev-skills/architecture-spec-author.md
+PASS architecture-spec-author/SKILL.md readable through discovery
+PASS architecture-spec-author resolves to docs/methodology/dev-skills/architecture-spec-author.md
+FAIL architecture-spec-author frontmatter name/description
+INFO babysit-pr dir symlink -> ../../docs/methodology/dev-skills/babysit-pr
+PASS babysit-pr/SKILL.md readable through discovery
+PASS babysit-pr resolves to docs/methodology/dev-skills/babysit-pr/SKILL.md
+PASS babysit-pr frontmatter name/description
+PASS link docs/methodology/dev-skills/babysit-pr/SKILL.md -> ../../guides/skill-execution-contract.md
+PASS code-conformance-reviewer/SKILL.md symlink -> ../../../docs/methodology/dev-skills/code-conformance-reviewer.md
+PASS code-conformance-reviewer/SKILL.md readable through discovery
+PASS code-conformance-reviewer resolves to docs/methodology/dev-skills/code-conformance-reviewer.md
+FAIL code-conformance-reviewer frontmatter name/description
+INFO council dir symlink -> ../../docs/methodology/dev-skills/council
+PASS council/SKILL.md readable through discovery
+PASS council resolves to docs/methodology/dev-skills/council/SKILL.md
+PASS council frontmatter name/description
+PASS link docs/methodology/dev-skills/council/SKILL.md -> ../../guides/skill-execution-contract.md
+INFO file-pr dir symlink -> ../../docs/methodology/dev-skills/file-pr
+PASS file-pr/SKILL.md readable through discovery
+PASS file-pr resolves to docs/methodology/dev-skills/file-pr/SKILL.md
+PASS file-pr frontmatter name/description
+PASS link docs/methodology/dev-skills/file-pr/SKILL.md -> ../../guides/skill-execution-contract.md
+PASS friday-dev-board/SKILL.md symlink -> ../../../docs/methodology/dev-skills/friday-dev-board/SKILL.md
+PASS friday-dev-board/SKILL.md readable through discovery
+PASS friday-dev-board resolves to docs/methodology/dev-skills/friday-dev-board/SKILL.md
+PASS friday-dev-board frontmatter name/description
+INFO full-send dir symlink -> ../../docs/methodology/dev-skills/full-send
+PASS full-send/SKILL.md readable through discovery
+PASS full-send resolves to docs/methodology/dev-skills/full-send/SKILL.md
+PASS full-send frontmatter name/description
+PASS link docs/methodology/dev-skills/full-send/SKILL.md -> ../../guides/skill-execution-contract.md
+PASS UI metadata present docs/methodology/dev-skills/full-send/agents/openai.yaml
+INFO full-stop dir symlink -> ../../docs/methodology/dev-skills/full-stop
+PASS full-stop/SKILL.md readable through discovery
+PASS full-stop resolves to docs/methodology/dev-skills/full-stop/SKILL.md
+PASS full-stop frontmatter name/description
+PASS link docs/methodology/dev-skills/full-stop/SKILL.md -> ../../guides/skill-execution-contract.md
+PASS link docs/methodology/dev-skills/full-stop/SKILL.md -> ../full-send/SKILL.md
+PASS UI metadata present docs/methodology/dev-skills/full-stop/agents/openai.yaml
+PASS governance-security-spec/SKILL.md symlink -> ../../../docs/methodology/dev-skills/governance-security-spec.md
+PASS governance-security-spec/SKILL.md readable through discovery
+PASS governance-security-spec resolves to docs/methodology/dev-skills/governance-security-spec.md
+FAIL governance-security-spec frontmatter name/description
+PASS independent-code-validator/SKILL.md symlink -> ../../../docs/methodology/dev-skills/independent-code-validator.md
+PASS independent-code-validator/SKILL.md readable through discovery
+PASS independent-code-validator resolves to docs/methodology/dev-skills/independent-code-validator.md
+FAIL independent-code-validator frontmatter name/description
+INFO leaving-pr-comments dir symlink -> ../../docs/methodology/dev-skills/leaving-pr-comments
+PASS leaving-pr-comments/SKILL.md readable through discovery
+PASS leaving-pr-comments resolves to docs/methodology/dev-skills/leaving-pr-comments/SKILL.md
+PASS leaving-pr-comments frontmatter name/description
+PASS link docs/methodology/dev-skills/leaving-pr-comments/SKILL.md -> ../../guides/skill-execution-contract.md
+PASS UI metadata present docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml
+PASS migration-refactor-analyst/SKILL.md symlink -> ../../../docs/methodology/dev-skills/migration-refactor-analyst.md
+PASS migration-refactor-analyst/SKILL.md readable through discovery
+PASS migration-refactor-analyst resolves to docs/methodology/dev-skills/migration-refactor-analyst.md
+FAIL migration-refactor-analyst frontmatter name/description
+INFO modernize dir symlink -> ../../docs/methodology/dev-skills/modernize
+PASS modernize/SKILL.md readable through discovery
+PASS modernize resolves to docs/methodology/dev-skills/modernize/SKILL.md
+FAIL modernize frontmatter name/description
+PASS link docs/methodology/dev-skills/modernize/SKILL.md -> ../../guides/skill-execution-contract.md
+PASS UI metadata present docs/methodology/dev-skills/modernize/agents/openai.yaml
+PASS phase-build-planner/SKILL.md symlink -> ../../../docs/methodology/dev-skills/phase-build-planner.md
+PASS phase-build-planner/SKILL.md readable through discovery
+PASS phase-build-planner resolves to docs/methodology/dev-skills/phase-build-planner.md
+FAIL phase-build-planner frontmatter name/description
+PASS prd-author/SKILL.md symlink -> ../../../docs/methodology/dev-skills/prd-author.md
+PASS prd-author/SKILL.md readable through discovery
+PASS prd-author resolves to docs/methodology/dev-skills/prd-author.md
+FAIL prd-author frontmatter name/description
+PASS remediation-closeout/SKILL.md symlink -> ../../../docs/methodology/dev-skills/remediation-closeout.md
+PASS remediation-closeout/SKILL.md readable through discovery
+PASS remediation-closeout resolves to docs/methodology/dev-skills/remediation-closeout.md
+FAIL remediation-closeout frontmatter name/description
+INFO sol-loop dir symlink -> ../../docs/methodology/dev-skills/sol-loop
+PASS sol-loop/SKILL.md readable through discovery
+PASS sol-loop resolves to docs/methodology/dev-skills/sol-loop/SKILL.md
+PASS sol-loop frontmatter name/description
+PASS link docs/methodology/dev-skills/sol-loop/SKILL.md -> ../../guides/skill-execution-contract.md
+PASS subagent-directives-template/SKILL.md symlink -> ../../../docs/methodology/dev-skills/subagent-directives-template.md
+PASS subagent-directives-template/SKILL.md readable through discovery
+PASS subagent-directives-template resolves to docs/methodology/dev-skills/subagent-directives-template.md
+PASS subagent-directives-template frontmatter name/description
+PASS subagents-worktrees-template/SKILL.md symlink -> ../../../docs/methodology/dev-skills/subagents-worktrees-template.md
+PASS subagents-worktrees-template/SKILL.md readable through discovery
+PASS subagents-worktrees-template resolves to docs/methodology/dev-skills/subagents-worktrees-template.md
+PASS subagents-worktrees-template frontmatter name/description
+PASS tactical-implementation-planner/SKILL.md symlink -> ../../../docs/methodology/dev-skills/tactical-implementation-planner.md
+PASS tactical-implementation-planner/SKILL.md readable through discovery
+PASS tactical-implementation-planner resolves to docs/methodology/dev-skills/tactical-implementation-planner.md
+FAIL tactical-implementation-planner frontmatter name/description
+INFO takeover dir symlink -> ../../docs/methodology/dev-skills/takeover
+PASS takeover/SKILL.md readable through discovery
+PASS takeover resolves to docs/methodology/dev-skills/takeover/SKILL.md
+PASS takeover frontmatter name/description
+PASS link docs/methodology/dev-skills/takeover/SKILL.md -> ../../guides/skill-execution-contract.md
+PASS traceability-matrix/SKILL.md symlink -> ../../../docs/methodology/dev-skills/traceability-matrix.md
+PASS traceability-matrix/SKILL.md readable through discovery
+PASS traceability-matrix resolves to docs/methodology/dev-skills/traceability-matrix.md
+FAIL traceability-matrix frontmatter name/description
+PASS vision-framing/SKILL.md symlink -> ../../../docs/methodology/dev-skills/vision-framing.md
+PASS vision-framing/SKILL.md readable through discovery
+PASS vision-framing resolves to docs/methodology/dev-skills/vision-framing.md
+FAIL vision-framing frontmatter name/description
+nested non-entry SKILL.md in source tree: []
+PASS pr-wait executable
+pr-wait shebang: #!/usr/bin/env python3

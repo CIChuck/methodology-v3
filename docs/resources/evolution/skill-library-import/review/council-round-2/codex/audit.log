@@ -1,0 +1,9 @@
+PASS all 14 source/destination digests and modes; 5 unchanged support files
+PASS 24 source skills metadata, 9 bundle relative links and 4 UI records
+PASS exact 23-file guide filename/byte mirror
+PASS helper compile and offline --help
+PASS source dry-run 24 skills, empty board, no product/approvals, pinned provenance: /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round2-278hync6/codex/tmp/methodology-dry-run.w1ov5d30
+BF02 current targeted positive/support negative PASS
+BF02 prior implementation fails same fixture as expected
+BF03 all 13 targeted positive/negative checks PASS
+BF03 prior implementation fails same new-context test as expected

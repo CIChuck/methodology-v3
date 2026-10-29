@@ -3,7 +3,7 @@
     "source": "babysit-pr/SKILL.md",
     "source_sha256": "fbe43ba3ab76a466a88ef8b46dca1b41fb8101347d24a396903849865173a6ac",
     "destination": "docs/methodology/dev-skills/babysit-pr/SKILL.md",
-    "destination_sha256": "fa99ba06d7f515c39026a8ac3a50fa6e324898ff0ff9cad3a2063db8a339235f",
+    "destination_sha256": "3a99991c2f575f9ef8029d58ce7f17de14b156f03496476c1dee4e88fbd2057d",
     "changed": true
   },
   {
@@ -17,21 +17,21 @@
     "source": "council/SKILL.md",
     "source_sha256": "598fb2c7cdd48ddd9643cb22999e1b624c357aa6579aa0af0e7268ae16a8a164",
     "destination": "docs/methodology/dev-skills/council/SKILL.md",
-    "destination_sha256": "62165c4229ec96977e53cf57eaece58635b85e57fb1e9d8511f6b267caeee157",
+    "destination_sha256": "50206528c99440954bf844a24abc4dced180a30da1b21b4c846780f504479ea0",
     "changed": true
   },
   {
     "source": "file-pr/SKILL.md",
     "source_sha256": "174a7ae52e3b9d17f2bd0eaf0a11a89d744d1249164ecbdb0e642359eee75b1b",
     "destination": "docs/methodology/dev-skills/file-pr/SKILL.md",
-    "destination_sha256": "cc9db71ef88b856ccb083f95f65b36639e151f6dc11b61d11c2560e5374beba5",
+    "destination_sha256": "525d58ab1f8e0ca75e71f358ae0d3301bb0c4b77be81d355e9349e7fd530c6f0",
     "changed": true
   },
   {
     "source": "full-send/SKILL.md",
     "source_sha256": "ba585e47cd901506b0e2de13025b0e39bc02462c136cf27491ad3efbdfe66020",
     "destination": "docs/methodology/dev-skills/full-send/SKILL.md",
-    "destination_sha256": "f6d538b1deab8c2a82ac3fcd58d21422f01abbbee929307716fe96657463a4f7",
+    "destination_sha256": "a89af19c9b9752c605aadca1e309b845804821900a7796d52039239dd91a4535",
     "changed": true
   },
   {
@@ -45,7 +45,7 @@
     "source": "full-stop/SKILL.md",
     "source_sha256": "091dcabfcba73e009ddb8e32c498a993a6bb60f8c223d3e21e917f4e52ab9939",
     "destination": "docs/methodology/dev-skills/full-stop/SKILL.md",
-    "destination_sha256": "7f57b52e8d76fdaf4a86470dd814c4bada9dda1013d9a17eb19acd79e530cc0d",
+    "destination_sha256": "cf90b1fc827b785309f9a66635b79a0ec1a2236532e86748f3941117f1527016",
     "changed": true
   },
   {
@@ -73,7 +73,7 @@
     "source": "modernize/SKILL.md",
     "source_sha256": "6172d774c46f535367086da90db1b0aaaaac969ed05ff040444f9afa9a6b1552",
     "destination": "docs/methodology/dev-skills/modernize/SKILL.md",
-    "destination_sha256": "664632a948ee5178e3c22906653a679dcfa098b01f515628a46fcb34d3ee5f52",
+    "destination_sha256": "807a9ea1b847bad1ec21f622ce8b0fedc76d2fd49bc73bbfb19d3049ea75e2e9",
     "changed": true
   },
   {
@@ -87,7 +87,7 @@
     "source": "sol-loop/SKILL.md",
     "source_sha256": "1db1eb4c4a156ee666070e9a12623d520cd1bd9b19c3fc21003fe5a440ba0b10",
     "destination": "docs/methodology/dev-skills/sol-loop/SKILL.md",
-    "destination_sha256": "269cb88224879fb2cb7a995bf448b15484a2d34611b2a29d61069cd200b21a4d",
+    "destination_sha256": "119bb74a9e546d00068b07f34db46aa11d7acb61fd0fc67f0ab04023f0bcdd5c",
     "changed": true
   },
   {

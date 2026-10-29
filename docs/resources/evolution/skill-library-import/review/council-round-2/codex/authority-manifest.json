@@ -1,0 +1,50 @@
+{
+  "AGENTS.md": {
+    "revision": "aa25aa89762974012c0243e6134e9785f5db970d",
+    "sha256": "ea0209eb0399d4a1f5cb6e9c65c729a9a4f6932bda1dc72484e7dacccc4f4c27"
+  },
+  "docs/methodology/constitution/gendev.md": {
+    "revision": "aa25aa89762974012c0243e6134e9785f5db970d",
+    "sha256": "f7073cd6d2e9f26ad13e97839e80456ce617a63d3d8f5df3660c7e07500dad4f"
+  },
+  "docs/policies/repository-engineering-policy.md": {
+    "revision": "aa25aa89762974012c0243e6134e9785f5db970d",
+    "sha256": "7477396d2d8487552866bd19c41e49542dca54fc15b9a7847512229e1a6a1b9e"
+  },
+  "docs/policies/development-task-lifecycle.md": {
+    "revision": "aa25aa89762974012c0243e6134e9785f5db970d",
+    "sha256": "33321bf308f42a645714f95ee1f9463f4b43b197964e540e5aa03f25eb5a9058"
+  },
+  "docs/policies/independent-validation-policy.md": {
+    "revision": "aa25aa89762974012c0243e6134e9785f5db970d",
+    "sha256": "ab022a5f6fa019f0e6631f3244e65c38a07ff110a90a391300267cff645e7bff"
+  },
+  "docs/policies/dev-board-integration.md": {
+    "revision": "aa25aa89762974012c0243e6134e9785f5db970d",
+    "sha256": "af36991dc3ae53977aeb347db84a35aed307a58882394319ee49aec3931f5289"
+  },
+  "docs/methodology/guides/skill-execution-contract.md": {
+    "revision": "aa25aa89762974012c0243e6134e9785f5db970d",
+    "sha256": "ea5381d2c26dcb4f6a7902a97200a3a95132c444b12ad34e9ebb6bea4fd5f901"
+  },
+  "docs/methodology/dev-skills/council/SKILL.md": {
+    "revision": "aa25aa89762974012c0243e6134e9785f5db970d",
+    "sha256": "50206528c99440954bf844a24abc4dced180a30da1b21b4c846780f504479ea0"
+  },
+  "docs/resources/evolution/skill-library-import/README.md": {
+    "revision": "aa25aa89762974012c0243e6134e9785f5db970d",
+    "sha256": "3bbf604c7d14c41a194cd36aaf54cb73002f683001a521a6e6adb13d93f8f8de"
+  },
+  "docs/resources/evolution/skill-library-import/review/bounded-follow-up.md": {
+    "revision": "aa25aa89762974012c0243e6134e9785f5db970d",
+    "sha256": "ac8cc6421617a46aed4cd05e7b28726e78161c342fdaa906ac1a6771402c9a52"
+  },
+  "docs/resources/evolution/skill-library-import/review/findings-ledger.json": {
+    "revision": "aa25aa89762974012c0243e6134e9785f5db970d",
+    "sha256": "de81397cb6cfcc0d1ae4c2622483ca9244a1901829176b781c52e20110179101"
+  },
+  "docs/resources/evolution/v3-migration/review/round-1/checkpoint-exception-approval.json": {
+    "revision": "aa25aa89762974012c0243e6134e9785f5db970d",
+    "sha256": "37c9fa3d8d5ace42e6822b93a87bf4c54c6a35234f7f860c57146de703d15dd7"
+  }
+}

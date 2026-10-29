@@ -278,7 +278,10 @@ Use docs/resources/releases/v3-adoption.md for current distribution/adoption
 instructions. These are reference guides; canonical authority above still governs.
 The inherited lifecycle is 1.0.2 and the v3 distribution remains unreleased.
 Migration candidate 98f8bec is independently VERIFIED with human acceptance
-pending; the additional nine workflow skills are a separate pending-review
-follow-up. Read the guide's availability table for branch-specific contents.
+pending. The additional nine workflow skills merged in PR #1; council round 1
+is consolidated as BLOCKED. The authorized bounded follow-up is recorded at
+docs/resources/evolution/skill-library-import/review/bounded-follow-up.md; its
+local revised candidate needs fresh review. Read the guide's availability table
+for revision-specific contents.
 Do not treat a documentation refresh or GitHub upload as a new verification,
 acceptance, product gate transition or methodology release.

@@ -1,0 +1,282 @@
+{
+  "import_manifest_summary": {
+    "source_root": "/Users/chuckrussell/Dev/gendev/tstack/skills",
+    "entry_count": 14
+  },
+  "imported_entries": [
+    {
+      "source": "babysit-pr/SKILL.md",
+      "destination": "docs/methodology/dev-skills/babysit-pr/SKILL.md",
+      "changed": true,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "babysit-pr/scripts/pr-wait",
+      "destination": "docs/methodology/dev-skills/babysit-pr/scripts/pr-wait",
+      "changed": false,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0755",
+      "dst_mode": "0755",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "council/SKILL.md",
+      "destination": "docs/methodology/dev-skills/council/SKILL.md",
+      "changed": true,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "file-pr/SKILL.md",
+      "destination": "docs/methodology/dev-skills/file-pr/SKILL.md",
+      "changed": true,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "full-send/SKILL.md",
+      "destination": "docs/methodology/dev-skills/full-send/SKILL.md",
+      "changed": true,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "full-send/agents/openai.yaml",
+      "destination": "docs/methodology/dev-skills/full-send/agents/openai.yaml",
+      "changed": false,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "full-stop/SKILL.md",
+      "destination": "docs/methodology/dev-skills/full-stop/SKILL.md",
+      "changed": true,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "full-stop/agents/openai.yaml",
+      "destination": "docs/methodology/dev-skills/full-stop/agents/openai.yaml",
+      "changed": false,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "leaving-pr-comments/SKILL.md",
+      "destination": "docs/methodology/dev-skills/leaving-pr-comments/SKILL.md",
+      "changed": true,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "leaving-pr-comments/agents/openai.yaml",
+      "destination": "docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml",
+      "changed": false,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "modernize/SKILL.md",
+      "destination": "docs/methodology/dev-skills/modernize/SKILL.md",
+      "changed": true,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "modernize/agents/openai.yaml",
+      "destination": "docs/methodology/dev-skills/modernize/agents/openai.yaml",
+      "changed": false,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "sol-loop/SKILL.md",
+      "destination": "docs/methodology/dev-skills/sol-loop/SKILL.md",
+      "changed": true,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    },
+    {
+      "source": "takeover/SKILL.md",
+      "destination": "docs/methodology/dev-skills/takeover/SKILL.md",
+      "changed": true,
+      "src_sha_ok": true,
+      "dst_sha_ok": true,
+      "src_mode": "0644",
+      "dst_mode": "0644",
+      "mode_ok": true,
+      "unchanged_flag_ok": true,
+      "all_ok": true
+    }
+  ],
+  "imported_9_symlinks": [
+    {
+      "name": "babysit-pr",
+      "symlink_ok": true,
+      "symlink_target": "../../docs/methodology/dev-skills/babysit-pr"
+    },
+    {
+      "name": "council",
+      "symlink_ok": true,
+      "symlink_target": "../../docs/methodology/dev-skills/council"
+    },
+    {
+      "name": "file-pr",
+      "symlink_ok": true,
+      "symlink_target": "../../docs/methodology/dev-skills/file-pr"
+    },
+    {
+      "name": "full-send",
+      "symlink_ok": true,
+      "symlink_target": "../../docs/methodology/dev-skills/full-send"
+    },
+    {
+      "name": "full-stop",
+      "symlink_ok": true,
+      "symlink_target": "../../docs/methodology/dev-skills/full-stop"
+    },
+    {
+      "name": "leaving-pr-comments",
+      "symlink_ok": true,
+      "symlink_target": "../../docs/methodology/dev-skills/leaving-pr-comments"
+    },
+    {
+      "name": "modernize",
+      "symlink_ok": true,
+      "symlink_target": "../../docs/methodology/dev-skills/modernize"
+    },
+    {
+      "name": "sol-loop",
+      "symlink_ok": true,
+      "symlink_target": "../../docs/methodology/dev-skills/sol-loop"
+    },
+    {
+      "name": "takeover",
+      "symlink_ok": true,
+      "symlink_target": "../../docs/methodology/dev-skills/takeover"
+    }
+  ],
+  "source_inventory_complete": true,
+  "skills_24_count": 24,
+  "skills_24_all_valid": true,
+  "ui_files": [
+    {
+      "path": "docs/methodology/dev-skills/full-send/agents/openai.yaml",
+      "ui_ok": true,
+      "keys": [
+        "display_name",
+        "short_description",
+        "default_prompt"
+      ]
+    },
+    {
+      "path": "docs/methodology/dev-skills/full-stop/agents/openai.yaml",
+      "ui_ok": true,
+      "keys": [
+        "display_name",
+        "short_description",
+        "default_prompt"
+      ]
+    },
+    {
+      "path": "docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml",
+      "ui_ok": true,
+      "keys": [
+        "display_name",
+        "short_description",
+        "default_prompt"
+      ]
+    },
+    {
+      "path": "docs/methodology/dev-skills/modernize/agents/openai.yaml",
+      "ui_ok": true,
+      "keys": [
+        "display_name",
+        "short_description",
+        "default_prompt"
+      ]
+    }
+  ],
+  "pr_wait_check": {
+    "path": "docs/methodology/dev-skills/babysit-pr/scripts/pr-wait",
+    "mode": "0755",
+    "py_compile_exit": 0,
+    "help_exit": 0,
+    "help_first_line": "usage: pr-wait [-h] [--repo REPO] [--until {green,ready,any-change}]"
+  },
+  "practitioner_guide_mirror": {
+    "guide_count": 23,
+    "html_count": 23,
+    "filenames_identical": true,
+    "all_bytes_identical": true,
+    "diff_from_aa25aa8_bytes": 0
+  },
+  "skills_changed_since_aa25aa8": [
+    "docs/methodology/dev-skills/babysit-pr/SKILL.md",
+    "docs/methodology/dev-skills/full-send/SKILL.md"
+  ]
+}

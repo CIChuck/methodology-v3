@@ -1,0 +1,83 @@
+$ tests/methodology/test-shell-syntax.sh
+shell-syntax | SH-001 | expected=0 actual=0 | shell syntax discovery finds shipped shell files
+  [PASS] shell syntax discovery finds shipped shell files
+shell-syntax | SH-002 | expected=0 actual=0 | bash -n docs/resources/examples/current/c1-csv-cleanup/tests/run.sh
+  [PASS] bash -n docs/resources/examples/current/c1-csv-cleanup/tests/run.sh
+shell-syntax | SH-003 | expected=0 actual=0 | bash -n scripts/backfill-methodology.sh
+  [PASS] bash -n scripts/backfill-methodology.sh
+shell-syntax | SH-004 | expected=0 actual=0 | bash -n scripts/check-doc-coherence.sh
+  [PASS] bash -n scripts/check-doc-coherence.sh
+shell-syntax | SH-005 | expected=0 actual=0 | bash -n scripts/check-methodology.sh
+  [PASS] bash -n scripts/check-methodology.sh
+shell-syntax | SH-006 | expected=0 actual=0 | bash -n scripts/close-gate.sh
+  [PASS] bash -n scripts/close-gate.sh
+shell-syntax | SH-007 | expected=0 actual=0 | bash -n scripts/close-phase.sh
+  [PASS] bash -n scripts/close-phase.sh
+shell-syntax | SH-008 | expected=0 actual=0 | bash -n scripts/gendev-doctor.sh
+  [PASS] bash -n scripts/gendev-doctor.sh
+shell-syntax | SH-009 | expected=0 actual=0 | bash -n scripts/init-phase.sh
+  [PASS] bash -n scripts/init-phase.sh
+shell-syntax | SH-010 | expected=0 actual=0 | bash -n scripts/init-project.sh
+  [PASS] bash -n scripts/init-project.sh
+shell-syntax | SH-011 | expected=0 actual=0 | bash -n scripts/install-hooks.sh
+  [PASS] bash -n scripts/install-hooks.sh
+shell-syntax | SH-012 | expected=0 actual=0 | bash -n scripts/install-methodology.sh
+  [PASS] bash -n scripts/install-methodology.sh
+shell-syntax | SH-013 | expected=0 actual=0 | bash -n scripts/lib/gendev-common.sh
+  [PASS] bash -n scripts/lib/gendev-common.sh
+shell-syntax | SH-014 | expected=0 actual=0 | bash -n scripts/lib/gendev-distribution.sh
+  [PASS] bash -n scripts/lib/gendev-distribution.sh
+shell-syntax | SH-015 | expected=0 actual=0 | bash -n scripts/lib/gendev-transition.sh
+  [PASS] bash -n scripts/lib/gendev-transition.sh
+shell-syntax | SH-016 | expected=0 actual=0 | bash -n scripts/lib/lifecycle-contract.sh
+  [PASS] bash -n scripts/lib/lifecycle-contract.sh
+shell-syntax | SH-017 | expected=0 actual=0 | bash -n scripts/methodology-guard.sh
+  [PASS] bash -n scripts/methodology-guard.sh
+shell-syntax | SH-018 | expected=0 actual=0 | bash -n scripts/methodology-metrics.sh
+  [PASS] bash -n scripts/methodology-metrics.sh
+shell-syntax | SH-019 | expected=0 actual=0 | bash -n scripts/new-artifact.sh
+  [PASS] bash -n scripts/new-artifact.sh
+shell-syntax | SH-020 | expected=0 actual=0 | bash -n scripts/pin-provenance.sh
+  [PASS] bash -n scripts/pin-provenance.sh
+shell-syntax | SH-021 | expected=0 actual=0 | bash -n scripts/project-state.sh
+  [PASS] bash -n scripts/project-state.sh
+shell-syntax | SH-022 | expected=0 actual=0 | bash -n scripts/record-deployment-approval.sh
+  [PASS] bash -n scripts/record-deployment-approval.sh
+shell-syntax | SH-023 | expected=0 actual=0 | bash -n scripts/record-phase-checkpoint.sh
+  [PASS] bash -n scripts/record-phase-checkpoint.sh
+shell-syntax | SH-024 | expected=0 actual=0 | bash -n scripts/test-checker.sh
+  [PASS] bash -n scripts/test-checker.sh
+shell-syntax | SH-025 | expected=0 actual=0 | bash -n scripts/test-methodology.sh
+  [PASS] bash -n scripts/test-methodology.sh
+shell-syntax | SH-026 | expected=0 actual=0 | bash -n tests/methodology/lib/runtime-write-fixtures.sh
+  [PASS] bash -n tests/methodology/lib/runtime-write-fixtures.sh
+shell-syntax | SH-027 | expected=0 actual=0 | bash -n tests/methodology/lib/test-helpers.sh
+  [PASS] bash -n tests/methodology/lib/test-helpers.sh
+shell-syntax | SH-028 | expected=0 actual=0 | bash -n tests/methodology/test-checker.sh
+  [PASS] bash -n tests/methodology/test-checker.sh
+shell-syntax | SH-029 | expected=0 actual=0 | bash -n tests/methodology/test-distribution-tools.sh
+  [PASS] bash -n tests/methodology/test-distribution-tools.sh
+shell-syntax | SH-030 | expected=0 actual=0 | bash -n tests/methodology/test-documentation-coherence.sh
+  [PASS] bash -n tests/methodology/test-documentation-coherence.sh
+shell-syntax | SH-031 | expected=0 actual=0 | bash -n tests/methodology/test-enforcement-tools.sh
+  [PASS] bash -n tests/methodology/test-enforcement-tools.sh
+shell-syntax | SH-032 | expected=0 actual=0 | bash -n tests/methodology/test-examples.sh
+  [PASS] bash -n tests/methodology/test-examples.sh
+shell-syntax | SH-033 | expected=0 actual=0 | bash -n tests/methodology/test-installed-context.sh
+  [PASS] bash -n tests/methodology/test-installed-context.sh
+shell-syntax | SH-034 | expected=0 actual=0 | bash -n tests/methodology/test-lifecycle-coherence.sh
+  [PASS] bash -n tests/methodology/test-lifecycle-coherence.sh
+shell-syntax | SH-035 | expected=0 actual=0 | bash -n tests/methodology/test-metrics.sh
+  [PASS] bash -n tests/methodology/test-metrics.sh
+shell-syntax | SH-036 | expected=0 actual=0 | bash -n tests/methodology/test-migration.sh
+  [PASS] bash -n tests/methodology/test-migration.sh
+shell-syntax | SH-037 | expected=0 actual=0 | bash -n tests/methodology/test-reference-graph.sh
+  [PASS] bash -n tests/methodology/test-reference-graph.sh
+shell-syntax | SH-038 | expected=0 actual=0 | bash -n tests/methodology/test-release-coherence.sh
+  [PASS] bash -n tests/methodology/test-release-coherence.sh
+shell-syntax | SH-039 | expected=0 actual=0 | bash -n tests/methodology/test-runtime-tools.sh
+  [PASS] bash -n tests/methodology/test-runtime-tools.sh
+shell-syntax | SH-040 | expected=0 actual=0 | bash -n tests/methodology/test-shell-syntax.sh
+  [PASS] bash -n tests/methodology/test-shell-syntax.sh
+
+Suite shell-syntax: 40 passed, 0 failed, 40 total

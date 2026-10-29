@@ -1,0 +1,1 @@
+PASS authority/diff pins; runtime diff empty; frozen manifest/exception unchanged; all 14 source/destination hashes and modes; 24 metadata; nine whole-folder links/resources; four UI; five support unchanged; existing skill entries unchanged; exact 23-file guide mirror unchanged; clean candidate

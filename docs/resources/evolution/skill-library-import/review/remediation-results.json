@@ -1,0 +1,24 @@
+{
+  "status": "local checks passed; fresh council review pending; no new VERIFIED",
+  "base": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+  "branch": "fix/skills-council-follow-up",
+  "checks": {
+    "inherited_suites": 13,
+    "inherited_checks": 409,
+    "board_tests": 17,
+    "migration_tests": 48,
+    "isolated_replay_scenarios": 4,
+    "skills_total": 24,
+    "imported_metadata": 9,
+    "source_and_support_preservation": "passed",
+    "original_inputs": "passed under approved identical-tree exception including new T3 contexts",
+    "guide_mirror": "23 files match exactly",
+    "regressions": "two failures reproduced before fixes; 48 tests pass after fixes"
+  },
+  "limits": [
+    "No Linux/hosted CI/live watcher/product gate UAT",
+    "No new verification or human acceptance inferred",
+    "No push/merge/release; remediation local only"
+  ],
+  "recorded_at": "2026-10-28T23:47:34.014829+00:00"
+}

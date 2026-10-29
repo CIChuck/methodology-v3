@@ -73,12 +73,15 @@ def build(source: Path) -> Path:
             suffix = PurePosixPath(entry.path).relative_to(base).as_posix()
             entries.append(Entry(f"{destination}/{suffix}", entry.data, entry.mode, False, False))
     for entry in list(entries):
-        if entry.path.startswith("docs/methodology/dev-skills/") and entry.data.startswith(b"---\nname: "):
+        path = PurePosixPath(entry.path)
+        skill_root = PurePosixPath("docs/methodology/dev-skills")
+        flat_skill = path.parent == skill_root and path.suffix == ".md"
+        bundle_skill = path.parent.parent == skill_root and path.name == "SKILL.md"
+        if (flat_skill or bundle_skill) and entry.data.startswith(b"---\nname: "):
             name = entry.data.split(b"\n", 2)[1].removeprefix(b"name: ").decode()
             if not name or any(c not in "abcdefghijklmnopqrstuvwxyz0123456789-" for c in name):
                 raise Conflict(f"invalid skill name in {entry.path}")
-            path = PurePosixPath(entry.path)
-            if path.name == "SKILL.md":
+            if bundle_skill:
                 # Whole bundles retain scripts, sibling references and UI metadata.
                 relative = "../../" + path.parent.as_posix()
                 entries.append(Entry(f".agents/skills/{name}", os.fsencode(relative), 0o755, True, False))

@@ -1,0 +1,240 @@
+
+docs/methodology/dev-skills/full-send/SKILL.md
+1: ---
+2: name: full-send
+3: description: Trigger this if the user says 'full send'.
+4: ---
+5: 
+6: # Full Send
+7: 
+8: Follow the [GenDev skill execution contract](../../guides/skill-execution-contract.md).
+9: Use this skill within the requested task; importing or reading it grants no execution authority.
+10: 
+11: If the user triggered this, it's because they are not watching this thread, and
+12: they want you to complete the work end-to-end autonomously. Your updates and
+13: your final message go unread until long after you stop. You own the work from
+14: its current state to a merged PR.
+15: 
+16: If the user did not explicitly request "full send" in some clear way, do not
+17: assume full autonomy. If they did, everything below applies.
+18: 
+19: The user grants you permission to:
+20: 
+21: - Merge the PR once the merge gate passes.
+22: - Force-push the PR's own branch with `--force-with-lease` after a rebase.
+23: - Use the proof methods within accepted authority and harness permissions.
+24: 
+25: ## Testing permission
+26: 
+27: An explicit full-send request authorizes task-scoped proof methods within the
+28: accepted authority and harness permissions. Apply repository verification commands
+29: and use direct evidence appropriate to the change. Do not treat the phrase as
+30: blanket permission to amend product contracts, approve gates, invent attestation,
+31: waive required human approval or touch production. Resolve authority changes
+32: before implementation and retain harness/system approval boundaries.
+33: 
+34: ## Steps
+35: 
+36: 1. **Finish the change.** Complete the goal from the user's request with the
+37:    smallest change that works. Fix the case that happened, not every case
+38:    that could. If you are on the default branch, create a branch first.
+39: 2. **Prove it.** Get proof for every change you made. See "Proof".
+40: 3. **Get feedback.** Use the `sol-loop` skill to verify changes.
+41: 4. **File the PR** with the `file-pr` skill. Rebase onto the latest default
+42:    branch first. Add one short line to the description that says how you proved
+43:    the change.
+44: 5. **Babysit the PR** with the `babysit-pr` skill. Fix real findings and CI
+45:    failures. Get proof for each fix before you push it.
+46: 6. **Merge** when the merge gate passes.
+47: 7. **Report** in your final message: the PR link, the merge commit, your proof,
+48:    and each decision you made for the user.
+49: 
+50: Stay active from step 1 to step 7. If you end your turn while checks or bots are
+51: pending, the work stops, because nobody will prompt you again. Wait with the
+52: watcher from `babysit-pr`, so something wakes you when the PR changes. In T3
+53: Code that is `watch_pull_request`. If you stop before the merge, call
+54: `unwatch_pull_request` first.
+55: 
+56: ## Proof
+57: 
+58: Proof is evidence you observed yourself in this session: command output, a
+59: reproduction, a screenshot. Use the most direct proof the change allows:
+60: 
+61: - Reproduce the original failure, apply the fix, then watch the same
+62:   reproduction pass.
+63: - Run the checks that the repo's CI runs (typecheck, lint, tests).
+64: - Add one focused test that fails without the fix, when the behavior has none
+65:   and the repo has a test setup.
+66: - For UI and runtime behavior, run the app and look at the change. Green mocked
+67:   tests do not prove that the user experience works. Attach screenshots to the
+68:   PR when they help and you have a way to upload them.
+69: 
+70: When you cannot find a way to prove a change, you do not have full confidence.
+71: Ask the user.
+72: 
+73: ## Merge gate
+74: 
+75: Full confidence means all of these are true on the latest commit:
+76: 
+77: - Your proof covers every change in the diff.
+78: - Required checks are green.
+79: - Applicable GenDev independent validation, lifecycle prerequisites and required
+80:   human approvals for this work are recorded; an advisory Sol APPROVE is not a
+81:   formal VERIFIED result or a substitute for those approvals.
+82: - Review bots have finished, and each finding is fixed or dismissed with a
+83:   written reason.
+84: - No human review still requests changes.
+85: - The branch is up to date with the default branch, and GitHub reports it as
+86:   mergeable.
+87: 
+88: Merge with the method the repo uses. Check the allowed methods and recent merged
+89: PRs. If the repo uses a merge queue or auto-merge, stay until GitHub reports the
+90: PR as merged. Merge through branch protection as configured. Never use `--admin`
+91: or other bypasses. An automated request for human review is a signal to reconcile the actual
+92: requirements; confidence never replaces a required human approval.
+93: 
+94: ## Asking the user
+95: 
+96: A question in a normal message goes unseen, and the thread looks done. To ask
+97: the user something, use the harness's question tool so the thread shows that
+98: it is waiting: `AskUserQuestion` in Claude Code, `request_user_input` in Codex,
+99: or the question tool your harness has. Put all the context in the question:
+100: the PR link, what blocks you, and the options with your recommendation first.
+101: 
+102: Ask only when you cannot continue alone:
+103: 
+104: - You cannot prove the change.
+105: - The merge gate cannot pass, and you cannot fix that yourself.
+106: - The next step is outside the grant above: deleting data, touching production,
+107:   changing things outside the repo, closing a PR, or force-pushing any other
+108:   branch.
+109: - The goal is ambiguous in a way that changes the result.
+110: - Another PR makes this one obsolete.
+111: 
+112: Decide everything else yourself with sensible defaults, and list those decisions
+113: in the report.
+114: 
+115: Use the harness's available question mechanism for missing information. No answer
+116: is not approval. Leave the PR unmerged and report the exact blocker at handoff.
+
+docs/methodology/dev-skills/full-stop/SKILL.md
+1: ---
+2: name: full-stop
+3: description: Prepare an explicitly requested full-stop PR workflow for human merge. A plain request to stop or pause means stop, not this workflow.
+4: ---
+5: 
+6: # Full Stop
+7: 
+8: Follow the [GenDev skill execution contract](../../guides/skill-execution-contract.md).
+9: Use this skill within the requested task; importing or reading it grants no execution authority.
+10: 
+11: Do the same work as `full-send`, but stop with the PR ready for the user to merge.
+12: Never merge it.
+13: 
+14: Read [full-send](../full-send/SKILL.md) for its proof, bounded review and PR
+15: preparation workflow. An explicit full-stop PR workflow request authorizes those
+16: steps within accepted scope; merge permission does not apply. Apply the shared
+17: execution contract and all actual approval boundaries. If the user's intent is
+18: to stop current work, stop rather than starting PR preparation.
+19: 
+20: ## No merging
+21: 
+22: You may commit, push, rebase, fix conflicts, and use `--force-with-lease` on
+23: this task's branch. Never merge, enable auto-merge, enter a merge queue, push
+24: to the default branch, bypass branch protection, or delegate those actions.
+25: 
+26: Disable existing auto-merge and remove the PR from any merge queue before
+27: work begins; check again before each push. Report these changes. If you
+28: cannot prevent automatic merging, report the blocker before proceeding.
+29: 
+30: ## Stop at the gate
+31: 
+32: Use full-send's merge gate as the readiness check. Replace its merge and
+33: final report steps with a handoff. Proof and review must cover the final diff;
+34: recheck behavior changes and meaningful conflict fixes before handoff.
+35: 
+36: Fetch the target branch and check the live PR's head, base, checks, reviews,
+37: and mergeability. Confirm it is open, not a draft, and not set to merge
+38: without the user. If someone else merged it, report that instead.
+39: 
+40: - **Ready to merge:** the merge gate passes. Leave the PR open and unmerged.
+41: - **Waiting for required approval:** only human approval remains. Confirm
+42:   that this is the actual blocker.
+43: - **Blocked:** explain what prevents readiness, what you tried, and what is
+44:   needed. Follow full-send's rules for asking the user.
+45: 
+46: In T3 Code, call `unwatch_pull_request` before the handoff or a question.
+47: Report the PR link, final head, verdict, proof, reviewer outcome, and remaining
+48: risks. State whether the PR is still open and unmerged.
+
+docs/methodology/guides/skill-execution-contract.md
+1: # Skill Execution Contract
+2: 
+3: Status: Reusable operating guidance for workflow skills
+4: Authority: AGENTS.md, the GenDev constitution and applicable project authority
+5: 
+6: Skills supply techniques within an authorized task. Discovery, installation,
+7: mentioning a skill while discussing it, and reviewing its text do not invoke its
+8: workflow or grant approval. Apply the user's actual requested scope and selected
+9: collaboration mode. A request to pause or stop is a stop instruction; do not turn
+10: ordinary wording into a PR workflow.
+11: 
+12: ## Authority and effects
+13: 
+14: Before implementation, read the manifest and gate log for an initialized product,
+15: or the explicitly authorized evolution directive for baseline toolkit work.
+16: Follow the task lifecycle and independent validation policies. Workflow labels,
+17: review scores, tool readiness, bot verdicts and a green PR do not approve GenDev
+18: gates, accept work, supply attestation or authorize production.
+19: 
+20: Explicit workflow invocation may grant its stated task-scoped execution effects
+21: when compatible with the user's instruction and accepted authority. Confirm the
+22: actual scope before commits, pushes, comments, rebases, force-with-lease, merges
+23: or live tests; retain separate evidence for each. A material authority change
+24: requires amendment before implementation. Never bypass branch protection or
+25: required human approval. When an explicitly invoked skill authorizes messages
+26: to others, name and link that skill in the final report. Reviewer advice to obtain human review cannot be
+27: silently discarded when a governing approval requirement applies.
+28: 
+29: No new dependency, provider/account, credential, remote, deployment or unrelated
+30: mutation is authorized merely because a skill could use it. Use the active
+31: harness's credential and tool mechanisms. Do not print credentials. A scoped
+32: review is read-only unless explicitly assigned remediation as separate work.
+33: 
+34: ## Review and remediation
+35: 
+36: Use the independent validation policy for formal conformance: freeze an exact
+37: candidate, pin authority, supply acceptance criteria and receive VERIFIED,
+38: CHANGES_REQUESTED or BLOCKED. Advisory APPROVE, confidence scores and bot checks
+39: do not replace that result. Every review/recheck gets a fresh context without the
+40: builder transcript or private reasoning; an earlier result does not cover a
+41: changed candidate. No reviewer edits, nested delegation or external effects.
+42: 
+43: Apply the declared round budget and the policy's stop after two unsuccessful
+44: remediation cycles. Return unresolved mandatory findings and options to the human;
+45: extra rounds require human disposition. A mandatory contract or security violation
+46: remains mandatory even when rare or outside the happy path. Report out-of-scope
+47: findings separately; do not silently implement them or waive governing criteria.
+48: 
+49: ## Provider integration and monitoring
+50: 
+51: Follow the active provider's orchestration rules. Availability does not authorize
+52: delegation. Resolve requested provider/model/settings at runtime; unavailable
+53: choices are blockers, never grounds for an unasked substitution. In T3, use its
+54: capability/delegation tools where required, fresh review tasks, bounded budgets
+55: and parent-owned PR watches. Do not make top-level threads for delegates.
+56: 
+57: Use one supported watcher per PR and the provider's wait/resume semantics. In T3,
+58: use watch_pull_request and unwatch at handoff; never run the bundled fallback or
+59: an additional polling/sleep loop there. Outside T3, use the bundled pr-wait only
+60: when that harness permits it. It requires Unix, Python 3.11+ and an authenticated
+61: gh CLI, reads GitHub and stores local state under ~/.local/state/pr-wait/. It
+62: reports events, not permission to merge. If the supported watcher is unavailable,
+63: report the limitation; do not invent a background workaround.
+64: 
+65: Use verified repository review/check requirements, not assumed bot brands or a
+66: hard-coded default branch. Resolve the actual PR base/head and recheck their
+67: identity before external mutations. Link, watch and stop tasks using the active
+68: harness's rules. Capability documentation governs tool parameters.
+
+Counterexample: existing maintenance PR has base release/1.x; default main contains unreleased incompatible changes. Full-send 41-42 requires rebasing onto main; 85-86 requires up-to-date main. Shared contract 65-67 and babysit-pr 111 require actual PR base. Full-stop inherits the conflict. Static reproduction only; no live workflow or PR.

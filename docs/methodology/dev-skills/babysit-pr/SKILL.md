@@ -52,9 +52,12 @@ met or the PR merges, 1 when it needs you (a required check failed, conflicts,
 unresolved threads, PR closed), and 2 on bad input.
 
 - `ready` (default): required checks green, Greptile or Macroscope reviewed the
-  head, and no unresolved threads. Use this to babysit.
+  head, and no unresolved threads. This describes the unchanged helper
+  condition, not the repository's complete review requirements.
 - `green`: required checks only. Use it when the repo has no Greptile or
-  Macroscope.
+  Macroscope. Select the mode against the verified repository requirements;
+  check any additional required reviews separately. Neither mode supplies merge
+  authority or guarantees every required reviewer has approved.
 - `any-change`: exit on the first event.
 
 In Claude Code, run it with the Monitor tool (`timeout_ms: 3600000`), so each
@@ -90,22 +93,29 @@ reply to a Macroscope finding. Its findings cite them.
 Treat bot findings according to the repository's accepted review and branch-protection
 requirements. CodeRabbit may be advisory, but never bypass a required check or review.
 
-If a review bot leaves feedback you believe is not worth addressing, reply with a written reason and resolve the comment only when those effects
-are authorized. Otherwise prepare the response for the user. Use the `leaving-pr-comments` skill
-for every comment posted on the user's behalf.
+If feedback is an optional preference or a verified false positive, document the
+reason and supporting evidence before declining it. Reply and resolve the comment
+only when those effects are authorized; otherwise prepare the response for the
+user. Actual mandatory findings retain their required remediation or scope/risk
+disposition, regardless of rarity. Use the `leaving-pr-comments` skill for every
+comment posted on the user's behalf.
 
 Screenshots and videos help as well, when you have a way to upload them.
 
 Keep the PR at the size the user's goal needs. Review loops tend to grow a
-PR one cheap-looking fix at a time. Fix real bugs in the intended case.
-Decline the rest with a written reason, and list them as follow-ups:
-unneeded tests, guards for edge cases that do not matter, extra integration
-or compatibility, and small performance costs. Prefer the fix that deletes or
-narrows code.
+PR one cheap-looking fix at a time. Classify findings against approved requirements.
+Security, contract, permission and data-loss violations remain mandatory even
+on rare or unintended paths. Fix mandatory findings within authorized scope;
+report out-of-scope mandatory findings for scope/risk disposition rather than
+silently implementing or waiving them. A written dismissal does not satisfy
+required remediation or authorize merging.
+Decline only optional preferences or verified false positives with a documented
+reason and evidence. List remaining optional suggestions as follow-ups.
+Prefer the smallest fix that satisfies the requirement.
 
 ## Base branch and merging
 
-Keep an eye on changes to `main` and rebase when needed. `pr-wait` reports when
+Keep an eye on changes to the PR's actual base branch and rebase when needed. `pr-wait` reports when
 new base commits touch this PR's files, and when the PR becomes BEHIND or DIRTY.
 `watch_pull_request` reports conflicts only, so check for BEHIND yourself
 before you call the PR ready.

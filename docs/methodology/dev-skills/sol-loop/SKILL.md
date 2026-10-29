@@ -1,6 +1,6 @@
 ---
 name: sol-loop
-description: Use when the user says "sol loop".
+description: Run a bounded Sol review when the user requests a sol-loop review or workflow.
 ---
 
 # sol-loop
@@ -22,8 +22,10 @@ of scope creep and don't be scared to push back.
   changed code and open findings.
 - Extra rounds after the policy stop require explicit human authorization;
   security or state concerns are reasons to escalate, not automatic extensions.
-- Stop early if a round returns only nits. Declined nits and comment,
-  doc, or format-only fixes need no new round.
+- Stop early only after the controller classifies every finding against the
+  approved requirements and confirms that no mandatory finding remains. Truly
+  advisory nits may be declined. Formal review still requires fresh context
+  when governing instructions or the frozen candidate change.
 - One reviewer only. Sol must not start subagents or reviewers.
 - Keep a ledger: id, severity, outcome, usage if returned. Never guess it.
 
@@ -40,8 +42,13 @@ Find the base after `git fetch origin`:
 - PR: `gh pr view <n> --json baseRefName,headRefOid`. Check out the branch
   only if clean. Confirm `HEAD` is the PR head, or ahead only by this
   change. Base: `git merge-base HEAD origin/<baseRefName>`.
-- Local: `git merge-base HEAD origin/<default-branch>`. No remote: a base
-  the user names, or `HEAD` for uncommitted changes only.
+- Local, before a PR exists: use the caller's selected target and compute
+  `git merge-base HEAD origin/<selected-target>`. If no target is recorded,
+  resolve and record the intended target first; use the repository default only
+  when appropriate to the requested work. Do not silently review a stacked or
+  release change against another branch. No remote: use a named base commit,
+  or `HEAD` for uncommitted changes only; missing formal-review authority blocks
+  formal validation rather than supplying an inferred base.
 
 The change is base to working tree in those paths, with untracked files.
 Use one diff command all rounds. State intent and out-of-scope in 1-2
@@ -74,10 +81,13 @@ Review only. Do not edit, commit, push, comment on PRs, or start subagents.
 Repo: <abs path> Base: <sha> Intent: <intent> Out of scope: <scope> Checks: <results>
 See: git diff <base> [-- <paths>]; git status --short (read untracked).
 Read surrounding code. Find bugs, broken callers, mismatch with intent.
-Skip style unless it hides a bug. Hold to the smallest change. Flag code,
-tests, or guards the intent does not need. Other paths, rare cases, small
-perf, extra compat: nits.
-blocker = intended case wrong. should = real bug callers will hit, in intent. nit = rest.
+Skip style unless it hides a bug. Hold to the smallest authorized change.
+Flag code, tests, or guards the approved requirements do not need.
+blocker = prevents safe or correct use. should = other mandatory requirement or real bug.
+nit = optional preference with no mandatory requirement violated.
+Security, contract, permission and data-loss violations remain mandatory even
+on rare or unintended paths. Report unrelated findings separately for disposition;
+do not dismiss a mandatory violation as a nit because it is outside the happy path.
 Reply:
 VERDICT: APPROVE or CHANGES
 S1 [blocker|should|nit] <file>:<line> <claim>. Fix: <suggestion> (stable ids)
@@ -92,7 +102,9 @@ security violations still require remediation; unrelated preferences remain advi
   helper, or option. Fix the case that happened. Add one focused test
   that fails without the fix, if intent needs it.
 - Disagree: say why, with evidence (file:line, test, output).
-- Out of scope or nit: decline in one line. List as follow-up.
+- Advisory nit: decline with a reason and list as follow-up.
+- Out-of-scope mandatory finding: report it and obtain scope/risk disposition;
+  do not silently implement it, waive it, or treat it as approval to ship.
 
 Update the ledger. Re-run checks and `git diff --shortstat <base>`. If
 review grew the diff, cut first. Do not agree just to end the loop.

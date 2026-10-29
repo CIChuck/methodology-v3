@@ -1,0 +1,7 @@
+$ prior scripts + candidate tests (clone ab94232d9a77b6a191e043ff3f154d3225ed383e, parent aa25aa8)
+FAIL: test_new_context_uses_frozen_tree_anchor (tests.migration.test_preservation_refs.PreservationRefTests.test_new_context_uses_frozen_tree_anchor)
+AssertionError: Lists differ: ['unapproved added ref: refs/t3/orchestrat[39 chars]l/0'] != []
+FAIL: test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it (tests.migration.test_v3_toolkit.ToolkitMigrationTests.test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it)
+AssertionError: 1 != 0 : Cannot create dry run: unsafe target parent: .agents/skills/example-note
+Ran 2 tests in 0.678s
+FAILED (failures=2)

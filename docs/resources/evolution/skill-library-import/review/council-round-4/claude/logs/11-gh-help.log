@@ -1,0 +1,10 @@
+## gh version
+gh version 2.93.0 (2026-05-27)
+## gh pr create --help (base/head lines)
+7:way will only have the default branch of the upstream repository. Use `--head` to
+10:`--head` supports `<user>:<branch>` syntax to select a head repo owned by `<user>`.
+20:The base branch for the created PR can be specified using the `--base` flag. If not provided,
+22:default branch will be used. Run `git config branch.{current}.gh-merge-base {base}` to configure
+44:  -B, --base branch          The branch into which you want your code merged
+53:  -H, --head branch          The branch that contains commits for your pull request (default [current branch])
+72:  $ gh pr create --base develop --head monalisa:feature

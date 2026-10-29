@@ -1,0 +1,478 @@
+{
+  "utc": "2026-10-29T00:14:01.265730+00:00",
+  "candidate": "5e2ab4047a69c82fc883735134c23527197b3c1e",
+  "base": "ee82653ed6cacb9e1157cd791f12d0fb774f12af",
+  "wording_base": "f6de7a2e121a2bf26c0d306f7451568854c5d2d5",
+  "runtime_reference": "aa25aa89762974012c0243e6134e9785f5db970d",
+  "authority_manifest_sha256": "5745339f6d33bfe9d0d94e81a68da6409cbba9b464a361346fa4f8495c3f31f5",
+  "authority_pins": {
+    "AGENTS.md": {
+      "revision": "5e2ab4047a69c82fc883735134c23527197b3c1e",
+      "sha256": "ea0209eb0399d4a1f5cb6e9c65c729a9a4f6932bda1dc72484e7dacccc4f4c27"
+    },
+    "docs/methodology/constitution/gendev.md": {
+      "revision": "5e2ab4047a69c82fc883735134c23527197b3c1e",
+      "sha256": "f7073cd6d2e9f26ad13e97839e80456ce617a63d3d8f5df3660c7e07500dad4f"
+    },
+    "docs/policies/repository-engineering-policy.md": {
+      "revision": "5e2ab4047a69c82fc883735134c23527197b3c1e",
+      "sha256": "7477396d2d8487552866bd19c41e49542dca54fc15b9a7847512229e1a6a1b9e"
+    },
+    "docs/policies/development-task-lifecycle.md": {
+      "revision": "5e2ab4047a69c82fc883735134c23527197b3c1e",
+      "sha256": "33321bf308f42a645714f95ee1f9463f4b43b197964e540e5aa03f25eb5a9058"
+    },
+    "docs/policies/independent-validation-policy.md": {
+      "revision": "5e2ab4047a69c82fc883735134c23527197b3c1e",
+      "sha256": "ab022a5f6fa019f0e6631f3244e65c38a07ff110a90a391300267cff645e7bff"
+    },
+    "docs/methodology/guides/skill-execution-contract.md": {
+      "revision": "5e2ab4047a69c82fc883735134c23527197b3c1e",
+      "sha256": "ea5381d2c26dcb4f6a7902a97200a3a95132c444b12ad34e9ebb6bea4fd5f901"
+    },
+    "docs/methodology/dev-skills/council/SKILL.md": {
+      "revision": "5e2ab4047a69c82fc883735134c23527197b3c1e",
+      "sha256": "50206528c99440954bf844a24abc4dced180a30da1b21b4c846780f504479ea0"
+    },
+    "docs/resources/evolution/skill-library-import/README.md": {
+      "revision": "5e2ab4047a69c82fc883735134c23527197b3c1e",
+      "sha256": "3bbf604c7d14c41a194cd36aaf54cb73002f683001a521a6e6adb13d93f8f8de"
+    },
+    "docs/resources/evolution/skill-library-import/review/wording-follow-up.md": {
+      "revision": "5e2ab4047a69c82fc883735134c23527197b3c1e",
+      "sha256": "1df6d6bc44aac17a567e77e543b842e510d343e5ae2bab6ad858261546391671"
+    },
+    "docs/resources/evolution/v3-migration/review/round-1/checkpoint-exception-approval.json": {
+      "revision": "5e2ab4047a69c82fc883735134c23527197b3c1e",
+      "sha256": "37c9fa3d8d5ace42e6822b93a87bf4c54c6a35234f7f860c57146de703d15dd7"
+    }
+  },
+  "skills_diff_sha256": "c39031a5c45b63fb344bd12c71a9e20f195fe2616590155529b93e51c89db0c9",
+  "wording_diff_sha256": "a87b5c759d315026f296dca18fa52cb871ee4aad7ba4d6e1f238ab796aa09423",
+  "runtime_diff_bytes": 0,
+  "docs/resources/evolution/v3-migration/input-manifest.json": {
+    "sha256": "f8dee8b8d1ae364ab8d0eeb7dfdc25894577958aa34e7767acedc3d5b911f11b",
+    "identical_to": "aa25aa89762974012c0243e6134e9785f5db970d"
+  },
+  "docs/resources/evolution/v3-migration/review/round-1/checkpoint-exception-approval.json": {
+    "sha256": "37c9fa3d8d5ace42e6822b93a87bf4c54c6a35234f7f860c57146de703d15dd7",
+    "identical_to": "aa25aa89762974012c0243e6134e9785f5db970d"
+  },
+  "import": [
+    {
+      "source": "babysit-pr/SKILL.md",
+      "source_sha256": "fbe43ba3ab76a466a88ef8b46dca1b41fb8101347d24a396903849865173a6ac",
+      "destination": "docs/methodology/dev-skills/babysit-pr/SKILL.md",
+      "destination_sha256": "48ca5c421f768e6160ad6cf377afef9d371cfe467367c9b6100aa8921bd83e35",
+      "changed": true,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    },
+    {
+      "source": "babysit-pr/scripts/pr-wait",
+      "source_sha256": "90393f85b95b78bff1b039744bdfb09dc88ff2b430e1c3df687ee6f449c97214",
+      "destination": "docs/methodology/dev-skills/babysit-pr/scripts/pr-wait",
+      "destination_sha256": "90393f85b95b78bff1b039744bdfb09dc88ff2b430e1c3df687ee6f449c97214",
+      "changed": false,
+      "source_mode": "0o755",
+      "destination_mode": "0o755"
+    },
+    {
+      "source": "council/SKILL.md",
+      "source_sha256": "598fb2c7cdd48ddd9643cb22999e1b624c357aa6579aa0af0e7268ae16a8a164",
+      "destination": "docs/methodology/dev-skills/council/SKILL.md",
+      "destination_sha256": "50206528c99440954bf844a24abc4dced180a30da1b21b4c846780f504479ea0",
+      "changed": true,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    },
+    {
+      "source": "file-pr/SKILL.md",
+      "source_sha256": "174a7ae52e3b9d17f2bd0eaf0a11a89d744d1249164ecbdb0e642359eee75b1b",
+      "destination": "docs/methodology/dev-skills/file-pr/SKILL.md",
+      "destination_sha256": "cc9db71ef88b856ccb083f95f65b36639e151f6dc11b61d11c2560e5374beba5",
+      "changed": true,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    },
+    {
+      "source": "full-send/SKILL.md",
+      "source_sha256": "ba585e47cd901506b0e2de13025b0e39bc02462c136cf27491ad3efbdfe66020",
+      "destination": "docs/methodology/dev-skills/full-send/SKILL.md",
+      "destination_sha256": "b7300ce38f128a1a44da02c7afc72a50cedc195f260d1a62c04dc2395b5ada40",
+      "changed": true,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    },
+    {
+      "source": "full-send/agents/openai.yaml",
+      "source_sha256": "8a1e8ce04a774a8a2e469cecf5e45a9cec4d3438b4c587cf166c2f78206390d2",
+      "destination": "docs/methodology/dev-skills/full-send/agents/openai.yaml",
+      "destination_sha256": "8a1e8ce04a774a8a2e469cecf5e45a9cec4d3438b4c587cf166c2f78206390d2",
+      "changed": false,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    },
+    {
+      "source": "full-stop/SKILL.md",
+      "source_sha256": "091dcabfcba73e009ddb8e32c498a993a6bb60f8c223d3e21e917f4e52ab9939",
+      "destination": "docs/methodology/dev-skills/full-stop/SKILL.md",
+      "destination_sha256": "7f57b52e8d76fdaf4a86470dd814c4bada9dda1013d9a17eb19acd79e530cc0d",
+      "changed": true,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    },
+    {
+      "source": "full-stop/agents/openai.yaml",
+      "source_sha256": "6029e872a883aa06aad3426ab58289df016e4b0d23485719c71152603fec7d35",
+      "destination": "docs/methodology/dev-skills/full-stop/agents/openai.yaml",
+      "destination_sha256": "6029e872a883aa06aad3426ab58289df016e4b0d23485719c71152603fec7d35",
+      "changed": false,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    },
+    {
+      "source": "leaving-pr-comments/SKILL.md",
+      "source_sha256": "1d110343022d0514c101dd942286cce10d6b9f5bd5b899f5a0530620d34cd295",
+      "destination": "docs/methodology/dev-skills/leaving-pr-comments/SKILL.md",
+      "destination_sha256": "26f2a5830d09c344b9d22365c1fc6cda1d5430381e8a30f1ad12e30fd8fea141",
+      "changed": true,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    },
+    {
+      "source": "leaving-pr-comments/agents/openai.yaml",
+      "source_sha256": "f89fa0d9ae1c3e973b3e9ecb50549faee62fd1a0e59973bade68802c74183fdb",
+      "destination": "docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml",
+      "destination_sha256": "f89fa0d9ae1c3e973b3e9ecb50549faee62fd1a0e59973bade68802c74183fdb",
+      "changed": false,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    },
+    {
+      "source": "modernize/SKILL.md",
+      "source_sha256": "6172d774c46f535367086da90db1b0aaaaac969ed05ff040444f9afa9a6b1552",
+      "destination": "docs/methodology/dev-skills/modernize/SKILL.md",
+      "destination_sha256": "807a9ea1b847bad1ec21f622ce8b0fedc76d2fd49bc73bbfb19d3049ea75e2e9",
+      "changed": true,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    },
+    {
+      "source": "modernize/agents/openai.yaml",
+      "source_sha256": "6675e91e10f2b264fe1a027072f6d9f46299f781011e248a5ba075fc1f764e09",
+      "destination": "docs/methodology/dev-skills/modernize/agents/openai.yaml",
+      "destination_sha256": "6675e91e10f2b264fe1a027072f6d9f46299f781011e248a5ba075fc1f764e09",
+      "changed": false,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    },
+    {
+      "source": "sol-loop/SKILL.md",
+      "source_sha256": "1db1eb4c4a156ee666070e9a12623d520cd1bd9b19c3fc21003fe5a440ba0b10",
+      "destination": "docs/methodology/dev-skills/sol-loop/SKILL.md",
+      "destination_sha256": "57a4241fa899b15c86a4253df47d2e4299140ef4e7e71c757f4e653d608b8494",
+      "changed": true,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    },
+    {
+      "source": "takeover/SKILL.md",
+      "source_sha256": "9f00a7c67bf82603af2e80f56e9ce63f1516a1b4339365b79cf786d9d9055465",
+      "destination": "docs/methodology/dev-skills/takeover/SKILL.md",
+      "destination_sha256": "1e442abbc00618f5d06c3d259768512106796848f5c6ba07d856d362a36be102",
+      "changed": true,
+      "source_mode": "0o644",
+      "destination_mode": "0o644"
+    }
+  ],
+  "metadata": [
+    {
+      "entry": ".agents/skills/ai-construction-directive-builder",
+      "name": "ai-construction-directive-builder",
+      "description": "Use when creating construction directives or direct build prompts for Codex, Claude Code, Art, or similar AI implementation agents. Focuses on source authority, bounded scope, non-goals, implementation requirements, security constraints, tests, verification, documentation close-out, reporting, and anti-drift instructions."
+    },
+    {
+      "entry": ".agents/skills/architecture-spec-author",
+      "name": "architecture-spec-author",
+      "description": "Use when creating or revising an architecture specification from PRDs or build authority. Focuses on terminology, domain model, component boundaries, ownership, lifecycle, data model, interfaces, runtime behavior, diagrams, security boundaries, deferred architecture, and the verification specification."
+    },
+    {
+      "entry": ".agents/skills/babysit-pr",
+      "name": "babysit-pr",
+      "description": "Monitor a pull request through review and CI. Use when the user asks to monitor, watch, or babysit a PR."
+    },
+    {
+      "entry": ".agents/skills/code-conformance-reviewer",
+      "name": "code-conformance-reviewer",
+      "description": "Use when reviewing generated or human-written code against PRDs, architecture specifications, governance/security specifications, build plans, tactical implementation plans, construction directives, tests, and documentation close-out requirements. Focuses on spec drift, security risks, missing tests, CLI/UAT gaps, deferred-feature leakage, and engineering quality."
+    },
+    {
+      "entry": ".agents/skills/council",
+      "name": "council",
+      "description": "Obtain a three-provider independent review when the user explicitly requests a council review or workflow."
+    },
+    {
+      "entry": ".agents/skills/file-pr",
+      "name": "file-pr",
+      "description": "File a concise pull request. Use when the user asks to file, open, or create a PR."
+    },
+    {
+      "entry": ".agents/skills/friday-dev-board",
+      "name": "friday-dev-board",
+      "description": "Operate this repository's work-item board alongside GenDev. Use for selecting, queuing, resuming, tracking, or handing off a board task; task approval never substitutes for GenDev gate authority or authorizes external effects."
+    },
+    {
+      "entry": ".agents/skills/full-send",
+      "name": "full-send",
+      "description": "Trigger this if the user says 'full send'."
+    },
+    {
+      "entry": ".agents/skills/full-stop",
+      "name": "full-stop",
+      "description": "Prepare an explicitly requested full-stop PR workflow for human merge. A plain request to stop or pause means stop, not this workflow."
+    },
+    {
+      "entry": ".agents/skills/governance-security-spec",
+      "name": "governance-security-spec",
+      "description": "Use when defining governance, security, identity, permission, policy, approval, audit, data sensitivity, tool access, agent identity, and threat-surface requirements for a project or phase. Especially important for agent platforms and systems with side effects."
+    },
+    {
+      "entry": ".agents/skills/independent-code-validator",
+      "name": "independent-code-validator",
+      "description": "Use in a fresh, read-only review context to validate a frozen implementation candidate against its exact GenDev authority, construction directive, tests, and diff. Produces VERIFIED, CHANGES_REQUESTED, or BLOCKED with reproducible evidence; never edits, remediates, accepts, merges, pushes, or releases the candidate."
+    },
+    {
+      "entry": ".agents/skills/leaving-pr-comments",
+      "name": "leaving-pr-comments",
+      "description": "Use whenever leaving comments on GitHub."
+    },
+    {
+      "entry": ".agents/skills/migration-refactor-analyst",
+      "name": "migration-refactor-analyst",
+      "description": "Use when planning a major refactor, architecture replacement, schema migration, legacy removal, or old-vs-new implementation comparison. Focuses on current inventory, target inventory, object-by-object migration matrices, replace/adapt/split/retain/quarantine/remove/defer decisions, CLI/API migration, test migration, risks, and legacy rejection criteria."
+    },
+    {
+      "entry": ".agents/skills/modernize",
+      "name": "modernize",
+      "description": "For getting old prs up to date. Use when asked to rebase a pr or \"modernize\"."
+    },
+    {
+      "entry": ".agents/skills/phase-build-planner",
+      "name": "phase-build-planner",
+      "description": "Use when defining build definitions or phase build plans from accepted PRD and architecture authority. Focuses on bounded scope, phase objectives, dependencies, deferred items, sequencing, risks, test strategy, migration behavior, acceptance criteria, and documentation close-out."
+    },
+    {
+      "entry": ".agents/skills/prd-author",
+      "name": "prd-author",
+      "description": "Use when turning a vision/problem framing document into a Product Requirements Document with stable requirement IDs, acceptance criteria in EARS form (for C2/C3), user workflows, functional and non-functional requirements, edge cases, non-goals, deferred items, and testability notes."
+    },
+    {
+      "entry": ".agents/skills/remediation-closeout",
+      "name": "remediation-closeout",
+      "description": "Use when converting review findings into remediation prompts/plans and reconciling documentation after implementation. Focuses on finding-to-fix mapping, targeted remediation, tests, verification, documentation close-out, as-built status, deferred backlog updates, and residual risk."
+    },
+    {
+      "entry": ".agents/skills/sol-loop",
+      "name": "sol-loop",
+      "description": "Run a bounded Sol review when the user requests a sol-loop review or workflow."
+    },
+    {
+      "entry": ".agents/skills/subagent-directives-template",
+      "name": "subagent-directives-template",
+      "description": "Prepare bounded builder and independent validator handoffs for authorized GenDev implementation and review. Capture phase authority, candidate identity, verification, permitted effects, and human acceptance boundaries."
+    },
+    {
+      "entry": ".agents/skills/subagents-worktrees-template",
+      "name": "subagents-worktrees-template",
+      "description": "Prepare an isolated worktree delegation plan when parallel subagent work is authorized. Define independent task ownership, GenDev authority, permitted effects, effort limits, and integration verification."
+    },
+    {
+      "entry": ".agents/skills/tactical-implementation-planner",
+      "name": "tactical-implementation-planner",
+      "description": "Use when creating detailed tactical implementation plans from phase build plans and architecture authority. Focuses on executable workstreams, module/file ownership expectations, schema/API/CLI changes, migration order, test requirements, negative tests, verification commands, acceptance criteria, and documentation close-out."
+    },
+    {
+      "entry": ".agents/skills/takeover",
+      "name": "takeover",
+      "description": "Take over existing work. Use when the user asks to take over a PR, branch, or agent thread, or requests a takeover."
+    },
+    {
+      "entry": ".agents/skills/traceability-matrix",
+      "name": "traceability-matrix",
+      "description": "Use when mapping requirements to architecture rules, build-plan items, tactical tasks, implementation areas, tests, UAT evidence, review findings, and documentation close-out. Identifies coverage gaps, untestable claims, unmapped tests, deferred items, and blocked requirements."
+    },
+    {
+      "entry": ".agents/skills/vision-framing",
+      "name": "vision-framing",
+      "description": "Use when starting a new product, project, feature, refactor, or research effort and the user needs a clear vision/problem framing document before PRD, architecture, or implementation planning. Focuses on problem statement, users, outcomes, non-goals, success criteria, risks, assumptions, and open questions."
+    }
+  ],
+  "links": [
+    {
+      "entry": ".agents/skills/babysit-pr",
+      "target": "../../docs/methodology/dev-skills/babysit-pr"
+    },
+    {
+      "entry": ".agents/skills/council",
+      "target": "../../docs/methodology/dev-skills/council"
+    },
+    {
+      "entry": ".agents/skills/file-pr",
+      "target": "../../docs/methodology/dev-skills/file-pr"
+    },
+    {
+      "entry": ".agents/skills/full-send",
+      "target": "../../docs/methodology/dev-skills/full-send"
+    },
+    {
+      "entry": ".agents/skills/full-stop",
+      "target": "../../docs/methodology/dev-skills/full-stop"
+    },
+    {
+      "entry": ".agents/skills/leaving-pr-comments",
+      "target": "../../docs/methodology/dev-skills/leaving-pr-comments"
+    },
+    {
+      "entry": ".agents/skills/modernize",
+      "target": "../../docs/methodology/dev-skills/modernize"
+    },
+    {
+      "entry": ".agents/skills/sol-loop",
+      "target": "../../docs/methodology/dev-skills/sol-loop"
+    },
+    {
+      "entry": ".agents/skills/takeover",
+      "target": "../../docs/methodology/dev-skills/takeover"
+    }
+  ],
+  "ui": [
+    {
+      "path": ".agents/skills/full-send/agents/openai.yaml",
+      "interface": {
+        "display_name": "Full Send",
+        "short_description": "Prove, file, babysit, and merge a PR unattended",
+        "default_prompt": "Use $full-send to take this to a merged PR. I am not watching this thread."
+      }
+    },
+    {
+      "path": ".agents/skills/full-stop/agents/openai.yaml",
+      "interface": {
+        "display_name": "Full Stop",
+        "short_description": "Prove, review, and prepare a PR without merging",
+        "default_prompt": "Use $full-stop to make this PR ready for me to merge."
+      }
+    },
+    {
+      "path": ".agents/skills/leaving-pr-comments/agents/openai.yaml",
+      "interface": {
+        "display_name": "Leaving PR Comments",
+        "short_description": "Format agent-authored GitHub PR comments",
+        "default_prompt": "Use $leaving-pr-comments when posting this comment on my behalf."
+      }
+    },
+    {
+      "path": ".agents/skills/modernize/agents/openai.yaml",
+      "interface": {
+        "display_name": "Modernize PR",
+        "short_description": "Rebase and reassess an aging pull request",
+        "default_prompt": "Use $modernize to rebase this PR on its current base, check for conceptual conflicts, and tell me honestly whether it should stay open."
+      }
+    }
+  ],
+  "preexisting_skill_tree_entries_preserved": 30,
+  "guide_mirror": [
+    {
+      "filename": "01-orientation.md",
+      "sha256": "43762b6d133dd34712eb7dac4bf19d46b258de75e19b05d93cf0bbd4ded88fc5"
+    },
+    {
+      "filename": "02-core-mental-model.md",
+      "sha256": "b353897d44467b79767306a24d5122819b6891cd7f479d2e49e5688c8e38f9b1"
+    },
+    {
+      "filename": "03-repository-map.md",
+      "sha256": "c3207d397e290eedc9f2eab39ad59547e73726dccc95aac7b731288bfbca35a9"
+    },
+    {
+      "filename": "04-starting-a-new-project.md",
+      "sha256": "c7454cb968c1dbc19b2d86131ac708d87103bd8a9ba1f1522bc7d9cde99ab96e"
+    },
+    {
+      "filename": "05-working-with-the-agent.md",
+      "sha256": "0508d42b64920dd35cd0b8c582f9f93ec25e2c55b1190eab571cb0e054258fa2"
+    },
+    {
+      "filename": "06-gates-and-artifacts.md",
+      "sha256": "cc84ebf6d2e269cda3408a0869ad48f0781a74b8191733dbd7ebe8cd8e493731"
+    },
+    {
+      "filename": "07-approvals-and-risk.md",
+      "sha256": "2d73c7a6fb4890c3ddd650d2d78a0d85ff2e893623de5c868de99c3a41f6ccf0"
+    },
+    {
+      "filename": "08-subagents-and-delegation.md",
+      "sha256": "5d72ba70222e0c21019e64e6970656e77696bed3fbc58dde18c4876f4d66be30"
+    },
+    {
+      "filename": "09-build-planning-and-implementation.md",
+      "sha256": "0fd4ef64305589f2fa41b0eb41ccdda594ba3f76bc4d35e4f4b9157c0e370213"
+    },
+    {
+      "filename": "10-review-remediation-and-closeout.md",
+      "sha256": "25aa8c600d4a9fdadd887b21df496d4ca13624ae0a4c19082dab8bb8576c0304"
+    },
+    {
+      "filename": "11-production-operations.md",
+      "sha256": "31f31f5e6571c87990cf68735da57434b8cb99f3a8ec6f7e69a32fddafc1fb3d"
+    },
+    {
+      "filename": "12-vendor-contract-tracker-walkthrough.md",
+      "sha256": "a5ba707e9b2ea7cad54ddea976cee9c3c2f4f7d590061fb6e5837661d93580c2"
+    },
+    {
+      "filename": "13-codex-specific-notes.md",
+      "sha256": "1774c462cb02d087b62f0cc3c2d76d75ccaee3216a097899fc37247d4973647f"
+    },
+    {
+      "filename": "14-claude-code-specific-notes.md",
+      "sha256": "d8600ec52b668f8c9ef6c0f2e1096c263483eb34df4907f530dbee3505be80d1"
+    },
+    {
+      "filename": "15-prompt-library.md",
+      "sha256": "a7a77dbfd13ab713230557e8643520ef4381f5414681022238dade4f43267af1"
+    },
+    {
+      "filename": "16-checklists.md",
+      "sha256": "aa360e97d479fdd2be0bdc842e1cf6f786714b5371bf782adbbe6179e1989d95"
+    },
+    {
+      "filename": "17-common-failure-modes.md",
+      "sha256": "b41fe78ba07fe634ec45f4fbc5a9f7a7dc4df8dc8257c6fe82122d57616d64db"
+    },
+    {
+      "filename": "18-glossary.md",
+      "sha256": "c8e00d04dc511d80e5e6061208966685dfc0af9dbd2d3b6a02be99689d01bc69"
+    },
+    {
+      "filename": "19-starting-mid-stream.md",
+      "sha256": "6b1428eb4de7c347619adf5462dc0eaca07c3a54713347b6d7b533322285551e"
+    },
+    {
+      "filename": "20-work-item-board.md",
+      "sha256": "f8ff946c18bb2f093c1762dd4e39e04b53638bfdfbc6056bc9564df7218ffce9"
+    },
+    {
+      "filename": "21-skill-library-and-workflows.md",
+      "sha256": "bb6455b4df28487ec7d3c3d77f3a2516df8646c61eaf016dde8342773d4bf28f"
+    },
+    {
+      "filename": "22-installation-and-upgrades.md",
+      "sha256": "e219dd1f6d73021f463cdf8358432b66c363d5b74d1f9a33c038b02a352bf6b3"
+    },
+    {
+      "filename": "README.md",
+      "sha256": "2a4e5833b91bb871454af14721f7081ae8b16973b1415913e8662578b4a3944b"
+    }
+  ]
+}

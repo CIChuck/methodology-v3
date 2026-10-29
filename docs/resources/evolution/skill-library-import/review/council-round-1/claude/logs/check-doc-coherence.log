@@ -1,0 +1,1 @@
+ERROR: check-doc-coherence.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep

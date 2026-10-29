@@ -1,0 +1,1 @@
+ERROR: methodology test suites require ripgrep (rg). Install: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep

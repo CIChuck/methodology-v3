@@ -1,0 +1,19 @@
+source /Users/chuckrussell/Dev/gendev/tstack/skills source_commit 1085050f3baed1ac724caa4a8166145fb2ac88af
+tstack HEAD 1085050f3baed1ac724caa4a8166145fb2ac88af
+tstack status lines 0
+dict 14
+OK  babysit-pr/SKILL.md recorded_mode 420 actual 0o644
+OK  babysit-pr/scripts/pr-wait recorded_mode 493 actual 0o755
+OK  council/SKILL.md recorded_mode 420 actual 0o644
+OK  file-pr/SKILL.md recorded_mode 420 actual 0o644
+OK  full-send/SKILL.md recorded_mode 420 actual 0o644
+OK  full-send/agents/openai.yaml recorded_mode 420 actual 0o644
+OK  full-stop/SKILL.md recorded_mode 420 actual 0o644
+OK  full-stop/agents/openai.yaml recorded_mode 420 actual 0o644
+OK  leaving-pr-comments/SKILL.md recorded_mode 420 actual 0o644
+OK  leaving-pr-comments/agents/openai.yaml recorded_mode 420 actual 0o644
+OK  modernize/SKILL.md recorded_mode 420 actual 0o644
+OK  modernize/agents/openai.yaml recorded_mode 420 actual 0o644
+OK  sol-loop/SKILL.md recorded_mode 420 actual 0o644
+OK  takeover/SKILL.md recorded_mode 420 actual 0o644
+bad 0

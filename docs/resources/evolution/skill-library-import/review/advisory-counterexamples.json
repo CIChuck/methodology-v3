@@ -1,0 +1,44 @@
+{
+  "recorded_at": "2026-10-29T00:33:11.290113+00:00",
+  "mode": "Static instruction accuracy pass; no live PR/provider/watch/rebase test",
+  "prior_head": "8abacf4b4b4a6d005cba3bdb92a68c9ce5d81376",
+  "cases": [
+    {
+      "case": "rare permission/security violation",
+      "expected": "Mandatory, blocks readiness even if a dismissal was written; remediation or human disposition under governing authority, no fabricated VERIFIED."
+    },
+    {
+      "case": "out-of-scope data-loss finding",
+      "expected": "Report for human scope/risk disposition, no silent expansion, waiver or merge readiness."
+    },
+    {
+      "case": "optional style suggestion",
+      "expected": "May decline with documented reason/evidence; remaining suggestion may be follow-up."
+    },
+    {
+      "case": "verified false-positive report",
+      "expected": "Document evidence showing no actual violation before dismissing; not a mandatory finding waiver."
+    },
+    {
+      "case": "existing PR targets release/1.x, repository default main",
+      "expected": "Retain release/1.x, review/rebase against it; no implicit retargeting."
+    },
+    {
+      "case": "new stacked PR feature/child targets feature/parent",
+      "expected": "Record feature/parent, Sol merge-base against origin/feature/parent, create PR with --base feature/parent or API base, verify returned base/head."
+    },
+    {
+      "case": "new ordinary PR targets main",
+      "expected": "Record main when appropriate, pass --base main/API base; review against main."
+    },
+    {
+      "case": "current checkout is selected release/feature target",
+      "expected": "Create distinct task branch before edits; full-stop never directly pushes default or target."
+    },
+    {
+      "case": "PR base changes after selection",
+      "expected": "Reconcile actual identities before mutations/readiness; no silent retarget, retain full-stop no-merge restriction."
+    }
+  ],
+  "cli_evidence": "Installed gh pr create --help confirms explicit --base selects target; local help inspection only."
+}

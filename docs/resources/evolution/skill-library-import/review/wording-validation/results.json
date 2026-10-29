@@ -1,0 +1,98 @@
+{
+  "status": "wording/local checks passed; fresh council round 3 pending",
+  "recorded_at": "2026-10-29T00:11:02.951645+00:00",
+  "commands": [
+    {
+      "argv": [
+        "./scripts/gendev-doctor.sh"
+      ],
+      "exit": 0,
+      "log": "check-00.log"
+    },
+    {
+      "argv": [
+        "./scripts/check-methodology.sh"
+      ],
+      "exit": 0,
+      "log": "check-01.log"
+    },
+    {
+      "argv": [
+        "./scripts/check-doc-coherence.sh"
+      ],
+      "exit": 0,
+      "log": "check-02.log"
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--frozen",
+        "--group",
+        "devboard",
+        "python",
+        "scripts/devboard.py",
+        "validate"
+      ],
+      "exit": 0,
+      "log": "check-03.log"
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--frozen",
+        "--group",
+        "devboard",
+        "python",
+        "scripts/devboard.py",
+        "next"
+      ],
+      "exit": 0,
+      "log": "check-04.log"
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--frozen",
+        "--group",
+        "devboard",
+        "python",
+        "scripts/devboard.py",
+        "show",
+        "skill-library-import"
+      ],
+      "exit": 0,
+      "log": "check-05.log"
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--frozen",
+        "--group",
+        "devboard",
+        "python",
+        "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-wording-checks-vlj93jsa/offline-checks.py"
+      ],
+      "exit": 0,
+      "log": "check-06.log"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/verify-migration-inputs.py"
+      ],
+      "exit": 0,
+      "log": "check-07.log"
+    }
+  ],
+  "guide_mirror": "exact 23-file filename/byte equality",
+  "runtime_diff_from_aa25aa8": "empty for scripts/tests/workflow/dependencies",
+  "runtime_checks_not_repeated": "Wording/metadata/tracking only; round-2 runtime evidence remains pinned to aa25aa8. No new runtime result claimed.",
+  "rg_binary": "/opt/homebrew/lib/node_modules/@openai/codex/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/codex-path/rg",
+  "static_counterexamples": "../wording-counterexamples.json",
+  "human_acceptance": "pending",
+  "remote_effects": "none"
+}

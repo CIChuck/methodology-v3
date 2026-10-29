@@ -1,0 +1,18 @@
+id: skill-library-import
+title: Import and reconcile nine local workflow skills
+priority: 2
+work_state: started
+condition: normal
+implementation_authority: granted
+packet: docs/planning/active/skill-library-import/
+next_gate: Authorize fresh independent review of pushed skill-import candidate 1516712;
+  human acceptance pending
+delivery_state: pushed
+branch: integration/v3-skill-import
+depends_on: []
+validation:
+- docs/resources/evolution/skill-library-import/validation-summary.json
+- docs/resources/evolution/github-delivery.json (GitHub delivery verified; not conformance
+  approval)
+approved_by: Chuck Russell
+approved_at: '2026-10-28'

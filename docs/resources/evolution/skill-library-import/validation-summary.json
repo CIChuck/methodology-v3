@@ -23,5 +23,6 @@
     "VERIFIED remains pinned solely to migration candidate 98f8bec4597cd3307fc26e5c28dc86592e01ca08"
   ],
   "next": "Authorize fresh independent review of the separate GitHub skill-import checkpoint",
-  "recorded_at": "2026-10-28T21:32:54.117434+00:00"
+  "recorded_at": "2026-10-28T21:32:54.117434+00:00",
+  "current_follow_up": "review/remediation-results.json; supersedes current readiness only, retains historical checks above"
 }

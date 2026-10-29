@@ -1,0 +1,18 @@
+test_added_checkpoint_with_different_tree_fails (audit_refs.PreservationRefTests.test_added_checkpoint_with_different_tree_fails) ... ok
+test_added_checkpoint_with_other_author_fails (audit_refs.PreservationRefTests.test_added_checkpoint_with_other_author_fails) ... ok
+test_changed_frozen_ref_fails_even_with_identical_tree (audit_refs.PreservationRefTests.test_changed_frozen_ref_fails_even_with_identical_tree) ... ok
+test_checkpoint_ref_to_noncommit_fails (audit_refs.PreservationRefTests.test_checkpoint_ref_to_noncommit_fails) ... ok
+test_checkpoint_with_wrong_subject_fails (audit_refs.PreservationRefTests.test_checkpoint_with_wrong_subject_fails) ... ok
+test_existing_context_nonincreasing_ordinal_fails (audit_refs.PreservationRefTests.test_existing_context_nonincreasing_ordinal_fails) ... ok
+test_new_context_different_tree_fails (audit_refs.PreservationRefTests.test_new_context_different_tree_fails) ... ok
+test_new_context_uses_frozen_tree_anchor (audit_refs.PreservationRefTests.test_new_context_uses_frozen_tree_anchor) ... ok
+test_new_context_without_any_frozen_checkpoint_fails (audit_refs.PreservationRefTests.test_new_context_without_any_frozen_checkpoint_fails) ... ok
+test_no_exception_applies_without_explicit_approval (audit_refs.PreservationRefTests.test_no_exception_applies_without_explicit_approval) ... ok
+test_only_approved_identical_tree_addition_passes (audit_refs.PreservationRefTests.test_only_approved_identical_tree_addition_passes) ... ok
+test_other_added_branch_fails (audit_refs.PreservationRefTests.test_other_added_branch_fails) ... ok
+test_removed_frozen_ref_fails (audit_refs.PreservationRefTests.test_removed_frozen_ref_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.929s
+
+OK

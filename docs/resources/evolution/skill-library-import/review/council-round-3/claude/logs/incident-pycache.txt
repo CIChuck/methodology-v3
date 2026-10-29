@@ -1,0 +1,1 @@
+Incident: py_compile wrote docs/methodology/dev-skills/babysit-pr/scripts/__pycache__/pr-waitcpython-314.pyc (gitignored) at 20:15 local; reviewer removed exactly that file+dir at 2026-10-29T00:15:45Z. Tracked content unaffected.

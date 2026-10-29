@@ -1,0 +1,2 @@
+PASS all 14 original/import file digests, modes, inventory and source commit; 5 support files unchanged
+PASS /Users/chuckrussell/Dev/gendev/methodology-v3 : 24 metadata entries; 9 bundles, all Markdown links, 4 UI metadata; helper syntax/help

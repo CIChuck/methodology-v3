@@ -1,0 +1,42 @@
+{
+  "AGENTS.md": {
+    "revision": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+    "sha256": "3a508c7abb748015ff8710c6808fa8a95333b1ac77e7de217f21371e90e9aceb"
+  },
+  "docs/methodology/constitution/gendev.md": {
+    "revision": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+    "sha256": "f7073cd6d2e9f26ad13e97839e80456ce617a63d3d8f5df3660c7e07500dad4f"
+  },
+  "docs/policies/repository-engineering-policy.md": {
+    "revision": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+    "sha256": "7477396d2d8487552866bd19c41e49542dca54fc15b9a7847512229e1a6a1b9e"
+  },
+  "docs/policies/development-task-lifecycle.md": {
+    "revision": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+    "sha256": "33321bf308f42a645714f95ee1f9463f4b43b197964e540e5aa03f25eb5a9058"
+  },
+  "docs/policies/independent-validation-policy.md": {
+    "revision": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+    "sha256": "ab022a5f6fa019f0e6631f3244e65c38a07ff110a90a391300267cff645e7bff"
+  },
+  "docs/policies/dev-board-integration.md": {
+    "revision": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+    "sha256": "af36991dc3ae53977aeb347db84a35aed307a58882394319ee49aec3931f5289"
+  },
+  "docs/resources/evolution/skill-library-import/README.md": {
+    "revision": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+    "sha256": "b827a4ff05d123363f56c3c997c970f76534e353ba780ca6f536d83a66497c1a"
+  },
+  "docs/resources/evolution/skill-library-import/review-readiness.md": {
+    "revision": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+    "sha256": "45453af97d4da667c9221dd1e47fdf3987e716f0ac906c7de9f5297ee41c89c7"
+  },
+  "docs/methodology/guides/skill-execution-contract.md": {
+    "revision": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+    "sha256": "ea5381d2c26dcb4f6a7902a97200a3a95132c444b12ad34e9ebb6bea4fd5f901"
+  },
+  "docs/methodology/dev-skills/council/SKILL.md": {
+    "revision": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+    "sha256": "62165c4229ec96977e53cf57eaece58635b85e57fb1e9d8511f6b267caeee157"
+  }
+}

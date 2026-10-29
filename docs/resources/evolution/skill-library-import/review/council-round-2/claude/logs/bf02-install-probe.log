@@ -1,0 +1,83 @@
+probe clone HEAD 97f77802e92f33d657fd2edfb6dcc574ebb19759 parent aa25aa89762974012c0243e6134e9785f5db970d
+probe
+
+ docs/methodology/dev-skills/council/examples/deep/x/SKILL.md    | 5 +++++
+ docs/methodology/dev-skills/council/extra.md                    | 5 +++++
+ docs/methodology/dev-skills/council/references/example/SKILL.md | 5 +++++
+ docs/methodology/dev-skills/council/references/notes.md         | 5 +++++
+ docs/methodology/dev-skills/flat-probe.md                       | 5 +++++
+ docs/methodology/dev-skills/probebundle/SKILL.md                | 5 +++++
+ 6 files changed, 30 insertions(+)
+### dry-run candidate rc=0
+entries: 26
+support copied: council/references/notes.md
+support copied: council/references/example/SKILL.md
+support copied: council/extra.md
+support copied: council/examples/deep/x/SKILL.md
+support copied: babysit-pr/scripts/pr-wait
+support copied: full-send/agents/openai.yaml
+not discovered: note-a
+not discovered: example-b
+not discovered: direct-child-c
+not discovered: deep-d
+discovered: flat-probe
+discovered: probebundle
+pr-wait mode 755
+README.md
+active
+backlog
+blocked
+board.schema.json
+board.yaml
+deferred
+queued
+review
+task-template.md
+0
+board task rows: 0
+docs/project absent (G1 not initialized)
+### dry-run prior rc=0
+entries: 30
+support copied: council/references/notes.md
+support copied: council/references/example/SKILL.md
+support copied: council/extra.md
+support copied: council/examples/deep/x/SKILL.md
+support copied: babysit-pr/scripts/pr-wait
+support copied: full-send/agents/openai.yaml
+discovered: note-a
+discovered: example-b
+discovered: direct-child-c
+discovered: deep-d
+discovered: flat-probe
+discovered: probebundle
+pr-wait mode 755
+README.md
+active
+backlog
+blocked
+board.schema.json
+board.yaml
+deferred
+queued
+review
+task-template.md
+0
+board task rows: 0
+docs/project absent (G1 not initialized)
+### fresh install from probe clone into /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round2-278hync6/claude/tmp/fresh-install.VRlF
+install rc=0
+
+Install completed with preserved AGENTS.md; fully governed operation requires explicit AGENTS integration.
+Next: run scripts/init-project.sh "Your Project Name" in the target, then scripts/check-methodology.sh.
+entries: 24
+resolving SKILL.md: 24
+not discovered: note-a
+not discovered: example-b
+not discovered: direct-child-c
+not discovered: deep-d
+support copied: council/references/example/SKILL.md
+support copied: babysit-pr/scripts/pr-wait
+installed pr-wait mode 755
+Context: installed
+Project initialized: no
+doctor rc=0

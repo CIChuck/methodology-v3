@@ -1,0 +1,19 @@
+$ tests/methodology/test-installed-context.sh
+installed-context | IC-001 | expected=0 actual=0 | install writes the installation record with provenance and digests
+  [PASS] install writes the installation record with provenance and digests
+installed-context | IC-002 | expected=0 actual=0 | doctor reports installed context with verified integrity
+  [PASS] doctor reports installed context with verified integrity
+installed-context | IC-003 | expected=5 actual=5 | doctor exits 5 and names the file when an installed file is tampered
+  [PASS] doctor exits 5 and names the file when an installed file is tampered
+installed-context | IC-004 | expected=4 actual=4 | authority suites refuse installed context with exit 4
+  [PASS] authority suites refuse installed context with exit 4
+installed-context | IC-005 | expected=0 actual=0 | authority-only checkers are not shipped
+  [PASS] authority-only checkers are not shipped
+installed-context | IC-006 | expected=0 actual=0 | product workflow is rendered, not the authority workflow
+  [PASS] product workflow is rendered, not the authority workflow
+installed-context | IC-007 | expected=0 actual=0 | initialized project closes G1 and the product contract holds
+  [PASS] initialized project closes G1 and the product contract holds
+installed-context | IC-008 | expected=0 actual=0 | no suite residue remains in the product repository
+  [PASS] no suite residue remains in the product repository
+
+Suite installed-context: 8 passed, 0 failed, 8 total

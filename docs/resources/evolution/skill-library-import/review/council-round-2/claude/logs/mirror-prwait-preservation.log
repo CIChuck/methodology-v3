@@ -1,0 +1,19 @@
+## guide mirror
+canonical files: 23  html content files: 23
+filenames identical
+bytes identical (diff -r clean)
+## pr-wait
+ast parse OK
+--help rc=0
+usage: pr-wait [-h] [--repo REPO] [--until {green,ready,any-change}]
+               [--interval INTERVAL]
+               [pr]
+
+Watch a GitHub PR and print one line per real event.
+no state dir created by --help
+## source skills repo
+1085050f3baed1ac724caa4a8166145fb2ac88af
+source dirty entries:        0
+## candidate tree
+aa25aa89762974012c0243e6134e9785f5db970d
+candidate dirty entries:        0

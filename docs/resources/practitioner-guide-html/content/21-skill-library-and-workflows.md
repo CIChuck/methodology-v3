@@ -6,7 +6,7 @@ Skills provide reusable instructions and sometimes scripts, templates or provide
 UI metadata. They do not replace project authority or grant permissions simply
 by being installed, discovered, read or discussed. Use them within the user's
 actual request and accepted GenDev scope. The shared execution contract is
-`docs/methodology/guides/skill-execution-contract.md` on the expanded-skill branch.
+`docs/methodology/guides/skill-execution-contract.md` in the current library.
 
 Canonical sources live under `docs/methodology/dev-skills/`; discovery entries
 under `.agents/skills/` link to them. Legacy single-file sources have a linked
@@ -18,11 +18,13 @@ source directly or use an explicitly adopted adapter (Chapters 13–14).
 ## Catalog And Availability
 
 The independently reviewed migration candidate `98f8bec` contains the first 15
-skills. The following nine PR/coordination skills are a separate follow-up:
-present at operational checkpoint `1516712` on `integration/v3-skill-import`,
-locally checked and pushed, with formal independent review still pending. This
-documentation branch describes that combined 24-skill library. The default
-GitHub main branch has not automatically acquired the follow-up through hosting.
+skills. The nine additional PR/coordination skills and this guide were merged
+through PR #1 at `d41e0eb`, bringing GitHub main to 24 skills. Council round 1
+returned two BLOCKED outcomes and one VERIFIED outcome; the controller retained
+BLOCKED because required preservation evidence failed and a mandatory instruction
+conflict remained. Bounded remediation is local on `fix/skills-council-follow-up`,
+with one fresh council round authorized. Human acceptance and v3 release remain
+pending. No earlier verdict automatically covers the revised candidate.
 
 | Skill | Use |
 | --- | --- |

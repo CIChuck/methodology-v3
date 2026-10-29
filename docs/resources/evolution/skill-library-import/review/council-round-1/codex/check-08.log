@@ -1,0 +1,17 @@
+$ tests/methodology/test-documentation-coherence.sh
+documentation-coherence | DOC-001 | expected=0 actual=0 | methodology checker accepts active documentation
+  [PASS] methodology checker accepts active documentation
+documentation-coherence | DOC-002 | expected=1 actual=1 | active practitioner docs contain no raw refinement notes
+  [PASS] active practitioner docs contain no raw refinement notes
+documentation-coherence | DOC-003 | expected=1 actual=1 | active docs contain no retired phase roadmap references
+  [PASS] active docs contain no retired phase roadmap references
+documentation-coherence | DOC-004 | expected=1 actual=1 | active docs contain no canonical placeholder document paths
+  [PASS] active docs contain no canonical placeholder document paths
+documentation-coherence | DOC-005 | expected=0 actual=0 | current examples stay non-authoritative and strict
+  [PASS] current examples stay non-authoritative and strict
+documentation-coherence | DOC-006 | expected=0 actual=0 | active documentation passes release identity and preflight coherence
+  [PASS] active documentation passes release identity and preflight coherence
+documentation-coherence | DOC-007 | expected=3 actual=3 | doc-coherence checker fails loudly when ripgrep is missing
+  [PASS] doc-coherence checker fails loudly when ripgrep is missing
+
+Suite documentation-coherence: 7 passed, 0 failed, 7 total

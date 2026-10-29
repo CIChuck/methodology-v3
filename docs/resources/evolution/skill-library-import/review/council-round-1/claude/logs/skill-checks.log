@@ -1,0 +1,11 @@
+discovery count 24
+babysit-pr OK 
+council OK 
+file-pr OK 
+full-send ['unknown skill ref --admin'] | ui
+full-stop ['unknown skill ref --force-with-lease'] | ui
+leaving-pr-comments OK | ui
+modernize OK | ui
+sol-loop OK 
+takeover OK 
+FAILURES

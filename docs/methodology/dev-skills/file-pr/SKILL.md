@@ -8,9 +8,11 @@ description: File a concise pull request. Use when the user asks to file, open, 
 Follow the [GenDev skill execution contract](../../guides/skill-execution-contract.md).
 Use this skill within the requested task; importing or reading it grants no execution authority.
 
-Before filing, check whether a PR for this branch already exists. Review the
-diff locally against the base branch (usually `origin/main`) to make sure its
-contents match the goal.
+Before filing, check whether a PR for this branch already exists. Retain an
+existing PR's actual base. For a new PR, use the caller's selected target, or
+resolve and record the intended target before proceeding; use the default only
+when appropriate to the requested work. Review the diff against that target.
+Do not silently retarget an existing PR.
 
 PR titles usually become commit messages, so follow the repository's title
 conventions. Look at recently merged PRs and Git history for examples. Prefer a
@@ -44,8 +46,11 @@ If model identity is unavailable, name the harness without guessing a model.
 Before submission, check the title, description, quotes, and attachments for
 secrets and private details.
 
-Follow the user's requested draft/readiness state and repository rules. With
-no contrary instruction, open a review-ready PR so its configured checks run. If `gh pr create` fails
+Follow the user's requested draft/readiness state and repository rules. Pass the
+selected target explicitly with `gh pr create --base <selected-target>` or the
+equivalent API `base` field; do not rely on a CLI/configuration default. Verify
+the returned PR's actual base and head match the selected identities.
+With no contrary instruction, open a review-ready PR so its configured checks run. If `gh pr create` fails
 because the GraphQL rate limit is used up, open it through REST with
 `gh api repos/<owner>/<repo>/pulls -f title=... -f head=... -f base=... -F body=@<file>`. If the user also asked
 to babysit it, continue with the `babysit-pr` skill.

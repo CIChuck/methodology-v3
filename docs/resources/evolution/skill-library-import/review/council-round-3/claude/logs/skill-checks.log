@@ -1,0 +1,76 @@
+manifest entries 14
+OK  docs/methodology/dev-skills/babysit-pr/SKILL.md src_mode 0o644 dst_mode 0o644 git_mode 100644 changed True
+OK  docs/methodology/dev-skills/babysit-pr/scripts/pr-wait src_mode 0o755 dst_mode 0o755 git_mode 100755 changed False
+OK  docs/methodology/dev-skills/council/SKILL.md src_mode 0o644 dst_mode 0o644 git_mode 100644 changed True
+OK  docs/methodology/dev-skills/file-pr/SKILL.md src_mode 0o644 dst_mode 0o644 git_mode 100644 changed True
+OK  docs/methodology/dev-skills/full-send/SKILL.md src_mode 0o644 dst_mode 0o644 git_mode 100644 changed True
+OK  docs/methodology/dev-skills/full-send/agents/openai.yaml src_mode 0o644 dst_mode 0o644 git_mode 100644 changed False
+OK  docs/methodology/dev-skills/full-stop/SKILL.md src_mode 0o644 dst_mode 0o644 git_mode 100644 changed True
+OK  docs/methodology/dev-skills/full-stop/agents/openai.yaml src_mode 0o644 dst_mode 0o644 git_mode 100644 changed False
+OK  docs/methodology/dev-skills/leaving-pr-comments/SKILL.md src_mode 0o644 dst_mode 0o644 git_mode 100644 changed True
+OK  docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml src_mode 0o644 dst_mode 0o644 git_mode 100644 changed False
+OK  docs/methodology/dev-skills/modernize/SKILL.md src_mode 0o644 dst_mode 0o644 git_mode 100644 changed True
+OK  docs/methodology/dev-skills/modernize/agents/openai.yaml src_mode 0o644 dst_mode 0o644 git_mode 100644 changed False
+OK  docs/methodology/dev-skills/sol-loop/SKILL.md src_mode 0o644 dst_mode 0o644 git_mode 100644 changed True
+OK  docs/methodology/dev-skills/takeover/SKILL.md src_mode 0o644 dst_mode 0o644 git_mode 100644 changed True
+source files not in manifest: []
+dest files not in manifest: []
+ support docs/methodology/dev-skills/babysit-pr/scripts/pr-wait aa25aa8 same
+ support docs/methodology/dev-skills/babysit-pr/scripts/pr-wait f6de7a2 same
+ support docs/methodology/dev-skills/full-send/agents/openai.yaml aa25aa8 same
+ support docs/methodology/dev-skills/full-send/agents/openai.yaml f6de7a2 same
+ support docs/methodology/dev-skills/full-stop/agents/openai.yaml aa25aa8 same
+ support docs/methodology/dev-skills/full-stop/agents/openai.yaml f6de7a2 same
+ support docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml aa25aa8 same
+ support docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml f6de7a2 same
+ support docs/methodology/dev-skills/modernize/agents/openai.yaml aa25aa8 same
+ support docs/methodology/dev-skills/modernize/agents/openai.yaml f6de7a2 same
+ vsAA CHANGED docs/methodology/dev-skills/babysit-pr/SKILL.md
+ vsAA same docs/methodology/dev-skills/babysit-pr/scripts/pr-wait
+ vsAA same docs/methodology/dev-skills/council/SKILL.md
+ vsAA same docs/methodology/dev-skills/file-pr/SKILL.md
+ vsAA CHANGED docs/methodology/dev-skills/full-send/SKILL.md
+ vsAA same docs/methodology/dev-skills/full-send/agents/openai.yaml
+ vsAA same docs/methodology/dev-skills/full-stop/SKILL.md
+ vsAA same docs/methodology/dev-skills/full-stop/agents/openai.yaml
+ vsAA same docs/methodology/dev-skills/leaving-pr-comments/SKILL.md
+ vsAA same docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml
+ vsAA same docs/methodology/dev-skills/modernize/SKILL.md
+ vsAA same docs/methodology/dev-skills/modernize/agents/openai.yaml
+ vsAA same docs/methodology/dev-skills/sol-loop/SKILL.md
+ vsAA same docs/methodology/dev-skills/takeover/SKILL.md
+link babysit-pr ../../docs/methodology/dev-skills/babysit-pr True
+link council ../../docs/methodology/dev-skills/council True
+link file-pr ../../docs/methodology/dev-skills/file-pr True
+link full-send ../../docs/methodology/dev-skills/full-send True
+link full-stop ../../docs/methodology/dev-skills/full-stop True
+link leaving-pr-comments ../../docs/methodology/dev-skills/leaving-pr-comments True
+link modernize ../../docs/methodology/dev-skills/modernize True
+link sol-loop ../../docs/methodology/dev-skills/sol-loop True
+link takeover ../../docs/methodology/dev-skills/takeover True
+skill entries 24
+meta OK  ai-construction-directive-builder dir 323
+meta OK  architecture-spec-author dir 303
+meta OK  babysit-pr symlink 104
+meta OK  code-conformance-reviewer dir 366
+meta OK  council symlink 106
+meta OK  file-pr symlink 82
+meta OK  friday-dev-board dir 226
+meta OK  full-send symlink 42
+meta OK  full-stop symlink 134
+meta OK  governance-security-spec dir 261
+meta OK  independent-code-validator dir 317
+meta OK  leaving-pr-comments symlink 40
+meta OK  migration-refactor-analyst dir 356
+meta OK  modernize symlink 77
+meta OK  phase-build-planner dir 280
+meta OK  prd-author dir 284
+meta OK  remediation-closeout dir 283
+meta OK  sol-loop symlink 78
+meta OK  subagent-directives-template dir 218
+meta OK  subagents-worktrees-template dir 204
+meta OK  tactical-implementation-planner dir 327
+meta OK  takeover symlink 115
+meta OK  traceability-matrix dir 278
+meta OK  vision-framing dir 308
+FAIL 0

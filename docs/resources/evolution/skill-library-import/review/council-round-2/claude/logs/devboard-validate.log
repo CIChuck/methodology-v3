@@ -1,0 +1,3 @@
+$ uv run --frozen --group devboard python scripts/devboard.py validate
+Development board validation passed: 3 tasks
+EXIT=0

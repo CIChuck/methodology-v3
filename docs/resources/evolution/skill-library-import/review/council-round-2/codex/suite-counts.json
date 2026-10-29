@@ -1,0 +1,73 @@
+{
+  "suites": [
+    "shell-syntax",
+    "checker",
+    "lifecycle",
+    "runtime-tools",
+    "distribution-tools",
+    "enforcement-tools",
+    "reference-graph",
+    "documentation-coherence",
+    "metrics",
+    "examples",
+    "migration",
+    "release-coherence",
+    "installed-context"
+  ],
+  "summaries": [
+    [
+      "40",
+      "0"
+    ],
+    [
+      "31",
+      "0"
+    ],
+    [
+      "236",
+      "0"
+    ],
+    [
+      "23",
+      "0"
+    ],
+    [
+      "12",
+      "0"
+    ],
+    [
+      "22",
+      "0"
+    ],
+    [
+      "3",
+      "0"
+    ],
+    [
+      "7",
+      "0"
+    ],
+    [
+      "3",
+      "0"
+    ],
+    [
+      "7",
+      "0"
+    ],
+    [
+      "6",
+      "0"
+    ],
+    [
+      "11",
+      "0"
+    ],
+    [
+      "8",
+      "0"
+    ]
+  ],
+  "passed": 409,
+  "failed": 0
+}

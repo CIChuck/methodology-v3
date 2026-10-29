@@ -1,0 +1,43 @@
+# Independent skills council — Round 3
+Created: 2026-10-29T00:12:23.784665+00:00
+Project: methodology-v3 reusable baseline; no initialized source product required
+Task: skill-library-import
+Role/mode: fresh read-only FULL nine-skill instruction consistency review, plus delta conformance of the two authorized wording fixes. Runtime code is unchanged; this is not a fresh whole-methodology runtime audit.
+Repository: /Users/chuckrussell/Dev/gendev/methodology-v3
+Branch: fix/skills-council-follow-up
+Frozen candidate: 5e2ab4047a69c82fc883735134c23527197b3c1e
+Full instruction base: ee82653ed6cacb9e1157cd791f12d0fb774f12af
+Wording delta base: f6de7a2e121a2bf26c0d306f7451568854c5d2d5
+Unchanged runtime reference: aa25aa89762974012c0243e6134e9785f5db970d
+Exact full skills diff: skills.diff SHA256 c39031a5c45b63fb344bd12c71a9e20f195fe2616590155529b93e51c89db0c9
+Reproduce: git diff --binary ee82653ed6cacb9e1157cd791f12d0fb774f12af 5e2ab4047a69c82fc883735134c23527197b3c1e -- .agents/skills docs/methodology/dev-skills docs/methodology/guides/skill-execution-contract.md docs/resources/evolution/skill-library-import/import-manifest.json
+Exact wording diff: wording.diff SHA256 a87b5c759d315026f296dca18fa52cb871ee4aad7ba4d6e1f238ab796aa09423
+Reproduce: git diff --binary f6de7a2e121a2bf26c0d306f7451568854c5d2d5 5e2ab4047a69c82fc883735134c23527197b3c1e -- .agents/skills docs/methodology/dev-skills docs/methodology/guides/skill-execution-contract.md docs/resources/evolution/skill-library-import/import-manifest.json
+Pins: authority-manifest.json. Read every pinned authority. Primary construction and acceptance: review/wording-follow-up.md under skill-library-import. Full source inventory/import manifest available there. Reports and historical builder checks are not proof; independently inspect and check primary evidence. Do not read sibling reports, prior council conclusions, builder transcript or private reasoning.
+
+Chuck said “proceed” after the two remaining instruction corrections and fresh council were proposed. This authorizes exactly one new three-provider high-reasoning full instruction pass, local evidence only. You are one fresh council member. Do the work yourself; no agents or remediation. Return any new mandatory findings for human disposition; do not invoke another round.
+
+Acceptance:
+W-01 babysit-pr classifies security, contract, permission and data-loss violations as mandatory even on rare/unintended paths. Out-of-scope mandatory findings need scope/risk disposition; only optional preferences may be declined. A written dismissal cannot satisfy mandatory remediation or authorize merge. Inspect interaction with full-send's review/merge gate and sol-loop/shared contract. Consider rare permission bypass, out-of-scope data loss, optional style and usual intended-case defects. These are static instruction counterexamples, not live workflow tests.
+W-02 full-send retains actual target for existing PRs, explicitly selects intended target for new PRs, rebases and checks readiness against that target, and reconciles changed base/head before merging. Inspect full-stop's inherited workflow/readiness and continued ban on merge. Check release/1.x PR with main default, stacked feature/parent PR, ordinary new main PR and base changing after resolution. Do not execute GitHub/rebase/merge to test instructions.
+W-03 all nine complete skills remain discoverable with valid metadata/support/relative paths and accurate source/destination digests; five helper/UI support files untouched. Scope, gates, stop semantics, external effects, fresh review contexts, bounded remediation, actual base and formal outcomes remain consistent across ALL NINE skills and shared contract. Scores/advisory APPROVE are not acceptance or formal VERIFIED. No workflow is invoked by reading/discussing it. Existing 24 skills/source originals unchanged except the two authorized instruction texts and necessary digest/record changes.
+W-04 prove scripts/tests/workflows/dependencies unchanged from aa25aa89762974012c0243e6134e9785f5db970d, so earlier runtime evidence remains pinned there (do not claim to have freshly rerun 409/17/48 tests). Still run current original-input verification and focused checks below. Whole-library runtime re-execution is not required for this wording-only scope. If runtime drift exists, report BLOCKED and required scope change; do not silently expand the audit. Ignore prior raw report wording as current authority; historical records retain old results. Active tracking is source baseline, not a product gate.
+
+Mandatory independent commands and checks:
+- Before EVERY shell batch set actual cwd to repository above, prepend parent directory of REAL existing rg binary /opt/homebrew/lib/node_modules/@openai/codex/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/codex-path/rg to PATH, remove a shadowing rg function/alias if necessary. No stub/emulation/install. Run doctor first; if prerequisite missing, stop affected checks and report BLOCKED.
+- ./scripts/gendev-doctor.sh
+- ./scripts/check-methodology.sh
+- ./scripts/check-doc-coherence.sh
+- UV_OFFLINE=1 uv run --frozen --group devboard python scripts/devboard.py validate; next; show skill-library-import (three separate invocations)
+- python3 scripts/verify-migration-inputs.py (must actually exit 0; never waive failure). Compare exact frozen manifest and checkpoint approval from the prior runtime reference to this candidate. T3 automatic checkpoint additions may grow, only frozen-tree/expected-metadata additions permitted. Never edit or delete originals/refs.
+- Independently verify source/import hashes/modes, 24 metadata/name/description entries, nine whole-folder discovery links, all bundle-relative resources and four UI files. Bundled pr-wait syntax and --help only, never live watcher. Existing local cached YAML deps via uv --frozen --group devboard, UV_OFFLINE=1.
+- Exact filename/byte mirror of 23 canonical Practitioner Guide files versus HTML content; unchanged from prior reference for this wording-only cycle.
+- git diff aa25aa89762974012c0243e6134e9785f5db970d 5e2ab4047a69c82fc883735134c23527197b3c1e -- scripts tests .github requirements-devboard.txt pyproject.toml uv.lock must be empty; compare source/support identity directly too.
+- Static end-to-end reading of all nine skills and shared contract, explicit requirement-based counterexamples above, not just keyword assertions. Verify full-stop and file-pr/babysit-pr do not contradict target behavior; raise actual requirement violations with evidence.
+- Check all candidate/authority pins and clean governed tree at entry/exit. Normal concurrent self-cleaning .tmp test outputs are not governed drift. Do not mutate candidate during review.
+
+Permissions: read-only candidate/originals/refs, no persistent application or configuration changes. External disposable fixtures/logs/report only; fixture Git ops allowed if needed. No network, credential use, dependency downloads/global install, real product init/installation, imported workflows, live provider/watcher/PR effects, checkout/ref/board/governed edits, reviewer remediation or nested agents. Use UV_OFFLINE=1, PYTHONDONTWRITEBYTECODE=1 and external TMPDIR. No Linux/hosted CI/product-gate/live watcher claims. Preserve recovery, source skills, both original projects and all frozen refs.
+
+Evidence/output: save report.md and logs/scripts under /var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round3-k749snd7/<your-provider>/ (codex / claude / gemini). Lead later records under docs/resources/evolution/skill-library-import/review/council-round-3/; YOU DO NOT WRITE THERE. Return exactly one formal outcome VERIFIED / CHANGES_REQUESTED / BLOCKED for this declared instruction/delta scope, advisory score /10, reviewer/model/time/fresh-context provenance, candidate/base/diff/authority hashes, criteria-to-evidence map, commands/results/skips/limits. Findings need stable IDs, severity, path:line, violated requirement, reproduction, risk, minimal fix/recheck and scope classification. VERIFIED requires every mandatory criterion/check supported and no unresolved mandatory violation, not a majority or high score. Does not verify whole v3 or grant acceptance/release/delivery.
+
+Budget: ONE thorough full instruction-consistency pass plus required focused delta checks. No exhaustive historical/baseline audit, extra review or autonomous remediation. Stop for missing authority, candidate drift, external effects or scope expansion. Further mandatory findings return to Chuck after this round. Old frozen runtime evidence is background, never a substituted new test claim.

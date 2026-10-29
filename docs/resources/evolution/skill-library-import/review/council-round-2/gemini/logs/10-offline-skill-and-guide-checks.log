@@ -1,0 +1,6 @@
+PASS: original tstack/skills (14 files) unchanged at 1085050f3baed1ac724caa4a8166145fb2ac88af
+PASS: import-manifest.json (14 entries) exact match for source/destination SHA256 and support modes
+PASS: all 9 imported skills frontmatter, relative links, and UI yaml validated
+PASS: babysit-pr/scripts/pr-wait syntax, 0755 mode, and --help verified offline
+PASS: all 24 skills discoverable in source, fresh install, and dry-run with complete bundles
+PASS: exact 23-file canonical Practitioner Guide and HTML mirror filename-and-byte equality

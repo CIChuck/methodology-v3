@@ -1,0 +1,49 @@
+$ tests/methodology/test-runtime-tools.sh
+runtime-tools | RT-001 | expected=0 actual=0 | init-project displays usage
+  [PASS] init-project displays usage
+runtime-tools | RT-002 | expected=2 actual=2 | init-project rejects missing project name
+  [PASS] init-project rejects missing project name
+runtime-tools | RT-003 | expected=1 actual=1 | init-project rejects duplicate init when docs/project exists
+  [PASS] init-project rejects duplicate init when docs/project exists
+runtime-tools | RT-004 | expected=0 actual=0 | close-gate shows usage
+  [PASS] close-gate shows usage
+runtime-tools | RT-005 | expected=2 actual=2 | close-gate requires supported document gate
+  [PASS] close-gate requires supported document gate
+runtime-tools | RT-006 | expected=0 actual=0 | methodology-guard shows usage
+  [PASS] methodology-guard shows usage
+runtime-tools | RT-007 | expected=2 actual=2 | methodology-guard --range requires base/head
+  [PASS] methodology-guard --range requires base/head
+runtime-tools | RT-008 | expected=1 actual=1 | close-gate fails without initialized project
+  [PASS] close-gate fails without initialized project
+runtime-tools | RT-009 | expected=0 actual=0 | record-phase-checkpoint shows usage
+  [PASS] record-phase-checkpoint shows usage
+runtime-tools | RT-010 | expected=0 actual=0 | close-phase shows usage
+  [PASS] close-phase shows usage
+runtime-tools | RT-011 | expected=0 actual=0 | record-deployment-approval shows usage
+  [PASS] record-deployment-approval shows usage
+runtime-tools | RT-012 | expected=0 actual=0 | record-phase-checkpoint dry-run does not mutate gate
+  [PASS] record-phase-checkpoint dry-run does not mutate gate
+runtime-tools | RT-013 | expected=0 actual=0 | close-phase dry-run validates G5 command surface
+  [PASS] close-phase dry-run validates G5 command surface
+runtime-tools | RT-014 | expected=0 actual=0 | record-deployment-approval dry-run validates G8 command surface
+  [PASS] record-deployment-approval dry-run validates G8 command surface
+runtime-tools | RT-015 | expected=0 actual=0 | record-phase-checkpoint write-mode updates phase state and log
+  [PASS] record-phase-checkpoint write-mode updates phase state and log
+runtime-tools | RT-016 | expected=0 actual=0 | close-phase write-mode records phase exit
+  [PASS] close-phase write-mode records phase exit
+runtime-tools | RT-017 | expected=0 actual=0 | record-deployment-approval write-mode accepts readiness without changing gate
+  [PASS] record-deployment-approval write-mode accepts readiness without changing gate
+runtime-tools | RT-018 | expected=0 actual=0 | close-gate write-mode records G1 to G2 transition
+  [PASS] close-gate write-mode records G1 to G2 transition
+runtime-tools | RT-019 | expected=1 actual=1 | close-gate write-mode rejects missing reviewed revision
+  [PASS] close-gate write-mode rejects missing reviewed revision
+runtime-tools | RT-020 | expected=1 actual=1 | close-gate write-mode rejects reviewed blob mismatch
+  [PASS] close-gate write-mode rejects reviewed blob mismatch
+runtime-tools | RT-021 | expected=1 actual=1 | close-gate write-mode rejects already accepted source artifact
+  [PASS] close-gate write-mode rejects already accepted source artifact
+runtime-tools | RT-022 | expected=1 actual=1 | close-gate write-mode rolls back when postcheck fails
+  [PASS] close-gate write-mode rolls back when postcheck fails
+runtime-tools | RT-023 | expected=0 actual=0 | close-gate write-mode records terminal G8 to G9 closeout
+  [PASS] close-gate write-mode records terminal G8 to G9 closeout
+
+Suite runtime-tools: 23 passed, 0 failed, 23 total

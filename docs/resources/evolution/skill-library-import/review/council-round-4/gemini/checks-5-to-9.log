@@ -1,0 +1,171 @@
+{
+  "check_5": {
+    "source_commit": "1085050f3baed1ac724caa4a8166145fb2ac88af",
+    "source_git_status_clean": true,
+    "manifest_entries_verified": 14,
+    "support_files_verified": [
+      {
+        "path": "docs/methodology/dev-skills/babysit-pr/scripts/pr-wait",
+        "sha256": "90393f85b95b78bff1b039744bdfb09dc88ff2b430e1c3df687ee6f449c97214",
+        "matches_source_bytes": true,
+        "matches_source_mode": true,
+        "matches_runtime_ref_bytes": true,
+        "matches_runtime_ref_mode": true
+      },
+      {
+        "path": "docs/methodology/dev-skills/full-send/agents/openai.yaml",
+        "sha256": "8a1e8ce04a774a8a2e469cecf5e45a9cec4d3438b4c587cf166c2f78206390d2",
+        "matches_source_bytes": true,
+        "matches_source_mode": true,
+        "matches_runtime_ref_bytes": true,
+        "matches_runtime_ref_mode": true
+      },
+      {
+        "path": "docs/methodology/dev-skills/full-stop/agents/openai.yaml",
+        "sha256": "6029e872a883aa06aad3426ab58289df016e4b0d23485719c71152603fec7d35",
+        "matches_source_bytes": true,
+        "matches_source_mode": true,
+        "matches_runtime_ref_bytes": true,
+        "matches_runtime_ref_mode": true
+      },
+      {
+        "path": "docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml",
+        "sha256": "f89fa0d9ae1c3e973b3e9ecb50549faee62fd1a0e59973bade68802c74183fdb",
+        "matches_source_bytes": true,
+        "matches_source_mode": true,
+        "matches_runtime_ref_bytes": true,
+        "matches_runtime_ref_mode": true
+      },
+      {
+        "path": "docs/methodology/dev-skills/modernize/agents/openai.yaml",
+        "sha256": "6675e91e10f2b264fe1a027072f6d9f46299f781011e248a5ba075fc1f764e09",
+        "matches_source_bytes": true,
+        "matches_source_mode": true,
+        "matches_runtime_ref_bytes": true,
+        "matches_runtime_ref_mode": true
+      }
+    ],
+    "skill_entrypoints_verified": 24,
+    "bundle_links_verified": [
+      {
+        "name": "babysit-pr",
+        "symlink": "../../docs/methodology/dev-skills/babysit-pr",
+        "resolved": "docs/methodology/dev-skills/babysit-pr",
+        "exists": true
+      },
+      {
+        "name": "council",
+        "symlink": "../../docs/methodology/dev-skills/council",
+        "resolved": "docs/methodology/dev-skills/council",
+        "exists": true
+      },
+      {
+        "name": "file-pr",
+        "symlink": "../../docs/methodology/dev-skills/file-pr",
+        "resolved": "docs/methodology/dev-skills/file-pr",
+        "exists": true
+      },
+      {
+        "name": "full-send",
+        "symlink": "../../docs/methodology/dev-skills/full-send",
+        "resolved": "docs/methodology/dev-skills/full-send",
+        "exists": true
+      },
+      {
+        "name": "full-stop",
+        "symlink": "../../docs/methodology/dev-skills/full-stop",
+        "resolved": "docs/methodology/dev-skills/full-stop",
+        "exists": true
+      },
+      {
+        "name": "leaving-pr-comments",
+        "symlink": "../../docs/methodology/dev-skills/leaving-pr-comments",
+        "resolved": "docs/methodology/dev-skills/leaving-pr-comments",
+        "exists": true
+      },
+      {
+        "name": "modernize",
+        "symlink": "../../docs/methodology/dev-skills/modernize",
+        "resolved": "docs/methodology/dev-skills/modernize",
+        "exists": true
+      },
+      {
+        "name": "sol-loop",
+        "symlink": "../../docs/methodology/dev-skills/sol-loop",
+        "resolved": "docs/methodology/dev-skills/sol-loop",
+        "exists": true
+      },
+      {
+        "name": "takeover",
+        "symlink": "../../docs/methodology/dev-skills/takeover",
+        "resolved": "docs/methodology/dev-skills/takeover",
+        "exists": true
+      }
+    ],
+    "ui_yaml_verified": [
+      {
+        "path": "docs/methodology/dev-skills/full-send/agents/openai.yaml",
+        "display_name": "Full Send",
+        "valid": true
+      },
+      {
+        "path": "docs/methodology/dev-skills/full-stop/agents/openai.yaml",
+        "display_name": "Full Stop",
+        "valid": true
+      },
+      {
+        "path": "docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml",
+        "display_name": "Leaving PR Comments",
+        "valid": true
+      },
+      {
+        "path": "docs/methodology/dev-skills/modernize/agents/openai.yaml",
+        "display_name": "Modernize PR",
+        "valid": true
+      }
+    ],
+    "helper_in_memory_ast_and_compile": true,
+    "helper_help_exit_0": true,
+    "helper_help_first_line": "usage: pr-wait [-h] [--repo REPO] [--until {green,ready,any-change}]"
+  },
+  "check_6": {
+    "practitioner_guide_count": 23,
+    "mirror_exact_match": true,
+    "practitioner_guide_unchanged_since_aa25aa8": true,
+    "frozen_manifest_and_checkpoint_approval_unchanged_since_aa25aa8": true
+  },
+  "check_7": {
+    "runtime_diff_empty_since_aa25aa8": true,
+    "delta_changed_files": [
+      "docs/methodology/dev-skills/babysit-pr/SKILL.md",
+      "docs/methodology/dev-skills/file-pr/SKILL.md",
+      "docs/methodology/dev-skills/full-send/SKILL.md",
+      "docs/methodology/dev-skills/full-stop/SKILL.md",
+      "docs/methodology/dev-skills/sol-loop/SKILL.md",
+      "docs/planning/README.md",
+      "docs/planning/active/skill-library-import/README.md",
+      "docs/planning/board.yaml",
+      "docs/resources/evolution/skill-library-import/import-manifest.json",
+      "docs/resources/evolution/skill-library-import/review-readiness.md",
+      "docs/resources/evolution/skill-library-import/review/advisory-clarifications.md",
+      "docs/resources/evolution/skill-library-import/review/advisory-counterexamples.json",
+      "docs/resources/evolution/skill-library-import/review/advisory-validation/check-00.log",
+      "docs/resources/evolution/skill-library-import/review/advisory-validation/check-01.log",
+      "docs/resources/evolution/skill-library-import/review/advisory-validation/check-02.log",
+      "docs/resources/evolution/skill-library-import/review/advisory-validation/check-03.log",
+      "docs/resources/evolution/skill-library-import/review/advisory-validation/check-04.log",
+      "docs/resources/evolution/skill-library-import/review/advisory-validation/check-05.log",
+      "docs/resources/evolution/skill-library-import/review/advisory-validation/check-06.log",
+      "docs/resources/evolution/skill-library-import/review/advisory-validation/check-07.log",
+      "docs/resources/evolution/skill-library-import/review/advisory-validation/check-08.log",
+      "docs/resources/evolution/skill-library-import/review/advisory-validation/evidence-index.json",
+      "docs/resources/evolution/skill-library-import/review/advisory-validation/offline-checks.py",
+      "docs/resources/evolution/skill-library-import/review/advisory-validation/results.json",
+      "docs/resources/evolution/skill-library-import/review/findings-ledger.json"
+    ],
+    "only_five_skill_files_changed_among_exec_and_skill_assets": true
+  },
+  "check_8": {
+    "gh_pr_create_help_confirms_base_flag": true
+  }
+}

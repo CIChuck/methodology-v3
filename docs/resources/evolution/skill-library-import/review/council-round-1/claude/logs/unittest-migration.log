@@ -1,0 +1,685 @@
+test_added_checkpoint_with_different_tree_fails (test_preservation_refs.PreservationRefTests.test_added_checkpoint_with_different_tree_fails) ... ok
+test_added_checkpoint_with_other_author_fails (test_preservation_refs.PreservationRefTests.test_added_checkpoint_with_other_author_fails) ... ok
+test_changed_frozen_ref_fails_even_with_identical_tree (test_preservation_refs.PreservationRefTests.test_changed_frozen_ref_fails_even_with_identical_tree) ... ok
+test_new_context_without_frozen_anchor_fails (test_preservation_refs.PreservationRefTests.test_new_context_without_frozen_anchor_fails) ... ok
+test_no_exception_applies_without_explicit_approval (test_preservation_refs.PreservationRefTests.test_no_exception_applies_without_explicit_approval) ... ok
+test_only_approved_identical_tree_addition_passes (test_preservation_refs.PreservationRefTests.test_only_approved_identical_tree_addition_passes) ... ok
+test_other_added_branch_fails (test_preservation_refs.PreservationRefTests.test_other_added_branch_fails) ... ok
+test_removed_frozen_ref_fails (test_preservation_refs.PreservationRefTests.test_removed_frozen_ref_fails) ... ok
+test_absorbed_local_amendment_record_survives (test_v3_toolkit.ToolkitMigrationTests.test_absorbed_local_amendment_record_survives) ... ok
+test_approved_local_amendment_conflict_is_not_hidden_by_effective_hash (test_v3_toolkit.ToolkitMigrationTests.test_approved_local_amendment_conflict_is_not_hidden_by_effective_hash) ... ok
+test_clean_owned_file_can_receive_an_actual_upstream_update (test_v3_toolkit.ToolkitMigrationTests.test_clean_owned_file_can_receive_an_actual_upstream_update) ... FAIL
+test_clean_recorded_mode_can_receive_an_upstream_update (test_v3_toolkit.ToolkitMigrationTests.test_clean_recorded_mode_can_receive_an_upstream_update) ... FAIL
+test_clean_upgrade_preserves_board_authority_policies_custom_skills_and_history (test_v3_toolkit.ToolkitMigrationTests.test_clean_upgrade_preserves_board_authority_policies_custom_skills_and_history) ... FAIL
+test_doctor_detects_permission_only_change (test_v3_toolkit.ToolkitMigrationTests.test_doctor_detects_permission_only_change) ... FAIL
+test_documented_fresh_dry_run_works_from_initialized_product (test_v3_toolkit.ToolkitMigrationTests.test_documented_fresh_dry_run_works_from_initialized_product) ... FAIL
+test_documented_fresh_dry_run_works_from_methodology_checkout (test_v3_toolkit.ToolkitMigrationTests.test_documented_fresh_dry_run_works_from_methodology_checkout) ... FAIL
+test_dry_run_and_preflight_agent_collision_make_no_writes (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_and_preflight_agent_collision_make_no_writes) ... ok
+test_dry_run_does_not_require_live_project_owned_surfaces (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_does_not_require_live_project_owned_surfaces) ... 
+  test_dry_run_does_not_require_live_project_owned_surfaces (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_does_not_require_live_project_owned_surfaces) (surface='AGENTS.md') ... FAIL
+  test_dry_run_does_not_require_live_project_owned_surfaces (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_does_not_require_live_project_owned_surfaces) (surface='.agents/skills') ... FAIL
+  test_dry_run_does_not_require_live_project_owned_surfaces (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_does_not_require_live_project_owned_surfaces) (surface='docs/policies') ... FAIL
+test_dry_run_excludes_external_project_and_unowned_baseline_tree_links (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_excludes_external_project_and_unowned_baseline_tree_links) ... FAIL
+test_dry_run_refuses_changed_or_symlinked_owned_baseline (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_refuses_changed_or_symlinked_owned_baseline) ... ok
+test_dry_run_refuses_incomplete_installed_baseline_before_output (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_refuses_incomplete_installed_baseline_before_output) ... ok
+test_dry_run_refuses_internal_tmpdir_without_source_mutation (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_refuses_internal_tmpdir_without_source_mutation) ... FAIL
+test_dry_run_refuses_symlinked_parent_of_selected_owned_files (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_refuses_symlinked_parent_of_selected_owned_files) ... FAIL
+test_dry_run_seed_snapshots_match_reusable_source_policies (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_seed_snapshots_match_reusable_source_policies) ... ok
+test_duplicate_ownership_fields_refuse_without_writes (test_v3_toolkit.ToolkitMigrationTests.test_duplicate_ownership_fields_refuse_without_writes) ... ok
+test_edited_baseline_refuses_upgrade_without_writing (test_v3_toolkit.ToolkitMigrationTests.test_edited_baseline_refuses_upgrade_without_writing) ... ok
+test_fresh_install_is_portable_and_has_no_migration_task_or_product_metadata (test_v3_toolkit.ToolkitMigrationTests.test_fresh_install_is_portable_and_has_no_migration_task_or_product_metadata) ... FAIL
+test_initial_and_later_directives_render_canonical_anti_drift_contract (test_v3_toolkit.ToolkitMigrationTests.test_initial_and_later_directives_render_canonical_anti_drift_contract) ... FAIL
+test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) ... 
+  test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='') ... FAIL
+  test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\nQA') ... FAIL
+  test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\tQA') ... FAIL
+  test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\x7fQA') ... FAIL
+  test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\x80QA') ... FAIL
+  test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\x85QA') ... FAIL
+  test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\u2028QA') ... FAIL
+  test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\u2029QA') ... FAIL
+  test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='   ') ... FAIL
+test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) ... FAIL
+test_invalid_permission_metadata_refuses_before_writes (test_v3_toolkit.ToolkitMigrationTests.test_invalid_permission_metadata_refuses_before_writes) ... FAIL
+test_legacy_matching_modes_are_adopted_without_fabricating_history (test_v3_toolkit.ToolkitMigrationTests.test_legacy_matching_modes_are_adopted_without_fabricating_history) ... FAIL
+test_legacy_permission_record_refuses_ambiguous_replacement (test_v3_toolkit.ToolkitMigrationTests.test_legacy_permission_record_refuses_ambiguous_replacement) ... ok
+test_malformed_ownership_record_refuses_without_writes (test_v3_toolkit.ToolkitMigrationTests.test_malformed_ownership_record_refuses_without_writes) ... ok
+test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) ... 
+  test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) (name='Widget "QA"') ... FAIL
+  test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) (name='Widget \\\\ QA') ... FAIL
+  test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) (name='Widget \\n QA') ... FAIL
+  test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) (name='Widget "QA" O\'Brien \\ [id] / A&B') ... FAIL
+  test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) (name='Projet Café 💡 [Project Name] [phase-build-plan]') ... FAIL
+test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) ... FAIL
+test_new_baseline_file_cannot_clobber_an_unowned_local_addition (test_v3_toolkit.ToolkitMigrationTests.test_new_baseline_file_cannot_clobber_an_unowned_local_addition) ... ok
+test_normal_installer_still_rejects_external_source_discovery_links (test_v3_toolkit.ToolkitMigrationTests.test_normal_installer_still_rejects_external_source_discovery_links) ... ok
+test_permission_only_restriction_and_executable_changes_refuse_without_writes (test_v3_toolkit.ToolkitMigrationTests.test_permission_only_restriction_and_executable_changes_refuse_without_writes) ... ok
+test_removed_owned_file_requires_reconciliation (test_v3_toolkit.ToolkitMigrationTests.test_removed_owned_file_requires_reconciliation) ... ok
+test_rollback_restores_fresh_target_after_first_and_last_writes (test_v3_toolkit.ToolkitMigrationTests.test_rollback_restores_fresh_target_after_first_and_last_writes) ... ok
+test_rollback_restores_prior_record_and_local_state_during_upgrade (test_v3_toolkit.ToolkitMigrationTests.test_rollback_restores_prior_record_and_local_state_during_upgrade) ... ok
+test_symlink_in_place_of_owned_file_is_rejected (test_v3_toolkit.ToolkitMigrationTests.test_symlink_in_place_of_owned_file_is_rejected) ... ok
+test_symlink_parent_is_rejected_without_touching_external_files (test_v3_toolkit.ToolkitMigrationTests.test_symlink_parent_is_rejected_without_touching_external_files) ... ok
+
+======================================================================
+FAIL: test_clean_owned_file_can_receive_an_actual_upstream_update (test_v3_toolkit.ToolkitMigrationTests.test_clean_owned_file_can_receive_an_actual_upstream_update)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 138, in test_clean_owned_file_can_receive_an_actual_upstream_update
+    self.command("./scripts/gendev-doctor.sh")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : GenDev doctor
+Repository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/claude/tmp/gendev-v3-test-9v9axy51/product with spaces
+Prerequisite bash: present
+Prerequisite git: present
+Prerequisite python3: present
+Prerequisite rg: MISSING (install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep)
+Context: installed
+Installed methodology version: 1.0.2
+Installed from: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/claude/tmp/gendev-v3-test-9v9axy51/incoming (tag none, commit unknown)
+Installed on: 2026-10-28T23:29:31.055249+00:00
+Integrity: verified (182 files)
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: unavailable
+Git HEAD: unavailable
+Tags at HEAD: unavailable
+Project initialized: no
+Next action: ./scripts/init-project.sh "Project Name"
+Gate log: missing
+Recommended validation: ./scripts/check-methodology.sh
+Doctor result: 1 missing prerequisite(s); install before methodology work.
+
+
+======================================================================
+FAIL: test_clean_recorded_mode_can_receive_an_upstream_update (test_v3_toolkit.ToolkitMigrationTests.test_clean_recorded_mode_can_receive_an_upstream_update)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 261, in test_clean_recorded_mode_can_receive_an_upstream_update
+    self.command("./scripts/gendev-doctor.sh")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : GenDev doctor
+Repository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/claude/tmp/gendev-v3-test-9yezxzpe/product with spaces
+Prerequisite bash: present
+Prerequisite git: present
+Prerequisite python3: present
+Prerequisite rg: MISSING (install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep)
+Context: installed
+Installed methodology version: 1.0.2
+Installed from: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/claude/tmp/gendev-v3-test-9yezxzpe/incoming (tag none, commit unknown)
+Installed on: 2026-10-28T23:29:31.739912+00:00
+Integrity: verified (182 files)
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: unavailable
+Git HEAD: unavailable
+Tags at HEAD: unavailable
+Project initialized: no
+Next action: ./scripts/init-project.sh "Project Name"
+Gate log: missing
+Recommended validation: ./scripts/check-methodology.sh
+Doctor result: 1 missing prerequisite(s); install before methodology work.
+
+
+======================================================================
+FAIL: test_clean_upgrade_preserves_board_authority_policies_custom_skills_and_history (test_v3_toolkit.ToolkitMigrationTests.test_clean_upgrade_preserves_board_authority_policies_custom_skills_and_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 100, in test_clean_upgrade_preserves_board_authority_policies_custom_skills_and_history
+    self.command("./scripts/init-project.sh", "Fixture Product")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_doctor_detects_permission_only_change (test_v3_toolkit.ToolkitMigrationTests.test_doctor_detects_permission_only_change)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 228, in test_doctor_detects_permission_only_change
+    result = self.command("./scripts/gendev-doctor.sh", expected=5)
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 5 : GenDev doctor
+Repository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/claude/tmp/gendev-v3-test-et4_y8q4/product with spaces
+Prerequisite bash: present
+Prerequisite git: present
+Prerequisite python3: present
+Prerequisite rg: MISSING (install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep)
+Context: installed
+Installed methodology version: 1.0.2
+Installed from: https://github.com/CIChuck/methodology-v3.git (tag none, commit d41e0ebfdc58)
+Installed on: 2026-10-28T23:29:32.297788+00:00
+Integrity: FAILED (1 file(s))
+  modified permissions: scripts/check-methodology.sh
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: unavailable
+Git HEAD: unavailable
+Tags at HEAD: unavailable
+Project initialized: no
+Next action: ./scripts/init-project.sh "Project Name"
+Gate log: missing
+Recommended validation: ./scripts/check-methodology.sh
+Doctor result: installed file integrity check failed; see list above.
+Doctor result: 1 missing prerequisite(s); install before methodology work.
+
+
+======================================================================
+FAIL: test_documented_fresh_dry_run_works_from_initialized_product (test_v3_toolkit.ToolkitMigrationTests.test_documented_fresh_dry_run_works_from_initialized_product)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 429, in test_documented_fresh_dry_run_works_from_initialized_product
+    self.command("./scripts/init-project.sh", "Existing Fixture")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_documented_fresh_dry_run_works_from_methodology_checkout (test_v3_toolkit.ToolkitMigrationTests.test_documented_fresh_dry_run_works_from_methodology_checkout)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 452, in test_documented_fresh_dry_run_works_from_methodology_checkout
+    self.exercise_documented_dry_run(source)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 381, in exercise_documented_dry_run
+    self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Cannot create dry run: source doctor failed; repair the source before making an exercise:
+GenDev doctor
+Repository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/claude/tmp/gendev-v3-test-b6mk7k4h/incoming
+Prerequisite bash: present
+Prerequisite git: present
+Prerequisite python3: present
+Prerequisite rg: MISSING (install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep)
+Context: authority
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: master
+Git HEAD: 80f1464
+Tags at HEAD: none
+Project initialized: no
+Next action: ./scripts/init-project.sh "Project Name"
+Gate log: missing
+Recommended validation: ./scripts/check-methodology.sh
+Doctor result: 1 missing prerequisite(s); install before methodology work.
+
+
+
+======================================================================
+FAIL: test_dry_run_does_not_require_live_project_owned_surfaces (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_does_not_require_live_project_owned_surfaces) (surface='AGENTS.md')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 443, in test_dry_run_does_not_require_live_project_owned_surfaces
+    self.command("./scripts/init-project.sh", "Existing Fixture")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_dry_run_does_not_require_live_project_owned_surfaces (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_does_not_require_live_project_owned_surfaces) (surface='.agents/skills')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 443, in test_dry_run_does_not_require_live_project_owned_surfaces
+    self.command("./scripts/init-project.sh", "Existing Fixture")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_dry_run_does_not_require_live_project_owned_surfaces (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_does_not_require_live_project_owned_surfaces) (surface='docs/policies')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 443, in test_dry_run_does_not_require_live_project_owned_surfaces
+    self.command("./scripts/init-project.sh", "Existing Fixture")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_dry_run_excludes_external_project_and_unowned_baseline_tree_links (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_excludes_external_project_and_unowned_baseline_tree_links)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 434, in test_dry_run_excludes_external_project_and_unowned_baseline_tree_links
+    self.command("./scripts/init-project.sh", "Existing Fixture")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_dry_run_refuses_internal_tmpdir_without_source_mutation (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_refuses_internal_tmpdir_without_source_mutation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 521, in test_dry_run_refuses_internal_tmpdir_without_source_mutation
+    self.assertIn("TMPDIR must be outside", result.stderr)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'TMPDIR must be outside' not found in 'Cannot create dry run: source doctor failed; repair the source before making an exercise:\nGenDev doctor\nRepository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/claude/tmp/gendev-v3-test-xc43mlu7/product with spaces\nPrerequisite bash: present\nPrerequisite git: present\nPrerequisite python3: present\nPrerequisite rg: MISSING (install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep)\nContext: installed\nInstalled methodology version: 1.0.2\nInstalled from: https://github.com/CIChuck/methodology-v3.git (tag none, commit d41e0ebfdc58)\nInstalled on: 2026-10-28T23:29:49.653585+00:00\nIntegrity: verified (182 files)\nDistribution candidate: methodology-v3 (unreleased)\nCandidate independent review: pending\nCandidate human acceptance: pending\nLifecycle target: 1.0.2\nLifecycle status: released\nGit branch: unavailable\nGit HEAD: unavailable\nTags at HEAD: unavailable\nProject initialized: no\nNext action: ./scripts/init-project.sh "Project Name"\nGate log: missing\nRecommended validation: ./scripts/check-methodology.sh\nDoctor result: 1 missing prerequisite(s); install before methodology work.\n\n'
+
+======================================================================
+FAIL: test_dry_run_refuses_symlinked_parent_of_selected_owned_files (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_refuses_symlinked_parent_of_selected_owned_files)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 509, in test_dry_run_refuses_symlinked_parent_of_selected_owned_files
+    self.command("./scripts/gendev-doctor.sh")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : GenDev doctor
+Repository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/claude/tmp/gendev-v3-test-mqbz44kd/product with spaces
+Prerequisite bash: present
+Prerequisite git: present
+Prerequisite python3: present
+Prerequisite rg: MISSING (install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep)
+Context: installed
+Installed methodology version: 1.0.2
+Installed from: https://github.com/CIChuck/methodology-v3.git (tag none, commit d41e0ebfdc58)
+Installed on: 2026-10-28T23:29:49.964624+00:00
+Integrity: verified (182 files)
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: unavailable
+Git HEAD: unavailable
+Tags at HEAD: unavailable
+Project initialized: no
+Next action: ./scripts/init-project.sh "Project Name"
+Gate log: missing
+Recommended validation: ./scripts/check-methodology.sh
+Doctor result: 1 missing prerequisite(s); install before methodology work.
+
+
+======================================================================
+FAIL: test_fresh_install_is_portable_and_has_no_migration_task_or_product_metadata (test_v3_toolkit.ToolkitMigrationTests.test_fresh_install_is_portable_and_has_no_migration_task_or_product_metadata)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 96, in test_fresh_install_is_portable_and_has_no_migration_task_or_product_metadata
+    self.assertIn("Distribution candidate: methodology-v3 (unreleased)", self.command("./scripts/gendev-doctor.sh").stdout)
+                                                                         ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : GenDev doctor
+Repository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/claude/tmp/gendev-v3-test-a_du_n0c/product with spaces
+Prerequisite bash: present
+Prerequisite git: present
+Prerequisite python3: present
+Prerequisite rg: MISSING (install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep)
+Context: installed
+Installed methodology version: 1.0.2
+Installed from: https://github.com/CIChuck/methodology-v3.git (tag none, commit d41e0ebfdc58)
+Installed on: 2026-10-28T23:29:50.744832+00:00
+Integrity: verified (182 files)
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: unavailable
+Git HEAD: unavailable
+Tags at HEAD: unavailable
+Project initialized: no
+Next action: ./scripts/init-project.sh "Project Name"
+Gate log: missing
+Recommended validation: ./scripts/check-methodology.sh
+Doctor result: 1 missing prerequisite(s); install before methodology work.
+
+
+======================================================================
+FAIL: test_initial_and_later_directives_render_canonical_anti_drift_contract (test_v3_toolkit.ToolkitMigrationTests.test_initial_and_later_directives_render_canonical_anti_drift_contract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 300, in test_initial_and_later_directives_render_canonical_anti_drift_contract
+    self.command("./scripts/init-project.sh", "Fixture / A&B")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 339, in test_invalid_names_fail_before_creation_or_forced_replacement
+    self.assertIn("single-line", self.command("./scripts/init-project.sh", name, expected=2).stderr)
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 2 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\nQA')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 339, in test_invalid_names_fail_before_creation_or_forced_replacement
+    self.assertIn("single-line", self.command("./scripts/init-project.sh", name, expected=2).stderr)
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 2 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\tQA')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 339, in test_invalid_names_fail_before_creation_or_forced_replacement
+    self.assertIn("single-line", self.command("./scripts/init-project.sh", name, expected=2).stderr)
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 2 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\x7fQA')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 339, in test_invalid_names_fail_before_creation_or_forced_replacement
+    self.assertIn("single-line", self.command("./scripts/init-project.sh", name, expected=2).stderr)
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 2 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\x80QA')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 339, in test_invalid_names_fail_before_creation_or_forced_replacement
+    self.assertIn("single-line", self.command("./scripts/init-project.sh", name, expected=2).stderr)
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 2 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\x85QA')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 339, in test_invalid_names_fail_before_creation_or_forced_replacement
+    self.assertIn("single-line", self.command("./scripts/init-project.sh", name, expected=2).stderr)
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 2 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\u2028QA')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 339, in test_invalid_names_fail_before_creation_or_forced_replacement
+    self.assertIn("single-line", self.command("./scripts/init-project.sh", name, expected=2).stderr)
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 2 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='Widget\u2029QA')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 339, in test_invalid_names_fail_before_creation_or_forced_replacement
+    self.assertIn("single-line", self.command("./scripts/init-project.sh", name, expected=2).stderr)
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 2 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) (name='   ')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 339, in test_invalid_names_fail_before_creation_or_forced_replacement
+    self.assertIn("single-line", self.command("./scripts/init-project.sh", name, expected=2).stderr)
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 2 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 341, in test_invalid_names_fail_before_creation_or_forced_replacement
+    self.command("./scripts/init-project.sh", "Existing valid fixture")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_invalid_permission_metadata_refuses_before_writes (test_v3_toolkit.ToolkitMigrationTests.test_invalid_permission_metadata_refuses_before_writes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 271, in test_invalid_permission_metadata_refuses_before_writes
+    self.assertIn("invalid recorded permissions", self.command("./scripts/gendev-doctor.sh", expected=5).stdout)
+                                                  ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 5 : GenDev doctor
+Repository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/claude/tmp/gendev-v3-test-vkz5t033/product with spaces
+Prerequisite bash: present
+Prerequisite git: present
+Prerequisite python3: present
+Prerequisite rg: MISSING (install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep)
+Context: installed
+Installed methodology version: 1.0.2
+Installed from: https://github.com/CIChuck/methodology-v3.git (tag none, commit d41e0ebfdc58)
+Installed on: 2026-10-28T23:29:51.655361+00:00
+Integrity: FAILED (1 file(s))
+  invalid recorded permissions: scripts/check-methodology.sh
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: unavailable
+Git HEAD: unavailable
+Tags at HEAD: unavailable
+Project initialized: no
+Next action: ./scripts/init-project.sh "Project Name"
+Gate log: missing
+Recommended validation: ./scripts/check-methodology.sh
+Doctor result: installed file integrity check failed; see list above.
+Doctor result: 1 missing prerequisite(s); install before methodology work.
+
+
+======================================================================
+FAIL: test_legacy_matching_modes_are_adopted_without_fabricating_history (test_v3_toolkit.ToolkitMigrationTests.test_legacy_matching_modes_are_adopted_without_fabricating_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 251, in test_legacy_matching_modes_are_adopted_without_fabricating_history
+    self.command("./scripts/gendev-doctor.sh")
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : GenDev doctor
+Repository: /private/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-skills-council-round1-wtbrfdg6/claude/tmp/gendev-v3-test-1nyd4j6e/product with spaces
+Prerequisite bash: present
+Prerequisite git: present
+Prerequisite python3: present
+Prerequisite rg: MISSING (install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep)
+Context: installed
+Installed methodology version: 1.0.2
+Installed from: https://github.com/CIChuck/methodology-v3.git (tag none, commit d41e0ebfdc58)
+Installed on: 2026-10-28T23:29:52.159466+00:00
+Integrity: verified (182 files)
+Distribution candidate: methodology-v3 (unreleased)
+Candidate independent review: pending
+Candidate human acceptance: pending
+Lifecycle target: 1.0.2
+Lifecycle status: released
+Git branch: unavailable
+Git HEAD: unavailable
+Tags at HEAD: unavailable
+Project initialized: no
+Next action: ./scripts/init-project.sh "Project Name"
+Gate log: missing
+Recommended validation: ./scripts/check-methodology.sh
+Doctor result: 1 missing prerequisite(s); install before methodology work.
+
+
+======================================================================
+FAIL: test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) (name='Widget "QA"')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 326, in test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens
+    self.command(*args)
+    ~~~~~~~~~~~~^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) (name='Widget \\\\ QA')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 326, in test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens
+    self.command(*args)
+    ~~~~~~~~~~~~^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) (name='Widget \\n QA')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 326, in test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens
+    self.command(*args)
+    ~~~~~~~~~~~~^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) (name='Widget "QA" O\'Brien \\ [id] / A&B')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 326, in test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens
+    self.command(*args)
+    ~~~~~~~~~~~~^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) (name='Projet Café 💡 [Project Name] [phase-build-plan]')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 326, in test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens
+    self.command(*args)
+    ~~~~~~~~~~~~^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 3 != 0 : ERROR: init-project.sh requires rg but it is not installed. install ripgrep: apt install ripgrep | brew install ripgrep | winget install BurntSushi.ripgrep.MSVC | cargo install ripgrep
+ERROR: init-project.sh: 1 missing prerequisite(s); refusing to continue.
+
+
+======================================================================
+FAIL: test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 331, in test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens
+    self.command("./scripts/init-phase.sh", "2", names[-1])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : ERROR: docs/project is not initialized. Run scripts/init-project.sh first.
+
+
+----------------------------------------------------------------------
+Ran 42 tests in 13.071s
+
+FAILED (failures=32)

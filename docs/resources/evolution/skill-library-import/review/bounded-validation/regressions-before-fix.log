@@ -1,0 +1,82 @@
+test_added_checkpoint_with_different_tree_fails (test_preservation_refs.PreservationRefTests.test_added_checkpoint_with_different_tree_fails) ... ok
+test_added_checkpoint_with_other_author_fails (test_preservation_refs.PreservationRefTests.test_added_checkpoint_with_other_author_fails) ... ok
+test_changed_frozen_ref_fails_even_with_identical_tree (test_preservation_refs.PreservationRefTests.test_changed_frozen_ref_fails_even_with_identical_tree) ... ok
+test_checkpoint_ref_to_noncommit_fails (test_preservation_refs.PreservationRefTests.test_checkpoint_ref_to_noncommit_fails) ... ok
+test_checkpoint_with_wrong_subject_fails (test_preservation_refs.PreservationRefTests.test_checkpoint_with_wrong_subject_fails) ... ok
+test_existing_context_nonincreasing_ordinal_fails (test_preservation_refs.PreservationRefTests.test_existing_context_nonincreasing_ordinal_fails) ... ok
+test_new_context_different_tree_fails (test_preservation_refs.PreservationRefTests.test_new_context_different_tree_fails) ... ok
+test_new_context_uses_frozen_tree_anchor (test_preservation_refs.PreservationRefTests.test_new_context_uses_frozen_tree_anchor) ... FAIL
+test_new_context_without_any_frozen_checkpoint_fails (test_preservation_refs.PreservationRefTests.test_new_context_without_any_frozen_checkpoint_fails) ... ok
+test_no_exception_applies_without_explicit_approval (test_preservation_refs.PreservationRefTests.test_no_exception_applies_without_explicit_approval) ... ok
+test_only_approved_identical_tree_addition_passes (test_preservation_refs.PreservationRefTests.test_only_approved_identical_tree_addition_passes) ... ok
+test_other_added_branch_fails (test_preservation_refs.PreservationRefTests.test_other_added_branch_fails) ... ok
+test_removed_frozen_ref_fails (test_preservation_refs.PreservationRefTests.test_removed_frozen_ref_fails) ... ok
+test_absorbed_local_amendment_record_survives (test_v3_toolkit.ToolkitMigrationTests.test_absorbed_local_amendment_record_survives) ... ok
+test_approved_local_amendment_conflict_is_not_hidden_by_effective_hash (test_v3_toolkit.ToolkitMigrationTests.test_approved_local_amendment_conflict_is_not_hidden_by_effective_hash) ... ok
+test_clean_owned_file_can_receive_an_actual_upstream_update (test_v3_toolkit.ToolkitMigrationTests.test_clean_owned_file_can_receive_an_actual_upstream_update) ... ok
+test_clean_recorded_mode_can_receive_an_upstream_update (test_v3_toolkit.ToolkitMigrationTests.test_clean_recorded_mode_can_receive_an_upstream_update) ... ok
+test_clean_upgrade_preserves_board_authority_policies_custom_skills_and_history (test_v3_toolkit.ToolkitMigrationTests.test_clean_upgrade_preserves_board_authority_policies_custom_skills_and_history) ... ok
+test_doctor_detects_permission_only_change (test_v3_toolkit.ToolkitMigrationTests.test_doctor_detects_permission_only_change) ... ok
+test_documented_fresh_dry_run_works_from_initialized_product (test_v3_toolkit.ToolkitMigrationTests.test_documented_fresh_dry_run_works_from_initialized_product) ... ok
+test_documented_fresh_dry_run_works_from_methodology_checkout (test_v3_toolkit.ToolkitMigrationTests.test_documented_fresh_dry_run_works_from_methodology_checkout) ... ok
+test_dry_run_and_preflight_agent_collision_make_no_writes (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_and_preflight_agent_collision_make_no_writes) ... ok
+test_dry_run_does_not_require_live_project_owned_surfaces (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_does_not_require_live_project_owned_surfaces) ... ok
+test_dry_run_excludes_external_project_and_unowned_baseline_tree_links (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_excludes_external_project_and_unowned_baseline_tree_links) ... ok
+test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it) ... FAIL
+test_dry_run_refuses_changed_or_symlinked_owned_baseline (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_refuses_changed_or_symlinked_owned_baseline) ... ok
+test_dry_run_refuses_incomplete_installed_baseline_before_output (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_refuses_incomplete_installed_baseline_before_output) ... ok
+test_dry_run_refuses_internal_tmpdir_without_source_mutation (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_refuses_internal_tmpdir_without_source_mutation) ... ok
+test_dry_run_refuses_symlinked_parent_of_selected_owned_files (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_refuses_symlinked_parent_of_selected_owned_files) ... ok
+test_dry_run_seed_snapshots_match_reusable_source_policies (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_seed_snapshots_match_reusable_source_policies) ... ok
+test_duplicate_ownership_fields_refuse_without_writes (test_v3_toolkit.ToolkitMigrationTests.test_duplicate_ownership_fields_refuse_without_writes) ... ok
+test_edited_baseline_refuses_upgrade_without_writing (test_v3_toolkit.ToolkitMigrationTests.test_edited_baseline_refuses_upgrade_without_writing) ... ok
+test_fresh_install_is_portable_and_has_no_migration_task_or_product_metadata (test_v3_toolkit.ToolkitMigrationTests.test_fresh_install_is_portable_and_has_no_migration_task_or_product_metadata) ... ok
+test_initial_and_later_directives_render_canonical_anti_drift_contract (test_v3_toolkit.ToolkitMigrationTests.test_initial_and_later_directives_render_canonical_anti_drift_contract) ... ok
+test_invalid_names_fail_before_creation_or_forced_replacement (test_v3_toolkit.ToolkitMigrationTests.test_invalid_names_fail_before_creation_or_forced_replacement) ... ok
+test_invalid_permission_metadata_refuses_before_writes (test_v3_toolkit.ToolkitMigrationTests.test_invalid_permission_metadata_refuses_before_writes) ... ok
+test_legacy_matching_modes_are_adopted_without_fabricating_history (test_v3_toolkit.ToolkitMigrationTests.test_legacy_matching_modes_are_adopted_without_fabricating_history) ... ok
+test_legacy_permission_record_refuses_ambiguous_replacement (test_v3_toolkit.ToolkitMigrationTests.test_legacy_permission_record_refuses_ambiguous_replacement) ... ok
+test_malformed_ownership_record_refuses_without_writes (test_v3_toolkit.ToolkitMigrationTests.test_malformed_ownership_record_refuses_without_writes) ... ok
+test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens (test_v3_toolkit.ToolkitMigrationTests.test_manifest_names_round_trip_quotes_backslashes_unicode_and_tokens) ... ok
+test_new_baseline_file_cannot_clobber_an_unowned_local_addition (test_v3_toolkit.ToolkitMigrationTests.test_new_baseline_file_cannot_clobber_an_unowned_local_addition) ... ok
+test_normal_installer_still_rejects_external_source_discovery_links (test_v3_toolkit.ToolkitMigrationTests.test_normal_installer_still_rejects_external_source_discovery_links) ... ok
+test_permission_only_restriction_and_executable_changes_refuse_without_writes (test_v3_toolkit.ToolkitMigrationTests.test_permission_only_restriction_and_executable_changes_refuse_without_writes) ... ok
+test_removed_owned_file_requires_reconciliation (test_v3_toolkit.ToolkitMigrationTests.test_removed_owned_file_requires_reconciliation) ... ok
+test_rollback_restores_fresh_target_after_first_and_last_writes (test_v3_toolkit.ToolkitMigrationTests.test_rollback_restores_fresh_target_after_first_and_last_writes) ... ok
+test_rollback_restores_prior_record_and_local_state_during_upgrade (test_v3_toolkit.ToolkitMigrationTests.test_rollback_restores_prior_record_and_local_state_during_upgrade) ... ok
+test_symlink_in_place_of_owned_file_is_rejected (test_v3_toolkit.ToolkitMigrationTests.test_symlink_in_place_of_owned_file_is_rejected) ... ok
+test_symlink_parent_is_rejected_without_touching_external_files (test_v3_toolkit.ToolkitMigrationTests.test_symlink_parent_is_rejected_without_touching_external_files) ... ok
+
+======================================================================
+FAIL: test_new_context_uses_frozen_tree_anchor (test_preservation_refs.PreservationRefTests.test_new_context_uses_frozen_tree_anchor)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_preservation_refs.py", line 92, in test_new_context_uses_frozen_tree_anchor
+    self.assertEqual(errors, [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: Lists differ: ['unapproved added ref: refs/t3/orchestrat[39 chars]l/0'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'unapproved added ref: refs/t3/orchestration-v2/checkpoints/other_context/ordinal/0'
+
++ []
+- ['unapproved added ref: '
+-  'refs/t3/orchestration-v2/checkpoints/other_context/ordinal/0']
+
+======================================================================
+FAIL: test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it (test_v3_toolkit.ToolkitMigrationTests.test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 132, in test_dry_run_keeps_reference_markdown_inside_bundle_without_discovering_it
+    output = self.command(sys.executable, "scripts/create-dry-run.py", env={"TMPDIR": str(self.base)})
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_v3_toolkit.py", line 55, in command
+    self.assertEqual(result.returncode, expected, result.stdout + result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Cannot create dry run: unsafe target parent: .agents/skills/example-note
+
+
+----------------------------------------------------------------------
+Ran 48 tests in 33.950s
+
+FAILED (failures=2)

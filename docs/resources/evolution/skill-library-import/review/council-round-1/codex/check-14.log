@@ -1,0 +1,9 @@
+$ tests/methodology/test-reference-graph.sh
+reference-graph | REF-001 | expected=0 actual=0 | release lifecycle validates the reference graph contract
+  [PASS] release lifecycle validates the reference graph contract
+reference-graph | REF-002 | expected=0 actual=0 | reference graph declares canonical and supporting target kinds
+  [PASS] reference graph declares canonical and supporting target kinds
+reference-graph | REF-003 | expected=0 actual=0 | retired supporting directory is not scaffolded
+  [PASS] retired supporting directory is not scaffolded
+
+Suite reference-graph: 3 passed, 0 failed, 3 total

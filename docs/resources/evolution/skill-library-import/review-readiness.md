@@ -1,3 +1,47 @@
+# Round-4 Focused Review Readiness
+
+Status: AC-01–05 and instruction interactions VERIFIED by all three round-4 reviewers at 464cdec; human acceptance pending
+Branch: fix/skills-council-follow-up
+Task: skill-library-import
+Current authority: review/advisory-clarifications.md, AC-01–05
+Counterexamples: review/advisory-counterexamples.json
+Current reports: review/council-round-4/summary.md
+Prior instruction candidate: 5e2ab40; current PR #2 head before update: 8abacf4
+Round-3 disagreement remains historical and is not silently waived.
+Earlier readiness snapshots below are retained as superseded history.
+
+---
+
+# Round-3 Review Readiness
+
+Status: Two residual wording corrections authorized and locally checked; fresh council round 3 pending
+Branch: fix/skills-council-follow-up
+Task: skill-library-import
+Controlling follow-up: review/wording-follow-up.md
+Evidence: review/wording-validation/results.json and review/wording-counterexamples.json
+Previous reviewed candidate: aa25aa8, round 2 CHANGES_REQUESTED
+No current-candidate VERIFIED, acceptance, remote delivery or release inferred.
+The frozen round-3 request must pin the new candidate and exact authority.
+Earlier readiness snapshots below are retained historical, superseded as current state.
+
+---
+
+# Current Skills Review Readiness
+
+Status: Council round 1 BLOCKED; authorized bounded remediation and one fresh round
+Task: skill-library-import
+Branch: fix/skills-council-follow-up
+Merged starting candidate: d41e0ebfdc587ecc6d8c3ab336afc530ce90654f
+Authority: review/bounded-follow-up.md
+Round-1 reports: review/council-round-1/ (outcomes retained, not overridden)
+
+The new request must pin the corrected candidate, all governing authority, exact
+diff and required checks. No new VERIFIED, acceptance, release or remote effects
+are inferred. The historical pre-review readiness packet follows for provenance;
+its old pending-authorization status is superseded by Chuck's explicit requests.
+
+---
+
 # Skill Import Review Readiness
 
 Status: Checkpoint/upload authorized; independent review authorization pending

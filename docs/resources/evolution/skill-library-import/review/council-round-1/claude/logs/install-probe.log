@@ -1,0 +1,56 @@
+3.14.2
+agents entries 24
+.agents/skills/ai-construction-directive-builder/SKILL.md link ../../../docs/methodology/dev-skills/ai-construction-directive-builder.md project
+.agents/skills/architecture-spec-author/SKILL.md link ../../../docs/methodology/dev-skills/architecture-spec-author.md project
+.agents/skills/babysit-pr link ../../docs/methodology/dev-skills/babysit-pr project
+.agents/skills/code-conformance-reviewer/SKILL.md link ../../../docs/methodology/dev-skills/code-conformance-reviewer.md project
+.agents/skills/council link ../../docs/methodology/dev-skills/council project
+.agents/skills/file-pr link ../../docs/methodology/dev-skills/file-pr project
+.agents/skills/friday-dev-board/SKILL.md link ../../../docs/methodology/dev-skills/friday-dev-board/SKILL.md project
+.agents/skills/full-send link ../../docs/methodology/dev-skills/full-send project
+.agents/skills/full-stop link ../../docs/methodology/dev-skills/full-stop project
+.agents/skills/governance-security-spec/SKILL.md link ../../../docs/methodology/dev-skills/governance-security-spec.md project
+.agents/skills/independent-code-validator/SKILL.md link ../../../docs/methodology/dev-skills/independent-code-validator.md project
+.agents/skills/leaving-pr-comments link ../../docs/methodology/dev-skills/leaving-pr-comments project
+.agents/skills/migration-refactor-analyst/SKILL.md link ../../../docs/methodology/dev-skills/migration-refactor-analyst.md project
+.agents/skills/modernize link ../../docs/methodology/dev-skills/modernize project
+.agents/skills/phase-build-planner/SKILL.md link ../../../docs/methodology/dev-skills/phase-build-planner.md project
+.agents/skills/prd-author/SKILL.md link ../../../docs/methodology/dev-skills/prd-author.md project
+.agents/skills/remediation-closeout/SKILL.md link ../../../docs/methodology/dev-skills/remediation-closeout.md project
+.agents/skills/sol-loop link ../../docs/methodology/dev-skills/sol-loop project
+.agents/skills/subagent-directives-template/SKILL.md link ../../../docs/methodology/dev-skills/subagent-directives-template.md project
+.agents/skills/subagents-worktrees-template/SKILL.md link ../../../docs/methodology/dev-skills/subagents-worktrees-template.md project
+.agents/skills/tactical-implementation-planner/SKILL.md link ../../../docs/methodology/dev-skills/tactical-implementation-planner.md project
+.agents/skills/takeover link ../../docs/methodology/dev-skills/takeover project
+.agents/skills/traceability-matrix/SKILL.md link ../../../docs/methodology/dev-skills/traceability-matrix.md project
+.agents/skills/vision-framing/SKILL.md link ../../../docs/methodology/dev-skills/vision-framing.md project
+pr-wait [('docs/methodology/dev-skills/babysit-pr/scripts/pr-wait', '0o755', True)]
+yaml ['docs/methodology/dev-skills/full-send/agents/openai.yaml', 'docs/methodology/dev-skills/full-stop/agents/openai.yaml', 'docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml', 'docs/methodology/dev-skills/modernize/agents/openai.yaml']
+3.13.10
+agents entries 24
+.agents/skills/ai-construction-directive-builder/SKILL.md link ../../../docs/methodology/dev-skills/ai-construction-directive-builder.md project
+.agents/skills/architecture-spec-author/SKILL.md link ../../../docs/methodology/dev-skills/architecture-spec-author.md project
+.agents/skills/babysit-pr link ../../docs/methodology/dev-skills/babysit-pr project
+.agents/skills/code-conformance-reviewer/SKILL.md link ../../../docs/methodology/dev-skills/code-conformance-reviewer.md project
+.agents/skills/council link ../../docs/methodology/dev-skills/council project
+.agents/skills/file-pr link ../../docs/methodology/dev-skills/file-pr project
+.agents/skills/friday-dev-board/SKILL.md link ../../../docs/methodology/dev-skills/friday-dev-board/SKILL.md project
+.agents/skills/full-send link ../../docs/methodology/dev-skills/full-send project
+.agents/skills/full-stop link ../../docs/methodology/dev-skills/full-stop project
+.agents/skills/governance-security-spec/SKILL.md link ../../../docs/methodology/dev-skills/governance-security-spec.md project
+.agents/skills/independent-code-validator/SKILL.md link ../../../docs/methodology/dev-skills/independent-code-validator.md project
+.agents/skills/leaving-pr-comments link ../../docs/methodology/dev-skills/leaving-pr-comments project
+.agents/skills/migration-refactor-analyst/SKILL.md link ../../../docs/methodology/dev-skills/migration-refactor-analyst.md project
+.agents/skills/modernize link ../../docs/methodology/dev-skills/modernize project
+.agents/skills/phase-build-planner/SKILL.md link ../../../docs/methodology/dev-skills/phase-build-planner.md project
+.agents/skills/prd-author/SKILL.md link ../../../docs/methodology/dev-skills/prd-author.md project
+.agents/skills/remediation-closeout/SKILL.md link ../../../docs/methodology/dev-skills/remediation-closeout.md project
+.agents/skills/sol-loop link ../../docs/methodology/dev-skills/sol-loop project
+.agents/skills/subagent-directives-template/SKILL.md link ../../../docs/methodology/dev-skills/subagent-directives-template.md project
+.agents/skills/subagents-worktrees-template/SKILL.md link ../../../docs/methodology/dev-skills/subagents-worktrees-template.md project
+.agents/skills/tactical-implementation-planner/SKILL.md link ../../../docs/methodology/dev-skills/tactical-implementation-planner.md project
+.agents/skills/takeover link ../../docs/methodology/dev-skills/takeover project
+.agents/skills/traceability-matrix/SKILL.md link ../../../docs/methodology/dev-skills/traceability-matrix.md project
+.agents/skills/vision-framing/SKILL.md link ../../../docs/methodology/dev-skills/vision-framing.md project
+pr-wait [('docs/methodology/dev-skills/babysit-pr/scripts/pr-wait', '0o755', True)]
+yaml ['docs/methodology/dev-skills/full-send/agents/openai.yaml', 'docs/methodology/dev-skills/full-stop/agents/openai.yaml', 'docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml', 'docs/methodology/dev-skills/modernize/agents/openai.yaml']

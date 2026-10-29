@@ -1,0 +1,644 @@
+{
+  "source_commit_check": {
+    "expected_commit": "1085050f3baed1ac724caa4a8166145fb2ac88af",
+    "actual_commit": "1085050f3baed1ac724caa4a8166145fb2ac88af",
+    "commit_matches": true,
+    "git_status_clean": true,
+    "file_count_expected": 14,
+    "file_count_actual": 14,
+    "inventory_exact_match": true
+  },
+  "source_inventory_matches": [
+    {
+      "file": "babysit-pr/SKILL.md",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "babysit-pr/scripts/pr-wait",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "council/SKILL.md",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "file-pr/SKILL.md",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "full-send/SKILL.md",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "full-send/agents/openai.yaml",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "full-stop/SKILL.md",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "full-stop/agents/openai.yaml",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "leaving-pr-comments/SKILL.md",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "leaving-pr-comments/agents/openai.yaml",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "modernize/SKILL.md",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "modernize/agents/openai.yaml",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "sol-loop/SKILL.md",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    },
+    {
+      "file": "takeover/SKILL.md",
+      "sha_ok": true,
+      "mode_ok": true,
+      "ok": true
+    }
+  ],
+  "import_manifest_matches": [
+    {
+      "source": "babysit-pr/SKILL.md",
+      "destination": "docs/methodology/dev-skills/babysit-pr/SKILL.md",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "babysit-pr/scripts/pr-wait",
+      "destination": "docs/methodology/dev-skills/babysit-pr/scripts/pr-wait",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "council/SKILL.md",
+      "destination": "docs/methodology/dev-skills/council/SKILL.md",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "file-pr/SKILL.md",
+      "destination": "docs/methodology/dev-skills/file-pr/SKILL.md",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "full-send/SKILL.md",
+      "destination": "docs/methodology/dev-skills/full-send/SKILL.md",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "full-send/agents/openai.yaml",
+      "destination": "docs/methodology/dev-skills/full-send/agents/openai.yaml",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "full-stop/SKILL.md",
+      "destination": "docs/methodology/dev-skills/full-stop/SKILL.md",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "full-stop/agents/openai.yaml",
+      "destination": "docs/methodology/dev-skills/full-stop/agents/openai.yaml",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "leaving-pr-comments/SKILL.md",
+      "destination": "docs/methodology/dev-skills/leaving-pr-comments/SKILL.md",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "leaving-pr-comments/agents/openai.yaml",
+      "destination": "docs/methodology/dev-skills/leaving-pr-comments/agents/openai.yaml",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "modernize/SKILL.md",
+      "destination": "docs/methodology/dev-skills/modernize/SKILL.md",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "modernize/agents/openai.yaml",
+      "destination": "docs/methodology/dev-skills/modernize/agents/openai.yaml",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "sol-loop/SKILL.md",
+      "destination": "docs/methodology/dev-skills/sol-loop/SKILL.md",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    },
+    {
+      "source": "takeover/SKILL.md",
+      "destination": "docs/methodology/dev-skills/takeover/SKILL.md",
+      "source_sha_ok": true,
+      "dest_sha_ok": true,
+      "changed_flag_ok": true,
+      "ok": true
+    }
+  ],
+  "discovery_links_24": [
+    {
+      "name": "ai-construction-directive-builder",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/ai-construction-directive-builder.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "architecture-spec-author",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/architecture-spec-author.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "babysit-pr",
+      "is_imported": true,
+      "parent_is_symlink": true,
+      "file_is_symlink": false,
+      "link_target": "../../docs/methodology/dev-skills/babysit-pr",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "code-conformance-reviewer",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/code-conformance-reviewer.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "council",
+      "is_imported": true,
+      "parent_is_symlink": true,
+      "file_is_symlink": false,
+      "link_target": "../../docs/methodology/dev-skills/council",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "file-pr",
+      "is_imported": true,
+      "parent_is_symlink": true,
+      "file_is_symlink": false,
+      "link_target": "../../docs/methodology/dev-skills/file-pr",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "friday-dev-board",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/friday-dev-board/SKILL.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "full-send",
+      "is_imported": true,
+      "parent_is_symlink": true,
+      "file_is_symlink": false,
+      "link_target": "../../docs/methodology/dev-skills/full-send",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "full-stop",
+      "is_imported": true,
+      "parent_is_symlink": true,
+      "file_is_symlink": false,
+      "link_target": "../../docs/methodology/dev-skills/full-stop",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "governance-security-spec",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/governance-security-spec.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "independent-code-validator",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/independent-code-validator.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "leaving-pr-comments",
+      "is_imported": true,
+      "parent_is_symlink": true,
+      "file_is_symlink": false,
+      "link_target": "../../docs/methodology/dev-skills/leaving-pr-comments",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "migration-refactor-analyst",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/migration-refactor-analyst.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "modernize",
+      "is_imported": true,
+      "parent_is_symlink": true,
+      "file_is_symlink": false,
+      "link_target": "../../docs/methodology/dev-skills/modernize",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "phase-build-planner",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/phase-build-planner.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "prd-author",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/prd-author.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "remediation-closeout",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/remediation-closeout.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "sol-loop",
+      "is_imported": true,
+      "parent_is_symlink": true,
+      "file_is_symlink": false,
+      "link_target": "../../docs/methodology/dev-skills/sol-loop",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "subagent-directives-template",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/subagent-directives-template.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "subagents-worktrees-template",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/subagents-worktrees-template.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "tactical-implementation-planner",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/tactical-implementation-planner.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "takeover",
+      "is_imported": true,
+      "parent_is_symlink": true,
+      "file_is_symlink": false,
+      "link_target": "../../docs/methodology/dev-skills/takeover",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "traceability-matrix",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/traceability-matrix.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    },
+    {
+      "name": "vision-framing",
+      "is_imported": false,
+      "parent_is_symlink": false,
+      "file_is_symlink": true,
+      "link_target": "../../../docs/methodology/dev-skills/vision-framing.md",
+      "resolved_inside_repo": true,
+      "kind_ok": true
+    }
+  ],
+  "nine_skills_metadata_and_links": [
+    {
+      "skill": "babysit-pr",
+      "frontmatter_keys": [
+        "description",
+        "name"
+      ],
+      "name_matches": true,
+      "description_nonempty": true,
+      "links_Contract": true,
+      "all_links_valid": true,
+      "links": [
+        {
+          "link": "../../guides/skill-execution-contract.md",
+          "exists_from_canonical": true,
+          "exists_from_discovery": true
+        }
+      ]
+    },
+    {
+      "skill": "council",
+      "frontmatter_keys": [
+        "description",
+        "name"
+      ],
+      "name_matches": true,
+      "description_nonempty": true,
+      "links_Contract": true,
+      "all_links_valid": true,
+      "links": [
+        {
+          "link": "../../guides/skill-execution-contract.md",
+          "exists_from_canonical": true,
+          "exists_from_discovery": true
+        }
+      ]
+    },
+    {
+      "skill": "file-pr",
+      "frontmatter_keys": [
+        "description",
+        "name"
+      ],
+      "name_matches": true,
+      "description_nonempty": true,
+      "links_Contract": true,
+      "all_links_valid": true,
+      "links": [
+        {
+          "link": "../../guides/skill-execution-contract.md",
+          "exists_from_canonical": true,
+          "exists_from_discovery": true
+        }
+      ]
+    },
+    {
+      "skill": "full-send",
+      "frontmatter_keys": [
+        "description",
+        "name"
+      ],
+      "name_matches": true,
+      "description_nonempty": true,
+      "links_Contract": true,
+      "all_links_valid": true,
+      "links": [
+        {
+          "link": "../../guides/skill-execution-contract.md",
+          "exists_from_canonical": true,
+          "exists_from_discovery": true
+        }
+      ]
+    },
+    {
+      "skill": "full-stop",
+      "frontmatter_keys": [
+        "description",
+        "name"
+      ],
+      "name_matches": true,
+      "description_nonempty": true,
+      "links_Contract": true,
+      "all_links_valid": true,
+      "links": [
+        {
+          "link": "../../guides/skill-execution-contract.md",
+          "exists_from_canonical": true,
+          "exists_from_discovery": true
+        },
+        {
+          "link": "../full-send/SKILL.md",
+          "exists_from_canonical": true,
+          "exists_from_discovery": true
+        }
+      ]
+    },
+    {
+      "skill": "leaving-pr-comments",
+      "frontmatter_keys": [
+        "description",
+        "name"
+      ],
+      "name_matches": true,
+      "description_nonempty": true,
+      "links_Contract": true,
+      "all_links_valid": true,
+      "links": [
+        {
+          "link": "../../guides/skill-execution-contract.md",
+          "exists_from_canonical": true,
+          "exists_from_discovery": true
+        }
+      ]
+    },
+    {
+      "skill": "modernize",
+      "frontmatter_keys": [
+        "description",
+        "name"
+      ],
+      "name_matches": true,
+      "description_nonempty": true,
+      "links_Contract": true,
+      "all_links_valid": true,
+      "links": [
+        {
+          "link": "../../guides/skill-execution-contract.md",
+          "exists_from_canonical": true,
+          "exists_from_discovery": true
+        }
+      ]
+    },
+    {
+      "skill": "sol-loop",
+      "frontmatter_keys": [
+        "description",
+        "name"
+      ],
+      "name_matches": true,
+      "description_nonempty": true,
+      "links_Contract": true,
+      "all_links_valid": true,
+      "links": [
+        {
+          "link": "../../guides/skill-execution-contract.md",
+          "exists_from_canonical": true,
+          "exists_from_discovery": true
+        }
+      ]
+    },
+    {
+      "skill": "takeover",
+      "frontmatter_keys": [
+        "description",
+        "name"
+      ],
+      "name_matches": true,
+      "description_nonempty": true,
+      "links_Contract": true,
+      "all_links_valid": true,
+      "links": [
+        {
+          "link": "../../guides/skill-execution-contract.md",
+          "exists_from_canonical": true,
+          "exists_from_discovery": true
+        }
+      ]
+    }
+  ],
+  "support_files_checks": {
+    "pr_wait_executable": true,
+    "pr_wait_mode": "0o755",
+    "pr_wait_py_compile": "PASS",
+    "pr_wait_help_exit": 0,
+    "pr_wait_help_head": "usage: pr-wait [-h] [--repo REPO] [--until {green,ready,any-change}]",
+    "pr_wait_no_arg_exit": 2,
+    "openai_yamls": {
+      "full-send": {
+        "exists_via_discovery": true,
+        "keys": [
+          "default_prompt",
+          "display_name",
+          "short_description"
+        ],
+        "valid": true
+      },
+      "full-stop": {
+        "exists_via_discovery": true,
+        "keys": [
+          "default_prompt",
+          "display_name",
+          "short_description"
+        ],
+        "valid": true
+      },
+      "leaving-pr-comments": {
+        "exists_via_discovery": true,
+        "keys": [
+          "default_prompt",
+          "display_name",
+          "short_description"
+        ],
+        "valid": true
+      },
+      "modernize": {
+        "exists_via_discovery": true,
+        "keys": [
+          "default_prompt",
+          "display_name",
+          "short_description"
+        ],
+        "valid": true
+      }
+    }
+  }
+}

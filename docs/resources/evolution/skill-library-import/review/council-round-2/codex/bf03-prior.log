@@ -1,0 +1,23 @@
+test_new_context_uses_frozen_tree_anchor (audit_refs.PreservationRefTests.test_new_context_uses_frozen_tree_anchor) ... FAIL
+
+======================================================================
+FAIL: test_new_context_uses_frozen_tree_anchor (audit_refs.PreservationRefTests.test_new_context_uses_frozen_tree_anchor)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/chuckrussell/Dev/gendev/methodology-v3/tests/migration/test_preservation_refs.py", line 92, in test_new_context_uses_frozen_tree_anchor
+    self.assertEqual(errors, [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: Lists differ: ['unapproved added ref: refs/t3/orchestrat[39 chars]l/0'] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+'unapproved added ref: refs/t3/orchestration-v2/checkpoints/other_context/ordinal/0'
+
++ []
+- ['unapproved added ref: '
+-  'refs/t3/orchestration-v2/checkpoints/other_context/ordinal/0']
+
+----------------------------------------------------------------------
+Ran 1 test in 0.056s
+
+FAILED (failures=1)

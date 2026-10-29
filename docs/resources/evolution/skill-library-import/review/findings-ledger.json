@@ -1,0 +1,132 @@
+{
+  "candidate_start": "d41e0ebfdc587ecc6d8c3ab336afc530ce90654f",
+  "acceptance": "pending",
+  "findings": [
+    {
+      "ids": [
+        "SKL-C-01"
+      ],
+      "change": "sol-loop severity, controller classification and stop/decline rules",
+      "status": "specific remediation independently checked in round 2; overall result still CHANGES_REQUESTED"
+    },
+    {
+      "ids": [
+        "COD-SK-001",
+        "SKL-B-02",
+        "OBS-OUT-001"
+      ],
+      "change": "same-tree cross-context T3 additions, immutable anchors and negative tests",
+      "status": "specific remediation independently checked in round 2; overall result still CHANGES_REQUESTED"
+    },
+    {
+      "ids": [
+        "SKL-B-01"
+      ],
+      "change": "fresh request requires real bundled rg PATH before doctor; no stubs",
+      "status": "independently resolved: real rg and doctor pass in all three contexts"
+    },
+    {
+      "ids": [
+        "SKL-L-01",
+        "SKL-L-02"
+      ],
+      "change": "explicit council request, scoped PR edits",
+      "status": "specific remediation independently checked in round 2; overall result still CHANGES_REQUESTED"
+    },
+    {
+      "ids": [
+        "SKL-L-03"
+      ],
+      "change": "actual base branch; unchanged fallback semantics and extra required reviews distinguished",
+      "status": "specific helper/base wording fixed; related rare-path review language remains open as R2-01"
+    },
+    {
+      "ids": [
+        "SKL-L-04"
+      ],
+      "change": "full-send proof scope and formal validation/approvals in merge gate",
+      "status": "specific remediation independently checked in round 2; overall result still CHANGES_REQUESTED"
+    },
+    {
+      "ids": [
+        "SKL-L-05"
+      ],
+      "change": "only top-level flat or direct bundle entrypoint discovery; reference-preservation regression",
+      "status": "specific remediation independently checked in round 2; overall result still CHANGES_REQUESTED"
+    },
+    {
+      "ids": [
+        "SK-IMP-001"
+      ],
+      "change": "modernize subject/verb typo",
+      "status": "specific remediation independently checked in round 2; overall result still CHANGES_REQUESTED"
+    },
+    {
+      "ids": [
+        "COD-INFO-001",
+        "TRK-LAG-001"
+      ],
+      "change": "merged main/current tracking availability reconciled; raw receipts preserved",
+      "status": "recorded; human acceptance pending"
+    },
+    {
+      "ids": [
+        "SKL-I-01"
+      ],
+      "change": "friday bundle discovery remains working directory link; no shape change required",
+      "status": "informational; no behavior fix"
+    }
+  ],
+  "reviewed_candidate": "464cdec246996ebf5bc769174b22a4c62f82305e",
+  "round_2_outcome": "CHANGES_REQUESTED",
+  "round_2_record": "council-round-2/summary.md",
+  "remaining_findings": [
+    {
+      "id": "R2-01",
+      "source": "Claude F-01",
+      "status": "specific wording correction independently confirmed in round 3; aggregate classification dispute remains",
+      "scope": "babysit-pr mandatory rare-path findings"
+    },
+    {
+      "id": "R2-02",
+      "source": "Sol COD-R2-001 / Claude F-02",
+      "status": "specific wording correction independently confirmed in round 3; aggregate classification dispute remains",
+      "scope": "full-send actual PR base; inherited full-stop readiness"
+    }
+  ],
+  "current_authorization": "advisory-clarifications.md",
+  "current_status": "round 4: all three VERIFIED for AC-01\u201305 delta/interactions; human acceptance pending",
+  "round_3_record": "council-round-3/summary.md",
+  "disputed_findings": [
+    {
+      "id": "R3C-01",
+      "reviewer_classification": "Claude: medium mandatory",
+      "counter_evidence": "Sol/Gemini VERIFIED; explicit babysit-pr prohibition and shared contract constrain full-send gate",
+      "controller_recommendation": "optional clarity improvement; not a demonstrated authorization bypass",
+      "disposition": "superseded for current candidate by explicit AC-05 clarification and three round-4 VERIFIED results; historical dispute retained"
+    }
+  ],
+  "round_4_targets": [
+    {
+      "id": "R3C-01",
+      "status": "resolved by explicit text; independently VERIFIED in round 4"
+    },
+    {
+      "id": "R3C-02",
+      "status": "resolved by explicit text; independently VERIFIED in round 4"
+    },
+    {
+      "id": "R3C-03",
+      "status": "resolved by explicit text; independently VERIFIED in round 4"
+    },
+    {
+      "id": "R3C-04",
+      "status": "resolved by explicit text; independently VERIFIED in round 4"
+    },
+    {
+      "id": "R3C-05",
+      "status": "resolved by explicit text; independently VERIFIED in round 4"
+    }
+  ],
+  "round_4_record": "council-round-4/summary.md"
+}
