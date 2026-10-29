@@ -42,7 +42,8 @@ for rebasing and readiness. Do not retarget an existing PR without authorization
 
 1. **Finish the change.** Complete the goal from the user's request with the
    smallest change that works. Fix the case that happened, not every case
-   that could. If you are on the default branch, create a branch first.
+   that could. If you are on the default or selected target branch, create a
+   separate task branch first; keep task work off both destination branches.
 2. **Prove it.** Get proof for every change you made. See "Proof".
 3. **Get feedback.** Use the `sol-loop` skill to verify changes.
 4. **File or update the PR** with the `file-pr` skill. Rebase onto the latest
@@ -86,8 +87,11 @@ Full confidence means all of these are true on the latest commit:
 - Applicable GenDev independent validation, lifecycle prerequisites and required
   human approvals for this work are recorded; an advisory Sol APPROVE is not a
   formal VERIFIED result or a substitute for those approvals.
-- Review bots have finished, and each finding is fixed or dismissed with a
-  written reason.
+- Review bots have finished. Unresolved mandatory findings block readiness and
+  require human disposition; a written dismissal cannot satisfy remediation or
+  authorize merging. Only optional preferences or verified false positives may
+  be dismissed, with a documented reason and evidence. Human risk decisions must
+  follow governing authority and do not fabricate a VERIFIED result.
 - No human review still requests changes.
 - The PR's actual base matches the selected target, the branch is up to date
   with that base, and GitHub reports it as mergeable. Recheck the actual base

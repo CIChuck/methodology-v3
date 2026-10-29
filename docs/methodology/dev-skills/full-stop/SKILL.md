@@ -21,7 +21,8 @@ to stop current work, stop rather than starting PR preparation.
 
 You may commit, push, rebase, fix conflicts, and use `--force-with-lease` on
 this task's branch. Never merge, enable auto-merge, enter a merge queue, push
-to the default branch, bypass branch protection, or delegate those actions.
+directly to the default or selected target branch, bypass branch protection, or
+delegate those actions. Work only on a separate task branch.
 
 Disable existing auto-merge and remove the PR from any merge queue before
 work begins; check again before each push. Report these changes. If you

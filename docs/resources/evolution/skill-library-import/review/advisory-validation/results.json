@@ -1,0 +1,108 @@
+{
+  "status": "local focused checks passed; fresh council round 4 pending",
+  "recorded_at": "2026-10-29T00:33:45.660323+00:00",
+  "commands": [
+    {
+      "argv": [
+        "./scripts/gendev-doctor.sh"
+      ],
+      "exit": 0,
+      "log": "check-00.log"
+    },
+    {
+      "argv": [
+        "./scripts/check-methodology.sh"
+      ],
+      "exit": 0,
+      "log": "check-01.log"
+    },
+    {
+      "argv": [
+        "./scripts/check-doc-coherence.sh"
+      ],
+      "exit": 0,
+      "log": "check-02.log"
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--frozen",
+        "--group",
+        "devboard",
+        "python",
+        "scripts/devboard.py",
+        "validate"
+      ],
+      "exit": 0,
+      "log": "check-03.log"
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--frozen",
+        "--group",
+        "devboard",
+        "python",
+        "scripts/devboard.py",
+        "next"
+      ],
+      "exit": 0,
+      "log": "check-04.log"
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--frozen",
+        "--group",
+        "devboard",
+        "python",
+        "scripts/devboard.py",
+        "show",
+        "skill-library-import"
+      ],
+      "exit": 0,
+      "log": "check-05.log"
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--frozen",
+        "--group",
+        "devboard",
+        "python",
+        "/var/folders/dh/wfnmsgpn1yl83xlbmc109sf40000gn/T/v3-advisory-checks-2z_kad3t/offline-checks.py"
+      ],
+      "exit": 0,
+      "log": "check-06.log"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/verify-migration-inputs.py"
+      ],
+      "exit": 0,
+      "log": "check-07.log"
+    },
+    {
+      "argv": [
+        "gh",
+        "pr",
+        "create",
+        "--help"
+      ],
+      "exit": 0,
+      "log": "check-08.log"
+    }
+  ],
+  "guide_mirror": "23 exact files; unchanged from aa25aa8",
+  "runtime": "no diff from aa25aa8; 409/17/48 tests not freshly rerun or claimed",
+  "scope": "five instruction files and adapted digests/task-review records only",
+  "counterexamples": "../advisory-counterexamples.json",
+  "rg_binary": "/opt/homebrew/lib/node_modules/@openai/codex/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/codex-path/rg",
+  "PR": "#2 remains open at 8abacf4 until review and branch update",
+  "acceptance": "pending"
+}

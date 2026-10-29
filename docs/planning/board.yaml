@@ -35,11 +35,10 @@ tasks:
   title: Import and reconcile nine local workflow skills
   priority: 2
   work_state: started
-  condition: blocked
+  condition: normal
   implementation_authority: granted
-  packet: docs/planning/blocked/skill-library-import/
-  next_gate: 'Chuck disposition on disputed R3C-01: explicit mandatory-finding prohibition versus general bot gate wording;
-    acceptance pending'
+  packet: docs/planning/active/skill-library-import/
+  next_gate: 'Fresh focused council round 4 on five clarified instructions, then PR #2 update; acceptance pending'
   delivery_state: local
   branch: fix/skills-council-follow-up
   depends_on: []
@@ -53,6 +52,8 @@ tasks:
   - docs/resources/evolution/skill-library-import/review/wording-validation/results.json
   - docs/resources/evolution/skill-library-import/review/council-round-3/summary.md (2 VERIFIED / 1 CHANGES_REQUESTED; candidate
     5e2ab40)
+  - docs/resources/evolution/skill-library-import/review/advisory-clarifications.md
+  - docs/resources/evolution/skill-library-import/review/advisory-validation/results.json
   approved_by: Chuck Russell
   approved_at: '2026-10-28'
 - id: v3-documentation-refresh
@@ -290,3 +291,19 @@ events:
     recommends advisory classification with concrete textual evidence, but returns dispute to Chuck. No aggregate VERIFIED,
     acceptance, further fixes/review or remote effects.
   evidence: docs/resources/evolution/skill-library-import/review/council-round-3/summary.md
+- task: skill-library-import
+  at: '2026-10-29T00:32:32.704425+00:00'
+  actor: Chuck Russell
+  actor_role: maintainer
+  action: authorized advisory and merge-gate clarifications; condition blocked -> normal
+  note: User agreed with proposed five-document changes and said proceed; recorded by Codex. Acceptance remains pending; existing
+    PR update after fresh focused review, no merge.
+  evidence: docs/resources/evolution/skill-library-import/review/advisory-clarifications.md
+- task: skill-library-import
+  at: '2026-10-29T00:33:45.702009+00:00'
+  actor: Codex
+  actor_role: agent
+  action: recorded five skill clarifications and focused checks
+  note: "AC-01\u201305 wording implemented; metadata/source/support/link, doctor, methodology, docs, board, guide mirror,\
+    \ original preservation and local gh help checks pass. Runtime unchanged; fresh council and PR update pending."
+  evidence: docs/resources/evolution/skill-library-import/review/advisory-validation/results.json

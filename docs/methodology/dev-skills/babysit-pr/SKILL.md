@@ -93,9 +93,12 @@ reply to a Macroscope finding. Its findings cite them.
 Treat bot findings according to the repository's accepted review and branch-protection
 requirements. CodeRabbit may be advisory, but never bypass a required check or review.
 
-If a review bot leaves feedback you believe is not worth addressing, reply with a written reason and resolve the comment only when those effects
-are authorized. Otherwise prepare the response for the user. Use the `leaving-pr-comments` skill
-for every comment posted on the user's behalf.
+If feedback is an optional preference or a verified false positive, document the
+reason and supporting evidence before declining it. Reply and resolve the comment
+only when those effects are authorized; otherwise prepare the response for the
+user. Actual mandatory findings retain their required remediation or scope/risk
+disposition, regardless of rarity. Use the `leaving-pr-comments` skill for every
+comment posted on the user's behalf.
 
 Screenshots and videos help as well, when you have a way to upload them.
 
@@ -106,8 +109,9 @@ on rare or unintended paths. Fix mandatory findings within authorized scope;
 report out-of-scope mandatory findings for scope/risk disposition rather than
 silently implementing or waiving them. A written dismissal does not satisfy
 required remediation or authorize merging.
-Decline only optional preferences with a written reason and list them as
-follow-ups. Prefer the smallest fix that satisfies the requirement.
+Decline only optional preferences or verified false positives with a documented
+reason and evidence. List remaining optional suggestions as follow-ups.
+Prefer the smallest fix that satisfies the requirement.
 
 ## Base branch and merging
 

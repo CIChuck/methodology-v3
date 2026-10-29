@@ -42,8 +42,13 @@ Find the base after `git fetch origin`:
 - PR: `gh pr view <n> --json baseRefName,headRefOid`. Check out the branch
   only if clean. Confirm `HEAD` is the PR head, or ahead only by this
   change. Base: `git merge-base HEAD origin/<baseRefName>`.
-- Local: `git merge-base HEAD origin/<default-branch>`. No remote: a base
-  the user names, or `HEAD` for uncommitted changes only.
+- Local, before a PR exists: use the caller's selected target and compute
+  `git merge-base HEAD origin/<selected-target>`. If no target is recorded,
+  resolve and record the intended target first; use the repository default only
+  when appropriate to the requested work. Do not silently review a stacked or
+  release change against another branch. No remote: use a named base commit,
+  or `HEAD` for uncommitted changes only; missing formal-review authority blocks
+  formal validation rather than supplying an inferred base.
 
 The change is base to working tree in those paths, with untracked files.
 Use one diff command all rounds. State intent and out-of-scope in 1-2

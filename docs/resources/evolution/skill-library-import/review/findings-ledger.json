@@ -94,8 +94,8 @@
       "scope": "full-send actual PR base; inherited full-stop readiness"
     }
   ],
-  "current_authorization": "wording-follow-up.md",
-  "current_status": "round 3 complete: two VERIFIED / one CHANGES_REQUESTED; R3C-01 classification disputed, Chuck disposition pending",
+  "current_authorization": "advisory-clarifications.md",
+  "current_status": "User authorized R3C-01\u201305 clarifications; five instruction updates implemented, fresh focused council round 4 pending",
   "round_3_record": "council-round-3/summary.md",
   "disputed_findings": [
     {
@@ -104,6 +104,28 @@
       "counter_evidence": "Sol/Gemini VERIFIED; explicit babysit-pr prohibition and shared contract constrain full-send gate",
       "controller_recommendation": "optional clarity improvement; not a demonstrated authorization bypass",
       "disposition": "pending Chuck; raw reviewer verdict preserved"
+    }
+  ],
+  "round_4_targets": [
+    {
+      "id": "R3C-01",
+      "status": "text clarified; independent review pending"
+    },
+    {
+      "id": "R3C-02",
+      "status": "text clarified; independent review pending"
+    },
+    {
+      "id": "R3C-03",
+      "status": "text clarified; independent review pending"
+    },
+    {
+      "id": "R3C-04",
+      "status": "text clarified; independent review pending"
+    },
+    {
+      "id": "R3C-05",
+      "status": "text clarified; independent review pending"
     }
   ]
 }
